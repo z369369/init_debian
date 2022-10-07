@@ -17,7 +17,7 @@ sudo apt remove --purge -y \
     simple-scan cheese hexchat \
     aisleriot gnome-{mahjongg,mines,sudoku} sgt-*
 
-sudo rm -rf /run/timeshift
+#sudo rm -rf /run/timeshift
 
 echo "============== [E] Remove - snap =============="
 
