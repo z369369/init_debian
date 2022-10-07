@@ -12,4 +12,3 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo flatpak install -y $(cat pkglist_flatpak)
 
 echo "============== [E] Install - flatpak =============="
-  
