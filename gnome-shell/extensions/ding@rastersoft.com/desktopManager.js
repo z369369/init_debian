@@ -873,6 +873,7 @@ var DesktopManager = class {
             } else {
                 this.searchString = key;
             }
+            /*
             if (this.searchString != '') {
                 let found = this.scanForFiles(this.searchString, false);
                 if (found) {
@@ -901,6 +902,7 @@ var DesktopManager = class {
                     this.findFiles(this.searchString)
                 }
             }
+            */
             return true;
         }
         return false;
