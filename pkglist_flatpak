@@ -19,6 +19,7 @@ org.chromium.Chromium.Codecs
 org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.gnome.design.Contrast
+org.gnome.design.IconLibrary
 org.gnome.Evolution
 org.gnome.gThumb
 org.gnome.Shotwell
