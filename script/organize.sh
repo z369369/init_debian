@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#Create Folders
+#organize download folder
 #Image Files
 cd ~/Downloads
 
-
+# Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures
 
 # Audio Files 
@@ -22,7 +22,7 @@ mv *.py *.rb *.sh ~/git/linux_init/script
 #Compressed Files
 mv *.rar *.zip *.tar *.tar.gz *.7z ~/Downloads/zip
 
-# Scripts
+# Iso
 mv *.iso ~/Downloads/iso
 
 notify-send 'Complete' 'Organizing your downloads Folder'
