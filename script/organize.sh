@@ -25,4 +25,4 @@ mv *.rar *.zip *.tar *.tar.gz *.7z ~/Downloads/zip
 # Scripts
 mv *.iso ~/Downloads/iso
 
-notify-send 'Complete : organizing your downloads Folder'
+notify-send 'Complete' 'Organizing your downloads Folder'
