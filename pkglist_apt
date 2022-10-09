@@ -4,6 +4,7 @@ ca-certificates
 chrome-gnome-shell
 curl
 dconf-editor
+evolution
 gedit
 gnome-shell-extensions
 gnome-tweaks
