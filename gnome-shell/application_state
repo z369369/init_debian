@@ -2,8 +2,8 @@
 <application-state>
   <context id="">
     <application id="gnome-control-center.desktop" score="93" last-seen="1665342193"/>
-    <application id="org.gnome.gThumb.desktop" score="0" last-seen="1665308384"/>
     <application id="gnome-session-properties.desktop" score="10" last-seen="1665246010"/>
+    <application id="org.gnome.gThumb.desktop" score="0" last-seen="1665308384"/>
     <application id="apport-gtk.desktop" score="3" last-seen="1665300814"/>
     <application id="gnome-language-selector.desktop" score="14" last-seen="1665173238"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="3" last-seen="1665321701"/>
@@ -16,7 +16,7 @@
     <application id="org.gnome.eog.desktop" score="0" last-seen="1665246208"/>
     <application id="io.atom.Atom.desktop" score="4" last-seen="1665208234"/>
     <application id="org.gnome.meld.desktop" score="0" last-seen="1665321355"/>
-    <application id="code.desktop" score="488" last-seen="1665342337"/>
+    <application id="code.desktop" score="528" last-seen="1665343284"/>
     <application id="opera.desktop" score="186" last-seen="1665305387"/>
     <application id="org.chromium.Chromium.desktop" score="40" last-seen="1665305381"/>
     <application id="org.gnome.Software.desktop" score="29" last-seen="1665303760"/>
@@ -31,13 +31,13 @@
     <application id="stacer.desktop" score="59" last-seen="1665320986"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1665240456"/>
     <application id="org.atheme.audacious.desktop" score="0" last-seen="1665299582"/>
-    <application id="org.gnome.Terminal.desktop" score="799" last-seen="1665342337"/>
+    <application id="org.gnome.Terminal.desktop" score="800" last-seen="1665342997"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="362" last-seen="1665340881"/>
     <application id="remote-viewer.desktop" score="0" last-seen="1665246243"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="15" last-seen="1665245978"/>
     <application id="org.gnome.DiskUtility.desktop" score="41" last-seen="1665203807"/>
     <application id="timeshift-gtk.desktop" score="62" last-seen="1665303768"/>
-    <application id="org.gnome.Nautilus.desktop" score="483" last-seen="1665340608"/>
+    <application id="org.gnome.Nautilus.desktop" score="484" last-seen="1665342985"/>
     <application id="com.valvesoftware.Steam.desktop" score="4" last-seen="1665210775"/>
     <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1665299790"/>
     <application id="org.mozilla.firefox.desktop" score="0" last-seen="1665208046"/>
@@ -45,7 +45,7 @@
     <application id="gnome-system-monitor.desktop" score="0" last-seen="1665202265"/>
     <application id="update-manager.desktop" score="8" last-seen="1665172739"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="4" last-seen="1665252302"/>
-    <application id="google-chrome.desktop" score="2603" last-seen="1665342263"/>
+    <application id="google-chrome.desktop" score="2603" last-seen="1665343277"/>
     <application id="synaptic.desktop" score="83" last-seen="1665334247"/>
     <application id="ibus-setup-hangul.desktop" score="3" last-seen="1665172699"/>
     <application id="org.gnome.design.Contrast.desktop" score="0" last-seen="1665341960"/>
