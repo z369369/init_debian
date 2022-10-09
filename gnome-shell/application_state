@@ -16,7 +16,7 @@
     <application id="org.gnome.eog.desktop" score="0" last-seen="1665246208"/>
     <application id="io.atom.Atom.desktop" score="4" last-seen="1665208234"/>
     <application id="org.gnome.meld.desktop" score="0" last-seen="1665321355"/>
-    <application id="code.desktop" score="149" last-seen="1665321658"/>
+    <application id="code.desktop" score="435" last-seen="1665339937"/>
     <application id="opera.desktop" score="186" last-seen="1665305387"/>
     <application id="org.chromium.Chromium.desktop" score="40" last-seen="1665305381"/>
     <application id="org.gnome.Software.desktop" score="29" last-seen="1665303760"/>
@@ -33,12 +33,12 @@
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1665240456"/>
     <application id="org.atheme.audacious.desktop" score="0" last-seen="1665299582"/>
     <application id="org.gnome.Terminal.desktop" score="770" last-seen="1665335525"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="239" last-seen="1665335670"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="361" last-seen="1665337548"/>
     <application id="remote-viewer.desktop" score="0" last-seen="1665246243"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="15" last-seen="1665245978"/>
     <application id="org.gnome.DiskUtility.desktop" score="41" last-seen="1665203807"/>
     <application id="timeshift-gtk.desktop" score="62" last-seen="1665303768"/>
-    <application id="org.gnome.Nautilus.desktop" score="479" last-seen="1665334164"/>
+    <application id="org.gnome.Nautilus.desktop" score="479" last-seen="1665336170"/>
     <application id="com.valvesoftware.Steam.desktop" score="4" last-seen="1665210775"/>
     <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1665299790"/>
     <application id="org.mozilla.firefox.desktop" score="0" last-seen="1665208046"/>
@@ -46,9 +46,9 @@
     <application id="gnome-system-monitor.desktop" score="0" last-seen="1665202265"/>
     <application id="update-manager.desktop" score="8" last-seen="1665172739"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="4" last-seen="1665252302"/>
-    <application id="google-chrome.desktop" score="2279" last-seen="1665335428"/>
+    <application id="google-chrome.desktop" score="2435" last-seen="1665339810"/>
     <application id="synaptic.desktop" score="83" last-seen="1665334247"/>
     <application id="ibus-setup-hangul.desktop" score="3" last-seen="1665172699"/>
-    <application id="org.gnome.gedit.desktop" score="187" last-seen="1665320795"/>
+    <application id="org.gnome.gedit.desktop" score="188" last-seen="1665339171"/>
   </context>
 </application-state>
