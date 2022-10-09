@@ -1,15 +1,20 @@
 #!/bin/bash
+echo "============== [S] Link - shell, script =============="
 ln -s ~/git/linux_init/script ~/script
-ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
 
+rm -rf ~/.local/share/gnome-shell
+ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
+echo "============== [E] Link - shell, script =============="
+
+
+echo "============== [S] Link - hdd =============="
 #root 
 #backup_disk mount
 su -
 echo "UUID=fdcd9bf3-7e29-467b-926f-5fdd8c197a7d /media/lwh/backup_disk ext4 defaults 0 2" >> /etc/fstab
 ln -s /media/lwh/backup_disk ~/Desktop/backup_disk
+echo "============== [E] Link - hdd =============="
 
-sudo rm -rf ~/script
-sudo rm -rf ~/.local/share/gnome-shell
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/
