@@ -4,6 +4,9 @@ ln -s ~/git/linux_init/script ~/script
 
 rm -rf ~/.local/share/gnome-shell
 ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
+
+rm -rf ~/Templates
+ln -s ~/git/linux_init/Templates ~/Templates
 echo "============== [E] Link - shell, script =============="
 
 
