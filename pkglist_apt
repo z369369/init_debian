@@ -12,7 +12,10 @@ gufw
 hardinfo
 htop
 imwheel
+imagemagick
 nautilus-admin
+nautilus-image-converter
+nautilus-gtkhash
 libfuse2
 libvirt-clients
 libvirt-daemon-system
@@ -22,7 +25,6 @@ net-tools
 numlockx
 playonlinux
 qemu-kvm
-ranger
 software-properties-common
 stacer
 synaptic
