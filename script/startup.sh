@@ -1,5 +1,5 @@
 #!/bin/bash
 sleep 5s
 gnome-terminal
-open ~
+nautilus ~
 google-chrome

@@ -55,7 +55,7 @@ function enable() {
         track_hover: true
     });
     let icon2 = new St.Icon({
-        icon_name: 'system-restart-symbolic',
+        icon_name: 'system-reboot-symbolic',
         style_class: 'system-status-icon'
     });
 
