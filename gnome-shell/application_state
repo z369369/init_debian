@@ -1,50 +1,46 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.TextEditor.desktop" score="27" last-seen="1665407742"/>
+    <application id="gnome-control-center.desktop" score="0" last-seen="1665464510"/>
     <application id="org.gnome.gThumb.desktop" score="0" last-seen="1665366354"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="1" last-seen="1665399741"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="1" last-seen="1665461909"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="3" last-seen="1665321701"/>
-    <application id="firefox.desktop" score="0" last-seen="1665408036"/>
-    <application id="org.gnome.tweaks.desktop" score="42" last-seen="1665409034"/>
+    <application id="org.gnome.tweaks.desktop" score="44" last-seen="1665464268"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="26" last-seen="1665321817"/>
-    <application id="org.gnome.Connections.desktop" score="1" last-seen="1665400322"/>
     <application id="org.gnome.Characters.desktop" score="0" last-seen="1665214047"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="36" last-seen="1665397747"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1665203234"/>
     <application id="org.chromium.Chromium.desktop" score="45" last-seen="1665380467"/>
     <application id="io.atom.Atom.desktop" score="6" last-seen="1665396771"/>
     <application id="gkbd-keyboard-display.desktop" score="1" last-seen="1665172774"/>
-    <application id="code.desktop" score="122" last-seen="1665461567"/>
-    <application id="firewall-config.desktop" score="114" last-seen="1665411013"/>
-    <application id="org.libreoffice.LibreOffice.draw.desktop" score="0" last-seen="1665213000"/>
-    <application id="virt-manager.desktop" score="393" last-seen="1665461358"/>
-    <application id="org.gnome.Software.desktop" score="91" last-seen="1665461064"/>
-    <application id="org.gimp.GIMP.desktop" score="0" last-seen="1665212753"/>
+    <application id="code.desktop" score="156" last-seen="1665464271"/>
     <application id="ca.desrt.dconf-editor.desktop" score="2" last-seen="1665460020"/>
-    <application id="org.gnome.Settings.desktop" score="19" last-seen="1665411521"/>
+    <application id="virt-manager.desktop" score="393" last-seen="1665461882"/>
+    <application id="org.gnome.Software.desktop" score="91" last-seen="1665461064"/>
+    <application id="org.libreoffice.LibreOffice.draw.desktop" score="0" last-seen="1665213000"/>
+    <application id="org.gimp.GIMP.desktop" score="0" last-seen="1665212753"/>
     <application id="gnome-initial-setup.desktop" score="7" last-seen="1665172476"/>
     <application id="org.gnome.Evolution.desktop" score="17" last-seen="1665409911"/>
     <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="9" last-seen="1665240610"/>
-    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1665400415"/>
+    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1665464513"/>
     <application id="stacer.desktop" score="72" last-seen="1665410322"/>
-    <application id="org.atheme.audacious.desktop" score="0" last-seen="1665299582"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1665240456"/>
-    <application id="org.gnome.Terminal.desktop" score="1365" last-seen="1665460981"/>
+    <application id="org.atheme.audacious.desktop" score="0" last-seen="1665299582"/>
+    <application id="org.gnome.Terminal.desktop" score="1445" last-seen="1665464512"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="364" last-seen="1665397709"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="25" last-seen="1665461294"/>
     <application id="org.libreoffice.LibreOffice.impress.desktop" score="0" last-seen="1665410247"/>
     <application id="org.gnome.DiskUtility.desktop" score="48" last-seen="1665409114"/>
-    <application id="org.fedoraproject.MediaWriter.desktop" score="12" last-seen="1665400058"/>
-    <application id="org.gnome.Nautilus.desktop" score="562" last-seen="1665459936"/>
+    <application id="org.fedoraproject.MediaWriter.desktop" score="12" last-seen="1665461904"/>
+    <application id="org.gnome.Nautilus.desktop" score="568" last-seen="1665463743"/>
     <application id="com.valvesoftware.Steam.desktop" score="4" last-seen="1665403989"/>
     <application id="gnome-system-monitor.desktop" score="10" last-seen="1665460032"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1665461288"/>
     <application id="timeshift-gtk.desktop" score="140" last-seen="1665460435"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="4" last-seen="1665252302"/>
-    <application id="org.gnome.clocks.desktop" score="0" last-seen="1665396410"/>
     <application id="ibus-setup-hangul.desktop" score="3" last-seen="1665172699"/>
     <application id="org.gnome.design.Contrast.desktop" score="0" last-seen="1665341960"/>
-    <application id="google-chrome.desktop" score="204" last-seen="1665461437"/>
+    <application id="org.gnome.gedit.desktop" score="10" last-seen="1665464513"/>
+    <application id="google-chrome.desktop" score="221" last-seen="1665464404"/>
   </context>
 </application-state>
