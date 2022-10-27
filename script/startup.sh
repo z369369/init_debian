@@ -2,4 +2,4 @@
 sleep 5s
 gnome-terminal
 nautilus ~
-flatpak run org.mozilla.firefox
+/usr/bin/google-chrome
