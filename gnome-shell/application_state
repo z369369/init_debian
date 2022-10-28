@@ -2,20 +2,20 @@
 <application-state>
   <context id="">
     <application id="org.mozilla.firefox.desktop" score="110" last-seen="1666841428"/>
-    <application id="google-chrome.desktop" score="2214" last-seen="1666916894"/>
+    <application id="google-chrome.desktop" score="2253" last-seen="1666917181"/>
     <application id="org.gnome.Software.desktop" score="152" last-seen="1666915068"/>
     <application id="io.atom.Atom.desktop" score="1" last-seen="1666351629"/>
     <application id="info.smplayer.SMPlayer.desktop" score="18" last-seen="1666444818"/>
-    <application id="org.gnome.gedit.desktop" score="89" last-seen="1666916893"/>
+    <application id="org.gnome.gedit.desktop" score="98" last-seen="1666917369"/>
     <application id="update-manager.desktop" score="17" last-seen="1666838287"/>
     <application id="org.gnome.Nautilus.desktop" score="724" last-seen="1666916189"/>
     <application id="gnome-control-center.desktop" score="5" last-seen="1666842561"/>
     <application id="opera.desktop" score="10" last-seen="1666841511"/>
-    <application id="org.gnome.Terminal.desktop" score="1910" last-seen="1666916901"/>
+    <application id="org.gnome.Terminal.desktop" score="1912" last-seen="1666917282"/>
     <application id="org.chromium.Chromium.desktop" score="1" last-seen="1666841421"/>
-    <application id="org.gnome.Evolution.desktop" score="37" last-seen="1666840121"/>
+    <application id="org.gnome.Evolution.desktop" score="37" last-seen="1666917329"/>
     <application id="synaptic.desktop" score="62" last-seen="1666915286"/>
-    <application id="code.desktop" score="315" last-seen="1666916674"/>
+    <application id="code.desktop" score="327" last-seen="1666917327"/>
     <application id="timeshift-gtk.desktop" score="12" last-seen="1666839467"/>
     <application id="org.gnome.baobab.desktop" score="4" last-seen="1666916163"/>
   </context>
