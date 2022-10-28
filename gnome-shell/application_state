@@ -2,21 +2,21 @@
 <application-state>
   <context id="">
     <application id="org.mozilla.firefox.desktop" score="110" last-seen="1666841428"/>
-    <application id="org.gnome.Software.desktop" score="141" last-seen="1666838296"/>
+    <application id="google-chrome.desktop" score="2198" last-seen="1666916197"/>
+    <application id="org.gnome.Software.desktop" score="152" last-seen="1666915068"/>
     <application id="io.atom.Atom.desktop" score="1" last-seen="1666351629"/>
-    <application id="google-chrome.desktop" score="2085" last-seen="1666842877"/>
     <application id="info.smplayer.SMPlayer.desktop" score="18" last-seen="1666444818"/>
+    <application id="org.gnome.gedit.desktop" score="80" last-seen="1666842950"/>
     <application id="update-manager.desktop" score="17" last-seen="1666838287"/>
-    <application id="org.gnome.Nautilus.desktop" score="708" last-seen="1666840262"/>
+    <application id="org.gnome.Nautilus.desktop" score="724" last-seen="1666916189"/>
     <application id="gnome-control-center.desktop" score="5" last-seen="1666842561"/>
     <application id="opera.desktop" score="10" last-seen="1666841511"/>
-    <application id="org.gnome.Terminal.desktop" score="1854" last-seen="1666840258"/>
-    <application id="org.gnome.gedit.desktop" score="80" last-seen="1666842950"/>
-    <application id="org.gnome.Evolution.desktop" score="37" last-seen="1666840121"/>
-    <application id="org.gnome.DiskUtility.desktop" score="2" last-seen="1666271304"/>
+    <application id="org.gnome.Terminal.desktop" score="1909" last-seen="1666916162"/>
     <application id="org.chromium.Chromium.desktop" score="1" last-seen="1666841421"/>
-    <application id="code.desktop" score="226" last-seen="1666351843"/>
-    <application id="synaptic.desktop" score="60" last-seen="1666839773"/>
+    <application id="org.gnome.Evolution.desktop" score="37" last-seen="1666840121"/>
+    <application id="synaptic.desktop" score="62" last-seen="1666915286"/>
+    <application id="code.desktop" score="248" last-seen="1666916200"/>
     <application id="timeshift-gtk.desktop" score="12" last-seen="1666839467"/>
+    <application id="org.gnome.baobab.desktop" score="4" last-seen="1666916163"/>
   </context>
 </application-state>

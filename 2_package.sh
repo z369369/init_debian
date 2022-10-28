@@ -1,4 +1,11 @@
 #!/bin/bash
+echo "============== [S] Install - apt =============="
+
+sudo apt-get install -y $(cat pkglist_apt)
+sudo apt-get update && sudo apt-get -y upgrade
+
+echo "============== [E] Install - apt =============="
+
 echo "============== [S] Install - flatpak =============="
 
 sudo rm -rf /var/lib/flatpak
