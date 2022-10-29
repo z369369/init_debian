@@ -1,32 +1,33 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.baobab.desktop" score="6" last-seen="1667016438"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1667011614"/>
-    <application id="gnome-session-properties.desktop" score="0" last-seen="1666919277"/>
-    <application id="google-chrome.desktop" score="2713" last-seen="1667056048"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="11" last-seen="1667016950"/>
-    <application id="virt-manager.desktop" score="52" last-seen="1666918271"/>
-    <application id="org.gnome.Software.desktop" score="158" last-seen="1667056076"/>
-    <application id="software-properties-gtk.desktop" score="4" last-seen="1666919203"/>
     <application id="gnome-control-center.desktop" score="44" last-seen="1667015479"/>
-    <application id="org.gnome.gedit.desktop" score="98" last-seen="1666919269"/>
-    <application id="update-manager.desktop" score="17" last-seen="1666838287"/>
-    <application id="org.gnome.Nautilus.desktop" score="753" last-seen="1667055756"/>
-    <application id="stacer.desktop" score="20" last-seen="1667055949"/>
-    <application id="com.transmissionbt.Transmission.desktop" score="22" last-seen="1667013183"/>
-    <application id="hardinfo.desktop" score="1" last-seen="1667015655"/>
-    <application id="opera.desktop" score="10" last-seen="1666841511"/>
-    <application id="org.gnome.Terminal.desktop" score="1954" last-seen="1667056079"/>
+    <application id="gnome-session-properties.desktop" score="0" last-seen="1666919277"/>
     <application id="org.gnome.gThumb.desktop" score="0" last-seen="1667016121"/>
+    <application id="software-properties-gtk.desktop" score="4" last-seen="1666919203"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1667011614"/>
+    <application id="org.mozilla.Firefox.desktop" score="6" last-seen="1667056404"/>
     <application id="org.chromium.Chromium.desktop" score="1" last-seen="1666841421"/>
-    <application id="org.gnome.Evolution.desktop" score="56" last-seen="1667011603"/>
-    <application id="synaptic.desktop" score="79" last-seen="1667015384"/>
     <application id="org.gnome.meld.desktop" score="2" last-seen="1667016231"/>
-    <application id="code.desktop" score="424" last-seen="1667055989"/>
-    <application id="org.atheme.audacious.desktop" score="4" last-seen="1667016120"/>
-    <application id="timeshift-gtk.desktop" score="12" last-seen="1666839467"/>
+    <application id="opera.desktop" score="10" last-seen="1666841511"/>
+    <application id="org.gnome.Software.desktop" score="183" last-seen="1667056466"/>
+    <application id="hardinfo.desktop" score="1" last-seen="1667015655"/>
+    <application id="virt-manager.desktop" score="52" last-seen="1666918271"/>
+    <application id="code.desktop" score="427" last-seen="1667056202"/>
+    <application id="com.transmissionbt.Transmission.desktop" score="22" last-seen="1667013183"/>
+    <application id="org.gnome.Evolution.desktop" score="56" last-seen="1667011603"/>
     <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0" last-seen="1666918945"/>
+    <application id="stacer.desktop" score="20" last-seen="1667056417"/>
+    <application id="org.atheme.audacious.desktop" score="4" last-seen="1667016120"/>
+    <application id="org.gnome.Terminal.desktop" score="1960" last-seen="1667056451"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="11" last-seen="1667016950"/>
+    <application id="timeshift-gtk.desktop" score="12" last-seen="1666839467"/>
+    <application id="org.gnome.Nautilus.desktop" score="753" last-seen="1667055756"/>
     <application id="com.valvesoftware.Steam.desktop" score="13" last-seen="1667014220"/>
+    <application id="update-manager.desktop" score="17" last-seen="1666838287"/>
+    <application id="google-chrome.desktop" score="2730" last-seen="1667056602"/>
+    <application id="org.gnome.baobab.desktop" score="6" last-seen="1667016438"/>
+    <application id="synaptic.desktop" score="79" last-seen="1667015384"/>
+    <application id="org.gnome.gedit.desktop" score="98" last-seen="1666919269"/>
   </context>
 </application-state>
