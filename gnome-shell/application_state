@@ -11,7 +11,7 @@
     <application id="org.mozilla.Firefox.desktop" score="8" last-seen="1667184656"/>
     <application id="io.atom.Atom.desktop" score="1" last-seen="1667453938"/>
     <application id="org.gnome.meld.desktop" score="2" last-seen="1667341642"/>
-    <application id="code.desktop" score="452" last-seen="1667351704"/>
+    <application id="code.desktop" score="466" last-seen="1667469617"/>
     <application id="opera.desktop" score="10" last-seen="1667161963"/>
     <application id="org.gnome.Software.desktop" score="190" last-seen="1667451336"/>
     <application id="hardinfo.desktop" score="1" last-seen="1667015655"/>
@@ -24,13 +24,13 @@
     <application id="org.gnome.Terminal.desktop" score="2000" last-seen="1667457918"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="12" last-seen="1667059656"/>
     <application id="org.gnome.Shotwell.desktop" score="4" last-seen="1667350829"/>
-    <application id="org.gnome.Nautilus.desktop" score="797" last-seen="1667459927"/>
+    <application id="org.gnome.Nautilus.desktop" score="797" last-seen="1667469317"/>
     <application id="com.valvesoftware.Steam.desktop" score="13" last-seen="1667014220"/>
     <application id="org.gnome.FileRoller.desktop" score="3" last-seen="1667060225"/>
     <application id="update-manager.desktop" score="45" last-seen="1667443374"/>
-    <application id="google-chrome.desktop" score="6083" last-seen="1667460960"/>
+    <application id="google-chrome.desktop" score="7303" last-seen="1667469541"/>
     <application id="org.gnome.baobab.desktop" score="6" last-seen="1667016438"/>
     <application id="synaptic.desktop" score="105" last-seen="1667346519"/>
-    <application id="org.gnome.gedit.desktop" score="165" last-seen="1667446859"/>
+    <application id="org.gnome.gedit.desktop" score="165" last-seen="1667469321"/>
   </context>
 </application-state>
