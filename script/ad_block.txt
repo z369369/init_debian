@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Homepage: 
 ! License: 
-! Title: LWH LIST
-! Expires: 3000 days
-! Version: 20221029
+! Title: LWH Ads Block
+! Expires: 9000 days
+! Version: 20221104
 
 ! URL filters
 *coupang.com^
