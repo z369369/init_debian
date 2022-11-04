@@ -27,12 +27,17 @@ sudo apt install -y google-chrome-stable
 sudo add-apt-repository ppa:mozillateam/ppa
 
 echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox 
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
+' | sudo tee /etc/apt/preferences.d/no_snap 
 
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+echo '
+Package: firefox*
+Pin: release o=Ubuntu*
+Pin-Priority: -1
+' | sudo tee /etc/apt/preferences.d/firefox_no_snap
+
 sudo apt install firefox
 
 echo "============== [E] Install - ppa =============="
