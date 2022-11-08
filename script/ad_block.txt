@@ -8,4 +8,4 @@
 ! URL filters
 *coupang.com^
 
-tisword.com##.mb-6.flex-grow.md
+tisword.com##.mb-6.flex-grow
