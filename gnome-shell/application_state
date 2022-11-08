@@ -5,13 +5,13 @@
     <application id="gnome-session-properties.desktop" score="0" last-seen="1667446859"/>
     <application id="org.gnome.gThumb.desktop" score="0" last-seen="1667595842"/>
     <application id="apport-gtk.desktop" score="1" last-seen="1667447755"/>
-    <application id="firefox.desktop" score="9725" last-seen="1667890847"/>
+    <application id="firefox.desktop" score="10189" last-seen="1667894148"/>
     <application id="org.gnome.tweaks.desktop" score="0" last-seen="1667477071"/>
     <application id="software-properties-gtk.desktop" score="10" last-seen="1667595553"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1667890853"/>
     <application id="io.atom.Atom.desktop" score="2" last-seen="1667533302"/>
     <application id="org.gnome.meld.desktop" score="2" last-seen="1667341642"/>
-    <application id="code.desktop" score="567" last-seen="1667876540"/>
+    <application id="code.desktop" score="572" last-seen="1667894155"/>
     <application id="opera.desktop" score="18" last-seen="1667805502"/>
     <application id="org.gnome.Software.desktop" score="212" last-seen="1667873884"/>
     <application id="virt-manager.desktop" score="52" last-seen="1667458524"/>
@@ -32,6 +32,6 @@
     <application id="google-chrome.desktop" score="7681" last-seen="1667890033"/>
     <application id="ibus-setup-hangul.desktop" score="0" last-seen="1667508582"/>
     <application id="synaptic.desktop" score="114" last-seen="1667874256"/>
-    <application id="org.gnome.gedit.desktop" score="276" last-seen="1667876606"/>
+    <application id="org.gnome.gedit.desktop" score="276" last-seen="1667894025"/>
   </context>
 </application-state>
