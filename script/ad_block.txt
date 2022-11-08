@@ -7,5 +7,3 @@
 
 ! URL filters
 *coupang.com^
-
-tisword.com##.mb-6.flex-grow
