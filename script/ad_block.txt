@@ -6,4 +6,5 @@
 ! Version: 20221104
 
 ! URL filters
-*coupang.com^
+*.coupang.com^
+*.ilbe.com^
