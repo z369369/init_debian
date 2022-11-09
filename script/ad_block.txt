@@ -3,7 +3,7 @@
 ! License: 
 ! Title: LWH Ads Block
 ! Expires: 9000 days
-! Version: 20221104
+! Version: 20221109
 
 ! URL filters
 *.coupang.com^
