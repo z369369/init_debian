@@ -5,12 +5,12 @@
     <application id="gnome-session-properties.desktop" score="0" last-seen="1667446859"/>
     <application id="org.gnome.gThumb.desktop" score="0" last-seen="1667595842"/>
     <application id="apport-gtk.desktop" score="1" last-seen="1667447755"/>
-    <application id="firefox.desktop" score="11562" last-seen="1667979077"/>
+    <application id="firefox.desktop" score="11624" last-seen="1667979806"/>
     <application id="org.gnome.tweaks.desktop" score="0" last-seen="1667477071"/>
     <application id="software-properties-gtk.desktop" score="10" last-seen="1667595553"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="2" last-seen="1667896383"/>
     <application id="io.atom.Atom.desktop" score="2" last-seen="1667533302"/>
-    <application id="code.desktop" score="603" last-seen="1667976984"/>
+    <application id="code.desktop" score="608" last-seen="1667979842"/>
     <application id="opera.desktop" score="18" last-seen="1667805502"/>
     <application id="org.gnome.Software.desktop" score="212" last-seen="1667873884"/>
     <application id="virt-manager.desktop" score="52" last-seen="1667458524"/>

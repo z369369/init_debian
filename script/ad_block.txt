@@ -9,3 +9,5 @@
 *.coupang.com^
 *.ilbe.com^
 *.wemakeprice.com^
+*.pinterest.co.kr^
+*.quora.com^
