@@ -10,4 +10,6 @@
 *.ilbe.com^
 *.wemakeprice.com^
 *.pinterest.co.kr^
+*.pinterest.com^
 *.quora.com^
+*.afreecatv.com^
