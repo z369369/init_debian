@@ -6,9 +6,8 @@
 ! Version: 20221109
 
 ! URL filters
-!*.coupang.com^
 !*.wemakeprice.com^
-
+*.coupang.com^
 *.ilbe.com^
 *.pinterest.co.kr^
 *.pinterest.com^
