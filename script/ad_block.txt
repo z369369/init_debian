@@ -7,9 +7,9 @@
 
 ! URL filters
 !*.wemakeprice.com^
-*.coupang.com^
-*.ilbe.com^
-*.pinterest.co.kr^
-*.pinterest.com^
-*.quora.com^
-*.afreecatv.com^
+coupang.com^
+ilbe.com^
+pinterest.co.kr^
+pinterest.com^
+quora.com^
+afreecatv.com^
