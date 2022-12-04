@@ -13,3 +13,5 @@ pinterest.co.kr^
 pinterest.com^
 quora.com^
 afreecatv.com^
+facebook.com^
+instagram.com^

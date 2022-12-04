@@ -1,22 +1,18 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1669477940"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1669176189"/>
-    <application id="google-chrome.desktop" score="3703" last-seen="1669523445"/>
-    <application id="software-properties-gtk.desktop" score="0" last-seen="1669103898"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1669477937"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1669298275"/>
-    <application id="gnome-control-center.desktop" score="49.25" last-seen="1669467174"/>
-    <application id="org.gnome.gedit.desktop" score="289.5" last-seen="1669389761"/>
-    <application id="update-manager.desktop" score="30" last-seen="1669522135"/>
-    <application id="org.gnome.Nautilus.desktop" score="241" last-seen="1669522112"/>
-    <application id="opera.desktop" score="43" last-seen="1669023722"/>
-    <application id="firefox.desktop" score="22715.75" last-seen="1669523733"/>
-    <application id="org.gnome.Terminal.desktop" score="693.5" last-seen="1669522155"/>
-    <application id="synaptic.desktop" score="20" last-seen="1669255265"/>
-    <application id="org.gnome.baobab.desktop" score="0.5" last-seen="1669008101"/>
-    <application id="code.desktop" score="19" last-seen="1669523678"/>
-    <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0" last-seen="1669183443"/>
+    <application id="org.gnome.FileRoller.desktop" score="1" last-seen="1669716612"/>
+    <application id="google-chrome.desktop" score="2685.5" last-seen="1670142636"/>
+    <application id="org.gnome.Software.desktop" score="1" last-seen="1669781420"/>
+    <application id="virt-manager.desktop" score="142" last-seen="1669720452"/>
+    <application id="gnome-control-center.desktop" score="33.625" last-seen="1670073299"/>
+    <application id="org.gnome.gedit.desktop" score="170.75" last-seen="1669790248"/>
+    <application id="update-manager.desktop" score="56.5" last-seen="1670141939"/>
+    <application id="org.gnome.Nautilus.desktop" score="187.5" last-seen="1670142049"/>
+    <application id="org.gnome.Calculator.desktop" score="1" last-seen="1669885944"/>
+    <application id="org.gnome.Terminal.desktop" score="367.75" last-seen="1670141950"/>
+    <application id="firefox.desktop" score="23589.375" last-seen="1670142568"/>
+    <application id="opera.desktop" score="16" last-seen="1669964043"/>
+    <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0" last-seen="1669611394"/>
   </context>
 </application-state>
