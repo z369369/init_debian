@@ -16,6 +16,6 @@ sudo apt remove --purge -y \
     rhythmbox totem deja-dup \
     simple-scan cheese hexchat \
     aisleriot gnome-{mahjongg,mines,sudoku} \
-    sgt-* libreoffice* ubuntu-wallpapers*
+    sgt-* libreoffice* ubuntu-wallpapers* evolution*
 
 echo "============== [E] Remove - unuse =============="
