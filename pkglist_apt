@@ -22,7 +22,6 @@ libvirt-clients
 libvirt-daemon-system
 meld
 neofetch
-net-tools
 numlockx
 playonlinux
 qemu-kvm

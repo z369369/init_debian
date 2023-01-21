@@ -4,26 +4,26 @@
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="5" last-seen="1674117673"/>
     <application id="org.gnome.tweaks.desktop" score="4" last-seen="1674023563"/>
     <application id="google-chrome.desktop" score="1013.5940376510844" last-seen="1674129104"/>
-    <application id="virt-manager.desktop" score="0.5" last-seen="1673939476"/>
+    <application id="virt-manager.desktop" score="119.5" last-seen="1674283844"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="3.5" last-seen="1674024404"/>
     <application id="software-properties-gtk.desktop" score="10" last-seen="1674279876"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1674098648"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1674024423"/>
     <application id="gnome-control-center.desktop" score="82.398224224569276" last-seen="1674279958"/>
-    <application id="stacer.desktop" score="9" last-seen="1673939263"/>
+    <application id="stacer.desktop" score="14" last-seen="1674281262"/>
     <application id="update-manager.desktop" score="1198374.8422854291" last-seen="1674024936"/>
     <application id="org.gnome.Nautilus.desktop" score="53.145996442995965" last-seen="1674279649"/>
     <application id="libreoffice-startcenter.desktop" score="4" last-seen="1674098649"/>
     <application id="org.freecadweb.FreeCAD.desktop" score="0" last-seen="1673940418"/>
     <application id="opera.desktop" score="99.515625" last-seen="1674105684"/>
-    <application id="firefox.desktop" score="22771.621659583179" last-seen="1674279948"/>
-    <application id="org.gnome.Terminal.desktop" score="216.31128042889759" last-seen="1674279909"/>
-    <application id="org.gnome.gedit.desktop" score="237.35903974017128" last-seen="1674206093"/>
+    <application id="firefox.desktop" score="23077.621659583179" last-seen="1674283853"/>
+    <application id="org.gnome.Terminal.desktop" score="289.31128042889759" last-seen="1674283343"/>
+    <application id="org.gnome.gedit.desktop" score="239.35903974017128" last-seen="1674282972"/>
     <application id="org.gnome.baobab.desktop" score="0" last-seen="1674239317"/>
     <application id="org.gnome.Evolution.desktop" score="8" last-seen="1674045456"/>
-    <application id="synaptic.desktop" score="39.5" last-seen="1674034348"/>
+    <application id="synaptic.desktop" score="39.5" last-seen="1674283866"/>
     <application id="org.gnome.Software.desktop" score="65.5" last-seen="1674279899"/>
-    <application id="code.desktop" score="24" last-seen="1674279678"/>
+    <application id="code.desktop" score="51" last-seen="1674283846"/>
     <application id="org.gnome.design.Contrast.desktop" score="0" last-seen="1674239295"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1673940635"/>
     <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1674239311"/>
