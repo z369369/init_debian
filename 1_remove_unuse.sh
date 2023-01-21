@@ -11,11 +11,6 @@ sudo apt autoremove --purge -y snapd
 sudo rm -rf /var/cache/snapd/
 rm -rf ~/snap
 
-sudo apt remove --purge -y \
-    thunderbird gnome-games \
-    rhythmbox totem deja-dup \
-    simple-scan cheese hexchat \
-    aisleriot gnome-{mahjongg,mines,sudoku} \
-    sgt-* libreoffice* ubuntu-wallpapers* evolution*
+sudo apt remove --purge -y $(cat pkglist_apt_purge)
 
 echo "============== [E] Remove - unuse =============="
