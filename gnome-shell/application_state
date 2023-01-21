@@ -1,23 +1,24 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="82.398224224569276" last-seen="1674279958"/>
+    <application id="gnome-control-center.desktop" score="85.398224224569276" last-seen="1674293837"/>
     <application id="org.freecadweb.FreeCAD.desktop" score="0" last-seen="1673940418"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1674287241"/>
-    <application id="firefox.desktop" score="23527.621659583179" last-seen="1674290454"/>
+    <application id="firefox.desktop" score="23975.621659583179" last-seen="1674293837"/>
     <application id="org.gnome.tweaks.desktop" score="4" last-seen="1674023563"/>
     <application id="software-properties-gtk.desktop" score="10" last-seen="1674279876"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1674024423"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="5" last-seen="1674117673"/>
-    <application id="code.desktop" score="128" last-seen="1674288220"/>
+    <application id="code.desktop" score="132" last-seen="1674290615"/>
     <application id="opera.desktop" score="99.515625" last-seen="1674105684"/>
     <application id="org.gnome.Software.desktop" score="65.5" last-seen="1674279899"/>
     <application id="virt-manager.desktop" score="119.5" last-seen="1674284414"/>
+    <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
     <application id="org.gnome.Evolution.desktop" score="10" last-seen="1674287269"/>
     <application id="org.gnome.Calculator.desktop" score="0" last-seen="1674287047"/>
     <application id="stacer.desktop" score="14" last-seen="1674281262"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1673940635"/>
-    <application id="org.gnome.Terminal.desktop" score="465.31128042889759" last-seen="1674290424"/>
+    <application id="org.gnome.Terminal.desktop" score="483.31128042889759" last-seen="1674293839"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1674286409"/>
     <application id="org.libreoffice.LibreOffice.writer.desktop" score="2" last-seen="1674287764"/>
     <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1674239311"/>
@@ -28,7 +29,7 @@
     <application id="update-manager.desktop" score="1198374.8422854291" last-seen="1674024936"/>
     <application id="google-chrome.desktop" score="1013.5940376510844" last-seen="1674286495"/>
     <application id="org.gnome.baobab.desktop" score="0" last-seen="1674239317"/>
-    <application id="synaptic.desktop" score="219.5" last-seen="1674288467"/>
+    <application id="synaptic.desktop" score="220.5" last-seen="1674290572"/>
     <application id="org.gnome.design.Contrast.desktop" score="0" last-seen="1674239295"/>
     <application id="org.gnome.gedit.desktop" score="239.35903974017128" last-seen="1674282972"/>
   </context>
