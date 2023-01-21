@@ -1,26 +1,31 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.gThumb.desktop" score="0" last-seen="1673084245"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1673051923"/>
-    <application id="org.gnome.Evince.desktop" score="0.3125" last-seen="1673234277"/>
-    <application id="google-chrome.desktop" score="63.188075302168727" last-seen="1673496786"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="0" last-seen="1673417889"/>
-    <application id="org.gnome.Software.desktop" score="1" last-seen="1673415179"/>
-    <application id="info.smplayer.SMPlayer.desktop" score="2.625" last-seen="1673008742"/>
-    <application id="org.gnome.gedit.desktop" score="73.718079480342567" last-seen="1673499790"/>
-    <application id="update-manager.desktop" score="2396748.6845708583" last-seen="1673487304"/>
-    <application id="org.gnome.Nautilus.desktop" score="20.291992885991931" last-seen="1673496377"/>
-    <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1673007366"/>
-    <application id="com.obsproject.Studio.desktop" score="23.5" last-seen="1673008893"/>
-    <application id="org.gnome.Calculator.desktop" score="1.75" last-seen="1673345219"/>
-    <application id="org.gnome.Terminal.desktop" score="17.622560857795179" last-seen="1673496377"/>
-    <application id="firefox.desktop" score="9173.2433191663586" last-seen="1673499789"/>
-    <application id="opera.desktop" score="79.03125" last-seen="1673497262"/>
-    <application id="gnome-control-center.desktop" score="13.796448449138552" last-seen="1673496384"/>
-    <application id="code.desktop" score="0" last-seen="1673144151"/>
-    <application id="timeshift-gtk.desktop" score="0.875" last-seen="1673009207"/>
-    <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0" last-seen="1673438505"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="5" last-seen="1674117673"/>
+    <application id="org.gnome.tweaks.desktop" score="4" last-seen="1674023563"/>
+    <application id="google-chrome.desktop" score="1013.5940376510844" last-seen="1674129104"/>
+    <application id="virt-manager.desktop" score="0.5" last-seen="1673939476"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="3.5" last-seen="1674024404"/>
+    <application id="software-properties-gtk.desktop" score="10" last-seen="1674279876"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1674098648"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1674024423"/>
+    <application id="gnome-control-center.desktop" score="82.398224224569276" last-seen="1674279958"/>
+    <application id="stacer.desktop" score="9" last-seen="1673939263"/>
+    <application id="update-manager.desktop" score="1198374.8422854291" last-seen="1674024936"/>
+    <application id="org.gnome.Nautilus.desktop" score="53.145996442995965" last-seen="1674279649"/>
+    <application id="libreoffice-startcenter.desktop" score="4" last-seen="1674098649"/>
+    <application id="org.freecadweb.FreeCAD.desktop" score="0" last-seen="1673940418"/>
+    <application id="opera.desktop" score="99.515625" last-seen="1674105684"/>
+    <application id="firefox.desktop" score="22771.621659583179" last-seen="1674279948"/>
+    <application id="org.gnome.Terminal.desktop" score="216.31128042889759" last-seen="1674279909"/>
+    <application id="org.gnome.gedit.desktop" score="237.35903974017128" last-seen="1674206093"/>
+    <application id="org.gnome.baobab.desktop" score="0" last-seen="1674239317"/>
+    <application id="org.gnome.Evolution.desktop" score="8" last-seen="1674045456"/>
+    <application id="synaptic.desktop" score="39.5" last-seen="1674034348"/>
+    <application id="org.gnome.Software.desktop" score="65.5" last-seen="1674279899"/>
+    <application id="code.desktop" score="24" last-seen="1674279678"/>
+    <application id="org.gnome.design.Contrast.desktop" score="0" last-seen="1674239295"/>
+    <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1673940635"/>
+    <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1674239311"/>
   </context>
 </application-state>
