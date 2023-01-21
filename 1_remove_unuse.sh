@@ -15,6 +15,6 @@ sudo apt remove --purge -y \
     thunderbird gnome-games \
     rhythmbox totem deja-dup \
     simple-scan cheese hexchat \
-    aisleriot gnome-{mahjongg,mines,sudoku} sgt-*
+    aisleriot gnome-{mahjongg,mines,sudoku} sgt-* libreoffice*
 
 echo "============== [E] Remove - unuse =============="
