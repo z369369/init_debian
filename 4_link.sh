@@ -17,6 +17,10 @@ sudo echo "UUID=fdcd9bf3-7e29-467b-926f-5fdd8c197a7d /media/lwh/backup_disk ext4
 ln -s /media/lwh/backup_disk ~/Desktop/backup_disk
 echo "============== [E] Link - hdd =============="
 
+echo "============== [S] Edit - Gnome Calenar temperature-unit =============="
+gsettings set org.gnome.GWeather temperature-unit centigrade
+echo "============== [E] Link - Gnome Calenar temperature-unit =============="
+
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/

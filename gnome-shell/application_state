@@ -1,30 +1,27 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1674287047"/>
-    <application id="stacer.desktop" score="7" last-seen="1674281262"/>
-    <application id="usb-creator-gtk.desktop" score="0" last-seen="1674319355"/>
-    <application id="synaptic.desktop" score="149.75" last-seen="1674354833"/>
-    <application id="google-chrome.desktop" score="19155.797018825542" last-seen="1674839192"/>
+    <application id="org.gnome.Software.desktop" score="60.25" last-seen="1674883775"/>
+    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1674950447"/>
+    <application id="google-chrome.desktop" score="22425.797018825542" last-seen="1674911003"/>
     <application id="virt-manager.desktop" score="205.25" last-seen="1674749474"/>
     <application id="org.gnome.Evolution-alarm-notify.desktop" score="0" last-seen="1674810817"/>
-    <application id="software-properties-gtk.desktop" score="5" last-seen="1674279876"/>
+    <application id="software-properties-gtk.desktop" score="1" last-seen="1674950465"/>
     <application id="info.smplayer.SMPlayer.desktop" score="0" last-seen="1674680378"/>
-    <application id="transmission-gtk.desktop" score="0" last-seen="1674319341"/>
-    <application id="update-manager.desktop" score="599187.42114271456" last-seen="1674639075"/>
-    <application id="libreoffice-calc.desktop" score="0" last-seen="1674323255"/>
-    <application id="com.obsproject.Studio.desktop" score="0" last-seen="1674287245"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1674287241"/>
-    <application id="org.gnome.Nautilus.desktop" score="33.072998221497983" last-seen="1674882758"/>
-    <application id="shotwell.desktop" score="1" last-seen="1674319381"/>
-    <application id="org.gnome.Software.desktop" score="60.25" last-seen="1674882805"/>
-    <application id="gnome-control-center.desktop" score="45.699112112284638" last-seen="1674839196"/>
-    <application id="firefox.desktop" score="12949.81082979159" last-seen="1674882764"/>
-    <application id="opera.desktop" score="63.2578125" last-seen="1674359850"/>
-    <application id="code.desktop" score="85.5" last-seen="1674323523"/>
     <application id="org.gnome.gedit.desktop" score="120.17951987008564" last-seen="1674354444"/>
-    <application id="timeshift-gtk.desktop" score="7.5" last-seen="1674319196"/>
-    <application id="org.gnome.Evolution.desktop" score="5" last-seen="1674287269"/>
-    <application id="org.gnome.Terminal.desktop" score="272.65564021444879" last-seen="1674882758"/>
+    <application id="update-manager.desktop" score="599187.42114271456" last-seen="1674639075"/>
+    <application id="libreoffice-calc.desktop" score="0" last-seen="1674888224"/>
+    <application id="org.gnome.Nautilus.desktop" score="33.072998221497983" last-seen="1674949536"/>
+    <application id="apport-gtk.desktop" score="0" last-seen="1674950638"/>
+    <application id="org.gnome.Calendar.desktop" score="4" last-seen="1674950707"/>
+    <application id="gnome-control-center.desktop" score="45.699112112284638" last-seen="1674839196"/>
+    <application id="opera.desktop" score="63.2578125" last-seen="1674359850"/>
+    <application id="firefox.desktop" score="13665.81082979159" last-seen="1674950708"/>
+    <application id="libreoffice-draw.desktop" score="0" last-seen="1674888232"/>
+    <application id="synaptic.desktop" score="149.75" last-seen="1674354833"/>
+    <application id="yelp.desktop" score="2" last-seen="1674950446"/>
+    <application id="code.desktop" score="100.5" last-seen="1674887520"/>
+    <application id="org.gnome.Evolution.desktop" score="12" last-seen="1674884454"/>
+    <application id="org.gnome.Terminal.desktop" score="308.65564021444879" last-seen="1674949615"/>
   </context>
 </application-state>
