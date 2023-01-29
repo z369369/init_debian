@@ -20,8 +20,3 @@ sudo flatpak install -y $(cat pkglist_flatpak)
 sudo chown -R lwh:lwh ~/.var
 
 echo "============== [E] Install - flatpak =============="
-
-echo "============== [S] Config - Git =============="
-git config --global user.name "ppp821203"
-git config --global user.email ppp821203@gmail.com
-echo "============== [E] Config - Git =============="

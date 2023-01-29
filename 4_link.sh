@@ -1,4 +1,9 @@
 #!/bin/bash
+echo "============== [S] Config - Git =============="
+git config --global user.name "ppp821203"
+git config --global user.email ppp821203@gmail.com
+echo "============== [E] Config - Git =============="
+
 echo "============== [S] Link - shell, script =============="
 ln -s ~/git/linux_init/script ~/script
 
@@ -8,7 +13,6 @@ ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
 rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 echo "============== [E] Link - shell, script =============="
-
 
 echo "============== [S] Link - hdd =============="
 #root 
