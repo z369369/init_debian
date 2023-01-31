@@ -4,7 +4,7 @@
     <application id="gnome-control-center.desktop" score="68.699112112284638" last-seen="1675075304"/>
     <application id="org.gnome.Evolution-alarm-notify.desktop" score="0" last-seen="1674810817"/>
     <application id="apport-gtk.desktop" score="0" last-seen="1674950806"/>
-    <application id="firefox.desktop" score="14545.81082979159" last-seen="1675103687"/>
+    <application id="firefox.desktop" score="14559.81082979159" last-seen="1675156534"/>
     <application id="software-properties-gtk.desktop" score="13" last-seen="1674959109"/>
     <application id="org.gnome.eog.desktop" score="0" last-seen="1674956309"/>
     <application id="code.desktop" score="153.5" last-seen="1674954694"/>
@@ -17,10 +17,10 @@
     <application id="stacer.desktop" score="5" last-seen="1674959418"/>
     <application id="org.gnome.Calendar.desktop" score="5" last-seen="1674950819"/>
     <application id="info.smplayer.SMPlayer.desktop" score="2" last-seen="1674950963"/>
-    <application id="org.gnome.Terminal.desktop" score="387.65564021444879" last-seen="1675103797"/>
-    <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1674956282"/>
-    <application id="org.gnome.Nautilus.desktop" score="40.072998221497983" last-seen="1675103685"/>
+    <application id="org.gnome.Terminal.desktop" score="459.65564021444879" last-seen="1675156876"/>
+    <application id="org.gnome.DiskUtility.desktop" score="2" last-seen="1675156047"/>
     <application id="gnome-system-monitor.desktop" score="25" last-seen="1674960084"/>
+    <application id="org.gnome.Nautilus.desktop" score="95.072998221497983" last-seen="1675156880"/>
     <application id="com.valvesoftware.Steam.desktop" score="0" last-seen="1674956539"/>
     <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1674950447"/>
     <application id="yelp.desktop" score="2" last-seen="1674950446"/>
@@ -28,8 +28,9 @@
     <application id="libreoffice-calc.desktop" score="18" last-seen="1674962736"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="4" last-seen="1674958581"/>
     <application id="google-chrome.desktop" score="23012.797018825542" last-seen="1675103613"/>
-    <application id="org.gnome.baobab.desktop" score="0" last-seen="1674956287"/>
     <application id="synaptic.desktop" score="167.75" last-seen="1675103899"/>
-    <application id="org.gnome.gedit.desktop" score="120.17951987008564" last-seen="1674950968"/>
+    <application id="org.gnome.baobab.desktop" score="3" last-seen="1675156282"/>
+    <application id="org.gnome.gedit.desktop" score="120.17951987008564" last-seen="1675156127"/>
+    <application id="timeshift-gtk.desktop" score="27" last-seen="1675156763"/>
   </context>
 </application-state>
