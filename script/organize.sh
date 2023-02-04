@@ -8,7 +8,7 @@ cd ~/Downloads
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures
 
 # Audio Files 
-mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Musics
+mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music
 
 # Video Files 
 mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mpv *.mp2 *.wmv ~/Videos
