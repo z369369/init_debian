@@ -19,6 +19,7 @@ nautilus-image-converter
 nautilus-gtkhash
 net-tools
 libfuse2
+libglib2.0-dev-bin
 libvirt-clients
 libvirt-daemon-system
 meld

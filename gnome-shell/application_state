@@ -1,49 +1,33 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="138.69911211228464" last-seen="1675609510"/>
-    <application id="org.gnome.gThumb.desktop" score="0" last-seen="1675495765"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1675607807"/>
-    <application id="gprename.desktop" score="0" last-seen="1675334694"/>
-    <application id="firefox.desktop" score="24104.81082979159" last-seen="1675612038"/>
-    <application id="org.gnome.tweaks.desktop" score="7" last-seen="1675197836"/>
-    <application id="software-properties-gtk.desktop" score="24" last-seen="1675603738"/>
-    <application id="org.gnome.seahorse.Application.desktop" score="12" last-seen="1675329178"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="0" last-seen="1675193096"/>
-    <application id="io.atom.Atom.desktop" score="0" last-seen="1675495767"/>
-    <application id="org.gnome.meld.desktop" score="1" last-seen="1675520386"/>
-    <application id="code.desktop" score="209.5" last-seen="1675612051"/>
-    <application id="opera.desktop" score="5" last-seen="1675193740"/>
-    <application id="nm-connection-editor.desktop" score="1" last-seen="1675329189"/>
-    <application id="org.gnome.Software.desktop" score="148.25" last-seen="1675603722"/>
-    <application id="usb-creator-gtk.desktop" score="2" last-seen="1675197895"/>
-    <application id="virt-manager.desktop" score="1337.25" last-seen="1675611983"/>
-    <application id="hardinfo.desktop" score="18" last-seen="1675510669"/>
-    <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
-    <application id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop" score="1" last-seen="1675233564"/>
-    <application id="com.discordapp.Discord.desktop" score="151" last-seen="1675607404"/>
-    <application id="gnome-network-panel.desktop" score="0" last-seen="0"/>
-    <application id="org.gnome.Evolution.desktop" score="12" last-seen="1675602888"/>
-    <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="2" last-seen="1675232502"/>
-    <application id="org.gnome.Calculator.desktop" score="5" last-seen="1675234539"/>
-    <application id="stacer.desktop" score="57" last-seen="1675605067"/>
-    <application id="org.atheme.audacious.desktop" score="9" last-seen="1675608090"/>
-    <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1675245247"/>
-    <application id="org.gnome.Terminal.desktop" score="1008.6556402144488" last-seen="1675612062"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="109" last-seen="1675518611"/>
-    <application id="org.gnome.DiskUtility.desktop" score="6" last-seen="1675602965"/>
-    <application id="org.gnome.Nautilus.desktop" score="515.07299822149798" last-seen="1675610901"/>
-    <application id="timeshift-gtk.desktop" score="90" last-seen="1675603001"/>
-    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1675336715"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="3" last-seen="1675696318"/>
     <application id="org.gnome.Evince.desktop" score="23" last-seen="1675496638"/>
-    <application id="update-manager.desktop" score="599187.42114271456" last-seen="1675327235"/>
-    <application id="libreoffice-calc.desktop" score="19" last-seen="1675193425"/>
-    <application id="google-chrome.desktop" score="24760.797018825542" last-seen="1675600202"/>
+    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1675690777"/>
+    <application id="gnome-session-properties.desktop" score="1" last-seen="1675652700"/>
+    <application id="google-chrome.desktop" score="24796.797018825542" last-seen="1675695329"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="145" last-seen="1675694086"/>
     <application id="ibus-setup-hangul.desktop" score="4" last-seen="1675233214"/>
-    <application id="org.audacityteam.Audacity.desktop" score="1" last-seen="1675347820"/>
-    <application id="synaptic.desktop" score="222.75" last-seen="1675603938"/>
-    <application id="org.gnome.gedit.desktop" score="234.17951987008564" last-seen="1675604030"/>
-    <application id="gnome-system-monitor.desktop" score="76" last-seen="1675609485"/>
-    <application id="org.gnome.baobab.desktop" score="13" last-seen="1675603110"/>
+    <application id="software-properties-gtk.desktop" score="46" last-seen="1675698170"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1675696316"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="0" last-seen="1675193096"/>
+    <application id="gnome-control-center.desktop" score="187.69911211228464" last-seen="1675695259"/>
+    <application id="nm-connection-editor.desktop" score="1" last-seen="1675329189"/>
+    <application id="update-manager.desktop" score="599187.42114271456" last-seen="1675327235"/>
+    <application id="org.gnome.Nautilus.desktop" score="582.07299822149798" last-seen="1675698015"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1675607807"/>
+    <application id="stacer.desktop" score="3" last-seen="1675698326"/>
+    <application id="org.gnome.gedit.desktop" score="239.17951987008564" last-seen="1675696026"/>
+    <application id="org.gnome.seahorse.Application.desktop" score="12" last-seen="1675329178"/>
+    <application id="org.gnome.Calculator.desktop" score="5" last-seen="1675234539"/>
+    <application id="org.gnome.Terminal.desktop" score="1238.6556402144488" last-seen="1675698346"/>
+    <application id="opera.desktop" score="5" last-seen="1675193740"/>
+    <application id="firefox.desktop" score="25656.81082979159" last-seen="1675698062"/>
+    <application id="org.gnome.DiskUtility.desktop" score="30" last-seen="1675695923"/>
+    <application id="gnome-system-monitor.desktop" score="80" last-seen="1675652710"/>
+    <application id="apport-gtk.desktop" score="0" last-seen="1675698174"/>
+    <application id="timeshift-gtk.desktop" score="7" last-seen="1675696978"/>
+    <application id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop" score="1" last-seen="1675233564"/>
+    <application id="synaptic.desktop" score="7" last-seen="1675696433"/>
   </context>
 </application-state>
