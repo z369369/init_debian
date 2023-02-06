@@ -19,14 +19,6 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 yes '' | sudo add-apt-repository "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" 
 sudo apt install -y google-chrome-stable
 
-#kernel
-sudo add-apt-repository ppa:cappelikan/ppa
-sudo apt install mainline
-
-##copyq
-# yes '' | sudo add-apt-repository -y ppa:hluk/copyq
-# sudo apt install -y copyq
-
 #firefox
 sudo add-apt-repository ppa:mozillateam/ppa
 
@@ -43,5 +35,9 @@ Pin-Priority: -1
 ' | sudo tee /etc/apt/preferences.d/firefox_no_snap
 
 sudo apt install firefox
+
+#kernel
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt install mainline
 
 echo "============== [E] Install - ppa =============="
