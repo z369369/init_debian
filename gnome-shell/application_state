@@ -1,33 +1,38 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="3" last-seen="1675696318"/>
-    <application id="org.gnome.Evince.desktop" score="23" last-seen="1675496638"/>
-    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1675690777"/>
-    <application id="gnome-session-properties.desktop" score="1" last-seen="1675652700"/>
-    <application id="google-chrome.desktop" score="24796.797018825542" last-seen="1675695329"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="145" last-seen="1675694086"/>
-    <application id="ibus-setup-hangul.desktop" score="4" last-seen="1675233214"/>
-    <application id="software-properties-gtk.desktop" score="46" last-seen="1675698170"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1675696316"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="0" last-seen="1675193096"/>
-    <application id="gnome-control-center.desktop" score="187.69911211228464" last-seen="1675695259"/>
-    <application id="nm-connection-editor.desktop" score="1" last-seen="1675329189"/>
-    <application id="update-manager.desktop" score="599187.42114271456" last-seen="1675327235"/>
-    <application id="org.gnome.Nautilus.desktop" score="582.07299822149798" last-seen="1675698015"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1675607807"/>
-    <application id="stacer.desktop" score="3" last-seen="1675698326"/>
-    <application id="org.gnome.gedit.desktop" score="239.17951987008564" last-seen="1675696026"/>
-    <application id="org.gnome.seahorse.Application.desktop" score="12" last-seen="1675329178"/>
-    <application id="org.gnome.Calculator.desktop" score="5" last-seen="1675234539"/>
-    <application id="org.gnome.Terminal.desktop" score="1238.6556402144488" last-seen="1675698346"/>
-    <application id="opera.desktop" score="5" last-seen="1675193740"/>
-    <application id="firefox.desktop" score="25656.81082979159" last-seen="1675698062"/>
-    <application id="org.gnome.DiskUtility.desktop" score="30" last-seen="1675695923"/>
-    <application id="gnome-system-monitor.desktop" score="80" last-seen="1675652710"/>
+    <application id="gnome-control-center.desktop" score="104.84955605614232" last-seen="1675704370"/>
+    <application id="gnome-session-properties.desktop" score="0.5" last-seen="1675652700"/>
     <application id="apport-gtk.desktop" score="0" last-seen="1675698174"/>
-    <application id="timeshift-gtk.desktop" score="7" last-seen="1675696978"/>
-    <application id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop" score="1" last-seen="1675233564"/>
-    <application id="synaptic.desktop" score="7" last-seen="1675696433"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1675607807"/>
+    <application id="firefox.desktop" score="12967.405414895795" last-seen="1675705326"/>
+    <application id="software-properties-gtk.desktop" score="31" last-seen="1675700694"/>
+    <application id="org.gnome.seahorse.Application.desktop" score="6" last-seen="1675329178"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="0" last-seen="1675193096"/>
+    <application id="code.desktop" score="2" last-seen="1675699931"/>
+    <application id="opera.desktop" score="2.5" last-seen="1675193740"/>
+    <application id="org.gnome.Software.desktop" score="2" last-seen="1675699642"/>
+    <application id="nm-connection-editor.desktop" score="0.5" last-seen="1675329189"/>
+    <application id="virt-manager.desktop" score="23" last-seen="1675699563"/>
+    <application id="chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop" score="0.5" last-seen="1675233564"/>
+    <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
+    <application id="org.gnome.Evolution.desktop" score="0" last-seen="1675700292"/>
+    <application id="org.gnome.Calculator.desktop" score="2.5" last-seen="1675234539"/>
+    <application id="stacer.desktop" score="1.5" last-seen="1675698326"/>
+    <application id="org.gnome.Terminal.desktop" score="661.3278201072244" last-seen="1675705343"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="72.5" last-seen="1675694086"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="1.5" last-seen="1675696318"/>
+    <application id="org.gnome.DiskUtility.desktop" score="15" last-seen="1675695923"/>
+    <application id="org.gnome.Nautilus.desktop" score="300.03649911074899" last-seen="1675704287"/>
+    <application id="gnome-system-monitor.desktop" score="41" last-seen="1675704331"/>
+    <application id="org.gnome.FileRoller.desktop" score="1" last-seen="1675698732"/>
+    <application id="org.gnome.Evince.desktop" score="11.5" last-seen="1675496638"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1675696316"/>
+    <application id="update-manager.desktop" score="299593.71057135728" last-seen="1675327235"/>
+    <application id="google-chrome.desktop" score="12488.398509412771" last-seen="1675704975"/>
+    <application id="ibus-setup-hangul.desktop" score="2" last-seen="1675233214"/>
+    <application id="synaptic.desktop" score="5.5" last-seen="1675700152"/>
+    <application id="org.gnome.gedit.desktop" score="189.08975993504282" last-seen="1675701719"/>
+    <application id="timeshift-gtk.desktop" score="22" last-seen="1675700878"/>
   </context>
 </application-state>
