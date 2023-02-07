@@ -25,6 +25,8 @@ mv *.rar *.zip *.tar *.tar.gz *.7z *.deb ~/Downloads/zip
 # Iso
 mv *.iso ~/Downloads/iso
 
+rm -rf /media/lwh/backup_disk/home/lwh/*
+
 rsync -a --exclude-from /home/lwh --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/lwh/ /media/lwh/backup_disk/home/lwh/
 
 notify-send 'Complete' 'Organizing your downloads Folder'
