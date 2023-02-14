@@ -25,6 +25,11 @@ echo "============== [S] Edit - Gnome Calenar temperature-unit =============="
 gsettings set org.gnome.GWeather temperature-unit centigrade
 echo "============== [E] Link - Gnome Calenar temperature-unit =============="
 
+echo "============== [S] Remove - ubuntu ESM =============="
+sudo mkdir /etc/apt/apt.conf.d/off
+sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
+echo "============== [S] Remove - ubuntu ESM =============="
+
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/
