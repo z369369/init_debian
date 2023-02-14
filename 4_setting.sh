@@ -25,6 +25,10 @@ echo "============== [S] Edit - Gnome Calenar temperature-unit =============="
 gsettings set org.gnome.GWeather temperature-unit centigrade
 echo "============== [E] Link - Gnome Calenar temperature-unit =============="
 
+echo "============== [S] remove built in gnome shell =============="
+sudo rm -rf /usr/share/gnome-shell/*
+echo "============== [E] remove built in gnome shell =============="
+
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/
