@@ -16,7 +16,7 @@ sudo apt install -y code
 
 #chrome
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-yes '' | sudo add-apt-repository "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" 
+sudo add-apt-repository "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main"
 sudo apt install -y google-chrome-stable
 
 #firefox
