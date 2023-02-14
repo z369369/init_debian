@@ -30,6 +30,10 @@ sudo mkdir /etc/apt/apt.conf.d/off
 sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
 echo "============== [S] Remove - ubuntu ESM =============="
 
+echo "============== [S] Remove - ubuntu extension =============="
+sudo rm -rf /usr/share/gnome-shell/extensions/*
+echo "============== [S] Remove - ubuntu extension =============="
+
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/

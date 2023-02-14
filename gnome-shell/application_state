@@ -16,11 +16,11 @@
     <application id="update-manager.desktop" score="74899.42764283932" last-seen="1675926415"/>
     <application id="system-config-printer.desktop" score="0" last-seen="1676394319"/>
     <application id="org.gnome.gedit.desktop" score="109.77243998376071" last-seen="1676394364"/>
-    <application id="firefox.desktop" score="13036.101353723949" last-seen="1676395755"/>
+    <application id="firefox.desktop" score="13136.101353723949" last-seen="1676396642"/>
     <application id="org.gnome.Terminal.desktop" score="529.0819550268061" last-seen="1676395400"/>
     <application id="org.gnome.DiskUtility.desktop" score="10.75" last-seen="1675926614"/>
-    <application id="gnome-system-monitor.desktop" score="35.5" last-seen="1676393089"/>
-    <application id="code.desktop" score="2" last-seen="1676393132"/>
+    <application id="gnome-system-monitor.desktop" score="38.5" last-seen="1676396447"/>
+    <application id="code.desktop" score="7" last-seen="1676396225"/>
     <application id="timeshift-gtk.desktop" score="35" last-seen="1676395757"/>
     <application id="com.opera.Opera.desktop" score="0" last-seen="1676393048"/>
     <application id="gnome-bluetooth-panel.desktop" score="0" last-seen="0"/>
