@@ -15,9 +15,9 @@ rm -f packages.microsoft.gpg
 sudo apt install -y code
 
 #chrome
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main"
-sudo apt install -y google-chrome-stable
+# wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+# sudo add-apt-repository "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main"
+# sudo apt install -y google-chrome-stable
 
 #firefox
 sudo add-apt-repository ppa:mozillateam/ppa
