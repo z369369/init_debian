@@ -1,35 +1,36 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="164.21238901403558" last-seen="1676514957"/>
+    <application id="gnome-control-center.desktop" score="174.21238901403558" last-seen="1676584897"/>
     <application id="org.gnome.gThumb.desktop" score="0" last-seen="1676516274"/>
     <application id="apport-gtk.desktop" score="1" last-seen="1676388615"/>
+    <application id="system-config-printer.desktop" score="0" last-seen="1676394319"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="2" last-seen="1676489022"/>
-    <application id="firefox.desktop" score="21280.101353723949" last-seen="1676554285"/>
+    <application id="firefox.desktop" score="24067.101353723949" last-seen="1676638574"/>
     <application id="org.gnome.tweaks.desktop" score="13" last-seen="1676515322"/>
     <application id="software-properties-gtk.desktop" score="35.75" last-seen="1676393611"/>
-    <application id="org.gnome.Characters.desktop" score="4" last-seen="1676484989"/>
+    <application id="org.gnome.Characters.desktop" score="5" last-seen="1676567180"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1676422104"/>
-    <application id="system-config-printer.desktop" score="0" last-seen="1676394319"/>
     <application id="com.opera.Opera.desktop" score="25" last-seen="1676515318"/>
-    <application id="code.desktop" score="63" last-seen="1676514548"/>
+    <application id="code.desktop" score="68" last-seen="1676555848"/>
     <application id="mainline.desktop" score="7" last-seen="1676297140"/>
     <application id="org.gnome.Software.desktop" score="3" last-seen="1676468998"/>
-    <application id="virt-manager.desktop" score="0" last-seen="1676514653"/>
+    <application id="virt-manager.desktop" score="81" last-seen="1676637923"/>
     <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0" last-seen="1676516070"/>
     <application id="org.gnome.Calculator.desktop" score="2" last-seen="1676523478"/>
     <application id="org.gnome.Extensions.desktop" score="4" last-seen="1676469213"/>
     <application id="stacer.desktop" score="3" last-seen="1676468913"/>
-    <application id="org.gnome.Terminal.desktop" score="608.0819550268061" last-seen="1676554326"/>
+    <application id="org.gnome.Terminal.desktop" score="624.0819550268061" last-seen="1676634864"/>
     <application id="info.smplayer.SMPlayer.desktop" score="8" last-seen="1676516526"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="71.625" last-seen="1676508349"/>
-    <application id="org.gnome.Nautilus.desktop" score="296.50912477768725" last-seen="1676554278"/>
+    <application id="org.gnome.Nautilus.desktop" score="297.50912477768725" last-seen="1676634859"/>
     <application id="gnome-system-monitor.desktop" score="44.5" last-seen="1676514697"/>
     <application id="timeshift-gtk.desktop" score="38" last-seen="1676509795"/>
     <application id="update-manager.desktop" score="74899.42764283932" last-seen="1675926415"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="0" last-seen="1676480442"/>
+    <application id="google-chrome.desktop" score="3161" last-seen="1676584756"/>
     <application id="org.gnome.baobab.desktop" score="0" last-seen="1676466715"/>
     <application id="synaptic.desktop" score="14" last-seen="1676510443"/>
-    <application id="org.gnome.gedit.desktop" score="204.77243998376071" last-seen="1676514434"/>
+    <application id="org.gnome.gedit.desktop" score="310.77243998376071" last-seen="1676638576"/>
   </context>
 </application-state>
