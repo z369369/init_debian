@@ -12,6 +12,7 @@ echo "File is exist"
 cd $folder_path
 pwd
 find . -name \*.json -type f -delete
+rm -rf "Failed Videos"
 
 else
 
