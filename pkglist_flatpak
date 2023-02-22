@@ -23,3 +23,5 @@ org.gnome.gThumb
 org.kde.kdenlive
 org.kde.krita
 org.libreoffice.LibreOffice
+org.fedoraproject.MediaWriter
+com.jgraph.drawio.desktop
