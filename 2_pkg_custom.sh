@@ -37,7 +37,7 @@ Pin-Priority: -1
 sudo apt install firefox
 
 #kernel
-sudo add-apt-repository ppa:cappelikan/ppa
-sudo apt install mainline
+# sudo add-apt-repository ppa:cappelikan/ppa
+# sudo apt install mainline
 
 echo "============== [E] Install - ppa =============="
