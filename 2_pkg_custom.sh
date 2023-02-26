@@ -40,9 +40,4 @@ sudo apt install firefox
 # sudo add-apt-repository ppa:cappelikan/ppa
 # sudo apt install mainline
 
-#obs 
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt update
-sudo apt-get update && sudo apt-get install obs-studio
-
 echo "============== [E] Install - ppa =============="

@@ -19,4 +19,6 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo flatpak install -y $(cat pkglist_flatpak)
 sudo chown -R lwh:lwh ~/.var
 
+#obs not work
+sudo flatpak update --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 echo "============== [E] Install - flatpak =============="
