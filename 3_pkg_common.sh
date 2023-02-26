@@ -21,6 +21,6 @@ sudo chown -R lwh:lwh ~/.var
 
 #obs not work
 #https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update
-#flatpak remote-info --log flathub org.gimp.GIMP
+#flatpak remote-info --log flathub com.obsproject.Studio
 sudo flatpak update --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 echo "============== [E] Install - flatpak =============="
