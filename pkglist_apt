@@ -3,7 +3,6 @@ bridge-utils
 ca-certificates
 chrome-gnome-shell
 curl
-dconf-editor
 gedit
 gnome-shell-extensions
 gnome-tweaks

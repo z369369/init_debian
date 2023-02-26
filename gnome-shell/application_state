@@ -7,26 +7,26 @@
     <application id="apport-gtk.desktop" score="4" last-seen="1677374307"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="5.75" last-seen="1677378272"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="31" last-seen="1677378792"/>
-    <application id="firefox.desktop" score="20076.775338430987" last-seen="1677379356"/>
+    <application id="firefox.desktop" score="20110.775338430987" last-seen="1677379739"/>
     <application id="org.gnome.tweaks.desktop" score="27" last-seen="1677314437"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="2" last-seen="1677359206"/>
     <application id="software-properties-gtk.desktop" score="20.4375" last-seen="1677378302"/>
     <application id="com.jgraph.drawio.desktop.desktop" score="1" last-seen="1677063721"/>
     <application id="io.atom.Atom.desktop" score="2" last-seen="1677358743"/>
     <application id="com.opera.Opera.desktop" score="17.75" last-seen="1677062194"/>
-    <application id="code.desktop" score="99.25" last-seen="1677379182"/>
+    <application id="code.desktop" score="105.25" last-seen="1677379560"/>
     <application id="org.gnome.Software.desktop" score="888.25" last-seen="1677379119"/>
     <application id="org.gimp.GIMP.desktop" score="0" last-seen="1677298659"/>
     <application id="virt-manager.desktop" score="219" last-seen="1677375812"/>
     <application id="de.haeckerfelix.Shortwave.desktop" score="21.5" last-seen="1676965710"/>
     <application id="org.gnome.Extensions.desktop" score="0" last-seen="1677303369"/>
     <application id="stacer.desktop" score="11.25" last-seen="1677376814"/>
-    <application id="org.gnome.Terminal.desktop" score="820.77048875670152" last-seen="1677379405"/>
+    <application id="org.gnome.Terminal.desktop" score="820.77048875670152" last-seen="1677379566"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="21.90625" last-seen="1677310256"/>
     <application id="info.smplayer.SMPlayer.desktop" score="26" last-seen="1677378564"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="2" last-seen="1677109542"/>
-    <application id="org.gnome.Nautilus.desktop" score="116.12728119442181" last-seen="1677378571"/>
-    <application id="com.obsproject.Studio.desktop" score="176" last-seen="1677378852"/>
+    <application id="org.gnome.Nautilus.desktop" score="120.12728119442181" last-seen="1677379707"/>
+    <application id="com.obsproject.Studio.desktop" score="176" last-seen="1677379725"/>
     <application id="gnome-system-monitor.desktop" score="34.625" last-seen="1677374653"/>
     <application id="org.gnome.Evince.desktop" score="9.5" last-seen="1677319839"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1677109541"/>
