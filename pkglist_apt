@@ -3,6 +3,9 @@ bridge-utils
 ca-certificates
 chrome-gnome-shell
 curl
+fonts-nanum
+fonts-nanum-coding
+fonts-nanum-extra
 gedit
 gnome-shell-extensions
 gnome-tweaks
