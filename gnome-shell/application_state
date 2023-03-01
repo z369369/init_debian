@@ -12,10 +12,10 @@
     <application id="org.gnome.tweaks.desktop" score="26.5" last-seen="1677543730"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="1" last-seen="1677359206"/>
     <application id="software-properties-gtk.desktop" score="22.21875" last-seen="1677634635"/>
-    <application id="firefox.desktop" score="15112.887669215494" last-seen="1677640170"/>
+    <application id="firefox.desktop" score="15112.887669215494" last-seen="1677640458"/>
     <application id="io.atom.Atom.desktop" score="1" last-seen="1677358743"/>
     <application id="com.opera.Opera.desktop" score="11.375" last-seen="1677480294"/>
-    <application id="code.desktop" score="188.125" last-seen="1677640292"/>
+    <application id="code.desktop" score="201.125" last-seen="1677640535"/>
     <application id="gkbd-keyboard-display.desktop" score="0" last-seen="1677465159"/>
     <application id="org.gnome.Software.desktop" score="804.625" last-seen="1677640113"/>
     <application id="ca.desrt.dconf-editor.desktop" score="0" last-seen="1677557420"/>
@@ -28,16 +28,16 @@
     <application id="org.gnome.Calculator.desktop" score="4.5" last-seen="1677552294"/>
     <application id="org.gnome.Extensions.desktop" score="8" last-seen="1677627819"/>
     <application id="stacer.desktop" score="18.125" last-seen="1677624204"/>
-    <application id="org.gnome.Terminal.desktop" score="659.88524437835076" last-seen="1677640286"/>
+    <application id="org.gnome.Terminal.desktop" score="676.88524437835076" last-seen="1677640558"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="13.953125" last-seen="1677533772"/>
     <application id="info.smplayer.SMPlayer.desktop" score="32.5" last-seen="1677475418"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="3.5" last-seen="1677557411"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="4.5" last-seen="1677640351"/>
     <application id="org.libreoffice.LibreOffice.writer.desktop" score="3" last-seen="1677544280"/>
     <application id="com.obsproject.Studio.desktop" score="256" last-seen="1677634084"/>
     <application id="org.gnome.Nautilus.desktop" score="130.56364059721091" last-seen="1677628496"/>
     <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1677556845"/>
     <application id="org.gnome.Evince.desktop" score="4.75" last-seen="1677319839"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1677557408"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1677640343"/>
     <application id="gnome-system-monitor.desktop" score="49.8125" last-seen="1677632330"/>
     <application id="org.telegram.desktop.desktop" score="270" last-seen="1677534320"/>
     <application id="update-manager.desktop" score="9366.4284553549151" last-seen="1677623686"/>
