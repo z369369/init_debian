@@ -10,6 +10,7 @@ com.heroicgameslauncher.hgl
 com.jgraph.drawio.desktop
 com.obsproject.Studio
 com.opera.Opera
+com.transmissionbt.Transmission
 com.valvesoftware.Steam
 de.haeckerfelix.Shortwave
 info.smplayer.SMPlayer
@@ -22,6 +23,7 @@ org.blender.Blender
 org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
 org.gimp.GIMP
+org.gnome.baobab
 org.gnome.design.Contrast
 org.gnome.gThumb
 org.kde.kdenlive
