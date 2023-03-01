@@ -24,6 +24,7 @@ org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.gnome.baobab
+org.gnome.Calendar
 org.gnome.design.Contrast
 org.gnome.gThumb
 org.kde.kdenlive
