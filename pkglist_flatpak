@@ -22,6 +22,7 @@ org.audacityteam.Audacity
 org.blender.Blender
 org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
+org.inkscape.Inkscape
 org.gimp.GIMP
 org.gnome.baobab
 org.gnome.Calendar
