@@ -18,16 +18,16 @@
     <application id="org.libreoffice.LibreOffice.impress.desktop" score="2.5" last-seen="1677759642"/>
     <application id="com.opera.Opera.desktop" score="5.6875" last-seen="1677480294"/>
     <application id="io.atom.Atom.desktop" score="4" last-seen="1677807437"/>
-    <application id="code.desktop" score="215.0625" last-seen="1677896352"/>
+    <application id="code.desktop" score="224.0625" last-seen="1677896704"/>
     <application id="gkbd-keyboard-display.desktop" score="0" last-seen="1677465159"/>
-    <application id="org.gnome.Software.desktop" score="517.3125" last-seen="1677847122"/>
+    <application id="org.gnome.Software.desktop" score="520.3125" last-seen="1677897298"/>
     <application id="ca.desrt.dconf-editor.desktop" score="27.5" last-seen="1677762402"/>
-    <application id="virt-manager.desktop" score="1458.25" last-seen="1677896549"/>
+    <application id="virt-manager.desktop" score="1505.25" last-seen="1677897060"/>
     <application id="com.heroicgameslauncher.hgl.desktop" score="40" last-seen="1677739970"/>
     <application id="org.libreoffice.LibreOffice.draw.desktop" score="0" last-seen="1677759592"/>
     <application id="com.transmissionbt.Transmission.desktop" score="0" last-seen="1677641165"/>
     <application id="com.discordapp.Discord.desktop" score="2.5" last-seen="1677467202"/>
-    <application id="firefox.desktop" score="13306.943834607748" last-seen="1677896527"/>
+    <application id="firefox.desktop" score="13308.943834607748" last-seen="1677897072"/>
     <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="0.5" last-seen="1677741120"/>
     <application id="org.gnome.Logs.desktop" score="2.5" last-seen="1677455765"/>
     <application id="org.gnome.Extensions.desktop" score="5.5" last-seen="1677712189"/>
@@ -37,12 +37,12 @@
     <application id="de.haeckerfelix.Shortwave.desktop" score="4.5" last-seen="1677741556"/>
     <application id="org.gnome.Calendar.desktop" score="1.5" last-seen="1677664075"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="6.9765625" last-seen="1677533772"/>
-    <application id="org.gnome.seahorse.Application.desktop" score="3.5" last-seen="1677668243"/>
-    <application id="org.gnome.Terminal.desktop" score="914.44262218917538" last-seen="1677896371"/>
+    <application id="org.gnome.seahorse.Application.desktop" score="4.5" last-seen="1677897207"/>
+    <application id="org.gnome.Terminal.desktop" score="932.44262218917538" last-seen="1677897347"/>
     <application id="info.smplayer.SMPlayer.desktop" score="16.25" last-seen="1677475418"/>
     <application id="org.gimp.GIMP.desktop" score="0.25" last-seen="1677489415"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="3.75" last-seen="1677643137"/>
-    <application id="gnome-system-monitor.desktop" score="88.40625" last-seen="1677849836"/>
+    <application id="gnome-system-monitor.desktop" score="111.40625" last-seen="1677897334"/>
     <application id="org.gnome.Nautilus.desktop" score="252.28182029860545" last-seen="1677892677"/>
     <application id="org.libreoffice.LibreOffice.writer.desktop" score="4.5" last-seen="1677848484"/>
     <application id="org.gnome.FileRoller.desktop" score="0.5" last-seen="1677820872"/>
