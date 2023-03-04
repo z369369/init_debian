@@ -8,7 +8,7 @@
     <application id="xdg-desktop-portal-gnome.desktop" score="7.1875" last-seen="1677900581"/>
     <application id="gnome-language-selector.desktop" score="6.25" last-seen="1677712664"/>
     <application id="gprename.desktop" score="2" last-seen="1677823976"/>
-    <application id="firefox.desktop" score="14364.943834607748" last-seen="1677912637"/>
+    <application id="firefox.desktop" score="14390.943834607748" last-seen="1677912963"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="8.25" last-seen="1677404970"/>
     <application id="sh.ppy.osu.desktop" score="14" last-seen="1677797622"/>
     <application id="software-properties-gtk.desktop" score="22.109375" last-seen="1677909498"/>
@@ -18,7 +18,7 @@
     <application id="org.libreoffice.LibreOffice.impress.desktop" score="2.5" last-seen="1677759642"/>
     <application id="io.atom.Atom.desktop" score="4" last-seen="1677807437"/>
     <application id="org.gnome.eog.desktop" score="2" last-seen="1677899458"/>
-    <application id="code.desktop" score="269.0625" last-seen="1677912537"/>
+    <application id="code.desktop" score="269.0625" last-seen="1677912963"/>
     <application id="com.opera.Opera.desktop" score="5.6875" last-seen="1677480294"/>
     <application id="gkbd-keyboard-display.desktop" score="0" last-seen="1677465159"/>
     <application id="org.gnome.Software.desktop" score="573.3125" last-seen="1677909512"/>
@@ -52,11 +52,11 @@
     <application id="update-manager.desktop" score="4684.2142276774575" last-seen="1677663715"/>
     <application id="net.cozic.joplin_desktop.desktop" score="36" last-seen="1677901447"/>
     <application id="org.telegram.desktop.desktop" score="181" last-seen="1677759173"/>
-    <application id="org.gnome.Nautilus.desktop" score="287.28182029860545" last-seen="1677910751"/>
+    <application id="org.gnome.Nautilus.desktop" score="290.28182029860545" last-seen="1677912956"/>
     <application id="org.gnome.baobab.desktop" score="2" last-seen="1677642207"/>
     <application id="google-chrome.desktop" score="2343.75" last-seen="1677822305"/>
     <application id="ibus-setup-hangul.desktop" score="2" last-seen="1677466189"/>
-    <application id="org.gnome.gedit.desktop" score="252.92327749898504" last-seen="1677912726"/>
+    <application id="org.gnome.gedit.desktop" score="252.92327749898504" last-seen="1677912942"/>
     <application id="com.obsproject.Studio.desktop" score="128" last-seen="1677755227"/>
     <application id="synaptic.desktop" score="92.875" last-seen="1677894135"/>
   </context>
