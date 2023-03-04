@@ -15,7 +15,6 @@ ln -s ~/git/linux_init/Templates ~/Templates
 echo "============== [E] Link - shell, script =============="
 
 #echo "============== [S] Link - hdd =============="
-#root 
 #backup_disk mount
 #sudo echo "UUID=fdcd9bf3-7e29-467b-926f-5fdd8c197a7d /media/lwh/backup_disk ext4 defaults 0 2" >> /etc/fstab
 #ln -s /media/lwh/backup_disk ~/Desktop/backup_disk
