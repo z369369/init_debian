@@ -29,8 +29,6 @@ sudo mkdir /etc/apt/apt.conf.d/off
 sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
 echo "============== [S] Remove - ubuntu ESM =============="
 
-
-
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/
@@ -39,7 +37,8 @@ echo "============== [S] Remove - ubuntu ESM =============="
 # dconf load /org/gnome/ < ~/linux_init/home/dump_dconf_gnome
 # gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-#sudo vi /etc/default/ufw #if you want, ipv6 disable
+#if you want, ipv6 disable edit below
+#sudo vi /etc/default/ufw 
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow 1714:1764/udp
 
