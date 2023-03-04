@@ -30,9 +30,7 @@ sudo mkdir /etc/apt/apt.conf.d/off
 sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
 echo "============== [S] Remove - ubuntu ESM =============="
 
-echo "============== [S] Remove - ubuntu extension =============="
-sudo rm -rf /usr/share/gnome-shell/extensions/*
-echo "============== [S] Remove - ubuntu extension =============="
+
 
 # [backup] .config
 # cd ~
@@ -42,17 +40,25 @@ echo "============== [S] Remove - ubuntu extension =============="
 # dconf load /org/gnome/ < ~/linux_init/home/dump_dconf_gnome
 # gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
 
-# sudo ufw allow 1714:1764/tcp
-# sudo ufw allow 1714:1764/udp
-# sudo ufw allow 3389/tdp
-# sudo ufw allow 3389/udp
-# sudo ufw allow 22/tdp
-# sudo ufw allow 22/udp
-# sudo ufw reload
+#sudo vi /etc/default/ufw #if you want, ipv6 disable
+sudo ufw allow 1714:1764/tcp
+sudo ufw allow 1714:1764/udp
+
+sudo ufw allow 3389/tcp
+sudo ufw allow 3389/udp
+
+sudo ufw allow 1022/tcp
+sudo ufw allow 1022/udp
+
+sudo ufw allow 5900/tcp
+sudo ufw allow 5900/udp
+
+sudo ufw allow 22/tcp
+sudo ufw allow 22/udp
+sudo ufw reload
 
 #nautilus
 # git clone https://github.com/angela-d/nautilus-right-click-new-file.git && cd nautilus-right-click-new-file
 # ./automate.sh
 
 # git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
- 

@@ -14,3 +14,7 @@ rm -rf ~/snap
 sudo apt remove --purge -y $(cat pkglist_apt_purge)
 
 echo "============== [E] Remove - unuse =============="
+
+echo "============== [S] Remove - ubuntu extension =============="
+sudo rm -rf /usr/share/gnome-shell/extensions/*
+echo "============== [S] Remove - ubuntu extension =============="
