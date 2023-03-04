@@ -51,6 +51,10 @@ sudo ufw allow 1022/udp
 sudo ufw allow 5900/tcp
 sudo ufw allow 5900/udp
 
+sudo ufw allow 22000/tcp
+sudo ufw allow 22000/udp
+sudo ufw allow 21027/udp
+
 sudo ufw allow 22/tcp
 sudo ufw allow 22/udp
 sudo ufw reload
