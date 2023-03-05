@@ -64,3 +64,12 @@ sudo ufw reload
 # ./automate.sh
 
 # git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
+
+echo "============== [S] syncth Install =============="
+echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+sudo apt update
+sudo apt install syncthing	
+sudo systemctl enable syncthing@lwh.service
+sudo systemctl start syncthing@lwh.service
+echo "============== [E] syncth Install =============="
