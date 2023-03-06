@@ -28,6 +28,6 @@ mv *.iso ~/Downloads/iso
 #rm -rf /media/lwh/backup_disk/home/lwh
 #mkdir /media/lwh/backup_disk/home/lwh
 
-rsync -a --exclude-from /home/lwh --exclude SM-A528N --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/lwh/ /media/lwh/backup_disk/home/lwh/
+rsync -a --exclude-from /home/lwh --exclude Phone --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/lwh/ /media/lwh/backup_disk/home/lwh/
 
 notify-send 'Complete' 'Organizing your downloads Folder'
