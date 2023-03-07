@@ -1,0 +1,15 @@
+[Adblock Plus 2.0]
+! Homepage: 
+! License: 
+! Title: LWH Ads Block
+! Expires: 9000 days
+! Version: 20221109
+
+! URL filters
+!*.wemakeprice.com^
+coupang.com^
+ilbe.com^
+pinterest.co.kr^
+pinterest.com^
+quora.com^
+afreecatv.com^
