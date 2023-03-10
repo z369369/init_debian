@@ -2,8 +2,12 @@
 ! Homepage: 
 ! License: 
 ! Title: LWH Ads Block
-! Expires: 9000 days
+! Expires: 1 days
 ! Version: 20221109
+
+! General element hiding rules
+##.video-long-banner
+##.view-content > .partner-banner-flex
 
 ! URL filters
 !*.wemakeprice.com^
