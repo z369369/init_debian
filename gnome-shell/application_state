@@ -25,7 +25,7 @@
     <application id="net.sourceforge.mcomix.desktop" score="16.5" last-seen="1678112330"/>
     <application id="apport-gtk.desktop" score="1.75" last-seen="1678166534"/>
     <application id="org.telegram.desktop.desktop" score="156.25" last-seen="1678366902"/>
-    <application id="firefox.desktop" score="14798.735958651938" last-seen="1678408103"/>
+    <application id="firefox.desktop" score="14831.735958651938" last-seen="1678408706"/>
     <application id="org.atheme.audacious.desktop" score="1" last-seen="1678107185"/>
     <application id="synaptic.desktop" score="25.96875" last-seen="1678102352"/>
     <application id="timeshift-gtk.desktop" score="10.75" last-seen="1678295806"/>
@@ -46,7 +46,7 @@
     <application id="google-chrome.desktop" score="1292.9375" last-seen="1678406776"/>
     <application id="com.belmoussaoui.Decoder.desktop" score="0" last-seen="1678238897"/>
     <application id="org.gnome.eog.desktop" score="1.75" last-seen="1677947463"/>
-    <application id="code.desktop" score="194.015625" last-seen="1678298145"/>
+    <application id="code.desktop" score="208.015625" last-seen="1678408721"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="64.75" last-seen="1678346773"/>
     <application id="yelp.desktop" score="0" last-seen="1677899737"/>
     <application id="org.libreoffice.LibreOffice.writer.desktop" score="2.125" last-seen="1677900682"/>
