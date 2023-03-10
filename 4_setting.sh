@@ -62,3 +62,13 @@ sudo apt install syncthing
 sudo systemctl enable syncthing@$USER.service
 sudo systemctl start syncthing@$USER.service
 echo "============== [E] syncth Install =============="
+
+echo "============== [S] Set key file =============="
+echo "Check.. Key file Exist.."
+if [ -e ~/.key ]; then
+  echo "File .key already exists!"
+else
+  echo "Enter the Sudo password: "	
+  read v_pwd
+  echo $v_pwd >> ~/.key
+echo "============== [E] Set key file =============="
