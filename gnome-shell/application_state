@@ -8,7 +8,7 @@
     <application id="xdg-desktop-portal-gnome.desktop" score="14.796875" last-seen="1678409936"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="64.75" last-seen="1678346773"/>
     <application id="org.kde.krita.desktop" score="1" last-seen="1678238878"/>
-    <application id="firefox.desktop" score="15181.735958651938" last-seen="1678412593"/>
+    <application id="firefox.desktop" score="15199.735958651938" last-seen="1678413000"/>
     <application id="org.gnome.tweaks.desktop" score="7.5625" last-seen="1678081575"/>
     <application id="gprename.desktop" score="0.5" last-seen="1677823976"/>
     <application id="software-properties-gtk.desktop" score="8.27734375" last-seen="1678176859"/>
@@ -18,7 +18,7 @@
     <application id="org.gnome.eog.desktop" score="1.75" last-seen="1677947463"/>
     <application id="com.opera.Opera.desktop" score="11.421875" last-seen="1678406539"/>
     <application id="io.atom.Atom.desktop" score="5" last-seen="1678405491"/>
-    <application id="code.desktop" score="304.015625" last-seen="1678412653"/>
+    <application id="code.desktop" score="328.015625" last-seen="1678412932"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="25.75" last-seen="1678158200"/>
     <application id="org.gnome.meld.desktop" score="4.5" last-seen="1678169621"/>
     <application id="org.gnome.Software.desktop" score="311.828125" last-seen="1678342801"/>
@@ -37,7 +37,7 @@
     <application id="stacer.desktop" score="16.890625" last-seen="1678105905"/>
     <application id="org.atheme.audacious.desktop" score="1" last-seen="1678107185"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="14.5" last-seen="1678246943"/>
-    <application id="org.gnome.Terminal.desktop" score="450.86065554729385" last-seen="1678412662"/>
+    <application id="org.gnome.Terminal.desktop" score="454.86065554729385" last-seen="1678412861"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="30.244140625" last-seen="1678109400"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="56.4375" last-seen="1678410073"/>
     <application id="org.libreoffice.LibreOffice.writer.desktop" score="2.125" last-seen="1677900682"/>
@@ -45,7 +45,7 @@
     <application id="timeshift-gtk.desktop" score="10.75" last-seen="1678295806"/>
     <application id="com.obsproject.Studio.desktop" score="34.5" last-seen="1678281296"/>
     <application id="gnome-session-properties.desktop" score="0.78125" last-seen="1678275770"/>
-    <application id="org.gnome.Nautilus.desktop" score="730.57045507465136" last-seen="1678412291"/>
+    <application id="org.gnome.Nautilus.desktop" score="730.57045507465136" last-seen="1678412932"/>
     <application id="org.gnome.Evince.desktop" score="0.84375" last-seen="1677939923"/>
     <application id="net.cozic.joplin_desktop.desktop" score="110" last-seen="1678406134"/>
     <application id="org.telegram.desktop.desktop" score="156.25" last-seen="1678366902"/>

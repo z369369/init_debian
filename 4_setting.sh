@@ -1,9 +1,4 @@
 #!/bin/bash
-echo "============== [S] Config - Git =============="
-git config --global user.name "ppp821203"
-git config --global user.email ppp821203@gmail.com
-echo "============== [E] Config - Git =============="
-
 echo "============== [S] Link - shell, script =============="
 ln -s ~/git/linux_init/script ~/script
 
