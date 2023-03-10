@@ -12,11 +12,6 @@ echo "============== [E] Set key file =============="
 echo "============== [S] Install - ppa =============="
 sudo apt-get install -y wget gpg
 
-#opera
-# wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
-# yes '' | sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free"
-# sudo apt install -y opera-stable
-
 #vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
