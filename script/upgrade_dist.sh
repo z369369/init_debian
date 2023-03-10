@@ -16,5 +16,3 @@ sudo rm -rf /var/cache/snapd/
 rm -rf ~/snap
 
 echo "============== [E] Remove - snap =============="
-
-
