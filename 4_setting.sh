@@ -14,12 +14,6 @@ rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 echo "============== [E] Link - shell, script =============="
 
-#echo "============== [S] Link - hdd =============="
-#backup_disk mount
-#sudo echo "UUID=fdcd9bf3-7e29-467b-926f-5fdd8c197a7d /media/lwh/backup_disk ext4 defaults 0 2" >> /etc/fstab
-#ln -s /media/lwh/backup_disk ~/Desktop/backup_disk
-#echo "============== [E] Link - hdd =============="
-
 echo "============== [S] Edit - Gnome Calenar temperature-unit =============="
 gsettings set org.gnome.GWeather temperature-unit centigrade
 echo "============== [E] Link - Gnome Calenar temperature-unit =============="
@@ -70,6 +64,6 @@ echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sourc
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 sudo apt update
 sudo apt install syncthing	
-sudo systemctl enable syncthing@lwh.service
-sudo systemctl start syncthing@lwh.service
+sudo systemctl enable syncthing@$USER.service
+sudo systemctl start syncthing@$USER.service
 echo "============== [E] syncth Install =============="

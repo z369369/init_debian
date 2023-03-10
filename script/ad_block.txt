@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Homepage: 
 ! License: 
-! Title: LWH Ads Block
+! Title: User Ads Block
 ! Expires: 1 days
 ! Version: 20221109
 
