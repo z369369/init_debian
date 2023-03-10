@@ -5,6 +5,40 @@
 ! Expires: 1 days
 ! Version: 20221109
 
+! 2023-01-16 https://tisword.com
+tisword.com##.mb-6.flex-grow.md\:py-12.py-4
+
+! 2022-11-07 https://tisword.com
+tisword.com##.mb-6.flex-grow.md\:py-12.py-4
+
+! 2022-11-07 https://www.fmkorea.com
+www.fmkorea.com##.mpReset.h1
+www.fmkorea.com##.logged_info
+m.fmkorea.com##.fmkorea_m_navi
+
+! 2022-11-08 https://aagag.com
+aagag.com##.mirror_help
+aagag.com###content > .mid.la
+aagag.com###sidebar
+aagag.com###left_side > .tleft.la
+aagag.com###content > p
+
+! 2022-11-08 https://www.clien.net
+www.clien.net##.gallery.section_list
+www.clien.net##.notice.section_list
+www.clien.net##.hongbo.section_list
+
+! 2022-12-30 https://www.fmkorea.com
+www.fmkorea.com##div > div > div > p
+
+! 2023-01-04 https://www.fmkorea.com
+www.fmkorea.com##div.top_hotdeal
+
+! 2023-01-09 https://www.youtube.com
+www.youtube.com###foreground-content
+www.youtube.com###chat
+www.youtube.com###clarify-box
+
 ! General element hiding rules
 ##.video-long-banner
 ##.view-content > .partner-banner-flex
