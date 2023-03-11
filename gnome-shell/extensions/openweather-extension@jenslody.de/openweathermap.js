@@ -58,7 +58,7 @@ function getWeatherCondition(code) {
         case 212: //심한 천둥
             return _('심한 천둥');
         case 221: //불규칙적인 천둥
-            return _('불규칙적인 천둥');
+            return _('약한 천둥');
         case 230: //약한 비와 천둥
             return _('약한 비와 천둥');
         case 231: //비와 천둥
