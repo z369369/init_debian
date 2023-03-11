@@ -9,9 +9,10 @@ rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 echo "============== [E] Link - shell, script =============="
 
-echo "============== [S] Edit - Gnome Calenar temperature-unit =============="
+echo "============== [S] Edit - Gnome Extension =============="
 gsettings set org.gnome.GWeather temperature-unit centigrade
-echo "============== [E] Link - Gnome Calenar temperature-unit =============="
+gsettings set org.gnome.shell disable-extension-version-validation true
+echo "============== [E] Link - Gnome Extension =============="
 
 echo "============== [S] Remove - ubuntu ESM =============="
 sudo mkdir /etc/apt/apt.conf.d/off
