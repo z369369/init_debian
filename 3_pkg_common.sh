@@ -25,5 +25,4 @@ sudo chown -R $USER:$USER ~/.var
 #https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update
 #flatpak remote-info --log flathub com.obsproject.Studio
 sudo flatpak update --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
-sudo flatpak update --commit=7ff142f0bf581d9badedb00bae5769ef4dd9798d687296548990bbaf3c9b6893 org.kde.krita
 echo "============== [E] Install - flatpak =============="
