@@ -53,15 +53,8 @@ class CustomClockDisplay{
     }
 
     updateClock(){
-        this._text = GLib.DateTime.new_now_local().format(this._format);
-        this._rtext = this._text.replace('Mon', '月');
-        this._rtext = this._text.replace('Tue', '火');
-        this._rtext = this._text.replace('Wen', '水');
-        this._rtext = this._text.replace('Thu', '木');
-        this._rtext = this._text.replace('Fri', '金');
-        this._rtext = this._text.replace('Sat', '土');
-        this._rtext = this._text.replace('Sun', '日');
-        this._formatClockDisplay.set_text(this._rtext);
+        this._formatClockDisplay.set_text(
+            GLib.DateTime.new_now_local().format(this._format));
     }
 
     destroy(){
