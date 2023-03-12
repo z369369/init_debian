@@ -95,7 +95,7 @@ function getWeatherCondition(code) {
             return _('극심한 비');
 
         case 511: //Freezing rain
-            return _('차가운 비');
+            return _('추운 비');
         case 520: //Light intensity shower rain
             return _('약한 비');
         case 521: //Shower rain
@@ -103,7 +103,7 @@ function getWeatherCondition(code) {
         case 522: //Heavy intensity shower rain
             return _('강한 비');
         case 531: //Ragged shower rain
-            return _('산란 비');
+            return _('약한 비');
         case 600: //Light snow
             return _('약한 눈');
         case 601: //Snow
