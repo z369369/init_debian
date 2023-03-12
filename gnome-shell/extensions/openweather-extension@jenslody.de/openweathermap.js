@@ -372,9 +372,9 @@ function populateCurrentUI() {
             if (this._text_in_panel)
                 weatherInfoT = temperature;
 
-            this._weatherInfo.text = weatherInfoC + ((weatherInfoC && weatherInfoT) ? _(", ") : "") + weatherInfoT;
+            this._weatherInfo.text = weatherInfoC + ((weatherInfoC && weatherInfoT) ? _(" ") : "") + weatherInfoT;
 
-            this._currentWeatherSummary.text = comment + _(", ") + temperature;
+            this._currentWeatherSummary.text = comment + _(" ") + temperature;
             if (this._loc_len_current != 0 && location.length > this._loc_len_current)
                 this._currentWeatherLocation.text = location.substring(0, (this._loc_len_current - 3)) + "...";
             else
