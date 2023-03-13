@@ -33,6 +33,6 @@ mv *.iso ~/Downloads/iso
 #flatpak remote-info --log flathub com.obsproject.Studio
 cat ~/.key | sudo -S flatpak update -y --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 
-rsync -a --exclude-from /home/$USER --exclude Phone --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/home/$USER/
+rsync -a --exclude-from /home/$USER --exclude phone --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/home/$USER/
 
 notify-send 'Complete' 'Organizing your downloads Folder'
