@@ -4,6 +4,8 @@
 #Image Files
 cd ~/Downloads
 
+rm *.ovpn
+
 # Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures
 
