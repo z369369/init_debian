@@ -9,8 +9,8 @@ rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 
 mkdir ~/Desktop/desktop_icons
-ln -s /home/lwh/.local/share/applications ~/Desktop/desktop_icons/custom
-ln -s /home/lwh/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_icons/flatpak
+ln -s ~/.local/share/applications ~/Desktop/desktop_icons/custom
+ln -s ~/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_icons/flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_icons/
 echo "============== [E] Link - shell, script =============="
 
