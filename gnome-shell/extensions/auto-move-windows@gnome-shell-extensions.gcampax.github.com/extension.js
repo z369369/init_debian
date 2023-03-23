@@ -6,6 +6,7 @@ const { Shell } = imports.gi;
 
 const ExtensionUtils = imports.misc.extensionUtils;
 const Main = imports.ui.main;
+const Util = imports.misc.util; 
 
 class WindowMover {
     constructor() {
@@ -83,6 +84,7 @@ class WindowMover {
         }
 
         window.change_workspace_by_index(workspaceNum, false);
+        Util.spawnCommandLine("wmctrl -s " + workspaceNum);
     }
 
     _appWindowsChanged(app) {
