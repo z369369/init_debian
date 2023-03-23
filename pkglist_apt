@@ -37,3 +37,4 @@ ubuntu-restricted-extras
 ufw
 virt-manager
 wget
+wmctrl
