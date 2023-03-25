@@ -2,13 +2,13 @@
 <application-state>
   <context id="">
     <application id="gnome-control-center.desktop" score="63.496508572293038" last-seen="1679658734"/>
-    <application id="md.obsidian.Obsidian.desktop" score="7994" last-seen="1679729147"/>
+    <application id="md.obsidian.Obsidian.desktop" score="8079" last-seen="1679738217"/>
     <application id="gnome-session-properties.desktop" score="5" last-seen="1679725561"/>
     <application id="org.gnome.gThumb.desktop" score="13" last-seen="1679731782"/>
-    <application id="apport-gtk.desktop" score="0" last-seen="1679450023"/>
+    <application id="apport-gtk.desktop" score="1" last-seen="1679733628"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="10.349609375" last-seen="1679655961"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="54" last-seen="1679646263"/>
-    <application id="firefox.desktop" score="19841.716994831491" last-seen="1679731956"/>
+    <application id="firefox.desktop" score="20013.716994831491" last-seen="1679738829"/>
     <application id="org.gnome.tweaks.desktop" score="17.1953125" last-seen="1679491396"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="6.5" last-seen="1679509276"/>
     <application id="software-properties-gtk.desktop" score="3" last-seen="1679587510"/>
@@ -16,7 +16,7 @@
     <application id="io.github.celluloid_player.Celluloid.desktop" score="3.5" last-seen="1679646531"/>
     <application id="io.atom.Atom.desktop" score="199.125" last-seen="1679428735"/>
     <application id="com.opera.Opera.desktop" score="4" last-seen="1679550015"/>
-    <application id="code.desktop" score="957.501953125" last-seen="1679726073"/>
+    <application id="code.desktop" score="957.501953125" last-seen="1679738822"/>
     <application id="org.gnome.Software.desktop" score="424.228515625" last-seen="1679663428"/>
     <application id="ca.desrt.dconf-editor.desktop" score="1" last-seen="1679492035"/>
     <application id="org.gimp.GIMP.desktop" score="70" last-seen="1679610925"/>
@@ -25,12 +25,12 @@
     <application id="org.gnome.Extensions.desktop" score="1" last-seen="1679723168"/>
     <application id="stacer.desktop" score="11" last-seen="1679588242"/>
     <application id="org.atheme.audacious.desktop" score="0" last-seen="1679663539"/>
-    <application id="org.gnome.Terminal.desktop" score="752.48258194341179" last-seen="1679731867"/>
+    <application id="org.gnome.Terminal.desktop" score="857.48258194341179" last-seen="1679738705"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="132.030517578125" last-seen="1679656218"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="25.1796875" last-seen="1679388411"/>
     <application id="org.gnome.Calendar.desktop" score="21" last-seen="1679618763"/>
     <application id="com.obsproject.Studio.desktop" score="0" last-seen="1679655964"/>
-    <application id="gnome-system-monitor.desktop" score="60.0751953125" last-seen="1679724389"/>
+    <application id="gnome-system-monitor.desktop" score="65.0751953125" last-seen="1679733619"/>
     <application id="org.fedoraproject.MediaWriter.desktop" score="0" last-seen="1679661428"/>
     <application id="org.gnome.FileRoller.desktop" score="7.671875" last-seen="1679498259"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="7.75" last-seen="1679388385"/>
@@ -39,8 +39,8 @@
     <application id="org.gnome.Evince.desktop" score="17.75" last-seen="1679610040"/>
     <application id="com.github.maoschanz.drawing.desktop" score="2" last-seen="1679617928"/>
     <application id="google-chrome.desktop" score="4318.4921875" last-seen="1679689379"/>
-    <application id="org.gnome.Nautilus.desktop" score="1150.5713068843315" last-seen="1679731971"/>
+    <application id="org.gnome.Nautilus.desktop" score="1306.5713068843315" last-seen="1679738760"/>
     <application id="synaptic.desktop" score="0.5" last-seen="1679593364"/>
-    <application id="org.gnome.gedit.desktop" score="897.84135242184334" last-seen="1679731898"/>
+    <application id="org.gnome.gedit.desktop" score="978.84135242184334" last-seen="1679738875"/>
   </context>
 </application-state>
