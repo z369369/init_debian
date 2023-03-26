@@ -4,28 +4,28 @@
 #Image Files
 cd ~/Downloads
 
-rm *.ovpn
+rm *.ovpn 2> /dev/null
 
 # Image Files
-mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures
+mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures 2> /dev/null
 
 # Audio Files 
-mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music
+mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
 
 # Video Files 
-mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mpv *.mp2 *.wmv ~/Videos
+mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
 
 # PDFs 
-mv *.pdf *.doc *.txt *.ppt *.xls *.xlsx *.ovpn ~/Documents
+mv *.pdf *.doc *.txt *.ppt *.xls *.xlsx *.ovpn ~/Documents 2> /dev/null
 
 # Scripts
-mv *.py *.rb *.sh ~/git/linux_init/script
+mv *.py *.rb *.sh ~/git/linux_init/script 2> /dev/null
 
 #Compressed Files
-mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage ~/Downloads/zip
+mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage ~/Downloads/zip 2> /dev/null
 
 # Iso
-mv *.iso ~/Downloads/iso
+mv *.iso ~/Downloads/iso 2> /dev/null
 
 #rm -rf /media/$USER/backup_disk/home/$USER
 #mkdir /media/$USER/backup_disk/home/$USER
