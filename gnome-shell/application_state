@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="64.496508572293038" last-seen="1679880612"/>
+    <application id="gnome-control-center.desktop" score="92.496508572293038" last-seen="1679883720"/>
     <application id="md.obsidian.Obsidian.desktop" score="8159" last-seen="1679824290"/>
     <application id="gnome-session-properties.desktop" score="5" last-seen="1679725561"/>
     <application id="org.gnome.gThumb.desktop" score="13" last-seen="1679880574"/>
     <application id="apport-gtk.desktop" score="1" last-seen="1679733628"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="11.349609375" last-seen="1679878567"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="54" last-seen="1679646263"/>
-    <application id="firefox.desktop" score="22018.716994831491" last-seen="1679881498"/>
+    <application id="firefox.desktop" score="22236.716994831491" last-seen="1679885157"/>
     <application id="org.gnome.tweaks.desktop" score="17.1953125" last-seen="1679491396"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="6.5" last-seen="1679509276"/>
     <application id="software-properties-gtk.desktop" score="3" last-seen="1679587510"/>
-    <application id="io.github.celluloid_player.Celluloid.desktop" score="4.5" last-seen="1679881552"/>
+    <application id="io.github.celluloid_player.Celluloid.desktop" score="23.5" last-seen="1679885122"/>
     <application id="com.opera.Opera.desktop" score="4" last-seen="1679740546"/>
-    <application id="code.desktop" score="1070.501953125" last-seen="1679881440"/>
+    <application id="code.desktop" score="1109.501953125" last-seen="1679885057"/>
     <application id="org.gnome.Software.desktop" score="434.228515625" last-seen="1679816338"/>
     <application id="ca.desrt.dconf-editor.desktop" score="1" last-seen="1679492035"/>
     <application id="org.gimp.GIMP.desktop" score="70" last-seen="1679610925"/>
@@ -24,8 +24,8 @@
     <application id="org.gnome.Extensions.desktop" score="8" last-seen="1679876440"/>
     <application id="stacer.desktop" score="11" last-seen="1679588242"/>
     <application id="org.atheme.audacious.desktop" score="0" last-seen="1679663539"/>
-    <application id="org.gnome.Terminal.desktop" score="1057.4825819434118" last-seen="1679881024"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="136.030517578125" last-seen="1679816632"/>
+    <application id="org.gnome.Terminal.desktop" score="1094.4825819434118" last-seen="1679885171"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="185.030517578125" last-seen="1679884457"/>
     <application id="com.vscodium.codium.desktop" score="11" last-seen="1679879107"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="25.1796875" last-seen="1679388411"/>
     <application id="org.gnome.Calendar.desktop" score="21" last-seen="1679618763"/>
@@ -38,11 +38,11 @@
     <application id="org.telegram.desktop.desktop" score="89.03125" last-seen="1679600930"/>
     <application id="org.gnome.Evince.desktop" score="17.75" last-seen="1679610040"/>
     <application id="com.github.maoschanz.drawing.desktop" score="2" last-seen="1679617928"/>
-    <application id="google-chrome.desktop" score="6047.4921875" last-seen="1679841648"/>
-    <application id="org.gnome.Nautilus.desktop" score="1533.5713068843315" last-seen="1679881569"/>
+    <application id="google-chrome.desktop" score="6047.4921875" last-seen="1679883771"/>
+    <application id="org.gnome.Nautilus.desktop" score="1541.5713068843315" last-seen="1679883345"/>
     <application id="synaptic.desktop" score="0.5" last-seen="1679593364"/>
-    <application id="org.gnome.gedit.desktop" score="1072.8413524218433" last-seen="1679877775"/>
+    <application id="org.gnome.gedit.desktop" score="1073.8413524218433" last-seen="1679883340"/>
     <application id="timeshift-gtk.desktop" score="10" last-seen="1679824592"/>
-    <application id="com.github.unrud.VideoDownloader.desktop" score="2" last-seen="1679881539"/>
+    <application id="com.github.unrud.VideoDownloader.desktop" score="10" last-seen="1679881858"/>
   </context>
 </application-state>
