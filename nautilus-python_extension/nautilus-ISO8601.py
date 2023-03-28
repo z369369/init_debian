@@ -19,7 +19,7 @@ class ColumnExtension(GObject.GObject, Nautilus.ColumnProvider, Nautilus.InfoPro
                             label="Access time",
                             description="Access time in ISO8601 format"),
             Nautilus.Column(name="NautilusPython::modification_time_column",
-                            attribute="modification_time", label="Last modification",
+                            attribute="modification_time", label="Last update",
                             description="Last modification time in ISO8601 format")
         )
 

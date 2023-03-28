@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="gnome-control-center.desktop" score="92.496508572293038" last-seen="1679883720"/>
-    <application id="md.obsidian.Obsidian.desktop" score="8273" last-seen="1680001654"/>
+    <application id="gnome-control-center.desktop" score="94.496508572293038" last-seen="1680008827"/>
+    <application id="md.obsidian.Obsidian.desktop" score="8308" last-seen="1680008311"/>
     <application id="gnome-session-properties.desktop" score="5" last-seen="1679725561"/>
     <application id="org.gnome.gThumb.desktop" score="13" last-seen="1679880574"/>
     <application id="apport-gtk.desktop" score="1" last-seen="1679733628"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="11.349609375" last-seen="1679878567"/>
     <application id="gnome-language-selector.desktop" score="3" last-seen="1679892816"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="68" last-seen="1680001449"/>
-    <application id="firefox.desktop" score="24802.716994831491" last-seen="1680004297"/>
+    <application id="firefox.desktop" score="25078.716994831491" last-seen="1680009091"/>
     <application id="org.gnome.tweaks.desktop" score="17.1953125" last-seen="1679491396"/>
     <application id="org.gnome.design.IconLibrary.desktop" score="6.5" last-seen="1679509276"/>
     <application id="software-properties-gtk.desktop" score="15" last-seen="1680001096"/>
     <application id="io.github.celluloid_player.Celluloid.desktop" score="79.5" last-seen="1679895467"/>
     <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1679943185"/>
     <application id="com.opera.Opera.desktop" score="4" last-seen="1679740546"/>
-    <application id="code.desktop" score="1203.501953125" last-seen="1680005096"/>
+    <application id="code.desktop" score="1220.501953125" last-seen="1680008322"/>
     <application id="org.bleachbit.BleachBit.desktop" score="72" last-seen="1680001987"/>
     <application id="org.gnome.Software.desktop" score="434.228515625" last-seen="1679816338"/>
-    <application id="ca.desrt.dconf-editor.desktop" score="26" last-seen="1680005068"/>
-    <application id="virt-manager.desktop" score="213.8828125" last-seen="1679689522"/>
+    <application id="ca.desrt.dconf-editor.desktop" score="44" last-seen="1680009216"/>
+    <application id="virt-manager.desktop" score="246.8828125" last-seen="1680006598"/>
     <application id="org.gimp.GIMP.desktop" score="70" last-seen="1679610925"/>
     <application id="com.discordapp.Discord.desktop" score="1" last-seen="1679816415"/>
     <application id="com.github.alexkdeveloper.desktop-files-creator.desktop" score="11.5" last-seen="1679823527"/>
@@ -30,7 +30,7 @@
     <application id="org.gnome.Calendar.desktop" score="21" last-seen="1679618763"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="188.030517578125" last-seen="1679885837"/>
     <application id="com.vscodium.codium.desktop" score="11" last-seen="1679889645"/>
-    <application id="org.gnome.Terminal.desktop" score="1195.4825819434118" last-seen="1680005088"/>
+    <application id="org.gnome.Terminal.desktop" score="1230.4825819434118" last-seen="1680009223"/>
     <application id="org.fedoraproject.MediaWriter.desktop" score="0" last-seen="1679661428"/>
     <application id="gnome-system-monitor.desktop" score="80.0751953125" last-seen="1679999096"/>
     <application id="timeshift-gtk.desktop" score="10" last-seen="1679824592"/>
@@ -45,7 +45,7 @@
     <application id="google-chrome.desktop" score="9858.4921875" last-seen="1679999290"/>
     <application id="org.gnome.baobab.desktop" score="0" last-seen="1679894449"/>
     <application id="synaptic.desktop" score="2.5" last-seen="1680001108"/>
-    <application id="org.gnome.gedit.desktop" score="1117.8413524218433" last-seen="1680004948"/>
-    <application id="org.gnome.Nautilus.desktop" score="1704.5713068843315" last-seen="1680005096"/>
+    <application id="org.gnome.gedit.desktop" score="1127.8413524218433" last-seen="1680008315"/>
+    <application id="org.gnome.Nautilus.desktop" score="1806.5713068843315" last-seen="1680008829"/>
   </context>
 </application-state>
