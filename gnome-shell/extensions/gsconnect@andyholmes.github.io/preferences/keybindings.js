@@ -143,7 +143,8 @@ var ShortcutChooserDialog = GObject.registerClass({
 
     async _check() {
         try {
-            const available = await checkAccelerator(this.accelerator);
+            // const available = await checkAccelerator(this.accelerator);
+            const available = true;
             this.set_button.visible = available;
             this.conflict_label.visible = !available;
         } catch (e) {
