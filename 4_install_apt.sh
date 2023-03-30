@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "============== [S] 4.Install - apt =============="
-sudo apt update
-sudo apt-get install -y $(cat pkg_install_apt)
+
 sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install -y $(cat pkg_install_apt)
 sudo apt autoremove
 sudo deborphan | xargs sudo apt-get -y remove --purge
 
