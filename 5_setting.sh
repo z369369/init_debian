@@ -50,9 +50,7 @@ sudo ufw allow 1714:1764/udp
 sudo ufw allow 3389/tcp
 sudo ufw allow 3389/udp
 
-sudo ufw allow 1022/tcp
-sudo ufw allow 1022/udp
-
+#vnc
 sudo ufw allow 5900/tcp
 sudo ufw allow 5900/udp
 
