@@ -24,6 +24,12 @@ gsettings set org.gnome.shell disable-extension-version-validation true
 echo "============== [E] 5.Link - Gnome Extension =============="
 
 
+echo "============== [S] 5.Remove - Ubuntu ESM =============="
+
+sudo mkdir /etc/apt/apt.conf.d/off
+sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
+
+echo "============== [S] 5.Remove - Ubuntu ESM =============="
 
 # [backup] .config
 # cd ~
