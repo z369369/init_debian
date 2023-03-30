@@ -90,5 +90,6 @@ else
   echo "Enter the Sudo password: "	
   read v_pwd
   echo $v_pwd >> ~/.key
-  
+fi
+
 echo "============== [E] 5.Set key file =============="
