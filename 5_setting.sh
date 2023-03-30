@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] Link - shell, script =============="
+echo "============== [S] 5.Link - shell, script =============="
 ln -s ~/git/linux_init/script ~/script
 
 rm -rf ~/.local/share/gnome-shell
@@ -11,17 +11,14 @@ ln -s ~/git/linux_init/Templates ~/Templates
 ln -s ~/.local/share/applications ~/Desktop/desktop_local
 ln -s ~/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_usr
-echo "============== [E] Link - shell, script =============="
+echo "============== [E] 5.Link - shell, script =============="
 
-echo "============== [S] Edit - Gnome Extension =============="
+echo "============== [S] 5.Edit - Gnome Extension =============="
 gsettings set org.gnome.GWeather temperature-unit centigrade
 gsettings set org.gnome.shell disable-extension-version-validation true
-echo "============== [E] Link - Gnome Extension =============="
+echo "============== [E] 5.Link - Gnome Extension =============="
 
-echo "============== [S] Remove - ubuntu ESM =============="
-sudo mkdir /etc/apt/apt.conf.d/off
-sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
-echo "============== [S] Remove - ubuntu ESM =============="
+
 
 # [backup] .config
 # cd ~
@@ -33,6 +30,7 @@ echo "============== [S] Remove - ubuntu ESM =============="
 
 #if you want, ipv6 disable edit below
 #sudo vi /etc/default/ufw 
+
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow 1714:1764/udp
 
@@ -49,8 +47,6 @@ sudo ufw allow 22000/tcp
 sudo ufw allow 22000/udp
 sudo ufw allow 21027/udp
 
-sudo ufw allow 22/tcp
-sudo ufw allow 22/udp
 sudo ufw reload
 
 #nautilus
@@ -68,12 +64,12 @@ sudo systemctl enable syncthing@$USER.service
 sudo systemctl start syncthing@$USER.service
 echo "============== [E] syncth Install =============="
 
-echo "============== [S] Set key file =============="
-echo "Check.. Key file Exist.."
+echo "============== [S] 5.Set Sudo key file =============="
+echo "Check.. Sudo Key file Exist.."
 if [ -e ~/.key ]; then
   echo "File .key already exists!"
 else
   echo "Enter the Sudo password: "	
   read v_pwd
   echo $v_pwd >> ~/.key
-echo "============== [E] Set key file =============="
+echo "============== [E] 5.Set key file =============="

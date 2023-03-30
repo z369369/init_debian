@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] Install - ppa =============="
+echo "============== [S] 3.Install - ppa =============="
 sudo apt-get install -y wget gpg
 
 #vscode
@@ -35,4 +35,4 @@ sudo apt install firefox
 # sudo add-apt-repository ppa:cappelikan/ppa
 # sudo apt install mainline
 
-echo "============== [E] Install - ppa =============="
+echo "============== [E] 3.Install - ppa =============="
