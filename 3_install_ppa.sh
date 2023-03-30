@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "============== [S] 3.Install - ppa =============="
+sudo apt -y autoremove
 sudo apt-get install -y wget gpg
 
 #vscode
@@ -33,7 +34,6 @@ Pin-Priority: -1
 
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt install firefox
-sudo apt -y autoremove
 
 #kernel
 # sudo add-apt-repository ppa:cappelikan/ppa
