@@ -32,6 +32,7 @@ rsync
 software-properties-common
 synaptic
 timeshift
+ubuntu-restricted-extras
 ufw
 virt-manager
 wget
