@@ -7,6 +7,7 @@ if [ $? -eq 0 ]; then
     ./2_pkg_custom.sh
     ./3_pkg_common.sh
     ./4_setting.sh
+    ./5_telemetry_off.sh
     reboot
 else
     echo "Offline... Please check wifi connection"
