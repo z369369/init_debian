@@ -28,3 +28,12 @@ echo "============== [S] 1.Remove - Ubuntu default extension =============="
 sudo rm -rf /usr/share/gnome-shell/extensions/*
 
 echo "============== [S] 1.Remove - Ubuntu default extension =============="
+
+
+echo "============== [S] 1.Change - Korean Mirror =============="
+
+sudo sed -i 's/kr.archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
+sudo sed -i 's/archive.ubuntu.com/mirror.kakao.com/g' /etc/apt/sources.list
+sudo sed -i 's/ports.ubuntu.com/ftp.harukasan.org/g' /etc/apt/sources.list
+
+echo "============== [E] 1.Change - Korean Mirror =============="
