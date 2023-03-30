@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "============== [S] 3.Install - ppa =============="
+sudo apt-get update && sudo apt-get -y upgrade
 sudo apt -y autoremove
 sudo apt-get install -y wget gpg
 
