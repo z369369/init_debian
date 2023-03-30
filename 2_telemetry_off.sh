@@ -28,9 +28,9 @@ echo "Completed"
 echo "============== [E] 2.Telemetry Off =============="
 
 
-echo "============== [S] 2.Remove - ubuntu ESM =============="
+echo "============== [S] 2.Remove - Ubuntu ESM =============="
 
 sudo mkdir /etc/apt/apt.conf.d/off
 sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
 
-echo "============== [S] 2.Remove - ubuntu ESM =============="
+echo "============== [S] 2.Remove - Ubuntu ESM =============="

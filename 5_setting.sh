@@ -36,9 +36,11 @@ echo "============== [E] 5.Link - Gnome Extension =============="
 #if you want, ipv6 disable edit below
 #sudo vi /etc/default/ufw 
 
+#gsconnect
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow 1714:1764/udp
 
+#RDP
 sudo ufw allow 3389/tcp
 sudo ufw allow 3389/udp
 
@@ -48,6 +50,7 @@ sudo ufw allow 1022/udp
 sudo ufw allow 5900/tcp
 sudo ufw allow 5900/udp
 
+#syncthing
 sudo ufw allow 22000/tcp
 sudo ufw allow 22000/udp
 sudo ufw allow 21027/udp
@@ -60,7 +63,7 @@ sudo ufw reload
 
 # git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
-echo "============== [S] syncth Install =============="
+echo "============== [S] Syncthing Install =============="
 
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
@@ -69,7 +72,7 @@ sudo apt install syncthing
 sudo systemctl enable syncthing@$USER.service
 sudo systemctl start syncthing@$USER.service
 
-echo "============== [E] syncth Install =============="
+echo "============== [E] Syncthing Install =============="
 
 
 echo "============== [S] 5.Set Sudo key file =============="
