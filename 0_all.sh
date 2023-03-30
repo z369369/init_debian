@@ -10,5 +10,5 @@ if [ $? -eq 0 ]; then
     ./5_telemetry_off.sh
     reboot
 else
-    echo "Offline... Please check wifi connection"
+    echo "Offline... Please check Internet connection"
 fi
