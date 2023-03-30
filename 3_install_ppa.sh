@@ -25,7 +25,7 @@ Pin-Priority: -1
 
 sudo add-apt-repository ppa:mozillateam/ppa
 sudo apt-get update && sudo apt-get -y upgrade
-sudo apt install firefox
+sudo apt install -y firefox
 
 #vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
