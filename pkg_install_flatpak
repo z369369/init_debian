@@ -31,6 +31,7 @@ org.gnome.Extensions
 org.kde.kdenlive
 org.kde.krita
 org.libreoffice.LibreOffice
+org.nomacs.ImageLounge
 org.remmina.Remmina
 org.telegram.desktop
 sh.ppy.osu
