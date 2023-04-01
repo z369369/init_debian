@@ -2,4 +2,4 @@
 
 flatpak update --noninteractive --assumeyes
 
-# cat ~/.key | sudo -S sudo apt update && sudo apt -y upgrade 
+cat ~/.key | sudo -S sudo apt update && sudo apt -y upgrade 
