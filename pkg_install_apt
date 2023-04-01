@@ -5,6 +5,7 @@ curl
 deborphan
 gedit
 gnome-shell-extensions
+gnome-shell-extension-prefs
 gnome-tweaks
 git
 gprename
