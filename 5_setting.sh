@@ -18,7 +18,7 @@ echo "============== [E] 5.Link - shell, script =============="
 
 echo "============== [S] 5.Load - dconf_backup =============="
 
-dconf load / < /home/$USER/git/linux_init/dconf_backup
+dconf load / < /home/$USER/git/linux_init/gnome-shell/dconf_backup
 
 echo "============== [E] 5.Load - dconf_backup =============="
 
