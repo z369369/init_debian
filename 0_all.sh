@@ -9,6 +9,7 @@ if [ $? -eq 0 ]; then
     ./4_install_apt.sh
     ./4_install_flatpak.sh
     ./5_setting.sh
+    ./6_test_ppa.sh
     reboot
 else
     echo "Offline... Please check Internet connection"
