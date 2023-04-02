@@ -2,7 +2,7 @@
 echo "============== [S] 4.Install - apt =============="
 
 sudo apt-get update
-sudo apt-get autoremove
+sudo apt -y autoremove
 sudo apt-get autoclean
 sudo apt-get -y upgrade
 
@@ -10,7 +10,7 @@ sudo apt-get install --only-upgrade `sudo apt-get upgrade | awk 'BEGIN{flag=0} /
 sudo apt-get install --only-upgrade `sudo apt-get upgrade | awk 'BEGIN{flag=0} /다음 패키지를 과거 버전으로 유지합니다:/ { flag=1} /^ /{if (flag) print}'`
 
 sudo apt update
-sudo apt autoremove
+sudo apt -y autoremove
 sudo apt-get -y upgrade
 
 sudo apt install -y $(cat pkg_install_apt)
