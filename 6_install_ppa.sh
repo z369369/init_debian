@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] 3.Install - ppa =============="
+echo "============== [S] 6.Install - ppa =============="
 
 sudo apt update && sudo apt -y upgrade
 sudo apt -y autoremove
@@ -36,11 +36,11 @@ sudo apt -y autoremove
 # sudo add-apt-repository ppa:cappelikan/ppa
 # sudo apt install mainline
 
-echo "============== [E] 3.Install - ppa =============="
+echo "============== [E] 6.Install - ppa =============="
 
 
 
-echo "============== [S] Syncthing Install =============="
+echo "============== [S] 6.Install - Syncthing =============="
 
 sudo curl -s -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
@@ -49,15 +49,15 @@ sudo apt install -y syncthing
 sudo systemctl enable syncthing@$USER.service
 sudo systemctl start syncthing@$USER.service
 
-echo "============== [E] Syncthing Install =============="
+echo "============== [E] 6.Install - Syncthing =============="
 
 
 
-echo "============== [S] Chrome Install =============="
+echo "============== [S] 6.Install - Chrome =============="
 
 curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg > /dev/null
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt update && sudo apt -y upgrade
 sudo apt install -y google-chrome-stable
 
-echo "============== [E] Chrome Install =============="
+echo "============== [E] 6.Install - Chrome =============="

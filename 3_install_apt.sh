@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] 4.Install - apt =============="
+echo "============== [S] 3.Install - apt =============="
 
 sudo apt-get update
 sudo apt -y autoremove
@@ -14,5 +14,5 @@ sudo apt install -y $(cat pkg_install_apt)
 sudo apt -y autoremove
 sudo deborphan | xargs sudo apt -y remove --purge
 
-echo "============== [E] 4.Install - apt =============="
+echo "============== [E] 3.Install - apt =============="
 
