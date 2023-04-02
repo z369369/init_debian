@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "============== [S] 3.Install - ppa =============="
+
 sudo apt update && sudo apt -y upgrade
 sudo apt -y autoremove
 sudo apt install -y wget gpg ttf-mscorefonts-installer

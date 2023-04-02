@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "============== [S] Syncthing Install =============="
 
 sudo curl -s -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
@@ -10,6 +9,7 @@ sudo systemctl enable syncthing@$USER.service
 sudo systemctl start syncthing@$USER.service
 
 echo "============== [E] Syncthing Install =============="
+
 
 
 echo "============== [S] Chrome Install =============="

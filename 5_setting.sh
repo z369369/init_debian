@@ -16,11 +16,13 @@ ln -s /usr/share/applications ~/Desktop/desktop_usr
 echo "============== [E] 5.Link - shell, script =============="
 
 
+
 echo "============== [S] 5.Load - dconf_backup =============="
 
 dconf load / < /home/$USER/git/linux_init/gnome-shell/dconf_backup
 
 echo "============== [E] 5.Load - dconf_backup =============="
+
 
 
 echo "============== [S] 5.Edit - Gnome Extension =============="
@@ -29,6 +31,7 @@ gsettings set org.gnome.GWeather temperature-unit centigrade
 gsettings set org.gnome.shell disable-extension-version-validation true
 
 echo "============== [E] 5.Link - Gnome Extension =============="
+
 
 
 echo "============== [S] 5.Remove - Ubuntu ESM =============="
