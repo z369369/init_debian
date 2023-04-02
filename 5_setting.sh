@@ -76,8 +76,8 @@ sudo ufw reload
 
 echo "============== [S] Syncthing Install =============="
 
-echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+sudo curl -s -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 sudo apt update
 sudo apt install syncthing	
 sudo systemctl enable syncthing@$USER.service
