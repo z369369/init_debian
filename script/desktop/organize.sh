@@ -38,7 +38,7 @@ mv *.iso ~/Downloads/iso 2> /dev/null
 rsync -a --exclude-from /home/$USER --exclude phone/Tachiyomi --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/$USER/
 
 
-dconf dump / > /media/$USER/backup_disk/$USER/dconf_backup
-#dconf load / < /media/$USER/backup_disk/$USER/dconf_backup
+dconf dump / > /home/$USER/git/linux_init/dconf_backup
+#dconf load / < /home/$USER/git/linux_init/dconf_backup
 
 notify-send 'Complete' 'Organizing your downloads Folder'

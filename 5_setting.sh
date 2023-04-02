@@ -16,6 +16,13 @@ ln -s /usr/share/applications ~/Desktop/desktop_usr
 echo "============== [E] 5.Link - shell, script =============="
 
 
+echo "============== [S] 5.Load - dconf_backup =============="
+
+dconf load / < /home/$USER/git/linux_init/dconf_backup
+
+echo "============== [E] 5.Load - dconf_backup =============="
+
+
 echo "============== [S] 5.Edit - Gnome Extension =============="
 
 gsettings set org.gnome.GWeather temperature-unit centigrade
