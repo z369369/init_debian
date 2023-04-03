@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='/org/'
-saved-view='/org/'
+saved-pathbar-path='menu'
+saved-view='/'
 show-warning=false
 window-height=806
 window-is-maximized=false
@@ -157,7 +157,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='mouse'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -214,13 +214,13 @@ apps=['com.redis.RedisInsight.desktop', 'org.gnome.meld.desktop', 'com.belmoussa
 name='Programming'
 
 [org/gnome/desktop/app-folders/folders/ef538e80-aafa-499c-999b-a4798c6c61cd]
-apps=['org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.gnome.Evince.desktop', 'com.jgraph.drawio.desktop.desktop', 'org.gnome.Contacts.desktop', 'net.cozic.joplin_desktop.desktop']
+apps=['org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.gnome.Evince.desktop', 'com.jgraph.drawio.desktop.desktop', 'org.gnome.Contacts.desktop', 'net.cozic.joplin_desktop.desktop', 'org.libreoffice.LibreOffice.desktop']
 name='Office'
 
 [org/gnome/desktop/background]
 picture-options='spanned'
-picture-uri='file:///home/lwh/Pictures/BingWallpaper/20230402-JavaBromo_ROW4373967906_UHD.jpg'
-picture-uri-dark='file:///home/lwh/Pictures/BingWallpaper/20230402-JavaBromo_ROW4373967906_UHD.jpg'
+picture-uri='file:///home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
+picture-uri-dark='file:///home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -256,7 +256,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar']
 show-banners=true
 show-in-lock-screen=false
 
@@ -359,6 +359,9 @@ application-id='org.gimp.GIMP.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-calendar]
+application-id='org.gnome.Calendar.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
 
@@ -448,9 +451,10 @@ numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 natural-scroll=false
-speed=0.82352941176470584
+speed=0.79411764705882359
 
 [org/gnome/desktop/peripherals/touchpad]
+edge-scrolling-enabled=false
 natural-scroll=false
 speed=0.41911764705882359
 two-finger-scrolling-enabled=true
@@ -604,7 +608,7 @@ sort-type='ascending'
 [org/gnome/file-roller/ui]
 sidebar-width=200
 window-height=480
-window-width=600
+window-width=898
 
 [org/gnome/gedit/plugins]
 active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spell']
@@ -668,7 +672,7 @@ resources-memory-in-iec=false
 show-all-fs=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(960, 1060, 26, 23)
+window-state=(960, 1056, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -680,7 +684,7 @@ col-4-width=80
 col-5-visible=true
 col-5-width=103
 col-6-visible=true
-col-6-width=0
+col-6-width=356
 
 [org/gnome/gnome-system-monitor/openfilestree]
 sort-col=0
@@ -985,7 +989,7 @@ command-history=['calc', 'gnome-calc', 'lg', 'R', 'r', 'meld', 'htop', 'gnome-sh
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=['wsmatrix@martin.zurowietz.de', 'ubuntu-appindicators@ubuntu.com', 'caffeine@patapon.info', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'systemd-manager@hardpixel.eu', 'no-overview@fthx', 'draw-on-your-screen2@zhrexl.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'NotificationCounter@coolllsk', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'panel-date-format@atareao.es', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'dash-to-panel@jderose9.github.com', 'firefox-pip@bennypowers.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'simply.workspaces@andyrichardson.dev', 'volume-mixer@evermiss.net', 'keyboard_modifiers_status@sneetsher', 'tiling-assistant@leleat-on-github', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'NotificationCounter@coolllsk', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'dash-to-panel@jderose9.github.com', 'firefox-pip@bennypowers.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'simply.workspaces@andyrichardson.dev', 'volume-mixer@evermiss.net', 'keyboard_modifiers_status@sneetsher', 'tiling-assistant@leleat-on-github', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'panel-date-format@atareao.es']
 favorite-apps=['firefox.desktop', 'code.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'webmail.desktop', 'google-chrome.desktop', 'com.opera.Opera.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'md.obsidian.Obsidian.desktop', 'virt-manager.desktop', 'syncthing-ui.desktop', 'com.vscodium.codium.desktop', 'synaptic.desktop', 'com.github.alexkdeveloper.desktop-files-creator.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Extensions.desktop', 'organize.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['exi', 'exit', 'quit', 'bye']
@@ -1004,7 +1008,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230326","fullstartdate":"202303260700","enddate":"20230327","url":"/th?id=OHR.WildAnza_ROW9424619205_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.WildAnza_ROW9424619205","copyright":"Wildflowers in Anza Borrego Desert State Park, California, USA (© Ron and Patty Thomas/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Anza+Borrego+Desert+State+Park+California&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230326_WildAnza%22&FORM=HPQUIZ","wp":true,"hsh":"43c5ccfb8e64d0c22a2dce8f0d4e9983","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230327","fullstartdate":"202303270700","enddate":"20230328","url":"/th?id=OHR.NYCClouds_ROW9479364107_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NYCClouds_ROW9479364107","copyright":"New York City skyline in the clouds (© Orbon Alija/Getty Images)","copyrightlink":"https://www.bing.com/search?q=new+york+city+skyscrapers&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230327_NYCClouds%22&FORM=HPQUIZ","wp":true,"hsh":"b33bf050a08ab6f8191496d97274d05f","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230328","fullstartdate":"202303280700","enddate":"20230329","url":"/th?id=OHR.MWDolomites_ROW9549275755_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MWDolomites_ROW9549275755","copyright":"Milky Way above Tre Cime di Lavaredo, Italy (© Juan Romero/Cavan Images)","copyrightlink":"https://www.bing.com/search?q=Le+Tre+Cime+Di+Lavaredo&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230328_MWDolomites%22&FORM=HPQUIZ","wp":true,"hsh":"d69ef2e8878f9e77cade20836c72936e","drk":1,"top":1,"bot":1,"hs":[],"favourite":false},{"startdate":"20230329","fullstartdate":"202303290700","enddate":"20230330","url":"/th?id=OHR.NuzzleManatee_ROW5271300722_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NuzzleManatee_ROW5271300722","copyright":"Two manatees, Crystal River, Florida, USA (© Gregory Sweeney/Getty Images)","copyrightlink":"https://www.bing.com/search?q=manatees&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230329_NuzzleManatee%22&FORM=HPQUIZ","wp":true,"hsh":"80f5661165ea52d946179d6aff7aa0d4","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230330","fullstartdate":"202303300700","enddate":"20230331","url":"/th?id=OHR.PeacockFeathers_ROW9614910018_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.PeacockFeathers_ROW9614910018","copyright":"Peacock feathers (© sarayut Thaneerat/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Peacock+feathers&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230330_PeacockFeathers%22&FORM=HPQUIZ","wp":true,"hsh":"ec9062fba9d88b85a48cb6bde9efa82f","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230331","fullstartdate":"202303310700","enddate":"20230401","url":"/th?id=OHR.SteyrRiver_ROW9684158265_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SteyrRiver_ROW9684158265","copyright":"Steyr river, Austria (© guenterguni/Getty Images)","copyrightlink":"https://www.bing.com/search?q=steyr+river&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230331_SteyrRiver%22&FORM=HPQUIZ","wp":true,"hsh":"b03fe6f12fd1080edf007f11fb292bc5","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230401","fullstartdate":"202304010700","enddate":"20230402","url":"/th?id=OHR.FrogMonth_ROW9751182121_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FrogMonth_ROW9751182121","copyright":"Javan tree frog (© kuritafsheen/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Javan+tree+frog&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230401_FrogMonth%22&FORM=HPQUIZ","wp":true,"hsh":"39290d370af8567429fe70b9d84d6400","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230402","fullstartdate":"202304020700","enddate":"20230403","url":"/th?id=OHR.JavaBromo_ROW4373967906_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.JavaBromo_ROW4373967906","copyright":"Bromo Tengger Semeru National Park, East Java, Indonesia (© Bento Fotography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=bromo+tengger+semeru+national+park&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230402_JavaBromo%22&FORM=HPQUIZ","wp":true,"hsh":"349a710f93278e917f209bdf2de24056","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json="[{\"startdate\":\"20230327\",\"fullstartdate\":\"202303270700\",\"enddate\":\"20230328\",\"url\":\"/th?id=OHR.NYCClouds_ROW9479364107_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NYCClouds_ROW9479364107\",\"copyright\":\"New York City skyline in the clouds (© Orbon Alija/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=new+york+city+skyscrapers&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230327_NYCClouds%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b33bf050a08ab6f8191496d97274d05f\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230328\",\"fullstartdate\":\"202303280700\",\"enddate\":\"20230329\",\"url\":\"/th?id=OHR.MWDolomites_ROW9549275755_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MWDolomites_ROW9549275755\",\"copyright\":\"Milky Way above Tre Cime di Lavaredo, Italy (© Juan Romero/Cavan Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Le+Tre+Cime+Di+Lavaredo&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230328_MWDolomites%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d69ef2e8878f9e77cade20836c72936e\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"favourite\":false},{\"startdate\":\"20230329\",\"fullstartdate\":\"202303290700\",\"enddate\":\"20230330\",\"url\":\"/th?id=OHR.NuzzleManatee_ROW5271300722_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NuzzleManatee_ROW5271300722\",\"copyright\":\"Two manatees, Crystal River, Florida, USA (© Gregory Sweeney/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=manatees&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230329_NuzzleManatee%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"80f5661165ea52d946179d6aff7aa0d4\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230330\",\"fullstartdate\":\"202303300700\",\"enddate\":\"20230331\",\"url\":\"/th?id=OHR.PeacockFeathers_ROW9614910018_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PeacockFeathers_ROW9614910018\",\"copyright\":\"Peacock feathers (© sarayut Thaneerat/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Peacock+feathers&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230330_PeacockFeathers%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"ec9062fba9d88b85a48cb6bde9efa82f\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230331\",\"fullstartdate\":\"202303310700\",\"enddate\":\"20230401\",\"url\":\"/th?id=OHR.SteyrRiver_ROW9684158265_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SteyrRiver_ROW9684158265\",\"copyright\":\"Steyr river, Austria (© guenterguni/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=steyr+river&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230331_SteyrRiver%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b03fe6f12fd1080edf007f11fb292bc5\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230401\",\"fullstartdate\":\"202304010700\",\"enddate\":\"20230402\",\"url\":\"/th?id=OHR.FrogMonth_ROW9751182121_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.FrogMonth_ROW9751182121\",\"copyright\":\"Javan tree frog (© kuritafsheen/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Javan+tree+frog&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230401_FrogMonth%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"39290d370af8567429fe70b9d84d6400\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230402\",\"fullstartdate\":\"202304020700\",\"enddate\":\"20230403\",\"url\":\"/th?id=OHR.JavaBromo_ROW4373967906_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.JavaBromo_ROW4373967906\",\"copyright\":\"Bromo Tengger Semeru National Park, East Java, Indonesia (© Bento Fotography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=bromo+tengger+semeru+national+park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230402_JavaBromo%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"349a710f93278e917f209bdf2de24056\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230403\",\"fullstartdate\":\"202304030700\",\"enddate\":\"20230404\",\"url\":\"/th?id=OHR.HonaunauNP_ROW5786762045_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HonaunauNP_ROW5786762045\",\"copyright\":\"Pu'uhonua o Honaunau National Park, Big Island, Hawaii (© Westend61/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Pu%27uhonua+o+Honaunau+National+Park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230403_HonaunauNP%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"46ba0858a3f76f276030ea09bd6779e9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
 delete-previous=true
 download-folder='~/Pictures/BingWallpaper/'
 hide=false
@@ -1016,7 +1020,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202304020700,"title":"Bromo Tengger Semeru National Park, East Java, Indonesia","explanation":"Bing Wallpaper of the Day for 2023-04-02","copyright":"© Bento Fotography/Getty Images","longstartdate":"202304020700","imageinfolink":"https://www.bing.com/search?q=bromo+tengger+semeru+national+park&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.JavaBromo_ROW4373967906_UHD.jpg","filename":"/home/lwh/Pictures/BingWallpaper/20230402-JavaBromo_ROW4373967906_UHD.jpg","favourite":false}'
+state="{\"maxlongdate\":202304030700,\"title\":\"Pu'uhonua o Honaunau National Park, Big Island, Hawaii\",\"explanation\":\"Bing Wallpaper of the Day for 2023-04-03\",\"copyright\":\"© Westend61/Getty Images\",\"longstartdate\":\"202304030700\",\"imageinfolink\":\"https://www.bing.com/search?q=Pu%27uhonua+o+Honaunau+National+Park&form=hpcapt\",\"imageURL\":\"https://www.bing.com/th?id=OHR.HonaunauNP_ROW5786762045_UHD.jpg\",\"filename\":\"/home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg\",\"favourite\":false}"
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1494,6 +1498,7 @@ icons-limit=8
 invoke-to-workspace=true
 tray-margin-left=0
 tray-margin-right=0
+tray-position='right'
 wine-behavior=true
 
 [org/gnome/shell/extensions/unite]
@@ -1524,6 +1529,9 @@ picture-uri-dark='/home/lwh/Pictures/BingWallpaper/20221003-FairyGlen_ROW5078690
 
 [org/gnome/shell/extensions/user-theme]
 name='Yaru-dark'
+
+[org/gnome/shell/extensions/vitals]
+alphabetize=true
 
 [org/gnome/shell/extensions/webfeed]
 okfornotif=false
@@ -1560,7 +1568,7 @@ download-updates-notify=false
 first-run=false
 install-timestamp=int64 1679515490
 online-updates-timestamp=int64 1680216616
-update-notification-timestamp=int64 1680216616
+update-notification-timestamp=int64 1680525829
 
 [org/gnome/system/location]
 enabled=false
@@ -1618,7 +1626,7 @@ recent-emoji=[(([uint32 128338], 'three o’clock', ''), uint32 0), (([128347], 
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=182
@@ -1641,7 +1649,7 @@ window-width=532
 hash-functions=['MD5', 'SHA1', 'SHA256', 'CRC32']
 
 [org/virt-manager/virt-manager]
-manager-window-height=1023
+manager-window-height=1019
 manager-window-width=500
 
 [org/virt-manager/virt-manager/confirm]
@@ -1676,6 +1684,11 @@ network-traffic=false
 autoconnect=1
 scaling=1
 vm-window-size=(1024, 841)
+
+[org/virt-manager/virt-manager/vms/09d8b3a31814439383a1e3695c527f86]
+autoconnect=1
+scaling=1
+vm-window-size=(1058, 1019)
 
 [org/virt-manager/virt-manager/vms/0cf30f1ddcd1406984332c2a3f1a1938]
 autoconnect=1
@@ -1756,6 +1769,11 @@ vm-window-size=(1024, 837)
 autoconnect=1
 scaling=1
 vm-window-size=(1024, 837)
+
+[org/virt-manager/virt-manager/vms/2c63e17f94c3496eaf171eadfa7dcd03]
+autoconnect=1
+scaling=1
+vm-window-size=(1058, 1019)
 
 [org/virt-manager/virt-manager/vms/30f003f194f74340a44cfcd62c7e19eb]
 autoconnect=1
@@ -1862,6 +1880,11 @@ autoconnect=1
 scaling=1
 vm-window-size=(1046, 1019)
 
+[org/virt-manager/virt-manager/vms/7bacc3b27b6f4974b34344b466d1e247]
+autoconnect=1
+scaling=1
+vm-window-size=(1024, 837)
+
 [org/virt-manager/virt-manager/vms/7e3480d409c3431bb480437cc539a8c7]
 autoconnect=1
 scaling=1
@@ -1892,6 +1915,11 @@ autoconnect=1
 scaling=1
 vm-window-size=(1024, 837)
 
+[org/virt-manager/virt-manager/vms/9230853d6acc4553bc3abed23b63230e]
+autoconnect=1
+scaling=1
+vm-window-size=(1058, 1019)
+
 [org/virt-manager/virt-manager/vms/9429a53f373d474c93984089981502cd]
 autoconnect=1
 scaling=1
@@ -1917,6 +1945,11 @@ autoconnect=1
 scaling=1
 vm-window-size=(1024, 837)
 
+[org/virt-manager/virt-manager/vms/a99bf4c97da24f4aa08adec9baf9eae2]
+autoconnect=1
+scaling=1
+vm-window-size=(1142, 1019)
+
 [org/virt-manager/virt-manager/vms/af3238ad6ab948839728038f7d6bce34]
 autoconnect=1
 scaling=1
@@ -1936,6 +1969,11 @@ vm-window-size=(1024, 837)
 autoconnect=1
 scaling=1
 vm-window-size=(1024, 837)
+
+[org/virt-manager/virt-manager/vms/c2fc097ce2f049f182b9bfbb56f1b7b6]
+autoconnect=1
+scaling=1
+vm-window-size=(1058, 1019)
 
 [org/virt-manager/virt-manager/vms/c7af408ddda04ffab812907aecce186b]
 autoconnect=1
@@ -2006,6 +2044,11 @@ vm-window-size=(1024, 837)
 autoconnect=1
 scaling=1
 vm-window-size=(1191, 943)
+
+[org/virt-manager/virt-manager/vms/ee1464609dad45e9b6c20d1c639f2d99]
+autoconnect=1
+scaling=1
+vm-window-size=(1058, 1019)
 
 [org/virt-manager/virt-manager/vms/ef68b0c418d64718a61b9379f2c70be0]
 autoconnect=1
