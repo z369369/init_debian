@@ -91,7 +91,14 @@ var Handler = class TilingKeybindingHandler {
 
         // Toggle always-on-top
         } else if (shortcutName === Shortcuts.ALWAYS_ON_TOP) {
-            window.is_above() ? window.unmake_above() : window.make_above();
+            // window.is_above() ? window.unmake_above() : window.make_above();
+            if(window.is_above()){
+                window.unmake_above();
+                window.unstick();
+            } else {
+                window.make_above();
+                window.stick();
+            }
 
         // Toggle maximization vertically
         } else if (shortcutName === Shortcuts.MAXIMIZE_V) {
