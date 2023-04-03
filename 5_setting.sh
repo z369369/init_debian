@@ -13,11 +13,9 @@ ln -s ~/.local/share/applications ~/Desktop/desktop_local
 ln -s ~/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
-rm -rf ~/.local/share/nautilus
-rm -rf ~/.local/share/nautilus-python
-
-ln -s ~/git/linux_init/local_share/nautilus ~/.local/share/nautilus
-ln -s ~/git/linux_init/local_share/nautilus-python ~/.local/share/nautilus-python
+git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
+rsync -a ~/git/linux_init/local_share/nautilus/ ~/.local/share/nautilus
+rsync -a ~/git/linux_init/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
 echo "============== [E] 5.Link - shell, script =============="
 
