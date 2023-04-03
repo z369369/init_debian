@@ -157,7 +157,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='mouse'
+last-panel='info-overview'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -615,8 +615,8 @@ active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spe
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
-tree-view=true
-virtual-root='file:///home/lwh/script/automation'
+tree-view=false
+virtual-root='file:///home/lwh/Pictures/output-20171212_120338'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunpen Bold 12'
@@ -785,6 +785,12 @@ lossless=false
 method=4
 quality=75
 
+[org/gnome/gthumb/rotate]
+background-color='rgb(0,0,0)'
+grid-type='thirds'
+keep-aspect-ratio=true
+resize='crop'
+
 [org/gnome/libgnomekbd/preview]
 height=611
 width=1464
@@ -833,7 +839,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1056)
+initial-size=(1190, 1056)
 maximized=false
 sidebar-width=188
 
