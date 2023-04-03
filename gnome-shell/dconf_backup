@@ -522,7 +522,7 @@ use-background-color=true
 document-directory=@ms 'file:///home/lwh/Pictures'
 
 [org/gnome/evince/default]
-window-ratio=(1.6126984114824892, 1.0310138418549533)
+window-ratio=(1.2403361344537815, 1.0985748218527316)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -616,7 +616,7 @@ active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spe
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/desktop'
+virtual-root='file:///home/lwh/script/crontab'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunpen Bold 12'
@@ -833,9 +833,9 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(960, 1056)
+initial-size=(1609, 931)
 maximized=false
-sidebar-width=212
+sidebar-width=255
 
 [org/gnome/nm-applet/eap/0041fb13-8421-411b-869c-90c21aaee2b4]
 ignore-ca-cert=false
