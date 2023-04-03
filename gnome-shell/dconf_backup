@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='menu'
-saved-view='/'
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/always-on-top'
+saved-view='/org/gnome/desktop/wm/keybindings/always-on-top'
 show-warning=false
 window-height=806
 window-is-maximized=false
@@ -616,7 +616,7 @@ active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spe
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/crontab'
+virtual-root='file:///home/lwh/script/automation'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunpen Bold 12'
@@ -661,7 +661,7 @@ view-window-width=1584
 
 [org/gnome/gnome-system-monitor]
 cpu-stacked-area-chart=false
-current-tab='processes'
+current-tab='resources'
 graph-data-points=30
 logarithmic-scale=false
 maximized=false
@@ -684,7 +684,7 @@ col-4-width=80
 col-5-visible=true
 col-5-width=103
 col-6-visible=true
-col-6-width=356
+col-6-width=0
 
 [org/gnome/gnome-system-monitor/openfilestree]
 sort-col=0
@@ -708,7 +708,7 @@ col-24-width=160
 col-26-visible=false
 col-26-width=100
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=0
+sort-col=15
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -833,9 +833,9 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1111, 931)
+initial-size=(960, 1056)
 maximized=false
-sidebar-width=255
+sidebar-width=188
 
 [org/gnome/nm-applet/eap/0041fb13-8421-411b-869c-90c21aaee2b4]
 ignore-ca-cert=false
