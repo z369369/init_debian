@@ -1626,7 +1626,7 @@ recent-emoji=[(([uint32 128338], 'three o’clock', ''), uint32 0), (([128347], 
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=182

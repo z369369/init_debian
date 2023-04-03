@@ -35,7 +35,7 @@ mv *.iso ~/Downloads/iso 2> /dev/null
 #flatpak remote-info --log flathub com.obsproject.Studio
 #cat ~/.key | sudo -S flatpak update -y --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 
-rsync -a --exclude-from /home/$USER --exclude phone/Tachiyomi --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/$USER/
+rsync -a --delete --exclude-from /home/$USER --exclude .local/share/Trash --exclude phone/Tachiyomi --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/$USER/
 
 
 dconf dump / > /home/$USER/git/linux_init/gnome-shell/dconf_backup
