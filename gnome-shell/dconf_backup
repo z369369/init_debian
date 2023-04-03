@@ -219,8 +219,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='spanned'
-picture-uri='file:///home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
-picture-uri-dark='file:///home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -641,7 +641,7 @@ open-recent=false
 
 [org/gnome/gedit/state/history-entry]
 replace-with-entry=['script/automation', '/home/lwh/automation/script', '- [ ] ', 'Pictures', 'phone/DCIM', '- [ ]', '[] Check', 'List', 'Item']
-search-for-entry=['/home/lwh/automation', 'automation', 'test2', 'test1', '- [ ]', '- List', 'Number', 'List', '.video-long-banner']
+search-for-entry=['$USER', '/home/lwh/automation', 'automation', 'test2', 'test1', '- [ ]', '- List', 'Number', 'List']
 
 [org/gnome/gedit/state/window]
 bottom-panel-size=140
@@ -833,7 +833,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1609, 931)
+initial-size=(1111, 931)
 maximized=false
 sidebar-width=255
 
@@ -1010,7 +1010,7 @@ percentagefull=true
 [org/gnome/shell/extensions/bingwallpaper]
 bing-json="[{\"startdate\":\"20230327\",\"fullstartdate\":\"202303270700\",\"enddate\":\"20230328\",\"url\":\"/th?id=OHR.NYCClouds_ROW9479364107_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NYCClouds_ROW9479364107\",\"copyright\":\"New York City skyline in the clouds (© Orbon Alija/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=new+york+city+skyscrapers&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230327_NYCClouds%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b33bf050a08ab6f8191496d97274d05f\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230328\",\"fullstartdate\":\"202303280700\",\"enddate\":\"20230329\",\"url\":\"/th?id=OHR.MWDolomites_ROW9549275755_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MWDolomites_ROW9549275755\",\"copyright\":\"Milky Way above Tre Cime di Lavaredo, Italy (© Juan Romero/Cavan Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Le+Tre+Cime+Di+Lavaredo&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230328_MWDolomites%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d69ef2e8878f9e77cade20836c72936e\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[],\"favourite\":false},{\"startdate\":\"20230329\",\"fullstartdate\":\"202303290700\",\"enddate\":\"20230330\",\"url\":\"/th?id=OHR.NuzzleManatee_ROW5271300722_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NuzzleManatee_ROW5271300722\",\"copyright\":\"Two manatees, Crystal River, Florida, USA (© Gregory Sweeney/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=manatees&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230329_NuzzleManatee%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"80f5661165ea52d946179d6aff7aa0d4\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230330\",\"fullstartdate\":\"202303300700\",\"enddate\":\"20230331\",\"url\":\"/th?id=OHR.PeacockFeathers_ROW9614910018_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.PeacockFeathers_ROW9614910018\",\"copyright\":\"Peacock feathers (© sarayut Thaneerat/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Peacock+feathers&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230330_PeacockFeathers%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"ec9062fba9d88b85a48cb6bde9efa82f\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230331\",\"fullstartdate\":\"202303310700\",\"enddate\":\"20230401\",\"url\":\"/th?id=OHR.SteyrRiver_ROW9684158265_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SteyrRiver_ROW9684158265\",\"copyright\":\"Steyr river, Austria (© guenterguni/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=steyr+river&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230331_SteyrRiver%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b03fe6f12fd1080edf007f11fb292bc5\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230401\",\"fullstartdate\":\"202304010700\",\"enddate\":\"20230402\",\"url\":\"/th?id=OHR.FrogMonth_ROW9751182121_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.FrogMonth_ROW9751182121\",\"copyright\":\"Javan tree frog (© kuritafsheen/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Javan+tree+frog&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230401_FrogMonth%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"39290d370af8567429fe70b9d84d6400\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230402\",\"fullstartdate\":\"202304020700\",\"enddate\":\"20230403\",\"url\":\"/th?id=OHR.JavaBromo_ROW4373967906_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.JavaBromo_ROW4373967906\",\"copyright\":\"Bromo Tengger Semeru National Park, East Java, Indonesia (© Bento Fotography/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=bromo+tengger+semeru+national+park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230402_JavaBromo%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"349a710f93278e917f209bdf2de24056\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230403\",\"fullstartdate\":\"202304030700\",\"enddate\":\"20230404\",\"url\":\"/th?id=OHR.HonaunauNP_ROW5786762045_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HonaunauNP_ROW5786762045\",\"copyright\":\"Pu'uhonua o Honaunau National Park, Big Island, Hawaii (© Westend61/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Pu%27uhonua+o+Honaunau+National+Park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230403_HonaunauNP%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"46ba0858a3f76f276030ea09bd6779e9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
 delete-previous=true
-download-folder='~/Pictures/BingWallpaper/'
+download-folder='~/.local/share/BingWallpaper'
 hide=false
 icon-name='bing-symbolic'
 lockscreen-blur-brightness=55
@@ -1020,7 +1020,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state="{\"maxlongdate\":202304030700,\"title\":\"Pu'uhonua o Honaunau National Park, Big Island, Hawaii\",\"explanation\":\"Bing Wallpaper of the Day for 2023-04-03\",\"copyright\":\"© Westend61/Getty Images\",\"longstartdate\":\"202304030700\",\"imageinfolink\":\"https://www.bing.com/search?q=Pu%27uhonua+o+Honaunau+National+Park&form=hpcapt\",\"imageURL\":\"https://www.bing.com/th?id=OHR.HonaunauNP_ROW5786762045_UHD.jpg\",\"filename\":\"/home/lwh/Pictures/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg\",\"favourite\":false}"
+state="{\"maxlongdate\":202304030700,\"title\":\"Pu'uhonua o Honaunau National Park, Big Island, Hawaii\",\"explanation\":\"Bing Wallpaper of the Day for 2023-04-03\",\"copyright\":\"© Westend61/Getty Images\",\"longstartdate\":\"202304030700\",\"imageinfolink\":\"https://www.bing.com/search?q=Pu%27uhonua+o+Honaunau+National+Park&form=hpcapt\",\"imageURL\":\"https://www.bing.com/th?id=OHR.HonaunauNP_ROW5786762045_UHD.jpg\",\"filename\":\"/home/lwh/.local/share/BingWallpaper/20230403-HonaunauNP_ROW5786762045_UHD.jpg\",\"favourite\":false}"
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1606,7 +1606,7 @@ selected-color=(true, 0.96470588445663452, 0.3803921639919281, 0.317647069692611
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=323
