@@ -10,11 +10,14 @@ tags: Software
 1. Clean up Ubuntu unnecessary services.
 2. Install Flatpak and APT packages for me.
 
-install path : /home/lwh/git/linux_init
+
+## User Information
+
+installation path : /home/lwh/git/linux_init
 
 user name : lwh
 
-## command
+## Command
 
 ```
 sudo apt -y install git
