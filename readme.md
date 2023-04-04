@@ -5,7 +5,7 @@ alias: Ubuntu
 tags: Software
 ---
 
-# Ubuntu 22.04 Gnome custom installation
+# Ubuntu 22.04 Gnome 42.5 custom installation
 
 1. Clean up Ubuntu unnecessary services.
 2. Install Flatpak and APT packages for me.
