@@ -1,6 +1,8 @@
 #!/bin/bash
 echo "============== [S] 1.Remove - Snap =============="
 
+sudo systemctl disable NetworkManager-wait-online.service
+
 sudo systemctl disable snapd.service
 sudo systemctl disable snapd.socket
 sudo systemctl disable snapd.seeded.service
