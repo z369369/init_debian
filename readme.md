@@ -9,7 +9,8 @@ tags: Software
 
 ## install command
 
-Username : lwh
+install path : /home/lwh/git/linux_init
+username : lwh
 
 ```
 sudo apt -y install git  
