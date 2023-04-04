@@ -11,7 +11,7 @@ sudo apt install -y flatpak
 sudo apt install -y gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-sudo flatpak install -y $(cat pkg_install_flatpak)
+sudo flatpak install -y flathub $(grep -vE "^\s*#" pkg_install_flatpak | sed -e 's/#.*//'  | tr "\n" " ")
 sudo chown -R $USER:$USER ~/.var
 
 echo "============== [E] 4.Install - Flatpak =============="

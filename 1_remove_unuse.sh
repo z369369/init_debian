@@ -17,7 +17,7 @@ echo "============== [E] 1.Remove - Snap =============="
 
 echo "============== [S] 1.Remove - APT package =============="
 
-sudo apt remove --purge -y $(cat pkg_remove_apt)
+sudo apt remove --purge -y $(grep -vE "^\s*#" pkg_remove_apt | sed -e 's/#.*//'  | tr "\n" " ")
 
 echo "============== [E] 1.Remove - APT package =============="
 

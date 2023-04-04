@@ -1,44 +1,44 @@
-bleachbit
+bleachbit #File Cache Cleaner
 ca-certificates
-chrome-gnome-shell
-curl
-deborphan
-ffmpeg
-gedit
-gnome-shell-extensions
-gnome-shell-extension-prefs
-gnome-tweaks
-git
+chrome-gnome-shell #Gnome Extension
+curl #Used
+deborphan #Used
+ffmpeg #Used
+gedit #Used
+gnome-shell-extensions #Gnome Extension
+gnome-shell-extension-prefs #Gnome Extension
+gnome-tweaks #Gnome Extension
+git #Used
 gprename
-gthumb
-gufw
-hardinfo
-htop
-imwheel
+gthumb #Used
+gufw #Used Firewall GUI
+hardinfo #Used
+htop #Used
+imwheel #Mouse wheel scroll
 imagemagick
-incron
-make
-mc
-nano
+incron #Filesystem crontab
+make #Build
+mc #Mid-Night Commander
+nano # Basic Editor
 nautilus-admin
 nautilus-image-converter
 nautilus-gtkhash
-net-tools
-libfuse2
-libglib2.0-dev-bin
-libvirt-clients
-libvirt-daemon-system
-libqt5svg5
-meld
-neofetch
-numlockx
-playonlinux
-rsync
-software-properties-common
-synaptic
-timeshift
-ubuntu-restricted-extras
-ufw
+net-tools #Used
+libfuse2 #Virt-Manager
+libglib2.0-dev-bin #Virt-Manager
+libvirt-clients #Virt-Manager
+libvirt-daemon-system #Virt-Manager
+libqt5svg5 #JPG to SVG
+meld #Winmerge
+neofetch #pfetch alternative
+numlockx #GDM login - numlock always on
+playonlinux #Game
+rsync #Used
+software-properties-common #Gnome-Software
+synaptic #Package management
+timeshift #Backup, Restore
+ubuntu-restricted-extras #Codec
+ufw #Firewall
 virt-manager
-wget
-wmctrl
+wget #Download
+wmctrl #move Workspace

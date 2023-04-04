@@ -1,4 +1,3 @@
-app.resp.RESP
 ca.desrt.dconf-editor
 com.belmoussaoui.Decoder
 com.discordapp.Discord
@@ -9,6 +8,7 @@ com.github.unrud.VideoDownloader
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
 com.opera.Opera
+com.redis.RedisInsight
 com.transmissionbt.Transmission
 com.valvesoftware.Steam
 com.vscodium.codium
