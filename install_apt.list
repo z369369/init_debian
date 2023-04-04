@@ -34,8 +34,8 @@ neofetch #pfetch alternative
 numlockx #GDM login - numlock always on
 playonlinux #Game
 rsync #Used
-software-properties-common #Gnome-Software
-synaptic #Package management
+software-properties-common #Gnome Software
+synaptic #Package manager
 timeshift #Backup, Restore
 ubuntu-restricted-extras #Codec
 ufw #Firewall
