@@ -9,6 +9,8 @@ tags: Software
 
 ## install command
 
+Username : lwh
+
 ```
 sudo apt -y install git  
 mkdir ~/git  
