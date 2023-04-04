@@ -8,8 +8,8 @@ if [ $? -eq 0 ]; then
     ./3_install_apt.sh
     ./3_install_apt.sh
     ./4_install_flatpak.sh
-    ./5_custom_setting.sh
-    ./6_custom_install.sh
+    ./5_setting_custom.sh
+    ./6_install_custom.sh
     reboot
 else
     echo "Please check Internet connection"
