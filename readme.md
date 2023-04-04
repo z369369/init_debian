@@ -15,10 +15,8 @@ user name : lwh
 
 ```
 sudo apt -y install git
-mkdir ~/git
-cd ~/git
-git clone https://github.com/ppp821203/linux_init.git
-chmod -R 777 ~/git
-cd linux_init
+git clone https://github.com/ppp821203/linux_init.git ~/git/linux_init
+chmod +x ~/git/linux_init/*.sh
+cd ~/git/linux_init
 ./0_all.sh
 ```
