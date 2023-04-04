@@ -10,7 +10,7 @@ tags: Software
 1. Clean up Ubuntu unnecessary services.
 2. Install Flatpak and APT packages for me.
 
-> [!info] 정보입니다
+> [!info] User information
 > install path : /home/lwh/git/linux_init
 > user name : lwh
 
