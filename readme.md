@@ -5,13 +5,13 @@ alias: Ubuntu
 tags: Software
 ---
 
-# Ubuntu custom install
-
-## install command
+# Ubuntu 22.04 Gnome custom installation
 
 install path : /home/lwh/git/linux_init
 
 user name : lwh
+
+## command
 
 ```
 sudo apt -y install git
