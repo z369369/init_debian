@@ -7,6 +7,9 @@ tags: Software
 
 # Ubuntu 22.04 Gnome custom installation
 
+1. Clean up Ubuntu unnecessary services.
+2. Install Flatpak and APT packages for me.
+
 install path : /home/lwh/git/linux_init
 
 user name : lwh
