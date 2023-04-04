@@ -11,6 +11,7 @@ tags: Software
 2. Install Flatpak and APT packages for me.
 
 install path : /home/lwh/git/linux_init
+
 user name : lwh
 
 ## command
