@@ -19,7 +19,7 @@ imagemagick
 incron #Filesystem crontab
 make #Build
 mc #Mid-Night Commander
-nano # Basic Editor
+nano #Basic Editor
 nautilus-admin
 nautilus-image-converter
 nautilus-gtkhash
