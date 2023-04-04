@@ -10,13 +10,10 @@ tags: Software
 1. Clean up Ubuntu unnecessary services.
 2. Install Flatpak and APT packages for me.
 
-{% note %}
-User Information
-
 install path : /home/lwh/git/linux_init
 
 user name : lwh
-{% endnote %}
+
 ## command
 
 ```
