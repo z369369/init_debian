@@ -11,7 +11,7 @@ tags: Software
 
 install path : /home/lwh/git/linux_init
 
-username : lwh
+user name : lwh
 
 ```
 sudo apt -y install git  
