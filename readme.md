@@ -1,11 +1,11 @@
 ---
 date: 2023-03-14
-status: 
-alias: 
-tags: 
+status: Complete 
+alias: Ubuntu
+tags: Software
 ---
 
-# Ubuntu init install
+# Ubuntu custom install
 
 ## install command
 
