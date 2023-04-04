@@ -33,6 +33,7 @@ meld #Winmerge
 neofetch #pfetch alternative
 numlockx #GDM login - numlock always on
 playonlinux #Game
+preload #fast booting
 rsync #Used
 software-properties-common #Gnome Software
 synaptic #Package manager
