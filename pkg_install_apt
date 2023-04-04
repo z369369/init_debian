@@ -27,6 +27,7 @@ libfuse2
 libglib2.0-dev-bin
 libvirt-clients
 libvirt-daemon-system
+libqt5svg5
 meld
 neofetch
 numlockx
