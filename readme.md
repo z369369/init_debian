@@ -10,6 +10,7 @@ tags: Software
 ## install command
 
 install path : /home/lwh/git/linux_init
+
 username : lwh
 
 ```
