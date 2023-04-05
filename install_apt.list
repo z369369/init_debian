@@ -17,6 +17,7 @@ htop #Used
 imwheel #Mouse wheel scroll
 imagemagick
 incron #Filesystem crontab
+intel-microcode #resolve kernel message 
 make #Build
 mc #Mid-Night Commander
 nano #Basic Editor
