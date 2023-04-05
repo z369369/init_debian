@@ -44,3 +44,5 @@ ufw #Firewall
 virt-manager
 wget #Download
 wmctrl #move Workspace
+ncdu #du
+pydf #df
