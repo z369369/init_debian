@@ -636,7 +636,7 @@ active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spe
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/startup'
+virtual-root='file:///home/lwh/git/linux_init/gnome-shell/extensions/gnome-shutdown-button@kirby_33@hotmail.fr'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunpen Bold 12'
@@ -1083,7 +1083,7 @@ history-size=20
 topbar-preview-size=15
 
 [org/gnome/shell/extensions/color-picker]
-colors-history='#434343|#2a2a2a|#282828|#ffffff|#343434|#343434|#343434|#c0994c'
+colors-history='#067dcd|#007acc|#0e639c|#fcd500|#e25252|#434343|#2a2a2a|#282828'
 enable-notify=true
 enable-preview=true
 enable-shortcut=false
@@ -1176,7 +1176,7 @@ leftbox-size=0
 middle-click-action='CYCLE'
 overview-click-to-exit=false
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centered"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"TOP"}'
@@ -1451,7 +1451,7 @@ geolocation-provider='openstreetmaps'
 location-text-length=0
 menu-alignment=52.840909090909093
 owm-api-translate=false
-position-in-panel='right'
+position-in-panel='center'
 position-index=0
 prefs-default-height=864
 prefs-default-width=842
@@ -1465,7 +1465,7 @@ wind-direction=true
 [org/gnome/shell/extensions/order-icons]
 order-icons-center=['ip-menu', 'dateMenu', 'stocksMenu']
 order-icons-left=['ip-menu', 'horizontal-workspace-indicator@tty2.io', 'appMenu', 'activities']
-order-icons-right=['TrayIconsReloaded', 'stocksMenu', 'aggregateMenu', 'screenRecording', 'keyboard', 'ip-menu', '/org/gnome/Shell/Extensions/GSConnect/Device/bc30d5c027b762e2', '/org/gnome/Shell/Extensions/GSConnect/Device/57efaeb39484c4eb', 'smartlock@huy.im', 'BingWallpaperIndicator', 'color-picker@tuberry', 'Simple-Timer', 'printers', 'drive-menu', 'a11y', 'dwellClick', 'openWeatherMenu']
+order-icons-right=['screenRecording', 'TrayIconsReloaded', 'aggregateMenu', 'stocksMenu', 'keyboard', 'ip-menu', '/org/gnome/Shell/Extensions/GSConnect/Device/bc30d5c027b762e2', '/org/gnome/Shell/Extensions/GSConnect/Device/57efaeb39484c4eb', 'smartlock@huy.im', 'BingWallpaperIndicator', 'color-picker@tuberry', 'Simple-Timer', 'printers', 'drive-menu', 'a11y', 'openWeatherMenu', 'dwellClick']
 
 [org/gnome/shell/extensions/panel-date-format]
 format='%m.%d %a %H:%M'
@@ -1510,7 +1510,7 @@ sync-mode='RESTORE'
 hpadding=0
 
 [org/gnome/shell/extensions/stocks]
-position-in-panel='right'
+position-in-panel='center'
 symbol-pairs='W3siaWQiOiJlOWY2OGRjYTBjOGIyODQ4MzAxMTIyMDk2MzQxYzdkZiIsIm5hbWUiOiJBQVBMIiwic3ltYm9sIjoiQUFQTCIsInByb3ZpZGVyIjoieWFob28iLCJzaG93SW5UaWNrZXIiOnRydWV9LHsiaWQiOiJkMGNhNzczMzdiOWZmMDA1Y2E2ZWU0MTc2MzQxYzdkZiIsIm5hbWUiOiJNU0ZUIiwic3ltYm9sIjoiTVNGVCIsInByb3ZpZGVyIjoieWFob28iLCJzaG93SW5UaWNrZXIiOnRydWV9LHsiaWQiOiJiNTAwNWQ3OTNkZjM3OTczOWQ3NTk1ZjM2MzQxYzdkZiIsIm5hbWUiOiJHT09HTCIsInN5bWJvbCI6IkdPT0dMIiwicHJvdmlkZXIiOiJ5YWhvbyIsInNob3dJblRpY2tlciI6dHJ1ZX1d'
 ticker-display-variation='minimal'
 ticker-stock-amount=1
