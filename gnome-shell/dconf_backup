@@ -1022,8 +1022,8 @@ command-history=['calc', 'gnome-calc', 'lg', 'R', 'r', 'meld', 'htop', 'gnome-sh
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=['wsmatrix@martin.zurowietz.de', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'systemd-manager@hardpixel.eu', 'no-overview@fthx']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'order-extensions@wa4557.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'panel-date-format@atareao.es', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'dash-to-panel@jderose9.github.com', 'default-workspace@mateusrodcosta.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspace-indicator@tty2.io']
-favorite-apps=['google-chrome.desktop', 'com.opera.Opera.desktop', 'syncthing-ui.desktop', 'com.vscodium.codium.desktop', 'md.obsidian.Obsidian.desktop', 'code.desktop', 'firefox.desktop', 'webmail.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'org.telegram.desktop.desktop', 'virt-manager.desktop', 'org.gnome.Extensions.desktop', 'organize.desktop']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'order-extensions@wa4557.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'panel-date-format@atareao.es', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'dash-to-panel@jderose9.github.com', 'default-workspace@mateusrodcosta.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspace-indicator@tty2.io', 'RemoveAppMenu@Dragon8oy.com']
+favorite-apps=['google-chrome.desktop', 'com.opera.Opera.desktop', 'syncthing-ui.desktop', 'com.vscodium.codium.desktop', 'md.obsidian.Obsidian.desktop', 'code.desktop', 'firefox.desktop', 'webmail.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'org.telegram.desktop.desktop', 'virt-manager.desktop', 'com.github.alexkdeveloper.desktop-files-creator.desktop', 'org.gnome.Extensions.desktop', 'organize.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['exi', 'exit', 'quit', 'bye']
 remember-mount-password=true
@@ -1176,7 +1176,7 @@ leftbox-size=0
 middle-click-action='CYCLE'
 overview-click-to-exit=false
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"centerMonitor"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"centerMonitor"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"TOP"}'
@@ -1195,7 +1195,7 @@ show-apps-icon-file=''
 show-apps-icon-side-padding=8
 show-apps-override-escape=true
 show-favorites=true
-show-favorites-all-monitors=false
+show-favorites-all-monitors=true
 show-running-apps=true
 show-showdesktop-delay=1000
 show-showdesktop-hover=false
@@ -1205,7 +1205,7 @@ show-window-previews=false
 showdesktop-button-width=8
 status-icon-padding=1
 stockgs-keep-dash=false
-taskbar-locked=true
+taskbar-locked=false
 trans-bg-color='#000000'
 trans-dynamic-anim-target=0.0
 trans-dynamic-anim-time=300
@@ -1451,7 +1451,7 @@ geolocation-provider='openstreetmaps'
 location-text-length=0
 menu-alignment=52.840909090909093
 owm-api-translate=false
-position-in-panel='center'
+position-in-panel='right'
 position-index=0
 prefs-default-height=864
 prefs-default-width=842
@@ -1463,9 +1463,9 @@ use-system-icons=false
 wind-direction=true
 
 [org/gnome/shell/extensions/order-icons]
-order-icons-center=['dateMenu', 'stocksMenu']
-order-icons-left=['appMenu', 'activities']
-order-icons-right=['openWeatherMenu', 'aggregateMenu', 'screenRecording', 'keyboard', 'ip-menu', '/org/gnome/Shell/Extensions/GSConnect/Device/bc30d5c027b762e2', '/org/gnome/Shell/Extensions/GSConnect/Device/57efaeb39484c4eb', 'smartlock@huy.im', 'BingWallpaperIndicator', 'color-picker@tuberry', 'TrayIconsReloaded', 'Simple-Timer', 'printers', 'drive-menu', 'a11y', 'dwellClick']
+order-icons-center=['ip-menu', 'dateMenu', 'stocksMenu']
+order-icons-left=['ip-menu', 'horizontal-workspace-indicator@tty2.io', 'appMenu', 'activities']
+order-icons-right=['TrayIconsReloaded', 'stocksMenu', 'aggregateMenu', 'screenRecording', 'keyboard', 'ip-menu', '/org/gnome/Shell/Extensions/GSConnect/Device/bc30d5c027b762e2', '/org/gnome/Shell/Extensions/GSConnect/Device/57efaeb39484c4eb', 'smartlock@huy.im', 'BingWallpaperIndicator', 'color-picker@tuberry', 'Simple-Timer', 'printers', 'drive-menu', 'a11y', 'dwellClick', 'openWeatherMenu']
 
 [org/gnome/shell/extensions/panel-date-format]
 format='%m.%d %a %H:%M'
@@ -1480,10 +1480,10 @@ show-error=true
 show-icon='Always'
 
 [org/gnome/shell/extensions/public-ip-address]
-actors-in-panel='Flag and IP Address'
+actors-in-panel='IP Address'
 map-tile-coords='436,198'
-panel-vpn-icon-colors=false
-panel-vpn-icons=false
+panel-vpn-icon-colors=true
+panel-vpn-icons=true
 panel-vpn-ip-addr-colors=true
 position-in-panel='right'
 
@@ -1510,7 +1510,7 @@ sync-mode='RESTORE'
 hpadding=0
 
 [org/gnome/shell/extensions/stocks]
-position-in-panel='center'
+position-in-panel='right'
 symbol-pairs='W3siaWQiOiJlOWY2OGRjYTBjOGIyODQ4MzAxMTIyMDk2MzQxYzdkZiIsIm5hbWUiOiJBQVBMIiwic3ltYm9sIjoiQUFQTCIsInByb3ZpZGVyIjoieWFob28iLCJzaG93SW5UaWNrZXIiOnRydWV9LHsiaWQiOiJkMGNhNzczMzdiOWZmMDA1Y2E2ZWU0MTc2MzQxYzdkZiIsIm5hbWUiOiJNU0ZUIiwic3ltYm9sIjoiTVNGVCIsInByb3ZpZGVyIjoieWFob28iLCJzaG93SW5UaWNrZXIiOnRydWV9LHsiaWQiOiJiNTAwNWQ3OTNkZjM3OTczOWQ3NTk1ZjM2MzQxYzdkZiIsIm5hbWUiOiJHT09HTCIsInN5bWJvbCI6IkdPT0dMIiwicHJvdmlkZXIiOiJ5YWhvbyIsInNob3dJblRpY2tlciI6dHJ1ZX1d'
 ticker-display-variation='minimal'
 ticker-stock-amount=1
