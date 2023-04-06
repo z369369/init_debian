@@ -157,7 +157,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='ubuntu'
+last-panel='multitasking'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -177,7 +177,7 @@ mouse-tracking='proportional'
 folder-children=['Utilities', 'YaST', '3ce081fa-00d9-4500-ad01-83d7743cc1cd', 'ef538e80-aafa-499c-999b-a4798c6c61cd', '7fa16cfa-2274-4520-83ad-362cc513e263', 'baf57313-41ee-4a35-bd78-37d55f2fbd44', '182c25fa-8c00-4ad3-827b-470a164903f3', '0af343c0-868a-4007-806c-117c883f87a7', 'c7133631-94b3-4ce3-9bf1-d1545aa5a851']
 
 [org/gnome/desktop/app-folders/folders/0af343c0-868a-4007-806c-117c883f87a7]
-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'timeshift-gtk.desktop', 'ca.desrt.dconf-editor.desktop', 'chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop', 'com.github.tchx84.Flatseal.desktop', 'org.freecadweb.FreeCAD.desktop', 'org.gnome.tweaks.desktop', 'remote-viewer.desktop', 'org.remmina.Remmina.desktop', 'org.gnome.Extensions.desktop', 'org.fedoraproject.MediaWriter.desktop', 'com.transmissionbt.Transmission.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'syncthing-ui.desktop', 'syncthing-start.desktop', 'desktop_grant.desktop', 'tachidesk-server.desktop']
+apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'timeshift-gtk.desktop', 'ca.desrt.dconf-editor.desktop', 'chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop', 'com.github.tchx84.Flatseal.desktop', 'org.freecadweb.FreeCAD.desktop', 'org.gnome.tweaks.desktop', 'remote-viewer.desktop', 'org.remmina.Remmina.desktop', 'org.gnome.Extensions.desktop', 'org.fedoraproject.MediaWriter.desktop', 'com.transmissionbt.Transmission.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'syncthing-ui.desktop', 'syncthing-start.desktop', 'desktop_grant.desktop', 'tachidesk-server.desktop', 'com.github.alexkdeveloper.desktop-files-creator.desktop']
 name='Utilities'
 translate=false
 
@@ -245,11 +245,12 @@ cursor-size=32
 cursor-theme='Yaru'
 document-font-name='Sans 12'
 enable-animations=false
+enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Sans Bold 12'
 gtk-enable-primary-paste=false
-gtk-theme='WhiteSur-Dark-solid'
+gtk-theme='Yaru-dark'
 icon-theme='Yaru'
 locate-pointer=false
 menubar-accel=''
@@ -259,7 +260,7 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator']
 show-banners=true
 show-in-lock-screen=false
 
@@ -274,6 +275,9 @@ application-id='code.desktop'
 
 [org/gnome/desktop/notifications/application/com-brave-browser]
 application-id='com.brave.Browser.desktop'
+
+[org/gnome/desktop/notifications/application/com-github-alexkdeveloper-desktop-files-creator]
+application-id='com.github.alexkdeveloper.desktop-files-creator.desktop'
 
 [org/gnome/desktop/notifications/application/com-obsproject-studio]
 application-id='com.obsproject.Studio.desktop'
@@ -520,10 +524,10 @@ action-middle-click-titlebar='none'
 action-right-click-titlebar='none'
 button-layout=':minimize,maximize,close'
 focus-mode='click'
-num-workspaces=4
+num-workspaces=5
 resize-with-right-button=true
 titlebar-font='Sans 12'
-workspace-names=['', '', '', '']
+workspace-names=['Etc', 'Edit', 'Default', 'File', 'Terminal']
 
 [org/gnome/eog/ui]
 image-gallery=true
@@ -632,7 +636,7 @@ active-plugins=['openlinks', 'filebrowser', 'sort', 'docinfo', 'modelines', 'spe
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/.themes/Orchis-Dark-Compact/gnome-shell'
+virtual-root='file:///home/lwh/script/startup'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunpen Bold 12'
@@ -838,6 +842,7 @@ width=1101
 [org/gnome/mutter]
 center-new-windows=false
 dynamic-workspaces=false
+edge-tiling=true
 experimental-features=@as []
 
 [org/gnome/nautilus/compression]
@@ -1016,9 +1021,9 @@ app-picker-layout=[{'Utilities': <{'position': <0>}>, '0af343c0-868a-4007-806c-1
 command-history=['calc', 'gnome-calc', 'lg', 'R', 'r', 'meld', 'htop', 'gnome-shell-extension-prefs', 'restart']
 disable-extension-version-validation=true
 disable-user-extensions=false
-disabled-extensions=['wsmatrix@martin.zurowietz.de', 'ubuntu-appindicators@ubuntu.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'systemd-manager@hardpixel.eu', 'no-overview@fthx']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'order-extensions@wa4557.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'panel-date-format@atareao.es', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'dash-to-panel@jderose9.github.com']
-favorite-apps=['firefox.desktop', 'code.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'webmail.desktop', 'google-chrome.desktop', 'com.opera.Opera.desktop', 'md.obsidian.Obsidian.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'virt-manager.desktop', 'syncthing-ui.desktop', 'com.vscodium.codium.desktop', 'com.github.alexkdeveloper.desktop-files-creator.desktop', 'org.telegram.desktop.desktop', 'org.gnome.Extensions.desktop', 'organize.desktop']
+disabled-extensions=['wsmatrix@martin.zurowietz.de', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'systemd-manager@hardpixel.eu', 'no-overview@fthx']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'stocks@infinicode.de', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'trayIconsReloaded@selfmade.pl', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'smartlock@huy.im', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'order-extensions@wa4557.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'panel-date-format@atareao.es', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'dash-to-panel@jderose9.github.com', 'default-workspace@mateusrodcosta.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspace-indicator@tty2.io']
+favorite-apps=['google-chrome.desktop', 'com.opera.Opera.desktop', 'syncthing-ui.desktop', 'com.vscodium.codium.desktop', 'md.obsidian.Obsidian.desktop', 'code.desktop', 'firefox.desktop', 'webmail.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'org.telegram.desktop.desktop', 'virt-manager.desktop', 'org.gnome.Extensions.desktop', 'organize.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['exi', 'exit', 'quit', 'bye']
 remember-mount-password=true
@@ -1031,7 +1036,7 @@ modifier-key=12
 tray-pos='center'
 
 [org/gnome/shell/extensions/auto-move-windows]
-application-list=['org.gnome.Terminal.desktop:3', 'org.gnome.Nautilus.desktop:4', 'code.desktop:2', 'firefox.desktop:1', 'md.obsidian.Obsidian.desktop:1', 'google-chrome.desktop:1']
+application-list=['org.gnome.Terminal.desktop:5', 'org.gnome.Nautilus.desktop:4', 'code.desktop:2', 'firefox.desktop:3', 'md.obsidian.Obsidian.desktop:2', 'google-chrome.desktop:1', 'org.gnome.gedit.desktop:4', 'com.vscodium.codium.desktop:2', 'org.libreoffice.LibreOffice.calc.desktop:4', 'com.opera.Opera.desktop:1', 'syncthing-ui.desktop:1']
 
 [org/gnome/shell/extensions/batt_consumption_wattmetter]
 battery=0
@@ -1171,7 +1176,7 @@ leftbox-size=0
 middle-click-action='CYCLE'
 overview-click-to-exit=false
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"centerMonitor"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"centerMonitor"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"centerMonitor"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"TOP"}'
@@ -1200,7 +1205,7 @@ show-window-previews=false
 showdesktop-button-width=8
 status-icon-padding=1
 stockgs-keep-dash=false
-taskbar-locked=false
+taskbar-locked=true
 trans-bg-color='#000000'
 trans-dynamic-anim-target=0.0
 trans-dynamic-anim-time=300
@@ -1221,6 +1226,9 @@ font-size=8
 pattern='M d (EEE) aaa hh:mm'
 remove-messages-indicator=false
 use-default-locale=true
+
+[org/gnome/shell/extensions/default-workspace]
+default-workspace-number=3
 
 [org/gnome/shell/extensions/desktopicons-neo]
 add-volumes-opposite=true
@@ -1386,6 +1394,11 @@ keep-round-corners=false
 mouse-sensitive=true
 mouse-triggers-overview=false
 show-in-overview=false
+
+[org/gnome/shell/extensions/horizontal-workspace-indicator]
+icons-style='circles'
+widget-orientation='horizontal'
+widget-position='left'
 
 [org/gnome/shell/extensions/improved-workspace-indicator]
 change-on-click=false
@@ -1593,7 +1606,7 @@ picture-uri='/home/lwh/Pictures/BingWallpaper/20221003-FairyGlen_ROW5078690764_U
 picture-uri-dark='/home/lwh/Pictures/BingWallpaper/20221003-FairyGlen_ROW5078690764_UHD.jpg'
 
 [org/gnome/shell/extensions/user-theme]
-name='WhiteSur-Dark-solid'
+name='Yaru-dark'
 x-color='prefer-dark'
 x-cursor='Yaru'
 x-gtk='WhiteSur-Dark-solid'
@@ -1713,7 +1726,7 @@ recent-emoji=[(([uint32 128338], 'three o’clock', ''), uint32 0), (([128347], 
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -1721,7 +1734,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(56, 50)
+window-position=(45, 29)
 window-size=(1157, 558)
 
 [org/gtkhash]
