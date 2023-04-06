@@ -47,7 +47,7 @@ function enable() {
     Main.panel._rightBox.insert_child_at_index(button, children.length);
     // If you want the position to be left of rightbox, including Frippery Move Clock e.g., replace last line with :
     // Main.panel._rightBox.insert_child_at_index(button, 0);
-    
+
     button2 = new St.Bin({
         style_class: 'panel-button',
         reactive: true,
@@ -63,8 +63,7 @@ function enable() {
     button2.connect('button-press-event', _startGnomePrefs2);
 
     let children2 = Main.panel._rightBox.get_children();
-    Main.panel._rightBox.insert_child_at_index(button2, children2.length -1);    
-    
+    Main.panel._rightBox.insert_child_at_index(button2, children2.length - 1);    
 }
 
 function disable() {
