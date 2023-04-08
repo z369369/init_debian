@@ -4,8 +4,6 @@
 #Image Files
 cd ~/Downloads
 
-rm *.ovpn 2> /dev/null
-
 # Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures 2> /dev/null
 
@@ -27,8 +25,8 @@ mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage ~/Downloads/zip 2> /dev/null
 # Iso
 mv *.iso ~/Downloads/iso 2> /dev/null
 
-#rm -rf /media/$USER/backup_disk/home/$USER
-#mkdir /media/$USER/backup_disk/home/$USER
+rm *.ovpn 2> /dev/null
+
 
 #obs not work
 #https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update

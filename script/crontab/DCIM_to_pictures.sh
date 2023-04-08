@@ -4,3 +4,5 @@ rsync -a --exclude-from /home/lwh/phone/DCIM --exclude .stf* /home/lwh/phone/DCI
 #sleep 20s
 
 find /home/lwh/phone/DCIM -type f -exec rm -f {} \;
+
+fdupes -rdN ~/phone/000_Personal/Attachment/ ~/Pictures/

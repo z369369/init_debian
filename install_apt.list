@@ -3,6 +3,7 @@ ca-certificates
 chrome-gnome-shell #Gnome Extension
 curl #Used
 deborphan #Used
+fdupes #duplicate file remove
 ffmpeg #Used
 gedit #Used
 gnome-shell-extensions #Gnome Extension
@@ -23,6 +24,7 @@ nano #Basic Editor
 nautilus-admin
 nautilus-image-converter
 nautilus-gtkhash
+nemo #mint file manager
 net-tools #Used
 libfuse2 #Virt-Manager
 libglib2.0-dev-bin #Virt-Manager
