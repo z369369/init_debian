@@ -14,6 +14,7 @@ ln -s ~/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
+
 rsync -a ~/git/linux_init/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/linux_init/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
