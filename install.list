@@ -47,3 +47,42 @@ wget #Download
 wmctrl #move Workspace
 ncdu #du
 pydf #df
+
+*
+
+ca.desrt.dconf-editor
+com.belmoussaoui.Decoder
+com.discordapp.Discord
+com.github.alexkdeveloper.desktop-files-creator
+com.github.tchx84.Flatseal
+com.github.PintaProject.Pinta
+com.ozmartians.VidCutter
+com.github.unrud.VideoDownloader
+com.heroicgameslauncher.hgl
+com.obsproject.Studio
+com.opera.Opera
+com.redis.RedisInsight
+com.transmissionbt.Transmission
+com.valvesoftware.Steam
+com.vscodium.codium
+de.haeckerfelix.Shortwave
+io.dbeaver.DBeaverCommunity
+md.obsidian.Obsidian
+net.sourceforge.mcomix
+nl.hjdskes.gcolor3
+org.atheme.audacious
+org.blender.Blender
+org.fedoraproject.MediaWriter
+org.freecadweb.FreeCAD
+org.inkscape.Inkscape
+org.gimp.GIMP
+org.gnome.baobab
+org.gnome.Calendar
+org.gnome.design.IconLibrary
+org.kde.kdenlive
+org.kde.krita
+org.libreoffice.LibreOffice
+org.nomacs.ImageLounge
+org.remmina.Remmina
+org.telegram.desktop
+sh.ppy.osu
