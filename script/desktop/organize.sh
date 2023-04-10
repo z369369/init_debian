@@ -20,7 +20,7 @@ mv *.pdf *.doc *.txt *.ppt *.xls *.xlsx *.ovpn ~/Documents 2> /dev/null
 mv *.py *.rb *.sh ~/git/linux_init/script 2> /dev/null
 
 #Compressed Files
-mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage ~/Downloads/zip 2> /dev/null
+mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage *.flatpakref ~/Downloads/zip 2> /dev/null
 
 # Iso
 mv *.iso ~/Downloads/iso 2> /dev/null
