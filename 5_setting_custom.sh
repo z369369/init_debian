@@ -15,6 +15,9 @@ ln -s /usr/share/applications ~/Desktop/desktop_usr
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
+rm -rf ~/.local/share/nemo/scripts
+ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
+
 rsync -a ~/git/linux_init/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/linux_init/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
