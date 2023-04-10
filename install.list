@@ -47,6 +47,7 @@ wget #Download
 wmctrl #move Workspace
 ncdu #du
 pydf #df
+xclip #clipboard for nemo
 
 *
 
