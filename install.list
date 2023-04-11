@@ -51,6 +51,7 @@ xclip #clipboard for nemo
 
 *
 
+
 ca.desrt.dconf-editor
 com.belmoussaoui.Decoder
 com.discordapp.Discord
@@ -59,6 +60,7 @@ com.github.tchx84.Flatseal
 com.github.PintaProject.Pinta
 com.ozmartians.VidCutter
 com.github.unrud.VideoDownloader
+com.github.jeromerobert.pdfarranger
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
 com.opera.Opera
