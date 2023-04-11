@@ -5,6 +5,7 @@ deborphan #Used
 fdupes #duplicate file remove
 ffmpeg #Used
 gedit #Used
+gedit-plugin-multi-edit #Used Gedit multi line
 gnome-shell-extensions #Gnome Extension
 gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
