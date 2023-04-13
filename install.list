@@ -52,7 +52,6 @@ xclip #clipboard for nemo
 
 *
 
-
 ca.desrt.dconf-editor
 com.belmoussaoui.Decoder
 com.discordapp.Discord
@@ -71,6 +70,7 @@ com.valvesoftware.Steam
 com.vscodium.codium
 de.haeckerfelix.Shortwave
 io.dbeaver.DBeaverCommunity
+io.github.celluloid_player.Celluloid
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
 org.atheme.audacious
