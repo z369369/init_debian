@@ -87,6 +87,8 @@ sudo ufw allow 22000/tcp
 sudo ufw allow 22000/udp
 sudo ufw allow 21027/udp
 
+sudo ufw allow from 192.168.31.0/24 to any port 1714:1764
+
 sudo ufw reload
 
 #nautilus
