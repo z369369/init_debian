@@ -71,20 +71,38 @@ echo "============== [S] 5.Remove - Ubuntu ESM =============="
 #sudo vi /etc/default/ufw 
 
 #gsconnect
-sudo ufw allow proto tcp from 192.168.31.0/24 to any port 1714:1764
-sudo ufw allow proto udp from 192.168.31.0/24 to any port 1714:1764
+sudo ufw allow 1714:1764/tcp
+sudo ufw allow out 1714:1764/tcp
+
+sudo ufw allow 1714:1764/udp
+sudo ufw allow out 1714:1764/udp
 
 #RDP
-sudo ufw allow from 192.168.31.0/24 to any port 3389
+sudo ufw allow 3389
+sudo ufw allow out 3389
+
 #vnc
-sudo ufw allow from 192.168.31.0/24 to any port 5900
+sudo ufw allow 5900
+sudo ufw allow out 5900
 
 #syncthing
-sudo ufw allow from 192.168.31.0/24 to any port 22000
-sudo ufw allow from 192.168.31.0/24 to any port 21027
+sudo ufw allow 22000
+sudo ufw allow out 22000
+
+sudo ufw allow 21027
+sudo ufw allow out 21027
 
 #http
-sudo ufw allow from 192.168.31.0/24 to any port 80
+sudo ufw allow 80
+sudo ufw allow out 80
+
+#SSL
+sudo ufw allow 443
+sudo ufw allow out 443
+
+#dns/apt port
+sudo ufw allow 53
+sudo ufw allow out 53
 
 sudo ufw reload
 
