@@ -70,6 +70,9 @@ echo "============== [S] 5.Remove - Ubuntu ESM =============="
 #if you want, ipv6 disable edit below
 #sudo vi /etc/default/ufw 
 
+sudo ufw default deny incoming
+sudo ufw default deny outgoing
+
 #gsconnect
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow out 1714:1764/tcp

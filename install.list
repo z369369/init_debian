@@ -68,11 +68,13 @@ com.redis.RedisInsight
 com.transmissionbt.Transmission
 com.valvesoftware.Steam
 com.vscodium.codium
+com.github.fabiocolacio.marker
 de.haeckerfelix.Shortwave
 io.dbeaver.DBeaverCommunity
 io.github.celluloid_player.Celluloid
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
+org.audacityteam.Audacity
 org.atheme.audacious
 org.blender.Blender
 org.fedoraproject.MediaWriter
@@ -84,6 +86,7 @@ org.gnome.Calendar
 org.gnome.design.IconLibrary
 org.kde.kdenlive
 org.kde.krita
+org.kde.okular
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.remmina.Remmina

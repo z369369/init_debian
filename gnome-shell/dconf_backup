@@ -16,7 +16,7 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='-on-'
+saved-pathbar-path='/org/nemo/list-view/'
 saved-view='/'
 show-warning=false
 window-height=806
@@ -95,8 +95,8 @@ switch-keys='Hangul,Shift+space'
 word-commit=false
 
 [org/freedesktop/tracker/miner/files]
-index-recursive-directories=['$HOME']
-index-single-directories=@as []
+index-recursive-directories=['$HOME', '/home/lwh/phone']
+index-single-directories=['$HOME']
 
 [org/gnome/Characters]
 recent-characters=['⏫', '⏬', '🎀', '🔽', '👇', '⬇', '⇩', '⭐', '😄', '😅', '🎆']
@@ -157,7 +157,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='search'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -219,8 +219,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230413-SnowdoniaNational_ROW1485284324_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230413-SnowdoniaNational_ROW1485284324_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230414-RedSeaStars_ROW7002802337_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230414-RedSeaStars_ROW7002802337_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -260,7 +260,7 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences']
 show-banners=true
 show-in-lock-screen=false
 
@@ -299,6 +299,9 @@ application-id='com.visualstudio.code.desktop'
 
 [org/gnome/desktop/notifications/application/com-vixalien-sticky]
 application-id='com.vixalien.sticky.desktop'
+
+[org/gnome/desktop/notifications/application/com-vscodium-codium]
+application-id='com.vscodium.codium.desktop'
 
 [org/gnome/desktop/notifications/application/de-haeckerfelix-shortwave]
 application-id='de.haeckerfelix.Shortwave.desktop'
@@ -416,6 +419,9 @@ application-id='org.gnome.meld.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect-preferences]
+application-id='org.gnome.Shell.Extensions.GSConnect.Preferences.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-shell-extensions-gsconnect]
 application-id='org.gnome.Shell.Extensions.GSConnect.desktop'
@@ -749,6 +755,8 @@ col-24-visible=true
 col-24-width=160
 col-26-visible=false
 col-26-width=100
+col-8-visible=true
+col-8-width=96
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
 sort-col=15
 sort-order=0
@@ -906,7 +914,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(920, 850)
+initial-size=(1022, 850)
 maximized=false
 sidebar-width=172
 
@@ -1091,7 +1099,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json="[{\"startdate\":\"20230406\",\"fullstartdate\":\"202304060700\",\"enddate\":\"20230407\",\"url\":\"/th?id=OHR.ArizonaPinkMoon_ROW6123452176_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ArizonaPinkMoon_ROW6123452176\",\"copyright\":\"Moon rising, Tucson, Arizona, USA (© Tim Murphy/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=pink+moon+astronomy&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230406_ArizonaPinkMoon%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"928a507ba7dd742f22641aab1258638e\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230407\",\"fullstartdate\":\"202304070700\",\"enddate\":\"20230408\",\"url\":\"/th?id=OHR.KitsAspen_ROW6572224525_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.KitsAspen_ROW6572224525\",\"copyright\":\"Eurasian baby beavers, Finland (© Danny Green/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=eurasian+beaver&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230407_KitsAspen%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"33f8c8efc3c109b360ae9b61a98609cc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230408\",\"fullstartdate\":\"202304080700\",\"enddate\":\"20230409\",\"url\":\"/th?id=OHR.NIrelandGiants_ROW0628526984_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NIrelandGiants_ROW0628526984\",\"copyright\":\"Giant's Causeway, Northern Ireland, United Kingdom (© DieterMeyrl/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=giant%27s+causeway&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230408_NIrelandGiants%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b74a126715d53f5d1382cbdb5e131bf5\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230409\",\"fullstartdate\":\"202304090700\",\"enddate\":\"20230410\",\"url\":\"/th?id=OHR.MilkyWayTwoJackLake_ROW0791032627_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MilkyWayTwoJackLake_ROW0791032627\",\"copyright\":\"Aurora at Two Jack Lake, Banff National Park, Alberta, Canada (© Jesús M. García/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Two+Jack+Lake%2c+Banff&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230409_MilkyWayTwoJackLake%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e036f2cfe1b5179975dd1242d6a5d67b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230410\",\"fullstartdate\":\"202304100700\",\"enddate\":\"20230411\",\"url\":\"/th?id=OHR.ElephantTwins_ROW1132340336_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ElephantTwins_ROW1132340336\",\"copyright\":\"Elephants in Amboseli National Park, Kenya (© Diana Robinson/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=african+elephants&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230410_ElephantTwins%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6a868ab52b49c30f088904170469dad0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230411\",\"fullstartdate\":\"202304110700\",\"enddate\":\"20230412\",\"url\":\"/th?id=OHR.MossyGrottoFalls_ROW6376711227_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MossyGrottoFalls_ROW6376711227\",\"copyright\":\"Columbia River Gorge, Oregon, USA (© Chase Dekker Wild-Life Images/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Columbia+River+Gorge+Oregon&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230411_MossyGrottoFalls%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"c0b9524d937b8f3120a9441620f58a3c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230412\",\"fullstartdate\":\"202304120700\",\"enddate\":\"20230413\",\"url\":\"/th?id=OHR.EuropeFromISS_ROW1363787892_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.EuropeFromISS_ROW1363787892\",\"copyright\":\"Earth from the International Space Station (© Tim Peake/ESA/NASA via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Earth+planet&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230412_EuropeFromISS%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"db77e8e34a778b71ed9b80f18070c421\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230413\",\"fullstartdate\":\"202304130700\",\"enddate\":\"20230414\",\"url\":\"/th?id=OHR.SnowdoniaNational_ROW1485284324_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SnowdoniaNational_ROW1485284324\",\"copyright\":\"Snowdonia National Park, Gwynedd, Wales, UK (© Sebastian Wasek/eStock Photo)\",\"copyrightlink\":\"https://www.bing.com/search?q=Snowdonia+National+Park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230413_SnowdoniaNational%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"1033d6dc0fc08ee143607967146c1f20\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
+bing-json="[{\"startdate\":\"20230407\",\"fullstartdate\":\"202304070700\",\"enddate\":\"20230408\",\"url\":\"/th?id=OHR.KitsAspen_ROW6572224525_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.KitsAspen_ROW6572224525\",\"copyright\":\"Eurasian baby beavers, Finland (© Danny Green/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=eurasian+beaver&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230407_KitsAspen%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"33f8c8efc3c109b360ae9b61a98609cc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230408\",\"fullstartdate\":\"202304080700\",\"enddate\":\"20230409\",\"url\":\"/th?id=OHR.NIrelandGiants_ROW0628526984_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.NIrelandGiants_ROW0628526984\",\"copyright\":\"Giant's Causeway, Northern Ireland, United Kingdom (© DieterMeyrl/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=giant%27s+causeway&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230408_NIrelandGiants%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"b74a126715d53f5d1382cbdb5e131bf5\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230409\",\"fullstartdate\":\"202304090700\",\"enddate\":\"20230410\",\"url\":\"/th?id=OHR.MilkyWayTwoJackLake_ROW0791032627_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MilkyWayTwoJackLake_ROW0791032627\",\"copyright\":\"Aurora at Two Jack Lake, Banff National Park, Alberta, Canada (© Jesús M. García/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Two+Jack+Lake%2c+Banff&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230409_MilkyWayTwoJackLake%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"e036f2cfe1b5179975dd1242d6a5d67b\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230410\",\"fullstartdate\":\"202304100700\",\"enddate\":\"20230411\",\"url\":\"/th?id=OHR.ElephantTwins_ROW1132340336_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ElephantTwins_ROW1132340336\",\"copyright\":\"Elephants in Amboseli National Park, Kenya (© Diana Robinson/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=african+elephants&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230410_ElephantTwins%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6a868ab52b49c30f088904170469dad0\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230411\",\"fullstartdate\":\"202304110700\",\"enddate\":\"20230412\",\"url\":\"/th?id=OHR.MossyGrottoFalls_ROW6376711227_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MossyGrottoFalls_ROW6376711227\",\"copyright\":\"Columbia River Gorge, Oregon, USA (© Chase Dekker Wild-Life Images/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Columbia+River+Gorge+Oregon&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230411_MossyGrottoFalls%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"c0b9524d937b8f3120a9441620f58a3c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230412\",\"fullstartdate\":\"202304120700\",\"enddate\":\"20230413\",\"url\":\"/th?id=OHR.EuropeFromISS_ROW1363787892_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.EuropeFromISS_ROW1363787892\",\"copyright\":\"Earth from the International Space Station (© Tim Peake/ESA/NASA via Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Earth+planet&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230412_EuropeFromISS%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"db77e8e34a778b71ed9b80f18070c421\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230413\",\"fullstartdate\":\"202304130700\",\"enddate\":\"20230414\",\"url\":\"/th?id=OHR.SnowdoniaNational_ROW1485284324_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.SnowdoniaNational_ROW1485284324\",\"copyright\":\"Snowdonia National Park, Gwynedd, Wales, UK (© Sebastian Wasek/eStock Photo)\",\"copyrightlink\":\"https://www.bing.com/search?q=Snowdonia+National+Park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230413_SnowdoniaNational%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"1033d6dc0fc08ee143607967146c1f20\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230414\",\"fullstartdate\":\"202304140700\",\"enddate\":\"20230415\",\"url\":\"/th?id=OHR.RedSeaStars_ROW7002802337_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.RedSeaStars_ROW7002802337\",\"copyright\":\"Red sea stars, Mediterranean Sea (© Hans Leijnse/Minden Pictures)\",\"copyrightlink\":\"https://www.bing.com/search?q=sea+star&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230414_RedSeaStars%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"dae93ba45f30b4f463e87a3ceed581fc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1103,7 +1111,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202304130700,"title":"Snowdonia National Park, Gwynedd, Wales, UK","explanation":"오늘의 Bing 배경화면은 2023-04-13","copyright":"© Sebastian Wasek/eStock Photo","longstartdate":"202304130700","imageinfolink":"https://www.bing.com/search?q=Snowdonia+National+Park&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.SnowdoniaNational_ROW1485284324_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230413-SnowdoniaNational_ROW1485284324_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202304140700,"title":"Red sea stars, Mediterranean Sea","explanation":"오늘의 Bing 배경화면은 2023-04-14","copyright":"© Hans Leijnse/Minden Pictures","longstartdate":"202304140700","imageinfolink":"https://www.bing.com/search?q=sea+star&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.RedSeaStars_ROW7002802337_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230414-RedSeaStars_ROW7002802337_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1376,7 +1384,7 @@ share-control=false
 share-players=true
 
 [org/gnome/shell/extensions/gsconnect/device/57efaeb39484c4eb/plugin/notification]
-applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true}}'
+applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/57efaeb39484c4eb/plugin/sftp]
 automount=false
@@ -1418,7 +1426,7 @@ share-control=false
 share-players=false
 
 [org/gnome/shell/extensions/gsconnect/device/bc30d5c027b762e2/plugin/notification]
-applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true}}'
+applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/bc30d5c027b762e2/plugin/sftp]
 automount=false
@@ -1439,7 +1447,7 @@ window-size=(924, 514)
 
 [org/gnome/shell/extensions/gsconnect/preferences]
 window-maximized=false
-window-size=(1188, 668)
+window-size=(824, 714)
 
 [org/gnome/shell/extensions/gtile]
 theme='Default'
@@ -1822,7 +1830,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -1830,7 +1838,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(305, 36)
+window-position=(26, 23)
 window-size=(1310, 982)
 
 [org/gtkhash]
