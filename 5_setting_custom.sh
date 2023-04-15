@@ -47,6 +47,7 @@ echo "============== [S] 5.Edit - Gnome Extension =============="
 
 gsettings set org.gnome.GWeather temperature-unit centigrade
 gsettings set org.gnome.shell disable-extension-version-validation true
+gsettings set org.gnome.desktop.sound event-sounds false
 
 echo "============== [E] 5.Link - Gnome Extension =============="
 
@@ -100,7 +101,6 @@ sudo ufw allow 80
 sudo ufw allow out 80
 
 #SSL
-sudo ufw allow 443
 sudo ufw allow out 443
 
 #dns/apt port

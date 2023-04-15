@@ -20,7 +20,6 @@ incron #Filesystem crontab
 intel-microcode #resolve kernel message 
 make #Build
 mc #Mid-Night Commander
-nano #Basic Editor
 nautilus-admin
 nautilus-image-converter
 nautilus-gtkhash
@@ -44,6 +43,7 @@ timeshift #Backup, Restore
 ubuntu-restricted-extras #Codec
 ufw #Firewall
 virt-manager
+vim #vi 
 wget #Download
 wmctrl #move Workspace
 ncdu #du
@@ -68,7 +68,6 @@ com.redis.RedisInsight
 com.transmissionbt.Transmission
 com.valvesoftware.Steam
 com.vscodium.codium
-com.github.fabiocolacio.marker
 de.haeckerfelix.Shortwave
 io.dbeaver.DBeaverCommunity
 io.github.celluloid_player.Celluloid
