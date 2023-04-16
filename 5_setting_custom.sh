@@ -101,6 +101,7 @@ sudo ufw allow 80
 sudo ufw allow out 80
 
 #SSL
+sudo ufw allow 443
 sudo ufw allow out 443
 
 #dns/apt port
