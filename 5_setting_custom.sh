@@ -96,6 +96,10 @@ sudo ufw allow out 22000
 sudo ufw allow 21027
 sudo ufw allow out 21027
 
+#gameport
+sudo ufw allow 9663
+sudo ufw allow out 9663
+
 #http
 sudo ufw allow 80
 sudo ufw allow out 80
