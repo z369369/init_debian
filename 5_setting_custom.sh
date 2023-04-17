@@ -10,7 +10,7 @@ rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 
 ln -s ~/.local/share/applications ~/Desktop/desktop_local
-ln -s ~/.var/lib/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
+ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
