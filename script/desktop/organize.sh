@@ -35,7 +35,7 @@ rm *.ovpn 2> /dev/null
 
 rsync -a --delete --exclude-from /home/$USER --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Public --exclude Downloads --exclude .cache --exclude .var  /home/$USER/ /media/$USER/backup_disk/$USER/
 
-rsync -a --delete /home/http/ /media/$USER/backup_disk/http/
+#rsync -a --delete /home/http/ /media/$USER/backup_disk/http/
 
 dconf dump / > /home/$USER/git/linux_init/gnome-shell/dconf_backup
 #dconf load / < /home/$USER/git/linux_init/gnome-shell/dconf_backup
