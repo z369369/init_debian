@@ -12,7 +12,6 @@ sudo apt-get install --only-upgrade `sudo apt-get upgrade | awk 'BEGIN{flag=0} /
 sudo apt install -y $(grep -vE "^\s*#" install.list | sed -e 's/#.*//'  | tr "\n" " " | cut -d '*' -f 1)
 
 sudo apt -y autoremove
-sudo deborphan | xargs sudo apt -y remove --purge
 
 echo "============== [E] 3.Install - apt =============="
 
