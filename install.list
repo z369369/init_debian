@@ -34,7 +34,6 @@ meld #Winmerge
 neofetch #pfetch alternative
 numlockx #GDM login - numlock always on
 pandoc #file converter
-playonlinux #Game
 preload #fast booting
 rsync #Used
 software-properties-common #Gnome Software
@@ -52,7 +51,9 @@ xclip #clipboard for nemo
 
 *
 
+org.gnome.design.Contrast
 ca.desrt.dconf-editor
+com.sweethome3d.Sweethome3d
 com.belmoussaoui.Decoder
 com.discordapp.Discord
 com.github.tchx84.Flatseal
@@ -67,10 +68,12 @@ com.transmissionbt.Transmission
 com.valvesoftware.Steam
 com.vscodium.codium
 de.haeckerfelix.Shortwave
+fr.natron.Natron
 io.dbeaver.DBeaverCommunity
 io.github.celluloid_player.Celluloid
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
+org.olivevideoeditor.Olive
 org.audacityteam.Audacity
 org.atheme.audacious
 org.blender.Blender
@@ -88,3 +91,4 @@ org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.remmina.Remmina
 org.telegram.desktop
+org.videolan.VLC

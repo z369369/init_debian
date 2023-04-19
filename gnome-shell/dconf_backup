@@ -158,7 +158,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='ubuntu'
+last-panel='info-overview'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -175,7 +175,7 @@ high-contrast=false
 mouse-tracking='proportional'
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', '3ce081fa-00d9-4500-ad01-83d7743cc1cd', 'ef538e80-aafa-499c-999b-a4798c6c61cd', '7fa16cfa-2274-4520-83ad-362cc513e263', 'baf57313-41ee-4a35-bd78-37d55f2fbd44', '182c25fa-8c00-4ad3-827b-470a164903f3', '0af343c0-868a-4007-806c-117c883f87a7', 'c7133631-94b3-4ce3-9bf1-d1545aa5a851', 'cbf808e2-b1c0-4480-a440-81ea1e3c0c34']
+folder-children=['Utilities', 'YaST', '3ce081fa-00d9-4500-ad01-83d7743cc1cd', 'ef538e80-aafa-499c-999b-a4798c6c61cd', '7fa16cfa-2274-4520-83ad-362cc513e263', 'baf57313-41ee-4a35-bd78-37d55f2fbd44', '182c25fa-8c00-4ad3-827b-470a164903f3', '0af343c0-868a-4007-806c-117c883f87a7', 'c7133631-94b3-4ce3-9bf1-d1545aa5a851', 'cbf808e2-b1c0-4480-a440-81ea1e3c0c34', '60fc8027-055b-45e8-aa97-f7ee0dc0c1ae']
 
 [org/gnome/desktop/app-folders/folders/0af343c0-868a-4007-806c-117c883f87a7]
 apps=['org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'timeshift-gtk.desktop', 'ca.desrt.dconf-editor.desktop', 'chrome-cinhimbnkkaeohfgghhklpknlkffjgod-Default.desktop', 'com.github.tchx84.Flatseal.desktop', 'org.freecadweb.FreeCAD.desktop', 'org.gnome.tweaks.desktop', 'remote-viewer.desktop', 'org.remmina.Remmina.desktop', 'org.gnome.Extensions.desktop', 'org.fedoraproject.MediaWriter.desktop', 'com.transmissionbt.Transmission.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'syncthing-ui.desktop', 'syncthing-start.desktop', 'desktop_grant.desktop', 'tachidesk-server.desktop', 'com.github.alexkdeveloper.desktop-files-creator.desktop']
@@ -190,8 +190,12 @@ name='Office'
 apps=['org.gnome.Meld.desktop']
 name='System'
 
+[org/gnome/desktop/app-folders/folders/60fc8027-055b-45e8-aa97-f7ee0dc0c1ae]
+apps=['com.blackmagicdesign.resolve-Installer.desktop', 'com.blackmagicdesign.resolve-CaptureLogs.desktop', 'com.blackmagicdesign.resolve.desktop', 'com.blackmagicdesign.rawplayer.desktop', 'com.blackmagicdesign.resolve-Panels.desktop', 'com.blackmagicdesign.rawspeedtest.desktop']
+name='Unnamed Folder'
+
 [org/gnome/desktop/app-folders/folders/7fa16cfa-2274-4520-83ad-362cc513e263]
-apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop']
+apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop', 'org.olivevideoeditor.Olive.desktop', 'fr.natron.Natron.desktop', 'com.sweethome3d.Sweethome3d.desktop', 'org.videolan.VLC.desktop']
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
@@ -215,7 +219,7 @@ apps=['com.redis.RedisInsight.desktop', 'org.gnome.meld.desktop', 'com.belmoussa
 name='Programming'
 
 [org/gnome/desktop/app-folders/folders/cbf808e2-b1c0-4480-a440-81ea1e3c0c34]
-apps=['App_balenaEtcher-1.5.109-x64.AppImage.desktop', 'App_OpenShot-v3.1.0-x86_64.AppImage.desktop', 'App_Stacer-1.1.0-x64.AppImage.desktop', 'App_shotcut-linux-x86_64-221221.AppImage.desktop', 'App_Ventoy-1.0.88-x86-64.AppImage.desktop', 'App_VLC_media_player-3.0.11.1-x86_64.AppImage.desktop']
+apps=['App_balenaEtcher-1.5.109-x64.AppImage.desktop', 'App_OpenShot-v3.1.0-x86_64.AppImage.desktop', 'App_Stacer-1.1.0-x64.AppImage.desktop', 'App_shotcut-linux-x86_64-221221.AppImage.desktop', 'App_Ventoy-1.0.88-x86-64.AppImage.desktop', 'App_VLC_media_player-3.0.11.1-x86_64.AppImage.desktop', 'App_Wine-x86_64-ubuntu.latest.AppImage.desktop']
 name='AppImage'
 translate=false
 
@@ -225,8 +229,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230418-MPPUnesco_ROW6815268249_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230418-MPPUnesco_ROW6815268249_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230419-TaiwanYuhina_ROW4532910071_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230419-TaiwanYuhina_ROW4532910071_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -266,7 +270,7 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc']
 show-banners=true
 show-in-lock-screen=false
 
@@ -318,6 +322,9 @@ application-id='com.ozmartians.VidCutter.desktop'
 [org/gnome/desktop/notifications/application/com-redis-redisinsight]
 application-id='com.redis.RedisInsight.desktop'
 
+[org/gnome/desktop/notifications/application/com-sweethome3d-sweethome3d]
+application-id='com.sweethome3d.Sweethome3d.desktop'
+
 [org/gnome/desktop/notifications/application/com-valvesoftware-steam]
 application-id='com.valvesoftware.Steam.desktop'
 
@@ -353,6 +360,9 @@ application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-printers-panel]
 application-id='gnome-printers-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-system-monitor]
+application-id='gnome-system-monitor.desktop'
 
 [org/gnome/desktop/notifications/application/google-chrome-unstable]
 application-id='google-chrome-unstable.desktop'
@@ -504,11 +514,17 @@ application-id='org.libreoffice.LibreOffice.desktop'
 [org/gnome/desktop/notifications/application/org-mozilla-firefox]
 application-id='org.mozilla.firefox.desktop'
 
+[org/gnome/desktop/notifications/application/org-olivevideoeditor-olive]
+application-id='org.olivevideoeditor.Olive.desktop'
+
 [org/gnome/desktop/notifications/application/org-shotcut-shotcut]
 application-id='org.shotcut.Shotcut.desktop'
 
 [org/gnome/desktop/notifications/application/org-telegram-desktop]
 application-id='org.telegram.desktop.desktop'
+
+[org/gnome/desktop/notifications/application/org-videolan-vlc]
+application-id='org.videolan.VLC.desktop'
 
 [org/gnome/desktop/notifications/application/screenkey]
 application-id='screenkey.desktop'
@@ -615,7 +631,7 @@ use-background-color=true
 document-directory=@ms 'file:///home/lwh/Pictures'
 
 [org/gnome/evince/default]
-window-ratio=(1.277396885666054, 1.0986792355254473)
+window-ratio=(1.9361344537815126, 1.0985748218527316)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -709,7 +725,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/phone/005_Food'
+virtual-root='file:///home/lwh/git/linux_init'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -734,14 +750,14 @@ open-recent=false
 
 [org/gnome/gedit/state/history-entry]
 replace-with-entry=['000_Personal', 'tags: mv', "' {} \\; -exec mv -i {} ../", '| xargs mv -t', '-lir', '000_Personal//', "grep -L -r 'tags: ", '/usr/', 'script/automation']
-search-for-entry=['some-vault-name', 'tags: ', '\tqqq\t', '\tbbb', "find . -maxdepth 1 -type f -exec grep -q '", '/home/lwh/phone/000_Personal/', '| xargs -0 -I{} mv {}', '-L -r', '000_Personal/']
+search-for-entry=['/home/lwh/phone/000_Personal/', 'some-vault-name', 'tags: ', '\tqqq\t', '\tbbb', "find . -maxdepth 1 -type f -exec grep -q '", '| xargs -0 -I{} mv {}', '-L -r', '000_Personal/']
 
 [org/gnome/gedit/state/window]
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1920, 1007)
-state=43908
+size=(1045, 832)
+state=87168
 
 [org/gnome/gnome-search-tool]
 default-window-width=710
@@ -765,7 +781,7 @@ resources-memory-in-iec=false
 show-all-fs=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(620, 597, 26, 23)
+window-state=(919, 941, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -960,9 +976,9 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1181, 850)
+initial-size=(951, 956)
 maximized=false
-sidebar-width=172
+sidebar-width=218
 
 [org/gnome/nm-applet/eap/0041fb13-8421-411b-869c-90c21aaee2b4]
 ignore-ca-cert=false
@@ -1118,7 +1134,7 @@ command-history=['calc', 'gnome-calc', 'lg', 'R', 'r', 'meld', 'htop', 'gnome-sh
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=['wsmatrix@martin.zurowietz.de', 'ubuntu-appindicators@ubuntu.com', 'ding@rastersoft.com', 'systemd-manager@hardpixel.eu', 'no-overview@fthx', 'order-extensions@wa4557.github.com', 'smartlock@huy.im', 'horizontal-workspace-indicator@tty2.io']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'gsconnect@andyholmes.github.io', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'stocks@infinicode.de', 'trayIconsReloaded@selfmade.pl', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'panel-date-format@atareao.es', 'RemoveAppMenu@Dragon8oy.com', 'dash-to-panel@jderose9.github.com']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'printers@linux-man.org', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'quick-lang-switch@ankostis.gmail.com', 'add-to-desktop@tommimon.github.com', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'simple-timer@majortomvr.github.com', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'openweather-extension@jenslody.de', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'color-picker@tuberry', 'desktopicons-neo@darkdemon', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'sound-output-device-chooser@kgshank.net', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip@bennypowers.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'volume-mixer@evermiss.net', 'NotificationCounter@coolllsk', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'stocks@infinicode.de', 'trayIconsReloaded@selfmade.pl', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'panel-date-format@atareao.es', 'RemoveAppMenu@Dragon8oy.com', 'dash-to-panel@jderose9.github.com', 'gsconnect@andyholmes.github.io']
 favorite-apps=['nemo.desktop', 'google-chrome.desktop', 'com.opera.Opera.desktop', 'com.vscodium.codium.desktop', 'md.obsidian.Obsidian.desktop', 'code.desktop', 'firefox.desktop', 'webmail.desktop', 'org.gnome.Nautilus.desktop', 'com.obsproject.Studio.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'virt-manager.desktop', 'de.haeckerfelix.Shortwave.desktop', 'u_abricotine.desktop', 'org.gnome.Extensions.desktop', 'toggle_outgoing.desktop', 'organize.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['exi', 'exit', 'quit', 'bye']
@@ -1140,7 +1156,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230411","fullstartdate":"202304110700","enddate":"20230412","url":"/th?id=OHR.MossyGrottoFalls_ROW6376711227_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MossyGrottoFalls_ROW6376711227","copyright":"Columbia River Gorge, Oregon, USA (© Chase Dekker Wild-Life Images/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Columbia+River+Gorge+Oregon&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230411_MossyGrottoFalls%22&FORM=HPQUIZ","wp":true,"hsh":"c0b9524d937b8f3120a9441620f58a3c","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230412","fullstartdate":"202304120700","enddate":"20230413","url":"/th?id=OHR.EuropeFromISS_ROW1363787892_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EuropeFromISS_ROW1363787892","copyright":"Earth from the International Space Station (© Tim Peake/ESA/NASA via Getty Images)","copyrightlink":"https://www.bing.com/search?q=Earth+planet&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230412_EuropeFromISS%22&FORM=HPQUIZ","wp":true,"hsh":"db77e8e34a778b71ed9b80f18070c421","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230413","fullstartdate":"202304130700","enddate":"20230414","url":"/th?id=OHR.SnowdoniaNational_ROW1485284324_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SnowdoniaNational_ROW1485284324","copyright":"Snowdonia National Park, Gwynedd, Wales, UK (© Sebastian Wasek/eStock Photo)","copyrightlink":"https://www.bing.com/search?q=Snowdonia+National+Park&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230413_SnowdoniaNational%22&FORM=HPQUIZ","wp":true,"hsh":"1033d6dc0fc08ee143607967146c1f20","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230414","fullstartdate":"202304140700","enddate":"20230415","url":"/th?id=OHR.RedSeaStars_ROW7002802337_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.RedSeaStars_ROW7002802337","copyright":"Red sea stars, Mediterranean Sea (© Hans Leijnse/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=sea+star&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230414_RedSeaStars%22&FORM=HPQUIZ","wp":true,"hsh":"dae93ba45f30b4f463e87a3ceed581fc","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230415","fullstartdate":"202304150700","enddate":"20230416","url":"/th?id=OHR.NahargarhFort_ROW1740335378_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NahargarhFort_ROW1740335378","copyright":"Aerial view of Jaipur from Nahargarh Fort in Rajasthan, India (© Sean3810/iStock/Getty Images Plus)","copyrightlink":"https://www.bing.com/search?q=Nahargarh+Fort&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230415_NahargarhFort%22&FORM=HPQUIZ","wp":true,"hsh":"a8b20c93c183158f586f9df952ef5918","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230416","fullstartdate":"202304160700","enddate":"20230417","url":"/th?id=OHR.KiteDay_ROW1884773634_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.KiteDay_ROW1884773634","copyright":"Adelaide International Kite Festival, Australia (© Andrey Moisseyev/Alamy)","copyrightlink":"https://www.bing.com/search?q=flying+kites&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230416_KiteDay%22&FORM=HPQUIZ","wp":true,"hsh":"5f38b04d129c1e68c2df95c42f90a0af","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230417","fullstartdate":"202304170700","enddate":"20230418","url":"/th?id=OHR.MinouLighthouse_ROW1985559141_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MinouLighthouse_ROW1985559141","copyright":"Petit Minou Lighthouse, Plouzané, Brittany, France (© RooM the Agency/Alamy)","copyrightlink":"https://www.bing.com/search?q=Petit+Minou+Lighthouse&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230417_MinouLighthouse%22&FORM=HPQUIZ","wp":true,"hsh":"5212e422919ffc356a89ce0266506b32","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230418","fullstartdate":"202304180700","enddate":"20230419","url":"/th?id=OHR.MPPUnesco_ROW6815268249_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MPPUnesco_ROW6815268249","copyright":"Machu Picchu, Peru (© Dora Dalton/Getty Images)","copyrightlink":"https://www.bing.com/search?q=machu+picchu&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230418_MPPUnesco%22&FORM=HPQUIZ","wp":true,"hsh":"2a0018a90d10834a56780151fb7f5a04","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230412","fullstartdate":"202304120700","enddate":"20230413","url":"/th?id=OHR.EuropeFromISS_ROW1363787892_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EuropeFromISS_ROW1363787892","copyright":"Earth from the International Space Station (© Tim Peake/ESA/NASA via Getty Images)","copyrightlink":"https://www.bing.com/search?q=Earth+planet&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230412_EuropeFromISS%22&FORM=HPQUIZ","wp":true,"hsh":"db77e8e34a778b71ed9b80f18070c421","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230413","fullstartdate":"202304130700","enddate":"20230414","url":"/th?id=OHR.SnowdoniaNational_ROW1485284324_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SnowdoniaNational_ROW1485284324","copyright":"Snowdonia National Park, Gwynedd, Wales, UK (© Sebastian Wasek/eStock Photo)","copyrightlink":"https://www.bing.com/search?q=Snowdonia+National+Park&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230413_SnowdoniaNational%22&FORM=HPQUIZ","wp":true,"hsh":"1033d6dc0fc08ee143607967146c1f20","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230414","fullstartdate":"202304140700","enddate":"20230415","url":"/th?id=OHR.RedSeaStars_ROW7002802337_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.RedSeaStars_ROW7002802337","copyright":"Red sea stars, Mediterranean Sea (© Hans Leijnse/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=sea+star&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230414_RedSeaStars%22&FORM=HPQUIZ","wp":true,"hsh":"dae93ba45f30b4f463e87a3ceed581fc","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230415","fullstartdate":"202304150700","enddate":"20230416","url":"/th?id=OHR.NahargarhFort_ROW1740335378_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.NahargarhFort_ROW1740335378","copyright":"Aerial view of Jaipur from Nahargarh Fort in Rajasthan, India (© Sean3810/iStock/Getty Images Plus)","copyrightlink":"https://www.bing.com/search?q=Nahargarh+Fort&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230415_NahargarhFort%22&FORM=HPQUIZ","wp":true,"hsh":"a8b20c93c183158f586f9df952ef5918","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230416","fullstartdate":"202304160700","enddate":"20230417","url":"/th?id=OHR.KiteDay_ROW1884773634_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.KiteDay_ROW1884773634","copyright":"Adelaide International Kite Festival, Australia (© Andrey Moisseyev/Alamy)","copyrightlink":"https://www.bing.com/search?q=flying+kites&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230416_KiteDay%22&FORM=HPQUIZ","wp":true,"hsh":"5f38b04d129c1e68c2df95c42f90a0af","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230417","fullstartdate":"202304170700","enddate":"20230418","url":"/th?id=OHR.MinouLighthouse_ROW1985559141_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MinouLighthouse_ROW1985559141","copyright":"Petit Minou Lighthouse, Plouzané, Brittany, France (© RooM the Agency/Alamy)","copyrightlink":"https://www.bing.com/search?q=Petit+Minou+Lighthouse&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230417_MinouLighthouse%22&FORM=HPQUIZ","wp":true,"hsh":"5212e422919ffc356a89ce0266506b32","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230418","fullstartdate":"202304180700","enddate":"20230419","url":"/th?id=OHR.MPPUnesco_ROW6815268249_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MPPUnesco_ROW6815268249","copyright":"Machu Picchu, Peru (© Dora Dalton/Getty Images)","copyrightlink":"https://www.bing.com/search?q=machu+picchu&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230418_MPPUnesco%22&FORM=HPQUIZ","wp":true,"hsh":"2a0018a90d10834a56780151fb7f5a04","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230419","fullstartdate":"202304190700","enddate":"20230420","url":"/th?id=OHR.TaiwanYuhina_ROW4532910071_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TaiwanYuhina_ROW4532910071","copyright":"Taiwan yuhina, Alishan National Scenic Area, Taiwan (© Staffan Widstrand/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Taiwan+Yuhina&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230419_TaiwanYuhina%22&FORM=HPQUIZ","wp":true,"hsh":"1bbc2a78f1bf8a31d650d5a0f84e2d9d","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1152,7 +1168,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202304180700,"title":"Machu Picchu, Peru","explanation":"오늘의 Bing 배경화면은 2023-04-18","copyright":"© Dora Dalton/Getty Images","longstartdate":"202304180700","imageinfolink":"https://www.bing.com/search?q=machu+picchu&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.MPPUnesco_ROW6815268249_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230418-MPPUnesco_ROW6815268249_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202304190700,"title":"Taiwan yuhina, Alishan National Scenic Area, Taiwan","explanation":"오늘의 Bing 배경화면은 2023-04-19","copyright":"© Staffan Widstrand/Minden Pictures","longstartdate":"202304190700","imageinfolink":"https://www.bing.com/search?q=Taiwan+Yuhina&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.TaiwanYuhina_ROW4532910071_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230419-TaiwanYuhina_ROW4532910071_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1203,7 +1219,7 @@ dash-max-icon-size=24
 disable-overview-on-startup=true
 dock-fixed=true
 dock-position='LEFT'
-extend-height=true
+extend-height=false
 floating-margin=4
 height-fraction=0.80000000000000004
 hot-keys=false
@@ -1272,7 +1288,7 @@ leftbox-size=0
 middle-click-action='CYCLE'
 overview-click-to-exit=false
 panel-anchors='{"0":"MIDDLE"}'
-panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centered"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions='{"0":[{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centered"},{"element":"centerBox","visible":true,"position":"centered"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-lengths='{"0":100}'
 panel-positions='{"0":"TOP"}'
@@ -1299,7 +1315,7 @@ show-showdesktop-time=300
 show-tooltip=true
 show-window-previews=false
 showdesktop-button-width=8
-status-icon-padding=1
+status-icon-padding=2
 stockgs-force-hotcorner=false
 stockgs-keep-dash=false
 stockgs-keep-top-panel=false
@@ -1315,7 +1331,7 @@ trans-use-custom-bg=false
 trans-use-custom-gradient=false
 trans-use-custom-opacity=false
 trans-use-dynamic-opacity=false
-tray-padding=1
+tray-padding=2
 tray-size=0
 window-preview-title-position='TOP'
 
@@ -1716,10 +1732,10 @@ icon-saturation=0
 icon-size=24
 icons-limit=8
 invoke-to-workspace=true
-position-weight=0
+position-weight=3
 tray-margin-left=0
 tray-margin-right=0
-tray-position='right'
+tray-position='center'
 wine-behavior=true
 
 [org/gnome/shell/extensions/unite]
@@ -1874,7 +1890,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -1882,7 +1898,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(90, 73)
 window-size=(993, 1007)
 
 [org/gtkhash]
@@ -1908,9 +1924,12 @@ disabled-actions=['set-as-background.nemo_action', 'change-background.nemo_actio
 disabled-extensions=@as []
 
 [org/nemo/preferences]
+confirm-move-to-trash=false
+confirm-trash=true
 date-format='iso'
 default-folder-viewer='list-view'
 disable-menu-warning=true
+enable-delete=false
 show-bookmarks-in-to-menus=true
 show-compact-view-icon-toolbar=true
 show-edit-icon-toolbar=true

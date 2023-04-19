@@ -9,7 +9,7 @@ sudo systemctl stop whoopsie.service
 sudo systemctl disable whoopsie.service
 
 echo "Disabling telemetry"
-sudo apt remove ubuntu-report whoopsie apport -y
+sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
 
 # Prevent telemetry from being reinstalled 
 printf "Package: ubuntu-report\nPin: release a=*\nPin-Priority: -10" >> no-ubuntu-report.pref 
