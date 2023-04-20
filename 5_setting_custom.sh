@@ -108,9 +108,17 @@ sudo ufw allow out 80
 sudo ufw allow 443
 sudo ufw allow out 443
 
-#dns/apt port
+#DNS / APT install port
 sudo ufw allow 53
 sudo ufw allow out 53
+
+#DHCP port
+sudo ufw allow 67
+sudo ufw allow out 67
+
+#network timer
+sudo ufw allow 123
+sudo ufw allow out 123
 
 sudo ufw reload
 

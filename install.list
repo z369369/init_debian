@@ -9,6 +9,7 @@ gedit-plugin-multi-edit #Used Gedit multi line
 gnome-shell-extensions #Gnome Extension
 gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
+gnome-calendar #Gnome Calendar
 git #Used
 gthumb #Used
 gufw #Used Firewall GUI
@@ -82,7 +83,6 @@ org.freecadweb.FreeCAD
 org.inkscape.Inkscape
 org.gimp.GIMP
 org.gnome.baobab
-org.gnome.Calendar
 org.gnome.design.IconLibrary
 org.kde.kdenlive
 org.kde.krita
