@@ -10,6 +10,7 @@ if [ $? -eq 0 ]; then
     ./4_install_flatpak.sh
     ./5_setting_custom.sh
     ./6_install_custom.sh
+    ./7_setting_firewall.sh
     reboot
 else
     echo "Please check Internet connection"
