@@ -30,4 +30,6 @@ sudo ufw allow out 21027
 sudo ufw allow 1030:1099/udp
 sudo ufw allow out 1030:1099/udp
 
+sudo ufw allow out on virbr0
+
 sudo ufw reload

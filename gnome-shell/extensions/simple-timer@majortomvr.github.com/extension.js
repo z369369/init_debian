@@ -27,8 +27,57 @@ class Extension {
       
       this.panelButtonLayout = new St.BoxLayout();
       this.panelButtonLayout.add(this.icon);
-      this.panelButtonLayout.add(this.timerLabel);     
+      this.panelButtonLayout.add(this.timerLabel);           
+            
       
+      // Timer Input Field            
+      this.menuTimerInputEntry = new St.Entry({
+         name: 'time',
+         primary_icon : new St.Icon({ icon_name : 'media-playback-start-symbolic', icon_size : 24 }),
+         can_focus : true,
+         hint_text: _("Enter countdown time..."),
+         x_expand : true,
+         y_expand : true
+      });
+
+      this.menuTimerInputEntry.set_input_purpose(Clutter.TIME);
+      this.menuTimerInputEntry.clutter_text.set_max_length(12);
+
+      // Input Field Event Management
+      this.menuTimerInputEntry.clutter_text.connect('activate', ()=> {
+         this.timerStart();
+      });
+      this.menuTimerInputEntry.connect('primary-icon-clicked', () => { 
+         this.timerStart();
+      });
+      
+      // Timer-Input Text Change Event Handling
+      this.menuTimerInputEntry.clutter_text.connect('text-changed', ()=> {
+         let text = this.menuTimerInputEntry.get_text();                  
+         let newText = "";
+
+         // This code comment filters the time input based on its format, either as a colon-separated format like "3:00:00" or a letter format like "2h 47m 12s".
+         if (Misc.getTimeInputFormat(text) === Misc.TimeInputFormat.LETTERS) {
+            newText = Misc.timeInputLetterHandler(text);
+         } else {
+            newText = Misc.timeInputColonHandler(text);
+         }
+
+         // If the input filter has changed the input, we update the text input field with the corrected text.
+         if (text != newText) {
+            this.menuTimerInputEntry.set_text(newText);
+         }         
+      });      
+      
+      this.itemInput = new PopupMenu.PopupBaseMenuItem({
+         reactive : false,
+         can_focus : false
+      });
+      this.itemInput.add(this.menuTimerInputEntry);
+      this.panelButton.menu.addMenuItem(this.itemInput);
+            
+      // Seperator
+      this.panelButton.menu.addMenuItem( new PopupMenu.PopupSeparatorMenuItem() );      
 
       // PANEL-MENU
       let boxMenuItem = new PopupMenu.PopupBaseMenuItem({ reactive: false, can_focus: false });
@@ -67,46 +116,8 @@ class Extension {
       });      
       boxLayout.add_child(this.menuButtonResume);
       this.panelButton.menu.addMenuItem(boxMenuItem);
-      
-      // Seperator
-      this.panelButton.menu.addMenuItem( new PopupMenu.PopupSeparatorMenuItem() );
-      
-      // Timer Input Field            
-      this.menuTimerInputEntry = new St.Entry({
-         name: 'time',
-         primary_icon : new St.Icon({ icon_name : 'media-playback-start-symbolic', icon_size : 24 }),
-         can_focus : true,
-         hint_text: _("Enter countdown time..."),
-         x_expand : true,
-         y_expand : true
-      });
 
-      this.menuTimerInputEntry.set_input_purpose(Clutter.TIME);
-      this.menuTimerInputEntry.clutter_text.set_max_length(9);
-
-      // Input Field Event Management
-      this.menuTimerInputEntry.clutter_text.connect('activate', ()=> {
-         this.timerStart();
-      });
-      this.menuTimerInputEntry.connect('primary-icon-clicked', () => { 
-         this.timerStart();
-      });
-      // Text Change Event Handling
-      this.menuTimerInputEntry.clutter_text.connect('text-changed', ()=> {
-         let text = this.menuTimerInputEntry.get_text();
-         let newText = Misc.timeInputColonHandler( text );         
-
-         if (text != newText) {
-            this.menuTimerInputEntry.set_text(newText);
-         }         
-      });      
       
-      this.itemInput = new PopupMenu.PopupBaseMenuItem({
-         reactive : false,
-         can_focus : false
-      });
-      this.itemInput.add(this.menuTimerInputEntry);
-      this.panelButton.menu.addMenuItem(this.itemInput);
       this.panelButton.add_child(this.panelButtonLayout);      
 
       Main.panel.addToStatusArea("Simple-Timer", this.panelButton, 0, "right");
