@@ -9,13 +9,21 @@ sudo ufw allow out 1714:1764/tcp
 sudo ufw allow 1714:1764/udp
 sudo ufw allow out 1714:1764/udp
 
-#RDP
-sudo ufw allow 3389
-sudo ufw allow out 3389
+#http
+sudo ufw allow 80
+sudo ufw allow out 80
+
+#SSL
+sudo ufw allow 443
+sudo ufw allow out 443
 
 #common ssl port
 sudo ufw allow 8443
 sudo ufw allow out 8443
+
+#RDP
+# sudo ufw allow 3389
+# sudo ufw allow out 3389
 
 #multicast dns - game
 sudo ufw allow 5353
@@ -35,14 +43,6 @@ sudo ufw allow out 21027
 #game streaming port
 sudo ufw allow 9663
 sudo ufw allow out 9663
-
-#http
-sudo ufw allow 80
-sudo ufw allow out 80
-
-#SSL
-sudo ufw allow 443
-sudo ufw allow out 443
 
 #DNS / APT install port
 sudo ufw allow 53
