@@ -41,9 +41,9 @@ sudo ufw allow out 1030:1099/udp
 # sudo ufw allow 5353
 # sudo ufw allow out 5353
 
-# #game streaming port
-# sudo ufw allow 9663
-# sudo ufw allow out 9663
+#game streaming port
+sudo ufw allow 9663
+sudo ufw allow out 9663
 
 #syncthing
 sudo ufw allow 21027
