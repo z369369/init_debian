@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <text/>
+ </head>
+ <body>
+  <outline comment="" copyright="" version="RSS" fetchInterval="30" archiveMode="globalDefault" description="#클리앙, #Clien" xmlUrl="http://feeds.feedburner.com/c_hot50" htmlUrl="https://www.clien.net" id="3438849323" type="rss" text="CLIEN -- hot50" useCustomFetchInterval="true" maxArticleAge="60" maxArticleNumber="1000" title="CLIEN -- hot50"/>
+  <outline comment="" copyright="" version="RSS" fetchInterval="30" archiveMode="globalDefault" description="#CLIEN #클리앙" xmlUrl="http://feeds.feedburner.com/c_news" htmlUrl="https://www.clien.net" id="2991103576" type="rss" text="CLIEN -- 새로운소식 (news)" useCustomFetchInterval="true" maxArticleAge="60" maxArticleNumber="1000" title="CLIEN -- 새로운소식 (news)"/>
+  <outline isOpen="false" id="2527602382" text="KDE">
+   <outline isOpen="false" id="2994968296" text="스페인어 피드"/>
+  </outline>
+ </body>
+</opml>
+
