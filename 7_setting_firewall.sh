@@ -34,8 +34,11 @@ sudo ufw allow 123
 sudo ufw allow out 123
 
 #microsoft game pass
-sudo ufw allow 1030:1099/udp
-sudo ufw allow out 1030:1099/udp
+sudo ufw allow 1000:1100/udp
+sudo ufw allow out 1000:1100/udp
+
+sudo ufw allow 5000:5002/udp
+sudo ufw allow out 5000:5002/udp
 
 #multicast dns - game
 # sudo ufw allow 5353
