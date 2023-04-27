@@ -158,7 +158,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='region'
+last-panel='sound'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -229,8 +229,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230425-AdelieWPD_ROW5828279208_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230425-AdelieWPD_ROW5828279208_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230426-GHOAudubonDay_ROW5959475740_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230426-GHOAudubonDay_ROW5959475740_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -253,18 +253,18 @@ clock-show-weekday=false
 color-scheme='prefer-dark'
 cursor-size=24
 cursor-theme='Yaru'
-document-font-name='Sans 12'
+document-font-name='나눔바른고딕 12'
 enable-animations=false
 enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='slight'
-font-name='Sans Bold 12'
+font-name='나눔바른고딕 12'
 gtk-enable-primary-paste=false
 gtk-theme='Yaru-dark'
 icon-theme='Yaru'
 locate-pointer=false
 menubar-accel=''
-monospace-font-name='Sans 12'
+monospace-font-name='나눔바른고딕 12'
 show-battery-percentage=false
 toolkit-accessibility=false
 
@@ -629,7 +629,7 @@ button-layout=':minimize,maximize,close'
 focus-mode='click'
 num-workspaces=5
 resize-with-right-button=true
-titlebar-font='Sans 12'
+titlebar-font='나눔바른고딕 12'
 workspace-names=['Etc', 'Edit', 'Default', 'File', 'Terminal']
 
 [org/gnome/eog/ui]
@@ -733,13 +733,27 @@ sidebar-width=200
 window-height=480
 window-width=898
 
+[org/gnome/font-manager]
+compare-background-color='rgb(255,255,255)'
+compare-foreground-color='rgb(0,0,0)'
+compare-list=@as []
+google-fonts-background-color='rgb(255,255,255)'
+google-fonts-foreground-color='rgb(0,0,0)'
+is-maximized=false
+language-filter-list=@as []
+preview-page=0
+selected-category='1'
+selected-font='3'
+window-position=(26, 23)
+window-size=(1416, 853)
+
 [org/gnome/gedit/plugins]
 active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'modelines', 'spell']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/desktop'
+virtual-root='file:///home/lwh/git/linux_init'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -821,7 +835,7 @@ sort-order=0
 
 [org/gnome/gnome-system-monitor/proctree]
 col-0-visible=true
-col-0-width=324
+col-0-width=245
 col-1-visible=false
 col-1-width=47
 col-12-visible=false
@@ -841,7 +855,7 @@ col-26-width=100
 col-8-visible=true
 col-8-width=59
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=15
+sort-col=8
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -998,9 +1012,9 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1192, 887)
+initial-size=(712, 847)
 maximized=false
-sidebar-width=144
+sidebar-width=236
 
 [org/gnome/nm-applet/eap/0041fb13-8421-411b-869c-90c21aaee2b4]
 ignore-ca-cert=false
@@ -1178,7 +1192,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230418","fullstartdate":"202304180700","enddate":"20230419","url":"/th?id=OHR.MPPUnesco_ROW6815268249_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MPPUnesco_ROW6815268249","copyright":"Machu Picchu, Peru (© Dora Dalton/Getty Images)","copyrightlink":"https://www.bing.com/search?q=machu+picchu&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230418_MPPUnesco%22&FORM=HPQUIZ","wp":true,"hsh":"2a0018a90d10834a56780151fb7f5a04","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230419","fullstartdate":"202304190700","enddate":"20230420","url":"/th?id=OHR.TaiwanYuhina_ROW4532910071_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TaiwanYuhina_ROW4532910071","copyright":"Taiwan yuhina, Alishan National Scenic Area, Taiwan (© Staffan Widstrand/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Taiwan+Yuhina&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230419_TaiwanYuhina%22&FORM=HPQUIZ","wp":true,"hsh":"1bbc2a78f1bf8a31d650d5a0f84e2d9d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230420","fullstartdate":"202304200700","enddate":"20230421","url":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994","copyright":"Anjuna Beach, Goa, India (© Dmitry Rukhlenko/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Anjuna+Beach+Goa&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230420_AnjunaBeachGoa%22&FORM=HPQUIZ","wp":true,"hsh":"c1afe56f6d987dc8d072c9dc0aa4b39d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230421","fullstartdate":"202304210700","enddate":"20230422","url":"/th?id=OHR.ProcidaItaly_ROW3953522775_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ProcidaItaly_ROW3953522775","copyright":"Procida, Italy (© Sean Pavone/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=procida+italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230421_ProcidaItaly%22&FORM=HPQUIZ","wp":true,"hsh":"fa2888313556c9986ab0bbaf3620a266","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230422","fullstartdate":"202304220700","enddate":"20230423","url":"/th?id=OHR.EarthDayFox_ROW4082550699_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EarthDayFox_ROW4082550699","copyright":"Island fox in Channel Islands National Park, California, USA (© Ian Shive/Tandem Stills + Motion)","copyrightlink":"https://www.bing.com/search?q=island+fox&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230422_EarthDayFox%22&FORM=HPQUIZ","wp":true,"hsh":"98a69744e4e3d82a3d20d3e178c0ff82","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230423","fullstartdate":"202304230700","enddate":"20230424","url":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566","copyright":"Sunrise over misty lavender fields, India (© Amith Nag Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=lavender&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230423_Honnavaralavenderfields%22&FORM=HPQUIZ","wp":true,"hsh":"9b4d3bca10dccdc14b33b4004c264677","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230424","fullstartdate":"202304240700","enddate":"20230425","url":"/th?id=OHR.FranconianWineCellar_ROW5594868438_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FranconianWineCellar_ROW5594868438","copyright":"Bavarian Forest wine cellar, Germany (© Andreas_Zerndl/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Bavarian+forest+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230424_FranconianWineCellar%22&FORM=HPQUIZ","wp":true,"hsh":"cc88b0316b6499ac84dffed18119e12a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230419","fullstartdate":"202304190700","enddate":"20230420","url":"/th?id=OHR.TaiwanYuhina_ROW4532910071_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TaiwanYuhina_ROW4532910071","copyright":"Taiwan yuhina, Alishan National Scenic Area, Taiwan (© Staffan Widstrand/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Taiwan+Yuhina&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230419_TaiwanYuhina%22&FORM=HPQUIZ","wp":true,"hsh":"1bbc2a78f1bf8a31d650d5a0f84e2d9d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230420","fullstartdate":"202304200700","enddate":"20230421","url":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994","copyright":"Anjuna Beach, Goa, India (© Dmitry Rukhlenko/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Anjuna+Beach+Goa&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230420_AnjunaBeachGoa%22&FORM=HPQUIZ","wp":true,"hsh":"c1afe56f6d987dc8d072c9dc0aa4b39d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230421","fullstartdate":"202304210700","enddate":"20230422","url":"/th?id=OHR.ProcidaItaly_ROW3953522775_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ProcidaItaly_ROW3953522775","copyright":"Procida, Italy (© Sean Pavone/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=procida+italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230421_ProcidaItaly%22&FORM=HPQUIZ","wp":true,"hsh":"fa2888313556c9986ab0bbaf3620a266","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230422","fullstartdate":"202304220700","enddate":"20230423","url":"/th?id=OHR.EarthDayFox_ROW4082550699_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EarthDayFox_ROW4082550699","copyright":"Island fox in Channel Islands National Park, California, USA (© Ian Shive/Tandem Stills + Motion)","copyrightlink":"https://www.bing.com/search?q=island+fox&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230422_EarthDayFox%22&FORM=HPQUIZ","wp":true,"hsh":"98a69744e4e3d82a3d20d3e178c0ff82","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230423","fullstartdate":"202304230700","enddate":"20230424","url":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566","copyright":"Sunrise over misty lavender fields, India (© Amith Nag Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=lavender&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230423_Honnavaralavenderfields%22&FORM=HPQUIZ","wp":true,"hsh":"9b4d3bca10dccdc14b33b4004c264677","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230424","fullstartdate":"202304240700","enddate":"20230425","url":"/th?id=OHR.FranconianWineCellar_ROW5594868438_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FranconianWineCellar_ROW5594868438","copyright":"Bavarian Forest wine cellar, Germany (© Andreas_Zerndl/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Bavarian+forest+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230424_FranconianWineCellar%22&FORM=HPQUIZ","wp":true,"hsh":"cc88b0316b6499ac84dffed18119e12a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230426","fullstartdate":"202304260700","enddate":"20230427","url":"/th?id=OHR.GHOAudubonDay_ROW5959475740_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GHOAudubonDay_ROW5959475740","copyright":"Great horned owl fledglings (© Michael Morse/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230426_GHOAudubonDay%22&FORM=HPQUIZ","wp":true,"hsh":"5eda0af281abf7cfe9e5ccb3db82a9c9","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=false
@@ -1190,7 +1204,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202304250700,"title":"Adélie penguins in Antarctica","explanation":"오늘의 Bing 배경화면은 2023-04-25","copyright":"© David Merron Photography/Getty Images","longstartdate":"202304250700","imageinfolink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.AdelieWPD_ROW5828279208_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230425-AdelieWPD_ROW5828279208_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202304260700,"title":"Great horned owl fledglings","explanation":"오늘의 Bing 배경화면은 2023-04-26","copyright":"© Michael Morse/Getty Images","longstartdate":"202304260700","imageinfolink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.GHOAudubonDay_ROW5959475740_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230426-GHOAudubonDay_ROW5959475740_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1626,7 +1640,7 @@ order-icons-left=['ip-menu', 'horizontal-workspace-indicator@tty2.io', 'appMenu'
 order-icons-right=['ssm-gnome@lgiki.net', 'simpleMessage', 'openWeatherMenu', 'stocksMenu', 'TrayIconsReloaded', 'screenRecording', 'aggregateMenu', 'keyboard', 'ip-menu', '/org/gnome/Shell/Extensions/GSConnect/Device/bc30d5c027b762e2', '/org/gnome/Shell/Extensions/GSConnect/Device/57efaeb39484c4eb', 'smartlock@huy.im', 'BingWallpaperIndicator', 'color-picker@tuberry', 'Simple-Timer', 'printers', 'drive-menu', 'a11y', 'dwellClick']
 
 [org/gnome/shell/extensions/panel-date-format]
-format='%m.%d %a %H:%M'
+format='%m.%d %a %H : %M'
 
 [org/gnome/shell/extensions/pip-on-top]
 stick=true
@@ -1928,7 +1942,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(463, 24)
+window-position=(26, 23)
 window-size=(993, 1007)
 
 [org/gtkhash]
