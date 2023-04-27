@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='indicato'
-saved-view='/'
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/switch-input-source'
+saved-view='/org/gnome/desktop/wm/keybindings/'
 show-warning=false
 window-height=806
 window-is-maximized=false
@@ -89,9 +89,9 @@ show-ipsets=true
 [org/freedesktop/ibus/engine/hangul]
 auto-reorder=true
 hangul-keyboard='2'
-hanja-keys='Control+space,Hangul_Hanja'
-initial-input-mode='latin'
-switch-keys='Hangul,Shift+space'
+hanja-keys='Hangul_Hanja'
+initial-input-mode='hangul'
+switch-keys=''
 word-commit=false
 
 [org/freedesktop/tracker/miner/files]
@@ -158,7 +158,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='region'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -211,7 +211,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/baf57313-41ee-4a35-bd78-37d55f2fbd44]
-apps=['com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop', 'com.heroicgameslauncher.hgl.desktop']
+apps=['com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop', 'com.heroicgameslauncher.hgl.desktop', 'com.usebottles.bottles.desktop']
 name='Games'
 
 [org/gnome/desktop/app-folders/folders/c7133631-94b3-4ce3-9bf1-d1545aa5a851]
@@ -240,10 +240,10 @@ show-weekdate=true
 automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('ibus', 'hangul')]
+mru-sources=[('xkb', 'us'), ('ibus', 'hangul')]
 per-window=false
 show-all-sources=false
-sources=[('ibus', 'hangul')]
+sources=[('xkb', 'us'), ('ibus', 'hangul')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
@@ -269,7 +269,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator', 'nimf-settings']
 show-banners=true
 show-in-lock-screen=false
 
@@ -413,6 +413,9 @@ application-id='nemo.desktop'
 
 [org/gnome/desktop/notifications/application/net-lutris-lutris]
 application-id='net.lutris.Lutris.desktop'
+
+[org/gnome/desktop/notifications/application/nimf-settings]
+application-id='nimf-settings.desktop'
 
 [org/gnome/desktop/notifications/application/opera]
 application-id='opera.desktop'
@@ -571,6 +574,7 @@ application-id='yelp.desktop'
 numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
+accel-profile='adaptive'
 natural-scroll=false
 speed=0.79411764705882359
 
@@ -619,6 +623,8 @@ theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 always-on-top=['<Super>bracketleft']
+switch-input-source=['Hangul']
+switch-input-source-backward=['<Shift>Hangul']
 toggle-on-all-workspaces=['<Super>bracketright']
 
 [org/gnome/desktop/wm/preferences]
@@ -1012,7 +1018,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1222, 847)
+initial-size=(1157, 912)
 maximized=false
 sidebar-width=236
 
@@ -1485,7 +1491,7 @@ share-control=false
 share-players=true
 
 [org/gnome/shell/extensions/gsconnect/device/57efaeb39484c4eb/plugin/notification]
-applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"빌더":{"iconName":"org.gnome.Builder-symbolic","enabled":true},"Akregator":{"iconName":"akregator","enabled":true}}'
+applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"빌더":{"iconName":"org.gnome.Builder-symbolic","enabled":true},"Akregator":{"iconName":"akregator","enabled":true},"dconf 편집기":{"iconName":"ca.desrt.dconf-editor","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/57efaeb39484c4eb/plugin/sftp]
 automount=false
@@ -1527,7 +1533,7 @@ share-control=false
 share-players=false
 
 [org/gnome/shell/extensions/gsconnect/device/bc30d5c027b762e2/plugin/notification]
-applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"빌더":{"iconName":"org.gnome.Builder-symbolic","enabled":true},"Akregator":{"iconName":"akregator","enabled":true}}'
+applications='{"Printers":{"iconName":"printer","enabled":true},"Evolution Alarm Notify":{"iconName":"appointment-soon","enabled":true},"Snapd User Session Agent":{"iconName":"application-x-executable","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"preferences-system-time","enabled":true},"Timeshift":{"iconName":"timeshift","enabled":true},"Network":{"iconName":"nm-device-wireless","enabled":true},"Evolution":{"iconName":"org.gnome.Evolution","enabled":true},"Power":{"iconName":"gnome-power-manager","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Color":{"iconName":"preferences-color","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Archive Manager":{"iconName":"org.gnome.ArchiveManager","enabled":true},"notify-send":{"iconName":"","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Firefox":{"iconName":"","enabled":true},"heroic":{"iconName":"","enabled":true},"blueman":{"iconName":"audio-headphones","enabled":true},"dconf Editor":{"iconName":"ca.desrt.dconf-editor","enabled":true},"discord":{"iconName":"","enabled":true},"Disk Space":{"iconName":"drive-harddisk-symbolic","enabled":true},"Shortwave":{"iconName":"de.haeckerfelix.Shortwave","enabled":true},"Telegram Desktop":{"iconName":"system-run-symbolic","enabled":true},"Thunderbird":{"iconName":"","enabled":true},"GNOME Remote Desktop":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Date & Time Settings":{"iconName":"preferences-system-time-symbolic","enabled":true},"BleachBit":{"iconName":"bleachbit","enabled":true},"Boxes":{"iconName":"org.gnome.Boxes","enabled":true},"Tweaks":{"iconName":"gnome-tweaks","enabled":true},"프린터":{"iconName":"printer","enabled":true},"전원":{"iconName":"gnome-power-manager","enabled":true},"소프트웨어":{"iconName":"org.gnome.Software","enabled":true},"날짜 및 시각":{"iconName":"preferences-system-time","enabled":true},"네트워크":{"iconName":"nm-device-wireless","enabled":true},"디스크 사용량 분석":{"iconName":"org.gnome.baobab","enabled":true},"색":{"iconName":"preferences-color","enabled":true},"파일":{"iconName":"org.gnome.Nautilus","enabled":true},"압축 관리자":{"iconName":"org.gnome.ArchiveManager","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"빌더":{"iconName":"org.gnome.Builder-symbolic","enabled":true},"Akregator":{"iconName":"akregator","enabled":true},"dconf 편집기":{"iconName":"ca.desrt.dconf-editor","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/bc30d5c027b762e2/plugin/sftp]
 automount=false
@@ -1934,7 +1940,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -2006,6 +2012,27 @@ sidebar-width=237
 start-with-menu-bar=false
 start-with-sidebar=true
 start-with-status-bar=false
+
+[org/nimf]
+hidden-active-engines=['nimf-libhangul', 'nimf-system-keyboard']
+hotkeys=['<Control> space']
+setup-environment-variables=true
+use-singleton=true
+
+[org/nimf/clients/gtk]
+hook-gdk-event-key=true
+reset-on-gdk-button-press-event=true
+
+[org/nimf/engines]
+default-engine='nimf-system-keyboard'
+
+[org/nimf/engines/nimf-libhangul]
+active-engine=true
+ignore-reset-in-commit-cb=false
+shortcuts-to-lang=['Hangul']
+
+[org/nimf/engines/nimf-system-keyboard]
+shortcuts-to-lang=['Hangul']
 
 [org/virt-manager/virt-manager]
 manager-window-height=513
@@ -2237,7 +2264,7 @@ vm-window-size=(1517, 874)
 [org/virt-manager/virt-manager/vms/612cc8af144f45f8b653e61bb42cbadb]
 autoconnect=1
 scaling=1
-vm-window-size=(1086, 942)
+vm-window-size=(933, 934)
 
 [org/virt-manager/virt-manager/vms/61d2e8978fb84308954597518b38d7fb]
 autoconnect=1
