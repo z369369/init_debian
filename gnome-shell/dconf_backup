@@ -211,7 +211,7 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/baf57313-41ee-4a35-bd78-37d55f2fbd44]
-apps=['com.heroicgameslauncher.hgl.desktop', 'com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop', 'default--HoloCure--1682057478.304825.desktop', 'default--Warcraft III--1682058010.949846.desktop', 'com.usebottles.bottles.desktop']
+apps=['com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop', 'com.heroicgameslauncher.hgl.desktop']
 name='Games'
 
 [org/gnome/desktop/app-folders/folders/c7133631-94b3-4ce3-9bf1-d1545aa5a851]
@@ -811,7 +811,7 @@ resources-memory-in-iec=false
 show-all-fs=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(919, 941, 26, 23)
+window-state=(841, 905, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -855,7 +855,7 @@ col-26-width=100
 col-8-visible=true
 col-8-width=59
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=8
+sort-col=15
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -1012,7 +1012,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(712, 847)
+initial-size=(1222, 847)
 maximized=false
 sidebar-width=236
 
@@ -1231,7 +1231,7 @@ history-size=20
 topbar-preview-size=15
 
 [org/gnome/shell/extensions/color-picker]
-colors-history='#bcc0c3|#cecac4|#202124|#1a1c1d|#1a1c1d|#202124|#8ab4f8|#85adee'
+colors-history='#83b9f5|#4ca4df|#007acc|#bcc0c3|#cecac4|#202124|#1a1c1d|#1a1c1d'
 enable-notify=true
 enable-preview=true
 enable-shortcut=false
@@ -1934,7 +1934,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
