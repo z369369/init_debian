@@ -19,6 +19,7 @@ imwheel #Mouse wheel scroll
 imagemagick
 incron #Filesystem crontab
 intel-microcode #resolve kernel message 
+ibus-hangul #support ime hangul 
 make #Build
 mc #Mid-Night Commander
 nautilus-admin
