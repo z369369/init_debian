@@ -13,6 +13,8 @@ ln -s ~/.local/share/applications ~/Desktop/desktop_local
 ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
+ln -s /media/lwh/backup_disk/lwh/Games ~/Games
+
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
 
