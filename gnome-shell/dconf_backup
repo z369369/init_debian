@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/'
-saved-view='/org/gnome/desktop/wm/keybindings/'
+saved-pathbar-path='/org/gnome/nautilus/preferences/search-filter-time-type'
+saved-view='/org/gnome/nautilus/preferences/'
 show-warning=false
 window-height=806
 window-is-maximized=false
@@ -759,7 +759,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/git/linux_init/script/startup'
+virtual-root='file:///home/lwh'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -1021,6 +1021,7 @@ show-image-thumbnails='always'
 initial-size=(944, 912)
 maximized=false
 sidebar-width=236
+start-with-sidebar=true
 
 [org/gnome/nm-applet/eap/0041fb13-8421-411b-869c-90c21aaee2b4]
 ignore-ca-cert=false

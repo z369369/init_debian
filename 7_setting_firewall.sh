@@ -62,6 +62,9 @@ sudo ufw allow out to 192.168.31.0/24 port 22000
 # sudo ufw allow 5900
 # sudo ufw allow out 5900
 
+#ping, traceroute enable
+sudo ufw allow out to any port 33434:33524 proto udp
+
 sudo ufw allow out on virbr0
 
 sudo ufw reload

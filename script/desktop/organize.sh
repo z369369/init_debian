@@ -43,5 +43,3 @@ rsync -a --delete --exclude-from /home/$USER --exclude .local/share/Trash --excl
 
 dconf dump / > /home/$USER/git/linux_init/gnome-shell/dconf_backup
 #dconf load / < /home/$USER/git/linux_init/gnome-shell/dconf_backup
-
-notify-send 'Complete' 'Organizing your downloads Folder'

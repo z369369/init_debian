@@ -15,7 +15,6 @@ if [ -d "/home/lwh/Downloads" ]; then
   # If the difference is greater than 10 hours, run the "difference" command with the echo command
   if [ $difference -gt 36000 ]; then
     /home/lwh/script/desktop/organize.sh
-    touch /home/lwh/Downloads
   fi
 
 fi
