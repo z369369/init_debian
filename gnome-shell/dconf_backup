@@ -240,7 +240,7 @@ show-weekdate=true
 automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('ibus', 'hangul'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'hangul')]
 per-window=false
 show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'hangul')]
@@ -759,7 +759,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/crontab'
+virtual-root='file:///home/lwh/git/linux_init/script/startup'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -1018,7 +1018,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1664, 912)
+initial-size=(944, 912)
 maximized=false
 sidebar-width=236
 

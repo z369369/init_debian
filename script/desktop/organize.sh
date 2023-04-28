@@ -4,6 +4,8 @@
 #Image Files
 cd ~/Downloads
 
+touch ~/Downloads
+
 # Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures 2> /dev/null
 
