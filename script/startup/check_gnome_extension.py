@@ -69,7 +69,7 @@ if __name__ == '__main__':
     s_out = s_out + '---\r\n'
     s_out = s_out + '\r\n'
     s_out = s_out + "# " + md_title + "\r\n\r\n"
-    s_out = s_out + " GNOME 확장 프로그램 익스텐션 사용 가능 여부 확인 \r\n\r\n"
+    s_out = s_out + " 우분투 설치 계획, GNOME 확장 프로그램 익스텐션 사용 가능 여부 확인 \r\n\r\n"
     s_out = s_out + p_con 
     
     with open('/home/lwh/phone/000_Personal/Linux/%s.md' % (md_title), 'w', encoding="utf-8") as out_file:
