@@ -27,3 +27,13 @@ echo "Completed"
 
 echo "============== [E] 2.Telemetry Off =============="
 
+
+echo "============== [S] 2.Telemetry Off =============="
+if ! grep -q "ubuntu" /etc/hosts; then
+  # If the word "popcon" does not exist, add it to the end of the file
+  echo "127.0.0.1 www.metrics.ubuntu.com" | sudo tee -a /etc/hosts > /dev/null
+  echo "127.0.0.1 metrics.ubuntu.com" | sudo tee -a /etc/hosts > /dev/null
+  echo "127.0.0.1 www.popcon.ubuntu.com" | sudo tee -a /etc/hosts > /dev/null
+  echo "127.0.0.1 popcon.ubuntu.com" | sudo tee -a /etc/hosts > /dev/null
+fi
+echo "============== [E] 2.Telemetry Off =============="

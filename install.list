@@ -4,7 +4,7 @@ curl #Used
 deborphan #Used
 fdupes #duplicate file remove
 ffmpeg #Used
-gedit #Used
+gedit #Used gnome editor
 gedit-plugin-multi-edit #Used Gedit multi line
 gnome-shell-extensions #Gnome Extension
 gnome-shell-extension-prefs #Gnome Extension
@@ -16,7 +16,7 @@ gufw #Used Firewall GUI
 hardinfo #Used
 htop #Used
 imwheel #Mouse wheel scroll
-imagemagick
+imagemagick #Image converter
 incron #Filesystem crontab
 intel-microcode #resolve kernel message 
 ibus-hangul #support ime hangul 
@@ -27,7 +27,7 @@ nautilus-image-converter
 nautilus-gtkhash
 nemo #mint file manager
 net-tools #Used
-libfuse2 #Virt-Manager
+libfuse2 #for Use appimage
 libglib2.0-dev-bin #Virt-Manager
 libvirt-clients #Virt-Manager
 libvirt-daemon-system #Virt-Manager
@@ -42,7 +42,7 @@ software-properties-common #Gnome Software
 synaptic #Package manager
 timeshift #Backup, Restore
 traceroute #network trace with ping
-ubuntu-restricted-extras #Codec
+ubuntu-restricted-extras #Codec mp4, video, autdio
 ufw #Firewall
 virt-manager
 vim #vi 
