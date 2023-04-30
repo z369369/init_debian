@@ -91,7 +91,7 @@ auto-reorder=true
 hangul-keyboard='2'
 hanja-keys='Hangul_Hanja'
 initial-input-mode='hangul'
-switch-keys=''
+switch-keys='Hangul'
 word-commit=false
 
 [org/freedesktop/tracker/miner/files]
@@ -158,7 +158,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='search'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -199,7 +199,7 @@ apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop',
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'software-properties-drivers.desktop', 'org.gnome.PowerStats.desktop', 'display-im6.q16.desktop', 'org.gnome.Characters.desktop', 'gnome-language-selector.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'update-manager.desktop', 'gtkhash.desktop', 'mc.desktop', 'yelp.desktop', 'hardinfo.desktop', 'gnome-system-monitor.desktop', 'htop.desktop']
+apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'software-properties-drivers.desktop', 'org.gnome.PowerStats.desktop', 'display-im6.q16.desktop', 'org.gnome.Characters.desktop', 'gnome-language-selector.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'update-manager.desktop', 'gtkhash.desktop', 'mc.desktop', 'yelp.desktop', 'hardinfo.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'pavucontrol.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['gnome-control-center.desktop', 'ca.desrt.dconf-editor.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'usb-creator-gtk.desktop', 'transmission-gtk.desktop', 'mainline.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'software-properties-gtk.desktop', 'org.gnome.meld.desktop', 'org.gnome.Evince.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Command.SearchProvider.desktop']
 name='Unused'
@@ -229,8 +229,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230427-SouthPadre_ROW6070174836_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230427-SouthPadre_ROW6070174836_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230429-JTNPMilkyWay_ROW6391164316_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230429-JTNPMilkyWay_ROW6391164316_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -261,7 +261,7 @@ font-hinting='slight'
 font-name='Noto Sans CJK JP 12'
 gtk-enable-primary-paste=false
 gtk-theme='Yaru-dark'
-icon-theme='Yaru'
+icon-theme='Yaru-dark'
 locate-pointer=false
 menubar-accel=''
 monospace-font-name='Noto Sans CJK JP 12'
@@ -269,7 +269,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator', 'nimf-settings']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator', 'nimf-settings', 'fr-natron-natron']
 show-banners=true
 show-in-lock-screen=false
 
@@ -350,6 +350,9 @@ application-id='firefox_firefox.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/fr-natron-natron]
+application-id='fr.natron.Natron.desktop'
 
 [org/gnome/desktop/notifications/application/freecad]
 application-id='freecad.desktop'
@@ -609,12 +612,12 @@ ubuntu-lock-on-suspend=false
 
 [org/gnome/desktop/search-providers]
 disable-external=false
-disabled=['org.gnome.Characters.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop']
+disabled=['org.gnome.Characters.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop']
 enabled=['org.gnome.Calendar.desktop']
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Command.SearchProvider.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Software.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.design.IconLibrary.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 900
+idle-delay=uint32 0
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=true
@@ -659,11 +662,11 @@ network-monitor-gio-name=''
 
 [org/gnome/evolution-data-server/calendar]
 notify-window-height=281
-notify-window-paned-position=73
+notify-window-paned-position=75
 notify-window-width=637
 notify-window-x=26
-notify-window-y=23
-reminders-past=['b8ab8b81c91672081d4bd932c5d725e41c51cd82\n32856bb412a5004f9844646eb8c62688a640cdcf\t20230310T150000\n1678341600\n1678428000\n1678429800\nBEGIN:VEVENT\r\nDTSTART;TZID=Asia/Seoul:20230310T150000\r\nDTEND;TZID=Asia/Seoul:20230310T153000\r\nDTSTAMP:20230308T060008Z\r\nUID:\r\n 75imaohp70qmcb9l6gq68b9kcosj2bb274sj0b9h6hi3ed1pc9hjap9j6k@google.com\r\nCREATED:20230228T073659Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20230308T060008Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:치과 레진치료\r\nTRANSP:OPAQUE\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nX-EVOLUTION-CALDAV-ETAG:63813938408\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P1D\r\nX-EVOLUTION-ALARM-UID:32856bb412a5004f9844646eb8c62688a640cdcf\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P2D\r\nX-EVOLUTION-ALARM-UID:194525b7d1151acfc325422959fd63a2865a5d5d\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+notify-window-y=51
+reminders-past=@as []
 
 [org/gnome/evolution]
 version='3.44.4'
@@ -759,7 +762,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh'
+virtual-root='file:///home/lwh/git/linux_init'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -793,7 +796,7 @@ bottom-panel-size=139
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(974, 832)
-state=87168
+state=0
 
 [org/gnome/gnome-search-tool]
 default-window-width=710
@@ -817,7 +820,7 @@ resources-memory-in-iec=false
 show-all-fs=false
 show-dependencies=true
 show-whose-processes='user'
-window-state=(867, 905, 26, 23)
+window-state=(938, 916, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -1018,7 +1021,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(944, 912)
+initial-size=(1100, 912)
 maximized=false
 sidebar-width=236
 start-with-sidebar=true
@@ -1199,7 +1202,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230420","fullstartdate":"202304200700","enddate":"20230421","url":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AnjunaBeachGoa_ROW7649308994","copyright":"Anjuna Beach, Goa, India (© Dmitry Rukhlenko/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Anjuna+Beach+Goa&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230420_AnjunaBeachGoa%22&FORM=HPQUIZ","wp":true,"hsh":"c1afe56f6d987dc8d072c9dc0aa4b39d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230421","fullstartdate":"202304210700","enddate":"20230422","url":"/th?id=OHR.ProcidaItaly_ROW3953522775_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ProcidaItaly_ROW3953522775","copyright":"Procida, Italy (© Sean Pavone/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=procida+italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230421_ProcidaItaly%22&FORM=HPQUIZ","wp":true,"hsh":"fa2888313556c9986ab0bbaf3620a266","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230422","fullstartdate":"202304220700","enddate":"20230423","url":"/th?id=OHR.EarthDayFox_ROW4082550699_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EarthDayFox_ROW4082550699","copyright":"Island fox in Channel Islands National Park, California, USA (© Ian Shive/Tandem Stills + Motion)","copyrightlink":"https://www.bing.com/search?q=island+fox&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230422_EarthDayFox%22&FORM=HPQUIZ","wp":true,"hsh":"98a69744e4e3d82a3d20d3e178c0ff82","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230423","fullstartdate":"202304230700","enddate":"20230424","url":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566","copyright":"Sunrise over misty lavender fields, India (© Amith Nag Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=lavender&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230423_Honnavaralavenderfields%22&FORM=HPQUIZ","wp":true,"hsh":"9b4d3bca10dccdc14b33b4004c264677","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230424","fullstartdate":"202304240700","enddate":"20230425","url":"/th?id=OHR.FranconianWineCellar_ROW5594868438_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FranconianWineCellar_ROW5594868438","copyright":"Bavarian Forest wine cellar, Germany (© Andreas_Zerndl/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Bavarian+forest+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230424_FranconianWineCellar%22&FORM=HPQUIZ","wp":true,"hsh":"cc88b0316b6499ac84dffed18119e12a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230426","fullstartdate":"202304260700","enddate":"20230427","url":"/th?id=OHR.GHOAudubonDay_ROW5959475740_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GHOAudubonDay_ROW5959475740","copyright":"Great horned owl fledglings (© Michael Morse/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230426_GHOAudubonDay%22&FORM=HPQUIZ","wp":true,"hsh":"5eda0af281abf7cfe9e5ccb3db82a9c9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230427","fullstartdate":"202304270700","enddate":"20230428","url":"/th?id=OHR.SouthPadre_ROW6070174836_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SouthPadre_ROW6070174836","copyright":"South Padre Island, Texas, USA (© Jeff R Clow/Getty Images)","copyrightlink":"https://www.bing.com/search?q=South+Padre+Island&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230427_SouthPadre%22&FORM=HPQUIZ","wp":true,"hsh":"da316dc7944d4a7bc9a356d06428f9d9","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230422","fullstartdate":"202304220700","enddate":"20230423","url":"/th?id=OHR.EarthDayFox_ROW4082550699_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EarthDayFox_ROW4082550699","copyright":"Island fox in Channel Islands National Park, California, USA (© Ian Shive/Tandem Stills + Motion)","copyrightlink":"https://www.bing.com/search?q=island+fox&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230422_EarthDayFox%22&FORM=HPQUIZ","wp":true,"hsh":"98a69744e4e3d82a3d20d3e178c0ff82","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230423","fullstartdate":"202304230700","enddate":"20230424","url":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Honnavaralavenderfields_ROW4280437566","copyright":"Sunrise over misty lavender fields, India (© Amith Nag Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=lavender&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230423_Honnavaralavenderfields%22&FORM=HPQUIZ","wp":true,"hsh":"9b4d3bca10dccdc14b33b4004c264677","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230424","fullstartdate":"202304240700","enddate":"20230425","url":"/th?id=OHR.FranconianWineCellar_ROW5594868438_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FranconianWineCellar_ROW5594868438","copyright":"Bavarian Forest wine cellar, Germany (© Andreas_Zerndl/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Bavarian+forest+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230424_FranconianWineCellar%22&FORM=HPQUIZ","wp":true,"hsh":"cc88b0316b6499ac84dffed18119e12a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230426","fullstartdate":"202304260700","enddate":"20230427","url":"/th?id=OHR.GHOAudubonDay_ROW5959475740_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GHOAudubonDay_ROW5959475740","copyright":"Great horned owl fledglings (© Michael Morse/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230426_GHOAudubonDay%22&FORM=HPQUIZ","wp":true,"hsh":"5eda0af281abf7cfe9e5ccb3db82a9c9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230427","fullstartdate":"202304270700","enddate":"20230428","url":"/th?id=OHR.SouthPadre_ROW6070174836_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SouthPadre_ROW6070174836","copyright":"South Padre Island, Texas, USA (© Jeff R Clow/Getty Images)","copyrightlink":"https://www.bing.com/search?q=South+Padre+Island&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230427_SouthPadre%22&FORM=HPQUIZ","wp":true,"hsh":"da316dc7944d4a7bc9a356d06428f9d9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230428","fullstartdate":"202304280700","enddate":"20230429","url":"/th?id=OHR.MariposaGrove_ROW5484582272_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MariposaGrove_ROW5484582272","copyright":"Mariposa Grove in Yosemite National Park, California, USA (© Orbon Alija/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Mariposa+Grove&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230428_MariposaGrove%22&FORM=HPQUIZ","wp":true,"hsh":"98a348b91b09da7ec5e8437c203ed4b8","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230429","fullstartdate":"202304290700","enddate":"20230430","url":"/th?id=OHR.JTNPMilkyWay_ROW6391164316_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.JTNPMilkyWay_ROW6391164316","copyright":"Milky Way over Joshua Tree National Park, California, USA (© Schroptschop/Getty Images)","copyrightlink":"https://www.bing.com/search?q=joshua+tree+national+park+stars&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230429_JTNPMilkyWay%22&FORM=HPQUIZ","wp":true,"hsh":"51ef6aeeccf8882fea5bd205e77db6c3","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=false
@@ -1211,7 +1214,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202304270700,"title":"South Padre Island, Texas, USA","explanation":"오늘의 Bing 배경화면은 2023-04-27","copyright":"© Jeff R Clow/Getty Images","longstartdate":"202304270700","imageinfolink":"https://www.bing.com/search?q=South+Padre+Island&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.SouthPadre_ROW6070174836_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230427-SouthPadre_ROW6070174836_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202304290700,"title":"Milky Way over Joshua Tree National Park, California, USA","explanation":"오늘의 Bing 배경화면은 2023-04-29","copyright":"© Schroptschop/Getty Images","longstartdate":"202304290700","imageinfolink":"https://www.bing.com/search?q=joshua+tree+national+park+stars&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.JTNPMilkyWay_ROW6391164316_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230429-JTNPMilkyWay_ROW6391164316_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1311,8 +1314,8 @@ dot-color-override=false
 dot-color-unfocused-different=false
 dot-position='TOP'
 dot-size=3
-dot-style-focused='SOLID'
-dot-style-unfocused='SOLID'
+dot-style-focused='METRO'
+dot-style-unfocused='METRO'
 focus-highlight=true
 focus-highlight-color='#8ff0a4'
 focus-highlight-dominant=true
@@ -1933,8 +1936,8 @@ type-format='category'
 window-size=(1318, 600)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.07999999999999996, 0.49057851239669403, 1.0, 1.0), (0.070588235294117646, 0.28235294117647058, 0.54509803921568623, 1.0), (0.91333333333333344, 0.30444444444444452, 0.30444444444444452, 1.0), (0.80392156862745101, 0.0, 0.0, 1.0), (0.75294117647058822, 0.10980392156862748, 0.15686274509803924, 1.0), (0.6705882352941176, 0.094117647058823528, 0.32156862745098042, 1.0), (0.95294117647058818, 0.85490196078431369, 0.20784313725490197, 1.0), (0.090196078431372562, 0.078431372549019607, 0.12941176470588237, 1.0)]
-selected-color=(true, 0.07999999999999996, 0.49057851239669403, 1.0, 1.0)
+custom-colors=[(0.14117647058823529, 0.14117647058823529, 0.14117647058823529, 0.80000000000000004), (0.07999999999999996, 0.49057851239669403, 1.0, 1.0), (0.070588235294117646, 0.28235294117647058, 0.54509803921568623, 1.0), (0.91333333333333344, 0.30444444444444452, 0.30444444444444452, 1.0), (0.80392156862745101, 0.0, 0.0, 1.0), (0.75294117647058822, 0.10980392156862748, 0.15686274509803924, 1.0), (0.6705882352941176, 0.094117647058823528, 0.32156862745098042, 1.0), (0.95294117647058818, 0.85490196078431369, 0.20784313725490197, 1.0)]
+selected-color=(true, 0.14117647058823529, 0.12156862745098039, 0.19215686274509805, 1.0)
 
 [org/gtk/settings/emoji-chooser]
 recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([128514], 'face with tears of joy', ''), 0), (([128338], 'three o’clock', ''), 0), (([128347], 'twelve o’clock', ''), 0), (([129315], 'rolling on the floor laughing', ''), 0), (([10084], 'red heart', ''), 0), (([9898], 'white circle', ''), 0), (([9194], 'fast reverse button', ''), 0), (([9193], 'fast-forward button', ''), 0), (([11013], 'left arrow', ''), 0), (([128516], 'grinning face with smiling eyes', ''), 0), (([127483, 127475], 'flag: Vietnam', ''), 0), (([128077, 0], 'thumbs up', ''), 0), (([127482, 127462], 'flag: Ukraine', ''), 0), (([128684], 'cigarette', ''), 0), (([127463, 127465], 'flag: Bangladesh', ''), 0), (([128536], 'face blowing a kiss', ''), 0), (([9996, 0], 'victory hand', ''), 0), (([127477, 127473], 'flag: Poland', ''), 0), (([127472, 127479], 'flag: South Korea', ''), 0), (([127463, 127479], 'flag: Brazil', ''), 0)]
@@ -1942,7 +1945,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -1950,7 +1953,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(26, 23)
+window-position=(465, 29)
 window-size=(993, 1007)
 
 [org/gtkhash]
