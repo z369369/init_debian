@@ -1,3 +1,4 @@
+baobab #disk analyze
 ca-certificates
 chrome-gnome-shell #Gnome Extension
 curl #Used
@@ -85,7 +86,6 @@ org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
 org.inkscape.Inkscape
 org.gimp.GIMP
-org.gnome.baobab
 org.gnome.design.IconLibrary
 org.kde.kdenlive
 org.kde.krita

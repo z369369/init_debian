@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/move-to-workspace-1'
-saved-view='/org/gnome/desktop/wm/'
+saved-pathbar-path='/org/gnome/desktop/search-providers/sort-order'
+saved-view='/org/gnome/desktop/search-providers/sort-order'
 show-warning=false
 window-height=847
 window-is-maximized=false
@@ -120,7 +120,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='search'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -157,7 +157,7 @@ apps=['com.blackmagicdesign.resolve-Installer.desktop', 'com.blackmagicdesign.re
 name='Unnamed Folder'
 
 [org/gnome/desktop/app-folders/folders/7fa16cfa-2274-4520-83ad-362cc513e263]
-apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop', 'org.olivevideoeditor.Olive.desktop', 'fr.natron.Natron.desktop', 'com.sweethome3d.Sweethome3d.desktop', 'org.videolan.VLC.desktop', 'nl.hjdskes.gcolor3.desktop', 'org.gnome.design.Contrast.desktop']
+apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop', 'org.olivevideoeditor.Olive.desktop', 'fr.natron.Natron.desktop', 'com.sweethome3d.Sweethome3d.desktop', 'org.videolan.VLC.desktop', 'nl.hjdskes.gcolor3.desktop', 'org.gnome.design.Contrast.desktop', 'chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop']
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
@@ -177,7 +177,7 @@ apps=['com.valvesoftware.Steam.desktop', 'com.discordapp.Discord.desktop', 'com.
 name='Games'
 
 [org/gnome/desktop/app-folders/folders/c7133631-94b3-4ce3-9bf1-d1545aa5a851]
-apps=['com.redis.RedisInsight.desktop', 'org.gnome.meld.desktop', 'com.belmoussaoui.Decoder.desktop', 'org.gnome.gedit.desktop', 'gprename.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'com.getpostman.Postman.desktop', 'diagrams.desktop', 'synaptic.desktop', 'code.desktop', 'CodeGit.desktop', 'CodePersonal.desktop', 'desktop_trust.desktop', 'mainline.desktop', 'org.bleachbit.BleachBit.desktop', 'bleachbit-root.desktop', 'org.kde.okular.desktop', 'screenkey.desktop', 'texdoctk.desktop', 'org.telegram.desktop.desktop', 'virt-manager.desktop', 'abricotine.desktop', 'vim.desktop', 'u_abricotine.desktop', 'stacer.desktop', 'fr.handbrake.ghb.desktop']
+apps=['com.redis.RedisInsight.desktop', 'org.gnome.meld.desktop', 'com.belmoussaoui.Decoder.desktop', 'org.gnome.gedit.desktop', 'gprename.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'com.getpostman.Postman.desktop', 'diagrams.desktop', 'synaptic.desktop', 'code.desktop', 'CodeGit.desktop', 'CodePersonal.desktop', 'desktop_trust.desktop', 'mainline.desktop', 'org.bleachbit.BleachBit.desktop', 'bleachbit-root.desktop', 'org.kde.okular.desktop', 'screenkey.desktop', 'texdoctk.desktop', 'org.telegram.desktop.desktop', 'virt-manager.desktop', 'abricotine.desktop', 'vim.desktop', 'u_abricotine.desktop', 'stacer.desktop', 'fr.handbrake.ghb.desktop', 'sqlitebrowser.desktop']
 name='Programming'
 
 [org/gnome/desktop/app-folders/folders/cbf808e2-b1c0-4480-a440-81ea1e3c0c34]
@@ -231,7 +231,7 @@ show-battery-percentage=false
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator', 'nimf-settings', 'fr-natron-natron']
+application-children=['timeshift-gtk', 'org-gnome-nautilus', 'org-gnome-software', 'org-gnome-shell-extensions-gsconnect', 'gnome-printers-panel', 'org-gnome-evolution', 'org-gnome-terminal', 'org-gnome-shell-extensions', 'org-mozilla-firefox', 'org-gnome-gedit', 'gnome-network-panel', 'hardinfo', 'org-gnome-texteditor', 'org-freedesktop-problems-applet', 'google-chrome-unstable', 'firefox', 'org-gnome-extensions-desktop', 'org-gnome-evolution-alarm-notify', 'info-smplayer-smplayer', 'google-chrome', 'code', 'org-gnome-fileroller', 'firefox-firefox', 'io-snapcraft-sessionagent', 'opera', 'io-atom-atom', 'virt-manager', 'org-freecadweb-freecad', 'freecad', 'org-gnome-gthumb', 'synaptic', 'org-libreoffice-libreoffice', 'com-obsproject-studio', 'org-libreoffice-libreoffice-writer', 'ca-desrt-dconf-editor', 'apport-gtk', 'org-gnome-baobab', 'org-gimp-gimp', 'mainline', 'gnome-control-center', 'xdg-desktop-portal-gnome', 'de-haeckerfelix-shortwave', 'org-telegram-desktop', 'thunderbird', 'net-lutris-lutris', 'com-vixalien-sticky', 'gnome-datetime-panel', 'org-gnome-extensions', 'org-kde-krita', 'io-dbeaver-dbeavercommunity', 'org-libreoffice-libreoffice-calc', 'com-brave-browser', 'com-opera-opera', 'stacer', 'md-obsidian-obsidian', 'yelp', 'org-gnome-evince', 'io-github-celluloid-player-celluloid', 'org-bleachbit-bleachbit', 'org-gnome-tweaks', 'com-visualstudio-code', 'org-gnome-calendar', 'software-properties-gtk', 'org-gnome-boxes', 'gprename', 'org-gnome-meld', 'com-github-alexkdeveloper-desktop-files-creator', 'nemo', 'com-github-maoschanz-drawing', 'org-kde-okular', 'org-libreoffice-libreoffice-draw', 'ch-openboard-openboard', 'screenkey', 'com-ozmartians-vidcutter', 'com-vscodium-codium', 'org-gnome-shell-extensions-gsconnect-preferences', 'io-typora-typora', 'org-gnome-rhythmbox3', 'com-github-fabiocolacio-marker', 'com-github-marktext-marktext', 'abricotine', 'com-heroicgameslauncher-hgl', 'org-chromium-chromium', 'org-shotcut-shotcut', 'com-redis-redisinsight', 'org-libreoffice-libreoffice-impress', 'com-valvesoftware-steam', 'com-discordapp-discord', 'org-kde-kdenlive', 'org-olivevideoeditor-olive', 'com-sweethome3d-sweethome3d', 'gnome-system-monitor', 'org-videolan-vlc', 'gkbd-keyboard-display', 'org-gnome-builder', 'com-github-geigi-cozy', 'com-usebottles-bottles', 'org-kde-akregator', 'nimf-settings', 'fr-natron-natron', 'sqlitebrowser']
 show-banners=true
 show-in-lock-screen=false
 
@@ -514,6 +514,9 @@ application-id='screenkey.desktop'
 [org/gnome/desktop/notifications/application/software-properties-gtk]
 application-id='software-properties-gtk.desktop'
 
+[org/gnome/desktop/notifications/application/sqlitebrowser]
+application-id='sqlitebrowser.desktop'
+
 [org/gnome/desktop/notifications/application/stacer]
 application-id='stacer.desktop'
 
@@ -761,7 +764,7 @@ search-for-entry=['/home/lwh', '/home/lwh/phone/000_Personal/', 'some-vault-name
 bottom-panel-size=139
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1059, 943)
+size=(1077, 943)
 state=87168
 
 [org/gnome/gnome-search-tool]
@@ -784,7 +787,7 @@ network-total-in-bits=true
 network-total-unit=false
 resources-memory-in-iec=false
 show-all-fs=false
-show-dependencies=true
+show-dependencies=false
 show-whose-processes='user'
 window-state=(938, 916, 26, 23)
 
@@ -830,7 +833,7 @@ col-26-width=100
 col-8-visible=true
 col-8-width=59
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=15
+sort-col=0
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -987,7 +990,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1027, 912)
+initial-size=(1165, 912)
 maximized=false
 sidebar-width=236
 start-with-sidebar=true
@@ -1108,9 +1111,9 @@ command='nemo'
 name='nemo'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10]
-binding='<Super>5'
+binding='<Super>4'
 command='firefox --new-tab "https://mail.google.com/"'
-name='mail'
+name='google_mail'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Super>t'
@@ -1133,14 +1136,14 @@ command='firefox --new-tab "https://bard.google.com/"'
 name='firefox-bard'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Super>5'
+command='firefox --new-tab "https://drive.google.com/" '
+name='google_drive'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
 binding='<Super>3'
 command=' '
 name='3'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
-binding='<Super>4'
-command=' '
-name='4'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
 binding='<Super>6'
@@ -1978,7 +1981,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -1986,8 +1989,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(183, 58)
-window-size=(993, 1007)
+window-position=(26, 23)
+window-size=(1125, 879)
 
 [org/gtkhash]
 digest-format='hex-lower'
@@ -2041,7 +2044,7 @@ search-visible-columns=['name', 'where', 'date_modified', 'size', 'search_result
 show-only-directories=true
 
 [org/nemo/window-state]
-geometry='1065x1016+26+23'
+geometry='894x985+26+23'
 maximized=false
 my-computer-expanded=true
 side-pane-view='places'
