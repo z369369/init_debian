@@ -102,7 +102,7 @@ if __name__ == '__main__':
     s_out = s_out + '---\r\n'
     s_out = s_out + 'date: ' + md_title_key + '\r\n'
     s_out = s_out + 'status: \r\n'
-    s_out = s_out + 'alias: \r\n'
+    s_out = s_out + 'alias: GNOME Extension\r\n'
     s_out = s_out + 'tags: Idea\r\n'
     s_out = s_out + 'subs: Extension\r\n'
     s_out = s_out + '---\r\n'

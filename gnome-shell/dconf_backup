@@ -120,7 +120,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='region'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -202,7 +202,7 @@ show-weekdate=true
 automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('xkb', 'us'), ('ibus', 'hangul')]
+mru-sources=[('ibus', 'hangul'), ('xkb', 'us')]
 per-window=false
 show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'hangul')]
@@ -732,7 +732,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/startup'
+virtual-root='file:///home/lwh/.cache/.fr-ux0ks9'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -802,7 +802,7 @@ col-4-width=80
 col-5-visible=true
 col-5-width=103
 col-6-visible=true
-col-6-width=0
+col-6-width=334
 
 [org/gnome/gnome-system-monitor/memmapstree]
 sort-col=0
@@ -834,7 +834,7 @@ col-26-width=100
 col-8-visible=true
 col-8-width=59
 columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=0
+sort-col=15
 sort-order=0
 
 [org/gnome/gthumb/browser]
