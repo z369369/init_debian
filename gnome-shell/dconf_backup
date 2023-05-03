@@ -34,6 +34,11 @@ version='1.5.26'
 [desktop/ibus/panel/emoji]
 favorites=['🇦🇽', '🌶️', '🐱', '⚠️', '😁']
 
+[net/evermiss/mymindstorm/volume-mixer]
+filter-mode='block'
+show-description=false
+show-icon=true
+
 [org/blueman/general]
 window-properties=[728, 439, 0, 0]
 
@@ -120,7 +125,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='region'
+last-panel='sound'
 window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
@@ -191,8 +196,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230501-QuebecCityBridge_ROW6725674288_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230501-QuebecCityBridge_ROW6725674288_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230502-KlostersSerneus_ROW6821817709_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230502-KlostersSerneus_ROW6821817709_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -202,7 +207,7 @@ show-weekdate=true
 automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
-mru-sources=[('ibus', 'hangul'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('ibus', 'hangul')]
 per-window=false
 show-all-sources=false
 sources=[('xkb', 'us'), ('ibus', 'hangul')]
@@ -732,7 +737,7 @@ active-plugins=['openlinks', 'filebrowser', 'multiedit', 'sort', 'docinfo', 'mod
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/.cache/.fr-ux0ks9'
+virtual-root='file:///home/lwh'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
@@ -802,7 +807,7 @@ col-4-width=80
 col-5-visible=true
 col-5-width=103
 col-6-visible=true
-col-6-width=334
+col-6-width=0
 
 [org/gnome/gnome-system-monitor/memmapstree]
 sort-col=0
@@ -965,6 +970,7 @@ center-new-windows=false
 dynamic-workspaces=false
 edge-tiling=true
 experimental-features=@as []
+workspaces-only-on-primary=false
 
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
@@ -1117,7 +1123,7 @@ command='firefox --new-tab "https://mail.google.com/"'
 name='google_mail'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Super>t'
+binding='<Super>c'
 command='wmctrl -s 4'
 name='move terminal workspace '
 
@@ -1186,7 +1192,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230424","fullstartdate":"202304240700","enddate":"20230425","url":"/th?id=OHR.FranconianWineCellar_ROW5594868438_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FranconianWineCellar_ROW5594868438","copyright":"Bavarian Forest wine cellar, Germany (© Andreas_Zerndl/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Bavarian+forest+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230424_FranconianWineCellar%22&FORM=HPQUIZ","wp":true,"hsh":"cc88b0316b6499ac84dffed18119e12a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230426","fullstartdate":"202304260700","enddate":"20230427","url":"/th?id=OHR.GHOAudubonDay_ROW5959475740_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GHOAudubonDay_ROW5959475740","copyright":"Great horned owl fledglings (© Michael Morse/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230426_GHOAudubonDay%22&FORM=HPQUIZ","wp":true,"hsh":"5eda0af281abf7cfe9e5ccb3db82a9c9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230427","fullstartdate":"202304270700","enddate":"20230428","url":"/th?id=OHR.SouthPadre_ROW6070174836_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SouthPadre_ROW6070174836","copyright":"South Padre Island, Texas, USA (© Jeff R Clow/Getty Images)","copyrightlink":"https://www.bing.com/search?q=South+Padre+Island&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230427_SouthPadre%22&FORM=HPQUIZ","wp":true,"hsh":"da316dc7944d4a7bc9a356d06428f9d9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230428","fullstartdate":"202304280700","enddate":"20230429","url":"/th?id=OHR.MariposaGrove_ROW5484582272_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MariposaGrove_ROW5484582272","copyright":"Mariposa Grove in Yosemite National Park, California, USA (© Orbon Alija/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Mariposa+Grove&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230428_MariposaGrove%22&FORM=HPQUIZ","wp":true,"hsh":"98a348b91b09da7ec5e8437c203ed4b8","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230429","fullstartdate":"202304290700","enddate":"20230430","url":"/th?id=OHR.JTNPMilkyWay_ROW6391164316_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.JTNPMilkyWay_ROW6391164316","copyright":"Milky Way over Joshua Tree National Park, California, USA (© Schroptschop/Getty Images)","copyrightlink":"https://www.bing.com/search?q=joshua+tree+national+park+stars&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230429_JTNPMilkyWay%22&FORM=HPQUIZ","wp":true,"hsh":"51ef6aeeccf8882fea5bd205e77db6c3","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230430","fullstartdate":"202304300700","enddate":"20230501","url":"/th?id=OHR.TempleE_ROW6587525712_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TempleE_ROW6587525712","copyright":"Temple E at Selinunte, Sicily, Italy (© Antonino Bartuccio/eStock)","copyrightlink":"https://www.bing.com/search?q=Selinunte&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230430_TempleE%22&FORM=HPQUIZ","wp":true,"hsh":"fb0d2ec484b4227acd2d9c6b0fea97e4","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230501","fullstartdate":"202305010700","enddate":"20230502","url":"/th?id=OHR.QuebecCityBridge_ROW6725674288_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.QuebecCityBridge_ROW6725674288","copyright":"Quebec Bridge, Saint Lawrence River, Canada (© Ronald Santerre/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Quebec+Bridge&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230501_QuebecCityBridge%22&FORM=HPQUIZ","wp":true,"hsh":"6ec923eeae5bd3bcf78e1358aeef3a41","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230425","fullstartdate":"202304250700","enddate":"20230426","url":"/th?id=OHR.AdelieWPD_ROW5828279208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AdelieWPD_ROW5828279208","copyright":"Adélie penguins in Antarctica (© David Merron Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=adelie+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230425_AdelieWPD%22&FORM=HPQUIZ","wp":true,"hsh":"7a5088a320e236acaccf540f5564f9bf","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230426","fullstartdate":"202304260700","enddate":"20230427","url":"/th?id=OHR.GHOAudubonDay_ROW5959475740_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GHOAudubonDay_ROW5959475740","copyright":"Great horned owl fledglings (© Michael Morse/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Great+horned+owl&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230426_GHOAudubonDay%22&FORM=HPQUIZ","wp":true,"hsh":"5eda0af281abf7cfe9e5ccb3db82a9c9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230427","fullstartdate":"202304270700","enddate":"20230428","url":"/th?id=OHR.SouthPadre_ROW6070174836_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SouthPadre_ROW6070174836","copyright":"South Padre Island, Texas, USA (© Jeff R Clow/Getty Images)","copyrightlink":"https://www.bing.com/search?q=South+Padre+Island&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230427_SouthPadre%22&FORM=HPQUIZ","wp":true,"hsh":"da316dc7944d4a7bc9a356d06428f9d9","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230428","fullstartdate":"202304280700","enddate":"20230429","url":"/th?id=OHR.MariposaGrove_ROW5484582272_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MariposaGrove_ROW5484582272","copyright":"Mariposa Grove in Yosemite National Park, California, USA (© Orbon Alija/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Mariposa+Grove&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230428_MariposaGrove%22&FORM=HPQUIZ","wp":true,"hsh":"98a348b91b09da7ec5e8437c203ed4b8","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230429","fullstartdate":"202304290700","enddate":"20230430","url":"/th?id=OHR.JTNPMilkyWay_ROW6391164316_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.JTNPMilkyWay_ROW6391164316","copyright":"Milky Way over Joshua Tree National Park, California, USA (© Schroptschop/Getty Images)","copyrightlink":"https://www.bing.com/search?q=joshua+tree+national+park+stars&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230429_JTNPMilkyWay%22&FORM=HPQUIZ","wp":true,"hsh":"51ef6aeeccf8882fea5bd205e77db6c3","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230430","fullstartdate":"202304300700","enddate":"20230501","url":"/th?id=OHR.TempleE_ROW6587525712_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TempleE_ROW6587525712","copyright":"Temple E at Selinunte, Sicily, Italy (© Antonino Bartuccio/eStock)","copyrightlink":"https://www.bing.com/search?q=Selinunte&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230430_TempleE%22&FORM=HPQUIZ","wp":true,"hsh":"fb0d2ec484b4227acd2d9c6b0fea97e4","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230501","fullstartdate":"202305010700","enddate":"20230502","url":"/th?id=OHR.QuebecCityBridge_ROW6725674288_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.QuebecCityBridge_ROW6725674288","copyright":"Quebec Bridge, Saint Lawrence River, Canada (© Ronald Santerre/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Quebec+Bridge&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230501_QuebecCityBridge%22&FORM=HPQUIZ","wp":true,"hsh":"6ec923eeae5bd3bcf78e1358aeef3a41","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230502","fullstartdate":"202305020700","enddate":"20230503","url":"/th?id=OHR.KlostersSerneus_ROW6821817709_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.KlostersSerneus_ROW6821817709","copyright":"Jöriseen lakes in the Silvretta Alps, Switzerland (© Florin Baumann/Getty Images)","copyrightlink":"https://www.bing.com/search?q=joriseen+lakes&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230502_KlostersSerneus%22&FORM=HPQUIZ","wp":true,"hsh":"09ba8a883493180b014ecfaf45d353e6","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=false
@@ -1198,7 +1204,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202305010700,"title":"Quebec Bridge, Saint Lawrence River, Canada","explanation":"오늘의 Bing 배경화면은 2023-05-01","copyright":"© Ronald Santerre/Getty Images","longstartdate":"202305010700","imageinfolink":"https://www.bing.com/search?q=Quebec+Bridge&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.QuebecCityBridge_ROW6725674288_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230501-QuebecCityBridge_ROW6725674288_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202305020700,"title":"Jöriseen lakes in the Silvretta Alps, Switzerland","explanation":"오늘의 Bing 배경화면은 2023-05-02","copyright":"© Florin Baumann/Getty Images","longstartdate":"202305020700","imageinfolink":"https://www.bing.com/search?q=joriseen+lakes&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.KlostersSerneus_ROW6821817709_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230502-KlostersSerneus_ROW6821817709_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1981,7 +1987,7 @@ recent-emoji=[(([uint32 128518], 'grinning squinting face', ''), uint32 0), (([1
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=207
@@ -2284,7 +2290,7 @@ vm-window-size=(1517, 874)
 [org/virt-manager/virt-manager/vms/612cc8af144f45f8b653e61bb42cbadb]
 autoconnect=1
 scaling=1
-vm-window-size=(1096, 934)
+vm-window-size=(1115, 1019)
 
 [org/virt-manager/virt-manager/vms/61d2e8978fb84308954597518b38d7fb]
 autoconnect=1
