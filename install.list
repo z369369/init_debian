@@ -42,7 +42,6 @@ rsync #Used
 software-properties-common #Gnome Software
 synaptic #Package manager
 timeshift #Backup, Restore
-traceroute #network trace with ping
 ubuntu-restricted-extras #Codec mp4, video, autdio
 ufw #Firewall
 virt-manager
