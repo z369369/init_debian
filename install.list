@@ -85,6 +85,7 @@ org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
 org.inkscape.Inkscape
 org.gimp.GIMP
+org.gnome.seahorse.Application
 org.gnome.design.IconLibrary
 org.kde.kdenlive
 org.kde.krita
