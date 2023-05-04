@@ -37,3 +37,6 @@ if ! grep -q "ubuntu" /etc/hosts; then
   echo "127.0.0.1 popcon.ubuntu.com" | sudo tee -a /etc/hosts > /dev/null
 fi
 echo "============== [E] 2.Telemetry Off =============="
+
+# remove ubuntu pro advertise
+sudo pro config set apt_news=false
