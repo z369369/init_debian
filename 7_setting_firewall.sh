@@ -17,7 +17,7 @@ sudo ufw allow out 80
 sudo ufw allow 443
 sudo ufw allow out 443
 
-#common ssl port2
+#common ssl port
 sudo ufw allow 8443
 sudo ufw allow out 8443
 
