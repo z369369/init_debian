@@ -18,7 +18,12 @@
 
 /** @param {Meta.Window} window */
 function isPiP(window) {
-  return (window.get_title() === 'Picture-in-Picture' || window.get_title() === 'PIP Mode' || window.get_title() === 'PIP 모드');
+  var s_title = window.get_title();
+   
+  return (s_title === 'Picture-in-Picture' || 
+  s_title === 'PIP Mode' || 
+  s_title.includes('Chromium') ||
+  s_title === 'PIP 모드');
 }
 
 class Extension {
