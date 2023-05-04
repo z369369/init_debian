@@ -24,10 +24,10 @@ function init(extensionMeta) {
 }
 
 function enable() {
-    orgIndicator = Main.panel.statusArea.aggregateMenu._power;
+    // orgIndicator = Main.panel.statusArea.aggregateMenu._power;
 
-    // Check if battery exist or not
-    if (Main.panel.statusArea.aggregateMenu._power._proxy.IsPresent == false) orgIndicator.indicators.hide();
+    // // Check if battery exist or not
+    // if (Main.panel.statusArea.aggregateMenu._power._proxy.IsPresent == false) orgIndicator.indicators.hide();
     
     button = new St.Bin({
         style_class: 'panel-button',
@@ -67,7 +67,7 @@ function enable() {
 }
 
 function disable() {
-    orgIndicator.indicators.show();
+    // orgIndicator.indicators.show();
     Main.panel._rightBox.remove_child(button);
     button.destroy();
     button = null;
