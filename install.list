@@ -50,6 +50,7 @@ wmctrl #move Workspace
 ncdu #du
 pydf #df
 xclip #clipboard for nemo
+python3.10-venv #python virtual_env install
 
 *
 
