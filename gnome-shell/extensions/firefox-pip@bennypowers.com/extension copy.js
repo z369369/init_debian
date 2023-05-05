@@ -20,10 +20,9 @@
 function isPiP(window) {
   var s_title = window.get_title();
    
-  return (s_title === 'Picture-in-Picture' || 
-  s_title === 'PIP Mode' || 
+  return s_title === 'Picture-in-Picture' || 
   s_title.includes('Chromium') ||
-  s_title === 'PIP 모드');
+  s_title.includes('PIP');
 }
 
 class Extension {
