@@ -84,7 +84,8 @@ class WindowMover {
         }
 
         window.change_workspace_by_index(workspaceNum, false);
-        Util.spawnCommandLine("wmctrl -s " + workspaceNum);
+        // Util.spawnCommandLine("wmctrl -s " + workspaceNum);
+        // window.change_workspace(workspaceNum);
     }
 
     _appWindowsChanged(app) {
