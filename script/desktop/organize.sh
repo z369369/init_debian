@@ -39,6 +39,8 @@ rm -rf /home/$USER/.var/app/com.usebottles.bottles/data/bottles/temp/*
 
 rsync -a --delete --exclude-from /home/$USER --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Downloads/iso --exclude .cache  /home/$USER/ /media/$USER/backup_disk/$USER/
 
+cat ~/.key | sudo -S rsync -a --delete /etc/ /media/$USER/backup_disk/etc/
+
 #rsync -a --delete /home/http/ /media/$USER/backup_disk/http/
 
 dconf dump / > /home/$USER/git/linux_init/gnome-shell/dconf_backup

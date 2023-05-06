@@ -1,6 +1,6 @@
 import json, os, shutil, time, requests, re, os
 import datetime
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 
 def get_latest_modified_file(folder):
   """Gets the latest modified file in a folder.
