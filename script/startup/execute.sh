@@ -8,7 +8,7 @@ cat ~/.key | sudo -S ufw default deny outgoing
 gnome-terminal
 nohup nautilus ~ 1> /dev/null 2>&1 &
 nohup firefox 1> /dev/null 2>&1 &
-nohup flatpak run org.chromium.Chromium 1> /dev/null 2>&1 &
+nohup flatpak run com.brave.Browser 1> /dev/null 2>&1 &
 disown
 
 exit 0
