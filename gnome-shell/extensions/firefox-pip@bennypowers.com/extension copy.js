@@ -21,7 +21,7 @@ function isPiP(window) {
   var s_title = window.get_title();
    
   return s_title === 'Picture-in-Picture' || 
-  s_title.includes('Chromium') ||
+  s_title.includes('Chrom') ||
   s_title.includes('PIP');
 }
 
