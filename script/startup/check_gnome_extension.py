@@ -93,7 +93,7 @@ if __name__ == '__main__':
     p_con = p_con + '|--|---|---|---|---|---|' + '\n'
     p_con = p_con + item_cotnent_save
 
-    md_title = '유지중 - Linux GNOME Extension Compability'
+    md_title = 'GNOME Extension Compability - tcontent'
 
     now = datetime.datetime.now()
     md_title_key = now.strftime("%Y-%m-%d %H:%M:%S")
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     s_out = s_out + 'date: ' + md_title_key + '\r\n'
     s_out = s_out + 'status: \r\n'
     s_out = s_out + 'alias: GNOME Extension\r\n'
-    s_out = s_out + 'tags: Idea\r\n'
+    s_out = s_out + 'tags: Linux\r\n'
     s_out = s_out + 'subs: Extension\r\n'
     s_out = s_out + '---\r\n'
     s_out = s_out + '\r\n'
@@ -114,5 +114,5 @@ if __name__ == '__main__':
     
     s_out = s_out + p_con 
     
-    with open('/home/lwh/phone/000_Personal/Idea/%s.md' % (md_title), 'w', encoding="utf-8") as out_file:
+    with open('/home/lwh/phone/000_Personal/Linux/%s.md' % (md_title), 'w', encoding="utf-8") as out_file:
         out_file.write(s_out)
