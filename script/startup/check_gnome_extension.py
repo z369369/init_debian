@@ -93,7 +93,7 @@ if __name__ == '__main__':
     p_con = p_con + '|--|---|---|---|---|---|' + '\n'
     p_con = p_con + item_cotnent_save
 
-    md_title = 'GNOME Extension Compability.tcontent'
+    md_title = 'GNOME Extension Compability 설정'
 
     now = datetime.datetime.now()
     md_title_key = now.strftime("%Y-%m-%d %H:%M:%S")

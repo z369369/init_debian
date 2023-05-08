@@ -21,7 +21,6 @@ function isPiP(window) {
   var s_title = window.get_title();
    
   return s_title === 'Picture-in-Picture' || 
-  s_title.includes('Brave') ||
   s_title.includes('PIP');
 }
 
