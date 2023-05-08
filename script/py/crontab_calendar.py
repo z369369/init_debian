@@ -37,7 +37,7 @@ class MyCalendar():
         # Call the Calendar API
         now = dt.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
         events_result = self.service.events().list(calendarId='primary', timeMin=now,
-                                              maxResults=2, singleEvents=True,
+                                              maxResults=3, singleEvents=True,
                                               orderBy='startTime').execute()
         events = events_result.get('items', [])
 
