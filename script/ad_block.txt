@@ -6,7 +6,6 @@
 ! Version: 20221109
 
 ! URL filters
-!*.wemakeprice.com^
 coupang.com^
 ilbe.com^
 pinterest.co.kr^
