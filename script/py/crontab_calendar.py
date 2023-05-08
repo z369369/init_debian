@@ -33,11 +33,21 @@ class MyCalendar():
             sys.exit(1)
  
     def set_onething(self):
+        i_num = 0
+        i_num_max = 5
+        with open("/home/lwh/script/py/crontab_calendar.txt", "r") as f:
+            i_num = int(f.read())
+            f.close()
+        
+        i_num = i_num + 1
 
+        if i_num >= i_num_max:
+            i_num = 0
+                
         # Call the Calendar API
         now = dt.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
         events_result = self.service.events().list(calendarId='primary', timeMin=now,
-                                              maxResults=3, singleEvents=True,
+                                              maxResults=i_num_max, singleEvents=True,
                                               orderBy='startTime').execute()
         events = events_result.get('items', [])
 
@@ -55,12 +65,16 @@ class MyCalendar():
             s1 = s1.replace("-",".").replace("T"," ")
             a1.append(s1 + ' ' + event['summary'][0:10])
 
-        random.shuffle(a1)
-        s1 = a1[0]
+        s1 = a1[i_num]
         # print(s1)
         
         cmd = 'gsettings set org.gnome.shell.extensions.one-thing thing-value "' + s1 + '"'
         os.system(cmd)
+        
+        with open("/home/lwh/script/py/crontab_calendar.txt", "w") as f:
+            f.write(str(i_num))
+            f.close()            
+        
         return
        
 if __name__ == '__main__':
