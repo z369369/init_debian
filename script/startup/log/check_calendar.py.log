@@ -1,0 +1,24 @@
+2023-05-08 21:26:54,505 INFO check_process(1435) process count = 5
+2023-05-08 21:26:54,505 INFO check_process(1437) terminate count = 5
+2023-05-08 21:35:06,273 INFO check_process(1435) process count = 5
+2023-05-08 21:35:06,273 INFO check_process(1437) terminate count = 5
+2023-05-08 21:35:35,666 INFO check_process(1435) process count = 5
+2023-05-08 21:35:35,666 INFO check_process(1437) terminate count = 5
+2023-05-08 21:36:00,379 INFO check_process(1435) process count = 5
+2023-05-08 21:36:00,380 INFO check_process(1437) terminate count = 5
+2023-05-08 21:36:11,605 INFO check_process(1435) process count = 5
+2023-05-08 21:36:11,606 INFO check_process(1437) terminate count = 5
+2023-05-08 21:36:25,990 INFO check_process(1435) process count = 5
+2023-05-08 21:36:25,991 INFO check_process(1437) terminate count = 5
+2023-05-08 21:37:15,729 INFO check_process(1435) process count = 5
+2023-05-08 21:37:15,731 INFO check_process(1437) terminate count = 5
+2023-05-08 21:37:45,552 INFO check_process(1435) process count = 5
+2023-05-08 21:37:45,553 INFO check_process(1437) terminate count = 5
+2023-05-08 21:38:27,606 ERROR __init__(31) Error module 'config' has no attribute 'SCOPES'
+2023-05-08 21:38:42,808 ERROR __init__(31) Error module 'config' has no attribute 'SCOPES'
+2023-05-08 21:39:40,644 ERROR __init__(31) Error module 'config' has no attribute 'SCOPES'
+2023-05-08 21:49:25,905 ERROR __init__(31) Error module 'config' has no attribute 'SCOPES'
+2023-05-08 21:49:40,721 ERROR __init__(31) Error module 'config' has no attribute 'SCOPES'
+2023-05-08 21:57:05,616 ERROR __init__(31) Error ('Error opening file', '/home/lwh/.credentials/client_secret_lwh.json', 'No such file or directory', 2)
+2023-05-08 22:59:02,930 INFO new_request(183) Refreshing due to a 401 (attempt 1/2)
+2023-05-08 22:59:02,932 INFO _do_refresh_request(777) Refreshing access_token
