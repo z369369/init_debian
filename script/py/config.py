@@ -3,7 +3,7 @@ import platform
 
 
 LOG_LEVEL = logging.ERROR
-LOG_PRINT = True
+LOG_PRINT = False
 
 
 SCOPES = {
