@@ -16,7 +16,8 @@ mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav /home/lwh/Music 2> /dev/null
 mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mpv *.mp2 *.wmv /home/lwh/Videos 2> /dev/null
 
 # PDFs 
-mv *.pdf *.doc *.txt *.ppt *.xls *.xlsx *.ovpn /home/lwh/Documents 2> /dev/null
+mv *.pdf *.doc *.ppt *.xls *.xlsx /home/lwh/Documents 2> /dev/null
+mv *.txt *.ovpn /home/lwh/Downloads/Download_Home 2> /dev/null
 
 # Scripts
 mv *.py *.rb *.sh /home/lwh/git/linux_init/script 2> /dev/null
