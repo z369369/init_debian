@@ -1,0 +1,1 @@
+DPkg::Pre-Invoke {"/home/lwh/script/desktop/organize.sh"; };

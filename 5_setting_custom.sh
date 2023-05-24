@@ -62,6 +62,9 @@ sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
 
 echo "============== [S] 5.Remove - Ubuntu ESM =============="
 
+sudo cp 99_organize /etc/apt/apt.conf.d/
+sudo chmod 644 /etc/apt/apt.conf.d/99_organize
+
 # [backup] .config
 # cd ~
 # mv -f ~/linux_init/home/*.tar ~/
