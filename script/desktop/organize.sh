@@ -29,6 +29,7 @@ mv *.iso ~/Downloads/iso 2> /dev/null
 
 rm *.ovpn 2> /dev/null
 
+rm -rf ~/.config/google-chrome/Default/GPUCache
 
 #obs not work
 #https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update

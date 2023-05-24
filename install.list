@@ -7,70 +7,69 @@ fdupes #duplicate file remove
 ffmpeg #Used
 gedit #Used gnome editor
 gedit-plugin-multi-edit #Used Gedit multi line
-gnome-shell-extensions #Gnome Extension
-gnome-shell-extension-prefs #Gnome Extension
-gnome-tweaks #Gnome Extension
-gnome-calendar #Gnome Calendar
 git #Used
+gnome-calendar #Gnome Calendar
+gnome-shell-extension-prefs #Gnome Extension
+gnome-shell-extensions #Gnome Extension
+gnome-tweaks #Gnome Extension
 gthumb #Used
 gufw #Used Firewall GUI
 hardinfo #Used
 htop #Used
-imwheel #Mouse wheel scroll
+ibus-hangul #support ime hangul 
 imagemagick #Image converter
+imwheel #Mouse wheel scroll
 incron #Filesystem crontab
 intel-microcode #resolve kernel message 
-ibus-hangul #support ime hangul 
-make #Build
-mc #Mid-Night Commander
-nautilus-admin
-nautilus-image-converter
-nautilus-gtkhash
-nemo #mint file manager
-net-tools #Used
 libfuse2 #for Use appimage
 libglib2.0-dev-bin #Virt-Manager
+libqt5svg5 #JPG to SVG
 libvirt-clients #Virt-Manager
 libvirt-daemon-system #Virt-Manager
-libqt5svg5 #JPG to SVG
+make #Build
+mc #Mid-Night Commander
 meld #Winmerge
+nautilus-admin
+nautilus-gtkhash
+nautilus-image-converter
+ncdu #du
+nemo #mint file manager
 neofetch #pfetch alternative
+net-tools #Used
 numlockx #GDM login - numlock always on
 pandoc #file converter
+pydf #df
+python3.10-venv #python virtual_env install
 rsync #Used
 software-properties-common #Gnome Software
 synaptic #Package manager
 timeshift #Backup, Restore
 ubuntu-restricted-extras #Codec mp4, video, autdio
 ufw #Firewall
-virt-manager
 vim #vi 
+virt-manager
 wget #Download
 wmctrl #move Workspace
-ncdu #du
-pydf #df
 xclip #clipboard for nemo
-python3.10-venv #python virtual_env install
 
 *
 
-com.usebottles.bottles
-org.gnome.design.Contrast
 ca.desrt.dconf-editor
-com.sweethome3d.Sweethome3d
 com.belmoussaoui.Decoder
+com.brave.Browser
 com.discordapp.Discord
-com.github.tchx84.Flatseal
-com.github.PintaProject.Pinta
-com.github.unrud.VideoDownloader
 com.github.jeromerobert.pdfarranger
+com.github.PintaProject.Pinta
+com.github.tchx84.Flatseal
+com.github.unrud.VideoDownloader
 com.google.Chrome
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
 com.opera.Opera
-com.brave.Browser
 com.redis.RedisInsight
+com.sweethome3d.Sweethome3d
 com.transmissionbt.Transmission
+com.usebottles.bottles
 com.valvesoftware.Steam
 com.vscodium.codium
 de.haeckerfelix.Shortwave
@@ -79,21 +78,22 @@ io.dbeaver.DBeaverCommunity
 io.github.celluloid_player.Celluloid
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
-org.olivevideoeditor.Olive
-org.audacityteam.Audacity
 org.atheme.audacious
+org.audacityteam.Audacity
 org.blender.Blender
 org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
-org.inkscape.Inkscape
 org.gimp.GIMP
-org.gnome.seahorse.Application
+org.gnome.design.Contrast
 org.gnome.design.IconLibrary
+org.gnome.seahorse.Application
+org.inkscape.Inkscape
 org.kde.kdenlive
 org.kde.krita
 org.kde.okular
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
+org.olivevideoeditor.Olive
 org.remmina.Remmina
 org.telegram.desktop
 org.videolan.VLC
