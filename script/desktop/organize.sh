@@ -28,21 +28,17 @@ mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage *.flatpakref /home/lwh/Downl
 mv *.iso /home/lwh/Downloads/iso 2> /dev/null
 
 rm *.ovpn 2> /dev/null
-
 rm -rf /home/lwh/.config/google-chrome/Default/GPUCache
+rm -rf /home/lwh/.var/app/com.usebottles.bottles/data/bottles/temp/*
+#rsync -a --delete /home/http/ /media/lwh/backup_disk/http/
 
 #obs not work
 #https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update
 #flatpak remote-info --log flathub com.obsproject.Studio
 #cat /home/lwh/.key | sudo -S flatpak update -y --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 
-rm -rf /home/lwh/.var/app/com.usebottles.bottles/data/bottles/temp/*
-
 rsync -a --delete --exclude-from /home/lwh --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Downloads/iso --exclude .cache  /home/lwh/ /media/lwh/backup_disk/lwh/
-
 cat /home/lwh/.key | sudo -S rsync -a --delete /etc/ /media/lwh/backup_disk/etc/
-
-#rsync -a --delete /home/http/ /media/lwh/backup_disk/http/
 
 dconf dump / > /home/lwh/git/linux_init/gnome-shell/dconf_backup
 #dconf load / < /home/lwh/git/linux_init/gnome-shell/dconf_backup
