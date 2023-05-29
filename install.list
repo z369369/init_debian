@@ -36,7 +36,6 @@ ncdu #du
 nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
-numlockx #GDM login - numlock always on
 pandoc #file converter
 pydf #df
 python3.10-venv #python virtual_env install
