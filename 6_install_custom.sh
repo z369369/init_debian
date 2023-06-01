@@ -33,8 +33,8 @@ sudo apt install -y code
 sudo apt -y autoremove
 
 #kernel
-# sudo add-apt-repository ppa:cappelikan/ppa
-# sudo apt install mainline
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt install mainline
 
 echo "============== [E] 6.Install - ppa =============="
 
