@@ -32,7 +32,7 @@ sudo apt install -y code
 
 sudo apt -y autoremove
 
-#kernel
+#kernel - don't delete. for remove previous kernel 
 sudo add-apt-repository ppa:cappelikan/ppa
 sudo apt install mainline
 
