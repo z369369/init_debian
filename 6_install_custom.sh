@@ -51,7 +51,7 @@ sudo systemctl start syncthing@$USER.service
 
 echo "============== [E] 6.Install - Syncthing =============="
 
-
+sudo mv /usr/share/plymouth/ubuntu-logo.png /usr/share/plymouth/ubuntu-logo.png.bak
 
 # echo "============== [S] 6.Install - Chrome =============="
 
@@ -61,3 +61,4 @@ echo "============== [E] 6.Install - Syncthing =============="
 # sudo apt install -y google-chrome-stable
 
 # echo "============== [E] 6.Install - Chrome =============="
+
