@@ -1,6 +1,8 @@
 'use strict';
 
-const {Gio, GLib, Adw} = imports.gi;
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
+const Gtk = imports.gi.Gtk;
 
 // Bootstrap
 const Extension = imports.misc.extensionUtils.getCurrentExtension();
@@ -10,14 +12,17 @@ function init() {
     Utils.installService();
 }
 
-function fillPreferencesWindow(window) {
-    const widget = new Adw.PreferencesPage();
-    window.add(widget);
+function buildPrefsWidget() {
+    // Destroy the window once the mainloop starts
+    const widget = new Gtk.Box();
 
     GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
-        window.close();
+        widget.get_root().destroy();
+        return false;
     });
 
     Gio.Subprocess.new([`${Extension.path}/gsconnect-preferences`], 0);
+
+    return widget;
 }
 

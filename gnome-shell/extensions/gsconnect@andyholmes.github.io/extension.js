@@ -7,8 +7,7 @@ const Gtk = imports.gi.Gtk;
 const Main = imports.ui.main;
 const PanelMenu = imports.ui.panelMenu;
 const PopupMenu = imports.ui.popupMenu;
-const QuickSettingsMenu = Main.panel.statusArea.quickSettings;
-const QuickSettings = imports.ui.quickSettings;
+const AggregateMenu = Main.panel.statusArea.aggregateMenu;
 
 // Bootstrap
 const Extension = imports.misc.extensionUtils.getCurrentExtension();
@@ -30,20 +29,12 @@ Extension.getIcon = Utils.getIcon;
  * A System Indicator used as the hub for spawning device indicators and
  * indicating that the extension is active when there are none.
  */
-const ServiceToggle = GObject.registerClass({
+const ServiceIndicator = GObject.registerClass({
     GTypeName: 'GSConnectServiceIndicator',
-}, class ServiceToggle extends QuickSettings.QuickMenuToggle {
+}, class ServiceIndicator extends PanelMenu.SystemIndicator {
 
     _init() {
-        super._init({
-            label: 'GSConnect',
-            iconName: 'org.gnome.Shell.Extensions.GSConnect-symbolic',
-            toggleMode: true,
-        });
-
-        // Set QuickMenuToggle header.
-        this.menu.setHeader('org.gnome.Shell.Extensions.GSConnect-symbolic', 'GSConnect',
-            _('Sync between your devices'));
+        super._init();
 
         this._menus = {};
 
@@ -57,11 +48,6 @@ const ServiceToggle = GObject.registerClass({
             ),
             path: '/org/gnome/shell/extensions/gsconnect/',
         });
-
-        // Bind the toggle to enabled key
-        this.settings.bind('enabled',
-            this, 'checked',
-            Gio.SettingsBindFlags.DEFAULT);
 
         this._enabledId = this.settings.connect(
             'changed::enabled',
@@ -91,6 +77,29 @@ const ServiceToggle = GObject.registerClass({
             this._onServiceChanged.bind(this)
         );
 
+        // Service Indicator
+        this._indicator = this._addIndicator();
+        this._indicator.gicon = Extension.getIcon(
+            'org.gnome.Shell.Extensions.GSConnect-symbolic'
+        );
+        this._indicator.visible = false;
+
+        AggregateMenu._indicators.insert_child_at_index(this, 0);
+        AggregateMenu._gsconnect = this;
+
+        // Service Menu
+        this._item = new PopupMenu.PopupSubMenuMenuItem(_('Mobile Devices'), true);
+        this._item.icon.gicon = this._indicator.gicon;
+        this._item.label.clutter_text.x_expand = true;
+        this.menu.addMenuItem(this._item);
+
+        // Find current index of network menu
+        const menuItems = AggregateMenu.menu._getMenuItems();
+        const networkMenuIndex = AggregateMenu._network ? menuItems.indexOf(AggregateMenu._network.menu) : -1;
+        const menuIndex = networkMenuIndex > -1 ? networkMenuIndex : 3;
+        // Place our menu below the network menu
+        AggregateMenu.menu.addMenuItem(this.menu, menuIndex + 1);
+
         // Service Menu -> Devices Section
         this.deviceSection = new PopupMenu.PopupMenuSection();
         this.deviceSection.actor.add_style_class_name('gsconnect-device-section');
@@ -100,13 +109,19 @@ const ServiceToggle = GObject.registerClass({
             'visible',
             Gio.SettingsBindFlags.INVERT_BOOLEAN
         );
-        this.menu.addMenuItem(this.deviceSection);
+        this._item.menu.addMenuItem(this.deviceSection);
 
         // Service Menu -> Separator
-        this.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
+        this._item.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
+
+        // Service Menu -> "Turn On/Off"
+        this._enableItem = this._item.menu.addAction(
+            _('Turn On'),
+            this._enable.bind(this)
+        );
 
         // Service Menu -> "Mobile Settings"
-        this.menu.addAction(_('Mobile Settings'), this._preferences);
+        this._item.menu.addAction(_('Mobile Settings'), this._preferences);
 
         // Prime the service
         this._initService();
@@ -123,6 +138,25 @@ const ServiceToggle = GObject.registerClass({
         }
     }
 
+    _enable() {
+        try {
+            const enabled = this.settings.get_boolean('enabled');
+
+            // If the service state matches the enabled setting, we should
+            // toggle the service by toggling the setting
+            if (this.service.active === enabled)
+                this.settings.set_boolean('enabled', !enabled);
+
+            // Otherwise, we should change the service to match the setting
+            else if (this.service.active)
+                this.service.stop();
+            else
+                this.service.start();
+        } catch (e) {
+            logError(e, 'GSConnect');
+        }
+    }
+
     _preferences() {
         Gio.Subprocess.new([`${Extension.path}/gsconnect-preferences`], 0);
     }
@@ -134,7 +168,7 @@ const ServiceToggle = GObject.registerClass({
         const panelMode = this.settings.get_boolean('show-indicators');
 
         // Hide status indicator if in Panel mode or no devices are available
-        serviceIndicator._indicator.visible = (!panelMode && available.length);
+        this._indicator.visible = (!panelMode && available.length);
 
         // Show device indicators in Panel mode if available
         for (const device of this.service.devices) {
@@ -146,6 +180,74 @@ const ServiceToggle = GObject.registerClass({
             const menu = this._menus[device.g_object_path];
             menu.actor.visible = !panelMode && isAvailable;
             menu._title.actor.visible = !panelMode && isAvailable;
+        }
+
+        // One connected device in User Menu mode
+        if (!panelMode && available.length === 1) {
+            const device = available[0];
+
+            // Hide the menu title and move it to the submenu item
+            this._menus[device.g_object_path]._title.actor.visible = false;
+            this._item.label.text = device.name;
+
+            // Destroy any other device's signalStrength
+            if (this._item._signalStrength && this._item._signalStrength.device !== device) {
+                this._item._signalStrength.destroy();
+                this._item._signalStrength = null;
+            }
+
+            // Add the signalStrength to the submenu item
+            if (!this._item._signalStrength) {
+                this._item._signalStrength = new Device.SignalStrength({
+                    device: device,
+                    opacity: 128,
+                });
+                this._item.actor.insert_child_below(
+                    this._item._signalStrength,
+                    this._item._triangleBin
+                );
+            }
+
+            // Destroy any other device's battery
+            if (this._item._battery && this._item._battery.device !== device) {
+                this._item._battery.destroy();
+                this._item._battery = null;
+            }
+
+            // Add the battery to the submenu item
+            if (!this._item._battery) {
+                this._item._battery = new Device.Battery({
+                    device: device,
+                    opacity: 128,
+                });
+                this._item.actor.insert_child_below(
+                    this._item._battery,
+                    this._item._triangleBin
+                );
+            }
+        } else {
+            if (available.length > 1) {
+                // TRANSLATORS: %d is the number of devices connected
+                this._item.label.text = Extension.ngettext(
+                    '%d Connected',
+                    '%d Connected',
+                    available.length
+                ).format(available.length);
+            } else {
+                this._item.label.text = _('Mobile Devices');
+            }
+
+            // Destroy any battery in the submenu item
+            if (this._item._battery) {
+                this._item._battery.destroy();
+                this._item._battery = null;
+            }
+
+            // Destroy any signalStrength in the submenu item
+            if (this._item._signalStrength) {
+                this._item._signalStrength.destroy();
+                this._item._signalStrength = null;
+            }
         }
     }
 
@@ -270,9 +372,17 @@ const ServiceToggle = GObject.registerClass({
 
     async _onServiceChanged(service, pspec) {
         try {
-            // If it's enabled, we should try to restart now
-            if (this.settings.get_boolean('enabled'))
-                await this.service.start();
+            if (this.service.active) {
+                // TRANSLATORS: A menu option to deactivate the extension
+                this._enableItem.label.text = _('Turn Off');
+            } else {
+                // TRANSLATORS: A menu option to activate the extension
+                this._enableItem.label.text = _('Turn On');
+
+                // If it's enabled, we should try to restart now
+                if (this.settings.get_boolean('enabled'))
+                    await this.service.start();
+            }
         } catch (e) {
             logError(e, 'GSConnect');
         }
@@ -288,7 +398,6 @@ const ServiceToggle = GObject.registerClass({
             for (const device of this.service.devices)
                 this._onDeviceRemoved(this.service, device, false);
 
-            this.service.stop();
             this.service.destroy();
         }
 
@@ -301,41 +410,17 @@ const ServiceToggle = GObject.registerClass({
         this.settings.run_dispose();
 
         // Destroy the PanelMenu.SystemIndicator actors
+        this._item.destroy();
         this.menu.destroy();
 
+        delete AggregateMenu._gsconnect;
         super.destroy();
     }
 });
 
-const ServiceIndicator = GObject.registerClass(
-class ServiceIndicator extends QuickSettings.SystemIndicator {
-    _init() {
-        super._init();
-
-        // Create the icon for the indicator
-        this._indicator = this._addIndicator();
-        this._indicator.icon_name = 'org.gnome.Shell.Extensions.GSConnect-symbolic';
-        // Hide the indicator by default
-        this._indicator.visible = false;
-
-        // Create the toggle menu and associate it with the indicator
-        this.quickSettingsItems.push(new ServiceToggle());
-
-        // Add the indicator to the panel and the toggle to the menu
-        QuickSettingsMenu._indicators.insert_child_at_index(this, 0);
-        QuickSettingsMenu._addItems(this.quickSettingsItems);
-    }
-
-    destroy() {
-        // Set enabled state to false to kill the service on destroy
-        this.quickSettingsItems.forEach(item => item.destroy());
-        // Destroy the indicator
-        this._indicator.destroy();
-        super.destroy();
-    }
-});
 
 var serviceIndicator = null;
+
 
 function init() {
     // If installed as a user extension, this will install the Desktop entry,

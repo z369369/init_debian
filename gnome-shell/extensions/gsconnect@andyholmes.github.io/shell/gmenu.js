@@ -199,10 +199,11 @@ var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
             );
         }
 
-        item.connectObject(
+        // Modify the ::activate callback to invoke the GAction or submenu
+        item.disconnect(item._activateId);
+        item._activateId = item.connect(
             'activate',
-            this._onGMenuItemActivate.bind(this),
-            this
+            this._onGMenuItemActivate.bind(this)
         );
 
         return item;
@@ -282,10 +283,13 @@ var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
             prev.replace_child(prev._ornamentLabel, prevArrow);
             this.addMenuItem(prev, 0);
 
-            prev.connectObject('activate', (item, event) => {
+            // Modify the ::activate callback to close the submenu
+            prev.disconnect(prev._activateId);
+
+            prev._activateId = prev.connect('activate', (item, event) => {
                 this.emit('activate', item);
                 this._parent.submenu = null;
-            }, this);
+            });
         }
     }
 
