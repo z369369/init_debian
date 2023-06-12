@@ -7,11 +7,11 @@
   "persistent-file-name": "persistent",
   "settings-schema": "org.gnome.shell.extensions.draw-on-your-screen",
   "shell-version": [
-    "43",
-    "44"
+    "42",
+    "43"
   ],
   "svg-file-name": "DrawOnYourScreen",
   "url": "https://github.com/zhrexl/DrawOnYourScreen2",
   "uuid": "draw-on-your-screen2@zhrexl.github.com",
-  "version": 6
+  "version": 5
 }

@@ -15,10 +15,12 @@
    Copyright 2022 Jason Oickle
 */
 
+// We need to define Soup2 here for Ubuntu based distros
+imports.gi.versions.Soup = "2.4";
 const {
-    Adw, Gtk, GObject, Soup, GLib
+    Adw, Gtk, GObject, Soup
 } = imports.gi;
-const ByteArray = imports.byteArray;
+
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
 const Gettext = imports.gettext.domain(Me.metadata['gettext-domain']);
@@ -677,26 +679,20 @@ class OpenWeather_SearchResultsWindow extends Adw.PreferencesWindow {
             }
 
             let _httpSession = new Soup.Session();
-            let _paramsHash = Soup.form_encode_hash(params);
-            let _message = Soup.Message.new_from_encoded_form('GET', url, _paramsHash);
+            let _message = Soup.form_request_new_from_hash('GET', url, params);
             // add trailing space, so libsoup adds its own user-agent
             _httpSession.user_agent = _userAgent + ' ';
 
-            _httpSession.send_and_read_async(_message, GLib.PRIORITY_DEFAULT, null, (_httpSession, _message) => {
-
-                let _jsonString = _httpSession.send_and_read_finish(_message).get_data();
-                if (_jsonString instanceof Uint8Array) {
-                    _jsonString = ByteArray.toString(_jsonString);
-                }
+            _httpSession.queue_message(_message, (_httpSession, _message) => {
                 try {
-                    if (!_jsonString) {
+                    if (!_message.response_body.data) {
                         throw new Error("No data in response body");
                     }
-                    resolve(JSON.parse(_jsonString));
+                    resolve(JSON.parse(_message.response_body.data));
                 }
                 catch (e) {
                     _httpSession.abort();
-                    reject(e);
+                    reject("Soup error: " + e);
                 }
             });
         });

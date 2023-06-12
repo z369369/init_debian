@@ -5,10 +5,9 @@
   "name": "OpenWeather",
   "settings-schema": "org.gnome.shell.extensions.openweather",
   "shell-version": [
-    "43",
-    "44"
+    "42"
   ],
   "url": "https://gitlab.com/skrewball/openweather",
   "uuid": "openweather-extension@jenslody.de",
-  "version": 121
+  "version": 118
 }
