@@ -58,7 +58,7 @@ var StockDetails = GObject.registerClass({
   }
 
   _createStockInfo ({ quoteSummary }) {
-    const stockInformationBox = new St.Bin({
+    let stockInformationBox = new St.Bin({
       style_class: 'stock-information-box',
       x_expand: true,
       y_expand: true,
@@ -117,7 +117,7 @@ var StockDetails = GObject.registerClass({
   }
 
   _createDetailBox ({ quoteSummary }) {
-    const detailBox = new St.BoxLayout({
+    let detailBox = new St.BoxLayout({
       style_class: 'stock-details-box',
       x_expand: true,
       y_expand: false
@@ -130,7 +130,7 @@ var StockDetails = GObject.registerClass({
   }
 
   _createLeftDetailBox ({ quoteSummary }) {
-    const leftDetailBox = new St.BoxLayout({
+    let leftDetailBox = new St.BoxLayout({
       style_class: 'stock-left-details-box',
       x_expand: true,
       y_expand: false,
@@ -180,7 +180,7 @@ var StockDetails = GObject.registerClass({
   }
 
   _createRightDetailBox ({ quoteSummary }) {
-    const rightDetailBox = new St.BoxLayout({
+    let rightDetailBox = new St.BoxLayout({
       style_class: 'stock-details-box',
       x_expand: true,
       y_expand: false,

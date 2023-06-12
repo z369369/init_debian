@@ -4,13 +4,12 @@ const DEFAULT_TIME_OUT_IN_SECONDS = 10
 const DEFAULT_CHROME_USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
 
 const Response = class {
-  constructor (message, body) {
+  constructor (message) {
     this.message = message
-    this.body = body
 
     if (message) {
       this.headers = message.response_headers
-      this.url = message.get_uri().to_string()
+      this.url = message.get_uri().to_string(false)
       this.status = message.status_code
       this.statusText = Soup.Status.get_phrase(this.status)
 
@@ -19,11 +18,13 @@ const Response = class {
   }
 
   blob () {
-    return this.body
+    return ((this.message || {}).response_body || {}).data
   }
 
   text () {
-    return this.body
+    const data = ((this.message || {}).response_body || {}).data
+
+    return data ? data.toString() : null
   }
 
   json () {
@@ -71,23 +72,13 @@ var fetch = ({ url, method = 'GET', headers, queryParameters, customHttpSession 
       appendHeaders(request_message, headers)
     }
 
-    const httpSession = customHttpSession || new Soup.Session({
+    const httpSession = customHttpSession || new Soup.SessionAsync({
       user_agent: DEFAULT_CHROME_USER_AGENT,
       timeout: DEFAULT_TIME_OUT_IN_SECONDS
     })
 
-    httpSession.send_and_read_async(request_message, null, null, (source, response_message) => {
-      let body = ''
-
-      try {
-        const bytes = httpSession.send_and_read_finish(response_message)
-        const decoder = new TextDecoder()
-        body = decoder.decode(bytes.get_data())
-      } catch (e) {
-        log(`Could not parse soup response body ${e}`)
-      }
-
-      const response = new Response(request_message, body)
+    httpSession.queue_message(request_message, (source, response_message) => {
+      const response = new Response(response_message)
 
       resolve(response)
     })

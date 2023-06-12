@@ -17,7 +17,7 @@ const FinanceService = Me.imports.services.financeService
 var StockDetailsScreen = GObject.registerClass({
   GTypeName: 'StockExtension_StockDetailsScreen'
 }, class StockDetailsScreen extends St.BoxLayout {
-  _init ({ portfolioId, quoteSummary, mainEventHandler }) {
+  _init ({ quoteSummary, mainEventHandler }) {
     super._init({
       style_class: 'screen stock-details-screen',
       vertical: true
@@ -26,7 +26,6 @@ var StockDetailsScreen = GObject.registerClass({
     this._mainEventHandler = mainEventHandler
 
     this._passedQuoteSummary = quoteSummary
-    this._portfolioId = portfolioId
     this._selectedChartRange = CHART_RANGES.INTRADAY
     this._quoteSummary = null
 
@@ -68,7 +67,7 @@ var StockDetailsScreen = GObject.registerClass({
       style_class: 'stock-details-tab-button-group',
       enableScrollbar: false,
       y_expand: false,
-      buttons: ['KeyData', 'Transactions', 'NewsList'].map(tabKey => ({
+      buttons: ['KeyData', 'NewsList'].map(tabKey => ({
         label: tabKey,
         value: tabKey,
         selected: tabKey === 'KeyData'
@@ -78,23 +77,21 @@ var StockDetailsScreen = GObject.registerClass({
     stockDetailsTabButtonGroup.connect('clicked', (_, stButton) => {
       const selectedTab = stButton.buttonData.value
 
-      let screen
-
       if (selectedTab === 'KeyData') {
-        screen = 'stock-details'
-      } else if (selectedTab === 'Transactions') {
-        screen = 'stock-transactions'
+        this._mainEventHandler.emit('show-screen', {
+          screen: 'stock-details',
+          additionalData: {
+            item: this._passedQuoteSummary
+          }
+        })
       } else {
-        screen = 'stock-news-list'
+        this._mainEventHandler.emit('show-screen', {
+          screen: 'stock-news-list',
+          additionalData: {
+            item: this._passedQuoteSummary
+          }
+        })
       }
-
-      this._mainEventHandler.emit('show-screen', {
-        screen,
-        additionalData: {
-          portfolioId: this._portfolioId,
-          item: this._passedQuoteSummary
-        }
-      })
     })
 
     const stockDetails = new StockDetails({ quoteSummary })

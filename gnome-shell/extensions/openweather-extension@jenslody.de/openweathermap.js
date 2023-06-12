@@ -46,118 +46,120 @@ const IconMap = {
 
 function getWeatherCondition(code) {
     switch (parseInt(code, 10)) {
-        case 200: //Thunderstorm with light rain
-            return _('Thunderstorm with Light Rain');
-        case 201: //Thunderstorm with rain
-            return _('Thunderstorm with Rain');
-        case 202: //Thunderstorm with heavy rain
-            return _('Thunderstorm with Heavy Rain');
-        case 210: //Light thunderstorm
-            return _('Light Thunderstorm');
-        case 211: //Thunderstorm
-            return _('Thunderstorm');
-        case 212: //Heavy thunderstorm
-            return _('Heavy Thunderstorm');
-        case 221: //Ragged thunderstorm
-            return _('Ragged Thunderstorm');
-        case 230: //Thunderstorm with light drizzle
-            return _('Thunderstorm with Light Drizzle');
-        case 231: //Thunderstorm with drizzle
-            return _('Thunderstorm with Drizzle');
-        case 232: //Thunderstorm with heavy drizzle
-            return _('Thunderstorm with Heavy Drizzle');
-        case 300: //Light intensity drizzle
-            return _('Light Drizzle');
-        case 301: //Drizzle
-            return _('Drizzle');
-        case 302: //Heavy intensity drizzle
-            return _('Heavy Drizzle');
-        case 310: //Light intensity drizzle rain
-            return _('Light Drizzle Rain');
-        case 311: //Drizzle rain
-            return _('Drizzle Rain');
-        case 312: //Heavy intensity drizzle rain
-            return _('Heavy Drizzle Rain');
-        case 313: //Shower rain and drizzle
-            return _('Shower Rain and Drizzle');
-        case 314: //Heavy shower rain and drizzle
-            return _('Heavy Rain and Drizzle');
-        case 321: //Shower drizzle
-            return _('Shower Drizzle');
-        case 500: //Light rain
-            return _('Light Rain');
-        case 501: //Moderate rain
-            return _('Moderate Rain');
-        case 502: //Heavy intensity rain
-            return _('Heavy Rain');
-        case 503: //Very heavy rain
-            return _('Very Heavy Rain');
-        case 504: //Extreme rain
-            return _('Extreme Rain');
+        case 200: //약한 비와 천둥
+            return _('약한 비와 천둥');
+        case 201: //비와 천둥
+            return _('비와 천둥');
+        case 202: //심한 비와 천둥
+            return _('심한 비와 천둥');
+        case 210: //약한 천둥
+            return _('약한 천둥');
+        case 211: //천둥
+            return _('천둥');
+        case 212: //심한 천둥
+            return _('심한 천둥');
+        case 221: //불규칙적인 천둥
+            return _('약한 천둥');
+        case 230: //약한 비와 천둥
+            return _('약한 비와 천둥');
+        case 231: //비와 천둥
+            return _('비와 천둥');
+        case 232: //심한 비와 천둥
+            return _('심한 비와 천둥');
+        case 300: //약한 비
+            return _('약한 비');
+        case 301: //비
+            return _('비');
+        case 302: //심한 비
+            return _('심한 비');
+        case 310: //약한 비
+            return _('약한 비');
+        case 311: //비
+            return _('비');
+        case 312: //심한 비
+            return _('심한 비');
+        case 313: //비
+            return _('비');
+        case 314: //심한 비
+            return _('심한 비');
+        case 321: //비
+            return _('비');
+        case 500: //약한 비
+            return _('약한 비');
+        case 501: //보통 비
+            return _('보통 비');
+        case 502: //심한 비
+            return _('심한 비');
+        case 503: //매우 심한 비
+            return _('매우 심한 비');
+        case 504: //극심한 비
+            return _('극심한 비');
+
         case 511: //Freezing rain
-            return _('Freezing Rain');
+            return _('추운 비');
         case 520: //Light intensity shower rain
-            return _('Light Shower Rain');
+            return _('약한 비');
         case 521: //Shower rain
-            return _('Shower Rain');
+            return _('비');
         case 522: //Heavy intensity shower rain
-            return _('Heavy Shower Rain');
+            return _('강한 비');
         case 531: //Ragged shower rain
-            return _('Ragged Shower Rain');
+            return _('약한 비');
         case 600: //Light snow
-            return _('Light Snow');
+            return _('약한 눈');
         case 601: //Snow
-            return _('Snow');
+            return _('눈');
         case 602: //Heavy snow
-            return _('Heavy Snow');
+            return _('폭설');
         case 611: //Sleet
-            return _('Sleet');
+            return _('눈');
         case 612: //Light shower sleet
-            return _('Light Shower Sleet');
+            return _('약한 눈');
         case 613: //Shower sleet
-            return _('Shower Sleet');
+            return _('눈');
         case 615: //Light rain and snow
-            return _('Light Rain and Snow');
+            return _('약한 비와 눈');
         case 616: //Rain and snow
-            return _('Rain and Snow');
+            return _('비와 눈');
         case 620: //Light shower snow
-            return _('Light Shower Snow');
+            return _('약한 비와 눈');
         case 621: //Shower snow
-            return _('Shower Snow');
+            return _('비와 눈');
         case 622: //Heavy shower snow
-            return _('Heavy Shower Snow');
+            return _('강한 비와 눈');
         case 701: //Mist
-            return _('Mist');
+            return _('안개');
         case 711: //Smoke
-            return _('Smoke');
+            return _('연기');
         case 721: //Haze
-            return _('Haze');
+            return _('실안개');
         case 731: //Sand/Dust Whirls
-            return _('Sand/Dust Whirls');
+            return _('모래/먼지 회오리');
         case 741: //Fog
-            return _('Fog');
+            return _('안개');
         case 751: //Sand
-            return _('Sand');
+            return _('모래');
         case 761: //Dust
-            return _('Dust');
+            return _('먼지');
         case 762: //volcanic ash
-            return _('Volcanic Ash');
+            return _('화산재');
         case 771: //squalls
-            return _('Squalls');
+            return _('돌풍');
         case 781: //tornado
-            return _('Tornado');
-        case 800: //clear sky
-            return _('Clear Sky');
-        case 801: //Few clouds
-            return _('Few Clouds');
-        case 802: //Scattered clouds
-            return _('Scattered Clouds');
-        case 803: //Broken clouds
-            return _('Broken Clouds');
-        case 804: //Overcast clouds
-            return _('Overcast Clouds');
+            return _('토네이도');
+
+        case 800: //맑은 하늘
+            return _('맑은 하늘');
+        case 801: //약간의 구름
+            return _('약간 구름');
+        case 802: //산개구름
+            return _('산개 구름');
+        case 803: //부분적으로 흐림
+            return _('조금 흐림');
+        case 804: //흐린 하늘
+            return _('흐린 하늘');
         default:
-            return _('Not available');
+            return _('사용 불가');
     }
 }
 

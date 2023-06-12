@@ -1,6 +1,8 @@
 const { GObject, St } = imports.gi
 
 const ExtensionUtils = imports.misc.extensionUtils
+const Util = imports.misc.util
+
 const Me = ExtensionUtils.getCurrentExtension()
 
 const { IconButton } = Me.imports.components.buttons.iconButton
@@ -15,7 +17,7 @@ var SearchBar = GObject.registerClass({
     'refresh': {}
   }
 }, class SearchBar extends St.BoxLayout {
-  _init ({ back_screen_name, additionalDataForBackScreen, showRefreshIcon = true, showFilterInputBox = true, additionalIcons, mainEventHandler } = {}) {
+  _init ({ back_screen_name, showFilterInputBox = true, mainEventHandler } = {}) {
     super._init({
       style_class: 'search-bar',
       x_expand: true
@@ -23,9 +25,6 @@ var SearchBar = GObject.registerClass({
 
     this._mainEventHandler = mainEventHandler
     this.back_screen_name = back_screen_name
-    this.additionalDataForBackScreen = additionalDataForBackScreen
-    this.additionalIcons = additionalIcons
-    this.showRefreshIcon = showRefreshIcon
     this._inputBox = null
 
     this._searchAreaBox = this._createSearchArea({ showFilterInputBox })
@@ -38,7 +37,7 @@ var SearchBar = GObject.registerClass({
   }
 
   _createSearchArea ({ showFilterInputBox }) {
-    const searchInputBox = new St.BoxLayout({
+    let searchInputBox = new St.BoxLayout({
       style_class: 'search-area-box',
       x_expand: true
     })
@@ -48,7 +47,7 @@ var SearchBar = GObject.registerClass({
         style_class: 'navigate-back-icon-button',
         icon_name: 'go-previous-symbolic',
         text: Translations.BACK,
-        onClick: () => this._mainEventHandler.emit('show-screen', { screen: this.back_screen_name, additionalData: this.additionalDataForBackScreen })
+        onClick: () => this._mainEventHandler.emit('show-screen', { screen: this.back_screen_name })
       })
 
       searchInputBox.add_child(backIconButton)
@@ -87,14 +86,10 @@ var SearchBar = GObject.registerClass({
   }
 
   _createButtonBox () {
-    const buttonBox = new St.BoxLayout({
+    let buttonBox = new St.BoxLayout({
       style_class: 'button-box',
       x_align: St.Align.END
     })
-
-    if (this.additionalIcons) {
-      this.additionalIcons.forEach(item => buttonBox.add_child(item))
-    }
 
     const refreshIconButton = new IconButton({
       style_class: 'refresh-icon',
@@ -109,13 +104,11 @@ var SearchBar = GObject.registerClass({
       icon_size: 18,
       onClick: () => {
         this._mainEventHandler.emit('hide-panel')
-        ExtensionUtils.openPrefs()
+        Util.spawn(['gnome-shell-extension-prefs', 'stocks@infinicode.de'])
       }
     })
 
-    if (this.showRefreshIcon) {
-      buttonBox.add_child(refreshIconButton)
-    }
+    buttonBox.add_child(refreshIconButton)
     buttonBox.add_child(settingsIconButton)
 
     return buttonBox

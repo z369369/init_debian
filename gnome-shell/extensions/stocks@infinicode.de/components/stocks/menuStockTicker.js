@@ -14,7 +14,6 @@ const {
   STOCKS_SHOW_OFF_MARKET_TICKER_PRICES,
   STOCKS_TICKER_DISPLAY_VARIATION,
   STOCKS_TICKER_STOCK_AMOUNT,
-  STOCKS_PORTFOLIOS,
   STOCKS_USE_PROVIDER_INSTRUMENT_NAMES
 } = Me.imports.helpers.settings
 
@@ -25,7 +24,6 @@ const FinanceService = Me.imports.services.financeService
 
 const SETTING_KEYS_TO_REFRESH = [
   STOCKS_SYMBOL_PAIRS,
-  STOCKS_PORTFOLIOS,
   STOCKS_TICKER_INTERVAL,
   STOCKS_SHOW_OFF_MARKET_TICKER_PRICES,
   STOCKS_TICKER_DISPLAY_VARIATION,
@@ -73,21 +71,8 @@ var MenuStockTicker = GObject.registerClass({
     this._registerTimeout(false)
   }
 
-  _getEnabledSymbols () {
-    const tickerEnabledItems = []
-
-    this._settings.portfolios.forEach(item => item.symbols.forEach(item => {
-      if (item.showInTicker) {
-        tickerEnabledItems.push(item)
-      }
-    }))
-
-    return tickerEnabledItems
-  }
-
   async _sync () {
-    const tickerEnabledItems = this._getEnabledSymbols()
-
+    const tickerEnabledItems = this._settings.symbol_pairs.filter(item => item.showInTicker)
     const tickerBatch = this._getBatch(tickerEnabledItems, this._visibleStockIndex, this._settings.ticker_stock_amount)
 
     if (isNullOrEmpty(tickerBatch)) {
@@ -309,7 +294,7 @@ var MenuStockTicker = GObject.registerClass({
   }
 
   _showNextStock () {
-    this._visibleStockIndex = this._visibleStockIndex + 1 >= this._getEnabledSymbols().length ? 0 : this._visibleStockIndex + 1
+    this._visibleStockIndex = this._visibleStockIndex + 1 >= this._settings.symbol_pairs.filter(item => item.showInTicker).length ? 0 : this._visibleStockIndex + 1
     this._sync()
   }
 
