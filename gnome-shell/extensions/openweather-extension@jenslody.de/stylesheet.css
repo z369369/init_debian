@@ -61,6 +61,7 @@
 
 .openweather-icon:ltr {
 	padding-right: 5px;
+	color:skyblue;
 }
 
 .openweather-icon:rtl {
@@ -69,6 +70,7 @@
 
 .openweather-label {
 	padding-right: 6px;
+	color:skyblue;
 }
 
 .openweather-current-databox-captions {
