@@ -22,9 +22,10 @@ var SymbolModelList = GObject.registerClass({
   #items = []
   #changedId
 
-  constructor () {
+  constructor (portfolioId) {
     super()
 
+    this._portfolioId = portfolioId
     this._settings = new SettingsHandler()
     this.#items = this.convert_items()
 
@@ -43,7 +44,7 @@ var SymbolModelList = GObject.registerClass({
   }
 
   convert_items () {
-    return this._settings.symbol_pairs.map(item => {
+    return this._settings.symbolsByPortfolio(this._portfolioId).map(item => {
       const stockItem = new StockItem()
 
       stockItem.id = item.id || Gio.dbus_generate_guid()
@@ -132,7 +133,7 @@ var SymbolModelList = GObject.registerClass({
   }
 
   save_items () {
-    this._settings.symbol_pairs = this.#items
+    this._settings.updatePortfolioById(this._portfolioId, null, this.#items)
   }
 
   vfunc_get_item_type () {

@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "============== [S] 5.Link - shell, script =============="
-
+rm -rf ~/git/linux_init/script
 ln -s ~/git/linux_init/script ~/script
 
 rm -rf ~/.local/share/gnome-shell
@@ -9,10 +9,16 @@ ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
 rm -rf ~/Templates
 ln -s ~/git/linux_init/Templates ~/Templates
 
+rm -rf ~/Desktop/desktop_local
 ln -s ~/.local/share/applications ~/Desktop/desktop_local
+
+rm -rf ~/Desktop/desktop_flatpak
 ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
+
+rm -rf ~/Desktop/desktop_usr
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
+rm -rf ~/Games
 ln -s /media/lwh/backup_disk/lwh/Games ~/Games
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts

@@ -4,6 +4,7 @@ const ExtensionUtils = imports.misc.extensionUtils
 const Me = ExtensionUtils.getCurrentExtension()
 
 const { ScaleLayout } = Me.imports.components.scaleLayout.scaleLayout
+const { cacheOrDefault, removeCache } = Me.imports.helpers.data
 const { Translations } = Me.imports.helpers.translations
 
 var MESSAGE_ANIMATION_TIME = 100
@@ -16,7 +17,7 @@ var FlatList = GObject.registerClass({
     }
   }
 }, class FlatList extends St.ScrollView {
-  _init () {
+  _init ({ id, persistScrollPosition } = {}) {
     super._init({
       style_class: 'scroll-box',
       overlay_scrollbars: true,
@@ -27,6 +28,10 @@ var FlatList = GObject.registerClass({
       vscrollbar_policy: Gtk.PolicyType.AUTOMATIC
     })
 
+    this._id = id
+    this._persist_scroll_position = persistScrollPosition
+    this._resetScrollPositionTimeoutId = null
+
     this._content = new St.BoxLayout({
       style_class: 'flatlist',
       vertical: true,
@@ -34,7 +39,13 @@ var FlatList = GObject.registerClass({
       y_expand: true
     })
 
+    if (this._persist_scroll_position) {
+      this.enable_persistent_scroll_position()
+    }
+
     this.add_actor(this._content)
+
+    this.connect('destroy', this._onDestroy.bind(this))
   }
 
   get items () {
@@ -43,6 +54,27 @@ var FlatList = GObject.registerClass({
 
   clear_list_items () {
     this._content.destroy_all_children()
+  }
+
+  enable_persistent_scroll_position () {
+    const cacheKey = `${this._id}_scroll_position`;
+    this.connect('scroll-event', () => {
+      cacheOrDefault(cacheKey, () => this.vscroll.adjustment.value, -1)
+    })
+
+    this.vscroll.connect('scroll-stop', () => {
+      cacheOrDefault(cacheKey, () => this.vscroll.adjustment.value, -1)
+    })
+
+    this._content.connect('stage-views-changed', async () => {
+      const savedScrollPosition = await cacheOrDefault(cacheKey, () => this.vscroll.adjustment.value, 365 * 24 * 60 * 60 * 1000)
+
+      this._resetScrollPositionTimeoutId = setTimeout(() => {
+        if (this.vscroll.adjustment.value !== savedScrollPosition) {
+          this.vscroll.adjustment.value = savedScrollPosition
+        }
+      }, 150)
+    })
   }
 
   show_loading_info (text) {
@@ -97,6 +129,12 @@ var FlatList = GObject.registerClass({
         duration: MESSAGE_ANIMATION_TIME,
         mode: Clutter.AnimationMode.EASE_OUT_QUAD
       })
+    }
+  }
+
+  _onDestroy () {
+    if (this._resetScrollPositionTimeoutId) {
+      clearTimeout(this._resetScrollPositionTimeoutId)
     }
   }
 })

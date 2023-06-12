@@ -1,6 +1,6 @@
 /**** some globals ****/
 .stocks-extension .small-text {
-    /* font-size: .8em; */
+    font-size: .8em;
 }
 
 .stocks-extension .fwb {
@@ -16,12 +16,12 @@
 }
 
 .stocks-extension .quote-positive {
-    color: #F44E3F;
+    color: #00873c;
     font-weight: bolder;
 }
 
 .stocks-extension .quote-negative {
-    color: #83b9f5;
+    color: #F44E3F;
     font-weight: bolder;
 }
 
@@ -31,8 +31,8 @@
 
 .button-group .button.selected {
     text-decoration: underline;
-    /* font-family: "Inter", sans-serif;
-    font-weight: 500; */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
 }
 
 /*** main components ***/
@@ -47,23 +47,23 @@
 
 .stocks-extension .menu-stock-ticker .stock-info-box,
 .stocks-extension .menu-stock-ticker .stock-quote-box {
-    /* font-size: 1em; */
+    font-size: 1em;
 }
 
 .stocks-extension .menu-stock-ticker .ticker-stock-name-label,
 .stocks-extension .menu-stock-ticker .ticker-stock-quote-change-label {
-    /* font-size: .8em; */
+    font-size: .8em;
 }
 
 .stocks-extension .menu-stock-ticker .ticker-stock-quote-label {
-    /* font-size: .9em; */
+    font-size: .9em;
     text-align: left;
     margin-right: 6px;
 }
 
 .stocks-extension .menu-stock-ticker .stock-info-box.tremendous .ticker-stock-quote-change-label,
 .stocks-extension .menu-stock-ticker .stock-info-box.tremendous .ticker-stock-quote-label {
-    /* font-size: .7em; */
+    font-size: .7em;
 }
 
 
@@ -159,7 +159,7 @@
 }
 
 .stocks-extension .detail-item-value, .detail-item-label {
-    /* font-size: .9em; */
+    font-size: .9em;
 }
 
 .stocks-extension .chart {
@@ -176,4 +176,24 @@
 .stocks-extension .chart-hover-label {
     margin-right: 5px;
     font-weight: bolder;
+}
+
+
+/*** edit screen ***/
+
+.stocks-extension .edit-screen .form-element-box {
+    margin: 10px 15px;
+}
+
+.stocks-extension .transaction-card .header-box {
+    margin-bottom: 4px;
+}
+
+.stocks-extension .stock-card .stock-transactions-box {
+    margin-top: 5px;
+}
+
+.stocks-extension .stock-card .detail-item-label,
+.stocks-extension .stock-card .detail-item-value {
+    font-size: .8em;
 }
