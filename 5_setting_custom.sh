@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo rm -rf /usr/share/gnome-shell/extensions/*
-
 echo "============== [S] 5.Link - shell, script =============="
 rm -rf ~/git/linux_init/script
 ln -s ~/git/linux_init/script ~/script
