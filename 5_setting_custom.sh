@@ -20,7 +20,7 @@ rm -rf ~/Desktop/desktop_usr
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
 rm -rf ~/Games
-ln -s /media/lwh/backup_disk/lwh/Games ~/Games
+ln -s /media/lwh/lwh_backup1/lwh/Games ~/Games
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 

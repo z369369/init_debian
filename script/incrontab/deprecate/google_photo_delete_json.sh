@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folder_path=/media/$USER/backup_disk/google_photo
+folder_path=/media/$USER/lwh_backup1/google_photo
 
 # using [ expression ] syntax and in place 
 # of File.txt you can write your file name 
