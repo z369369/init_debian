@@ -46,7 +46,6 @@ syncthing
 timeshift #Backup, Restore
 ufw #Firewall
 vim #vi 
-virt-manager
 wget #Download
 wmctrl #move Workspace
 xclip #clipboard for nemo
@@ -95,6 +94,7 @@ org.blender.Blender
 org.fedoraproject.MediaWriter
 org.freecadweb.FreeCAD
 org.gimp.GIMP
+org.gnome.Boxes
 org.gnome.design.Contrast
 org.gnome.design.IconLibrary
 org.gnome.seahorse.Application
