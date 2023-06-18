@@ -7,9 +7,9 @@ echo "============== [S] 4.Install - Flatpak =============="
 
 #sudo add-apt-repository ppa:flatpak/stable
 #by sudo 
-apt update
-apt install -y flatpak
-apt install -y gnome-software-plugin-flatpak
+sudo apt update
+sudo apt install -y flatpak
+sudo apt install -y gnome-software-plugin-flatpak
 
 #by user
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
