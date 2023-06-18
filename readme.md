@@ -5,11 +5,10 @@ alias: Ubuntu
 tags: Software
 ---
 
-# Ubuntu 22.04 Gnome 42.5 custom installation
+# Debian 12 Gnome 43 custom installation
 
-1. Clean up Ubuntu unnecessary services.
+1. Clean up Default unnecessary apps and services.
 2. Install Flatpak and APT packages for me.
-
 
 ## User Information
 

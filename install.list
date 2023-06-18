@@ -4,6 +4,8 @@ chrome-gnome-shell #Gnome Extension
 curl #Used
 deborphan #Used
 fdupes #duplicate file remove
+firefox-esr
+firefox-esr-l10n-ko
 ffmpeg #Used
 gedit #Used gnome editor
 gedit-plugin-multi-edit #Used Gedit multi line
@@ -22,15 +24,12 @@ imwheel #Mouse wheel scroll
 incron #Filesystem crontab
 intel-microcode #resolve kernel message 
 libfuse2 #for Use appimage
-libglib2.0-dev-bin #Virt-Manager
 libqt5svg5 #JPG to SVG
-libvirt-clients #Virt-Manager
-libvirt-daemon-system #Virt-Manager
+libavcodec-extra #debian video codec
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
 nautilus-admin
-nautilus-gtkhash
 nautilus-image-converter
 ncdu #du
 nemo #mint file manager
@@ -38,12 +37,12 @@ neofetch #pfetch alternative
 net-tools #Used
 pandoc #file converter
 pydf #df
-python3.10-venv #python virtual_env install
+printer-driver-all
 rsync #Used
 software-properties-common #Gnome Software
 synaptic #Package manager
+syncthing
 timeshift #Backup, Restore
-ubuntu-restricted-extras #Codec mp4, video, autdio
 ufw #Firewall
 vim #vi 
 virt-manager
@@ -68,6 +67,7 @@ com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
 com.transmissionbt.Transmission
 com.usebottles.bottles
+com.visualstudio.code
 com.valvesoftware.Steam
 com.vscodium.codium
 de.haeckerfelix.Shortwave

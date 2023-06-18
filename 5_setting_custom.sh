@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "============== [S] 5.Link - shell, script =============="
-rm -rf ~/git/linux_init/script
+rm -rf ~/script
 ln -s ~/git/linux_init/script ~/script
 
 rm -rf ~/.local/share/gnome-shell
@@ -29,8 +29,6 @@ rsync -a ~/git/linux_init/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/linux_init/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
 echo "============== [E] 5.Link - shell, script =============="
-
-
 
 echo "============== [S] 5.Nemo =============="
 
@@ -60,14 +58,6 @@ gsettings set org.gnome.desktop.sound event-sounds false
 
 echo "============== [E] 5.Link - Gnome Extension =============="
 
-
-
-echo "============== [S] 5.Remove - Ubuntu ESM =============="
-
-sudo mkdir /etc/apt/apt.conf.d/off
-sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf /etc/apt/apt.conf.d/off
-
-echo "============== [S] 5.Remove - Ubuntu ESM =============="
 
 sudo cp 99_organize /etc/apt/apt.conf.d/
 sudo chmod 644 /etc/apt/apt.conf.d/99_organize

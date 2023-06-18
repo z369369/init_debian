@@ -3,6 +3,7 @@ aptitude
 atomix
 cheese
 deja-dup
+evolution
 five-or-more
 four-in-a-row
 gnome-2048
@@ -23,7 +24,8 @@ iagno
 lightsoff
 quadrapassel
 rhythmbox
-sgt-launcher
+shotwell
+#sgt-launcher
 sgt-puzzles
 swell-foop
 tali
