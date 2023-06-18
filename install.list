@@ -23,6 +23,7 @@ imagemagick #Image converter
 imwheel #Mouse wheel scroll
 incron #Filesystem crontab
 intel-microcode #resolve kernel message 
+libnotify-bin #debian gnome notify
 libfuse2 #for Use appimage
 libqt5svg5 #JPG to SVG
 libavcodec-extra #debian video codec
