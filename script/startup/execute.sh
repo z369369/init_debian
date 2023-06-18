@@ -6,9 +6,10 @@ cat ~/.key | sudo -S ufw default deny outgoing
 cat ~/.key | sudo -S systemctl start bluetooth.service
 
 gnome-terminal
-nohup syncthing --allow-newer-config 1> /dev/null 2>&1 &
 nohup nautilus ~ 1> /dev/null 2>&1 &
 nohup firefox-esr 1> /dev/null 2>&1 &
+nohup syncthing --allow-newer-config --no-browser 1> /dev/null 2>&1 &
+wmctrl -s 2
 disown
 
 exit 0

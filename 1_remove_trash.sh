@@ -14,3 +14,4 @@ sudo rm -rf /usr/share/gnome-shell/extensions/*
 echo "============== [S] 1.Remove - Ubuntu default extension =============="
 
 sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl disable systemd-timesyncd.service

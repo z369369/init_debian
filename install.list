@@ -26,7 +26,6 @@ intel-microcode #resolve kernel message
 libnotify-bin #debian gnome notify
 libfuse2 #for Use appimage
 libqt5svg5 #JPG to SVG
-libavcodec-extra #debian video codec
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
@@ -38,6 +37,7 @@ neofetch #pfetch alternative
 net-tools #Used
 pandoc #file converter
 pydf #df
+python3.11-venv #python3 virtual env
 printer-driver-all
 rsync #Used
 software-properties-common #Gnome Software
@@ -50,6 +50,18 @@ virt-manager
 wget #Download
 wmctrl #move Workspace
 xclip #clipboard for nemo
+ttf-mscorefonts-installer #for debian alternative restrict extra
+rar #for debian alternative restrict extra
+unrar #for debian alternative restrict extra
+libavcodec-extra #for debian alternative restrict extra
+gstreamer1.0-libav #for debian alternative restrict extra
+gstreamer1.0-plugins-ugly #for debian alternative restrict extra
+gstreamer1.0-vaapi #for debian alternative restrict extra
+fonts-crosextra-carlito #for debian extra ms font 
+fonts-crosextra-caladea #for debian extra ms font
+build-essential #for debian essential 
+dkms #for debian essential
+linux-headers-$(uname -r) #for debian essential
 
 *
 
