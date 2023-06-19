@@ -60,26 +60,8 @@ gsettings set org.gnome.desktop.sound event-sounds false
 echo "============== [E] 5.Link - Gnome Extension =============="
 
 
-sudo cp 99_organize /etc/apt/apt.conf.d/
-sudo chmod 644 /etc/apt/apt.conf.d/99_organize
-
-# [backup] .config
-# cd ~
-# mv -f ~/linux_init/home/*.tar ~/
-# tar xvf shell*.tar
-# tar xvf config*.tar
-# dconf load /org/gnome/ < ~/linux_init/home/dump_dconf_gnome
-# gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
-
-#if you want, ipv6 disable edit below
-#sudo vi /etc/default/ufw 
-
-#nautilus
-# git clone https://github.com/angela-d/nautilus-right-click-new-file.git && cd nautilus-right-click-new-file
-# ./automate.sh
-
-# git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
-
+#sudo cp 99_organize /etc/apt/apt.conf.d/
+#sudo chmod 644 /etc/apt/apt.conf.d/99_organize
 
 echo "============== [S] 5.Set Sudo key file =============="
 
