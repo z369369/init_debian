@@ -7,7 +7,7 @@ E_NOTROOT=87 # Non-root exit error.
 ## check if is sudoer
 if ! $(sudo -l &> /dev/null); then
     echo "[1/3] root privileges are needed to run this script"
-    echo "User lwh should be in a sudo user group"
+    echo "  User lwh should be in a sudo user group"
     echo ""
     echo "  su -"
     echo "  adduser lwh sudo"
@@ -34,5 +34,5 @@ if [ $? -eq 0 ]; then
     ./34_install_flatpak.sh
     ./35_setting_custom.sh    
 else
-    echo "Please check Internet connection"
+    echo "[3/3] Please check Internet connection"
 fi
