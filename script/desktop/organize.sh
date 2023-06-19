@@ -20,7 +20,7 @@ mv *.pdf *.doc *.ppt *.xls *.xlsx /home/lwh/Documents 2> /dev/null
 mv *.txt *.ovpn /home/lwh/Downloads/Download_Home 2> /dev/null
 
 # Scripts
-mv *.py *.rb *.sh /home/lwh/git/linux_init/script 2> /dev/null
+mv *.py *.rb *.sh /home/lwh/git/init_debian/script 2> /dev/null
 
 #Compressed Files
 mv *.rar *.zip *.tar *.tar.gz *.7z *.deb *.AppImage *.flatpakref /home/lwh/Downloads/zip 2> /dev/null
@@ -41,5 +41,5 @@ rm -rf /home/lwh/.var/app/com.usebottles.bottles/data/bottles/temp/*
 rsync -a --delete --exclude-from /home/lwh --exclude .var/app/org.gnome.Boxes --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Downloads/iso --exclude .cache  /home/lwh/ /media/lwh/lwh_backup1/lwh/
 cat /home/lwh/.key | sudo -S rsync -a --delete /etc/ /media/lwh/lwh_backup1/etc/
 
-dconf dump / > /home/lwh/git/linux_init/gnome-shell/dconf_backup
-#dconf load / < /home/lwh/git/linux_init/gnome-shell/dconf_backup
+dconf dump / > /home/lwh/git/init_debian/gnome-shell/dconf_backup
+#dconf load / < /home/lwh/git/init_debian/gnome-shell/dconf_backup

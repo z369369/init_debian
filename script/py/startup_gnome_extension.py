@@ -34,7 +34,7 @@ def get_file_modification_date(file_path):
 
 
 if __name__ == '__main__':
-    ext_path = '/home/lwh/git/linux_init/gnome-shell/extensions'
+    ext_path = '/home/lwh/git/init_debian/gnome-shell/extensions'
     a_ext_list = os.listdir(ext_path)
     a_version_all = []
     for item in a_ext_list:

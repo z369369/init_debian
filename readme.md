@@ -12,7 +12,7 @@ tags: Software
 
 ## User Information
 
-installation path : /home/lwh/git/linux_init
+installation path : /home/lwh/git/init_debian
 
 user name : lwh
 
@@ -31,8 +31,8 @@ adduser lwh sudo
 su - lwh
 
 sudo apt -y install git
-git clone https://github.com/ppp821203/linux_init.git ~/git/linux_init
-chmod +x ~/git/linux_init/*.sh
-cd ~/git/linux_init
+git clone https://github.com/ppp821203/init_debian.git ~/git/init_debian
+chmod +x ~/git/init_debian/*.sh
+cd ~/git/init_debian
 ./00_all.sh
 ```

@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "============== [S] 5.Link - shell, script =============="
 rm -rf ~/script
-ln -s ~/git/linux_init/script ~/script
+ln -s ~/git/init_debian/script ~/script
 
 rm -rf ~/.local/share/gnome-shell
-ln -s ~/git/linux_init/gnome-shell ~/.local/share/gnome-shell
+ln -s ~/git/init_debian/gnome-shell ~/.local/share/gnome-shell
 
 rm -rf ~/Templates
-ln -s ~/git/linux_init/Templates ~/Templates
+ln -s ~/git/init_debian/Templates ~/Templates
 
 rm -rf ~/Desktop/desktop_local
 ln -s ~/.local/share/applications ~/Desktop/desktop_local
@@ -24,8 +24,8 @@ ln -s /media/lwh/lwh_backup1/lwh/Games ~/Games
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
 
-rsync -a ~/git/linux_init/local_share/nautilus/ ~/.local/share/nautilus
-rsync -a ~/git/linux_init/local_share/nautilus-python/ ~/.local/share/nautilus-python
+rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
+rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
 echo "============== [E] 5.Link - shell, script =============="
 
@@ -43,7 +43,7 @@ echo "============== [E] 5.Nemo =============="
 
 echo "============== [S] 5.Load - dconf_backup =============="
 
-dconf load / < /home/$USER/git/linux_init/gnome-shell/dconf_backup
+dconf load / < /home/$USER/git/init_debian/gnome-shell/dconf_backup
 
 echo "============== [E] 5.Load - dconf_backup =============="
 
