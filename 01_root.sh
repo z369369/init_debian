@@ -7,9 +7,6 @@ if [ $? -eq 0 ]; then
     ./13_install_apt.sh
     ./13_install_apt.sh
     ./17_setting_firewall.sh
-    ./34_install_flatpak.sh
-    ./35_setting_custom.sh
-    reboot
 else
     echo "Please check Internet connection"
 fi

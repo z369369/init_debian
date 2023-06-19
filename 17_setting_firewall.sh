@@ -1,6 +1,4 @@
 #!/bin/bash
-su -
-
 ufw default deny incoming
 ufw default deny outgoing
 

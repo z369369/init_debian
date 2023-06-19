@@ -1,6 +1,4 @@
 #!/bin/bash
-su - lwh 
-
 echo "============== [S] 34.Install - Flatpak =============="
 
 #by user

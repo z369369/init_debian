@@ -1,6 +1,4 @@
 #!/bin/bash
-su -
-
 echo "============== [S] 13.Install - apt =============="
 
 apt update

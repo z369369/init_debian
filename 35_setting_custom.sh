@@ -1,6 +1,4 @@
 #!/bin/bash
-su - lwh 
-
 echo "============== [S] 5.Link - shell, script =============="
 rm -rf ~/script
 ln -s ~/git/linux_init/script ~/script
@@ -58,10 +56,6 @@ gsettings set org.gnome.shell disable-extension-version-validation true
 gsettings set org.gnome.desktop.sound event-sounds false
 
 echo "============== [E] 5.Link - Gnome Extension =============="
-
-
-#sudo cp 99_organize /etc/apt/apt.conf.d/
-#sudo chmod 644 /etc/apt/apt.conf.d/99_organize
 
 echo "============== [S] 5.Set Sudo key file =============="
 
