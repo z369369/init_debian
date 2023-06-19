@@ -18,11 +18,16 @@ user name : lwh
 
 ## Command
 
+1. Need to add sudo user
+
 ```
 su -
 
 adduser lwh sudo
+```
+2. Excute script
 
+```
 su - lwh
 
 sudo apt -y install git
