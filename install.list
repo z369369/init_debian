@@ -50,9 +50,6 @@ vim #vi
 wget #Download
 wmctrl #move Workspace
 xclip #clipboard for nemo
-ttf-mscorefonts-installer #for debian alternative restrict extra
-rar #for debian alternative restrict extra
-unrar #for debian alternative restrict extra
 libavcodec-extra #for debian alternative restrict extra
 gstreamer1.0-libav #for debian alternative restrict extra
 gstreamer1.0-plugins-ugly #for debian alternative restrict extra
@@ -61,7 +58,6 @@ fonts-crosextra-carlito #for debian extra ms font
 fonts-crosextra-caladea #for debian extra ms font
 build-essential #for debian essential 
 dkms #for debian essential
-linux-headers-$(uname -r) #for debian essential
 
 *
 
