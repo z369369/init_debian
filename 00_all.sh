@@ -29,7 +29,6 @@ if [ $? -eq 0 ]; then
     echo "[3/3] Start custom installation..."
     ./11_remove_trash.sh
     ./13_install_apt.sh
-    ./13_install_apt.sh
     ./17_setting_firewall.sh
     ./34_install_flatpak.sh
     ./35_setting_custom.sh    
