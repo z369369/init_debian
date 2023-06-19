@@ -35,6 +35,7 @@ ncdu #du
 nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
+nginx
 pandoc #file converter
 pydf #df
 python3.11-venv #python3 virtual env
