@@ -1,4 +1,5 @@
 #!/bin/bash
+su - lwh 
 
 echo "============== [S] 5.Link - shell, script =============="
 rm -rf ~/script
