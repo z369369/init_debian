@@ -1,6 +1,4 @@
 #!/bin/bash
-echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
-
 # Check if the user is in the sudo group
 E_NOTROOT=87 # Non-root exit error.
 
@@ -24,6 +22,8 @@ else
     echo "[2/3] You are not lwh"
     exit
 fi
+
+echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
     echo "[3/3] Start custom installation..."
