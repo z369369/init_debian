@@ -20,7 +20,6 @@ user name : lwh
 ```
 sudo apt -y install git
 git clone https://github.com/ppp821203/init_debian.git ~/git/init_debian
-chmod +x ~/git/init_debian/*.sh
 cd ~/git/init_debian
 ./00_all.sh
 ```
