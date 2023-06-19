@@ -22,14 +22,12 @@ user name : lwh
 su -
 
 adduser lwh sudo
-apt -y install git
-git clone https://github.com/ppp821203/linux_init.git /home/lwh/git/linux_init
-chmod +x /home/lwh/git/linux_init/*.sh
-cd /home/lwh/git/linux_init
-./01_root.sh
 
 su - lwh
 
-cd /home/lwh/git/linux_init
-./03_lwh.sh
+sudo apt -y install git
+git clone https://github.com/ppp821203/linux_init.git ~/git/linux_init
+chmod +x ~/git/linux_init/*.sh
+cd ~/git/linux_init
+./00_all.sh
 ```
