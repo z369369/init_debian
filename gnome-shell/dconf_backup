@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='/org/gnome/shell/extensions/dash-to-panel/panel-sizes'
-saved-view='/org/gnome/shell/extensions/dash-to-panel/'
+saved-pathbar-path='/org/nemo/'
+saved-view='/org/'
 show-warning=false
 window-height=847
 window-is-maximized=false
@@ -88,9 +88,15 @@ window-is-maximized=false
 window-width=730
 
 [org/gnome/TextEditor]
+highlight-current-line=true
+restore-session=false
+show-line-numbers=true
+show-map=false
+show-right-margin=false
 spellcheck=false
 style-scheme='Adwaita-dark'
 style-variant='follow'
+use-system-font=true
 
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Seoul', 'RKSS', true, [(0.65537113412387071, 2.2130774915288098)], [(0.65565717613498009, 2.2165632980174781)])>)>]
@@ -145,7 +151,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='region'
 window-state=(1608, 967, false)
 
 [org/gnome/deja-dup]
@@ -182,7 +188,7 @@ apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop',
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'software-properties-drivers.desktop', 'org.gnome.PowerStats.desktop', 'display-im6.q16.desktop', 'org.gnome.Characters.desktop', 'gnome-language-selector.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'update-manager.desktop', 'gtkhash.desktop', 'mc.desktop', 'yelp.desktop', 'hardinfo.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'pavucontrol.desktop', 'org.gnome.seahorse.Application.desktop', 'mcedit.desktop', 'org.gnome.eog.desktop', 'org.gnome.Weather.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Maps.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calendar.desktop', 'transmission-gtk.desktop', 'im-config.desktop', 'org.gnome.Music.desktop', 'io.github.realmazharhussain.GdmSettings.desktop']
+apps=['nm-connection-editor.desktop', 'org.gnome.FileRoller.desktop', 'software-properties-drivers.desktop', 'org.gnome.PowerStats.desktop', 'display-im6.q16.desktop', 'org.gnome.Characters.desktop', 'gnome-language-selector.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'update-manager.desktop', 'gtkhash.desktop', 'mc.desktop', 'yelp.desktop', 'hardinfo.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'pavucontrol.desktop', 'org.gnome.seahorse.Application.desktop', 'mcedit.desktop', 'org.gnome.eog.desktop', 'org.gnome.Weather.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Maps.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calendar.desktop', 'transmission-gtk.desktop', 'im-config.desktop', 'org.gnome.Music.desktop', 'io.github.realmazharhussain.GdmSettings.desktop', 'edit_install.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['gnome-control-center.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.Calculator.desktop', 'usb-creator-gtk.desktop', 'mainline.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'software-properties-gtk.desktop', 'org.gnome.meld.desktop', 'org.gnome.Evince.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Command.SearchProvider.desktop', 'libreoffice-startcenter.desktop']
 name='Unused'
@@ -212,8 +218,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230620-EagleTree_ROW0745890093_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230620-EagleTree_ROW0745890093_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230621-StonehengeSalisbury_ROW8670821497_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230621-StonehengeSalisbury_ROW8670821497_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -651,6 +657,7 @@ theme-name='freedesktop'
 
 [org/gnome/desktop/wm/keybindings]
 always-on-top=['<Super>bracketleft']
+show-desktop=['<Super>d']
 switch-group=@as []
 switch-group-backward=@as []
 switch-input-source=['Hangul']
@@ -797,11 +804,12 @@ active-plugins=['modelines', 'multiedit', 'filebrowser', 'docinfo', 'openlinks',
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/desktop'
+virtual-root='file:///home/lwh'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='NanumBarunGothic YetHangul Bold 12'
 scheme='tango'
+tabs-size=uint32 8
 use-default-font=true
 wrap-last-split-mode='word'
 
@@ -823,14 +831,14 @@ side-panel-visible=false
 open-recent=false
 
 [org/gnome/gedit/state/history-entry]
-replace-with-entry=['Debian', 'https://hitomi', '.html)', 'execute', 'script/startup/', '000_Personal', 'tags: mv', "' {} \\; -exec mv -i {} ../", '| xargs mv -t']
-search-for-entry=['for debian', 'hitomi', 'excute', 'script/', '/home/lwh', '/home/lwh/phone/000_Personal/', 'some-vault-name', 'tags: ', '\tqqq\t']
+replace-with-entry=['nautilus', 'Debian', 'https://hitomi', '.html)', 'execute', 'script/startup/', '000_Personal', 'tags: mv', "' {} \\; -exec mv -i {} ../"]
+search-for-entry=['gnome-terminal', 'for debian', 'hitomi', 'excute', 'script/', '/home/lwh', '/home/lwh/phone/000_Personal/', 'some-vault-name', 'tags: ']
 
 [org/gnome/gedit/state/window]
 bottom-panel-size=139
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(960, 1005)
+size=(1751, 1005)
 state=87168
 
 [org/gnome/gnome-search-tool]
@@ -1058,7 +1066,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(864, 849)
+initial-size=(1237, 868)
 maximized=false
 sidebar-width=236
 start-with-sidebar=true
@@ -1176,11 +1184,14 @@ last-folder-path='/media/lwh/lwh_backup1/Games/HoloCure'
 [org/gnome/portal/filechooser/com.visualstudio.code]
 last-folder-path='/home/lwh/git'
 
+[org/gnome/portal/filechooser/com.vscodium.codium]
+last-folder-path='/home/lwh'
+
 [org/gnome/portal/filechooser/io.github.realmazharhussain.GdmSettings]
 last-folder-path='/home/lwh/.local/share/BingWallpaper'
 
 [org/gnome/portal/filechooser/org.gnome.Boxes]
-last-folder-path='/home/lwh/Downloads'
+last-folder-path='/home/lwh/Downloads/iso'
 
 [org/gnome/power-manager]
 info-history-type='charge'
@@ -1212,16 +1223,18 @@ night-light-last-coordinates=(37.765199280057594, 126.7865)
 
 [org/gnome/settings-daemon/plugins/media-keys]
 control-center=['<Super>comma']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
 decrease-text-size=@as []
-home=['<Super>e']
 search=['<Super>r']
+volume-down=['<Super>period']
+volume-mute=['<Super>m']
+volume-up=['<Super>slash']
 www=['<Super>b']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>g'
-command='gnome-text-editor'
-name='gnome-text-editor'
+command='gedit'
+name='gedit'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>f'
@@ -1236,7 +1249,7 @@ name='google_mail'
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Super>c'
 command='wmctrl -s 4'
-name='move terminal workspace '
+name='gnome-terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Super>grave'
@@ -1258,10 +1271,15 @@ binding='<Super>5'
 command='firefox --new-tab "https://drive.google.com/" '
 name='google_drive'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
-binding='<Super>6'
-command=' '
-name='6'
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Super>t'
+command='nautilus /home/lwh/Desktop'
+name='desktop folder'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]
+binding='<Super>e'
+command='wmctrl -s 3'
+name='nautilus'
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
@@ -1277,12 +1295,12 @@ enabled-connections=@as []
 
 [org/gnome/shell]
 app-picker-layout=[{'Utilities': <{'position': <0>}>, '0af343c0-868a-4007-806c-117c883f87a7': <{'position': <1>}>, '7fa16cfa-2274-4520-83ad-362cc513e263': <{'position': <2>}>, 'c7133631-94b3-4ce3-9bf1-d1545aa5a851': <{'position': <3>}>, 'ef538e80-aafa-499c-999b-a4798c6c61cd': <{'position': <4>}>, 'baf57313-41ee-4a35-bd78-37d55f2fbd44': <{'position': <5>}>, 'software-properties-gtk.desktop': <{'position': <6>}>, 'org.gnome.Software.desktop': <{'position': <7>}>, 'cbf808e2-b1c0-4480-a440-81ea1e3c0c34': <{'position': <8>}>, 'org.gnome.Settings.desktop': <{'position': <9>}>, 'gufw.desktop': <{'position': <10>}>}]
-command-history=['calc', 'gnome-calc', 'R', 'r', 'meld', 'htop', 'gnome-shell-extension-prefs', 'restart', 'lg']
+command-history=['calc', 'gnome-calc', 'R', 'r', 'meld', 'htop', 'gnome-shell-extension-prefs', 'restart', 'lg', 'nl']
 disable-extension-version-validation=false
 disable-user-extensions=false
-disabled-extensions=['workspace-indicator@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'add-to-desktop@tommimon.github.com', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'gsconnect@andyholmes.github.io', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'firefox-pip@bennypowers.com', 'printers@linux-man.org', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'sound-output-device-chooser@kgshank.net', 'openweather-extension@jenslody.de', 'color-picker@tuberry', 'volume-mixer@evermiss.net', 'lookingglass@markbokil.com', 'desktopicons-neo@darkdemon', 'NotificationCounter@coolllsk', 'RemoveAppMenu@Dragon8oy.com', 'simple-timer@majortomvr.github.com', 'youtube-search-provider@atareao.es', 'search-light@icedman.github.com', 'one-thing@github.com', 'quick-settings-tweaks@qwreey', 'dash-to-panel@jderose9.github.com', 'quick-lang-switch@ankostis.gmail.com', 'netspeed@alynx.one', 'vertical-workspaces@G-dH.github.com', 'draw-on-your-screen2@zhrexl.github.com', 'horizontal-workspace-indicator@tty2.io', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'advancedvolumecontrol@mark.johnson.ubuntu.com', 'volume_scroller@francislavoie.github.io', 'topiconsfix@aleskva@devnullmail.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'stocks@infinicode.de', 'quick-settings-audio-panel@rayzeq.github.io', 'gtk4-ding@smedius.gitlab.com']
-favorite-apps=['nemo.desktop', 'com.google.Chrome.desktop', 'com.brave.Browser.desktop', 'com.obsproject.Studio.desktop', 'org.kde.kdenlive.desktop', 'com.vscodium.codium.desktop', 'com.visualstudio.code.desktop', 'md.obsidian.Obsidian.desktop', 'firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'de.haeckerfelix.Shortwave.desktop', 'org.gnome.Boxes.desktop', 'toggle_outgoing.desktop', 'u_abricotine.desktop']
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'date-menu-formatter@marcinjakubowski.github.com', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'panel-date-format@keiii.github.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'add-to-desktop@tommimon.github.com', 'bluetooth-quick-connect@bjarosze.gmail.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'smart-auto-move@khimaros.com', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'IP-Finder@linxgem33.com', 'notes@sam.sambull.org', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'awesome-tiles@velitasali.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'gsconnect@andyholmes.github.io', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'firefox-pip@bennypowers.com', 'printers@linux-man.org', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'sound-output-device-chooser@kgshank.net', 'openweather-extension@jenslody.de', 'color-picker@tuberry', 'volume-mixer@evermiss.net', 'lookingglass@markbokil.com', 'desktopicons-neo@darkdemon', 'NotificationCounter@coolllsk', 'RemoveAppMenu@Dragon8oy.com', 'simple-timer@majortomvr.github.com', 'youtube-search-provider@atareao.es', 'search-light@icedman.github.com', 'one-thing@github.com', 'quick-settings-tweaks@qwreey', 'dash-to-panel@jderose9.github.com', 'quick-lang-switch@ankostis.gmail.com', 'netspeed@alynx.one', 'vertical-workspaces@G-dH.github.com', 'draw-on-your-screen2@zhrexl.github.com', 'horizontal-workspace-indicator@tty2.io', 'windowIsReady_Remover@nunofarruca@gmail.com', 'trayIconsReloaded@selfmade.pl', 'advancedvolumecontrol@mark.johnson.ubuntu.com', 'volume_scroller@francislavoie.github.io', 'topiconsfix@aleskva@devnullmail.com', 'BingWallpaper@ineffable-gmail.com', 'clipboard-indicator@tudmotu.com', 'stocks@infinicode.de', 'quick-settings-audio-panel@rayzeq.github.io', 'gtk4-ding@smedius.gitlab.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['nemo.desktop', 'com.google.Chrome.desktop', 'com.brave.Browser.desktop', 'com.obsproject.Studio.desktop', 'org.kde.kdenlive.desktop', 'com.vscodium.codium.desktop', 'com.visualstudio.code.desktop', 'md.obsidian.Obsidian.desktop', 'firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'de.haeckerfelix.Shortwave.desktop', 'org.gnome.Boxes.desktop', 'toggle_outgoing.desktop', 'u_abricotine.desktop', 'synaptic.desktop']
 had-bluetooth-devices-setup=true
 looking-glass-history=['exi', 'exit', 'quit', 'bye']
 remember-mount-password=true
@@ -1295,7 +1313,7 @@ modifier-key=12
 tray-pos='center'
 
 [org/gnome/shell/extensions/auto-move-windows]
-application-list=['org.gnome.Terminal.desktop:5', 'md.obsidian.Obsidian.desktop:2', 'com.vscodium.codium.desktop:2', 'nemo.desktop:1', 'com.obsproject.Studio.desktop:1', 'org.gnome.Nautilus.desktop:4', 'org.gnome.gThumb.desktop:4', 'org.libreoffice.LibreOffice.calc.desktop:4', 'org.kde.kdenlive.desktop:1', 'com.brave.Browser.desktop:1', 'com.google.Chrome.desktop:1', 'firefox-esr.desktop:3', 'com.visualstudio.code.desktop:2']
+application-list=['md.obsidian.Obsidian.desktop:2', 'com.vscodium.codium.desktop:2', 'com.obsproject.Studio.desktop:1', 'org.gnome.gThumb.desktop:4', 'org.libreoffice.LibreOffice.calc.desktop:4', 'org.kde.kdenlive.desktop:1', 'com.brave.Browser.desktop:1', 'com.google.Chrome.desktop:1', 'firefox-esr.desktop:3', 'com.visualstudio.code.desktop:2', 'nemo.desktop:1', 'org.gnome.Terminal.desktop:5', 'org.gnome.Nautilus.desktop:4']
 
 [org/gnome/shell/extensions/batt_consumption_wattmetter]
 battery=0
@@ -1303,7 +1321,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230613","fullstartdate":"202306130700","enddate":"20230614","url":"/th?id=OHR.OkefenokeeSwamp_ROW0147262744_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.OkefenokeeSwamp_ROW0147262744","copyright":"Spanish moss trees over boardwalk in Okefenokee Swamp, Georgia, USA (© Emmer Photo/Alamy)","copyrightlink":"https://www.bing.com/search?q=Okefenokee+Swamp&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230613_OkefenokeeSwamp%22&FORM=HPQUIZ","wp":true,"hsh":"8dd02d916cdccb294b782d1bd12de81c","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230614","fullstartdate":"202306140700","enddate":"20230615","url":"/th?id=OHR.PassauSunsetJune_ROW3626243500_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.PassauSunsetJune_ROW3626243500","copyright":"The city of Passau reflecting in the Danube River, Bavaria, Germany (© Scott Wilson/Alamy)","copyrightlink":"https://www.bing.com/search?q=Passau%2c+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230614_PassauSunsetJune%22&FORM=HPQUIZ","wp":true,"hsh":"2be4dc2922e96c914820d5a2eef0875b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230615","fullstartdate":"202306150700","enddate":"20230616","url":"/th?id=OHR.SmokyFireflies_ROW1818817703_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SmokyFireflies_ROW1818817703","copyright":"Synchronous fireflies, Great Smoky Mountains National Park, Tennessee, USA (© Floris Van Bruegel/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Fireflies&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230615_SmokyFireflies%22&FORM=HPQUIZ","wp":true,"hsh":"ab5da8e19622deddf0b565f493116e08","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230616","fullstartdate":"202306160700","enddate":"20230617","url":"/th?id=OHR.HawksbillTurtle_ROW6932141533_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.HawksbillTurtle_ROW6932141533","copyright":"Hawksbill sea turtle swims near Akajima, Okinawa, Japan (© Robert Mallon/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Hawksbill+Sea+Turtle+&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230616_HawksbillTurtle%22&FORM=HPQUIZ","wp":true,"hsh":"9368db3f9414b53cdd90a1937488be5b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230617","fullstartdate":"202306170700","enddate":"20230618","url":"/th?id=OHR.CastelluccioUmbria_ROW7425305356_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CastelluccioUmbria_ROW7425305356","copyright":"Castelluccio, Umbria, Italy (© Stefano Termanini/Getty Images)","copyrightlink":"https://www.bing.com/search?q=castelluccio+umbria+italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230617_CastelluccioUmbria%22&FORM=HPQUIZ","wp":true,"hsh":"ef09a07c901c8ca46f66c21e25bea6dc","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230618","fullstartdate":"202306180700","enddate":"20230619","url":"/th?id=OHR.TernFather_ROW8289485728_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TernFather_ROW8289485728","copyright":"Common tern father with chick, Nickerson Beach, Long Island, New York, USA (© Vicki Jauron, Babylon and Beyond Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=common+tern&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230618_TernFather%22&FORM=HPQUIZ","wp":true,"hsh":"24d370e892eb875a1ee5827765b57ad5","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230619","fullstartdate":"202306190700","enddate":"20230620","url":"/th?id=OHR.Fawn_ROW8420643184_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Fawn_ROW8420643184","copyright":"Roe deer fawn running on grass in Normandy, France (© Gerard Lacz/Minden)","copyrightlink":"https://www.bing.com/search?q=roe+deer&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230619_Fawn%22&FORM=HPQUIZ","wp":true,"hsh":"1ee299430ea941cf3b246dce7bffd5d0","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230620","fullstartdate":"202306200700","enddate":"20230621","url":"/th?id=OHR.EagleTree_ROW0745890093_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EagleTree_ROW0745890093","copyright":"Bald eagle, Tongass National Forest, Alaska, USA (© Jaynes Gallery/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=bald+eagle&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230620_EagleTree%22&FORM=HPQUIZ","wp":true,"hsh":"7b9ccf2cf6d31dc485ca7a09bc7571f0","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230614","fullstartdate":"202306140700","enddate":"20230615","url":"/th?id=OHR.PassauSunsetJune_ROW3626243500_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.PassauSunsetJune_ROW3626243500","copyright":"The city of Passau reflecting in the Danube River, Bavaria, Germany (© Scott Wilson/Alamy)","copyrightlink":"https://www.bing.com/search?q=Passau%2c+Germany&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230614_PassauSunsetJune%22&FORM=HPQUIZ","wp":true,"hsh":"2be4dc2922e96c914820d5a2eef0875b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230615","fullstartdate":"202306150700","enddate":"20230616","url":"/th?id=OHR.SmokyFireflies_ROW1818817703_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SmokyFireflies_ROW1818817703","copyright":"Synchronous fireflies, Great Smoky Mountains National Park, Tennessee, USA (© Floris Van Bruegel/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Fireflies&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230615_SmokyFireflies%22&FORM=HPQUIZ","wp":true,"hsh":"ab5da8e19622deddf0b565f493116e08","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230616","fullstartdate":"202306160700","enddate":"20230617","url":"/th?id=OHR.HawksbillTurtle_ROW6932141533_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.HawksbillTurtle_ROW6932141533","copyright":"Hawksbill sea turtle swims near Akajima, Okinawa, Japan (© Robert Mallon/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Hawksbill+Sea+Turtle+&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230616_HawksbillTurtle%22&FORM=HPQUIZ","wp":true,"hsh":"9368db3f9414b53cdd90a1937488be5b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230617","fullstartdate":"202306170700","enddate":"20230618","url":"/th?id=OHR.CastelluccioUmbria_ROW7425305356_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CastelluccioUmbria_ROW7425305356","copyright":"Castelluccio, Umbria, Italy (© Stefano Termanini/Getty Images)","copyrightlink":"https://www.bing.com/search?q=castelluccio+umbria+italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230617_CastelluccioUmbria%22&FORM=HPQUIZ","wp":true,"hsh":"ef09a07c901c8ca46f66c21e25bea6dc","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230618","fullstartdate":"202306180700","enddate":"20230619","url":"/th?id=OHR.TernFather_ROW8289485728_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.TernFather_ROW8289485728","copyright":"Common tern father with chick, Nickerson Beach, Long Island, New York, USA (© Vicki Jauron, Babylon and Beyond Photography/Getty Images)","copyrightlink":"https://www.bing.com/search?q=common+tern&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230618_TernFather%22&FORM=HPQUIZ","wp":true,"hsh":"24d370e892eb875a1ee5827765b57ad5","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230619","fullstartdate":"202306190700","enddate":"20230620","url":"/th?id=OHR.Fawn_ROW8420643184_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.Fawn_ROW8420643184","copyright":"Roe deer fawn running on grass in Normandy, France (© Gerard Lacz/Minden)","copyrightlink":"https://www.bing.com/search?q=roe+deer&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230619_Fawn%22&FORM=HPQUIZ","wp":true,"hsh":"1ee299430ea941cf3b246dce7bffd5d0","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230620","fullstartdate":"202306200700","enddate":"20230621","url":"/th?id=OHR.EagleTree_ROW0745890093_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EagleTree_ROW0745890093","copyright":"Bald eagle, Tongass National Forest, Alaska, USA (© Jaynes Gallery/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=bald+eagle&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230620_EagleTree%22&FORM=HPQUIZ","wp":true,"hsh":"7b9ccf2cf6d31dc485ca7a09bc7571f0","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230621","fullstartdate":"202306210700","enddate":"20230622","url":"/th?id=OHR.StonehengeSalisbury_ROW8670821497_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.StonehengeSalisbury_ROW8670821497","copyright":"Stonehenge, Salisbury Plain, Wiltshire, England (© Captain Skyhigh/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Stonehenge+england&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230621_StonehengeSalisbury%22&FORM=HPQUIZ","wp":true,"hsh":"cae6e6ee9fa3cdf9d0ad22da815849e1","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1315,7 +1333,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202306200700,"title":"Bald eagle, Tongass National Forest, Alaska, USA","explanation":"오늘의 Bing 배경화면은 2023-06-20","copyright":"© Jaynes Gallery/Shutterstock","longstartdate":"202306200700","imageinfolink":"https://www.bing.com/search?q=bald+eagle&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.EagleTree_ROW0745890093_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230620-EagleTree_ROW0745890093_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202306210700,"title":"Stonehenge, Salisbury Plain, Wiltshire, England","explanation":"오늘의 Bing 배경화면은 2023-06-21","copyright":"© Captain Skyhigh/Getty Images","longstartdate":"202306210700","imageinfolink":"https://www.bing.com/search?q=Stonehenge+england&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.StonehengeSalisbury_ROW8670821497_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230621-StonehengeSalisbury_ROW8670821497_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1339,6 +1357,7 @@ disable-down-arrow=true
 display-mode=0
 enable-keybindings=false
 history-size=20
+preview-size=20
 strip-text=true
 topbar-preview-size=15
 
@@ -1866,7 +1885,6 @@ freeze-saves=false
 match-threshold=0.69999999999999996
 overrides='{}'
 save-frequency=1000
-saved-windows="{\"gnome-terminal-server\":[{\"id\":910680791,\"hash\":910680791,\"sequence\":2,\"title\":\"crontab (/tmp/crontab.YM08Du) - VIM\",\"workspace\":4,\"maximized\":0,\"x\":46,\"y\":66,\"width\":1058,\"height\":821,\"occupied\":false},{\"id\":3597105501,\"hash\":3597105501,\"sequence\":115,\"title\":\"Terminal\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1184,\"height\":859,\"occupied\":false},{\"id\":2082189849,\"hash\":2082189849,\"sequence\":33,\"title\":\"lwh@lwh-laptop: ~/script/startup\",\"workspace\":4,\"maximized\":0,\"x\":11,\"y\":60,\"width\":986,\"height\":909,\"occupied\":false},{\"id\":4081739487,\"hash\":4081739487,\"sequence\":2,\"title\":\"lwh@lwh-laptop: /usr/share/glib-2.0/schemas\",\"workspace\":4,\"maximized\":0,\"x\":19,\"y\":60,\"width\":1094,\"height\":711,\"occupied\":false},{\"id\":1798774722,\"hash\":1798774722,\"sequence\":3,\"title\":\"lwh@lwh-laptop: ~\",\"workspace\":4,\"maximized\":0,\"x\":14,\"y\":116,\"width\":1094,\"height\":777,\"occupied\":false}],\"org.gnome.Nautilus\":[{\"id\":3597105473,\"hash\":3597105473,\"sequence\":87,\"title\":\"applications\",\"workspace\":2,\"maximized\":0,\"x\":346,\"y\":104,\"width\":1539,\"height\":814,\"occupied\":false},{\"id\":3597105435,\"hash\":3597105435,\"sequence\":49,\"title\":\"Home\",\"workspace\":2,\"maximized\":0,\"x\":439,\"y\":424,\"width\":1539,\"height\":814,\"occupied\":false},{\"id\":2966842710,\"hash\":2966842710,\"sequence\":4,\"title\":\".config\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2966842746,\"hash\":2966842746,\"sequence\":40,\"title\":\"내 드라이브\",\"workspace\":3,\"maximized\":0,\"x\":100,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2966842750,\"hash\":2966842750,\"sequence\":44,\"title\":\"xfce4\",\"workspace\":3,\"maximized\":0,\"x\":100,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2036621033,\"hash\":2036621033,\"sequence\":4,\"title\":\"iso\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":514624003,\"hash\":514624003,\"sequence\":4,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":29,\"y\":38,\"width\":1035,\"height\":963,\"occupied\":false},{\"id\":3562880519,\"hash\":3562880519,\"sequence\":4,\"title\":\"etc\",\"workspace\":3,\"maximized\":0,\"x\":73,\"y\":74,\"width\":1145,\"height\":984,\"occupied\":false},{\"id\":3562880563,\"hash\":3562880563,\"sequence\":48,\"title\":\"backup_disk\",\"workspace\":3,\"maximized\":0,\"x\":21,\"y\":117,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1428944602,\"hash\":1428944602,\"sequence\":4,\"title\":\"urllib\",\"workspace\":3,\"maximized\":0,\"x\":115,\"y\":117,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":3203105216,\"hash\":3203105216,\"sequence\":4,\"title\":\"git\",\"workspace\":3,\"maximized\":0,\"x\":115,\"y\":117,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":3562880685,\"hash\":3562880685,\"sequence\":170,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":807224228,\"hash\":807224228,\"sequence\":3,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1277727604,\"hash\":1277727604,\"sequence\":4,\"title\":\"Downloads\",\"workspace\":3,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1277727740,\"hash\":1277727740,\"sequence\":140,\"title\":\"“bra” 검색\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1277727745,\"hash\":1277727745,\"sequence\":145,\"title\":\"“brave” 검색\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":24,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1540388692,\"hash\":1540388692,\"sequence\":4,\"title\":\"Obsidian\",\"workspace\":3,\"maximized\":0,\"x\":8,\"y\":43,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2855351432,\"hash\":2855351432,\"sequence\":5,\"title\":\"icons\",\"workspace\":3,\"maximized\":0,\"x\":177,\"y\":39,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1331023007,\"hash\":1331023007,\"sequence\":14,\"title\":\"“Bookmark” 검색\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1331023014,\"hash\":1331023014,\"sequence\":21,\"title\":\"“BOOKMARK” 검색\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":24,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1331023030,\"hash\":1331023030,\"sequence\":37,\"title\":\"remix-icons\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1278,\"height\":947,\"occupied\":false},{\"id\":1331023128,\"hash\":1331023128,\"sequence\":135,\"title\":\"obsidian-icon-folder\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":24,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2301075150,\"hash\":2301075150,\"sequence\":3,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":19,\"y\":57,\"width\":967,\"height\":963,\"occupied\":false},{\"id\":4121249314,\"hash\":4121249314,\"sequence\":4,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":4121249365,\"hash\":4121249365,\"sequence\":55,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2431852970,\"hash\":2431852970,\"sequence\":3,\"title\":\"schemas\",\"workspace\":3,\"maximized\":0,\"x\":450,\"y\":56,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":3740161760,\"hash\":3740161760,\"sequence\":37,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":4081739488,\"hash\":4081739488,\"sequence\":3,\"title\":\"“org.gnome.shell.extensions.one-thing.gschema.xml” 검색\",\"workspace\":3,\"maximized\":0,\"x\":46,\"y\":55,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2767006277,\"hash\":2767006277,\"sequence\":3,\"title\":\"py\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":2082189821,\"hash\":2082189821,\"sequence\":5,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":410993319,\"hash\":410993319,\"sequence\":5,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":450,\"y\":56,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":830247518,\"hash\":830247518,\"sequence\":3,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":450,\"y\":56,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":653038007,\"hash\":653038007,\"sequence\":3,\"title\":\"startup\",\"workspace\":3,\"maximized\":0,\"x\":450,\"y\":56,\"width\":1018,\"height\":963,\"occupied\":false},{\"id\":1798774771,\"hash\":1798774771,\"sequence\":52,\"title\":\"내 폴더\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":76,\"width\":1018,\"height\":963,\"occupied\":false}],\"dconf-editor\":[{\"id\":3597105401,\"hash\":3597105401,\"sequence\":15,\"title\":\"dconf Editor\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1259,\"height\":554,\"occupied\":false},{\"id\":3740161741,\"hash\":3740161741,\"sequence\":18,\"title\":\"dconf 편집기\",\"workspace\":1,\"maximized\":0,\"x\":100,\"y\":126,\"width\":1066,\"height\":896,\"occupied\":false}],\"firefox\":[{\"id\":3564265124,\"hash\":3564265124,\"sequence\":6,\"title\":\"Desktop Screenshot Megathread : linuxmasterrace — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":77,\"width\":1273,\"height\":1108,\"occupied\":false},{\"id\":2855351434,\"hash\":2855351434,\"sequence\":7,\"title\":\"11plus-mall.com라인쇼핑센터 — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":6,\"y\":35,\"width\":1787,\"height\":1043,\"occupied\":false},{\"id\":2966842717,\"hash\":2966842717,\"sequence\":11,\"title\":\"ChrisTitusTech - Twitch — Mozilla Firefox\",\"workspace\":2,\"maximized\":2,\"x\":0,\"y\":24,\"width\":960,\"height\":1056,\"occupied\":false},{\"id\":2966842727,\"hash\":2966842727,\"sequence\":21,\"title\":\"Opening xubuntu-23.04-desktop-amd64.iso.torrent\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":544,\"height\":423,\"occupied\":false},{\"id\":416128569,\"hash\":416128569,\"sequence\":10,\"title\":\"Picture-in-Picture\",\"workspace\":2,\"maximized\":0,\"x\":297,\"y\":571,\"width\":655,\"height\":368,\"occupied\":false},{\"id\":4081739513,\"hash\":4081739513,\"sequence\":28,\"title\":\"로그인, 믿고 사는 즐거움 SSG.COM — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":30,\"y\":44,\"width\":936,\"height\":757,\"occupied\":false},{\"id\":3694577569,\"hash\":3694577569,\"sequence\":29,\"title\":\"에펨코리아 - 유머, 축구, 아프리카TV, 게임, 풋볼매니저, 에펨, 펨코 — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":101,\"y\":37,\"width\":1025,\"height\":1008,\"occupied\":false},{\"id\":2036621034,\"hash\":2036621034,\"sequence\":5,\"title\":\"기묘한이야기, 송깨비 : 네이버 블로그 — Mozilla Firefox\",\"workspace\":2,\"maximized\":3,\"x\":0,\"y\":24,\"width\":1920,\"height\":1056,\"occupied\":false},{\"id\":2036621125,\"hash\":2036621125,\"sequence\":96,\"title\":\"Opening volume-mixer.zip\",\"workspace\":2,\"maximized\":0,\"x\":100,\"y\":124,\"width\":544,\"height\":391,\"occupied\":false},{\"id\":3756201543,\"hash\":3756201543,\"sequence\":7,\"title\":\"Linux Questions — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":220,\"y\":45,\"width\":1077,\"height\":1060,\"occupied\":false},{\"id\":1277727615,\"hash\":1277727615,\"sequence\":15,\"title\":\"Opening my-ublock-backup_2023-05-06_13.46.36.txt\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":544,\"height\":423,\"occupied\":false},{\"id\":3203105288,\"hash\":3203105288,\"sequence\":76,\"title\":\"Opening 미국여행 준비물.xlsx\",\"workspace\":2,\"maximized\":0,\"x\":161,\"y\":240,\"width\":544,\"height\":391,\"occupied\":false},{\"id\":3562880677,\"hash\":3562880677,\"sequence\":162,\"title\":\"Page Info — https://hitomi.la/\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":782,\"height\":799,\"occupied\":false},{\"id\":1277727691,\"hash\":1277727691,\"sequence\":91,\"title\":\"Opening ech.dns\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":544,\"height\":255,\"occupied\":false},{\"id\":2301075202,\"hash\":2301075202,\"sequence\":55,\"title\":\"Opening com.bitwarden.desktop.flatpakref\",\"workspace\":2,\"maximized\":0,\"x\":100,\"y\":124,\"width\":544,\"height\":391,\"occupied\":false},{\"id\":1540388813,\"hash\":1540388813,\"sequence\":125,\"title\":\"Opening amrc_198912_cna_00985_013.tif\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":544,\"height\":423,\"occupied\":false},{\"id\":3740161728,\"hash\":3740161728,\"sequence\":5,\"title\":\"에펨코리아 - 유머, 축구, 아프리카TV, 게임, 풋볼매니저, 에펨, 펨코 — Mozilla Firefox\",\"workspace\":2,\"maximized\":2,\"x\":0,\"y\":26,\"width\":1048,\"height\":1054,\"occupied\":false},{\"id\":4081739515,\"hash\":4081739515,\"sequence\":30,\"title\":\"SSGPAY 혜택위의 혜택 — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":950,\"height\":976,\"occupied\":false},{\"id\":7377524,\"hash\":7377524,\"sequence\":5,\"title\":\"미스터리/공포 - 에펨코리아 — Mozilla Firefox\",\"workspace\":2,\"maximized\":0,\"x\":36,\"y\":35,\"width\":1122,\"height\":1094,\"occupied\":false},{\"id\":1556607780,\"hash\":1556607780,\"sequence\":6,\"title\":\"Riot Games - Twitch — Mozilla Firefox\",\"workspace\":2,\"maximized\":2,\"x\":0,\"y\":0,\"width\":1920,\"height\":1080,\"occupied\":false},{\"id\":2431853239,\"hash\":2431853239,\"sequence\":272,\"title\":\"Opening client_secret_448904505678-1o05cd17gbu4ldkhjjc331kmfogrbvea.apps.googleusercontent.com.json\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":76,\"width\":544,\"height\":423,\"occupied\":false},{\"id\":1798774777,\"hash\":1798774777,\"sequence\":58,\"title\":\"무려 20년간 내전을? 쿠데타의 나라, 수단 [수단 3부] - YouTube — Mozilla Firefox\",\"workspace\":2,\"maximized\":2,\"x\":1274,\"y\":26,\"width\":646,\"height\":1054,\"occupied\":false},{\"id\":1798774743,\"hash\":1798774743,\"sequence\":24,\"title\":\"YouTube — Mozilla Firefox\",\"workspace\":0,\"maximized\":2,\"x\":1120,\"y\":26,\"width\":800,\"height\":1054,\"occupied\":false},{\"id\":1798774725,\"hash\":1798774725,\"sequence\":6,\"title\":\"sweet_lena0 - Twitch — Mozilla Firefox\",\"workspace\":2,\"maximized\":2,\"x\":1141,\"y\":26,\"width\":779,\"height\":1054,\"occupied\":false}],\"Google-chrome\":[{\"id\":3597105415,\"hash\":3597105415,\"sequence\":29,\"title\":\"Installed Extensions - GNOME Shell Extensions - Google Chrome\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1082,\"height\":1056,\"occupied\":false},{\"id\":3597105457,\"hash\":3597105457,\"sequence\":71,\"title\":\"Xbox.com에서 Xbox Cloud Gaming(베타) - Google Chrome\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1082,\"height\":1056,\"occupied\":false},{\"id\":3597105512,\"hash\":3597105512,\"sequence\":126,\"title\":\"Installed Extensions - GNOME Shell Extensions - Google Chrome\",\"workspace\":1,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1746,\"height\":1056,\"occupied\":false},{\"id\":1277727670,\"hash\":1277727670,\"sequence\":70,\"title\":\"날씨 - YouTube - Chrome\",\"workspace\":0,\"maximized\":2,\"x\":1279,\"y\":24,\"width\":641,\"height\":1056,\"occupied\":false},{\"id\":1331023045,\"hash\":1331023045,\"sequence\":52,\"title\":\"Boxy SVG Editor - Chrome\",\"workspace\":0,\"maximized\":0,\"x\":35,\"y\":41,\"width\":1121,\"height\":999,\"occupied\":false},{\"id\":2319640009,\"hash\":2319640009,\"sequence\":3,\"title\":\"설정 - 시작 그룹 - Chrome\",\"workspace\":2,\"maximized\":0,\"x\":1279,\"y\":24,\"width\":641,\"height\":1056,\"occupied\":false},{\"id\":1277727603,\"hash\":1277727603,\"sequence\":3,\"title\":\"단백질 도둑 - YouTube - Chrome\",\"workspace\":2,\"maximized\":0,\"x\":1181,\"y\":24,\"width\":739,\"height\":1056,\"occupied\":false},{\"id\":1277727654,\"hash\":1277727654,\"sequence\":54,\"title\":\"Cloudflare Browser Check | Cloudflare - Chrome\",\"workspace\":2,\"maximized\":0,\"x\":1199,\"y\":24,\"width\":721,\"height\":1056,\"occupied\":false},{\"id\":1277727786,\"hash\":1277727786,\"sequence\":186,\"title\":\"설정 - 시작 그룹 - Chrome\",\"workspace\":0,\"maximized\":0,\"x\":1279,\"y\":24,\"width\":641,\"height\":1056,\"occupied\":false},{\"id\":1023958069,\"hash\":1023958069,\"sequence\":62,\"title\":\"패리입니다 - Twitch - Chrome\",\"workspace\":0,\"maximized\":0,\"x\":35,\"y\":45,\"width\":1121,\"height\":999,\"occupied\":false},{\"id\":4121249337,\"hash\":4121249337,\"sequence\":27,\"title\":\"패리입니다 - Twitch - Chrome\",\"workspace\":0,\"maximized\":2,\"x\":1366,\"y\":26,\"width\":554,\"height\":1054,\"occupied\":false},{\"id\":3756201619,\"hash\":3756201619,\"sequence\":83,\"title\":\"Xbox 공식 사이트: 콘솔, 게임 및 커뮤니티 | Xbox - Chrome\",\"workspace\":0,\"maximized\":0,\"x\":214,\"y\":105,\"width\":554,\"height\":1054,\"occupied\":false}],\"mainline-gtk\":[{\"id\":2431853146,\"hash\":2431853146,\"sequence\":179,\"title\":\"Ubuntu Mainline Kernel Installer\",\"workspace\":4,\"maximized\":0,\"x\":168,\"y\":172,\"width\":812,\"height\":649,\"occupied\":false}],\"gedit\":[{\"id\":1277727747,\"hash\":1277727747,\"sequence\":147,\"title\":\"com.brave.Browser.desktop (~/Desktop/desktop_flatpak) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1186,\"height\":747,\"occupied\":false},{\"id\":1331023044,\"hash\":1331023044,\"sequence\":51,\"title\":\"InkBottleFill.svg (~/) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":514624099,\"hash\":514624099,\"sequence\":100,\"title\":\"NYPW.txt (~/.config/Code/User/History/-1e6ffb93) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":2431853243,\"hash\":2431853243,\"sequence\":276,\"title\":\"client_secret_lwh.json (~/.ssh/.credentials) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":1540388833,\"hash\":1540388833,\"sequence\":145,\"title\":\"google_photo_delete_json.sh (~/script/incrontab/deprecate) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":0,\"y\":64,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":2082189846,\"hash\":2082189846,\"sequence\":30,\"title\":\"execute_loop.sh (~/script/startup) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":122,\"y\":357,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":1540388857,\"hash\":1540388857,\"sequence\":169,\"title\":\"주말집에서 방울 토마토 주스토마토 생과일주스 너무 맛있어요 꿀팁톡톡.md (~/phone/005_Food/Recipe) - gedit\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":24,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":1331023151,\"hash\":1331023151,\"sequence\":158,\"title\":\"main.js (~/phone/000_Personal/.obsidian/plugins/obsidian-icon-folder) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1018,\"height\":982,\"occupied\":false},{\"id\":3740161754,\"hash\":3740161754,\"sequence\":31,\"title\":\"gedit\",\"workspace\":3,\"maximized\":0,\"x\":-165,\"y\":149,\"width\":1224,\"height\":982,\"occupied\":false},{\"id\":653038070,\"hash\":653038070,\"sequence\":66,\"title\":\".bashrc (~/) - gedit\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":26,\"width\":1018,\"height\":982,\"occupied\":false}],\"gnome-control-center\":[{\"id\":3597105488,\"hash\":3597105488,\"sequence\":102,\"title\":\"Settings\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":980,\"height\":817,\"occupied\":false},{\"id\":3756201658,\"hash\":3756201658,\"sequence\":122,\"title\":\"설정\",\"workspace\":1,\"maximized\":0,\"x\":50,\"y\":74,\"width\":980,\"height\":819,\"occupied\":false}],\"Timeshift-gtk\":[{\"id\":3756201576,\"hash\":3756201576,\"sequence\":40,\"title\":\"Timeshift\",\"workspace\":4,\"maximized\":0,\"x\":336,\"y\":221,\"width\":800,\"height\":637,\"occupied\":false},{\"id\":3756201573,\"hash\":3756201573,\"sequence\":37,\"title\":\"스냅샷 만들기\",\"workspace\":4,\"maximized\":0,\"x\":710,\"y\":303,\"width\":500,\"height\":773,\"occupied\":false}],\"Code\":[{\"id\":2966842764,\"hash\":2966842764,\"sequence\":58,\"title\":\"extension.js - Git (Workspace) - Visual Studio Code\",\"workspace\":1,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1078,\"height\":1056,\"occupied\":false},{\"id\":3562880703,\"hash\":3562880703,\"sequence\":188,\"title\":\"git - Visual Studio Code\",\"workspace\":1,\"maximized\":2,\"x\":-153,\"y\":24,\"width\":1171,\"height\":1056,\"occupied\":false},{\"id\":2388901786,\"hash\":2388901786,\"sequence\":9,\"title\":\"extension.js - git - Visual Studio Code\",\"workspace\":1,\"maximized\":0,\"x\":-209,\"y\":157,\"width\":1171,\"height\":792,\"occupied\":false},{\"id\":2767006298,\"hash\":2767006298,\"sequence\":24,\"title\":\"git - Visual Studio Code\",\"workspace\":1,\"maximized\":2,\"x\":0,\"y\":26,\"width\":1171,\"height\":1054,\"occupied\":false}],\"Chromium-browser\":[{\"id\":3694577545,\"hash\":3694577545,\"sequence\":5,\"title\":\"얼룩말 세로 여친 최초 공개!…동물원 '매칭률 100%' 운명 아닌 과학에 답이 있다? / E클립스 / 비디오머그 - YouTube - Chromium\",\"workspace\":1,\"maximized\":2,\"x\":1224,\"y\":24,\"width\":696,\"height\":1056,\"occupied\":false},{\"id\":3907790878,\"hash\":3907790878,\"sequence\":5,\"title\":\"띵귤_ - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1164,\"y\":24,\"width\":756,\"height\":1056,\"occupied\":false},{\"id\":2723262013,\"hash\":2723262013,\"sequence\":5,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":1,\"maximized\":2,\"x\":1226,\"y\":24,\"width\":694,\"height\":1056,\"occupied\":false},{\"id\":3083880923,\"hash\":3083880923,\"sequence\":5,\"title\":\"고차비 - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1154,\"y\":24,\"width\":766,\"height\":1056,\"occupied\":false},{\"id\":2036621035,\"hash\":2036621035,\"sequence\":6,\"title\":\"ChrisTitusTech - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1224,\"y\":24,\"width\":696,\"height\":1056,\"occupied\":false},{\"id\":2530532393,\"hash\":2530532393,\"sequence\":5,\"title\":\"ChrisTitusTech - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1224,\"y\":24,\"width\":696,\"height\":1056,\"occupied\":false},{\"id\":2178606212,\"hash\":2178606212,\"sequence\":5,\"title\":\"고차비 - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1154,\"y\":24,\"width\":766,\"height\":1056,\"occupied\":false},{\"id\":1568434519,\"hash\":1568434519,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":2611138332,\"hash\":2611138332,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":1941939607,\"hash\":1941939607,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":2826014945,\"hash\":2826014945,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":416128564,\"hash\":416128564,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":513174002,\"hash\":513174002,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":3036693592,\"hash\":3036693592,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1214,\"y\":24,\"width\":706,\"height\":1056,\"occupied\":false},{\"id\":2680668211,\"hash\":2680668211,\"sequence\":5,\"title\":\"Linux vs Windows? Best choice for Use, Learning, Programming, a Career? - YouTube - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1071,\"y\":24,\"width\":849,\"height\":1056,\"occupied\":false},{\"id\":514624143,\"hash\":514624143,\"sequence\":144,\"title\":\"[날씨] 어린이날 호우 주의‥내일 낮 대부분 비 그쳐 (2023.05.05/뉴스투데이/MBC) - YouTube - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1123,\"y\":24,\"width\":797,\"height\":1056,\"occupied\":false},{\"id\":3432703649,\"hash\":3432703649,\"sequence\":6,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1310,\"y\":24,\"width\":610,\"height\":1056,\"occupied\":false},{\"id\":3130731500,\"hash\":3130731500,\"sequence\":5,\"title\":\"Experiments - Chromium\",\"workspace\":4,\"maximized\":2,\"x\":1254,\"y\":24,\"width\":666,\"height\":1056,\"occupied\":false},{\"id\":3417408860,\"hash\":3417408860,\"sequence\":5,\"title\":\"시청자들이 자꾸 본인들이 여자라고 우겨요;; - YouTube - Chromium\",\"workspace\":1,\"maximized\":2,\"x\":1312,\"y\":24,\"width\":608,\"height\":1056,\"occupied\":false},{\"id\":910680794,\"hash\":910680794,\"sequence\":5,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":2,\"maximized\":0,\"x\":1236,\"y\":24,\"width\":684,\"height\":1056,\"occupied\":false},{\"id\":1581068711,\"hash\":1581068711,\"sequence\":5,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1236,\"y\":24,\"width\":684,\"height\":1056,\"occupied\":false},{\"id\":2369428123,\"hash\":2369428123,\"sequence\":5,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1236,\"y\":24,\"width\":684,\"height\":1056,\"occupied\":false},{\"id\":2843638136,\"hash\":2843638136,\"sequence\":5,\"title\":\"스위데 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1236,\"y\":24,\"width\":684,\"height\":1056,\"occupied\":false},{\"id\":339666251,\"hash\":339666251,\"sequence\":5,\"title\":\"꽃핀 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1231,\"y\":24,\"width\":689,\"height\":1056,\"occupied\":false},{\"id\":1428944603,\"hash\":1428944603,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":4,\"maximized\":0,\"x\":1227,\"y\":24,\"width\":693,\"height\":1056,\"occupied\":false},{\"id\":3203105217,\"hash\":3203105217,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1282,\"y\":24,\"width\":637,\"height\":1056,\"occupied\":false},{\"id\":3564265123,\"hash\":3564265123,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Chromium\",\"workspace\":1,\"maximized\":0,\"x\":1304,\"y\":43,\"width\":593,\"height\":1012,\"occupied\":false},{\"id\":1068184202,\"hash\":1068184202,\"sequence\":5,\"title\":\"달콤레나 - Twitch - Chromium\",\"workspace\":1,\"maximized\":2,\"x\":1236,\"y\":24,\"width\":684,\"height\":1056,\"occupied\":false},{\"id\":3562880658,\"hash\":3562880658,\"sequence\":143,\"title\":\"Cloudflare 브라우저 검사 | Cloudflare - Chromium\",\"workspace\":0,\"maximized\":0,\"x\":1237,\"y\":24,\"width\":683,\"height\":1056,\"occupied\":false}],\"gjs\":[{\"id\":1540388691,\"hash\":1540388691,\"sequence\":3,\"title\":\"@!0,24;BDHF\",\"workspace\":4,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1920,\"height\":1056,\"occupied\":false}],\"nemo\":[{\"id\":3943597023,\"hash\":3943597023,\"sequence\":7,\"title\":\"홈\",\"workspace\":0,\"maximized\":0,\"x\":47,\"y\":60,\"width\":912,\"height\":947,\"occupied\":false}],\"virt-manager\":[{\"id\":514624243,\"hash\":514624243,\"sequence\":244,\"title\":\"가상 머신 관리자\",\"workspace\":1,\"maximized\":0,\"x\":50,\"y\":74,\"width\":500,\"height\":550,\"occupied\":false},{\"id\":514624275,\"hash\":514624275,\"sequence\":276,\"title\":\"_ubuntu22.04-clone2/QEMU/KVM\",\"workspace\":1,\"maximized\":2,\"x\":0,\"y\":24,\"width\":1078,\"height\":1056,\"occupied\":false},{\"id\":514624286,\"hash\":514624286,\"sequence\":287,\"title\":\"가상 머신 삭제\",\"workspace\":1,\"maximized\":0,\"x\":100,\"y\":124,\"width\":506,\"height\":298,\"occupied\":false},{\"id\":514624287,\"hash\":514624287,\"sequence\":288,\"title\":\"가상 장비 '_ubuntu22.04-clone2' 와 선택된 저장소 (시간 걸림) 제거하기\",\"workspace\":1,\"maximized\":0,\"x\":150,\"y\":174,\"width\":541,\"height\":237,\"occupied\":false},{\"id\":514624274,\"hash\":514624274,\"sequence\":275,\"title\":\"가상 머신 복제 '_ubuntu22.04-clone3' 생성\",\"workspace\":1,\"maximized\":0,\"x\":150,\"y\":174,\"width\":516,\"height\":237,\"occupied\":false}],\"transmission-gtk\":[{\"id\":2966842730,\"hash\":2966842730,\"sequence\":24,\"title\":\"토렌트 옵션\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":545,\"height\":637,\"occupied\":false},{\"id\":2966842735,\"hash\":2966842735,\"sequence\":29,\"title\":\"xubuntu-23.04-desktop-amd64.iso Properties\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":700,\"height\":698,\"occupied\":false}],\"com.transmissionbt.Transmission._66307_55991993\":[{\"id\":2966842728,\"hash\":2966842728,\"sequence\":22,\"title\":\"트랜스미션\",\"workspace\":2,\"maximized\":0,\"x\":100,\"y\":124,\"width\":466,\"height\":500,\"occupied\":false}],\"org.gnome.Extensions\":[{\"id\":3843659275,\"hash\":3843659275,\"sequence\":7,\"title\":\"확장\",\"workspace\":2,\"maximized\":0,\"x\":253,\"y\":186,\"width\":885,\"height\":981,\"occupied\":false}],\"gnome-system-monitor\":[{\"id\":3756201665,\"hash\":3756201665,\"sequence\":129,\"title\":\"시스템 감시\",\"workspace\":1,\"maximized\":0,\"x\":-6,\"y\":111,\"width\":1089,\"height\":969,\"occupied\":false}],\"file-roller\":[{\"id\":2036621126,\"hash\":2036621126,\"sequence\":97,\"title\":\"volume-mixer.zip \",\"workspace\":2,\"maximized\":0,\"x\":100,\"y\":124,\"width\":898,\"height\":529,\"occupied\":false},{\"id\":2036621129,\"hash\":2036621129,\"sequence\":100,\"title\":\"volume-mixer.zip \",\"workspace\":3,\"maximized\":0,\"x\":100,\"y\":124,\"width\":898,\"height\":529,\"occupied\":false},{\"id\":3203105268,\"hash\":3203105268,\"sequence\":56,\"title\":\"py.zip \",\"workspace\":3,\"maximized\":0,\"x\":63,\"y\":96,\"width\":898,\"height\":529,\"occupied\":false},{\"id\":3562880528,\"hash\":3562880528,\"sequence\":13,\"title\":\"etc.tar [읽기 전용]\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":898,\"height\":529,\"occupied\":false}],\"Gedit\":[{\"id\":2036621138,\"hash\":2036621138,\"sequence\":109,\"title\":\"system.conf (/etc/systemd) - gedit\",\"workspace\":4,\"maximized\":0,\"x\":50,\"y\":74,\"width\":900,\"height\":749,\"occupied\":false}],\"org.gnome.Software\":[{\"id\":2301075232,\"hash\":2301075232,\"sequence\":85,\"title\":\"소프트웨어\",\"workspace\":2,\"maximized\":0,\"x\":115,\"y\":113,\"width\":869,\"height\":800,\"occupied\":false}],\"obsidian\":[{\"id\":2301075177,\"hash\":2301075177,\"sequence\":30,\"title\":\"New tab - 000_Personal - Obsidian v1.2.7\",\"workspace\":1,\"maximized\":0,\"x\":0,\"y\":24,\"width\":995,\"height\":1056,\"occupied\":false},{\"id\":2082189835,\"hash\":2082189835,\"sequence\":19,\"title\":\"GNOME Dconf 스키마 사용 @ 5802 - 000_Personal - Obsidian v1.2.7\",\"workspace\":1,\"maximized\":0,\"x\":-75,\"y\":37,\"width\":1195,\"height\":1006,\"occupied\":false},{\"id\":1540388804,\"hash\":1540388804,\"sequence\":116,\"title\":\"유지중 - Linux GNOME Extension Compability - 000_Personal - Obsidian v1.2.7\",\"workspace\":1,\"maximized\":0,\"x\":-62,\"y\":81,\"width\":1096,\"height\":999,\"occupied\":false},{\"id\":1798774768,\"hash\":1798774768,\"sequence\":49,\"title\":\"Obsidian\",\"workspace\":1,\"maximized\":0,\"x\":172,\"y\":234,\"width\":800,\"height\":650,\"occupied\":false},{\"id\":1798774769,\"hash\":1798774769,\"sequence\":50,\"title\":\"된장찌개 레시피 - 005_Food - Obsidian v1.2.8\",\"workspace\":1,\"maximized\":0,\"x\":70,\"y\":142,\"width\":1024,\"height\":800,\"occupied\":false}],\"gnome-text-editor\":[{\"id\":3756201639,\"hash\":3756201639,\"sequence\":103,\"title\":\"*이름 없는 문서 1 - gedit\",\"workspace\":2,\"maximized\":2,\"x\":0,\"y\":26,\"width\":960,\"height\":1054,\"occupied\":false},{\"id\":2431853259,\"hash\":2431853259,\"sequence\":292,\"title\":\"찾아서 바꾸기\",\"workspace\":1,\"maximized\":0,\"x\":100,\"y\":124,\"width\":521,\"height\":293,\"occupied\":false}],\"Synaptic\":[{\"id\":514624296,\"hash\":514624296,\"sequence\":297,\"title\":\"시냅틱 패키지 관리자 \",\"workspace\":1,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1234,\"height\":1056,\"occupied\":false},{\"id\":514624267,\"hash\":514624267,\"sequence\":268,\"title\":\"linux-headers-6.1.13-060113 속성\",\"workspace\":1,\"maximized\":0,\"x\":347,\"y\":271,\"width\":540,\"height\":665,\"occupied\":false}],\"software-properties-gtk\":[{\"id\":3195817363,\"hash\":3195817363,\"sequence\":84,\"title\":\"소프트웨어 & 업데이트\",\"workspace\":4,\"maximized\":0,\"x\":50,\"y\":74,\"width\":900,\"height\":652,\"occupied\":false}],\"com.github.tchx84.Flatseal\":[{\"id\":1428944621,\"hash\":1428944621,\"sequence\":23,\"title\":\"Flatseal\",\"workspace\":4,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1024,\"height\":768,\"occupied\":false}],\"gnome-tweaks\":[{\"id\":1068184236,\"hash\":1068184236,\"sequence\":39,\"title\":\"그놈 기능 개선\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":980,\"height\":687,\"occupied\":false}],\"ibus-setup-hangul\":[{\"id\":1068184250,\"hash\":1068184250,\"sequence\":53,\"title\":\"IBus 한글 설정\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":74,\"width\":309,\"height\":482,\"occupied\":false}],\"Opera\":[{\"id\":1277727653,\"hash\":1277727653,\"sequence\":53,\"title\":\"Speed Dial - Opera\",\"workspace\":0,\"maximized\":0,\"x\":34,\"y\":71,\"width\":960,\"height\":1056,\"occupied\":false}],\"Brave-browser\":[{\"id\":1540388725,\"hash\":1540388725,\"sequence\":37,\"title\":\"[LIVE]특파원 보고 세계는 지금 (KBS_308회_2023.05.06.방송) - YouTube - Brave\",\"workspace\":1,\"maximized\":2,\"x\":1149,\"y\":24,\"width\":771,\"height\":1056,\"occupied\":false},{\"id\":1277727723,\"hash\":1277727723,\"sequence\":123,\"title\":\"와카미야 하즈키 G컵 큰 가슴 미녀! 미약으로 본능 개방하고 도에로 섹스! 경련 오르가즘풀 비디오 https://bit.ly/3UD0r3O - XVIDEOS.COM - Brave\",\"workspace\":0,\"maximized\":2,\"x\":0,\"y\":24,\"width\":1197,\"height\":1056,\"occupied\":false},{\"id\":1331023163,\"hash\":1331023163,\"sequence\":170,\"title\":\"Why I Switched from Arch to Debian - YouTube - Brave\",\"workspace\":2,\"maximized\":0,\"x\":979,\"y\":60,\"width\":1171,\"height\":1036,\"occupied\":false},{\"id\":1277727728,\"hash\":1277727728,\"sequence\":128,\"title\":\"설정 - 동기화된 장치 관리 - Brave\",\"workspace\":0,\"maximized\":0,\"x\":20,\"y\":45,\"width\":1230,\"height\":1036,\"occupied\":false},{\"id\":1277727730,\"hash\":1277727730,\"sequence\":130,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":20,\"y\":44,\"width\":1230,\"height\":1036,\"occupied\":false},{\"id\":1277727739,\"hash\":1277727739,\"sequence\":139,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":20,\"y\":44,\"width\":1230,\"height\":1036,\"occupied\":false},{\"id\":1277727757,\"hash\":1277727757,\"sequence\":157,\"title\":\"Free Porn Videos - XVIDEOS.COM - Brave\",\"workspace\":0,\"maximized\":0,\"x\":20,\"y\":44,\"width\":1230,\"height\":1036,\"occupied\":false},{\"id\":1277727765,\"hash\":1277727765,\"sequence\":165,\"title\":\"Gamepad Tester - Check Controllers and Joysticks Online - Brave\",\"workspace\":0,\"maximized\":0,\"x\":6,\"y\":44,\"width\":1278,\"height\":1036,\"occupied\":false},{\"id\":1277727767,\"hash\":1277727767,\"sequence\":167,\"title\":\"불법·유해정보사이트에 대한 차단 안내 - Brave\",\"workspace\":0,\"maximized\":2,\"x\":0,\"y\":24,\"width\":960,\"height\":1056,\"occupied\":false},{\"id\":1277727778,\"hash\":1277727778,\"sequence\":178,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727782,\"hash\":1277727782,\"sequence\":182,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727785,\"hash\":1277727785,\"sequence\":185,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727787,\"hash\":1277727787,\"sequence\":187,\"title\":\"설정 - 개인 정보 보호 및 보안 - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727796,\"hash\":1277727796,\"sequence\":196,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727798,\"hash\":1277727798,\"sequence\":198,\"title\":\"[날씨] 늦은 오후까지 가끔씩 비…강풍 · 높은 너울 주의 / SBS - YouTube - Brave\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1153,\"height\":1056,\"occupied\":false},{\"id\":1277727805,\"hash\":1277727805,\"sequence\":205,\"title\":\"(1) KuyaCyMusic - Twitch - Brave\",\"workspace\":1,\"maximized\":2,\"x\":1330,\"y\":24,\"width\":590,\"height\":1056,\"occupied\":false},{\"id\":3491129384,\"hash\":3491129384,\"sequence\":5,\"title\":\"(1) KuyaCyMusic - Twitch - Brave\",\"workspace\":2,\"maximized\":2,\"x\":1337,\"y\":24,\"width\":583,\"height\":1056,\"occupied\":false},{\"id\":3491129411,\"hash\":3491129411,\"sequence\":32,\"title\":\"코야_ - Twitch - Brave\",\"workspace\":4,\"maximized\":2,\"x\":1330,\"y\":24,\"width\":590,\"height\":1056,\"occupied\":false},{\"id\":634906974,\"hash\":634906974,\"sequence\":6,\"title\":\"코야_ - Twitch - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1330,\"y\":24,\"width\":590,\"height\":1056,\"occupied\":false},{\"id\":1540388693,\"hash\":1540388693,\"sequence\":5,\"title\":\"Experiments - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1260,\"y\":24,\"width\":660,\"height\":1056,\"occupied\":false},{\"id\":2388901782,\"hash\":2388901782,\"sequence\":5,\"title\":\"[LIVE]특파원 보고 세계는 지금 (KBS_308회_2023.05.06.방송) - YouTube - Brave\",\"workspace\":1,\"maximized\":0,\"x\":1149,\"y\":24,\"width\":771,\"height\":1056,\"occupied\":false},{\"id\":3943597021,\"hash\":3943597021,\"sequence\":5,\"title\":\"릴파_ - Twitch - Brave\",\"workspace\":1,\"maximized\":0,\"x\":1180,\"y\":24,\"width\":740,\"height\":1056,\"occupied\":false},{\"id\":4139972229,\"hash\":4139972229,\"sequence\":6,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1180,\"y\":24,\"width\":740,\"height\":1056,\"occupied\":false},{\"id\":2855351433,\"hash\":2855351433,\"sequence\":6,\"title\":\"패리입니다 - Twitch - Brave\",\"workspace\":1,\"maximized\":0,\"x\":1354,\"y\":24,\"width\":566,\"height\":1056,\"occupied\":false},{\"id\":1331022999,\"hash\":1331022999,\"sequence\":6,\"title\":\"Why I Switched from Arch to Debian - YouTube - Brave\",\"workspace\":1,\"maximized\":2,\"x\":1209,\"y\":24,\"width\":711,\"height\":1056,\"occupied\":false},{\"id\":2301075153,\"hash\":2301075153,\"sequence\":6,\"title\":\"띵귤_ - Twitch - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1209,\"y\":24,\"width\":711,\"height\":1056,\"occupied\":false},{\"id\":2301075163,\"hash\":2301075163,\"sequence\":16,\"title\":\"[날씨] 흐리고 강한 바람…'5mm 안팎' 남부 비 조금 / SBS - YouTube - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1209,\"y\":24,\"width\":711,\"height\":1056,\"occupied\":false},{\"id\":2301075167,\"hash\":2301075167,\"sequence\":20,\"title\":\"항상 변함 없더라 넌 - YouTube - Brave\",\"workspace\":2,\"maximized\":2,\"x\":1280,\"y\":26,\"width\":640,\"height\":1054,\"occupied\":false},{\"id\":1023958012,\"hash\":1023958012,\"sequence\":5,\"title\":\"패리입니다 - Twitch - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1284,\"y\":26,\"width\":636,\"height\":1054,\"occupied\":false},{\"id\":1023958066,\"hash\":1023958066,\"sequence\":59,\"title\":\"패리입니다 - Twitch - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1333,\"y\":26,\"width\":587,\"height\":1054,\"occupied\":false},{\"id\":4121249315,\"hash\":4121249315,\"sequence\":5,\"title\":\"날씨 - YouTube - Brave\",\"workspace\":2,\"maximized\":0,\"x\":1333,\"y\":26,\"width\":587,\"height\":1054,\"occupied\":false},{\"id\":3756201618,\"hash\":3756201618,\"sequence\":82,\"title\":\"What DISTRO are you daily driving? - Online Poll - StrawPoll.com - Brave\",\"workspace\":0,\"maximized\":0,\"x\":166,\"y\":26,\"width\":587,\"height\":1054,\"occupied\":false}],\"libreoffice-calc\":[{\"id\":2208550725,\"hash\":2208550725,\"sequence\":47,\"title\":\"제목 없음 1 - LibreOffice Calc\",\"workspace\":3,\"maximized\":0,\"x\":-230,\"y\":172,\"width\":1155,\"height\":1056,\"occupied\":false}],\"VSCodium\":[{\"id\":1540388843,\"hash\":1540388843,\"sequence\":155,\"title\":\"에펨코리아 - 유머, 축구, 아프리카TV, 게임, 풋볼매니저, 에펨, 펨코.md - 000_Personal - VSCodium\",\"workspace\":1,\"maximized\":0,\"x\":-641,\"y\":181,\"width\":1262,\"height\":1056,\"occupied\":false},{\"id\":1331023147,\"hash\":1331023147,\"sequence\":154,\"title\":\"data.json - 000_Personal - VSCodium\",\"workspace\":1,\"maximized\":2,\"x\":0,\"y\":24,\"width\":1148,\"height\":1056,\"occupied\":false}],\"Abricotine\":[{\"id\":1540388862,\"hash\":1540388862,\"sequence\":174,\"title\":\"open url scheme.md - /home/lwh/phone/000_Personal/Obsidian - Abricotine\",\"workspace\":3,\"maximized\":0,\"x\":20,\"y\":100,\"width\":1038,\"height\":980,\"occupied\":false},{\"id\":1540388861,\"hash\":1540388861,\"sequence\":173,\"title\":\"주말집에서 방울 토마토 주스토마토 생과일주스 너무 맛있어요 꿀팁톡톡.md - /home/lwh/phone/005_Food/Recipe - Abricotine\",\"workspace\":3,\"maximized\":0,\"x\":20,\"y\":100,\"width\":1038,\"height\":980,\"occupied\":false}],\"seahorse\":[{\"id\":1540388863,\"hash\":1540388863,\"sequence\":175,\"title\":\"seahorse\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":908,\"height\":909,\"occupied\":false}],\"com.obsproject.Studio\":[{\"id\":2388901793,\"hash\":2388901793,\"sequence\":16,\"title\":\"OBS 29.1.0 - 프로파일: 제목 없음 - 장면: 제목 없음\",\"workspace\":0,\"maximized\":0,\"x\":0,\"y\":24,\"width\":1152,\"height\":851,\"occupied\":false}],\"gnome-calendar\":[{\"id\":2431853192,\"hash\":2431853192,\"sequence\":225,\"title\":\"Calendar\",\"workspace\":2,\"maximized\":0,\"x\":-172,\"y\":189,\"width\":1179,\"height\":823,\"occupied\":false}],\"org.inkscape.Inkscape\":[{\"id\":1331023048,\"hash\":1331023048,\"sequence\":55,\"title\":\"InkBottleFill.svg - Inkscape\",\"workspace\":2,\"maximized\":0,\"x\":-200,\"y\":322,\"width\":1547,\"height\":1028,\"occupied\":false}],\"gthumb\":[{\"id\":1331023137,\"hash\":1331023137,\"sequence\":144,\"title\":\"gThumb\",\"workspace\":3,\"maximized\":0,\"x\":50,\"y\":74,\"width\":1048,\"height\":901,\"occupied\":false}],\"org.https://nomacs.nomacs\":[{\"id\":1331023140,\"hash\":1331023140,\"sequence\":147,\"title\":\"스크린샷 2023-05-07 16-29-41.png  - 526 x 512\",\"workspace\":1,\"maximized\":0,\"x\":1256,\"y\":425,\"width\":566,\"height\":606,\"occupied\":false}],\"Bitwarden\":[{\"id\":2301075206,\"hash\":2301075206,\"sequence\":59,\"title\":\"Bitwarden\",\"workspace\":4,\"maximized\":0,\"x\":176,\"y\":196,\"width\":950,\"height\":637,\"occupied\":false}],\"org.keepassxc.KeePassXC\":[{\"id\":2301075238,\"hash\":2301075238,\"sequence\":91,\"title\":\"lwh - KeePassXC\",\"workspace\":4,\"maximized\":0,\"x\":166,\"y\":86,\"width\":1014,\"height\":724,\"occupied\":false},{\"id\":2301075259,\"hash\":2301075259,\"sequence\":112,\"title\":\"새 KeePassXC 데이터베이스 만들기…\",\"workspace\":4,\"maximized\":0,\"x\":100,\"y\":126,\"width\":798,\"height\":637,\"occupied\":false},{\"id\":2301075246,\"hash\":2301075246,\"sequence\":99,\"title\":\"KeePassXC 정보\",\"workspace\":4,\"maximized\":0,\"x\":100,\"y\":126,\"width\":410,\"height\":618,\"occupied\":false},{\"id\":2301075271,\"hash\":2301075271,\"sequence\":124,\"title\":\"저장하지 않은 변경 사항\",\"workspace\":4,\"maximized\":0,\"x\":50,\"y\":76,\"width\":351,\"height\":137,\"occupied\":false}],\"evolution-alarm-notify\":[{\"id\":3740161750,\"hash\":3740161750,\"sequence\":27,\"title\":\"알리미\",\"workspace\":4,\"maximized\":0,\"x\":50,\"y\":76,\"width\":637,\"height\":327,\"occupied\":false}],\"Gufw.py\":[{\"id\":7377531,\"hash\":7377531,\"sequence\":12,\"title\":\"방화벽\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":76,\"width\":861,\"height\":760,\"occupied\":false}],\"gnome-session-properties\":[{\"id\":653038015,\"hash\":653038015,\"sequence\":11,\"title\":\"Startup Applications Preferences\",\"workspace\":2,\"maximized\":0,\"x\":50,\"y\":76,\"width\":969,\"height\":733,\"occupied\":false}],\"stacer\":[{\"id\":653038094,\"hash\":653038094,\"sequence\":90,\"title\":\"Stacer\",\"workspace\":2,\"maximized\":0,\"x\":170,\"y\":153,\"width\":850,\"height\":607,\"occupied\":false}],\"gsconnect-preferences\":[{\"id\":1556607783,\"hash\":1556607783,\"sequence\":9,\"title\":\"Lenovo TB-J606F\",\"workspace\":2,\"maximized\":0,\"x\":219,\"y\":236,\"width\":824,\"height\":759,\"occupied\":false}]}"
 startup-delay=2500
 sync-frequency=100
 sync-mode='RESTORE'
@@ -2036,6 +2054,7 @@ switch-to-application-3=@as []
 switch-to-application-4=@as []
 switch-to-application-5=@as []
 switch-to-application-6=@as []
+toggle-message-tray=['<Super>v']
 
 [org/gnome/shell/weather]
 automatic-location=true
@@ -2053,9 +2072,9 @@ check-timestamp=int64 1682817797
 download-updates=false
 download-updates-notify=false
 first-run=false
-install-timestamp=int64 1679515490
+install-timestamp=int64 1687357253
 online-updates-timestamp=int64 1681597952
-update-notification-timestamp=int64 1687050572
+update-notification-timestamp=int64 1687357776
 
 [org/gnome/system/location]
 enabled=false
@@ -2076,8 +2095,8 @@ bold-is-bright=false
 cell-height-scale=1.0
 cell-width-scale=1.0
 cursor-colors-set=false
-default-size-columns=120
-default-size-rows=30
+default-size-columns=90
+default-size-rows=50
 font='DejaVu Sans Mono 12'
 foreground-color='rgb(255,255,255)'
 highlight-colors-set=false
@@ -2099,7 +2118,7 @@ selected-color=(true, 0.75294119119644165, 0.10980392247438431, 0.15686275064945
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=323
@@ -2127,7 +2146,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(398, 107)
+window-position=(692, 89)
 window-size=(1125, 879)
 
 [org/gtkhash]
@@ -2191,666 +2210,6 @@ sidebar-width=237
 start-with-menu-bar=false
 start-with-sidebar=true
 start-with-status-bar=false
-
-[org/virt-manager/virt-manager]
-manager-window-height=513
-manager-window-width=500
-
-[org/virt-manager/virt-manager/confirm]
-delete-storage=false
-forcepoweroff=false
-removedev=false
-unapplied-dev=true
-
-[org/virt-manager/virt-manager/connections]
-autoconnect=['qemu:///system']
-uris=['qemu:///system']
-
-[org/virt-manager/virt-manager/conns/qemu:system]
-window-size=(800, 600)
-
-[org/virt-manager/virt-manager/details]
-show-toolbar=true
-
-[org/virt-manager/virt-manager/paths]
-image-default='/home/lwh/Downloads/iso'
-media-default='/home/lwh/Downloads'
-perms-fix-ignore=['/home/lwh']
-
-[org/virt-manager/virt-manager/urls]
-isos=['/home/lwh/Downloads/iso/debian-12.0.0-amd64-netinst.iso', '/home/lwh/Downloads/iso/debian_12.qcow2', '/home/lwh/Downloads/iso/ubuntu-23.04-desktop-amd64.iso', '/home/lwh/Downloads/iso/Fedora-Workstation-Live-x86_64-36-1.5.iso', '/home/lwh/Downloads/iso/Fedora-Workstation-Live-x86_64-38-1.6.iso', '/home/lwh/Downloads/iso/ubuntu-23.04-beta-desktop-amd64.iso', '/home/lwh/Downloads/iso/gnome_os_installer_506742(1).iso', '/home/lwh/Downloads/iso/gnome_os_installer_506742.iso', '/home/lwh/Downloads/iso/kubuntu-22.04.2-desktop-amd64.iso', '/home/lwh/Downloads/iso/linuxmint-21-cinnamon-64bit.iso']
-
-[org/virt-manager/virt-manager/vmlist-fields]
-disk-usage=false
-network-traffic=false
-
-[org/virt-manager/virt-manager/vms/004b632c8afc4a098d7785eaacdef577]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/05cb7fac9aac4e8aa29f6c35ff8cf9d8]
-autoconnect=1
-scaling=1
-vm-window-size=(1025, 842)
-
-[org/virt-manager/virt-manager/vms/080634fd529d40cab3f105c1b3fc622f]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/09d8b3a31814439383a1e3695c527f86]
-autoconnect=1
-scaling=1
-vm-window-size=(1058, 1019)
-
-[org/virt-manager/virt-manager/vms/0cf30f1ddcd1406984332c2a3f1a1938]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/0d569f9caef64a6f9e73dcbd06a37b09]
-autoconnect=1
-scaling=1
-vm-window-size=(1078, 1019)
-
-[org/virt-manager/virt-manager/vms/0d7f5dbbe57247b5b86466a8322a65c3]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/103b951f2b164ef28209294adf3ea447]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1054)
-
-[org/virt-manager/virt-manager/vms/115b1d720aa74993be167d111618dde4]
-autoconnect=1
-scaling=1
-vm-window-size=(1102, 1019)
-
-[org/virt-manager/virt-manager/vms/127b0c8ab8b74e2fa87576e4ac35f9d9]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/1519b51d65704cc0a5b1c025a9554283]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/161db789932e41c38fe4459502c06ff6]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/1d0a53f2489b4523b462a20a8774442d]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/1da5cf8aa68a47ea957827912a19b0a5]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/1e352ff496fc4d449789402cb1f65772]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/1e8d025528484b479a73f6fa648fee28]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/2080330d28f042b7af38833d99915905]
-autoconnect=1
-scaling=1
-vm-window-size=(843, 1023)
-
-[org/virt-manager/virt-manager/vms/2230e6d5e0cd4d429fd4e91b04c04093]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1019)
-
-[org/virt-manager/virt-manager/vms/237a63a72ece4ac19a7e92a4ac2070fd]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1017)
-
-[org/virt-manager/virt-manager/vms/25d2fdac69e74a0699b06e70124d7b82]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1112)
-
-[org/virt-manager/virt-manager/vms/25db2dc8232048858167adb94b41b9ca]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/2815d80664634e0e9d4758264f675913]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/2aa970fdfe8f4416982fc892b3ad9b2c]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/2b1d35a441ef4d13a51d8cb10314d25b]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/2b56e3c0b155404699ea6d72f7ec58fb]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/2c63e17f94c3496eaf171eadfa7dcd03]
-autoconnect=1
-scaling=1
-vm-window-size=(1058, 1019)
-
-[org/virt-manager/virt-manager/vms/2e236103ca434284b2ac25432eb3df7d]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/30f003f194f74340a44cfcd62c7e19eb]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/31335bbc7a084645ba4b1abf5e9b8f2e]
-autoconnect=1
-scaling=1
-vm-window-size=(1046, 1019)
-
-[org/virt-manager/virt-manager/vms/332a38b2ce7247cab09cd89ad47573b0]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/34ebc73390fb4aa6a168ffb7fa7e7118]
-autoconnect=1
-scaling=1
-vm-window-size=(1074, 1017)
-
-[org/virt-manager/virt-manager/vms/34fcd46b10464110b7298429a0b40707]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/352b23e2eef546fd8744bf19d36f1f0f]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/3caafd029f7245eda7573305969a3e9e]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/3d8c06e3b4c24e50a42d7389cdbdefbb]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/3ed36b2c67264ea1be9ba43b31e855d2]
-autoconnect=1
-scaling=1
-vm-window-size=(1119, 943)
-
-[org/virt-manager/virt-manager/vms/3f9461681efe4e55abb7edf876dfd364]
-autoconnect=1
-scaling=1
-vm-window-size=(983, 1019)
-
-[org/virt-manager/virt-manager/vms/4374a08215384dda81caff2b8d56e5e0]
-autoconnect=1
-scaling=1
-vm-window-size=(1122, 1017)
-
-[org/virt-manager/virt-manager/vms/46334b304f624fbe84bb42a86fbe7459]
-autoconnect=1
-scaling=1
-vm-window-size=(1078, 1019)
-
-[org/virt-manager/virt-manager/vms/4bb7dc467dcc418b92925ab0b9e8e007]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/4c8eb0e385eb41538af6182a559aa054]
-autoconnect=1
-scaling=1
-vm-window-size=(1084, 882)
-
-[org/virt-manager/virt-manager/vms/4d78cf40b596433f946d052c3e59fc4b]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/4eb2bc37d1d045cc921ba712540e2ac0]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/51de0fcdca82493db51ed4ee645f20d3]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1019)
-
-[org/virt-manager/virt-manager/vms/526de28884064cb9a98ac82327e9fb35]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/53370b5804954411bffa36d736bdf7d8]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/53f760f253234d3b8ac88537de2fc12d]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/56181fb006a94f3cad9c1db7e7f2d624]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1019)
-
-[org/virt-manager/virt-manager/vms/56ff8a40bcf14c4f8da20b81938cea3c]
-autoconnect=1
-scaling=1
-vm-window-size=(1232, 874)
-
-[org/virt-manager/virt-manager/vms/58bedda91d51408a973126289975b9bd]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/59049dae0c094679b87d97acadf71a29]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1023)
-
-[org/virt-manager/virt-manager/vms/59d4b8a6f530452abf484d994c6861ee]
-autoconnect=1
-scaling=1
-vm-window-size=(1156, 1019)
-
-[org/virt-manager/virt-manager/vms/5bfa91d17d8e42528709b276ea4a18ab]
-autoconnect=1
-scaling=1
-vm-window-size=(1517, 874)
-
-[org/virt-manager/virt-manager/vms/612cc8af144f45f8b653e61bb42cbadb]
-autoconnect=1
-scaling=1
-vm-window-size=(1115, 1019)
-
-[org/virt-manager/virt-manager/vms/61d2e8978fb84308954597518b38d7fb]
-autoconnect=1
-scaling=1
-vm-window-size=(1236, 1023)
-
-[org/virt-manager/virt-manager/vms/6378b6b85f394019a48f0b2dbcf8cee0]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/6461c7a0706f459082182564fdad33c4]
-autoconnect=1
-scaling=1
-vm-window-size=(1076, 1019)
-
-[org/virt-manager/virt-manager/vms/650727c159bd46edb90b38b08602dd2f]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/687df8615d304e3ba24daa2a253ad5e2]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/6a5a6337026a4f0c98f1eb60611c6d39]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/731ebc0c5f8341f09d0832a44af40880]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/74b3e35af8a64dbd8ad5c8042daa08c2]
-autoconnect=1
-scaling=1
-vm-window-size=(1046, 1019)
-
-[org/virt-manager/virt-manager/vms/778ee9211a53488ca067313cd3b12dac]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/7bacc3b27b6f4974b34344b466d1e247]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/7e3480d409c3431bb480437cc539a8c7]
-autoconnect=1
-scaling=1
-vm-window-size=(1102, 1023)
-
-[org/virt-manager/virt-manager/vms/7e57ead251f943d5acb6e082b00e2598]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1117)
-
-[org/virt-manager/virt-manager/vms/7f32736c203a4409b480f7d01af317d5]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/82811823686547229c088199f0d285fd]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/86330e145e564d0d9ad718e072386b59]
-autoconnect=1
-scaling=1
-vm-window-size=(1052, 842)
-
-[org/virt-manager/virt-manager/vms/866a5ffaf01a493798da20f797bca97b]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1019)
-
-[org/virt-manager/virt-manager/vms/87e9a55860694811a043ffb1f5b358a8]
-autoconnect=1
-scaling=1
-vm-window-size=(1056, 1023)
-
-[org/virt-manager/virt-manager/vms/8a4f7cfdcf5148b1a83c81a8b0760ed2]
-autoconnect=1
-scaling=1
-vm-window-size=(1114, 1019)
-
-[org/virt-manager/virt-manager/vms/9103a9f6297e487c9646252628ee8635]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/9230853d6acc4553bc3abed23b63230e]
-autoconnect=1
-scaling=1
-vm-window-size=(1058, 1019)
-
-[org/virt-manager/virt-manager/vms/9429a53f373d474c93984089981502cd]
-autoconnect=1
-scaling=1
-vm-window-size=(1244, 946)
-
-[org/virt-manager/virt-manager/vms/97f6752b3e764cb1888b0c41faad7501]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/9c7af0accf2d4b5faf5e894f50a5ce97]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/9feb7953d7be4aa48f7eb2987a7123c4]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/a07903a7090d4ba5942e63c09421bb0b]
-autoconnect=1
-scaling=1
-vm-window-size=(1888, 994)
-
-[org/virt-manager/virt-manager/vms/a0f8c4f7c35a481293782f5cdc67675e]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/a24ecc64570940eb80ed545fabc1028a]
-autoconnect=1
-scaling=1
-vm-window-size=(1161, 1019)
-
-[org/virt-manager/virt-manager/vms/a29b678d141648bfa6d6870ae8be56fe]
-autoconnect=1
-scaling=1
-vm-window-size=(1128, 1019)
-
-[org/virt-manager/virt-manager/vms/a2a533e8143d4aa6a5fb8e6afbcc4f11]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/a6a11f33963a4a1f88c863c7d1ba8c87]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/a7dcf44feecc45efbca0ca4cfc064d2a]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/a931136e30664fe196a51d320844c32f]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/a99bf4c97da24f4aa08adec9baf9eae2]
-autoconnect=1
-scaling=1
-vm-window-size=(1142, 1019)
-
-[org/virt-manager/virt-manager/vms/ad07ed40e3c54eaabdc043f41ad705af]
-autoconnect=1
-scaling=1
-vm-window-size=(1181, 976)
-
-[org/virt-manager/virt-manager/vms/af3238ad6ab948839728038f7d6bce34]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1019)
-
-[org/virt-manager/virt-manager/vms/b27146669a9f427591a6a792df7b0797]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/b78c707902374edaa9949d3be30e455c]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/b81f40170d14477a96b665fe0a476e1c]
-autoconnect=1
-scaling=1
-vm-window-size=(869, 1019)
-
-[org/virt-manager/virt-manager/vms/b9e6d77508654af3aeaf7e52fdb5de5b]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/ba36466a42b14fe0a8caef9c5e651a01]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/bdacb506fce8491788ace0e46d3b5e11]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/c2fc097ce2f049f182b9bfbb56f1b7b6]
-autoconnect=1
-scaling=1
-vm-window-size=(1058, 1019)
-
-[org/virt-manager/virt-manager/vms/c7af408ddda04ffab812907aecce186b]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/c8a37605d8bb4dd0bb5db1e7f0bbc74a]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1019)
-
-[org/virt-manager/virt-manager/vms/c908d6746a014d4fb4dfc6c96ec400fe]
-autoconnect=1
-scaling=1
-vm-window-size=(1078, 1019)
-
-[org/virt-manager/virt-manager/vms/cb839e3489c441979cf52e3dde848e71]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/cd166a84529941d193e3192af7266fd4]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/ceb8f2a064c04bba802626bb84c4109c]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/d0eb89abe485400391ddeff79715abac]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1112)
-
-[org/virt-manager/virt-manager/vms/d3e31d72cc754bf085c14872d9fbf660]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/d4a0a51a78114f20995c14d26d157fc9]
-autoconnect=1
-scaling=1
-vm-window-size=(1091, 980)
-
-[org/virt-manager/virt-manager/vms/d68d31a9e8244404af9aea806053ec6b]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/d9e063136f4f4eee92a45646eb0b643e]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/ddc165018a2940f3880478358f58208d]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/e75ab66c107541fda2eec96db7d3a5c4]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/e8e22f32184a4c7da9850796c76f26f2]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1019)
-
-[org/virt-manager/virt-manager/vms/e968be7176024db689e88e385ffda4b5]
-autoconnect=1
-scaling=1
-vm-window-size=(1105, 1019)
-
-[org/virt-manager/virt-manager/vms/e9c242e383e84b91abc87b1ba85de839]
-autoconnect=1
-scaling=1
-vm-window-size=(1056, 1023)
-
-[org/virt-manager/virt-manager/vms/ea54771d6871401fbee6e3b90c3f5f5d]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/ec3e6831c97a41babbd6f3a5b7063cc1]
-autoconnect=1
-scaling=1
-vm-window-size=(1191, 943)
-
-[org/virt-manager/virt-manager/vms/ee1464609dad45e9b6c20d1c639f2d99]
-autoconnect=1
-scaling=1
-vm-window-size=(1058, 1019)
-
-[org/virt-manager/virt-manager/vms/ee5cedbe325f427d8757d76e98d93c40]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 842)
-
-[org/virt-manager/virt-manager/vms/ef68b0c418d64718a61b9379f2c70be0]
-autoconnect=1
-scaling=1
-vm-window-size=(1920, 1019)
-
-[org/virt-manager/virt-manager/vms/f154f7edd9bf472a95adb74b1b618152]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/f1a9493f32c74e45982d0364a3da51c7]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/f1ffe9bf7b1c4a458839d424ab705461]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[org/virt-manager/virt-manager/vms/f33a5c31a2b841d9b22a9574978485a3]
-autoconnect=1
-scaling=1
-vm-window-size=(1330, 915)
-
-[org/virt-manager/virt-manager/vms/f35c5333e594483fabf2f26ba04dbdbd]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 837)
-
-[org/virt-manager/virt-manager/vms/f767f96d07864cecb6055ca8a09f61a2]
-autoconnect=1
-scaling=1
-vm-window-size=(960, 1023)
-
-[org/virt-manager/virt-manager/vms/f78989efb91d4ac99121dd71ba89aa24]
-autoconnect=1
-scaling=1
-vm-window-size=(1056, 1023)
-
-[org/virt-manager/virt-manager/vms/fa7b5d3480fd4d0bad4b0efda55806cf]
-autoconnect=1
-scaling=1
-vm-window-size=(1024, 841)
-
-[system/locale]
-region='ko_KR.UTF-8'
 
 [system/proxy]
 mode='none'
