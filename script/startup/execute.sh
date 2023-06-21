@@ -11,7 +11,6 @@ gnome-terminal
 
 wmctrl -s 3
 nohup nautilus ~ 1> /dev/null 2>&1 &
-
 nohup firefox-esr 1> /dev/null 2>&1 &
 nohup syncthing --allow-newer-config --no-browser 1> /dev/null 2>&1 &
 disown
