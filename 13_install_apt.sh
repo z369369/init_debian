@@ -19,7 +19,7 @@ echo "============== [S] 13.Install - Flatpak =============="
 
 sudo apt update
 sudo apt install -y flatpak
-sudo apt install -y gnome-software-plugin-flatpak
+# sudo apt install -y gnome-software-plugin-flatpak
 
 echo "============== [S] 13.Install - Flatpak =============="
 
