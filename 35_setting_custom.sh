@@ -53,6 +53,14 @@ gsettings set org.gnome.desktop.sound event-sounds false
 
 echo "============== [E] 5.Link - Gnome Extension =============="
 
+echo "============== [S] 5.Remove - Ubuntu default extension =============="
+
+sudo rm -rf /usr/share/gnome/applications/nemo.desktop
+sudo rm -rf /usr/share/gnome-shell/extensions/*
+sudo apt remove gnome-shell-extensions
+
+echo "============== [S] 5.Remove - Ubuntu default extension =============="
+
 echo "============== [S] 5.Set Sudo key file =============="
 
 echo "Check.. Sudo Key file Exist.."
