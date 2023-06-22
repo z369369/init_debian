@@ -6,7 +6,6 @@ sudo apt remove --purge -y $(grep -vE "^\s*#" remove.list | sed -e 's/#.*//'  | 
 echo "============== [E] 31.Remove - APT package =============="
 
 sudo systemctl disable NetworkManager-wait-online.service
-sudo systemctl disable systemd-timesyncd.service
 
 sudo apt -y remove gnome-shell-extensions
 
