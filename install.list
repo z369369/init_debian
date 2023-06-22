@@ -59,6 +59,9 @@ fonts-crosextra-carlito #for debian extra ms font
 fonts-crosextra-caladea #for debian extra ms font
 build-essential #for debian essential 
 dkms #for debian essential
+yaru-theme-gnome-shell #theme for shell
+yaru-theme-gtk #theme for old
+yaru-theme-icon #theme for folder icon
 
 *
 
