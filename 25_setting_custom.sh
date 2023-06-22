@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] 5.Link - shell, script =============="
+echo "============== [S] 25.Link - shell, script =============="
 rm -rf ~/script
 ln -s ~/git/init_debian/script ~/script
 
@@ -24,44 +24,36 @@ git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautil
 rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
-echo "============== [E] 5.Link - shell, script =============="
+echo "============== [E] 25.Link - shell, script =============="
 
-echo "============== [S] 5.Nemo =============="
+echo "============== [S] 25.Nemo =============="
 
 git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
 rm -rf ~/.local/share/nemo/scripts
 ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
-echo "============== [E] 5.Nemo =============="
+echo "============== [E] 25.Nemo =============="
 
 
 
-echo "============== [S] 5.Load - dconf_backup =============="
+echo "============== [S] 25.Load - dconf_backup =============="
 
 dconf load / < /home/$USER/git/init_debian/gnome-shell/dconf_backup
 
-echo "============== [E] 5.Load - dconf_backup =============="
+echo "============== [E] 25.Load - dconf_backup =============="
 
 
 
-echo "============== [S] 5.Edit - Gnome Extension =============="
+echo "============== [S] 25.Edit - Gnome Extension =============="
 
 gsettings set org.gnome.GWeather temperature-unit centigrade
 gsettings set org.gnome.shell disable-extension-version-validation true
 gsettings set org.gnome.desktop.sound event-sounds false
 
-echo "============== [E] 5.Link - Gnome Extension =============="
+echo "============== [E] 25.Link - Gnome Extension =============="
 
-echo "============== [S] 5.Remove - Ubuntu default extension =============="
-
-sudo rm -rf /usr/share/gnome/applications/nemo.desktop
-sudo rm -rf /usr/share/gnome-shell/extensions/*
-sudo apt remove gnome-shell-extensions
-
-echo "============== [S] 5.Remove - Ubuntu default extension =============="
-
-echo "============== [S] 5.Set Sudo key file =============="
+echo "============== [S] 25.Set Sudo key file =============="
 
 echo "Check.. Sudo Key file Exist.."
 if [ -e ~/.key ]; then
@@ -72,4 +64,4 @@ else
   echo $v_pwd >> ~/.key
 fi
 
-echo "============== [E] 5.Set key file =============="
+echo "============== [E] 25.Set key file =============="
