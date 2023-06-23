@@ -26,14 +26,13 @@ lightsoff
 quadrapassel
 rhythmbox
 shotwell
-#sgt-launcher
 sgt-puzzles
 swell-foop
 tali
 thunderbird
 totem
 plymouth
-reportbug
 gnome-software
 packagekit
 gnome-shell-extensions
+gnome-weather
