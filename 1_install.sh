@@ -27,7 +27,7 @@ if [ $? -eq 0 ]; then
     ./4_firewall.sh
     ./5_custom.sh $(whoami)
     ./6_remove_trash.sh
-    echo "  All done!!. Need to Reboot"
+    echo "  All done!! Need to Reboot"
 else
     echo "  [FAIL] Please check Internet connection"
 fi
