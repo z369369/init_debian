@@ -12,7 +12,6 @@ tags: Linux
 
 ## Installation
 ```
-sudo apt -y install git
 git clone https://github.com/ppp821203/init_debian.git ~/git/init_debian
 cd ~/git/init_debian
 ./1_install.sh
