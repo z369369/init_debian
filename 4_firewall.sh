@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "============== [S] [ 3 / 6 ] Firewall =============="
+
 sudo ufw default deny incoming
 sudo ufw default deny outgoing
 
@@ -64,3 +66,5 @@ sudo ufw allow out to any port 33434:33524 proto udp
 sudo ufw allow out on virbr0
 
 sudo ufw reload
+
+echo "============== [E] [ 3 / 6 ] Firewall =============="

@@ -2,8 +2,8 @@
 while true; do
 
 	# Run the command.
-	cd /home/lwh/git 
-	/usr/bin/env /home/lwh/git/py/.venv/bin/python3 /home/lwh/git/init_debian/script/py/crontab_calendar.py 
+	cd ~/git 
+	/usr/bin/env ~/git/py/.venv/bin/python3 ~/git/init_debian/script/py/crontab_calendar.py 
 
 	# Sleep for 40 seconds.
 	sleep 40

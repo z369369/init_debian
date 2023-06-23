@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] 13.Install - apt =============="
+echo "============== [S] [ 2-1 / 6 ] Install - apt =============="
 
 sudo apt update
 sudo apt -y autoremove
@@ -13,13 +13,13 @@ sudo apt install -y $(grep -vE "^\s*#" install.list | sed -e 's/#.*//'  | tr "\n
 
 sudo apt -y autoremove
 
-echo "============== [E] 13.Install - apt =============="
+echo "============== [E] [ 2-1 / 6 ] Install - apt =============="
 
-echo "============== [S] 13.Install - Flatpak =============="
+echo "============== [S] [ 2-2 / 6 ] Install - apt =============="
 
 sudo apt update
 sudo apt install -y flatpak
-# sudo apt install -y gnome-software-plugin-flatpak
+# sudo apt install -y gnome-software gnome-software-plugin-flatpak
 
-echo "============== [S] 13.Install - Flatpak =============="
+echo "============== [E] [ 2-2 / 6 ] Install - apt =============="
 
