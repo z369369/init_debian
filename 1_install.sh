@@ -10,7 +10,6 @@ if ! $(sudo -l &> /dev/null); then
     echo ""
     echo "  su -"
     echo "  adduser $(whoami) sudo"
-    echo "  su - $(whoami)"
     echo ""
     echo "  [FAIL] excute upper command and re-excute script "
     exit $E_NOTROOT
