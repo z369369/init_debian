@@ -41,6 +41,12 @@ gsettings set org.gnome.GWeather temperature-unit centigrade
 gsettings set org.gnome.shell disable-extension-version-validation true
 gsettings set org.gnome.desktop.sound event-sounds false
 
+gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
+gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
+
+gsettings set org.gnome.SessionManager logout-prompt false
+gsettings set org.gnome.desktop.interface enable-animations false
+
 echo "============== [E] [5-3 / 6] Link - Gnome Extension =============="
 
 echo "============== [E] [5-4 / 6] Dconf restore =============="

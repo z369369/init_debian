@@ -61,6 +61,7 @@ dkms #for debian essential
 yaru-theme-gnome-shell #theme for shell
 yaru-theme-gtk #theme for old
 yaru-theme-icon #theme for folder icon
+numlockx #gdm numlock on
 
 *
 
