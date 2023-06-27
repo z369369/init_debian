@@ -10,6 +10,11 @@ tags: Linux
 1. Clean up Default unnecessary apps and services.
 2. Install Flatpak and APT packages for me.
 
+## Requirement
+- Packages
+    - sudo 
+    - git
+        
 ## Installation
 ```
 git clone https://github.com/ppp821203/init_debian.git ~/git/init_debian
