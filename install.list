@@ -21,7 +21,6 @@ ibus-hangul #support ime hangul
 imagemagick #Image converter
 imwheel #Mouse wheel scroll
 incron #Filesystem crontab
-intel-microcode #resolve kernel message 
 libnotify-bin #debian gnome notify
 libfuse2 #for Use appimage
 libqt5svg5 #JPG to SVG
@@ -80,7 +79,6 @@ com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
 com.transmissionbt.Transmission
 com.usebottles.bottles
-com.visualstudio.code
 com.valvesoftware.Steam
 com.vscodium.codium
 de.haeckerfelix.Shortwave
