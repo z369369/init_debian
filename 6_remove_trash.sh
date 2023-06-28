@@ -7,5 +7,6 @@ sudo rm -rf /usr/share/gnome/applications/nemo.desktop
 sudo rm -rf /usr/share/gnome-shell/extensions/*
 
 sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl disable bluetooth.service
 
 echo "============== [E] [6 / 6] Remove trash =============="
