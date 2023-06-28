@@ -6,7 +6,7 @@ sudo rsync -a -I ./etc/ /etc
 echo "============== 9. Restore syncthing =============="
 #syncthing
 sudo systemctl enable syncthing@lwh.service
-sudo gedit /lib/systemd/system/syncthing@.service
-echo "add --allow-newer-config"
+#sudo gedit /lib/systemd/system/syncthing@.service
+#echo "add --allow-newer-config"
 #like under
 #ExecStart=/usr/bin/syncthing serve --allow-newer-config --no-browser --no-restart --logflags=0
