@@ -38,7 +38,7 @@ rm -rf ~/.var/app/com.usebottles.bottles/data/bottles/temp/*
 #flatpak remote-info --log flathub com.obsproject.Studio
 #cat ~/.key | sudo -S flatpak update -y --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
 
-rsync -a --delete --exclude-from ~ --exclude .var/app/org.gnome.Boxes --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Downloads/iso --exclude .cache  ~/ /media/lwh/lwh_backup1/lwh/
+cat ~/.key | sudo -S rsync -a --delete --exclude-from /home/lwh --exclude .var/app/org.gnome.Boxes --exclude .local/share/Trash --exclude .local/share/flatpak --exclude phone/Tachiyomi --exclude Games --exclude Downloads/iso --exclude .cache  ~/ /media/lwh/lwh_backup1/lwh/
 cat ~/.key | sudo -S rsync -a --delete /etc/ /media/lwh/lwh_backup1/etc/
 
 dconf dump / > ~/git/init_debian/gnome-shell/dconf_backup
