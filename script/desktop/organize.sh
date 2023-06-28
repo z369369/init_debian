@@ -44,4 +44,4 @@ cat ~/.key | sudo -S rsync -a --delete /etc/ /media/lwh/lwh_backup1/etc/
 dconf dump / > ~/git/init_debian/gnome-shell/dconf_backup
 #dconf load / < ~/git/init_debian/gnome-shell/dconf_backup
 
-notify-send '파일 정리' '파일 정리가 완료되었습니다!'
+#notify-send '파일 정리' '파일 정리가 완료되었습니다!'
