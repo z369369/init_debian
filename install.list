@@ -7,11 +7,11 @@ fdupes #duplicate file remove
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 ffmpeg #Used
-gedit #Used gnome editor
-gedit-plugin-multi-edit #Used Gedit multi line
 git #Used
+gnome-core #Gnome
 gnome-calendar #Gnome Calendar
 gnome-shell-extension-prefs #Gnome Extension
+gnome-text-editor #Used gnome editor
 gnome-tweaks #Gnome Extension
 gthumb #Used
 gufw #Used Firewall GUI
