@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Run the command and store the output in a variable
-output=$(cat ~/.key | sudo -S ufw status verbose | grep 'allow (외부로 나감)')
+output=$(cat ~/.key | sudo -S ufw status verbose | grep 'allow (outgoing)')
 
 # Check if the output contains the match string
-if [[ $output == *"allow (외부로 나감)"* ]]; then
+if [[ $output == *"allow (outgoing)"* ]]; then
   # If the match string is found, print the current date
   cat ~/.key | sudo -S ufw default deny outgoing > /dev/null
   notify-send 'Deny outgoing' '보안이 강화 🛡️ 되었습니다'
