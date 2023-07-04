@@ -47,10 +47,10 @@ sudo ufw allow out 9663
 
 #syncthing
 sudo ufw allow 21027
-sudo ufw allow out to 21027
+sudo ufw allow out to 192.168.31.0/24 port 21027
 
 sudo ufw allow 22000
-sudo ufw allow out to 22000
+sudo ufw allow out to 192.168.31.0/24 port 22000
 
 #ping, traceroute enable
 sudo ufw allow out to any port 33434:33524 proto udp

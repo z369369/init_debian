@@ -8,10 +8,11 @@ firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 ffmpeg #Used
 git #Used
+gedit #gedit
+gedit-plugin-multi-edit #gedit
 gnome-core #Gnome
 gnome-calendar #Gnome Calendar
 gnome-shell-extension-prefs #Gnome Extension
-gnome-text-editor #Used gnome editor
 gnome-tweaks #Gnome Extension
 gthumb #Used
 gufw #Used Firewall GUI
@@ -53,7 +54,6 @@ gstreamer1.0-libav #for debian alternative restrict extra
 gstreamer1.0-plugins-ugly #for debian alternative restrict extra
 gstreamer1.0-vaapi #for debian alternative restrict extra
 gstreamer1.0-alsa #for debian alternative restrict extra
-gstreamer1.0-fdkaac #aac codec
 fonts-crosextra-carlito #for debian extra ms font 
 fonts-crosextra-caladea #for debian extra ms font
 build-essential #for debian essential 
