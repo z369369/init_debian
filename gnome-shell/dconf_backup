@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='lid'
-saved-view='/'
+saved-pathbar-path='/org/gnome/shell/extensions/'
+saved-view='/org/gnome/shell/extensions/'
 show-warning=false
 window-height=847
 window-is-maximized=false
@@ -1637,10 +1637,6 @@ button-icon=uint32 0
 hide-disabled=false
 unpin-button=false
 unpin-list=@as []
-
-[org/gnome/shell/extensions/extensions-sync]
-github-gist-id='7af66fe630531891c64652e1aaa9022a'
-github-user-token='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'
 
 [org/gnome/shell/extensions/gamemode]
 active-color='rgb(115,210,22)'
