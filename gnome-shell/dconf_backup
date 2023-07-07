@@ -811,7 +811,7 @@ active-plugins=['modelines', 'multiedit', 'filebrowser', 'docinfo', 'openlinks',
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/desktop'
+virtual-root='file:///home/lwh/git/init_debian'
 
 [org/gnome/gedit/preferences/editor]
 background-pattern='none'
