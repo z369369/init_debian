@@ -1,0 +1,19 @@
+.countdown {
+    color: white;
+}
+
+.countdown-alert {
+    color: red;
+}
+
+.countdown-paused {
+    color: grey;
+}
+
+.img-button-active {
+    color: white;
+}
+
+.img-button-inactive {
+    color: grey;
+}
