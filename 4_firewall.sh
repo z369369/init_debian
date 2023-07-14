@@ -63,6 +63,10 @@ sudo ufw allow out to any port 33434:33524 proto udp
 # ufw allow 5900
 # ufw allow out 5900
 
+#torrent port
+sudo ufw allow 51413
+sudo ufw allow out 51413
+
 sudo ufw allow out on virbr0
 
 sudo ufw reload

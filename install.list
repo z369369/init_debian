@@ -62,6 +62,7 @@ yaru-theme-gnome-shell #theme for shell
 yaru-theme-gtk #theme for old
 yaru-theme-icon #theme for folder icon
 numlockx #gdm numlock on
+transmission-cli #transmisson finish script
 
 *
 
@@ -111,3 +112,5 @@ org.videolan.VLC
 page.codeberg.libre_menu_editor.LibreMenuEditor
 page.codeberg.JakobDev.jdSimpleAutostart
 io.github.prateekmedia.appimagepool
+com.ktechpit.torrhunt
+page.codeberg.Imaginer.Imaginer

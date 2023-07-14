@@ -154,7 +154,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='sound'
+last-panel='multitasking'
 window-state=(1121, 1024, false)
 
 [org/gnome/deja-dup]
@@ -187,7 +187,7 @@ apps=['com.blackmagicdesign.resolve-Installer.desktop', 'com.blackmagicdesign.re
 name='Unnamed Folder'
 
 [org/gnome/desktop/app-folders/folders/7fa16cfa-2274-4520-83ad-362cc513e263]
-apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop', 'org.olivevideoeditor.Olive.desktop', 'fr.natron.Natron.desktop', 'com.sweethome3d.Sweethome3d.desktop', 'org.videolan.VLC.desktop', 'nl.hjdskes.gcolor3.desktop', 'org.gnome.design.Contrast.desktop', 'chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop']
+apps=['com.github.PintaProject.Pinta.desktop', 'net.sourceforge.mcomix.desktop', 'org.kde.krita.desktop', 'org.gnome.gThumb.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kdenlive.desktop', 'org.atheme.audacious.desktop', 'com.obsproject.Studio.desktop', 'org.blender.Blender.desktop', 'de.haeckerfelix.Shortwave.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.nomacs.ImageLounge.desktop', 'com.github.unrud.VideoDownloader.desktop', 'com.ozmartians.VidCutter.desktop', 'ch.openboard.OpenBoard.desktop', 'org.audacityteam.Audacity.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.shotcut.Shotcut.desktop', 'shotcut.desktop', 'org.olivevideoeditor.Olive.desktop', 'fr.natron.Natron.desktop', 'com.sweethome3d.Sweethome3d.desktop', 'org.videolan.VLC.desktop', 'nl.hjdskes.gcolor3.desktop', 'org.gnome.design.Contrast.desktop', 'chrome-agimnkijcaahngcdmfeangaknmldooml-Default.desktop', 'org.darktable.Darktable.desktop']
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/Utilities]
@@ -221,8 +221,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230710-SomersetLavender_ROW3782254470_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230710-SomersetLavender_ROW3782254470_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230714-BlacktipSharks_ROW4157164757_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230714-BlacktipSharks_ROW4157164757_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -811,7 +811,7 @@ active-plugins=['modelines', 'multiedit', 'filebrowser', 'docinfo', 'openlinks',
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh'
+virtual-root='file:///home/lwh/Downloads'
 
 [org/gnome/gedit/preferences/editor]
 background-pattern='none'
@@ -877,11 +877,13 @@ maximized=false
 network-in-bits=true
 network-total-in-bits=true
 network-total-unit=false
+process-memory-in-iec=false
 resources-memory-in-iec=false
 show-all-fs=false
-show-dependencies=false
+show-dependencies=true
 show-whose-processes='user'
-window-state=(909, 918, 26, 23)
+solaris-mode=true
+window-state=(1009, 935, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -905,27 +907,37 @@ sort-order=0
 
 [org/gnome/gnome-system-monitor/proctree]
 col-0-visible=true
-col-0-width=235
+col-0-width=482
 col-1-visible=false
 col-1-width=47
+col-10-visible=false
+col-10-width=70
 col-12-visible=false
 col-12-width=60
-col-15-visible=true
-col-15-width=114
+col-15-visible=false
+col-15-width=155
 col-21-visible=false
 col-21-width=59
-col-22-visible=true
+col-22-visible=false
 col-22-width=119
-col-23-visible=true
+col-23-visible=false
 col-23-width=115
 col-24-visible=true
 col-24-width=160
+col-25-visible=true
+col-25-width=102
 col-26-visible=false
 col-26-width=100
+col-3-visible=false
+col-3-width=90
+col-4-visible=true
+col-4-width=102
+col-6-visible=false
+col-6-width=90
 col-8-visible=true
-col-8-width=59
-columns-order=[0, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26]
-sort-col=15
+col-8-width=68
+columns-order=[0, 1, 2, 3, 6, 8, 4, 15, 25, 9, 10, 11, 12, 22, 13, 14, 16, 17, 18, 19, 20, 21, 23, 24, 26]
+sort-col=24
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -947,8 +959,8 @@ thumbnail-list-visible=false
 thumbnail-size=128
 use-startup-location=true
 viewer-sidebar='properties'
-window-height=854
-window-width=1048
+window-height=1009
+window-width=960
 
 [org/gnome/gthumb/crop]
 aspect-ratio='none'
@@ -1068,7 +1080,7 @@ default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
 captions=['none', 'none', 'none']
-default-zoom-level='small'
+default-zoom-level='extra-large'
 
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'type', 'NautilusPython::modification_time_column', 'size', 'permissions']
@@ -1350,7 +1362,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20230703","fullstartdate":"202307030700","enddate":"20230704","url":"/th?id=OHR.CoyoteBanff_ROW2615713574_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CoyoteBanff_ROW2615713574","copyright":"A coyote in Banff, Canada (© Harry Collins/Getty Images)","copyrightlink":"https://www.bing.com/search?q=coyote+animal&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230703_CoyoteBanff%22&FORM=HPQUIZ","wp":true,"hsh":"b2bb00d69ac9c37b791d8bacc31545a8","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230704","fullstartdate":"202307040700","enddate":"20230705","url":"/th?id=OHR.GrasslandsNationalParkSaskachewan_ROW2791748920_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GrasslandsNationalParkSaskachewan_ROW2791748920","copyright":"Grasslands National Park, Saskatchewan, Canada (© Robert Postma/Getty Images)","copyrightlink":"https://www.bing.com/search?q=grasslands+national+park&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230704_GrasslandsNationalParkSaskachewan%22&FORM=HPQUIZ","wp":true,"hsh":"ab1859a63281b4a327622a7b3b27ed25","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230705","fullstartdate":"202307050700","enddate":"20230706","url":"/th?id=OHR.HinterseeBavaria_ROW3087159426_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.HinterseeBavaria_ROW3087159426","copyright":"Row of boats at Hintersee lake, Bavaria, Germany (© Achim Thomae/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Hintersee+lake+Bavaria&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230705_HinterseeBavaria%22&FORM=HPQUIZ","wp":true,"hsh":"e8a33df3a516bb9b08adc33d318b565e","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230706","fullstartdate":"202307060700","enddate":"20230707","url":"/th?id=OHR.KissingPenguins_ROW3223785283_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.KissingPenguins_ROW3223785283","copyright":"Southern rockhopper penguins, Falkland Islands (© Tony Beck/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Southern+rockhopper+penguins&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230706_KissingPenguins%22&FORM=HPQUIZ","wp":true,"hsh":"8665a8a2114cdef16ffd226dcb2d0bb1","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230707","fullstartdate":"202307070700","enddate":"20230708","url":"/th?id=OHR.CocoaPods_ROW3351678192_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CocoaPods_ROW3351678192","copyright":"Cocoa pods from Ambanja, Madagascar (© pierivb/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Cocoa+bean&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230707_CocoaPods%22&FORM=HPQUIZ","wp":true,"hsh":"64e08685396466482c0dd1643ee7985d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230708","fullstartdate":"202307080700","enddate":"20230709","url":"/th?id=OHR.BrightonPalacePier_ROW3449174024_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.BrightonPalacePier_ROW3449174024","copyright":"Brighton Pier, England (© Peppy Graphics/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Brighton+Pier&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230708_BrightonPalacePier%22&FORM=HPQUIZ","wp":true,"hsh":"07976b73590c96670947aee92a2640a2","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230709","fullstartdate":"202307090700","enddate":"20230710","url":"/th?id=OHR.MoselleRiver_ROW3667400728_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MoselleRiver_ROW3667400728","copyright":"Moselle River loop near Kröv, Germany (© Jorg Greuel/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Moselle+River&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230709_MoselleRiver%22&FORM=HPQUIZ","wp":true,"hsh":"0ba13c841147e8a483aae8fc85886232","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230710","fullstartdate":"202307100700","enddate":"20230711","url":"/th?id=OHR.SomersetLavender_ROW3782254470_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SomersetLavender_ROW3782254470","copyright":"Field of lavender, Somerset, England (© Doug Chinnery/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Lavender+flower&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230710_SomersetLavender%22&FORM=HPQUIZ","wp":true,"hsh":"07bec369650396b04e67fea79af776fe","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20230707","fullstartdate":"202307070700","enddate":"20230708","url":"/th?id=OHR.CocoaPods_ROW3351678192_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CocoaPods_ROW3351678192","copyright":"Cocoa pods from Ambanja, Madagascar (© pierivb/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Cocoa+bean&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230707_CocoaPods%22&FORM=HPQUIZ","wp":true,"hsh":"64e08685396466482c0dd1643ee7985d","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230708","fullstartdate":"202307080700","enddate":"20230709","url":"/th?id=OHR.BrightonPalacePier_ROW3449174024_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.BrightonPalacePier_ROW3449174024","copyright":"Brighton Pier, England (© Peppy Graphics/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Brighton+Pier&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230708_BrightonPalacePier%22&FORM=HPQUIZ","wp":true,"hsh":"07976b73590c96670947aee92a2640a2","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230709","fullstartdate":"202307090700","enddate":"20230710","url":"/th?id=OHR.MoselleRiver_ROW3667400728_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MoselleRiver_ROW3667400728","copyright":"Moselle River loop near Kröv, Germany (© Jorg Greuel/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Moselle+River&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230709_MoselleRiver%22&FORM=HPQUIZ","wp":true,"hsh":"0ba13c841147e8a483aae8fc85886232","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230710","fullstartdate":"202307100700","enddate":"20230711","url":"/th?id=OHR.SomersetLavender_ROW3782254470_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SomersetLavender_ROW3782254470","copyright":"Field of lavender, Somerset, England (© Doug Chinnery/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Lavender+flower&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230710_SomersetLavender%22&FORM=HPQUIZ","wp":true,"hsh":"07bec369650396b04e67fea79af776fe","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230711","fullstartdate":"202307110700","enddate":"20230712","url":"/th?id=OHR.WorldPopDay_ROW3908629060_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.WorldPopDay_ROW3908629060","copyright":"Hong Kong at night (© leungchopan/Getty Images)","copyrightlink":"https://www.bing.com/search?q=hong+kong+city&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230711_WorldPopDay%22&FORM=HPQUIZ","wp":true,"hsh":"2087d92de3f124ddfdcab21aeaae5a8b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230712","fullstartdate":"202307120700","enddate":"20230713","url":"/th?id=OHR.AlgheroCapoCaccia_ROW4001767914_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.AlgheroCapoCaccia_ROW4001767914","copyright":"Capo Caccia, Sardinia, Italy (© Francesco Riccardo Iacomino/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Capo+Caccia+Italy&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230712_AlgheroCapoCaccia%22&FORM=HPQUIZ","wp":true,"hsh":"2ee7786ac4e4dcc580920c90b16841ba","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230713","fullstartdate":"202307130700","enddate":"20230714","url":"/th?id=OHR.ZhangyeGeopark_ROW4104958617_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.ZhangyeGeopark_ROW4104958617","copyright":"Zhangye Danxia National Geopark, Gansu, China (© TONNAJA/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Zhangye+National+Geopark&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230713_ZhangyeGeopark%22&FORM=HPQUIZ","wp":true,"hsh":"4c3c8188202dcbd74b7f6e2de7c0d56a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20230714","fullstartdate":"202307140700","enddate":"20230715","url":"/th?id=OHR.BlacktipSharks_ROW4157164757_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.BlacktipSharks_ROW4157164757","copyright":"Blacktip reef sharks, Maldives (© Filippo Bacci/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Blacktip+sharks+Maldives&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230714_BlacktipSharks%22&FORM=HPQUIZ","wp":true,"hsh":"808e94a6222247e6da64614787301f59","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1362,7 +1374,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202307100700,"title":"Field of lavender, Somerset, England","explanation":"오늘의 Bing 배경화면은 2023-07-10","copyright":"© Doug Chinnery/Getty Images","longstartdate":"202307100700","imageinfolink":"https://www.bing.com/search?q=Lavender+flower&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.SomersetLavender_ROW3782254470_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230710-SomersetLavender_ROW3782254470_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202307140700,"title":"Blacktip reef sharks, Maldives","explanation":"오늘의 Bing 배경화면은 2023-07-14","copyright":"© Filippo Bacci/Getty Images","longstartdate":"202307140700","imageinfolink":"https://www.bing.com/search?q=Blacktip+sharks+Maldives&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.BlacktipSharks_ROW4157164757_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230714-BlacktipSharks_ROW4157164757_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-off=false
@@ -1385,8 +1397,8 @@ confirm-clear=false
 disable-down-arrow=true
 display-mode=0
 enable-keybindings=false
-history-size=20
-preview-size=20
+history-size=30
+preview-size=30
 strip-text=true
 topbar-preview-size=15
 
@@ -2243,7 +2255,7 @@ search-visible-columns=['name', 'where', 'date_modified', 'size', 'search_result
 show-only-directories=true
 
 [org/nemo/window-state]
-geometry='912x910+26+23'
+geometry='1093x910+26+23'
 maximized=false
 my-computer-expanded=true
 side-pane-view='places'
