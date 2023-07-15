@@ -1,19 +1,27 @@
 baobab #disk analyze
+build-essential #for debian essential 
 ca-certificates
 chrome-gnome-shell #Gnome Extension
 curl #Used
 deborphan #Used
+dkms #for debian essential
 fdupes #duplicate file remove
+ffmpeg #Used
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
-ffmpeg #Used
-git #Used
+fonts-crosextra-caladea #for debian extra ms font
+fonts-crosextra-carlito #for debian extra ms font 
 gedit #gedit
 gedit-plugin-multi-edit #gedit
-gnome-core #Gnome
+git #Used
 gnome-calendar #Gnome Calendar
+gnome-core #Gnome
 gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
+gstreamer1.0-alsa #for debian alternative restrict extra
+gstreamer1.0-libav #for debian alternative restrict extra
+gstreamer1.0-plugins-ugly #for debian alternative restrict extra
+gstreamer1.0-vaapi #for debian alternative restrict extra
 gthumb #Used
 gufw #Used Firewall GUI
 hardinfo #Used
@@ -22,8 +30,9 @@ ibus-hangul #support ime hangul
 imagemagick #Image converter
 imwheel #Mouse wheel scroll
 incron #Filesystem crontab
-libnotify-bin #debian gnome notify
+libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
+libnotify-bin #debian gnome notify
 libqt5svg5 #JPG to SVG
 make #Build
 mc #Mid-Night Commander
@@ -35,32 +44,23 @@ nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
 nginx
+numlockx #gdm numlock on
 pandoc #file converter
+printer-driver-all #for debian printer
 pydf #df
 python3.11-venv #python3 virtual env
-printer-driver-all #for debian printer
 rsync #Used
 software-properties-common #Gnome Software
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
+transmission-cli #transmisson finish script
 ufw #Firewall
 vim #vi 
 wget #Download
 wmctrl #move Workspace
 xclip #clipboard for nemo
-libavcodec-extra #for debian alternative restrict extra
-gstreamer1.0-libav #for debian alternative restrict extra
-gstreamer1.0-plugins-ugly #for debian alternative restrict extra
-gstreamer1.0-vaapi #for debian alternative restrict extra
-gstreamer1.0-alsa #for debian alternative restrict extra
-fonts-crosextra-carlito #for debian extra ms font 
-fonts-crosextra-caladea #for debian extra ms font
-build-essential #for debian essential 
-dkms #for debian essential
 yaru-theme-icon #theme for folder icon
-numlockx #gdm numlock on
-transmission-cli #transmisson finish script
 
 *
 
@@ -74,6 +74,7 @@ com.github.tchx84.Flatseal
 com.github.unrud.VideoDownloader
 com.google.Chrome
 com.heroicgameslauncher.hgl
+com.ktechpit.torrhunt
 com.obsproject.Studio
 com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
@@ -85,6 +86,7 @@ de.haeckerfelix.Shortwave
 fr.natron.Natron
 io.dbeaver.DBeaverCommunity
 io.github.celluloid_player.Celluloid
+io.github.prateekmedia.appimagepool
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
 org.atheme.audacious
@@ -107,8 +109,6 @@ org.olivevideoeditor.Olive
 org.remmina.Remmina
 org.telegram.desktop
 org.videolan.VLC
-page.codeberg.libre_menu_editor.LibreMenuEditor
-page.codeberg.JakobDev.jdSimpleAutostart
-io.github.prateekmedia.appimagepool
-com.ktechpit.torrhunt
 page.codeberg.Imaginer.Imaginer
+page.codeberg.JakobDev.jdSimpleAutostart
+page.codeberg.libre_menu_editor.LibreMenuEditor
