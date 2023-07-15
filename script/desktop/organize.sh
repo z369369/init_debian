@@ -41,10 +41,13 @@ rm -rf ~/.var/app/com.usebottles.bottles/data/bottles/temp/*
 rsync -a --delete \
 --exclude-from /home/lwh \
 --exclude .var/app/org.gnome.Boxes \
+--exclude .var/app/com.valvesoftware.Steam \
 --exclude .local/share/Trash \
 --exclude .local/share/flatpak \
 --exclude phone/Tachiyomi \
+--exclude phone/Download_Home \
 --exclude Downloads/iso \
+--exclude Downloads/Download_Home \
 --exclude .cache \
 ~/ /media/lwh/lwh_backup1/lwh/
 
@@ -54,7 +57,3 @@ dconf dump / > ~/git/init_debian/gnome-shell/dconf_backup
 #dconf load / < ~/git/init_debian/gnome-shell/dconf_backup
 
 notify-send '파일 정리' '파일 정리가 완료되었습니다!'
-
-
-ls \
--al
