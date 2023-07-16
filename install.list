@@ -61,6 +61,7 @@ vim #vi
 wget #Download
 wmctrl #move Workspace
 xclip #clipboard for nemo
+xinput #device list
 yaru-theme-icon #theme for folder icon
 
 *
@@ -89,6 +90,7 @@ io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
 io.github.celluloid_player.Celluloid
 io.github.prateekmedia.appimagepool
+io.podman_desktop.PodmanDesktop
 md.obsidian.Obsidian
 nl.hjdskes.gcolor3
 org.atheme.audacious
