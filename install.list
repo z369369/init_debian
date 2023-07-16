@@ -4,6 +4,7 @@ ca-certificates
 chrome-gnome-shell #Gnome Extension
 curl #Used
 deborphan #Used
+distrobox #for virt apps
 dkms #for debian essential
 fdupes #duplicate file remove
 ffmpeg #Used
@@ -85,6 +86,7 @@ com.vscodium.codium
 de.haeckerfelix.Shortwave
 fr.natron.Natron
 io.dbeaver.DBeaverCommunity
+io.github.aandrew_me.ytdn
 io.github.celluloid_player.Celluloid
 io.github.prateekmedia.appimagepool
 md.obsidian.Obsidian
