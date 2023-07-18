@@ -44,6 +44,7 @@ rsync -a --delete \
 --exclude .var/app/com.valvesoftware.Steam \
 --exclude .local/share/Trash \
 --exclude .local/share/flatpak \
+--exclude .local/share/containers \
 --exclude phone/Tachiyomi \
 --exclude phone/Download_Home \
 --exclude Downloads/iso \

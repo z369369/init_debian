@@ -11,7 +11,6 @@ ffmpeg #Used
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 fonts-crosextra-caladea #for debian extra ms font
-fonts-crosextra-carlito #for debian extra ms font 
 gedit #gedit
 gedit-plugin-multi-edit #gedit
 git #Used
@@ -73,7 +72,6 @@ com.discordapp.Discord
 com.github.jeromerobert.pdfarranger
 com.github.PintaProject.Pinta
 com.github.tchx84.Flatseal
-com.github.unrud.VideoDownloader
 com.google.Chrome
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
