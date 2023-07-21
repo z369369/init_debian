@@ -80,6 +80,7 @@ com.ktechpit.torrhunt
 com.obsproject.Studio
 com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
+com.tomjwatson.Emote
 com.transmissionbt.Transmission
 com.usebottles.bottles
 com.valvesoftware.Steam
@@ -94,7 +95,6 @@ io.github.hakuneko.HakuNeko
 io.github.prateekmedia.appimagepool
 io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
-it.mijorus.smile
 md.obsidian.Obsidian
 net.lutris.Lutris
 nl.hjdskes.gcolor3
@@ -120,7 +120,9 @@ org.linux_hardware.hw-probe
 org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
 org.remmina.Remmina
+org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 org.videolan.VLC
 page.codeberg.Imaginer.Imaginer
 page.codeberg.libre_menu_editor.LibreMenuEditor
+
