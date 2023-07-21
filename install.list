@@ -13,6 +13,7 @@ firefox-esr-l10n-ko #for debian
 fonts-crosextra-caladea #for debian extra ms font
 gedit #gedit
 gedit-plugin-multi-edit #gedit
+gir1.2-gmenu-3.0 #gnome menu
 git #Used
 gnome-calendar #Gnome Calendar
 gnome-core #Gnome
