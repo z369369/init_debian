@@ -72,4 +72,6 @@ else
   echo $v_pwd >> ~/.key
 fi
 
+sudo dpkg-reconfigure locales
+
 echo "============== [E] [5-5 / 6] Set key file =============="
