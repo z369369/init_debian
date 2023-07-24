@@ -19,6 +19,9 @@ gnome-nibbles
 gnome-robots
 gnome-shell-extensions
 gnome-software
+gnome-software-common
+gnome-software-plugin-flatpak
+gnome-software-plugin-snap
 gnome-sudoku
 gnome-taquin
 gnome-tetravex
@@ -36,7 +39,7 @@ quadrapassel
 rhythmbox
 sgt-puzzles
 shotwell
+software-properties-gtk
 swell-foop
 tali
 thunderbird
-
