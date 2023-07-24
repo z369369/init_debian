@@ -73,3 +73,5 @@ else
 fi
 
 echo "============== [E] [5-5 / 6] Set key file =============="
+
+sudo systemctl enable syncthing@lwh.service

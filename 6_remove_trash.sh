@@ -13,8 +13,6 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 
-sudo systemctl enable syncthing@lwh.service
-
 #disable systemd-timesyncd
 timedatectl set-ntp 0 
 
