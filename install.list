@@ -119,10 +119,10 @@ org.libreoffice.LibreOffice
 org.linux_hardware.hw-probe
 org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
+org.pulseaudio.pavucontrol
 org.remmina.Remmina
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 org.videolan.VLC
 page.codeberg.Imaginer.Imaginer
 page.codeberg.libre_menu_editor.LibreMenuEditor
-

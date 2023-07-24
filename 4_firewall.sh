@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "============== [S] [ 3 / 6 ] Firewall =============="
+echo "============== [S] [ 4 / 6 ] Firewall =============="
 
 sudo ufw default deny incoming
 sudo ufw default deny outgoing
@@ -71,4 +71,4 @@ sudo ufw allow out on virbr0
 
 sudo ufw reload
 
-echo "============== [E] [ 3 / 6 ] Firewall =============="
+echo "============== [E] [ 4 / 6 ] Firewall =============="

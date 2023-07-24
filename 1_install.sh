@@ -16,7 +16,6 @@ if ! $(sudo -l &> /dev/null); then
 fi
 echo "============== [S] [ 1-1 / 6 ] Prepare =============="
 
-echo "============== [S] [ 1-2 / 6 ] Prepare =============="
 echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
@@ -30,4 +29,3 @@ if [ $? -eq 0 ]; then
 else
     echo "  [FAIL] Please check Internet connection"
 fi
-echo "============== [E] [ 1-2 / 6 ] Prepare =============="
