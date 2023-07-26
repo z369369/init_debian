@@ -2,3 +2,5 @@
 flatpak update --noninteractive --assumeyes
 flatpak uninstall --unused --noninteractive --assumeyes
 distrobox-upgrade --all
+
+rm -rf /home/lwh/.var/app/com.opera.Opera/config/opera/History
