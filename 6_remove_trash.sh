@@ -13,7 +13,4 @@ sudo systemctl disable apt-daily.timer
 sudo systemctl disable apt-daily-upgrade.timer
 sudo systemctl disable apt-daily-upgrade.service
 
-#disable systemd-timesyncd
-timedatectl set-ntp 0 
-
 echo "============== [E] [6 / 6] Remove trash =============="
