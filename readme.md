@@ -11,6 +11,8 @@ tags: Linux
 2. Install Flatpak and APT packages for me.
 
 ## Requirement
+- Language
+    - Korean
 - Packages
     - sudo 
     - git
