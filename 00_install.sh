@@ -22,11 +22,11 @@ if [ "$1" == "" ]; then
     if [ $? -eq 0 ]; then
         echo -e "  Start \033[33mNormal\033[m install..."
         sleep 2
-        ./2_apt.sh
-        ./3_flatpak.sh
-        ./4_firewall.sh
-        ./5_custom.sh $(whoami)
-        ./6_remove_trash.sh
+        ./02_apt.sh
+        ./03_flatpak.sh
+        ./04_firewall.sh
+        ./05_custom.sh $(whoami)
+        ./06_remove_trash.sh
         echo "  All done!! Need to Reboot"
     else
         echo "  [FAIL] Please check Internet connection"
@@ -37,11 +37,11 @@ if [ "$1" == "minimal" ]; then
     if [ $? -eq 0 ]; then
         echo -e "  Start \033[32mMinimal\033[m install..."
         sleep 2
-        ./2_apt.sh
-        ./3_flatpak.sh
-        ./94_firewall.sh
-        ./95_custom.sh $(whoami)
-        ./6_remove_trash.sh
+        ./02_apt.sh
+        ./03_flatpak.sh
+        ./14_firewall.sh
+        ./15_custom.sh $(whoami)
+        ./06_remove_trash.sh
         echo "  All done!! Need to Reboot"
     else
         echo "  [FAIL] Please check Internet connection"
