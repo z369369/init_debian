@@ -27,7 +27,7 @@ git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautil
 rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
 
-sudo systemctl enable syncthing@lwh.service
+# sudo systemctl enable syncthing@lwh.service
 
 echo "============== [E] [5-1 / 6] Link - shell, script =============="
 
