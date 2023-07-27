@@ -28,12 +28,15 @@ htop #Used
 ibus-hangul #support ime hangul 
 imagemagick #Image converter
 imwheel #Mouse wheel scroll
+incron #Filesystem crontab
 libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
 libqt5svg5 #JPG to SVG
 make #Build
+mc #Mid-Night Commander
 meld #Winmerge
+nmap #my network search
 nautilus-admin
 nautilus-image-converter
 ncdu #du
@@ -41,7 +44,7 @@ nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
 numlockx #gdm numlock on
-openssh-server
+openssh-server #ssh
 pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
