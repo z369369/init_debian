@@ -63,6 +63,10 @@ sudo ufw allow out 3389
 # sudo ufw allow 5900
 # sudo ufw allow out 5900
 
+# ssh
+sudo ufw allow ssh
+sudo ufw allow out ssh
+
 #torrent port
 sudo ufw allow 51413
 sudo ufw allow out 51413

@@ -9,17 +9,17 @@ ln -s ~/git/init_debian/script ~/script
 rm -rf ~/Templates
 ln -s ~/git/init_debian/Templates ~/Templates
 
-rm -rf ~/Desktop/desktop_local
-ln -s ~/.local/share/applications ~/Desktop/desktop_local
+# rm -rf ~/Desktop/desktop_local
+# ln -s ~/.local/share/applications ~/Desktop/desktop_local
 
-rm -rf ~/Desktop/desktop_flatpak
-ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
+# rm -rf ~/Desktop/desktop_flatpak
+# ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
 
-rm -rf ~/Desktop/desktop_usr
-ln -s /usr/share/applications ~/Desktop/desktop_usr
+# rm -rf ~/Desktop/desktop_usr
+# ln -s /usr/share/applications ~/Desktop/desktop_usr
 
-rm -rf "/home/lwh/Pictures/스크린샷"
-ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
+# rm -rf "/home/lwh/Pictures/스크린샷"
+# ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
@@ -33,10 +33,10 @@ echo "============== [E] [5-1 / 6] Link - shell, script =============="
 
 echo "============== [S] [5-2 / 6] Nemo =============="
 
-git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
+# git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
-rm -rf ~/.local/share/nemo/scripts
-ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
+# rm -rf ~/.local/share/nemo/scripts
+# ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
