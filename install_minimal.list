@@ -41,6 +41,7 @@ nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
 numlockx #gdm numlock on
+openssh-server
 pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
