@@ -21,7 +21,7 @@ echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 if [ "$1" == "" ]; then
     if [ $? -eq 0 ]; then
         echo -e "  Start \033[33mNormal\033[m install..."
-        sleep 2
+        sleep 5
         ./02_apt.sh
         ./03_flatpak.sh
         ./04_firewall.sh
@@ -36,7 +36,7 @@ fi
 if [ "$1" == "minimal" ]; then
     if [ $? -eq 0 ]; then
         echo -e "  Start \033[32mMinimal\033[m install..."
-        sleep 2
+        sleep 5
         ./02_apt.sh
         ./03_flatpak.sh
         ./14_firewall.sh
