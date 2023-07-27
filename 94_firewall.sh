@@ -41,13 +41,17 @@ sudo ufw allow out 9663
 #ping, traceroute enable
 sudo ufw allow out to any port 33434:33524 proto udp
 
-RDP
-ufw allow 3389
-ufw allow out 3389
+# RDP
+sudo ufw allow 3389
+sudo ufw allow out 3389
 
-vnc
-ufw allow 5900
-ufw allow out 5900
+# vnc
+sudo ufw allow 5900
+sudo ufw allow out 5900
+
+# ssh
+sudo ufw allow ssh
+sudo ufw allow out ssh
 
 #torrent port
 sudo ufw allow 51413
