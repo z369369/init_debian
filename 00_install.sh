@@ -29,7 +29,7 @@ read -p "Install mode? (Normal / Minimal) " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Nn]$ ]]; then
     echo -e "  Start \033[33mNormal\033[m install..."
-    ./02_apt.sh
+    ./02_apt.sh normal
     ./03_flatpak.sh
     ./04_firewall.sh
     ./05_custom.sh $(whoami)
@@ -38,7 +38,7 @@ fi
 
 if [[ $REPLY =~ ^[Mm]$ ]]; then
     echo -e "  Start \033[32mMinimal\033[m install..."
-    ./02_apt.sh
+    ./02_apt.sh minimal
     ./03_flatpak.sh
     ./14_firewall.sh
     ./15_custom.sh $(whoami)
