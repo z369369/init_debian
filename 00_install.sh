@@ -25,9 +25,10 @@ else
     exit
 fi
 
-if [ "$1" == "" ]; then
+read -p "Install mode? (Normal / Minimal) " -n 1 -r
+echo ""
+if [[ $REPLY =~ ^[Nn]$ ]]; then
     echo -e "  Start \033[33mNormal\033[m install..."
-    sleep 5
     ./02_apt.sh
     ./03_flatpak.sh
     ./04_firewall.sh
@@ -35,9 +36,8 @@ if [ "$1" == "" ]; then
     ./06_remove_trash.sh
 fi 
 
-if [ "$1" == "minimal" ]; then
+if [[ $REPLY =~ ^[Mm]$ ]]; then
     echo -e "  Start \033[32mMinimal\033[m install..."
-    sleep 5
     ./02_apt.sh
     ./03_flatpak.sh
     ./14_firewall.sh
