@@ -28,13 +28,11 @@ htop #Used
 ibus-hangul #support ime hangul 
 imagemagick #Image converter
 imwheel #Mouse wheel scroll
-incron #Filesystem crontab
 libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
 libqt5svg5 #JPG to SVG
 make #Build
-mc #Mid-Night Commander
 meld #Winmerge
 nautilus-admin
 nautilus-image-converter
@@ -48,7 +46,6 @@ printer-driver-all #for debian printer
 pydf #df
 python3.11-venv #python3 virtual env
 rsync #Used
-software-properties-common #Gnome Software
 synaptic #Package manager
 timeshift #Backup, Restore
 transmission-cli #transmisson finish script

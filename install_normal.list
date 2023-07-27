@@ -50,7 +50,6 @@ printer-driver-all #for debian printer
 pydf #df
 python3.11-venv #python3 virtual env
 rsync #Used
-software-properties-common #Gnome Software
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
