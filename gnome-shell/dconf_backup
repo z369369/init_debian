@@ -16,8 +16,8 @@ window-width=1394
 
 [ca/desrt/dconf-editor]
 bookmarks=['/org/gnome/nautilus/list-view/default-column-order']
-saved-pathbar-path='/org/gnome/terminal/legacy/'
-saved-view='/org/gnome/terminal/legacy/'
+saved-pathbar-path='/org/gnome/settings-daemon/plugins/media-keys/'
+saved-view='/org/gnome/settings-daemon/plugins/media-keys/'
 show-warning=false
 window-height=863
 window-is-maximized=false
@@ -172,8 +172,8 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(1121, 1024, false)
+last-panel='display'
+window-state=(800, 576, false)
 
 [org/gnome/deja-dup]
 backend='google'
@@ -221,7 +221,7 @@ name='디스트로박스'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['nm-connection-editor.desktop', 'pavucontrol.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Characters.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'org.gnome.font-viewer.desktop', 'mc.desktop', 'mcedit.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'hardinfo.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'im-config.desktop', 'yelp.desktop', 'org.gnome.Contacts.desktop', 'com.tomjwatson.Emote.desktop', 'org.pulseaudio.pavucontrol.desktop']
+apps=['nm-connection-editor.desktop', 'pavucontrol.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Characters.desktop', 'org.gnome.design.IconLibrary.desktop', 'icons library2.desktop', 'org.gnome.font-viewer.desktop', 'mc.desktop', 'mcedit.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'hardinfo.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Calendar.desktop', 'im-config.desktop', 'org.gnome.Contacts.desktop', 'org.pulseaudio.pavucontrol.desktop', 'yelp.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['gnome-control-center.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.Calculator.desktop', 'usb-creator-gtk.desktop', 'mainline.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'software-properties-gtk.desktop', 'org.gnome.meld.desktop', 'org.gnome.Evince.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Command.SearchProvider.desktop', 'libreoffice-startcenter.desktop', 'io.github.realmazharhussain.GdmSettings.desktop', 'org.gnome.TextEditor.desktop', 'ubuntu2204-abricotine.desktop', 'ubuntu2204.desktop']
 name='Unused'
@@ -251,8 +251,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230725-LasLagunas_ROW5764169466_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230725-LasLagunas_ROW5764169466_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20230726-MangrovePark_ROW5862204066_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20230726-MangrovePark_ROW5862204066_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -847,7 +847,7 @@ active-plugins=['modelines', 'multiedit', 'filebrowser', 'sort', 'quickhighlight
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh/script/desktop'
+virtual-root='file:///home/lwh/git/init_debian/etc/ssh'
 
 [org/gnome/gedit/plugins/spell]
 highlight-misspelled=true
@@ -911,7 +911,7 @@ view-window-width=1584
 
 [org/gnome/gnome-system-monitor]
 cpu-stacked-area-chart=false
-current-tab='processes'
+current-tab='resources'
 graph-data-points=30
 logarithmic-scale=false
 maximized=false
@@ -924,7 +924,7 @@ show-all-fs=false
 show-dependencies=true
 show-whose-processes='user'
 solaris-mode=true
-window-state=(924, 860, 29, 73)
+window-state=(924, 860, 303, 162)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-0-visible=true
@@ -1153,7 +1153,7 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(909, 893)
+initial-size=(1280, 936)
 maximized=false
 sidebar-width=236
 start-with-sidebar=true
@@ -1265,8 +1265,11 @@ ignore-phase2-ca-cert=false
 [org/gnome/portal/filechooser/com.heroicgameslauncher.hgl]
 last-folder-path='/media/lwh/lwh_backup1/Games'
 
+[org/gnome/portal/filechooser/com.usebottles.bottles]
+last-folder-path='/media/lwh/lwh_backup1/Games/gene3_1'
+
 [org/gnome/portal/filechooser/com.valvesoftware.Steam]
-last-folder-path='/media/lwh/lwh_backup1/Games/win_jojojeon/DGLauncher'
+last-folder-path='/media/lwh/lwh_backup1/Games/gene3_1'
 
 [org/gnome/portal/filechooser/com.visualstudio.code]
 last-folder-path='/home/lwh/git/crawl/.venv/bin'
@@ -1355,7 +1358,7 @@ name='gnome-terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Super>grave'
-command='gedit /home/lwh/git/init_debian/install.list'
+command='gedit /home/lwh/git/init_debian/install_normal.list'
 name='edit package'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
@@ -1396,7 +1399,7 @@ sleep-inactive-battery-type='nothing'
 enabled-connections=@as []
 
 [org/gnome/shell]
-app-picker-layout=[{'Utilities': <{'position': <0>}>, '0af343c0-868a-4007-806c-117c883f87a7': <{'position': <1>}>, 'cbf808e2-b1c0-4480-a440-81ea1e3c0c34': <{'position': <2>}>, '7fa16cfa-2274-4520-83ad-362cc513e263': <{'position': <3>}>, 'c7133631-94b3-4ce3-9bf1-d1545aa5a851': <{'position': <4>}>, 'ef538e80-aafa-499c-999b-a4798c6c61cd': <{'position': <5>}>, 'baf57313-41ee-4a35-bd78-37d55f2fbd44': <{'position': <6>}>, '9cdcdcf6-b114-4dfe-9464-8c8bfbf14d26': <{'position': <7>}>, 'org.gnome.Settings.desktop': <{'position': <8>}>, 'gufw.desktop': <{'position': <9>}>, 'ubuntu-gnome-session-properties.desktop': <{'position': <10>}>}]
+app-picker-layout=[{'Utilities': <{'position': <0>}>, '0af343c0-868a-4007-806c-117c883f87a7': <{'position': <1>}>, 'cbf808e2-b1c0-4480-a440-81ea1e3c0c34': <{'position': <2>}>, '7fa16cfa-2274-4520-83ad-362cc513e263': <{'position': <3>}>, 'c7133631-94b3-4ce3-9bf1-d1545aa5a851': <{'position': <4>}>, 'ef538e80-aafa-499c-999b-a4798c6c61cd': <{'position': <5>}>, 'baf57313-41ee-4a35-bd78-37d55f2fbd44': <{'position': <6>}>, '9cdcdcf6-b114-4dfe-9464-8c8bfbf14d26': <{'position': <7>}>, 'org.gnome.Settings.desktop': <{'position': <8>}>, 'gufw.desktop': <{'position': <9>}>, 'ubuntu-gnome-session-properties.desktop': <{'position': <10>}>, 'com.opera.Opera.desktop': <{'position': <11>}>}]
 command-history=['calc', 'gnome-calc', 'R', 'r', 'meld', 'htop', 'gnome-shell-extension-prefs', 'restart', 'lg', 'nl', 'gnome-session-properties']
 disable-user-extensions=false
 disabled-extensions=['workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'draw-on-your-screen2@zhrexl.github.com']
@@ -1422,7 +1425,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json="[{\"startdate\":\"20230718\",\"fullstartdate\":\"202307180700\",\"enddate\":\"20230719\",\"url\":\"/th?id=OHR.BucerosBicornis_ROW4773409140_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BucerosBicornis_ROW4773409140\",\"copyright\":\"Great hornbill, Khao Yai National Park, Thailand (© kajornyot wildlife photography/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Great+hornbill&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230718_BucerosBicornis%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"8a08a934dc036c3bd4226bff03bfe46c\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230719\",\"fullstartdate\":\"202307190700\",\"enddate\":\"20230720\",\"url\":\"/th?id=OHR.CrescentLake_ROW4905967269_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CrescentLake_ROW4905967269\",\"copyright\":\"Crescent Lake near Dunhuang, Gansu Province, China (© R7 Photo/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Crescent+Lake+Gansu&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230719_CrescentLake%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"06821be31842d124b595c74003391de9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230720\",\"fullstartdate\":\"202307200700\",\"enddate\":\"20230721\",\"url\":\"/th?id=OHR.MoonDayArtemis_ROW5010012135_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MoonDayArtemis_ROW5010012135\",\"copyright\":\"The moon seen from the Orion spacecraft of NASA's Artemis mission (© NASA)\",\"copyrightlink\":\"https://www.bing.com/search?q=moon&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230720_MoonDayArtemis%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d3eac5e18d86f2102d47a543f74a4463\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230721\",\"fullstartdate\":\"202307210700\",\"enddate\":\"20230722\",\"url\":\"/th?id=OHR.BridgeNorway_ROW5243701761_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BridgeNorway_ROW5243701761\",\"copyright\":\"Storseisundet Bridge, Atlantic Ocean Road, Norway (© Morten Falch Sortland/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Storseisundet+Bridge&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230721_BridgeNorway%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"1ef61f25aa02ac26d99b4908e3a189fc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230722\",\"fullstartdate\":\"202307220700\",\"enddate\":\"20230723\",\"url\":\"/th?id=OHR.HammockDay_ROW5452750950_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HammockDay_ROW5452750950\",\"copyright\":\"Hammock camping in a bald cypress tree, Florida, USA (© Mac Stone/Tandem Stills + Motion)\",\"copyrightlink\":\"https://www.bing.com/search?q=hammock+camping&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230722_HammockDay%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"494e169cfbac368b5f40bb2d58e5f256\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230723\",\"fullstartdate\":\"202307230700\",\"enddate\":\"20230724\",\"url\":\"/th?id=OHR.TeaEstate_ROW5550670907_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TeaEstate_ROW5550670907\",\"copyright\":\"Edinburgh Tea Estate, Nuwara Eliya, Sri Lanka (© Jeremy Woodhouse/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Nuwara+Eliya&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230723_TeaEstate%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"9649ffbc2f8a14643e6700b9cddc7b2a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230724\",\"fullstartdate\":\"202307240700\",\"enddate\":\"20230725\",\"url\":\"/th?id=OHR.ZebraCousins_ROW5641777951_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ZebraCousins_ROW5641777951\",\"copyright\":\"Zebras in Tarangire National Park, Tanzania (© cinoby/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=tarangire+national+park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230724_ZebraCousins%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"5684fec4118fa43e301748bca0148309\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230725\",\"fullstartdate\":\"202307250700\",\"enddate\":\"20230726\",\"url\":\"/th?id=OHR.LasLagunas_ROW5764169466_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.LasLagunas_ROW5764169466\",\"copyright\":\"Laguna de Torrevieja, Alicante, Spain (© Juan Maria Coy Vergara/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=laguna+de+torrevieja&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230725_LasLagunas%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"f41854d4dd552042f952abdd6d3ba688\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
+bing-json="[{\"startdate\":\"20230719\",\"fullstartdate\":\"202307190700\",\"enddate\":\"20230720\",\"url\":\"/th?id=OHR.CrescentLake_ROW4905967269_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.CrescentLake_ROW4905967269\",\"copyright\":\"Crescent Lake near Dunhuang, Gansu Province, China (© R7 Photo/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=Crescent+Lake+Gansu&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230719_CrescentLake%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"06821be31842d124b595c74003391de9\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230720\",\"fullstartdate\":\"202307200700\",\"enddate\":\"20230721\",\"url\":\"/th?id=OHR.MoonDayArtemis_ROW5010012135_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MoonDayArtemis_ROW5010012135\",\"copyright\":\"The moon seen from the Orion spacecraft of NASA's Artemis mission (© NASA)\",\"copyrightlink\":\"https://www.bing.com/search?q=moon&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230720_MoonDayArtemis%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"d3eac5e18d86f2102d47a543f74a4463\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230721\",\"fullstartdate\":\"202307210700\",\"enddate\":\"20230722\",\"url\":\"/th?id=OHR.BridgeNorway_ROW5243701761_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.BridgeNorway_ROW5243701761\",\"copyright\":\"Storseisundet Bridge, Atlantic Ocean Road, Norway (© Morten Falch Sortland/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Storseisundet+Bridge&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230721_BridgeNorway%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"1ef61f25aa02ac26d99b4908e3a189fc\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230722\",\"fullstartdate\":\"202307220700\",\"enddate\":\"20230723\",\"url\":\"/th?id=OHR.HammockDay_ROW5452750950_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.HammockDay_ROW5452750950\",\"copyright\":\"Hammock camping in a bald cypress tree, Florida, USA (© Mac Stone/Tandem Stills + Motion)\",\"copyrightlink\":\"https://www.bing.com/search?q=hammock+camping&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230722_HammockDay%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"494e169cfbac368b5f40bb2d58e5f256\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230723\",\"fullstartdate\":\"202307230700\",\"enddate\":\"20230724\",\"url\":\"/th?id=OHR.TeaEstate_ROW5550670907_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.TeaEstate_ROW5550670907\",\"copyright\":\"Edinburgh Tea Estate, Nuwara Eliya, Sri Lanka (© Jeremy Woodhouse/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=Nuwara+Eliya&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230723_TeaEstate%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"9649ffbc2f8a14643e6700b9cddc7b2a\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230724\",\"fullstartdate\":\"202307240700\",\"enddate\":\"20230725\",\"url\":\"/th?id=OHR.ZebraCousins_ROW5641777951_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.ZebraCousins_ROW5641777951\",\"copyright\":\"Zebras in Tarangire National Park, Tanzania (© cinoby/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=tarangire+national+park&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230724_ZebraCousins%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"5684fec4118fa43e301748bca0148309\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230725\",\"fullstartdate\":\"202307250700\",\"enddate\":\"20230726\",\"url\":\"/th?id=OHR.LasLagunas_ROW5764169466_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.LasLagunas_ROW5764169466\",\"copyright\":\"Laguna de Torrevieja, Alicante, Spain (© Juan Maria Coy Vergara/Getty Images)\",\"copyrightlink\":\"https://www.bing.com/search?q=laguna+de+torrevieja&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230725_LasLagunas%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"f41854d4dd552042f952abdd6d3ba688\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]},{\"startdate\":\"20230726\",\"fullstartdate\":\"202307260700\",\"enddate\":\"20230727\",\"url\":\"/th?id=OHR.MangrovePark_ROW5862204066_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp\",\"urlbase\":\"/th?id=OHR.MangrovePark_ROW5862204066\",\"copyright\":\"Jubail Mangrove Park in Abu Dhabi, United Arab Emirates (© Amazing Aerial Premium/Shutterstock)\",\"copyrightlink\":\"https://www.bing.com/search?q=mangrove&form=hpcapt\",\"title\":\"Info\",\"quiz\":\"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20230726_MangrovePark%22&FORM=HPQUIZ\",\"wp\":true,\"hsh\":\"6b90c7ee00d1778e1211f7f39b988ed8\",\"drk\":1,\"top\":1,\"bot\":1,\"hs\":[]}]"
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1434,14 +1437,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202307250700,"title":"Laguna de Torrevieja, Alicante, Spain","explanation":"오늘의 Bing 배경화면은 2023-07-25","copyright":"© Juan Maria Coy Vergara/Getty Images","longstartdate":"202307250700","imageinfolink":"https://www.bing.com/search?q=laguna+de+torrevieja&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.LasLagunas_ROW5764169466_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230725-LasLagunas_ROW5764169466_UHD.jpg","favourite":false}'
-
-[org/gnome/shell/extensions/bluetooth-quick-connect]
-bluetooth-auto-power-off=false
-bluetooth-auto-power-on=true
-keep-menu-on-toggle=true
-refresh-button-on=true
-show-battery-value-on=true
+state='{"maxlongdate":202307260700,"title":"Jubail Mangrove Park in Abu Dhabi, United Arab Emirates","explanation":"오늘의 Bing 배경화면은 2023-07-26","copyright":"© Amazing Aerial Premium/Shutterstock","longstartdate":"202307260700","imageinfolink":"https://www.bing.com/search?q=mangrove&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.MangrovePark_ROW5862204066_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20230726-MangrovePark_ROW5862204066_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth_smartlock]
 active=true
@@ -1652,7 +1648,7 @@ trans-use-custom-bg=true
 trans-use-custom-gradient=false
 trans-use-custom-opacity=false
 trans-use-dynamic-opacity=false
-tray-padding=4
+tray-padding=2
 tray-size=0
 window-preview-title-position='TOP'
 
@@ -2252,7 +2248,7 @@ selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=317
@@ -2280,7 +2276,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(397, 89)
+window-position=(316, 24)
 window-size=(1125, 879)
 
 [org/gtkhash]
