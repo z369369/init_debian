@@ -18,32 +18,30 @@ echo "============== [S] [ 1-1 / 6 ] Prepare =============="
 
 echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
-if [ "$1" == "" ]; then
-    if [ $? -eq 0 ]; then
-        echo -e "  Start \033[33mNormal\033[m install..."
-        sleep 5
-        ./02_apt.sh
-        ./03_flatpak.sh
-        ./04_firewall.sh
-        ./05_custom.sh $(whoami)
-        ./06_remove_trash.sh
-        echo "  All done!! Need to Reboot"
-    else
-        echo "  [FAIL] Please check Internet connection"
-    fi
+if [ $? -eq 0 ]; then
+    echo "Online"
+else
+    echo "Offline"
+    exit
 fi
 
+if [ "$1" == "" ]; then
+    echo -e "  Start \033[33mNormal\033[m install..."
+    sleep 5
+    ./02_apt.sh
+    ./03_flatpak.sh
+    ./04_firewall.sh
+    ./05_custom.sh $(whoami)
+    ./06_remove_trash.sh
+fi 
+
 if [ "$1" == "minimal" ]; then
-    if [ $? -eq 0 ]; then
-        echo -e "  Start \033[32mMinimal\033[m install..."
-        sleep 5
-        ./02_apt.sh
-        ./03_flatpak.sh
-        ./14_firewall.sh
-        ./15_custom.sh $(whoami)
-        ./06_remove_trash.sh
-        echo "  All done!! Need to Reboot"
-    else
-        echo "  [FAIL] Please check Internet connection"
-    fi
+    echo -e "  Start \033[32mMinimal\033[m install..."
+    sleep 5
+    ./02_apt.sh
+    ./03_flatpak.sh
+    ./14_firewall.sh
+    ./15_custom.sh $(whoami)
+    ./06_remove_trash.sh
 fi
+echo "  All done!! Need to Reboot"
