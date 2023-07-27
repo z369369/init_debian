@@ -1,127 +1,32 @@
-baobab #disk analyze
-build-essential #for debian essential 
-ca-certificates
-chrome-gnome-shell #Gnome Extension
 curl #Used
-deborphan #Used
-dkms #for debian essential
-fdupes #duplicate file remove
-ffmpeg #Used
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
-fonts-crosextra-caladea #for debian extra ms font
 gedit #gedit
 gedit-plugin-multi-edit #gedit
 git #Used
-gnome-calendar #Gnome Calendar
 gnome-core #Gnome
-gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
-gstreamer1.0-alsa #for debian alternative restrict extra
-gstreamer1.0-libav #for debian alternative restrict extra
-gstreamer1.0-plugins-ugly #for debian alternative restrict extra
-gstreamer1.0-vaapi #for debian alternative restrict extra
-gthumb #Used
 gufw #Used Firewall GUI
 hardinfo #Used
 htop #Used
-ibus-hangul #support ime hangul 
-imagemagick #Image converter
 imwheel #Mouse wheel scroll
-incron #Filesystem crontab
-libavcodec-extra #for debian alternative restrict extra
-libfuse2 #for Use appimage
-libnotify-bin #debian gnome notify
-libqt5svg5 #JPG to SVG
-make #Build
 mc #Mid-Night Commander
-meld #Winmerge
-nmap #my network search
 nautilus-admin
-nautilus-image-converter
-ncdu #du
-nemo #mint file manager
 neofetch #pfetch alternative
 net-tools #Used
 numlockx #gdm numlock on
 openssh-server #ssh
-pandoc #file converter
-printer-driver-all #for debian printer
-pydf #df
-python3.11-venv #python3 virtual env
 rsync #Used
 synaptic #Package manager
 timeshift #Backup, Restore
-transmission-cli #transmisson finish script
 ufw #Firewall
 vim #vi 
 wget #Download
-wmctrl #move Workspace
-xclip #clipboard for nemo
 xinput #device list
-yaru-theme-icon #theme for folder icon
 
 *
 
 ca.desrt.dconf-editor
-com.belmoussaoui.Decoder
-com.boxy_svg.BoxySVG
-com.brave.Browser
-com.discordapp.Discord
-com.github.jeromerobert.pdfarranger
-com.github.PintaProject.Pinta
 com.github.tchx84.Flatseal
-com.github.unrud.VideoDownloader
-com.google.Chrome
-com.heroicgameslauncher.hgl
-com.ktechpit.torrhunt
-com.obsproject.Studio
-com.opera.Opera
-com.redis.RedisInsight
-com.sweethome3d.Sweethome3d
-com.transmissionbt.Transmission
-com.usebottles.bottles
 com.valvesoftware.Steam
-com.vscodium.codium
-de.haeckerfelix.Shortwave
-fr.handbrake.ghb
-fr.natron.Natron
-io.dbeaver.DBeaverCommunity
-io.github.aandrew_me.ytdn
-io.github.celluloid_player.Celluloid
-io.github.hakuneko.HakuNeko
-io.github.prateekmedia.appimagepool
-io.github.seadve.Kooha
-io.podman_desktop.PodmanDesktop
-md.obsidian.Obsidian
-net.lutris.Lutris
-net.sourceforge.mcomix
-nl.hjdskes.gcolor3
-org.atheme.audacious
-org.audacityteam.Audacity
-org.bleachbit.BleachBit
-org.blender.Blender
-org.darktable.Darktable
-org.flameshot.Flameshot
-org.freecadweb.FreeCAD
-org.gimp.GIMP
-org.gnome.Boxes
-org.gnome.Contacts
-org.gnome.design.Contrast
-org.gnome.design.IconLibrary
-org.gnome.seahorse.Application
-org.inkscape.Inkscape
-org.kde.kdenlive
-org.kde.krita
-org.kde.okular
-org.libreoffice.LibreOffice
-org.linux_hardware.hw-probe
-org.nomacs.ImageLounge
-org.olivevideoeditor.Olive
-org.pulseaudio.pavucontrol
-org.remmina.Remmina
-org.sqlitebrowser.sqlitebrowser
-org.telegram.desktop
-org.videolan.VLC
-page.codeberg.Imaginer.Imaginer
 page.codeberg.libre_menu_editor.LibreMenuEditor
