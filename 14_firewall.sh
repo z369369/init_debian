@@ -46,8 +46,8 @@ sudo ufw allow 3389
 sudo ufw allow out 3389
 
 # vnc
-sudo ufw allow 5900
-sudo ufw allow out 5900
+# sudo ufw allow 5900
+# sudo ufw allow out 5900
 
 # ssh
 sudo ufw allow ssh

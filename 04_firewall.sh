@@ -56,8 +56,8 @@ sudo ufw allow out to 192.168.31.0/24 port 22000
 sudo ufw allow out to any port 33434:33524 proto udp
 
 #RDP
-# sudo ufw allow 3389
-# sudo ufw allow out 3389
+sudo ufw allow 3389
+sudo ufw allow out 3389
 
 #vnc
 # sudo ufw allow 5900
