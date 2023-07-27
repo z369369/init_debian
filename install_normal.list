@@ -37,6 +37,7 @@ libqt5svg5 #JPG to SVG
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
+nmap #my network search
 nautilus-admin
 nautilus-image-converter
 ncdu #du
@@ -45,6 +46,7 @@ neofetch #pfetch alternative
 net-tools #Used
 nginx
 numlockx #gdm numlock on
+openssh-server #ssh
 pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
