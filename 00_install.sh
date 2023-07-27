@@ -25,7 +25,7 @@ else
     exit
 fi
 
-read -p "Install mode? (Normal / Minimal) " -n 1 -r
+read -p "Choose install mode.. [ (N)ormal / (M)inimal ] : " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Nn]$ ]]; then
     echo -e "  Start \033[33mNormal\033[m install..."
