@@ -1,9 +1,6 @@
 curl #Used
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
-fonts-nanum-coding
-fonts-nanum-eco
-fonts-nanum-extra
 fonts-nanum
 fonts-noto-cjk
 fonts-noto-cjk-extra

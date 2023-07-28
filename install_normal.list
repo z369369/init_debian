@@ -6,9 +6,6 @@ curl #Used
 deborphan #Used
 distrobox #for virt apps
 dkms #for debian essential
-fonts-nanum-coding
-fonts-nanum-eco
-fonts-nanum-extra
 fonts-nanum
 fonts-noto-cjk
 fonts-noto-cjk-extra
