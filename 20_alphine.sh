@@ -1,6 +1,4 @@
 #!/bin/bash
-setup-alphine 
-
 apk update 
 
 apk add flatpak
