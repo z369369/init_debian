@@ -32,7 +32,6 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/micr
 
 sudo apt-get update
 sudo apt-get install code
--->
 
 ### abricotine
 ```
@@ -42,7 +41,7 @@ sudo apt install libnss3 libasound2
 
 sudo apt --fix-broken install
 ```
-
+-->
 
 ### gnome startup
 ```
@@ -60,7 +59,6 @@ sudo apt install simplescreenrecorder
 distrobox-export --app code
 -->
 ```
-distrobox-export --app abricotine
 distrobox-export --app gnome-session-properties
 distrobox-export --app simplescreenrecord
 ```
