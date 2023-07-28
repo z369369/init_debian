@@ -33,10 +33,19 @@ makepkg -si
 sudo pacman -S neofetch
 ```
 
-
 ### ani-cli
 ```
 yay -S ani-cli
+```
+
+## jerry
+```
+sudo curl -sL github.com/justchokingaround/jerry/raw/main/jerry.sh -o ./jerry && sudo chmod +x /usr/local/bin/jerry
+```
+
+## dra-cla
+```
+sudo curl -sL github.com/CoolnsX/dra-cla/raw/main/dra-cla -o ./dra-cla && sudo chmod +x /usr/local/bin/dra-cla
 ```
 
 
@@ -44,6 +53,9 @@ yay -S ani-cli
 ### .desktop to host 
 ```
 distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin
+
+distrobox-export --bin /usr/local/bin/jerry --export-path ~/.local/bin
+distrobox-export --bin /usr/local/bin/dra-cla --export-path ~/.local/bin
 ```
 
 ## remove
