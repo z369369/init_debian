@@ -20,15 +20,6 @@ dbox enter arch
 
 ## Install Package (dbox enter 후)
 
-### common 
-```
-```
-
-### neofetch
-```
-sudo pacman -S neofetch
-```
-
 ### yay
 ```
 cd ~/git
@@ -36,6 +27,12 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 ```
+
+### neofetch
+```
+sudo pacman -S neofetch
+```
+
 
 ### ani-cli
 ```
@@ -48,7 +45,6 @@ yay -S ani-cli
 ```
 distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin
 ```
-
 
 ## remove
 ```
