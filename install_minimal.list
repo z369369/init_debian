@@ -12,6 +12,7 @@ gnome-tweaks #Gnome Extension
 gufw #Used Firewall GUI
 hardinfo #Used
 htop #Used
+ibus-hangul #support ime hangul 
 imwheel #Mouse wheel scroll
 mc #Mid-Night Commander
 nautilus-admin
