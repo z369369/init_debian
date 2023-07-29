@@ -1,3 +1,6 @@
+## 관련 문서
+- [상위문서](readme.md)
+
 ## Prepare
 
 ### gedit ~/.bashrc
