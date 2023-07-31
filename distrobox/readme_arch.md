@@ -35,7 +35,12 @@ makepkg -si
 
 ### common
 ```
-sudo pacman -S pamac-aur neofetch mpv
+sudo pacman -S neofetch mpv
+```
+
+### pamac-manager
+```
+sudo pacman -S pamac-aur
 ```
 
 ### ani-cli
