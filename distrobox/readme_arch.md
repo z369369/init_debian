@@ -33,14 +33,9 @@ cd yay
 makepkg -si
 ```
 
-### pamac-aur
+### common
 ```
-sudo pacman -S pamac-aur
-```
-
-### neofetch
-```
-sudo pacman -S neofetch
+sudo pacman -S pamac-aur neofetch mpv
 ```
 
 ### ani-cli
@@ -64,8 +59,10 @@ sudo curl -sL github.com/CoolnsX/dra-cla/raw/main/dra-cla -o ./dra-cla && sudo c
 ```
 distrobox-export --app pamac-manager
 
-distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin
+distrobox-export --app mpv
+distrobox-export --bin /usr/sbin/mpv --export-path ~/.local/bin
 
+distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin
 distrobox-export --bin /usr/local/bin/jerry --export-path ~/.local/bin
 distrobox-export --bin /usr/local/bin/dra-cla --export-path ~/.local/bin
 ```
