@@ -64,12 +64,18 @@ sudo ufw allow out 3389
 # sudo ufw allow out 5900
 
 # ssh
-sudo ufw allow ssh
-sudo ufw allow out ssh
+sudo ufw allow 37622
+sudo ufw allow out 37622
 
 #torrent port
 sudo ufw allow 51413
 sudo ufw allow out 51413
+
+#moonlight
+sudo ufw allow 47984:48010/tcp
+sudo ufw allow out 47984:48010/tcp
+sudo ufw allow 47984:48010/udp
+sudo ufw allow out 47984:48010/udp
 
 sudo ufw allow out on virbr0
 

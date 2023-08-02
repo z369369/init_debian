@@ -7,6 +7,9 @@ cd ~/Downloads
 touch ~/Downloads
 
 # Image Files
+mv *.nsp *.xci ~/Games/nintendo_nsp 2> /dev/null
+
+# Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw ~/Pictures 2> /dev/null
 
 # Audio Files 
@@ -45,6 +48,7 @@ rsync -a --delete \
 --exclude .local/share/Trash \
 --exclude .local/share/flatpak \
 --exclude .local/share/containers \
+--exclude Games \
 --exclude phone/Tachiyomi \
 --exclude phone/Download_Home \
 --exclude Downloads/iso \
