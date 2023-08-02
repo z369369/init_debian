@@ -77,6 +77,7 @@ sudo ufw allow out 47984:48010/tcp
 sudo ufw allow 47984:48010/udp
 sudo ufw allow out 47984:48010/udp
 
+
 sudo ufw allow out on virbr0
 
 sudo ufw reload
