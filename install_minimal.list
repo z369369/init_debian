@@ -8,6 +8,7 @@ gedit #gedit
 gedit-plugin-multi-edit #gedit
 git #Used
 gnome-core #Gnome
+gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
 gufw #Used Firewall GUI
 hardinfo #Used

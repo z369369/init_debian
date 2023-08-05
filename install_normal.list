@@ -1,14 +1,12 @@
 baobab #disk analyze
 build-essential #for debian essential 
 ca-certificates
-chrome-gnome-shell #Gnome Extension
 curl #Used
 deborphan #Used
 distrobox #for virt apps
 dkms #for debian essential
 fonts-nanum
 fonts-noto-cjk
-fonts-noto-cjk-extra
 fdupes #duplicate file remove
 ffmpeg #Used
 firefox-esr #for debian
@@ -82,6 +80,7 @@ com.github.unrud.VideoDownloader
 com.google.Chrome
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
+com.mattjakeman.ExtensionManager
 com.moonlight_stream.Moonlight
 com.obsproject.Studio
 com.opera.Opera
