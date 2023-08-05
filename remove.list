@@ -13,6 +13,8 @@ fonts-noto-extra
 fonts-noto-hinted
 fonts-noto-ui-extra
 fonts-noto-unhinted
+fonts-dejavu
+fonts-dejavu-core
 four-in-a-row
 fwupd
 gnome-2048
