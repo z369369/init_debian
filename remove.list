@@ -8,7 +8,11 @@ evolution
 five-or-more
 fonts-liberation
 fonts-liberation2
-fonts-noto
+fonts-noto-cjk-extra
+fonts-noto-extra
+fonts-noto-hinted
+fonts-noto-ui-extra
+fonts-noto-unhinted
 four-in-a-row
 fwupd
 gnome-2048
