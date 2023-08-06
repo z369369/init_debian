@@ -63,7 +63,12 @@ dconf load / < ~/git/init_debian/gnome-shell/dconf_backup
 
 echo "============== [E] [5-4 / 6] Dconf restore =============="
 
-echo "============== [S] [5-5 / 6] Set Sudo key file =============="
+echo "============== [S] [5-5 / 6] install font =============="
+mkdir ~/.fonts
+cp -r ./fonts/* ~/.fonts/
+echo "============== [S] [5-5 / 6] install font =============="
+
+echo "============== [S] [5-6 / 6] Set Sudo key file =============="
 
 echo "Check.. Sudo Key file Exist.."
 if [ -e ~/.key ]; then
@@ -74,5 +79,5 @@ else
   echo $v_pwd >> ~/.key
 fi
 
-echo "============== [E] [5-5 / 6] Set key file =============="
+echo "============== [E] [5-6 / 6] Set key file =============="
 
