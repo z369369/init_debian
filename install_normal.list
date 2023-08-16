@@ -25,7 +25,7 @@ gstreamer1.0-plugins-ugly #for debian alternative restrict extra
 gstreamer1.0-vaapi #for debian alternative restrict extra
 gthumb #Used
 gufw #Used Firewall GUI
-hardinfo #Used
+hardinfo #Used 
 htop #Used
 ibus-hangul #support ime hangul 
 imagemagick #Image converter
@@ -107,7 +107,6 @@ net.sourceforge.mcomix
 net.sapples.LiveCaptions
 nl.hjdskes.gcolor3
 org.atheme.audacious
-org.bleachbit.BleachBit
 org.blender.Blender
 org.darktable.Darktable
 org.flameshot.Flameshot
