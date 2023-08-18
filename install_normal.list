@@ -101,6 +101,7 @@ io.github.prateekmedia.appimagepool
 io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
 io.typora.Typora
+io.github.giantpinkrobots.flatsweep
 md.obsidian.Obsidian
 net.lutris.Lutris
 net.sourceforge.mcomix
@@ -127,6 +128,7 @@ org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
 org.pulseaudio.pavucontrol
 org.remmina.Remmina
+org.kde.isoimagewriter
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 org.videolan.VLC
