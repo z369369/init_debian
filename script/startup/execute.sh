@@ -1,6 +1,6 @@
 #!/bin/bash
 #sound
-~/script/startup/fdupes_pictures.sh
+#~/script/startup/fdupes_pictures.sh
 #~/script/startup/wallpaper.sh
 #python3 ~/script/py/startup_gnome_extension.py
 cat ~/.key | sudo -S systemctl start bluetooth.service
