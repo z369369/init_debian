@@ -29,8 +29,8 @@ read -p "Choose install mode.. [ (N)ormal / (M)inimal ] : " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Nn]$ ]]; then
     echo -e "  Start \033[33mNormal\033[m install..."
-    ./02_apt_normal.sh
     ./02_apt.sh normal
+    ./02_apt_normal.sh
     ./03_flatpak.sh normal
     ./04_firewall.sh
     ./05_custom.sh $(whoami)
