@@ -78,6 +78,7 @@ com.github.jeromerobert.pdfarranger
 com.github.PintaProject.Pinta
 com.github.tchx84.Flatseal
 com.github.unrud.VideoDownloader
+org.flameshot.Flameshot
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
 com.mattjakeman.ExtensionManager
@@ -111,7 +112,6 @@ nl.hjdskes.gcolor3
 org.atheme.audacious
 org.blender.Blender
 org.darktable.Darktable
-org.flameshot.Flameshot
 org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.gnome.Boxes
@@ -124,7 +124,6 @@ org.kde.kdenlive
 org.kde.krita
 org.kde.okular
 org.libreoffice.LibreOffice
-org.linux_hardware.hw-probe
 org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
 org.pulseaudio.pavucontrol
