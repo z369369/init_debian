@@ -38,6 +38,7 @@ libqt5svg5 #JPG to SVG
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
+mpv #video player
 nmap #my network search
 nautilus-admin
 nautilus-image-converter
