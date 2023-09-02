@@ -22,7 +22,10 @@ rm -rf "/home/lwh/Pictures/스크린샷"
 ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
 
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
+
+#mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv
+sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 
 rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
