@@ -8,7 +8,6 @@ dkms #for debian essential
 fonts-nanum
 fonts-noto-cjk
 fdupes #duplicate file remove
-ffmpeg #Used
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 fonts-crosextra-caladea #for debian extra ms font
@@ -99,13 +98,13 @@ fr.natron.Natron
 fr.romainvigier.MetadataCleaner
 io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
-io.github.celluloid_player.Celluloid
 io.github.peazip.PeaZip
 io.github.prateekmedia.appimagepool
 io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
 io.typora.Typora
 io.github.giantpinkrobots.flatsweep
+info.smplayer.SMPlayer
 md.obsidian.Obsidian
 net.lutris.Lutris
 net.sourceforge.mcomix
