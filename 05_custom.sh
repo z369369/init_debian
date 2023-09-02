@@ -25,7 +25,11 @@ git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautil
 
 #mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv
+sed -i 's/subcp=utf8:cp949//' ~/.config/mpv/mpv.conf
+
 sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
+sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
+sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
 rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
 rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
