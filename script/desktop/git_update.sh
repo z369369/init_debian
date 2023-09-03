@@ -3,8 +3,6 @@ folders=(
 	zzz_ani-cli 
 	zzz_dra-cla 
 	zzz_jerry 
-	zzz_epub-translator 
-	zzz_lightnovel-crawler
 	zzz_lobster
 )
 
