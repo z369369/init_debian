@@ -3,11 +3,6 @@
 
 ## Prepare
 
-### gedit ~/.bashrc
-```
-alias dbox="distrobox"
-```
-
 ## Install 
 
 ### Install distrobox
@@ -43,35 +38,8 @@ sudo pacman -S neofetch mpv
 sudo pacman -S pamac-aur
 ```
 
-### ani-cli
-```
-yay -S ani-cli
-```
-
-## jerry
-```
-sudo curl -sL github.com/justchokingaround/jerry/raw/main/jerry.sh -o ./jerry && sudo chmod +x /usr/local/bin/jerry
-```
-
-## dra-cla
-```
-sudo curl -sL github.com/CoolnsX/dra-cla/raw/main/dra-cla -o ./dra-cla && sudo chmod +x /usr/local/bin/dra-cla
-```
-
-
 ## Export
 ### .desktop to host 
 ```
 distrobox-export --app pamac-manager
-
-distrobox-export --app mpv
-distrobox-export --bin /usr/sbin/mpv --export-path ~/.local/bin
-```
-<!-- distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin
-distrobox-export --bin /usr/local/bin/jerry --export-path ~/.local/bin
-distrobox-export --bin /usr/local/bin/dra-cla --export-path ~/.local/bin -->
-
-## Remove (example)
-```
-distrobox-export --bin /usr/sbin/ani-cli --export-path ~/.local/bin --delete
 ```
