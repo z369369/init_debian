@@ -1,5 +1,5 @@
-## 관련 문서
-- [상위문서](readme.md)
+## Relate Document
+- [Upper - Readme.md](readme.md)
 
 ## Prepare
 
