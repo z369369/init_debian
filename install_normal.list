@@ -70,6 +70,7 @@ yaru-theme-icon #theme for folder icon
 *
 
 ca.desrt.dconf-editor
+com.github.qarmin.czkawka
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.brave.Browser
@@ -104,12 +105,12 @@ io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
 io.typora.Typora
 io.github.giantpinkrobots.flatsweep
-info.smplayer.SMPlayer
 md.obsidian.Obsidian
 net.lutris.Lutris
 net.sourceforge.mcomix
 net.sapples.LiveCaptions
 nl.hjdskes.gcolor3
+org.kde.haruna
 org.atheme.audacious
 org.blender.Blender
 org.darktable.Darktable
