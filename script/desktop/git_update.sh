@@ -4,6 +4,8 @@ folders=(
 	zzz_dra-cla 
 	zzz_jerry 
 	zzz_lobster
+	zzz_lightnovel-crawler
+	zzz_epub-translator
 )
 
 RED='\033[1;33m'
