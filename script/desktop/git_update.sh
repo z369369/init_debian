@@ -29,3 +29,8 @@ cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
 cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
 
 cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
+
+rm -rf ~/.local/share/nautilus/scripts/'Open with'
+rm -rf ~/.local/share/nautilus/scripts/Misc
+rm -rf ~/.local/share/nautilus/scripts/Forensic
+rm -rf ~/.local/share/nautilus/scripts/'File encryption'
