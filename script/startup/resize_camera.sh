@@ -5,7 +5,7 @@ camera_folder="/home/lwh/Pictures/Camera/"
 camera_folder2="/home/lwh/Pictures/Camera/Camera_Resized/"
 
 # Find all the image files in the camera folder
-image_files=$(find "$camera_folder" -maxdepth 1 -type f -iname "*.jpg")
+image_files=$(find "$camera_folder" -maxdepth 1 -type f -iname "*.jpg" -o -iname "*.png")
 
 # Print the names of the image files
 for image_file in $image_files; do
