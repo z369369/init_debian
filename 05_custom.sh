@@ -21,10 +21,8 @@ ln -s /usr/share/applications ~/Desktop/desktop_usr
 rm -rf "/home/lwh/Pictures/스크린샷"
 ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
 
-git clone https://github.com/cfgnunes/nautilus-scripts.git ~/git/zzz_nautilus-scripts 
 rm -rf ~/.local/share/nautilus/scripts
-ln -s ~/git/zzz_nautilus-scripts ~/.local/share/nautilus/scripts
-cp -rf ~/git/init_debian/copy_nautilus_scripts/* ~/.local/share/nautilus/scripts/
+git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
 #mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv
@@ -34,8 +32,7 @@ sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
-rsync -a ~/git/init_debian/local_share/nautilus/ ~/.local/share/nautilus
-rsync -a ~/git/init_debian/local_share/nautilus-python/ ~/.local/share/nautilus-python
+cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
 
 sudo systemctl enable syncthing@lwh.service
 
@@ -46,7 +43,7 @@ echo "============== [S] [5-2 / 6] Nemo =============="
 git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
 rm -rf ~/.local/share/nemo/scripts
-ln -s ~/git/zzz_nautilus-scripts ~/.local/share/nemo/scripts
+ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
