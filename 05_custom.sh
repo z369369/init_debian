@@ -47,7 +47,7 @@ ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
-cp -rf ~/git/init_debian/copy_home/* ~/
+cp -rf ~/git/init_debian/copy/home/lwh/* ~/
 
 echo "============== [S] [5-3 / 6] Edit - Gnome Extension =============="
 
