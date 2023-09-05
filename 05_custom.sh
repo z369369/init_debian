@@ -18,6 +18,9 @@ ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpa
 rm -rf ~/Desktop/desktop_usr
 ln -s /usr/share/applications ~/Desktop/desktop_usr
 
+rm -rf ~/Desktop/local_bin
+ln -s ~/.local/bin ~/Desktop/local_bin
+
 rm -rf "/home/lwh/Pictures/스크린샷"
 ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
 
