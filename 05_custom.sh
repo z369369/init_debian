@@ -32,8 +32,6 @@ sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
-cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
-
 sudo systemctl enable syncthing@lwh.service
 
 echo "============== [E] [5-1 / 6] Link - shell, script =============="
@@ -44,6 +42,8 @@ git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
 rm -rf ~/.local/share/nemo/scripts
 ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
+
+cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
