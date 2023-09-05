@@ -46,7 +46,7 @@ git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 rm -rf ~/.local/share/nemo/scripts
 ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
-cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
+cp -rf ~/git/init_debian/copy_home/* ~/
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
