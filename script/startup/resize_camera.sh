@@ -13,6 +13,6 @@ for image_file in $image_files; do
   image_file2=${image_file/$camera_folder/$camera_folder2} 
   #echo "$image_file2"
   #exif --remove "$image_file" --output="$image_file"
-  mv "$image_file" "$image_file2"
-  convert -resize 50% "$image_file2" "$image_file2"
+  convert -resize 50% "$image_file" "$image_file2"
+  rm -rf "$image_file"
 done
