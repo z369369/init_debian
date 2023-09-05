@@ -6,6 +6,7 @@ folders=(
 	zzz_lobster
 	zzz_lightnovel-crawler
 	zzz_epub-translator
+	zzz_nautilus-scripts
 )
 
 RED='\033[1;33m'
@@ -26,4 +27,4 @@ cp -f ~/git/zzz_ani-cli/ani-cli ~/.local/bin/ani-cli
 cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
 cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
 cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
-
+cp -rf ~/git/init_debian/copy_nautilus_scripts/* ~/.local/share/nautilus/scripts/

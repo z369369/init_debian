@@ -24,7 +24,7 @@ ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/git/zzz_nautilus-scripts 
 rm -rf ~/.local/share/nautilus/scripts
 ln -s ~/git/zzz_nautilus-scripts ~/.local/share/nautilus/scripts
-cp -rf ~/git/init_debian/nautilus_scripts/* ~/.local/share/nautilus/scripts/
+cp -rf ~/git/init_debian/copy_nautilus_scripts/* ~/.local/share/nautilus/scripts/
 
 #mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv
@@ -46,7 +46,7 @@ echo "============== [S] [5-2 / 6] Nemo =============="
 git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
 rm -rf ~/.local/share/nemo/scripts
-ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
+ln -s ~/git/zzz_nautilus-scripts ~/.local/share/nemo/scripts
 
 echo "============== [E] [5-2 / 6] Nemo =============="
 
