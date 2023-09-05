@@ -27,4 +27,5 @@ cp -f ~/git/zzz_ani-cli/ani-cli ~/.local/bin/ani-cli
 cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
 cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
 cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
-cp -rf ~/git/init_debian/copy_nautilus_scripts/* ~/.local/share/nautilus/scripts/
+
+cp -rf ~/git/init_debian/copy_local_share/* ~/.local/share/
