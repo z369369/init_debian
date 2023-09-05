@@ -1,0 +1,3 @@
+#!/bin/bash
+gedit ~/.config/mpv/input.conf &
+gedit ~/.config/mpv/mpv.conf &

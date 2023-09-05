@@ -30,7 +30,6 @@ git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautil
 #mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv
 sed -i 's/subcp=utf8:cp949//' ~/.config/mpv/mpv.conf
-
 sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
@@ -46,9 +45,9 @@ git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 rm -rf ~/.local/share/nemo/scripts
 ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
 
-cp -rf ~/git/init_debian/copy_home/* ~/
-
 echo "============== [E] [5-2 / 6] Nemo =============="
+
+cp -rf ~/git/init_debian/copy_home/* ~/
 
 echo "============== [S] [5-3 / 6] Edit - Gnome Extension =============="
 
