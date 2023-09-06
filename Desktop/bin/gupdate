@@ -23,6 +23,10 @@ do
 	echo ""
 done
 
+rm -rf "/home/lwh/.local/share/nautilus/scripts/Forensic"
+rm -rf "/home/lwh/.local/share/nautilus/scripts/Open with"
+rm -rf "/home/lwh/.local/share/nautilus/scripts/Misc"
+
 cp -f ~/git/zzz_ani-cli/ani-cli ~/.local/bin/ani-cli
 cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
 cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
