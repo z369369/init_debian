@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=startup/imwheel
+Name=custom_imwheel
 NoDisplay=false
 Hidden=false
 Exec=/usr/bin/imwheel -k

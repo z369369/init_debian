@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=custom_execute
+Name[en_US]=custom_execute
+Name[ko]=custom_execute
+NoDisplay=false
+Hidden=false
+Exec=timeout 20 /home/lwh/Desktop/autostart/custom_execute.sh
+X-GNOME-Autostart-enabled=true

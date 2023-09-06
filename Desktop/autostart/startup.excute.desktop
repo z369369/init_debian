@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=startup/execute
-Name[en_US]=startup/execute
-Name[ko]=startup/execute
-NoDisplay=false
-Hidden=false
-Exec=timeout 20 /home/lwh/Desktop/autostart/execute.sh
-X-GNOME-Autostart-enabled=true

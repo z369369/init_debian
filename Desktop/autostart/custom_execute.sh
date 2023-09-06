@@ -1,6 +1,6 @@
 #!/bin/bash
 #sound
-~/Desktop/autostart/resize_camera.sh
+~/Desktop/autostart/custom_resize_camera.sh
 #~/Desktop/autostart/fdupes_pictures.sh
 #~/Desktop/autostart/wallpaper.sh
 #python3 ~/Desktop/py/autostart_gnome_extension.py
