@@ -1,9 +1,9 @@
 #!/bin/bash
 #sound
-~/script/startup/resize_camera.sh
-#~/script/startup/fdupes_pictures.sh
-#~/script/startup/wallpaper.sh
-#python3 ~/script/py/startup_gnome_extension.py
+~/Desktop/autostart/resize_camera.sh
+#~/Desktop/autostart/fdupes_pictures.sh
+#~/Desktop/autostart/wallpaper.sh
+#python3 ~/Desktop/py/autostart_gnome_extension.py
 cat ~/.key | sudo -S systemctl start bluetooth.service
 cat ~/.key | sudo -S ufw default deny outgoing 
 cat ~/.key | sudo -S ufw default deny incoming

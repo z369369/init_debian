@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=startup/imwheel
+NoDisplay=false
+Hidden=false
+Exec=/usr/bin/imwheel -k
+X-GNOME-Autostart-enabled=true
