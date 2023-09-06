@@ -1,29 +1,4 @@
 #!/bin/bash
-echo "============== [S] [5-1 / 6] Link - shell, script =============="
-rm -rf ~/script
-ln -s ~/git/init_debian/script ~/script
-
-rm -rf ~/.local/share/gnome-shell
-ln -s ~/git/init_debian/gnome-shell ~/.local/share/gnome-shell
-
-rm -rf ~/Templates
-ln -s ~/git/init_debian/Templates ~/Templates
-
-rm -rf ~/Desktop/desktop_local
-ln -s ~/.local/share/applications ~/Desktop/desktop_local
-
-rm -rf ~/Desktop/desktop_flatpak
-ln -s ~/.local/share/flatpak/exports/share/applications ~/Desktop/desktop_flatpak
-
-rm -rf ~/Desktop/desktop_usr
-ln -s /usr/share/applications ~/Desktop/desktop_usr
-
-rm -rf ~/Desktop/local_bin
-ln -s ~/.local/bin ~/Desktop/local_bin
-
-rm -rf "/home/lwh/Pictures/스크린샷"
-ln -s /home/lwh/Pictures/Screenshots "/home/lwh/Pictures/스크린샷"
-
 rm -rf ~/.local/share/nautilus/scripts
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
@@ -34,18 +9,13 @@ sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
+git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
+
+echo "============== [S] [5-1 / 6] Link - shell, script =============="
+
 sudo systemctl enable syncthing@lwh.service
 
 echo "============== [E] [5-1 / 6] Link - shell, script =============="
-
-echo "============== [S] [5-2 / 6] Nemo =============="
-
-git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
-
-rm -rf ~/.local/share/nemo/scripts
-ln -s ~/.local/share/nautilus/scripts ~/.local/share/nemo/scripts
-
-echo "============== [E] [5-2 / 6] Nemo =============="
 
 rsync -a ~/git/init_debian/copy/home/lwh/ ~/
 

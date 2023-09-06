@@ -34,7 +34,8 @@ if [[ $REPLY =~ ^[Nn]$ ]]; then
     ./03_flatpak.sh normal
     ./04_firewall.sh
     ./05_custom.sh $(whoami)
-    ./06_remove_trash.sh
+    ./06_custom_link.sh $(whoami)
+    ./07_remove_trash.sh
 fi 
 
 if [[ $REPLY =~ ^[Mm]$ ]]; then
@@ -43,6 +44,6 @@ if [[ $REPLY =~ ^[Mm]$ ]]; then
     ./03_flatpak.sh minimal
     ./04_firewall.sh
     ./15_custom.sh $(whoami)
-    ./06_remove_trash.sh
+    ./07_remove_trash.sh
 fi
 echo "  All done!! Need to Reboot"
