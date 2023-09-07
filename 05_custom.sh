@@ -11,11 +11,11 @@ sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
 git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
 
-echo "============== [S] [5-1 / 6] Link - shell, script =============="
+echo "============== [S] [5-2 / 6] Service =============="
 
 sudo systemctl enable syncthing@lwh.service
 
-echo "============== [E] [5-1 / 6] Link - shell, script =============="
+echo "============== [E] [5-2 / 6] Service =============="
 
 rsync -a ~/git/init_debian/copy/home/lwh/ ~/
 
