@@ -16,7 +16,7 @@ gsettings set org.gnome.desktop.interface enable-animations false
 
 gsettings set org.gnome.shell.extensions.stocks.ticker-interval 600
 
-echo "============== [E] [5-3 / 6] Link - Gnome Extension =============="
+echo "============== [E] [5-3 / 6] Edit - Gnome Extension =============="
 
 echo "============== [E] [5-4 / 6] Dconf restore =============="
 
