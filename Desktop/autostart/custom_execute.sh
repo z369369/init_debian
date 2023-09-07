@@ -4,7 +4,7 @@
 #~/Desktop/autostart/fdupes_pictures.sh
 #~/Desktop/autostart/wallpaper.sh
 #python3 ~/Desktop/py/autostart_gnome_extension.py
-cat ~/.key | sudo -S systemctl start bluetooth.service
+# cat ~/.key | sudo -S systemctl start bluetooth.service
 cat ~/.key | sudo -S ufw default deny outgoing 
 cat ~/.key | sudo -S ufw default deny incoming
 cat ~/.key | sudo -S ufw enable
