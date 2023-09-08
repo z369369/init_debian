@@ -17,7 +17,8 @@ _main_task() {
     local EXIT_CODE
 
     OUTPUT_FILE="$OUTPUT_DIR/$FILE"
-    STD_OUTPUT=$(convert -resize "600" "$FILE" "$OUTPUT_FILE" 2>&1)
+    STD_OUTPUT=$(convert -resize 600 "$FILE" "$OUTPUT_FILE" 2>&1)
+    mogrify -strip "$output_file"
     EXIT_CODE=$?
     _log_error_result "$FILE" "$STD_OUTPUT" "$OUTPUT_DIR" "$EXIT_CODE" "$OUTPUT_FILE"
 }
