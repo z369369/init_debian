@@ -21,7 +21,7 @@
     <application id="org.gnome.Meld.desktop" score="32.6875" last-seen="1694069404"/>
     <application id="org.kde.kdenlive.desktop" score="0" last-seen="1694123599"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="12.5" last-seen="1694149312"/>
-    <application id="org.gnome.Terminal.desktop" score="415.0578462348517" last-seen="1694285719"/>
+    <application id="org.gnome.Terminal.desktop" score="437.0578462348517" last-seen="1694286068"/>
     <application id="com.vscodium.codium.desktop" score="0" last-seen="1694119204"/>
     <application id="org.pulseaudio.pavucontrol.desktop" score="0" last-seen="1693693085"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="1.3465843200683594" last-seen="1693795364"/>
@@ -32,13 +32,13 @@
     <application id="org.gnome.FileRoller.desktop" score="0.79067230224609375" last-seen="1694171172"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0.046144723892211914" last-seen="1693795360"/>
     <application id="org.gnome.Evince.desktop" score="0" last-seen="1693869335"/>
-    <application id="ubuntu-code-url-handler.desktop" score="545.396484375" last-seen="1694285723"/>
+    <application id="ubuntu-code-url-handler.desktop" score="554.396484375" last-seen="1694286053"/>
     <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="5.0625" last-seen="1693946674"/>
     <application id="google-chrome.desktop" score="527" last-seen="1694113160"/>
     <application id="synaptic.desktop" score="39.195744752883911" last-seen="1694070831"/>
     <application id="net.kuribo64.melonDS.desktop" score="28.25" last-seen="1693879187"/>
     <application id="org.gnome.gedit.desktop" score="208.03291320800781" last-seen="1694171168"/>
-    <application id="firefox-esr.desktop" score="13428.203954696655" last-seen="1694285423"/>
+    <application id="firefox-esr.desktop" score="13440.203954696655" last-seen="1694285929"/>
     <application id="mpv.desktop" score="42.8125" last-seen="1694226641"/>
     <application id="org.gnome.baobab.desktop" score="11.1875" last-seen="1694122945"/>
   </context>
