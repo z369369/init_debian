@@ -2,6 +2,7 @@ baobab #disk analyze
 build-essential #for debian essential 
 ca-certificates
 curl #Used
+chrome-gnome-shell # gnome shell connector for firefox
 deborphan #Used
 distrobox #for virt apps
 dkms #for debian essential
@@ -84,7 +85,6 @@ com.github.unrud.VideoDownloader
 org.flameshot.Flameshot
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
-com.mattjakeman.ExtensionManager
 com.moonlight_stream.Moonlight
 com.obsproject.Studio
 com.opera.Opera
