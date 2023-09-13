@@ -8,5 +8,5 @@ rm -rf /home/lwh/.var/app/com.opera.Opera/config/opera/History
 #gupdate
 /home/lwh/.local/bin/gupdate > /dev/null 2>&1
 
-dd#dupdate
+#dupdate
 /uddsr/bin/distrobox-upgrade --all > /dev/null 2>&1
