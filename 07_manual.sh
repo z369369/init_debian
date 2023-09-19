@@ -13,3 +13,4 @@
 # git clone https://github.com/vinceliuice/grub2-themes.git
 # cd grub2-themes/
 # sudo ./install.sh -t stylish -s 1080p
+sudo cp ~/git/init_debian/background.jpg /usr/share/grub/themes/stylish/background.jpg
