@@ -7,3 +7,9 @@
 
 # if gnome-terminal not work? excute locale setting
 # sudo dpkg-reconfigure locales
+
+
+# grub theme
+# git clone https://github.com/vinceliuice/grub2-themes.git
+# cd grub2-themes/
+# sudo ./install.sh -t stylish -s 1080p
