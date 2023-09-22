@@ -30,7 +30,7 @@ makepkg -si
 
 ### common
 ```
-sudo pacman -S neofetch mpv
+sudo pacman -S neofetch
 ```
 
 ### pamac-manager
