@@ -19,7 +19,7 @@
     <application id="org.gnome.Meld.desktop" score="4.5" last-seen="1694906064"/>
     <application id="com.usebottles.bottles.desktop" score="440.5" last-seen="1695384350"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1694993879"/>
-    <application id="org.gnome.Terminal.desktop" score="445.0643076948391" last-seen="1695410965"/>
+    <application id="org.gnome.Terminal.desktop" score="502.0643076948391" last-seen="1695412266"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="8" last-seen="1695369302"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="341.38583076000214" last-seen="1695379985"/>
     <application id="org.gnome.Boxes.desktop" score="525" last-seen="1695380676"/>
@@ -29,12 +29,12 @@
     <application id="org.kde.okular.desktop" score="6" last-seen="1695250057"/>
     <application id="org.gnome.FileRoller.desktop" score="2.0247085094451904" last-seen="1695250082"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0.12644202262163162" last-seen="1695379983"/>
-    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="9" last-seen="1695410715"/>
+    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="12" last-seen="1695412259"/>
     <application id="google-chrome.desktop" score="56.09375" last-seen="1695040884"/>
     <application id="synaptic.desktop" score="84.037367023527622" last-seen="1695373068"/>
-    <application id="ubuntu-code-url-handler.desktop" score="1197.0748901367188" last-seen="1695378540"/>
+    <application id="ubuntu-code-url-handler.desktop" score="1216.0748901367188" last-seen="1695412179"/>
     <application id="org.gnome.gedit.desktop" score="1061.2197785377502" last-seen="1695411023"/>
     <application id="gnome-system-monitor.desktop" score="0" last-seen="1695368117"/>
-    <application id="firefox-esr.desktop" score="15338.00637358427" last-seen="1695411266"/>
+    <application id="firefox-esr.desktop" score="15376.00637358427" last-seen="1695412181"/>
   </context>
 </application-state>
