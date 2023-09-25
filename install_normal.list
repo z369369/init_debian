@@ -35,6 +35,7 @@ libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
 libqt5svg5 #JPG to SVG
+libopengl0 # run appimage
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
