@@ -1,6 +1,1 @@
 link_gnome-shell/application_state
-script/py/__pycache__/*
-script/py/log/*
-script/py/crontab_calendar.txt
-gnome-shell/extensions/IP-Finder@linxgem33.com/icons/latest_map.png
-script/py/crontab_calendar.txt
