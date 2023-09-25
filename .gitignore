@@ -1,7 +1,4 @@
-gnome-shell/application_state
-gnome-shell/extensions/NotificationCounter@coolllsk/stylesheet.css
-gnome-shell/extensions/gnome-shutdown-button@kirby_33@hotmail.fr/extension.js
-gnome-shell/extensions/openweather-extension@jenslody.de/openweathermap.js
+link_gnome-shell/application_state
 script/py/__pycache__/*
 script/py/log/*
 script/py/crontab_calendar.txt
