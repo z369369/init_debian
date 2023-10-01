@@ -1,17 +1,18 @@
 baobab #disk analyze
 build-essential #for debian essential 
-ca-certificates
-curl #Used
+ca-certificates #certification
 chrome-gnome-shell # gnome shell connector for firefox
+curl #Used
 deborphan #Used
 distrobox #for virt apps
 dkms #for debian essential
-fonts-nanum
-fonts-noto-cjk
 fdupes #duplicate file remove
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 fonts-crosextra-caladea #for debian extra ms font
+fonts-nanum
+fonts-noto-cjk
+fzf #dependency ani-cli, dra-cla
 gedit #gedit
 gedit-plugin-multi-edit #gedit
 git #Used
@@ -34,14 +35,12 @@ incron #Filesystem crontab
 libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
-libqt5svg5 #JPG to SVG
 libopengl0 # run appimage
+libqt5svg5 #JPG to SVG
 make #Build
 mc #Mid-Night Commander
 meld #Winmerge
 mpv #video player
-fzf #ani-cli, dra-cla
-nmap #my network search
 nautilus-admin
 nautilus-image-converter
 ncdu #du
@@ -50,20 +49,23 @@ neofetch #pfetch alternative
 net-tools #Used
 network-manager-openvpn-gnome #vpn for gnome
 nginx
+nmap #my network search
 openssh-server #ssh
 pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
 python3.11-venv #python3 virtual env
-rsync #Used
 rename # rename with perl
+rsync #Used
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
 transmission-cli #transmisson finish script
 ufw #Firewall
-vim #vi 
+vim #vi
 wget #Download
+wl-clipboard #xwayland clipboard copy paste
+xclip #select the wayland text
 wmctrl #move Workspace
 xinput #device list
 yaru-theme-icon #theme for folder icon
