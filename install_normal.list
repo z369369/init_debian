@@ -1,3 +1,4 @@
+apq #cli password creator
 baobab #disk analyze
 build-essential #for debian essential 
 ca-certificates #certification
@@ -65,15 +66,14 @@ ufw #Firewall
 vim #vi
 wget #Download
 wl-clipboard #xwayland clipboard copy paste
-xclip #select the wayland text
 wmctrl #move Workspace
+xclip #select the wayland text
 xinput #device list
 yaru-theme-icon #theme for folder icon
 
 *
 
 ca.desrt.dconf-editor
-com.github.qarmin.czkawka
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.brave.Browser
@@ -81,9 +81,9 @@ com.discordapp.Discord
 com.github.dynobo.normcap
 com.github.jeromerobert.pdfarranger
 com.github.PintaProject.Pinta
+com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
 com.github.unrud.VideoDownloader
-org.flameshot.Flameshot
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
 com.moonlight_stream.Moonlight
@@ -101,22 +101,22 @@ fr.natron.Natron
 fr.romainvigier.MetadataCleaner
 io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
+io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
 io.github.prateekmedia.appimagepool
 io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
 io.typora.Typora
-io.github.giantpinkrobots.flatsweep
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 net.lutris.Lutris
-net.sourceforge.mcomix
 net.sapples.LiveCaptions
+net.sourceforge.mcomix
 nl.hjdskes.gcolor3
-org.kde.haruna
 org.atheme.audacious
 org.blender.Blender
 org.darktable.Darktable
+org.flameshot.Flameshot
 org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.gnome.Boxes
@@ -125,6 +125,8 @@ org.gnome.design.Contrast
 org.gnome.design.IconLibrary
 org.gnome.seahorse.Application
 org.inkscape.Inkscape
+org.kde.haruna
+org.kde.isoimagewriter
 org.kde.kdenlive
 org.kde.krita
 org.kde.okular
@@ -133,7 +135,6 @@ org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
 org.pulseaudio.pavucontrol
 org.remmina.Remmina
-org.kde.isoimagewriter
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 org.yuzu_emu.yuzu

@@ -45,6 +45,14 @@ sudo ufw allow out 5000:5002/udp
 sudo ufw allow 9663
 sudo ufw allow out 9663
 
+#majak
+sudo ufw allow 631
+sudo ufw allow out 631
+sudo ufw allow 37622
+sudo ufw allow out 37622
+
+
+
 #syncthing
 sudo ufw allow 21027
 sudo ufw allow out to 192.168.31.0/24 port 21027
