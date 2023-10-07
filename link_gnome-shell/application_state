@@ -2,7 +2,7 @@
 <application-state>
   <context id="">
     <application id="md.obsidian.Obsidian.desktop" score="26.595703125" last-seen="1696600093"/>
-    <application id="org.gnome.gThumb.desktop" score="95.8359375" last-seen="1696659047"/>
+    <application id="org.gnome.gThumb.desktop" score="95.8359375" last-seen="1696666327"/>
     <application id="nemo.desktop" score="0.609619140625" last-seen="1696592253"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="3.0625" last-seen="1696656164"/>
     <application id="gnome-system-monitor.desktop" score="2.3828125" last-seen="1696276208"/>
@@ -18,29 +18,30 @@
     <application id="com.usebottles.bottles.desktop" score="12.75" last-seen="1696241796"/>
     <application id="org.kde.kdenlive.desktop" score="10.125" last-seen="1696581037"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="1.3125" last-seen="1696584230"/>
+    <application id="org.gnome.Meld.desktop" score="101" last-seen="1696669036"/>
     <application id="org.gnome.Calendar.desktop" score="24" last-seen="1696563277"/>
     <application id="com.vscodium.codium.desktop" score="24" last-seen="1696657291"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="0.1953125" last-seen="1696571880"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="1.5210384014062583" last-seen="1696598585"/>
     <application id="org.gnome.Boxes.desktop" score="20.18359375" last-seen="1696596455"/>
     <application id="com.moonlight_stream.Moonlight.desktop" score="0" last-seen="1696592248"/>
-    <application id="org.gnome.Nautilus.desktop" score="468.22710653922843" last-seen="1696660126"/>
+    <application id="org.gnome.Nautilus.desktop" score="573.22710653922843" last-seen="1696668984"/>
     <application id="com.github.unrud.VideoDownloader.desktop" score="0" last-seen="1696577782"/>
     <application id="com.valvesoftware.Steam.desktop" score="2.25" last-seen="1696406083"/>
     <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="1.6171875" last-seen="1696581047"/>
     <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1696170979"/>
     <application id="org.gnome.Evince.desktop" score="8.25" last-seen="1696398805"/>
-    <application id="ubuntu-code-url-handler.desktop" score="132.10576128959656" last-seen="1696659977"/>
+    <application id="ubuntu-code-url-handler.desktop" score="308.10576128959656" last-seen="1696669277"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0.00049391415086574852" last-seen="1696593660"/>
-    <application id="org.gnome.Terminal.desktop" score="2156.2971262019328" last-seen="1696659881"/>
+    <application id="org.gnome.Terminal.desktop" score="2186.2971262019328" last-seen="1696668985"/>
     <application id="yelp.desktop" score="0" last-seen="1696097178"/>
     <application id="google-chrome.desktop" score="105.4652099609375" last-seen="1696654302"/>
-    <application id="synaptic.desktop" score="37.332177214935655" last-seen="1696660108"/>
+    <application id="synaptic.desktop" score="37.332177214935655" last-seen="1696660996"/>
     <application id="org.telegram.desktop.desktop" score="0.4375" last-seen="1696173898"/>
     <application id="net.sourceforge.mcomix.desktop" score="0.1875" last-seen="1696166356"/>
     <application id="net.sapples.LiveCaptions.desktop" score="0.0390625" last-seen="1696106909"/>
-    <application id="firefox-esr.desktop" score="24187.722681146814" last-seen="1696660168"/>
-    <application id="org.gnome.gedit.desktop" score="409.41882725991309" last-seen="1696660119"/>
+    <application id="firefox-esr.desktop" score="24977.722681146814" last-seen="1696669231"/>
+    <application id="org.gnome.gedit.desktop" score="414.41882725991309" last-seen="1696668895"/>
     <application id="mpv.desktop" score="15.6171875" last-seen="1696593750"/>
   </context>
 </application-state>
