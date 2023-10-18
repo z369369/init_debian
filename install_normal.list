@@ -70,6 +70,8 @@ wmctrl #move Workspace
 xclip #select the wayland text
 xinput #device list
 yaru-theme-icon #theme for folder icon
+ydotool #shortcut key customize
+ydotoold #shortcut key customize
 
 *
 
@@ -101,6 +103,7 @@ fr.natron.Natron
 fr.romainvigier.MetadataCleaner
 io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
+io.gitlab.jstest_gtk.jstest_gtk
 io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
 io.github.prateekmedia.appimagepool
