@@ -15,6 +15,9 @@ sudo ufw allow out 1714:1764/udp
 sudo ufw allow 80
 sudo ufw allow out 80
 
+sudo ufw allow 8080
+sudo ufw allow out 8080
+
 #SSL
 sudo ufw allow 443
 sudo ufw allow out 443
