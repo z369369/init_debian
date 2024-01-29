@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=timeout 30 /home/lwh/Desktop/autostart/custom_execute2.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[C]=custom2
+Name=custom2
+Comment[C]=
+Comment=
