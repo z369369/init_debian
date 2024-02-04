@@ -42,6 +42,9 @@ sudo ufw allow out 123
 sudo ufw allow 22
 sudo ufw allow out 22
 
+sudo ufw allow 3306
+sudo ufw allow out 3306
+
 #microsoft game pass
 sudo ufw allow 1000:1100/udp
 sudo ufw allow out 1000:1100/udp
