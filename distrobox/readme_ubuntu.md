@@ -28,14 +28,8 @@ sudo apt install git neofetch apt-transport-https software-properties-common
 sudo apt install gnome-startup-applications
 ```
 
-### simplescreenrecorder
-```
-sudo apt install simplescreenrecorder
-```
-
 ## Export
 ### .desktop to host 
 ```
 distrobox-export --app gnome-session-properties
-distrobox-export --app simplescreenrecord
 ```

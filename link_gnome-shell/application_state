@@ -1,29 +1,24 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Extensions.desktop" score="0" last-seen="1706422003"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="1185.5" last-seen="1706442079"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1706432420"/>
-    <application id="org.gnome.FileRoller.desktop" score="9" last-seen="1706977443"/>
-    <application id="google-chrome.desktop" score="74" last-seen="1706442878"/>
-    <application id="io.dbeaver.DBeaverCommunity.desktop" score="711" last-seen="1707021527"/>
-    <application id="synaptic.desktop" score="0" last-seen="0"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="3" last-seen="1706442034"/>
-    <application id="ubuntu-code-url-handler.desktop" score="2965" last-seen="1707021524"/>
-    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1706977393"/>
-    <application id="org.gnome.gedit.desktop" score="131" last-seen="1707021523"/>
-    <application id="org.gnome.Nautilus.desktop" score="554" last-seen="1706977445"/>
-    <application id="org.yuzu_emu.yuzu.desktop" score="24" last-seen="1706446814"/>
-    <application id="nemo.desktop" score="0" last-seen="1706418622"/>
-    <application id="org.gnome.Calculator.desktop" score="0" last-seen="1706442023"/>
-    <application id="org.gnome.Terminal.desktop" score="251" last-seen="1707008303"/>
-    <application id="io.github.peazip.PeaZip.desktop" score="7" last-seen="1706446628"/>
-    <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1706974222"/>
-    <application id="org.gnome.Meld.desktop" score="2" last-seen="1707009340"/>
-    <application id="gnome-system-monitor.desktop" score="0" last-seen="1706422010"/>
-    <application id="com.opera.Opera.desktop" score="16.5" last-seen="1706413130"/>
     <application id="com.getpostman.Postman.desktop" score="22" last-seen="1706985173"/>
-    <application id="com.valvesoftware.Steam.desktop" score="4792.5" last-seen="1706608066"/>
-    <application id="firefox-esr.desktop" score="19126.100409855862" last-seen="1707021460"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1707021802"/>
+    <application id="org.gnome.FileRoller.desktop" score="9" last-seen="1706977443"/>
+    <application id="google-chrome.desktop" score="247" last-seen="1707141585"/>
+    <application id="io.dbeaver.DBeaverCommunity.desktop" score="815" last-seen="1707139167"/>
+    <application id="io.podman_desktop.PodmanDesktop.desktop" score="1" last-seen="1707515272"/>
+    <application id="ubuntu-code-url-handler.desktop" score="5269" last-seen="1707515884"/>
+    <application id="org.gnome.gedit.desktop" score="185" last-seen="1707515861"/>
+    <application id="org.gnome.Nautilus.desktop" score="584" last-seen="1707515883"/>
+    <application id="ubuntu-gnome-session-properties.desktop" score="0" last-seen="1707515573"/>
+    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1706977393"/>
+    <application id="nl.hjdskes.gcolor3.desktop" score="10" last-seen="1707141298"/>
+    <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1706974222"/>
+    <application id="org.gnome.Terminal.desktop" score="306" last-seen="1707515885"/>
+    <application id="org.gnome.Meld.desktop" score="2" last-seen="1707027960"/>
+    <application id="mpv.desktop" score="2" last-seen="1707515713"/>
+    <application id="com.valvesoftware.Steam.desktop" score="4816.5" last-seen="1707485804"/>
+    <application id="org.gnome.Settings.desktop" score="0" last-seen="1707485802"/>
+    <application id="firefox-esr.desktop" score="21936.100409855862" last-seen="1707515772"/>
   </context>
 </application-state>
