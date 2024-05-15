@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=timeout 30 /home/lwh/Desktop/autostart/custom_resize_camera.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[C]=custom_resize_camera
+Name=custom_resize_camera
+Comment[C]=
+Comment=

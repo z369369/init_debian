@@ -1,24 +1,14 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="com.getpostman.Postman.desktop" score="22" last-seen="1706985173"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1707021802"/>
-    <application id="org.gnome.FileRoller.desktop" score="9" last-seen="1706977443"/>
-    <application id="google-chrome.desktop" score="247" last-seen="1707141585"/>
-    <application id="io.dbeaver.DBeaverCommunity.desktop" score="815" last-seen="1707139167"/>
-    <application id="io.podman_desktop.PodmanDesktop.desktop" score="1" last-seen="1707515272"/>
-    <application id="ubuntu-code-url-handler.desktop" score="5269" last-seen="1707515884"/>
-    <application id="org.gnome.gedit.desktop" score="185" last-seen="1707515861"/>
-    <application id="org.gnome.Nautilus.desktop" score="584" last-seen="1707515883"/>
-    <application id="ubuntu-gnome-session-properties.desktop" score="0" last-seen="1707515573"/>
-    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1706977393"/>
-    <application id="nl.hjdskes.gcolor3.desktop" score="10" last-seen="1707141298"/>
-    <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1706974222"/>
-    <application id="org.gnome.Terminal.desktop" score="306" last-seen="1707515885"/>
-    <application id="org.gnome.Meld.desktop" score="2" last-seen="1707027960"/>
-    <application id="mpv.desktop" score="2" last-seen="1707515713"/>
-    <application id="com.valvesoftware.Steam.desktop" score="4816.5" last-seen="1707485804"/>
-    <application id="org.gnome.Settings.desktop" score="0" last-seen="1707485802"/>
-    <application id="firefox-esr.desktop" score="21936.100409855862" last-seen="1707515772"/>
+    <application id="ubuntu-code-url-handler.desktop" score="5429" last-seen="1715743687"/>
+    <application id="org.gnome.Nautilus.desktop" score="12" last-seen="1715740134"/>
+    <application id="google-chrome.desktop" score="5008" last-seen="1714384500"/>
+    <application id="abricotine.desktop" score="0" last-seen="1715743441"/>
+    <application id="org.gnome.gedit.desktop" score="8" last-seen="1715743482"/>
+    <application id="firefox-esr.desktop" score="24313.525102463966" last-seen="1715743640"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="4256.5" last-seen="1715740155"/>
+    <application id="org.gnome.Terminal.desktop" score="0" last-seen="1715743077"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1715740243"/>
   </context>
 </application-state>

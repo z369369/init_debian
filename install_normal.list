@@ -87,6 +87,7 @@ com.github.jeromerobert.pdfarranger
 com.github.PintaProject.Pinta
 com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
+com.getpostman.Postman
 com.github.unrud.VideoDownloader
 com.heroicgameslauncher.hgl
 com.ktechpit.torrhunt
@@ -108,7 +109,6 @@ io.gitlab.jstest_gtk.jstest_gtk
 io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
 io.github.prateekmedia.appimagepool
-io.github.seadve.Kooha
 io.podman_desktop.PodmanDesktop
 io.typora.Typora
 md.obsidian.Obsidian
