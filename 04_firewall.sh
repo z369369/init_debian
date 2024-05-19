@@ -55,6 +55,16 @@ sudo ufw allow out 5000:5002/udp
 sudo ufw allow 9663
 sudo ufw allow out 9663
 
+#steam port
+sudo ufw allow 27000:27100/udp
+sudo ufw allow out 27000:27100/udp
+
+sudo ufw allow 27000:27100/tcp
+sudo ufw allow out 27000:27100/tcp
+
+sudo ufw allow 3470:4400/udp
+sudo ufw allow out 3470:4400/udp
+
 #syncthing
 sudo ufw allow 21027
 sudo ufw allow out to 192.168.31.0/24 port 21027

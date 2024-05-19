@@ -1,14 +1,19 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="ubuntu-code-url-handler.desktop" score="5429" last-seen="1715743687"/>
-    <application id="org.gnome.Nautilus.desktop" score="12" last-seen="1715740134"/>
-    <application id="google-chrome.desktop" score="5008" last-seen="1714384500"/>
+    <application id="ubuntu-code-url-handler.desktop" score="2736.5" last-seen="1716122437"/>
+    <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1716119588"/>
+    <application id="org.gnome.Nautilus.desktop" score="51.5" last-seen="1716121866"/>
+    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="1" last-seen="1716119645"/>
+    <application id="google-chrome.desktop" score="2505" last-seen="1715746157"/>
     <application id="abricotine.desktop" score="0" last-seen="1715743441"/>
-    <application id="org.gnome.gedit.desktop" score="8" last-seen="1715743482"/>
-    <application id="firefox-esr.desktop" score="24313.525102463966" last-seen="1715743640"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="4256.5" last-seen="1715740155"/>
-    <application id="org.gnome.Terminal.desktop" score="0" last-seen="1715743077"/>
+    <application id="org.gnome.gedit.desktop" score="23" last-seen="1716122395"/>
+    <application id="org.gnome.Calculator.desktop" score="3" last-seen="1716006144"/>
+    <application id="firefox-esr.desktop" score="15920.262551231983" last-seen="1716122425"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="2128.25" last-seen="1715740155"/>
+    <application id="org.gnome.Terminal.desktop" score="31" last-seen="1716122367"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1715740243"/>
+    <application id="md.obsidian.Obsidian.desktop" score="109" last-seen="1716121263"/>
+    <application id="com.valvesoftware.Steam.desktop" score="53.5" last-seen="1715746222"/>
   </context>
 </application-state>
