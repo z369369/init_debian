@@ -7,9 +7,9 @@
     <application id="com.github.unrud.VideoDownloader.desktop" score="0" last-seen="1721559727"/>
     <application id="google-chrome.desktop" score="3" last-seen="1721993916"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1721909110"/>
-    <application id="ubuntu-code-url-handler.desktop" score="8" last-seen="1722023269"/>
-    <application id="org.gnome.gedit.desktop" score="33.5" last-seen="1721556108"/>
-    <application id="org.gnome.Nautilus.desktop" score="76.5" last-seen="1721909768"/>
+    <application id="ubuntu-code-url-handler.desktop" score="98" last-seen="1722024359"/>
+    <application id="org.gnome.gedit.desktop" score="47.5" last-seen="1722024654"/>
+    <application id="org.gnome.Nautilus.desktop" score="92.5" last-seen="1722024657"/>
     <application id="com.obsproject.Studio.desktop" score="8" last-seen="1721559637"/>
     <application id="org.yuzu_emu.yuzu.desktop" score="1621" last-seen="1721993918"/>
     <application id="io.podman_desktop.PodmanDesktop.desktop" score="1" last-seen="1721467024"/>
@@ -20,11 +20,12 @@
     <application id="com.transmissionbt.Transmission.desktop" score="2" last-seen="1721559703"/>
     <application id="org.gnome.Terminal.desktop" score="315.75" last-seen="1722022755"/>
     <application id="org.gnome.DiskUtility.desktop" score="1" last-seen="1721559564"/>
+    <application id="synaptic.desktop" score="12" last-seen="1722023999"/>
     <application id="org.gnome.gThumb.desktop" score="3" last-seen="1721423233"/>
     <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1721559711"/>
     <application id="timeshift-gtk.desktop" score="1" last-seen="1721556106"/>
     <application id="com.valvesoftware.Steam.desktop" score="4034.125" last-seen="1721423266"/>
-    <application id="firefox-esr.desktop" score="18654.065637807995" last-seen="1722023269"/>
+    <application id="firefox-esr.desktop" score="18703.065637807995" last-seen="1722024382"/>
     <application id="gnome-system-monitor.desktop" score="2.5" last-seen="1721555468"/>
   </context>
 </application-state>
