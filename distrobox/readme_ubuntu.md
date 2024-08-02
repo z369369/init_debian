@@ -11,9 +11,9 @@ sudo apt install distrobox
 
 dbox list
 
-dbox create ubuntu -i ubuntu:22.04
+dbox create ubuntu2204 -i ubuntu:22.04
 
-dbox enter ubuntu
+dbox enter ubuntu2204
 ```
 
 ## Install Package (dbox enter 후)
