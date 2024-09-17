@@ -1,30 +1,25 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="72.9423828125" last-seen="1724753596"/>
-    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1724846810"/>
-    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="0" last-seen="1724589002"/>
-    <application id="google-chrome.desktop" score="0.220703125" last-seen="1724545115"/>
-    <application id="io.github.giantpinkrobots.flatsweep.desktop" score="0" last-seen="1724589012"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="3" last-seen="1724846978"/>
-    <application id="com.github.tchx84.Flatseal.desktop" score="1.5" last-seen="1724668958"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1724753594"/>
-    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1724670474"/>
-    <application id="com.usebottles.bottles.desktop" score="0.75" last-seen="1724589072"/>
-    <application id="org.gnome.tweaks.desktop" score="0" last-seen="1724588994"/>
-    <application id="org.gnome.Nautilus.desktop" score="40.375" last-seen="1724846869"/>
-    <application id="org.gnome.gedit.desktop" score="10.013528823852539" last-seen="1724837945"/>
-    <application id="ubuntu-code-url-handler.desktop" score="0" last-seen="1724847067"/>
-    <application id="com.brave.Browser.desktop" score="20.203125" last-seen="1724330619"/>
-    <application id="org.gnome.Calculator.desktop" score="40.5968017578125" last-seen="1724844369"/>
-    <application id="md.obsidian.Obsidian.desktop" score="1.119140625" last-seen="1724845314"/>
-    <application id="org.gnome.Terminal.desktop" score="72.554003715515137" last-seen="1724846976"/>
-    <application id="io.github.peazip.PeaZip.desktop" score="3.25" last-seen="1724669038"/>
-    <application id="org.gnome.Boxes.desktop" score="0" last-seen="1724536741"/>
-    <application id="nemo.desktop" score="0.5" last-seen="1724751705"/>
-    <application id="synaptic.desktop" score="0.5" last-seen="1724670379"/>
-    <application id="gnome-system-monitor.desktop" score="1" last-seen="1724845227"/>
-    <application id="firefox-esr.desktop" score="14426.809471380759" last-seen="1724847067"/>
-    <application id="org.gnome.Settings.desktop" score="7.232421875" last-seen="1724485466"/>
+    <application id="abricotine.desktop" score="0.25" last-seen="1726049557"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1726412042"/>
+    <application id="org.gnome.FileRoller.desktop" score="13.25" last-seen="1726440437"/>
+    <application id="firefox-esr.desktop" score="17778.513485811894" last-seen="1726549213"/>
+    <application id="virt-manager.desktop" score="635.5" last-seen="1726549300"/>
+    <application id="remote-viewer.desktop" score="0" last-seen="1726412432"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1726412038"/>
+    <application id="hardinfo.desktop" score="4.5" last-seen="1726459481"/>
+    <application id="org.gnome.gedit.desktop" score="71.021497586742043" last-seen="1726447110"/>
+    <application id="org.gnome.Nautilus.desktop" score="3427.3148193359375" last-seen="1726549509"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="0.5" last-seen="1726440314"/>
+    <application id="io.github.giantpinkrobots.flatsweep.desktop" score="2" last-seen="1726549360"/>
+    <application id="org.kde.isoimagewriter.desktop" score="1.5" last-seen="1726440378"/>
+    <application id="org.gnome.Terminal.desktop" score="682.72808008175343" last-seen="1726549418"/>
+    <application id="md.obsidian.Obsidian.desktop" score="11.469842910766602" last-seen="1726378278"/>
+    <application id="io.github.peazip.PeaZip.desktop" score="0.5" last-seen="1726416161"/>
+    <application id="org.gnome.DiskUtility.desktop" score="0" last-seen="1726378778"/>
+    <application id="gnome-system-monitor.desktop" score="18.5" last-seen="1726459500"/>
+    <application id="de.haeckerfelix.Shortwave.desktop" score="0" last-seen="1726381071"/>
+    <application id="org.gnome.Settings.desktop" score="13.75" last-seen="1726389896"/>
   </context>
 </application-state>

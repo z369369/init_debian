@@ -1,3 +1,5 @@
+adb		 #android adb
+fastboot #android unlock
 apq #cli password creator
 baobab #disk analyze
 build-essential #for debian essential 
@@ -66,6 +68,10 @@ timeshift #Backup, Restore
 transmission-cli #transmisson finish script
 ufw #Firewall
 vim #vi
+virt-manager #virt qemu
+qemu-system-x86 #virt qemu
+qemu-utils #virt qemu
+libvirt-daemon-system #virt qemu
 wget #Download
 wl-clipboard #xwayland clipboard copy paste
 wmctrl #move Workspace
@@ -124,7 +130,6 @@ org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.kde.isoimagewriter
 org.ryujinx.Ryujinx
-org.gnome.Boxes
 org.gnome.Contacts
 org.gnome.design.Contrast
 org.gnome.design.IconLibrary
