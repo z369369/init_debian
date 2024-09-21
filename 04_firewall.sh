@@ -39,7 +39,7 @@ sudo ufw allow 123
 sudo ufw allow out 123
 
 #ssh
-sudo ufw allow 22
+sudo ufw allow from 192.168.1.0/24 to any port 22
 sudo ufw allow out 22
 
 sudo ufw allow 3306
