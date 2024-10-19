@@ -1,35 +1,21 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="md.obsidian.Obsidian.desktop" score="2.8674607276916504" last-seen="1726834177"/>
-    <application id="org.yuzu_emu.yuzu.desktop" score="423" last-seen="1726633367"/>
-    <application id="org.kde.isoimagewriter.desktop" score="0.375" last-seen="1726440378"/>
-    <application id="xdg-desktop-portal-gnome.desktop" score="1.125" last-seen="1726550694"/>
-    <application id="com.opera.Opera.desktop" score="22" last-seen="1726842348"/>
-    <application id="hardinfo.desktop" score="2.125" last-seen="1726828365"/>
-    <application id="com.heroicgameslauncher.hgl.desktop" score="5" last-seen="1726550468"/>
-    <application id="virt-manager.desktop" score="199.875" last-seen="1726829840"/>
-    <application id="com.brave.Browser.desktop" score="32.75" last-seen="1726842032"/>
-    <application id="io.github.giantpinkrobots.flatsweep.desktop" score="0.5" last-seen="1726549360"/>
-    <application id="de.haeckerfelix.Shortwave.desktop" score="0" last-seen="1726381071"/>
-    <application id="org.gnome.Settings.desktop" score="22.9375" last-seen="1726947124"/>
-    <application id="io.github.peazip.PeaZip.desktop" score="0.125" last-seen="1726416161"/>
-    <application id="org.gnome.Calculator.desktop" score="1" last-seen="1726941139"/>
-    <application id="org.gnome.Extensions.desktop" score="1.5" last-seen="1726925480"/>
-    <application id="org.gnome.Terminal.desktop" score="387.43202002043836" last-seen="1726949611"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1726412042"/>
-    <application id="remote-viewer.desktop" score="0" last-seen="1726412432"/>
-    <application id="org.gnome.DiskUtility.desktop" score="4.5" last-seen="1726834635"/>
-    <application id="org.gnome.Nautilus.desktop" score="934.82870483398438" last-seen="1726949560"/>
-    <application id="com.valvesoftware.Steam.desktop" score="525.75" last-seen="1726941126"/>
-    <application id="org.gnome.FileRoller.desktop" score="3.3125" last-seen="1726915316"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1726412038"/>
-    <application id="ubuntu-code-url-handler.desktop" score="26.5" last-seen="1726947591"/>
-    <application id="gnome-display-panel.desktop" score="0" last-seen="0"/>
-    <application id="google-chrome.desktop" score="54" last-seen="1726923469"/>
-    <application id="gnome-system-monitor.desktop" score="20.125" last-seen="1726925503"/>
-    <application id="io.dbeaver.DBeaverCommunity.desktop" score="6" last-seen="1726915270"/>
-    <application id="firefox-esr.desktop" score="14373.378371452975" last-seen="1726949562"/>
-    <application id="org.gnome.gedit.desktop" score="138.75537439668551" last-seen="1726949535"/>
+    <application id="ca.desrt.dconf-editor.desktop" score="8" last-seen="1729379434"/>
+    <application id="com.valvesoftware.Steam.desktop" score="245.76287841796875" last-seen="1729270166"/>
+    <application id="google-chrome.desktop" score="0.006622314453125" last-seen="1729266868"/>
+    <application id="transmission-gtk.desktop" score="0" last-seen="1729380086"/>
+    <application id="org.gnome.gedit.desktop" score="13.859072705743396" last-seen="1729380448"/>
+    <application id="org.gnome.Nautilus.desktop" score="5" last-seen="1729379189"/>
+    <application id="nemo.desktop" score="0" last-seen="1729379037"/>
+    <application id="org.gnome.Calculator.desktop" score="3.807861328125" last-seen="1729296190"/>
+    <application id="org.gnome.Terminal.desktop" score="75.075921753006057" last-seen="1729380448"/>
+    <application id="org.telegram.desktop.desktop" score="0.5" last-seen="1728900063"/>
+    <application id="org.kde.isoimagewriter.desktop" score="0" last-seen="1729380228"/>
+    <application id="md.obsidian.Obsidian.desktop" score="283.1181750009946" last-seen="1729379266"/>
+    <application id="synaptic.desktop" score="11" last-seen="1729380012"/>
+    <application id="org.gnome.Extensions.desktop" score="80" last-seen="1729379436"/>
+    <application id="org.gnome.Settings.desktop" score="2" last-seen="1729378949"/>
+    <application id="firefox-esr.desktop" score="16343.506391061292" last-seen="1729380416"/>
   </context>
 </application-state>
