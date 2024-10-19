@@ -5,17 +5,18 @@
     <application id="com.valvesoftware.Steam.desktop" score="245.76287841796875" last-seen="1729270166"/>
     <application id="google-chrome.desktop" score="0.006622314453125" last-seen="1729266868"/>
     <application id="transmission-gtk.desktop" score="0" last-seen="1729380086"/>
-    <application id="org.gnome.gedit.desktop" score="13.859072705743396" last-seen="1729380448"/>
+    <application id="org.gnome.gedit.desktop" score="20.859072705743394" last-seen="1729380625"/>
     <application id="org.gnome.Nautilus.desktop" score="5" last-seen="1729379189"/>
+    <application id="ubuntu-code-url-handler.desktop" score="3" last-seen="1729380733"/>
     <application id="nemo.desktop" score="0" last-seen="1729379037"/>
     <application id="org.gnome.Calculator.desktop" score="3.807861328125" last-seen="1729296190"/>
-    <application id="org.gnome.Terminal.desktop" score="75.075921753006057" last-seen="1729380448"/>
+    <application id="org.gnome.Terminal.desktop" score="90.075921753006057" last-seen="1729380708"/>
     <application id="org.telegram.desktop.desktop" score="0.5" last-seen="1728900063"/>
     <application id="org.kde.isoimagewriter.desktop" score="0" last-seen="1729380228"/>
-    <application id="md.obsidian.Obsidian.desktop" score="283.1181750009946" last-seen="1729379266"/>
+    <application id="md.obsidian.Obsidian.desktop" score="285.1181750009946" last-seen="1729380747"/>
     <application id="synaptic.desktop" score="11" last-seen="1729380012"/>
     <application id="org.gnome.Extensions.desktop" score="80" last-seen="1729379436"/>
     <application id="org.gnome.Settings.desktop" score="2" last-seen="1729378949"/>
-    <application id="firefox-esr.desktop" score="16343.506391061292" last-seen="1729380416"/>
+    <application id="firefox-esr.desktop" score="16352.506391061292" last-seen="1729380612"/>
   </context>
 </application-state>
