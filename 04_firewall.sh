@@ -11,6 +11,13 @@ sudo ufw allow out 1714:1764/tcp
 sudo ufw allow 1714:1764/udp
 sudo ufw allow out 1714:1764/udp
 
+#coin
+sudo ufw allow 50000:50005/tcp
+sudo ufw allow out 50000:50005/tcp
+
+sudo ufw allow 50000:50005/udp
+sudo ufw allow out 50000:50005/udp
+
 #http
 sudo ufw allow 80
 sudo ufw allow out 80

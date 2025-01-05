@@ -1,19 +1,16 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="205" last-seen="1734775712"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="1" last-seen="1734222840"/>
-    <application id="google-chrome.desktop" score="1" last-seen="1734252863"/>
-    <application id="com.brave.Browser.desktop" score="198" last-seen="1734773578"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1734775708"/>
-    <application id="ubuntu-code-url-handler.desktop" score="20" last-seen="1734429538"/>
-    <application id="org.gnome.gedit.desktop" score="0" last-seen="1734775714"/>
-    <application id="org.gnome.Nautilus.desktop" score="72" last-seen="1734775720"/>
-    <application id="org.gnome.Calculator.desktop" score="13" last-seen="1734830188"/>
-    <application id="md.obsidian.Obsidian.desktop" score="36" last-seen="1734750939"/>
-    <application id="org.gnome.Terminal.desktop" score="430.25949021912572" last-seen="1734825753"/>
-    <application id="com.valvesoftware.Steam.desktop" score="795" last-seen="1734430206"/>
-    <application id="firefox-esr.desktop" score="24058.938298882662" last-seen="1734830186"/>
-    <application id="org.gnome.Settings.desktop" score="0" last-seen="1734750369"/>
+    <application id="org.gnome.Nautilus.desktop" score="164" last-seen="1736035745"/>
+    <application id="org.gnome.Settings.desktop" score="24" last-seen="1736017094"/>
+    <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1735974028"/>
+    <application id="org.gnome.Terminal.desktop" score="489.12974510956286" last-seen="1736035728"/>
+    <application id="firefox-esr.desktop" score="22110.469149441331" last-seen="1736037330"/>
+    <application id="org.gnome.gedit.desktop" score="221" last-seen="1736013144"/>
+    <application id="ca.desrt.dconf-editor.desktop" score="5" last-seen="1735552793"/>
+    <application id="org.kde.kdenlive.desktop" score="10" last-seen="1736014424"/>
+    <application id="org.gnome.Calculator.desktop" score="21.5" last-seen="1735731537"/>
+    <application id="md.obsidian.Obsidian.desktop" score="178.5" last-seen="1736033859"/>
+    <application id="mpv.desktop" score="3" last-seen="1736014330"/>
   </context>
 </application-state>
