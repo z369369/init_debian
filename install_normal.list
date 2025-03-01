@@ -7,7 +7,6 @@ ca-certificates #certification
 chrome-gnome-shell # gnome shell connector for firefox
 curl #Used
 deborphan #Used
-distrobox #for virt apps
 dkms #for debian essential
 fdupes #duplicate file remove
 firefox-esr #for debian
@@ -111,7 +110,6 @@ io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
 io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
-io.podman_desktop.PodmanDesktop
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 net.lutris.Lutris
