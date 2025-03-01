@@ -16,3 +16,8 @@ for image_file in $image_files; do
   convert -resize 50% "$image_file" "$image_file2"
   rm -rf "$image_file"
 done
+
+rm -rf ~/phone/Pictures/zzz_OpenCamera/1.jpg
+rm -rf ~/phone/Pictures/zzz_OpenCamera/2.jpg
+rm -rf ~/phone/Pictures/zzz_OpenCamera/3.jpg
+rm -rf ~/phone/Pictures/zzz_OpenCamera/4.jpg

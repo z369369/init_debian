@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Nautilus.desktop" score="164" last-seen="1736035745"/>
-    <application id="org.gnome.Settings.desktop" score="24" last-seen="1736017094"/>
-    <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1735974028"/>
-    <application id="org.gnome.Terminal.desktop" score="489.12974510956286" last-seen="1736035728"/>
-    <application id="firefox-esr.desktop" score="22110.469149441331" last-seen="1736037330"/>
-    <application id="org.gnome.gedit.desktop" score="221" last-seen="1736013144"/>
-    <application id="ca.desrt.dconf-editor.desktop" score="5" last-seen="1735552793"/>
-    <application id="org.kde.kdenlive.desktop" score="10" last-seen="1736014424"/>
-    <application id="org.gnome.Calculator.desktop" score="21.5" last-seen="1735731537"/>
-    <application id="md.obsidian.Obsidian.desktop" score="178.5" last-seen="1736033859"/>
-    <application id="mpv.desktop" score="3" last-seen="1736014330"/>
+    <application id="org.gnome.Nautilus.desktop" score="72" last-seen="1740826411"/>
+    <application id="org.gnome.Settings.desktop" score="2" last-seen="1740824615"/>
+    <application id="org.gnome.Terminal.desktop" score="48" last-seen="1740824445"/>
+    <application id="org.gnome.gedit.desktop" score="13" last-seen="1740790499"/>
+    <application id="org.gnome.Calculator.desktop" score="17" last-seen="1740651764"/>
+    <application id="firefox-esr.desktop" score="17510.308643680168" last-seen="1740826415"/>
+    <application id="synaptic.desktop" score="3" last-seen="1740650171"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="2" last-seen="1740649842"/>
+    <application id="com.valvesoftware.Steam.desktop" score="7710" last-seen="1739686774"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1740649839"/>
   </context>
 </application-state>
