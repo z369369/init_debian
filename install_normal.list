@@ -49,7 +49,6 @@ nemo
 neofetch #pfetch alternative
 net-tools #Used
 network-manager-openvpn-gnome #vpn for gnome
-nginx
 nmap #my network search
 nvidia-detect
 nvidia-driver
@@ -61,6 +60,7 @@ python3.11-venv #python3 virtual env
 radeontop #radeon gpu top
 rename # rename with perl
 rsync #Used
+rsyslog #log
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
