@@ -2,6 +2,10 @@
 Type=Application
 Name=custom_imwheel
 NoDisplay=false
-Hidden=false
+Hidden=true
 Exec=/usr/bin/imwheel -k
 X-GNOME-Autostart-enabled=true
+Icon=
+Comment=
+Terminal=false
+X-GNOME-Autostart-Delay=60

@@ -4,6 +4,7 @@ apq #cli password creator
 baobab #disk analyze
 build-essential #for debian essential 
 ca-certificates #certification
+ccze #color for log
 chrome-gnome-shell # gnome shell connector for firefox
 curl #Used
 deborphan #Used
@@ -108,6 +109,7 @@ fr.natron.Natron
 fr.romainvigier.MetadataCleaner
 io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
+io.github.flattool.Ignition
 io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
 md.obsidian.Obsidian
