@@ -18,22 +18,6 @@ echo "============== [E] [5-2 / 6] Service =============="
 
 rsync -a ~/git/init_debian/copy/home/lwh/ ~/
 
-echo "============== [S] [5-3 / 6] Edit - Gnome Extension =============="
-
-gsettings set org.gnome.GWeather temperature-unit centigrade
-gsettings set org.gnome.shell disable-extension-version-validation true
-gsettings set org.gnome.desktop.sound event-sounds false
-
-gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true
-gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state true
-
-gsettings set org.gnome.SessionManager logout-prompt false
-gsettings set org.gnome.desktop.interface enable-animations false
-
-gsettings set org.gnome.shell.extensions.stocks.ticker-interval 600
-
-echo "============== [E] [5-3 / 6] Edit - Gnome Extension =============="
-
 echo "============== [E] [5-4 / 6] Dconf restore =============="
 
 sh -c "sudo sed -i 's/lwh/$1/g' ~/git/init_debian/gnome-shell/dconf_backup"
