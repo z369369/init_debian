@@ -6,6 +6,7 @@ const GObject = imports.gi.GObject;
 
 const Config = imports.config;
 const Core = imports.service.core;
+const Device = imports.service.device;
 
 
 /**
@@ -133,6 +134,10 @@ var ChannelService = GObject.registerClass({
         return this._channels;
     }
 
+    get id() {
+        return this.certificate.common_name;
+    }
+
     get port() {
         if (this._port === undefined)
             this._port = DEFAULT_PORT;
@@ -157,13 +162,6 @@ var ChannelService = GObject.registerClass({
     }
 
     _initCertificate() {
-        if (GLib.find_program_in_path(Config.OPENSSL_PATH) === null) {
-            const error = new Error();
-            error.name = _('OpenSSL not found');
-            error.url = `${Config.PACKAGE_URL}/wiki/Error#openssl-not-found`;
-            throw error;
-        }
-
         const certPath = GLib.build_filenamev([
             Config.CONFIGDIR,
             'certificate.pem',
@@ -175,12 +173,7 @@ var ChannelService = GObject.registerClass({
 
         // Ensure a certificate exists with our id as the common name
         this._certificate = Gio.TlsCertificate.new_for_paths(certPath, keyPath,
-            this.id);
-
-        // If the service ID doesn't match the common name, this is probably a
-        // certificate from an older version and we should amend ours to match
-        if (this.id !== this._certificate.common_name)
-            this._id = this._certificate.common_name;
+            null);
     }
 
     _initTcpListener() {
@@ -333,12 +326,23 @@ var ChannelService = GObject.registerClass({
     async _onIdentity(packet) {
         try {
             // Bail if the deviceId is missing
-            if (!packet.body.hasOwnProperty('deviceId'))
-                return;
+            if (!this.identity.body.deviceId)
+                throw new Error('missing deviceId');
 
             // Silently ignore our own broadcasts
             if (packet.body.deviceId === this.identity.body.deviceId)
                 return;
+
+            // Reject invalid device IDs
+            if (!Device.Device.validateId(packet.body.deviceId))
+                throw new Error(`invalid deviceId "${packet.body.deviceId}"`);
+
+            if (!packet.body.deviceName)
+                throw new Error('missing deviceName');
+
+            // Reject invalid device names
+            if (!Device.Device.validateName(packet.body.deviceName))
+                throw new Error(`invalid deviceName "${packet.body.deviceName}"`);
 
             debug(packet);
 
@@ -580,7 +584,7 @@ var Channel = GObject.registerClass({
      * Handshake Gio.TlsConnection
      *
      * @param {Gio.TlsConnection} connection - A TLS connection
-     * @return {Promise} A promise for the operation
+     * @returns {Promise} A promise for the operation
      */
     _handshake(connection) {
         return new Promise((resolve, reject) => {
@@ -605,7 +609,7 @@ var Channel = GObject.registerClass({
      * Authenticate a TLS connection.
      *
      * @param {Gio.TlsConnection} connection - A TLS connection
-     * @return {Promise} A promise for the operation
+     * @returns {Promise} A promise for the operation
      */
     async _authenticate(connection) {
         // Standard TLS Handshake
@@ -673,7 +677,7 @@ var Channel = GObject.registerClass({
      * Wrap the connection in Gio.TlsClientConnection and initiate handshake
      *
      * @param {Gio.TcpConnection} connection - The unauthenticated connection
-     * @return {Gio.TlsClientConnection} The authenticated connection
+     * @returns {Gio.TlsClientConnection} The authenticated connection
      */
     _encryptClient(connection) {
         _configureSocket(connection);
@@ -691,7 +695,7 @@ var Channel = GObject.registerClass({
      * Wrap the connection in Gio.TlsServerConnection and initiate handshake
      *
      * @param {Gio.TcpConnection} connection - The unauthenticated connection
-     * @return {Gio.TlsServerConnection} The authenticated connection
+     * @returns {Gio.TlsServerConnection} The authenticated connection
      */
     _encryptServer(connection) {
         _configureSocket(connection);
@@ -711,7 +715,7 @@ var Channel = GObject.registerClass({
      * Read the identity packet from the new connection
      *
      * @param {Gio.SocketConnection} connection - An unencrypted socket
-     * @return {Promise} A promise for the operation
+     * @returns {Promise} A promise for the operation
      */
     _receiveIdent(connection) {
         return new Promise((resolve, reject) => {
@@ -738,6 +742,17 @@ var Channel = GObject.registerClass({
                         if (!this.identity.body.deviceId)
                             throw new Error('missing deviceId');
 
+                        // Reject invalid device IDs
+                        if (!Device.Device.validateId(this.identity.body.deviceId))
+                            throw new Error(`invalid deviceId "${this.identity.body.deviceId}"`);
+
+                        if (!this.identity.body.deviceName)
+                            throw new Error('missing deviceName');
+
+                        // Reject invalid device names
+                        if (!Device.Device.validateName(this.identity.body.deviceName))
+                            throw new Error(`invalid deviceName "${this.identity.body.deviceName}"`);
+
                         resolve();
                     } catch (e) {
                         reject(e);
@@ -751,7 +766,7 @@ var Channel = GObject.registerClass({
      * Write our identity packet to the new connection
      *
      * @param {Gio.SocketConnection} connection - An unencrypted socket
-     * @return {Promise} A promise for the operation
+     * @returns {Promise} A promise for the operation
      */
     _sendIdent(connection) {
         return new Promise((resolve, reject) => {
@@ -784,6 +799,13 @@ var Channel = GObject.registerClass({
 
             await this._receiveIdent(this._connection);
             this._connection = await this._encryptClient(connection);
+
+            // Starting with protocol version 8, the devices are expected to
+            // exchange identity packets again after TLS negotiation
+            if (this.identity.body.protocolVersion >= 8) {
+                await this.sendPacket(this.backend.identity);
+                this.identity = await this.readPacket();
+            }
         } catch (e) {
             this.close();
             throw e;
@@ -804,6 +826,13 @@ var Channel = GObject.registerClass({
 
             await this._sendIdent(this._connection);
             this._connection = await this._encryptServer(connection);
+
+            // Starting with protocol version 8, the devices are expected to
+            // exchange identity packets again after TLS negotiation
+            if (this.identity.body.protocolVersion >= 8) {
+                await this.sendPacket(this.backend.identity);
+                this.identity = await this.readPacket();
+            }
         } catch (e) {
             this.close();
             throw e;
@@ -982,4 +1011,3 @@ var Channel = GObject.registerClass({
         }
     }
 });
-

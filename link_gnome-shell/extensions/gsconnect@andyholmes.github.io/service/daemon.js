@@ -23,6 +23,9 @@ const Gtk = imports.gi.Gtk;
 
 
 // Bootstrap
+/**
+ *
+ */
 function get_datadir() {
     const m = /@(.+):\d+/.exec((new Error()).stack.split('\n')[1]);
     return Gio.File.new_for_path(m[1]).get_parent().get_parent().get_path();
@@ -34,6 +37,7 @@ imports.config.PACKAGE_DATADIR = imports.searchPath[0];
 
 // Local Imports
 const Config = imports.config;
+const Device = imports.service.device;
 const Manager = imports.service.manager;
 const ServiceUI = imports.service.ui.service;
 
@@ -57,6 +61,61 @@ const Service = GObject.registerClass({
 
         // Command-line
         this._initOptions();
+    }
+
+    _migrateConfiguration() {
+        const [certPath, keyPath] = [
+            GLib.build_filenamev([Config.CONFIGDIR, 'certificate.pem']),
+            GLib.build_filenamev([Config.CONFIGDIR, 'private.pem']),
+        ];
+        const certificate = Gio.TlsCertificate.new_for_paths(certPath, keyPath,
+            null);
+
+        if (Device.Device.validateId(certificate.common_name))
+            return;
+
+        if (!Device.Device.validateName(this.settings.get_string('name')))
+            this.settings.set('name', GLib.get_host_name().slice(0, 32));
+
+        // Remove the old certificate, serving as the single source of truth
+        // for the device ID
+        try {
+            Gio.File.new_for_path(certPath).delete(null);
+            Gio.File.new_for_path(keyPath).delete(null);
+        } catch (e) {
+            // Silence errors
+        }
+
+        // For each device, remove it entirely if it violates the device ID
+        // constraints, otherwise mark it unpaired to preserve the settings.
+        const deviceList = this.settings.get_strv('devices').filter(id => {
+            const settingsPath = `/org/gnome/shell/extensions/gsconnect/device/${id}/`;
+            if (!Device.Device.validateId(id)) {
+                GLib.spawn_command_line_async(`dconf reset -f ${settingsPath}`);
+                Gio.File.rm_rf(GLib.build_filenamev([Config.CACHEDIR, id]));
+                debug(`Invalid device ID ${id} removed.`);
+                return false;
+            }
+
+            const settings = new Gio.Settings({
+                settings_schema: Config.GSCHEMA.lookup(
+                    'org.gnome.Shell.Extensions.GSConnect.Device', true),
+                path: settingsPath,
+            });
+            settings.set_boolean('paired', false);
+            return true;
+        });
+        this.settings.set_strv('devices', deviceList);
+
+        // Notify the user
+        const notification = Gio.Notification.new(_('Settings Migrated'));
+        notification.set_body(_('GSConnect has updated to support changes to the KDE Connect protocol. Some devices may need to be repaired.'));
+        notification.set_icon(new Gio.ThemedIcon({name: 'dialog-warning'}));
+        notification.set_priority(Gio.NotificationPriority.HIGH);
+        this.send_notification('settings-migrated', notification);
+
+        // Finally, reset the service ID to trigger re-generation.
+        this.settings.reset('id');
     }
 
     get settings() {
@@ -168,7 +227,7 @@ const Service = GObject.registerClass({
     /**
      * Report a service-level error
      *
-     * @param {Object} error - An Error or object with name, message and stack
+     * @param {object} error - An Error or object with name, message and stack
      */
     notify_error(error) {
         try {
@@ -254,6 +313,9 @@ const Service = GObject.registerClass({
 
         // GActions & GSettings
         this._initActions();
+
+        // TODO: remove after a reasonable period of time
+        this._migrateConfiguration();
 
         this.manager.start();
     }

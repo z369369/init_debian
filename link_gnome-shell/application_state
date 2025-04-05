@@ -1,13 +1,26 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Nautilus.desktop" score="1.5" last-seen="1743205007"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="7" last-seen="1743204894"/>
-    <application id="firefox-esr.desktop" score="12865.654321840084" last-seen="1743206235"/>
-    <application id="code.desktop" score="9" last-seen="1743205580"/>
-    <application id="org.gnome.Calculator.desktop" score="1" last-seen="1742982710"/>
-    <application id="org.gnome.Terminal.desktop" score="267" last-seen="1743205587"/>
-    <application id="ca.desrt.dconf-editor.desktop" score="3" last-seen="1743205577"/>
-    <application id="com.valvesoftware.Steam.desktop" score="3890" last-seen="1743206459"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="943" last-seen="1743302097"/>
+    <application id="org.gnome.Settings.desktop" score="0" last-seen="1743804548"/>
+    <application id="google-chrome.desktop" score="0" last-seen="1743303950"/>
+    <application id="io.github.flattool.Ignition.desktop" score="4" last-seen="1743803636"/>
+    <application id="virt-manager.desktop" score="436" last-seen="1743677076"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="1" last-seen="1743807087"/>
+    <application id="org.gnome.gThumb.desktop" score="7" last-seen="1743807019"/>
+    <application id="hardinfo.desktop" score="5" last-seen="1743803503"/>
+    <application id="org.gnome.gedit.desktop" score="107" last-seen="1743821074"/>
+    <application id="org.gnome.Nautilus.desktop" score="161.5" last-seen="1743870418"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="1" last-seen="1743302091"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="25" last-seen="1743866802"/>
+    <application id="org.libreoffice.LibreOffice.writer.desktop" score="0" last-seen="1743807094"/>
+    <application id="nemo.desktop" score="0" last-seen="1743804168"/>
+    <application id="org.pulseaudio.pavucontrol.desktop" score="1" last-seen="1743803549"/>
+    <application id="md.obsidian.Obsidian.desktop" score="3" last-seen="1743805980"/>
+    <application id="org.gnome.Terminal.desktop" score="447" last-seen="1743870487"/>
+    <application id="synaptic.desktop" score="10" last-seen="1743870271"/>
+    <application id="org.gnome.Extensions.desktop" score="22" last-seen="1743870510"/>
+    <application id="com.valvesoftware.Steam.desktop" score="6696" last-seen="1743679049"/>
+    <application id="firefox-esr.desktop" score="17805.654321840084" last-seen="1743870421"/>
   </context>
 </application-state>
