@@ -1,26 +1,29 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="firefox-esr.desktop" score="21047.654321840084" last-seen="1743937030"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1743925421"/>
-    <application id="io.github.flattool.Ignition.desktop" score="4" last-seen="1743803636"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="42" last-seen="1743905443"/>
-    <application id="ibus-setup-hangul.desktop" score="1" last-seen="1743904355"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="1" last-seen="1743925416"/>
-    <application id="org.libreoffice.LibreOffice.writer.desktop" score="0" last-seen="1743807094"/>
-    <application id="org.gnome.gedit.desktop" score="114" last-seen="1743922921"/>
-    <application id="hardinfo.desktop" score="5" last-seen="1743803503"/>
-    <application id="org.gnome.Nautilus.desktop" score="196.5" last-seen="1743925898"/>
-    <application id="virt-manager.desktop" score="436" last-seen="1743677076"/>
-    <application id="org.gnome.gThumb.desktop" score="7" last-seen="1743926520"/>
-    <application id="nemo.desktop" score="0" last-seen="1743804168"/>
-    <application id="org.pulseaudio.pavucontrol.desktop" score="1" last-seen="1743803549"/>
-    <application id="md.obsidian.Obsidian.desktop" score="3" last-seen="1743805980"/>
-    <application id="org.gnome.Terminal.desktop" score="583" last-seen="1743937051"/>
-    <application id="synaptic.desktop" score="36" last-seen="1743919715"/>
-    <application id="gnome-system-monitor.desktop" score="21" last-seen="1743926234"/>
-    <application id="com.valvesoftware.Steam.desktop" score="6696" last-seen="1743679049"/>
-    <application id="org.gnome.Extensions.desktop" score="23" last-seen="1743905579"/>
-    <application id="org.gnome.Settings.desktop" score="15" last-seen="1743905648"/>
+    <application id="ca.desrt.dconf-editor.desktop" score="9" last-seen="1745038647"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1744484046"/>
+    <application id="org.gnome.tweaks.desktop" score="8" last-seen="1745035351"/>
+    <application id="org.gnome.FileRoller.desktop" score="0" last-seen="1745022089"/>
+    <application id="google-chrome.desktop" score="0" last-seen="1745045422"/>
+    <application id="io.github.flattool.Ignition.desktop" score="0" last-seen="1744521315"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="116" last-seen="1745039433"/>
+    <application id="org.gnome.Settings.desktop" score="19" last-seen="1744496611"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0.5" last-seen="1744484046"/>
+    <application id="org.gnome.gThumb.desktop" score="5.5" last-seen="1745052927"/>
+    <application id="org.gnome.clocks.desktop" score="6.5" last-seen="1744460231"/>
+    <application id="org.gnome.gedit.desktop" score="155" last-seen="1745051580"/>
+    <application id="org.gnome.Nautilus.desktop" score="151.75" last-seen="1745052959"/>
+    <application id="org.gnome.Calendar.desktop" score="0" last-seen="1744460100"/>
+    <application id="org.flameshot.Flameshot.desktop" score="6" last-seen="1745051006"/>
+    <application id="org.gnome.Calculator.desktop" score="18" last-seen="1744484118"/>
+    <application id="org.gnome.Terminal.desktop" score="342.5" last-seen="1745044167"/>
+    <application id="gnome-system-monitor.desktop" score="22.5" last-seen="1745039426"/>
+    <application id="code.desktop" score="15.5" last-seen="1744526850"/>
+    <application id="com.github.PintaProject.Pinta.desktop" score="0" last-seen="1744483650"/>
+    <application id="com.discordapp.Discord.desktop" score="1" last-seen="1745039089"/>
+    <application id="com.valvesoftware.Steam.desktop" score="3861.5" last-seen="1745050145"/>
+    <application id="de.haeckerfelix.Shortwave.desktop" score="16" last-seen="1745006250"/>
+    <application id="firefox-esr.desktop" score="14387.827160920042" last-seen="1745052947"/>
   </context>
 </application-state>
