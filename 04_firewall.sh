@@ -46,8 +46,8 @@ sudo ufw allow 123
 sudo ufw allow out 123
 
 #ssh
-sudo ufw allow 22 
-sudo ufw allow out 22
+sudo ufw allow 58722
+sudo ufw allow out 58722
 
 sudo ufw allow 3306
 sudo ufw allow out 3306
