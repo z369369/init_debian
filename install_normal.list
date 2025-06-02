@@ -10,6 +10,7 @@ curl #Used
 deborphan #Used
 dkms #for debian essential
 fdupes #duplicate file remove
+flameshot #ctrl capture
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 fonts-crosextra-caladea #for debian extra ms font
@@ -122,7 +123,6 @@ nl.hjdskes.gcolor3
 org.atheme.audacious
 org.blender.Blender
 org.darktable.Darktable
-org.flameshot.Flameshot
 org.freecadweb.FreeCAD
 org.gimp.GIMP
 org.kde.isoimagewriter
