@@ -1,14 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Nautilus.desktop" score="110.1796875" last-seen="1749942526"/>
-    <application id="org.gnome.Settings.desktop" score="2" last-seen="1749897018"/>
-    <application id="google-chrome.desktop" score="49" last-seen="1749396107"/>
-    <application id="org.gnome.Terminal.desktop" score="465.609375" last-seen="1749942607"/>
-    <application id="code.desktop" score="79.5" last-seen="1749547877"/>
-    <application id="com.brave.Browser.desktop" score="1389.25" last-seen="1749909686"/>
-    <application id="firefox-esr.desktop" score="24947.713348778751" last-seen="1749942639"/>
-    <application id="org.gnome.gedit.desktop" score="297.59375" last-seen="1749942568"/>
-    <application id="org.gnome.Shell.Extensions.GSConnect.desktop" score="0" last-seen="1749857567"/>
+    <application id="firefox-esr.desktop" score="24626.238203862566" last-seen="1753008241"/>
+    <application id="org.gnome.gedit.desktop" score="151.54189908504486" last-seen="1753005974"/>
+    <application id="org.libretro.RetroArch.desktop" score="244" last-seen="1752929449"/>
+    <application id="org.gnome.Nautilus.desktop" score="378.5021331012249" last-seen="1753007761"/>
+    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1752921930"/>
+    <application id="google-chrome.desktop" score="25" last-seen="1752572834"/>
+    <application id="org.gnome.Terminal.desktop" score="189.37789005041122" last-seen="1753007760"/>
+    <application id="code.desktop" score="1817.375" last-seen="1753005442"/>
+    <application id="com.brave.Browser.desktop" score="762.01402378082275" last-seen="1753008235"/>
+    <application id="virt-manager.desktop" score="572" last-seen="1753006611"/>
+    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1752868980"/>
+    <application id="com.github.PintaProject.Pinta.desktop" score="2" last-seen="1752856764"/>
+    <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1752743528"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1753005312"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="234" last-seen="1753005319"/>
   </context>
 </application-state>

@@ -31,7 +31,7 @@ cpufrequencystatus=false
 cpuloadaveragestatus=false
 cpuwidth=18
 decimalsstatus=false
-diskdeviceslist=['udev /dev false false', '/dev/nvme1n1p2 / false false', '/dev/nvme1n1p3 /home false false', '/dev/nvme1n1p1 /boot/efi false false', '/dev/nvme0n1p1 /media/lwh/lwh_backup1 false false']
+diskdeviceslist=['udev /dev false false', '/dev/nvme1n1p2 / false false', '/dev/nvme1n1p3 /home false false', '/dev/nvme0n1p1 /media/lwh/lwh_backup1 false false', '/dev/nvme1n1p1 /boot/efi false false']
 diskspacestatus=false
 diskstatsmode='multiple'
 diskstatsstatus=false
@@ -204,7 +204,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='keyboard'
 window-state=(1114, 870, false)
 
 [org/gnome/deja-dup]
@@ -216,7 +216,7 @@ always-show-universal-access-status=false
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
-screen-magnifier-enabled=false
+screen-magnifier-enabled=true
 screen-reader-enabled=false
 
 [org/gnome/desktop/a11y/interface]
@@ -224,7 +224,7 @@ high-contrast=false
 
 [org/gnome/desktop/a11y/magnifier]
 lens-mode=false
-mag-factor=1.25
+mag-factor=1.0
 mouse-tracking='push'
 scroll-at-edges=false
 show-cross-hairs=false
@@ -302,8 +302,8 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='stretched'
-picture-uri='file:///home/lwh/.local/share/BingWallpaper/20250605-FumacinhaBahia_ROW1478694911_UHD.jpg'
-picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20250605-FumacinhaBahia_ROW1478694911_UHD.jpg'
+picture-uri='file:///home/lwh/.local/share/BingWallpaper/20250704-OroseiSardegna_ROW4878996208_UHD.jpg'
+picture-uri-dark='file:///home/lwh/.local/share/BingWallpaper/20250704-OroseiSardegna_ROW4878996208_UHD.jpg'
 show-desktop-icons=true
 
 [org/gnome/desktop/calendar]
@@ -340,7 +340,7 @@ menubar-accel=''
 monospace-font-name='D2Coding 12'
 show-battery-percentage=false
 text-scaling-factor=1.0
-toolkit-accessibility=false
+toolkit-accessibility=true
 
 [org/gnome/desktop/media-handling]
 autorun-x-content-ignore=@as []
@@ -756,6 +756,7 @@ theme-name='freedesktop'
 
 [org/gnome/desktop/wm/keybindings]
 always-on-top=['<Super>bracketleft']
+close=@as []
 show-desktop=['<Super>d']
 switch-group=@as []
 switch-group-backward=@as []
@@ -794,7 +795,7 @@ use-background-color=true
 document-directory=@ms 'file:///home/lwh/Pictures'
 
 [org/gnome/evince/default]
-window-ratio=(2.3299959682838325, 0.74118946655738871)
+window-ratio=(2.2806722689075629, 0.74109263657957247)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -806,7 +807,7 @@ notify-window-paned-position=75
 notify-window-width=637
 notify-window-x=26
 notify-window-y=23
-reminders-past=['8bb267c5d069f484e26c46ed8150e6493ecd56fa\n220167e9ff1ca6ac55958b81c8014a1d9a98e50a\t20250601T000000\n1748530800\n1748703600\n1748705400\nBEGIN:VEVENT\r\nDTSTART;TZID=Asia/Seoul:20250601T000000\r\nDTEND;TZID=Asia/Seoul:20250601T003000\r\nRRULE:FREQ=YEARLY\r\nDTSTAMP:20240308T203558Z\r\nUID:du9jga3gm59vmvn3hpphe5voom@google.com\r\nCREATED:20230323T212217Z\r\nDESCRIPTION:6월/12월은 스케일링 받는달로 정한다.\r\nLAST-MODIFIED:20240308T203558Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:1\r\nSTATUS:CONFIRMED\r\nSUMMARY:6개월마다 스케일링\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63845613358\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P2D\r\nX-EVOLUTION-ALARM-UID:220167e9ff1ca6ac55958b81c8014a1d9a98e50a\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=@as []
 
 [org/gnome/evolution]
 default-calendar='74a55a511e7cb705d50f020d5a8e15c0ecbf88f8'
@@ -907,7 +908,7 @@ active-plugins=['modelines', 'filebrowser', 'textsize', 'sort', 'quickhighlight'
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/lwh'
+virtual-root='file:///home/lwh/git/init_debian'
 
 [org/gnome/gedit/plugins/spell]
 highlight-misspelled=true
@@ -971,7 +972,7 @@ view-window-width=1584
 
 [org/gnome/gnome-system-monitor]
 cpu-stacked-area-chart=false
-current-tab='resources'
+current-tab='processes'
 graph-data-points=30
 logarithmic-scale=false
 maximized=false
@@ -1216,8 +1217,8 @@ show-directory-item-counts='local-only'
 show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1916, 936)
-maximized=true
+initial-size=(1266, 845)
+maximized=false
 sidebar-width=236
 start-with-sidebar=true
 
@@ -1610,7 +1611,7 @@ command-history=['calc', 'gnome-calc', 'R', 'meld', 'htop', 'gnome-shell-extensi
 disable-extension-version-validation=false
 disable-user-extensions=false
 disabled-extensions=['workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'stocks@infinicode.de', 'order-extensions@wa4557.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'add-to-desktop@tommimon.github.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'notes@sam.sambull.org', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'sound-output-device-chooser@kgshank.net', 'volume-mixer@evermiss.net', 'lookingglass@markbokil.com', 'desktopicons-neo@darkdemon', 'RemoveAppMenu@Dragon8oy.com', 'youtube-search-provider@atareao.es', 'search-light@icedman.github.com', 'one-thing@github.com', 'quick-settings-tweaks@qwreey', 'netspeed@alynx.one', 'vertical-workspaces@G-dH.github.com', 'advancedvolumecontrol@mark.johnson.ubuntu.com', 'volume_scroller@francislavoie.github.io', 'topiconsfix@aleskva@devnullmail.com', 'gtk4-ding@smedius.gitlab.com', 'BingWallpaper@ineffable-gmail.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'simple-timer@majortomvr.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'quick-lang-switch@ankostis.gmail.com', 'printers@linux-man.org', 'gsconnect@andyholmes.github.io', 'color-picker@tuberry', 'clipboard-indicator@tudmotu.com', 'syncthing@gnome.2nv2u.com', 'always-indicator@martin.zurowietz.de', 'device-power-indicator@ranger-ross.github.io', 'runcat@kolesnikov.se', 'cpudots@kdevmen.gmail.com', 'simple-monitor@fcaballerop.github.io', 'cpufreq@konkor', 'activate-window-by-title@lucaswerkmeister.de', 'pingindic@xynium.github.com', 'toggle-workspace-span@arngo.github.com', 'miniview@thesecretaryofwar.com', 'syspeek-gs@gs.eros2.info', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'customize-ibus@hollowman.ml', 'gnome-ui-tune@itstime.tech', 'draw-on-your-screen2@zhrexl.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'smart-auto-move@khimaros.com', 'ding@rastersoft.com', 'horizontal-workspace-indicator@tty2.io', 'openweather-extension@jenslody.de', 'world_clock_lite@ailin.nemui', 'Resource_Monitor@Ory0n', 'trayIconsReloaded@selfmade.pl', 'tiling-assistant@leleat-on-github', 'NotificationCounter@coolllsk', 'panel-date-format@keiii.github.com', 'user-stylesheet@tomaszgasior.pl', 'dash-to-panel@jderose9.github.com', 'rounded-window-corners@yilozt']
+enabled-extensions=['weather@eexpss.gmail.com', 'dash-from-panel@fthx', 'dash-to-dock@micxgx.gmail.com', 'extension-list@tu.berry', 'BringOutSubmenuOfPowerOffLogoutButton@pratap.fastmail.fm', 'notes@maestroschan.fr', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'middleclickclose@paolo.tranquilli.gmail.com', 'cloudflare@adam.gadmz', 'cloudflare-warp-gnome@harshan01', 'permanent-notifications@bonzini.gnu.org', 'unlockDialogBackground@sun.wxg@gmail.com', 'pip-on-top@rafostar.github.com', 'tophat@fflewddur.github.io', 'add-to-desktop@tommimon.github.com', 'improved-workspace-indicator@michaelaquilina.github.io', 'gamemode@christian.kellner.me', 'batt_consumption_wattmetter@wennaspeedy', 'io.github.mreditor.gnome-shell-extensions.scroll-panel', 'radio@hslbck.gmail.com', 'geary-tray-icon@taylantatli.github.com', 'GmailMessageTray@shuming0207.gmail.com', 'ds4battery@slie.ru', 'stopwatch@aliakseiz.github.com', 'notification-timeout@chlumskyvaclav.gmail.com', 'notifications_to_file@fawtytoo', 'netspeedsimplified@prateekmedia.extension', 'gnome-shellext-hide-lock@adyrosebrigg', 'weatheroclock@CleoMenezesJr.github.io', 'weatherornot@somepaulo.github.io', 'open@eexpss.gmail.com', 'center-area-horizontal-spacing@kirby_33@hotmail.fr', 'notification-center@Selenium-H', 'app-menu-window-title@eternal-sorrow.github.com', 'workspace_titles@ben.santalucia.me', 'gtktitlebar@velitasali.github.io', 'StatusTitleBar@devpower.org', 'window-title-in-topbar@fthx', 'transparent-gnome-panel@ttomovcik.com', 'top-bar-organizer@julian.gse.jsts.xyz', 'hidetopbar@mathieu.bidon.ca', 'blur-my-shell@aunetx', 'unite@hardpixel.eu', 'gTile@vibou', 'Move_Clock@rmy.pobox.com', 'topIcons@adel.gadllah@gmail.com', 'dock@gnome-shell-extensions.gcampax.github.com', 'floating-dock@nandoferreira_prof@hotmail.com', 'services-panel@bit-else.com', 'pcalc@mgeck64.github.com', 'StatusTitleBarAndDropdown@devpower.org', 'window-title-in-status-bar@ienzam.com', 'no-title-bar@franglais125.gmail.com', 'tray-icons@zhangkaizhao.com', 'rss-feed@gnome-shell-extension.todevelopers.github.com', 'webfeed@xynium.github.com', 'workspace_wraparound@crister.tk', 'workspace-grid@mathematical.coffee.gmail.com', 'notes@sam.sambull.org', 'minimum-workspaces@philbot9.github.com', 'keyboard_modifiers_status@sneetsher', 'extend-panel-menu@julio641742', 'keys-indicator@caasiu.github.com', 'colorful-battery-indicator@aneruam', 'desktop-editor@naheel.com', 'ubuntuvn-desktop@ubuntuvn.com', 'firefox-pip2@bennypowers.com', 'super-key@tommimon.github.com', 'lockkeys@fawtytoo', 'pomodoro@arun.codito.in', 'wintile@nowsci.com', 'quarterwindows@troyready.com', 'undecorate@sun.wxg@gmail.com', 'ctrl-click-close@nohum.github.com', 'sticky-terminal@fthx', 'alt-tab-lift-first-window@cork.github.com', 'transparent-window@pbxqdown.github.com', 'simply.workspaces@andyrichardson.dev', 'reorder-workspaces@jer.dev', 'extensions@abteil.org', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'worksets@blipk.xyz', 'caffeine@patapon.info', 'user-theme-x@tuberry.github.io', 'default-workspace@mateusrodcosta.com', 'gnome-shell-duckduckgo-search-provider@keithcirkel.co.uk', 'vscode-search-provider@jomik.org', 'imageoverlay@nw.nwhirschfeld.de', 'simple-message@freddez', 'overlay-followfocus@amongpixels.com', 'workspace-switch-wraparound@theychx.org', 'this.simple-indication-of-workspaces@azate.email', 'emoji-selector@maestroschan.fr', 'fq@megh', 'gnome-fuzzy-search@gnome-shell-exstensions.fffilo.github.com', 'gnome-shutdown-button@kirby_33@hotmail.fr', 'sound-output-device-chooser@kgshank.net', 'volume-mixer@evermiss.net', 'lookingglass@markbokil.com', 'desktopicons-neo@darkdemon', 'RemoveAppMenu@Dragon8oy.com', 'youtube-search-provider@atareao.es', 'search-light@icedman.github.com', 'one-thing@github.com', 'quick-settings-tweaks@qwreey', 'netspeed@alynx.one', 'vertical-workspaces@G-dH.github.com', 'advancedvolumecontrol@mark.johnson.ubuntu.com', 'volume_scroller@francislavoie.github.io', 'topiconsfix@aleskva@devnullmail.com', 'gtk4-ding@smedius.gitlab.com', 'BingWallpaper@ineffable-gmail.com', 'windowIsReady_Remover@nunofarruca@gmail.com', 'simple-timer@majortomvr.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'quick-lang-switch@ankostis.gmail.com', 'printers@linux-man.org', 'gsconnect@andyholmes.github.io', 'color-picker@tuberry', 'clipboard-indicator@tudmotu.com', 'syncthing@gnome.2nv2u.com', 'always-indicator@martin.zurowietz.de', 'device-power-indicator@ranger-ross.github.io', 'runcat@kolesnikov.se', 'cpudots@kdevmen.gmail.com', 'simple-monitor@fcaballerop.github.io', 'cpufreq@konkor', 'activate-window-by-title@lucaswerkmeister.de', 'pingindic@xynium.github.com', 'toggle-workspace-span@arngo.github.com', 'miniview@thesecretaryofwar.com', 'syspeek-gs@gs.eros2.info', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'customize-ibus@hollowman.ml', 'gnome-ui-tune@itstime.tech', 'draw-on-your-screen2@zhrexl.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'smart-auto-move@khimaros.com', 'ding@rastersoft.com', 'horizontal-workspace-indicator@tty2.io', 'openweather-extension@jenslody.de', 'world_clock_lite@ailin.nemui', 'Resource_Monitor@Ory0n', 'trayIconsReloaded@selfmade.pl', 'tiling-assistant@leleat-on-github', 'NotificationCounter@coolllsk', 'panel-date-format@keiii.github.com', 'user-stylesheet@tomaszgasior.pl', 'dash-to-panel@jderose9.github.com', 'rounded-window-corners@yilozt']
 favorite-apps=['nemo.desktop', 'org.kde.kdenlive.desktop', 'com.vscodium.codium.desktop', 'code.desktop', 'md.obsidian.Obsidian.desktop', 'firefox-esr.desktop', 'org.gnome.Nautilus.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.gnome.Terminal.desktop', 'de.haeckerfelix.Shortwave.desktop', 'virt-manager.desktop', 'Waydroid.desktop', 'toggle_outgoing.desktop', 'organize.desktop', 'synaptic.desktop']
 had-bluetooth-devices-setup=true
 last-selected-power-profile='power-saver'
@@ -1643,7 +1644,7 @@ percentage=true
 percentagefull=true
 
 [org/gnome/shell/extensions/bingwallpaper]
-bing-json='[{"startdate":"20250529","fullstartdate":"202505290700","enddate":"20250530","url":"/th?id=OHR.MiravetSpain_ROW7690047738_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MiravetSpain_ROW7690047738","copyright":"Miravet on the Ebro river, Tarragona, Catalonia, Spain (© Eloi_Omella/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Miravet+Spain&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250529_MiravetSpain%22&FORM=HPQUIZ","wp":true,"hsh":"b497b3770e7a8eebe69a1eb6cbcd1e00","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250530","fullstartdate":"202505300700","enddate":"20250531","url":"/th?id=OHR.LittlePigeonRiver_ROW0877610598_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.LittlePigeonRiver_ROW0877610598","copyright":"Little Pigeon River, Great Smoky Mountains National Park, Tennessee, United States (© GreenStock/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Little+Pigeon+River&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250530_LittlePigeonRiver%22&FORM=HPQUIZ","wp":true,"hsh":"137d669a038e279f5faded050489c4b4","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250531","fullstartdate":"202505310700","enddate":"20250601","url":"/th?id=OHR.SwedenReserve_ROW0999901799_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SwedenReserve_ROW0999901799","copyright":"Knuthöjdsmossen nature reserve, Sweden (© Sven Halling/DEEPOL/plainpicture)","copyrightlink":"https://www.bing.com/search?q=Knuthojdsmossen+Sweden&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250531_SwedenReserve%22&FORM=HPQUIZ","wp":true,"hsh":"d90d57dcbe145a234f373054de7cf836","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250601","fullstartdate":"202506010700","enddate":"20250602","url":"/th?id=OHR.GrandeTerreReef_ROW1096147222_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.GrandeTerreReef_ROW1096147222","copyright":"Barrier reef off Grande Terre, New Caledonia, France (© Karsten Wrobel/Getty Images)","copyrightlink":"https://www.bing.com/search?q=New+Caledonian+barrier+reef&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250601_GrandeTerreReef%22&FORM=HPQUIZ","wp":true,"hsh":"18d084d55ab6d57dbc4844195576a000","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250602","fullstartdate":"202506020700","enddate":"20250603","url":"/th?id=OHR.EchinaceaButterfly_ROW1204867098_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.EchinaceaButterfly_ROW1204867098","copyright":"Skipper butterfly on an Echinacea flower, Rockefeller State Park, New York, USA (© Marianne A. Campolongo/Alamy Stock Photo)","copyrightlink":"https://www.bing.com/search?q=Echinacea&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250602_EchinaceaButterfly%22&FORM=HPQUIZ","wp":true,"hsh":"13197ce78f65c49bc3684f8fbb140504","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250603","fullstartdate":"202506030700","enddate":"20250604","url":"/th?id=OHR.BicyclesUtrecht_ROW1292854784_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.BicyclesUtrecht_ROW1292854784","copyright":"Bicycles on a bridge in Utrecht, Netherlands (© George Pachantouris/Getty Images)","copyrightlink":"https://www.bing.com/search?q=bicycle&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250603_BicyclesUtrecht%22&FORM=HPQUIZ","wp":true,"hsh":"d381c1f9720eadee23224a220f5ee58a","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250604","fullstartdate":"202506040700","enddate":"20250605","url":"/th?id=OHR.SchlossMoritzburg_ROW1385647959_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SchlossMoritzburg_ROW1385647959","copyright":"Moritzburg Castle, Saxony, Germany (© Hans-Peter Szyszka/eStock Photo)","copyrightlink":"https://www.bing.com/search?q=Moritzburg+Castle&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250604_SchlossMoritzburg%22&FORM=HPQUIZ","wp":true,"hsh":"11aa8b0adf11a3243e9372c972109dc5","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250605","fullstartdate":"202506050700","enddate":"20250606","url":"/th?id=OHR.FumacinhaBahia_ROW1478694911_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.FumacinhaBahia_ROW1478694911","copyright":"Fumacinha Waterfall, Chapada Diamantina, Brazil (© Pulsar Imagens/Alamy)","copyrightlink":"https://www.bing.com/search?q=Fumacinha+waterfall&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250605_FumacinhaBahia%22&FORM=HPQUIZ","wp":true,"hsh":"dbc472e55785e4ea570707cbcc130560","drk":1,"top":1,"bot":1,"hs":[]}]'
+bing-json='[{"startdate":"20250627","fullstartdate":"202506270700","enddate":"20250628","url":"/th?id=OHR.SplendidFrog_ROW3619803881_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.SplendidFrog_ROW3619803881","copyright":"Splendid leaf frog (© Jan Stria/Shutterstock)","copyrightlink":"https://www.bing.com/search?q=Splendid+leaf+frog&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250627_SplendidFrog%22&FORM=HPQUIZ","wp":true,"hsh":"953982e9d76505ef2258babbfe707ffc","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250628","fullstartdate":"202506280700","enddate":"20250629","url":"/th?id=OHR.WatertowerMannheim_ROW8445149552_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.WatertowerMannheim_ROW8445149552","copyright":"Mannheim Water Tower, Germany (© no_limit_pictures/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Mannheim+Water+Tower&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250628_WatertowerMannheim%22&FORM=HPQUIZ","wp":true,"hsh":"d1502fd27da2d0c85c6d9b38f72d9fdb","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250629","fullstartdate":"202506290700","enddate":"20250630","url":"/th?id=OHR.BandaIsland_ROW4416839626_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.BandaIsland_ROW4416839626","copyright":"Blue lagoon of Pulau Ay, Banda Islands, Indonesia (© fabio lamanna/Alamy Stock Photo)","copyrightlink":"https://www.bing.com/search?q=Banda+Islands&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250629_BandaIsland%22&FORM=HPQUIZ","wp":true,"hsh":"898f1e0b69cff7abfbc1440ea88a18f4","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250630","fullstartdate":"202506300700","enddate":"20250701","url":"/th?id=OHR.WolfeCrater_ROW4478019950_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.WolfeCrater_ROW4478019950","copyright":"Wolfe Creek Crater, Australia (© Abstract Aerial Art/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Wolfe+Creek+Crater&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250630_WolfeCrater%22&FORM=HPQUIZ","wp":true,"hsh":"508adf933534856219a700fa46f499a5","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250701","fullstartdate":"202507010700","enddate":"20250702","url":"/th?id=OHR.CanadaDayFogo_ROW4542871312_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.CanadaDayFogo_ROW4542871312","copyright":"Fishing village of Tilting, Fogo Island, Newfoundland and Labrador, Canada (© FedevPhoto/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Fogo+Island&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250701_CanadaDayFogo%22&FORM=HPQUIZ","wp":true,"hsh":"13e676097111661877e1a89ed0ce13c7","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250702","fullstartdate":"202507020700","enddate":"20250703","url":"/th?id=OHR.MaroonClownfish_ROW4636021251_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.MaroonClownfish_ROW4636021251","copyright":"Spine-cheeked anemonefish surrounded by bubble-tip anemone, Milne Bay, Papua New Guinea (© Fred Bavendam/Nature Picture Library)","copyrightlink":"https://www.bing.com/search?q=Spine+cheeked+anemonefish&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250702_MaroonClownfish%22&FORM=HPQUIZ","wp":true,"hsh":"b56c4ede42df30e34872a7567bc6c379","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250703","fullstartdate":"202507030700","enddate":"20250704","url":"/th?id=OHR.RainbowRiver_ROW4765713461_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.RainbowRiver_ROW4765713461","copyright":"Rainbow River in Rainbow Springs State Park, Florida, United States (© Michel Roggo/Minden Pictures)","copyrightlink":"https://www.bing.com/search?q=Rainbow+River+Florida&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250703_RainbowRiver%22&FORM=HPQUIZ","wp":true,"hsh":"184ec9023636ce0baeafc0d5af783d3b","drk":1,"top":1,"bot":1,"hs":[]},{"startdate":"20250704","fullstartdate":"202507040700","enddate":"20250705","url":"/th?id=OHR.OroseiSardegna_ROW4878996208_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp","urlbase":"/th?id=OHR.OroseiSardegna_ROW4878996208","copyright":"Orosei, Sardinia, Italy (© EyeEm Mobile GmbH/Getty Images)","copyrightlink":"https://www.bing.com/search?q=Orosei+Sardinia&form=hpcapt","title":"Info","quiz":"/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20250704_OroseiSardegna%22&FORM=HPQUIZ","wp":true,"hsh":"684c48ea68dc6c810d6f1b53a952498c","drk":1,"top":1,"bot":1,"hs":[]}]'
 delete-previous=true
 download-folder='~/.local/share/BingWallpaper'
 hide=true
@@ -1655,7 +1656,7 @@ override-lockscreen-blur=false
 random-interval=300
 selected-image='current'
 show-count-in-image-title=false
-state='{"maxlongdate":202506050700,"title":"Fumacinha Waterfall, Chapada Diamantina, Brazil","explanation":"오늘의 Bing 배경화면은 2025-06-05","copyright":"© Pulsar Imagens/Alamy","longstartdate":"202506050700","imageinfolink":"https://www.bing.com/search?q=Fumacinha+waterfall&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.FumacinhaBahia_ROW1478694911_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20250605-FumacinhaBahia_ROW1478694911_UHD.jpg","favourite":false}'
+state='{"maxlongdate":202507040700,"title":"Orosei, Sardinia, Italy","explanation":"오늘의 Bing 배경화면은 2025-07-04","copyright":"© EyeEm Mobile GmbH/Getty Images","longstartdate":"202507040700","imageinfolink":"https://www.bing.com/search?q=Orosei+Sardinia&form=hpcapt","imageURL":"https://www.bing.com/th?id=OHR.OroseiSardegna_ROW4878996208_UHD.jpg","filename":"/home/lwh/.local/share/BingWallpaper/20250704-OroseiSardegna_ROW4878996208_UHD.jpg","favourite":false}'
 
 [org/gnome/shell/extensions/bluetooth-quick-connect]
 bluetooth-auto-power-on=false
@@ -2043,7 +2044,7 @@ vpn-status=false
 
 [org/gnome/shell/extensions/libpanel]
 column-spacing-enabled=false
-layout=[['gnome@main', 'extensions-sync@elhan.io/main', 'quick-settings-audio-panel@rayzeq.github.io/main']]
+layout=[['gnome@main', 'quick-settings-audio-panel@rayzeq.github.io/main', 'extensions-sync@elhan.io/main']]
 padding-enabled=false
 row-spacing-enabled=false
 
@@ -2201,7 +2202,7 @@ text-color='#dc8add'
 upload-speed-text='↑'
 
 [org/gnome/shell/extensions/smart-auto-move]
-activate-workspace=false
+activate-workspace=true
 debug-logging=false
 freeze-saves=false
 ignore-position=false
@@ -2209,7 +2210,7 @@ ignore-workspace=false
 match-threshold=0.79999999999999982
 overrides='{}'
 save-frequency=5000
-saved-windows='{"firefox-esr":[{"id":521298518,"hash":521298518,"sequence":6,"title":"Reddit - The heart of the internet — Mozilla Firefox","workspace":2,"maximized":3,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":24,"width":1920,"height":1056,"occupied":true},{"id":521298549,"hash":521298549,"sequence":37,"title":"화면 속 화면","workspace":4,"maximized":0,"fullscreen":false,"above":true,"monitor":0,"x":1364,"y":736,"width":601,"height":338,"occupied":false}],"gnome-terminal-server":[{"id":521298550,"hash":521298550,"sequence":38,"title":"lwh@lwh-laptop: ~","workspace":4,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":414,"y":24,"width":1271,"height":1015,"occupied":true}],"org.gnome.Nautilus":[{"id":2347458921,"hash":2347458921,"sequence":4,"title":"내 폴더","workspace":3,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":65,"y":97,"width":1005,"height":897,"occupied":false},{"id":2152678982,"hash":2152678982,"sequence":32,"title":"IT","workspace":3,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":42,"y":49,"width":1042,"height":936,"occupied":false}],"obsidian":[{"id":2152678975,"hash":2152678975,"sequence":25,"title":"새 탭 - 000_Personal - Obsidian v1.8.10","workspace":1,"maximized":3,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":24,"width":1920,"height":1056,"occupied":false}],"gedit":[{"id":521298536,"hash":521298536,"sequence":24,"title":".bashrc (~) - gedit","workspace":4,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":50,"width":1534,"height":873,"occupied":false},{"id":521298551,"hash":521298551,"sequence":39,"title":"이름 없는 문서 1 - gedit","workspace":2,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":24,"width":1534,"height":873,"occupied":false},{"id":521298552,"hash":521298552,"sequence":40,"title":"기본 설정","workspace":2,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":50,"y":74,"width":442,"height":477,"occupied":false}]}'
+saved-windows='{"gnome-terminal-server":[{"id":2830478398,"hash":2830478398,"sequence":4,"title":"lwh@lwh-laptop: ~","workspace":4,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":101,"y":62,"width":857,"height":889,"occupied":true}],"org.gnome.Nautilus":[{"id":2830478399,"hash":2830478399,"sequence":5,"title":"300_MyDocument","workspace":3,"maximized":0,"fullscreen":false,"above":false,"monitor":0,"x":50,"y":120,"width":1481,"height":855,"occupied":true}],"firefox-esr":[{"id":2830478400,"hash":2830478400,"sequence":6,"title":"[목돈연구소] 시간을 내편으로 두어야 성공적인 투자를 할 수 있다. 현명한 투자를 위한 키워드 ‘시간’ I 지식편의점 230730(일) - YouTube — Mozilla Firefox","workspace":2,"maximized":3,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":24,"width":1920,"height":1056,"occupied":true},{"id":2830478411,"hash":2830478411,"sequence":17,"title":"화면 속 화면","workspace":3,"maximized":0,"fullscreen":false,"above":true,"monitor":0,"x":1368,"y":290,"width":397,"height":224,"occupied":false},{"id":2830478428,"hash":2830478428,"sequence":34,"title":"1년 확인 습관 만들기 — Mozilla Firefox","workspace":2,"maximized":2,"fullscreen":false,"above":false,"monitor":0,"x":0,"y":24,"width":876,"height":1056,"occupied":false}]}'
 startup-delay=2500
 sync-frequency=2000
 sync-mode='RESTORE'
@@ -2495,9 +2496,9 @@ show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=207
-sort-column='modified'
+sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1310, 1001)
