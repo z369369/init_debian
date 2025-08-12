@@ -36,6 +36,7 @@ ibus-hangul #support ime hangul
 imagemagick #Image converter
 imwheel #Mouse wheel scroll
 incron #Filesystem crontab
+jq #json
 libavcodec-extra #for debian alternative restrict extra
 libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify

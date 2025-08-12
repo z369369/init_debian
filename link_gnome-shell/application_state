@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="firefox-esr.desktop" score="24626.238203862566" last-seen="1753008241"/>
-    <application id="org.gnome.gedit.desktop" score="151.54189908504486" last-seen="1753005974"/>
-    <application id="org.libretro.RetroArch.desktop" score="244" last-seen="1752929449"/>
-    <application id="org.gnome.Nautilus.desktop" score="378.5021331012249" last-seen="1753007761"/>
-    <application id="org.gnome.FileRoller.desktop" score="2" last-seen="1752921930"/>
-    <application id="google-chrome.desktop" score="25" last-seen="1752572834"/>
-    <application id="org.gnome.Terminal.desktop" score="189.37789005041122" last-seen="1753007760"/>
-    <application id="code.desktop" score="1817.375" last-seen="1753005442"/>
-    <application id="com.brave.Browser.desktop" score="762.01402378082275" last-seen="1753008235"/>
-    <application id="virt-manager.desktop" score="572" last-seen="1753006611"/>
-    <application id="org.gnome.gThumb.desktop" score="1" last-seen="1752868980"/>
-    <application id="com.github.PintaProject.Pinta.desktop" score="2" last-seen="1752856764"/>
-    <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1752743528"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1753005312"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="234" last-seen="1753005319"/>
+    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1754988295"/>
+    <application id="org.gnome.Nautilus.desktop" score="296.12553327530622" last-seen="1754988500"/>
+    <application id="org.gnome.Settings.desktop" score="17" last-seen="1754986647"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="29" last-seen="1754988078"/>
+    <application id="google-chrome.desktop" score="223" last-seen="1754670314"/>
+    <application id="org.gnome.Extensions.desktop" score="4" last-seen="1754988276"/>
+    <application id="firefox-esr.desktop" score="24673.059550965641" last-seen="1754988604"/>
+    <application id="org.gnome.gedit.desktop" score="509.38547477126122" last-seen="1754988821"/>
+    <application id="org.gnome.Terminal.desktop" score="385.84447251260281" last-seen="1754988826"/>
+    <application id="synaptic.desktop" score="3" last-seen="1754916912"/>
+    <application id="md.obsidian.Obsidian.desktop" score="59.5" last-seen="1754918679"/>
+    <application id="yelp.desktop" score="1" last-seen="1754398762"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="12" last-seen="1754984146"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="588.75" last-seen="1754984150"/>
+    <application id="com.valvesoftware.Steam.desktop" score="368.5" last-seen="1754671453"/>
   </context>
 </application-state>
