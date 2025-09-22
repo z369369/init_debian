@@ -1,20 +1,18 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Shell.Extensions.GSConnect.Preferences.desktop" score="1" last-seen="1754988295"/>
-    <application id="org.gnome.Nautilus.desktop" score="296.12553327530622" last-seen="1754988500"/>
-    <application id="org.gnome.Settings.desktop" score="17" last-seen="1754986647"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="29" last-seen="1754988078"/>
-    <application id="google-chrome.desktop" score="223" last-seen="1754670314"/>
-    <application id="org.gnome.Extensions.desktop" score="4" last-seen="1754988276"/>
-    <application id="firefox-esr.desktop" score="24673.059550965641" last-seen="1754988604"/>
-    <application id="org.gnome.gedit.desktop" score="509.38547477126122" last-seen="1754988821"/>
-    <application id="org.gnome.Terminal.desktop" score="385.84447251260281" last-seen="1754988826"/>
-    <application id="synaptic.desktop" score="3" last-seen="1754916912"/>
-    <application id="md.obsidian.Obsidian.desktop" score="59.5" last-seen="1754918679"/>
-    <application id="yelp.desktop" score="1" last-seen="1754398762"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="12" last-seen="1754984146"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="588.75" last-seen="1754984150"/>
-    <application id="com.valvesoftware.Steam.desktop" score="368.5" last-seen="1754671453"/>
+    <application id="nemo.desktop" score="1" last-seen="1758298095"/>
+    <application id="hardinfo.desktop" score="52" last-seen="1758294817"/>
+    <application id="org.gnome.Nautilus.desktop" score="294.76569165941328" last-seen="1758555075"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="4" last-seen="1758554209"/>
+    <application id="org.videolan.VLC.desktop" score="8" last-seen="1758533832"/>
+    <application id="gnome-system-monitor.desktop" score="22" last-seen="1758300741"/>
+    <application id="org.gnome.gedit.desktop" score="391.42318434640765" last-seen="1758555075"/>
+    <application id="com.brave.Browser.desktop" score="358" last-seen="1758290968"/>
+    <application id="org.gnome.Terminal.desktop" score="203.60555906407535" last-seen="1758553101"/>
+    <application id="code.desktop" score="35" last-seen="1758555063"/>
+    <application id="de.haeckerfelix.Shortwave.desktop" score="0" last-seen="1758106033"/>
+    <application id="firefox-esr.desktop" score="22238.507443870705" last-seen="1758554751"/>
+    <application id="io.github.vikdevelop.SaveDesktop.desktop" score="3" last-seen="1758554247"/>
   </context>
 </application-state>
