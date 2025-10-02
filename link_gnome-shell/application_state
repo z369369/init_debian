@@ -1,18 +1,29 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="nemo.desktop" score="1" last-seen="1758298095"/>
-    <application id="hardinfo.desktop" score="52" last-seen="1758294817"/>
-    <application id="org.gnome.Nautilus.desktop" score="294.76569165941328" last-seen="1758555075"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="4" last-seen="1758554209"/>
-    <application id="org.videolan.VLC.desktop" score="8" last-seen="1758533832"/>
-    <application id="gnome-system-monitor.desktop" score="22" last-seen="1758300741"/>
-    <application id="org.gnome.gedit.desktop" score="391.42318434640765" last-seen="1758555075"/>
-    <application id="com.brave.Browser.desktop" score="358" last-seen="1758290968"/>
-    <application id="org.gnome.Terminal.desktop" score="203.60555906407535" last-seen="1758553101"/>
-    <application id="code.desktop" score="35" last-seen="1758555063"/>
-    <application id="de.haeckerfelix.Shortwave.desktop" score="0" last-seen="1758106033"/>
-    <application id="firefox-esr.desktop" score="22238.507443870705" last-seen="1758554751"/>
-    <application id="io.github.vikdevelop.SaveDesktop.desktop" score="3" last-seen="1758554247"/>
+    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1759419728"/>
+    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="2" last-seen="1758902197"/>
+    <application id="io.github.giantpinkrobots.flatsweep.desktop" score="0" last-seen="1758902483"/>
+    <application id="google-chrome.desktop" score="20" last-seen="1759402728"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="5" last-seen="1759061965"/>
+    <application id="com.brave.Browser.desktop" score="91" last-seen="1758975581"/>
+    <application id="org.gnome.FileRoller.desktop" score="1" last-seen="1759418899"/>
+    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1759419725"/>
+    <application id="xdg-desktop-portal-gnome.desktop" score="4" last-seen="1759419652"/>
+    <application id="virt-manager.desktop" score="285" last-seen="1758933448"/>
+    <application id="org.gnome.gedit.desktop" score="687.71159217320383" last-seen="1759421265"/>
+    <application id="org.gnome.Nautilus.desktop" score="350.88284582970664" last-seen="1759420047"/>
+    <application id="org.libreoffice.LibreOffice.impress.desktop" score="2" last-seen="1759313044"/>
+    <application id="org.libreoffice.LibreOffice.writer.desktop" score="132" last-seen="1759351572"/>
+    <application id="nemo.desktop" score="1" last-seen="1758930175"/>
+    <application id="org.yuzu_emu.yuzu.desktop" score="20" last-seen="1759419654"/>
+    <application id="org.gnome.Terminal.desktop" score="460.80277953203768" last-seen="1759421270"/>
+    <application id="md.obsidian.Obsidian.desktop" score="131" last-seen="1759421196"/>
+    <application id="synaptic.desktop" score="21.5" last-seen="1758932840"/>
+    <application id="gnome-system-monitor.desktop" score="47.5" last-seen="1759177448"/>
+    <application id="io.github.flattool.Warehouse.desktop" score="39" last-seen="1758904794"/>
+    <application id="com.valvesoftware.Steam.desktop" score="9" last-seen="1759402754"/>
+    <application id="firefox-esr.desktop" score="22815.753721935354" last-seen="1759421202"/>
+    <application id="org.gnome.Settings.desktop" score="14" last-seen="1759014498"/>
   </context>
 </application-state>
