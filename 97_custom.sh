@@ -1,4 +1,8 @@
 #!/bin/bash
+
+rm -rf ~/Documents
+ln -s ~/phone/Documents ~/Documents
+
 rm -rf ~/.local/share/nautilus/scripts
 git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts
 
