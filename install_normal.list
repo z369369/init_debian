@@ -17,6 +17,7 @@ fonts-crosextra-caladea #for debian extra ms font
 fonts-nanum
 fonts-noto-cjk
 fzf #dependency ani-cli, dra-cla
+fd-find # with fzf find
 gedit #gedit
 git #Used
 gnome-shell-extension-prefs #Gnome Extension
