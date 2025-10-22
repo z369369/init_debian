@@ -18,6 +18,7 @@ fonts-nanum
 fonts-noto-cjk
 fzf #dependency ani-cli, dra-cla
 fd-find # with fzf find
+ripgrep # with fzf find grep
 gedit #gedit
 git #Used
 gnome-shell-extension-prefs #Gnome Extension
@@ -83,6 +84,7 @@ xinput #device list
 yaru-theme-icon #theme for folder icon
 ydotool #shortcut key customize
 ydotoold #shortcut key customize
+zoxide # alternative cd 
 
 *
 
