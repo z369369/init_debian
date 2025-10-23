@@ -89,6 +89,7 @@ zoxide # alternative cd
 *
 
 ca.desrt.dconf-editor
+com.google.AndroidStudio
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.brave.Browser
