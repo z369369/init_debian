@@ -4,11 +4,6 @@ echo "============== [S] [ 4 / 6 ] Firewall =============="
 sudo ufw default deny incoming
 sudo ufw default deny outgoing
 
-#Waydroid
-sudo ufw allow in on waydroid0
-sudo ufw allow out on waydroid0
-
-
 #gsconnect
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow out 1714:1764/tcp

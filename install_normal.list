@@ -1,5 +1,4 @@
 adb		 #android adb
-fastboot #android unlock
 baobab #disk analyze
 bat #powerful cat
 build-essential #for debian essential 
@@ -9,16 +8,17 @@ chrome-gnome-shell # gnome shell connector for firefox
 curl #Used
 deborphan #Used
 dkms #for debian essential
+e2fsprogs #partition div tune2fs
+fastboot #android unlock
+fd-find # with fzf find
 fdupes #duplicate file remove
-flameshot #ctrl capture
 firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
+flameshot #ctrl capture
 fonts-crosextra-caladea #for debian extra ms font
 fonts-nanum
 fonts-noto-cjk
 fzf #dependency ani-cli, dra-cla
-fd-find # with fzf find
-ripgrep # with fzf find grep
 gedit #gedit
 git #Used
 gnome-shell-extension-prefs #Gnome Extension
@@ -41,14 +41,15 @@ libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
 libopengl0 # run appimage
 libqt5svg5 #JPG to SVG
+libvirt-daemon-system #virt qemu
 lpr #printer driver
 make #Build
 meld #Winmerge
 mpv #video player
 nautilus-admin
 nautilus-image-converter
-ncdu #du
 ncal #cli-calendar
+ncdu #du
 nemo
 neofetch #pfetch alternative
 net-tools #Used
@@ -59,8 +60,11 @@ pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
 python3.11-venv #python3 virtual env
+qemu-system-x86 #virt qemu
+qemu-utils #virt qemu
 radeontop #radeon gpu top
 rename # rename with perl
+ripgrep # with fzf find grep
 rsync #Used
 rsyslog #log
 synaptic #Package manager
@@ -73,13 +77,11 @@ transmission-gtk #transmisson finish script
 ufw #Firewall
 vim #vi
 virt-manager #virt qemu
-qemu-system-x86 #virt qemu
-qemu-utils #virt qemu
-libvirt-daemon-system #virt qemu
 wget #Download
 wl-clipboard #xwayland clipboard copy paste
 wmctrl #move Workspace
 xclip #select the wayland text
+xfsprogs #partition div xfsadmin
 xinput #device list
 yaru-theme-icon #theme for folder icon
 ydotool #shortcut key customize
@@ -89,16 +91,16 @@ zoxide # alternative cd
 *
 
 ca.desrt.dconf-editor
-com.google.AndroidStudio
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.brave.Browser
 com.discordapp.Discord
+com.getpostman.Postman
 com.github.jeromerobert.pdfarranger
 com.github.maoschanz.drawing
 com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
-com.getpostman.Postman
+com.google.AndroidStudio
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
 com.opera.Opera
@@ -127,12 +129,12 @@ org.blender.Blender
 org.darktable.Darktable
 org.freecadweb.FreeCAD
 org.gimp.GIMP
-org.kde.isoimagewriter
 org.gnome.Contacts
 org.gnome.design.Contrast
 org.gnome.design.IconLibrary
 org.gnome.seahorse.Application
 org.inkscape.Inkscape
+org.kde.isoimagewriter
 org.kde.kdenlive
 org.kde.krita
 org.kde.okular
