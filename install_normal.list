@@ -96,6 +96,7 @@ com.boxy_svg.BoxySVG
 com.brave.Browser
 com.discordapp.Discord
 com.getpostman.Postman
+com.icons8.Lunacy
 com.github.jeromerobert.pdfarranger
 com.github.maoschanz.drawing
 com.github.qarmin.czkawka
@@ -108,7 +109,6 @@ com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
 com.usebottles.bottles
 com.valvesoftware.Steam
-com.vscodium.codium
 de.haeckerfelix.Shortwave
 fr.handbrake.ghb
 fr.natron.Natron

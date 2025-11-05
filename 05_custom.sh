@@ -1,5 +1,4 @@
 #!/bin/bash
-git clone https://github.com/cfgnunes/nautilus-scripts.git ~/.local/share/nautilus/scripts_original
 
 #mpv
 git clone https://github.com/9beach/mpv-config.git ~/.config/mpv

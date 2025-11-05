@@ -1,0 +1,7 @@
+[Desktop Entry]
+Hidden=false
+Name=custom_camera_resize
+Comment=
+Terminal=false
+Exec=/home/lwh/.config/autostart/custom_camera_resize.ignition_delay.sh
+Type=Application
