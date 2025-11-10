@@ -16,7 +16,7 @@ firefox-esr #for debian
 firefox-esr-l10n-ko #for debian
 flameshot #ctrl capture
 fonts-crosextra-caladea #for debian extra ms font
-fonts-nanum
+fonts-nanum #
 fonts-noto-cjk
 fzf #dependency ani-cli, dra-cla
 gedit #gedit
