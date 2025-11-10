@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "============== [S] [6 / 6] Remove trash =============="
 
-sudo apt remove --purge -y $(grep -vE "^\s*#" remove.list | sed -e 's/#.*//'  | tr "\n" " ")
+sudo apt remove --purge -y $(grep -vE "^\s*#" remove_package.list | sed -e 's/#.*//'  | tr "\n" " ")
 
 sudo rm -rf /usr/share/gnome/applications/nemo.desktop
 
