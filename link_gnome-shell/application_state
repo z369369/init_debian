@@ -10,16 +10,16 @@
     <application id="org.gnome.design.Contrast.desktop" score="7" last-seen="1762437820"/>
     <application id="io.github.vikdevelop.SaveDesktop.desktop" score="0.5" last-seen="1762293262"/>
     <application id="com.icons8.Lunacy.desktop" score="82" last-seen="1762299804"/>
-    <application id="code.desktop" score="469.625" last-seen="1762745094"/>
+    <application id="code.desktop" score="477.625" last-seen="1762745246"/>
     <application id="FFPWA-01K7F51YMTD4TVY12TVYDA77AY.desktop" score="35.25" last-seen="1762389627"/>
     <application id="abricotine.desktop" score="10.75" last-seen="1762165308"/>
     <application id="org.gnome.Settings.desktop" score="42.09375" last-seen="1762738857"/>
     <application id="io.github.peazip.PeaZip.desktop" score="7" last-seen="1762700564"/>
-    <application id="org.gnome.Extensions.desktop" score="25" last-seen="1762743997"/>
-    <application id="org.gnome.Terminal.desktop" score="877.41879343018809" last-seen="1762745063"/>
+    <application id="org.gnome.Extensions.desktop" score="25" last-seen="1762745248"/>
+    <application id="org.gnome.Terminal.desktop" score="882.41879343018809" last-seen="1762746110"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="56.25" last-seen="1762742268"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1762743169"/>
-    <application id="org.gnome.Nautilus.desktop" score="793.45129446608917" last-seen="1762745108"/>
+    <application id="org.gnome.Nautilus.desktop" score="811.45129446608917" last-seen="1762746330"/>
     <application id="gnome-system-monitor.desktop" score="0" last-seen="1762742266"/>
     <application id="com.valvesoftware.Steam.desktop" score="7402.359375" last-seen="1762659299"/>
     <application id="org.gnome.FileRoller.desktop" score="5.5" last-seen="1762740948"/>
@@ -29,8 +29,8 @@
     <application id="google-chrome.desktop" score="8" last-seen="1762699936"/>
     <application id="synaptic.desktop" score="29.7109375" last-seen="1762299436"/>
     <application id="org.nomacs.ImageLounge.desktop" score="3" last-seen="1762700856"/>
-    <application id="org.gnome.gedit.desktop" score="399.96424362770631" last-seen="1762745109"/>
-    <application id="firefox-esr.desktop" score="16542.839901905238" last-seen="1762745064"/>
+    <application id="org.gnome.gedit.desktop" score="400.96424362770631" last-seen="1762746258"/>
+    <application id="firefox-esr.desktop" score="16673.839901905238" last-seen="1762746344"/>
     <application id="mpv.desktop" score="0.5" last-seen="1762699783"/>
   </context>
 </application-state>
