@@ -8,7 +8,7 @@
     <application id="io.github.vikdevelop.SaveDesktop.desktop" score="0.5" last-seen="1762293262"/>
     <application id="com.icons8.Lunacy.desktop" score="82" last-seen="1762299804"/>
     <application id="io.github.flattool.Ignition.desktop" score="3" last-seen="1762736432"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="54.25" last-seen="1762737945"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="55.25" last-seen="1762739828"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="14" last-seen="1762436159"/>
     <application id="org.gnome.FileRoller.desktop" score="5.5" last-seen="1762709325"/>
     <application id="org.gnome.gThumb.desktop" score="33.75" last-seen="1762709295"/>
@@ -16,19 +16,19 @@
     <application id="net.sourceforge.mcomix.desktop" score="23" last-seen="1762709383"/>
     <application id="FFPWA-01K7F51YMTD4TVY12TVYDA77AY.desktop" score="35.25" last-seen="1762389627"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="3.625" last-seen="1762700854"/>
-    <application id="org.gnome.Nautilus.desktop" score="631.45129446608917" last-seen="1762739383"/>
-    <application id="nemo.desktop" score="2" last-seen="1762737201"/>
+    <application id="org.gnome.Nautilus.desktop" score="631.45129446608917" last-seen="1762739875"/>
+    <application id="nemo.desktop" score="2" last-seen="1762739822"/>
     <application id="org.telegram.desktop.desktop" score="0.5" last-seen="1762436642"/>
     <application id="md.obsidian.Obsidian.desktop" score="368.296875" last-seen="1762736880"/>
     <application id="io.github.peazip.PeaZip.desktop" score="7" last-seen="1762700564"/>
     <application id="org.gnome.design.Contrast.desktop" score="7" last-seen="1762437820"/>
-    <application id="org.gnome.Terminal.desktop" score="809.41879343018809" last-seen="1762739599"/>
+    <application id="org.gnome.Terminal.desktop" score="809.41879343018809" last-seen="1762739860"/>
     <application id="synaptic.desktop" score="29.7109375" last-seen="1762299436"/>
-    <application id="code.desktop" score="447.625" last-seen="1762739327"/>
+    <application id="code.desktop" score="455.625" last-seen="1762739888"/>
     <application id="org.gnome.gedit.desktop" score="385.96424362770631" last-seen="1762739598"/>
     <application id="mpv.desktop" score="0.5" last-seen="1762699783"/>
     <application id="org.gnome.Extensions.desktop" score="22" last-seen="1762737100"/>
     <application id="org.gnome.Settings.desktop" score="42.09375" last-seen="1762738857"/>
-    <application id="firefox-esr.desktop" score="16248.839901905239" last-seen="1762739449"/>
+    <application id="firefox-esr.desktop" score="16269.839901905239" last-seen="1762739887"/>
   </context>
 </application-state>
