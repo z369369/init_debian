@@ -1,12 +1,9 @@
 aisleriot
 aptitude
 atomix
-avahi-daemon
 cheese
 deja-dup
-evolution
 five-or-more
-fonts-liberation
 fonts-liberation2
 fonts-noto-cjk-extra
 fonts-noto-extra
@@ -42,7 +39,6 @@ hitori
 iagno
 libreoffice
 lightsoff
-malcontent
 malcontent-gui
 packagekit
 plymouth

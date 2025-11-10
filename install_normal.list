@@ -81,7 +81,6 @@ wget #Download
 wl-clipboard #xwayland clipboard copy paste
 wmctrl #move Workspace
 xclip #select the wayland text
-xfsprogs #partition div xfsadmin
 xinput #device list
 yaru-theme-icon #theme for folder icon
 ydotool #shortcut key customize
@@ -104,7 +103,6 @@ com.github.tchx84.Flatseal
 com.google.AndroidStudio
 com.heroicgameslauncher.hgl
 com.obsproject.Studio
-com.opera.Opera
 com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
 com.usebottles.bottles

@@ -6,7 +6,7 @@
 # cat ~/.key | sudo -S systemctl start bluetooth.service
 
 # 인터넷 연결을 확인할 최대 시도 횟수
-MAX_ATTEMPTS=30
+MAX_ATTEMPTS=50
 # 시도 간 대기 시간 (초)
 WAIT_TIME=0.5
 # 확인을 위해 사용할 신뢰할 수 있는 외부 IP (Google DNS)
