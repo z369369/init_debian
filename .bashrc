@@ -112,30 +112,75 @@ if ! shopt -oq posix; then
   fi
 fi
 
+ripfzf() {
+    # 검색어 인자 확인 (1글자 이상)
+    if [[ -z "$1" || ${#1} -lt 1 ]]; then
+        echo "검색어(1글자 이상)를 입력하세요."
+        return 1
+    fi
+
+    local query="$1"
+
+    # rg 옵션 설명
+    # --hidden 제외(숨김파일 무시)
+    # --glob '!.git/*' : .git 무시 (속도 개선)
+    # --glob '!*' : 숨김파일 제외를 위해 이미 --hidden 을 쓰지 않음
+    # -n : 줄번호
+    # -H : 파일명 표시
+    # --color always : fzf preview용
+    rg --no-hidden \
+       --glob '!.git/*' \
+       -n -H --color=always "$query" |
+    fzf --layout=reverse --ansi \
+        --preview "batcat --style=plain --color=always {1} --line-range {2}: {2}" \
+        --delimiter : \
+        --preview-window=right:60% \
+        --bind "enter:become(micro {1} +{2})"
+}
+
+
 alias aupdate='sudo apt update'
-alias cat='batcat'
 alias aupgrade='sudo apt upgrade'
+alias bat='batcat --style=plain'
+alias boottime='systemd-analyze'
 alias c='clear'
-alias cd='zoxide'
+alias cat='batcat --style=plain'
 alias df='pydf'
+alias du='ncdu -x'
+alias free='free -m'
 alias frepair='flatpak repair --user'
 alias fupdate='flatpak update --user --assumeyes'
+alias jctl='journalctl'
 alias ls='exa'
-alias du='ncdu -x'
-alias vi='micro'
+alias myip='curl ifconfig.me;echo ""'
 alias nano='micro'
 alias nf='neofetch'
-alias top='htop'
+alias pw="apg -a 1 -m 16 -x 16 -n 10 -M NCLS"
+alias r="source ~/.bashrc"
+alias sysctl='systemctl'
+alias syslog='sudo cat /var/log/syslog | less'
+alias clog='sudo tail -f /var/log/syslog'
 alias tcreate='sudo timeshift --create --comments'
 alias tlist='sudo timeshift --list'
+alias top='htop'
 alias tremove='sudo timeshift --delete'
 alias trestore='sudo timeshift --restore'
+alias vi='micro'
+alias z='zoxide query'
 
-alias r="source ~/.bashrc"
-alias pw="apg -a 1 -m 16 -x 16 -n 10 -M NCLS"
-
+export FZF_DEFAULT_COMMAND="fdfind --hidden --follow --exclude '.git'"
+export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}' 
+--preview-window right:60%
+--bind 'ctrl-/:toggle-preview'
+--bind 'ctrl-e:execute(code {})'
+--bind 'ctrl-g:execute(gedit {})'
+--bind 'enter:become(micro {1} +{2})'
+"
 export EDITOR='micro'
 export VISUAL='micro'
 
+
+bind -x '"\C-f": fzf --layout=reverse'
+bind -x '"\C-r": ripfzf " "'
 
 /home/lwh/.local/bin/check_debian_eol_curl.sh
