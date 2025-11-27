@@ -1,25 +1,24 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="com.valvesoftware.Steam.desktop" score="0" last-seen="1764252175"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="0"/>
+    <application id="abricotine.desktop" score="0" last-seen="1764252948"/>
     <application id="org.gnome.FileRoller.desktop" score="27" last-seen="1764252399"/>
     <application id="org.gnome.TextEditor.desktop" score="18" last-seen="1764250329"/>
     <application id="google-chrome.desktop" score="28.75" last-seen="1763882324"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="8" last-seen="1764127287"/>
     <application id="org.gnome.SystemMonitor.desktop" score="17" last-seen="1764144371"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1764251911"/>
-    <application id="org.gnome.gedit.desktop" score="2" last-seen="1764250590"/>
-    <application id="org.gnome.Nautilus.desktop" score="540.80641180826115" last-seen="1764252412"/>
-    <application id="libreoffice-calc.desktop" score="0" last-seen="1764251907"/>
-    <application id="org.gnome.Terminal.desktop" score="1560.0523491787735" last-seen="1764252168"/>
+    <application id="firefox-esr.desktop" score="14310.604987738156" last-seen="1764252955"/>
+    <application id="org.gnome.gedit.desktop" score="5" last-seen="1764253090"/>
+    <application id="libreoffice-calc.desktop" score="3" last-seen="1764253049"/>
+    <application id="org.gnome.Nautilus.desktop" score="547.80641180826115" last-seen="1764253082"/>
+    <application id="org.gnome.Terminal.desktop" score="1572.0523491787735" last-seen="1764253082"/>
     <application id="org.gnome.baobab.desktop" score="6" last-seen="1764223371"/>
-    <application id="synaptic.desktop" score="3" last-seen="1764250415"/>
     <application id="org.gnome.DiskUtility.desktop" score="12" last-seen="1764187344"/>
+    <application id="synaptic.desktop" score="3" last-seen="1764250415"/>
     <application id="code.desktop" score="21" last-seen="1764251919"/>
     <application id="timeshift-gtk.desktop" score="19" last-seen="1764250800"/>
+    <application id="com.valvesoftware.Steam.desktop" score="0" last-seen="1764252175"/>
     <application id="org.gnome.Extensions.desktop" score="0" last-seen="1764250543"/>
     <application id="org.gnome.Settings.desktop" score="82.51171875" last-seen="1764252018"/>
-    <application id="firefox-esr.desktop" score="14309.604987738156" last-seen="1764252414"/>
   </context>
 </application-state>

@@ -5,7 +5,6 @@ bat #powerful cat
 build-essential #for debian essential 
 ca-certificates #certification
 ccze #color for log
-chrome-gnome-shell # gnome shell connector for firefox
 curl #Used
 dkms #for debian essential
 e2fsprogs #partition div tune2fs
