@@ -3,8 +3,8 @@
   <schema path="/org/gnome/shell/extensions/notifications-alert/" id="org.gnome.shell.extensions.notifications-alert">
     <key name="force" type="b">
       <default>false</default>
-      <summary>Force alerting even when notifications are set to OFF</summary>
-      <description>Alert even if you set notifications to OFF on user menu</description>
+      <summary>Alert even when 'Do Not Disturb' is enabled</summary>
+      <description>Alert even if you enable 'Do Not Disturb'</description>
     </key>
     <key name="chatonly" type="b">
       <default>false</default>
@@ -23,7 +23,7 @@
       <description>Use the alert fontcolor for alert blinks</description>
     </key>
     <key name="color" type="s">
-      <default>'#ff0000'</default>
+      <default>'#f7393d'</default>
       <summary>Alert font color</summary>
       <description>The color used to paint the message on user's menu</description>
     </key>

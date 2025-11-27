@@ -1,14 +1,15 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
-const ByteArray = imports.byteArray;
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
 
-const Config = imports.config;
-const Components = imports.service.components;
-const Core = imports.service.core;
-
+import Config from '../config.js';
+import * as Components from './components/index.js';
+import * as Core from './core.js';
+import plugins from './plugins/index.js';
 
 const ALLOWED_TIMESTAMP_TIME_DIFFERENCE_SECONDS = 1800; // 30 min
 
@@ -19,7 +20,7 @@ const ALLOWED_TIMESTAMP_TIME_DIFFERENCE_SECONDS = 1800; // 30 min
  * GActionGroup and GActionMap interfaces, like Gio.Application.
  *
  */
-var Device = GObject.registerClass({
+const Device = GObject.registerClass({
     GTypeName: 'GSConnectDevice',
     Properties: {
         'connected': GObject.ParamSpec.boolean(
@@ -108,6 +109,7 @@ var Device = GObject.registerClass({
             ),
             path: `/org/gnome/shell/extensions/gsconnect/device/${this.id}/`,
         });
+        this._migratePlugins();
 
         // Watch for changes to supported and disabled plugins
         this._disabledPluginsChangedId = this.settings.connect(
@@ -194,8 +196,8 @@ var Device = GObject.registerClass({
         }
 
         // FIXME: another ugly reach-around
-        const localCert = this.service.manager.backends.get('lan') && this.service.manager.backends.get('lan').certificate;
-        const remoteCert = this.channel && this.channel.peer_certificate;
+        const localCert = this.service.manager.backends.get('lan')?.certificate;
+        const remoteCert = this.channel?.peer_certificate;
         if (!localCert || !remoteCert)
             return '';
 
@@ -206,7 +208,7 @@ var Device = GObject.registerClass({
         checksum.update(a.toArray());
         checksum.update(b.toArray());
 
-        if (this.channel && this.channel.identity.body.protocolVersion >= 8)
+        if (this.channel?.identity.body.protocolVersion >= 8)
             checksum.update(String(this._pairingTimestamp));
 
         const verificationKey = checksum.get_string()
@@ -260,6 +262,15 @@ var Device = GObject.registerClass({
         return this.settings.get_string('type');
     }
 
+    _migratePlugins() {
+        const deprecated = ['photo'];
+        const supported = this.settings
+            .get_strv('supported-plugins')
+            .filter(name => !deprecated.includes(name));
+
+        this.settings.set_strv('supported-plugins', supported);
+    }
+
     _handleIdentity(packet) {
         this.freeze_notify();
 
@@ -295,12 +306,8 @@ var Device = GObject.registerClass({
         // Determine supported plugins by matching incoming to outgoing types
         const supported = [];
 
-        for (const name in imports.service.plugins) {
-            // Exclude mousepad/presenter plugins in unsupported sessions
-            if (!HAVE_REMOTEINPUT && ['mousepad', 'presenter'].includes(name))
-                continue;
-
-            const meta = imports.service.plugins[name].Metadata;
+        for (const name in plugins) {
+            const meta = plugins[name].Metadata;
 
             if (meta === undefined)
                 continue;
@@ -507,6 +514,13 @@ var Device = GObject.registerClass({
         openPath.connect('activate', this.openPath);
         this.add_action(openPath);
 
+        const showPathInFolder = new Gio.SimpleAction({
+            name: 'showPathInFolder',
+            parameter_type: new GLib.VariantType('s'),
+        });
+        showPathInFolder.connect('activate', this.showPathInFolder);
+        this.add_action(showPathInFolder);
+
         // Preference helpers
         const clearCache = new Gio.SimpleAction({
             name: 'clearCache',
@@ -530,7 +544,7 @@ var Device = GObject.registerClass({
 
                 if (val.unpack() === actionName)
                     return i;
-            } catch (e) {
+            } catch {
                 continue;
             }
         }
@@ -744,13 +758,11 @@ var Device = GObject.registerClass({
      * Reject the transfer payload described by @packet.
      *
      * @param {Core.Packet} packet - A packet
-     * @returns {Promise} A promise for the operation
+     * @returns {void}
      */
     rejectTransfer(packet) {
-        if (!packet || !packet.hasPayload())
-            return;
-
-        return this.channel.rejectTransfer(packet);
+        if (packet?.hasPayload())
+            return this.channel.rejectTransfer(packet);
     }
 
     openPath(action, parameter) {
@@ -759,6 +771,32 @@ var Device = GObject.registerClass({
         // Normalize paths to URIs, assuming local file
         const uri = path.includes('://') ? path : `file://${path}`;
         Gio.AppInfo.launch_default_for_uri_async(uri, null, null, null);
+    }
+
+    showPathInFolder(action, parameter) {
+        const path = parameter.unpack();
+        const uri = path.includes('://') ? path : `file://${path}`;
+
+        const connection = Gio.DBus.session;
+        connection.call(
+            'org.freedesktop.FileManager1',
+            '/org/freedesktop/FileManager1',
+            'org.freedesktop.FileManager1',
+            'ShowItems',
+            new GLib.Variant('(ass)', [[uri], 's']),
+            null,
+            Gio.DBusCallFlags.NONE,
+            -1,
+            null,
+            (connection, res) => {
+                try {
+                    connection.call_finish(res);
+                } catch (e) {
+                    Gio.DBusError.strip_remote_error(e);
+                    logError(e);
+                }
+            }
+        );
     }
 
     _clearCache(action, parameter) {
@@ -799,7 +837,7 @@ var Device = GObject.registerClass({
 
             // The device is requesting pairing
             } else {
-                this._notifyPairRequest(packet.body && packet.body.timestamp);
+                this._notifyPairRequest(packet.body?.timestamp);
             }
         // Device is requesting unpairing/rejecting our request
         } else {
@@ -911,14 +949,14 @@ var Device = GObject.registerClass({
             // If we're accepting an incoming pair request, set the internal
             // paired state and send the confirmation before loading plugins.
             if (this._incomingPairRequest) {
-                if (this.identity && this.identity.body.protocolVersion >= 8) {
+                if (this.identity?.body.protocolVersion >= 8) {
                     const currentTimestamp = Math.floor(Date.now() / 1000);
                     const diffTimestamp = Number.abs(this._pairingTimestamp - currentTimestamp);
                     if (diffTimestamp > ALLOWED_TIMESTAMP_TIME_DIFFERENCE_SECONDS) {
                         this._setPaired(false);
                         this.showNotification({
                             id: 'pair-request',
-                            // TRANSLATORS: eg. Pair Request from Google Pixel
+                            // TRANSLATORS: eg. Failed to pair with Google Pixel
                             title: _('Failed to pair with %s').format(this.name),
                             body: _('Device clocks are out of sync'),
                             icon: new Gio.ThemedIcon({name: 'dialog-warning-symbolic'}),
@@ -1009,8 +1047,8 @@ var Device = GObject.registerClass({
         try {
             if (this.paired && !this._plugins.has(name)) {
                 // Instantiate the handler
-                handler = imports.service.plugins[name];
-                plugin = new handler.Plugin(this);
+                handler = plugins[name];
+                plugin = new handler.default(this);
 
                 // Register packet handlers
                 for (const packetType of handler.Metadata.incomingCapabilities)
@@ -1051,7 +1089,7 @@ var Device = GObject.registerClass({
         try {
             if (this._plugins.has(name)) {
                 // Unregister packet handlers
-                handler = imports.service.plugins[name];
+                handler = plugins[name];
 
                 for (const type of handler.Metadata.incomingCapabilities)
                     this._handlers.delete(type);
@@ -1101,3 +1139,5 @@ var Device = GObject.registerClass({
         GObject.signal_handlers_destroy(this);
     }
 });
+
+export default Device;

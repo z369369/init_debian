@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=startup
+Name[en_US]=custom_execute
+Name[ko]=startup
+NoDisplay=false
+Hidden=false
+Exec=timeout 20 /home/lwh/Desktop/autostart/startup.sh
+X-GNOME-Autostart-enabled=true
+Icon=
+Comment=
+Comment[ko]=
+Terminal=false
+X-GNOME-Autostart-Delay=60

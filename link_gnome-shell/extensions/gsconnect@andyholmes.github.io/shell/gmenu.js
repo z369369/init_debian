@@ -1,16 +1,18 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Atk = imports.gi.Atk;
-const Clutter = imports.gi.Clutter;
-const Gio = imports.gi.Gio;
-const GObject = imports.gi.GObject;
-const St = imports.gi.St;
+import Atk from 'gi://Atk';
+import Clutter from 'gi://Clutter';
+import Gio from 'gi://Gio';
+import GObject from 'gi://GObject';
+import St from 'gi://St';
 
-const PopupMenu = imports.ui.popupMenu;
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
-const Extension = imports.misc.extensionUtils.getCurrentExtension();
+import {HAS_ST_ORIENTATION, getIcon} from './utils.js';
 
-const Tooltip = Extension.imports.shell.tooltip;
+import Tooltip from './tooltip.js';
 
 
 /**
@@ -38,7 +40,7 @@ function getItemInfo(model, index) {
                 value = Gio.Icon.deserialize(value);
 
                 if (value instanceof Gio.ThemedIcon)
-                    value = Extension.getIcon(value.names[0]);
+                    value = getIcon(value.names[0]);
 
                 info[name] = value;
                 break;
@@ -69,7 +71,7 @@ function getItemInfo(model, index) {
 /**
  *
  */
-var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
+export class ListBox extends PopupMenu.PopupMenuSection {
 
     constructor(params) {
         super();
@@ -90,12 +92,19 @@ var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
         this.actor.add_child(this.box);
 
         // Submenu Container
-        this.sub = new St.BoxLayout({
-            clip_to_allocation: true,
-            vertical: false,
-            visible: false,
-            x_expand: true,
-        });
+        this.sub = HAS_ST_ORIENTATION
+            ? new St.BoxLayout({
+                clip_to_allocation: true,
+                orientation: Clutter.Orientation.HORIZONTAL,  // GNOME 48
+                visible: false,
+                x_expand: true,
+            })
+            : new St.BoxLayout({
+                clip_to_allocation: true,
+                vertical: false,  // GNOME 46/47
+                visible: false,
+                x_expand: true,
+            });
         this.sub.set_pivot_point(1, 1);
         this.sub._delegate = this;
         this.actor.add_child(this.sub);
@@ -279,7 +288,7 @@ var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
             const prev = new PopupMenu.PopupMenuItem(this.submenu_for.label.text);
             prev.label.style = 'font-weight: bold;';
             const prevArrow = PopupMenu.arrowIcon(St.Side.LEFT);
-            prev.replace_child(prev._ornamentLabel, prevArrow);
+            prev.replace_child(prev._ornamentIcon, prevArrow);
             this.addMenuItem(prev, 0);
 
             prev.connectObject('activate', (item, event) => {
@@ -366,13 +375,13 @@ var ListBox = class ListBox extends PopupMenu.PopupMenuSection {
 
         super.destroy();
     }
-};
+}
 
 
 /**
  * A St.Button subclass for iconic GMenu items
  */
-var IconButton = GObject.registerClass({
+export const IconButton = GObject.registerClass({
     GTypeName: 'GSConnectShellIconButton',
 }, class Button extends St.Button {
 
@@ -391,7 +400,7 @@ var IconButton = GObject.registerClass({
             this.action_target = params.info.target;
 
         if (params.info.hasOwnProperty('label')) {
-            this.tooltip = new Tooltip.Tooltip({
+            this.tooltip = new Tooltip({
                 parent: this,
                 markup: params.info.label,
             });
@@ -455,31 +464,45 @@ var IconButton = GObject.registerClass({
 });
 
 
-var IconBox = class IconBox extends PopupMenu.PopupMenuSection {
+export class IconBox extends PopupMenu.PopupMenuSection {
 
     constructor(params) {
         super();
         Object.assign(this, params);
 
         // Main Actor
-        this.actor = new St.BoxLayout({
-            vertical: true,
-            x_expand: true,
-        });
+        this.actor = HAS_ST_ORIENTATION
+            ? new St.BoxLayout({
+                orientation: Clutter.Orientation.VERTICAL,  // GNOME 48
+                x_expand: true,
+            })
+            : new St.BoxLayout({
+                vertical: true,  // GNOME 46/47
+                x_expand: true,
+            });
         this.actor._delegate = this;
 
         // Button Box
         this.box._delegate = this;
         this.box.style_class = 'gsconnect-icon-box';
-        this.box.vertical = false;
+        if (HAS_ST_ORIENTATION)
+            this.box.orientation = Clutter.Orientation.HORIZONTAL;  // GNOME 48
+        else
+            this.box.vertical = false;  // GNOME 46/47
         this.actor.add_child(this.box);
 
         // Submenu Container
-        this.sub = new St.BoxLayout({
-            clip_to_allocation: true,
-            vertical: true,
-            x_expand: true,
-        });
+        this.sub = HAS_ST_ORIENTATION
+            ? new St.BoxLayout({
+                clip_to_allocation: true,
+                orientation: Clutter.Orientation.VERTICAL,  // GNOME 48
+                x_expand: true,
+            })
+            : new St.BoxLayout({
+                clip_to_allocation: true,
+                vertical: true,  // GNOME 46/47
+                x_expand: true,
+            });
         this.sub.connect('transitions-completed', this._onTransitionsCompleted);
         this.sub._delegate = this;
         this.actor.add_child(this.sub);
@@ -641,5 +664,4 @@ var IconBox = class IconBox extends PopupMenu.PopupMenuSection {
         super._setParent(parent);
         this._onItemsChanged(this.model, 0, 0, this.model.get_n_items());
     }
-};
-
+}

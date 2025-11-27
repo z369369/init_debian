@@ -1,12 +1,15 @@
-// -*- mode: js2; indent-tabs-mode: nil; js2-basic-offset: 4 -*-
-// Start apps on custom workspaces
-/* exported init buildPrefsWidget */
+// SPDX-FileCopyrightText: 2012 Giovanni Campagna <gcampagna@src.gnome.org>
+// SPDX-FileCopyrightText: 2014 Florian Müllner <fmuellner@gnome.org>
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const {Adw, Gio, GLib, GObject, Gtk} = imports.gi;
+import Adw from 'gi://Adw';
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+import Gtk from 'gi://Gtk';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-
-const _ = ExtensionUtils.gettext;
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js';
 
 const SETTINGS_KEY = 'application-list';
 
@@ -39,11 +42,11 @@ class NewItemModel extends GObject.Object {
 class Rule extends GObject.Object {
     static [GObject.properties] = {
         'app-info': GObject.ParamSpec.object(
-            'app-info', 'app-info', 'app-info',
+            'app-info', null, null,
             GObject.ParamFlags.READWRITE,
             Gio.DesktopAppInfo),
         'workspace': GObject.ParamSpec.uint(
-            'workspace', 'workspace', 'workspace',
+            'workspace', null, null,
             GObject.ParamFlags.READWRITE,
             1, WORKSPACE_MAX, 1),
     };
@@ -59,13 +62,14 @@ class RulesList extends GObject.Object {
         GObject.registerClass(this);
     }
 
-    #settings = ExtensionUtils.getSettings();
+    #settings;
     #rules = [];
     #changedId;
 
-    constructor() {
+    constructor(settings) {
         super();
 
+        this.#settings = settings;
         this.#changedId =
             this.#settings.connect(`changed::${SETTINGS_KEY}`,
                 () => this.#sync());
@@ -147,12 +151,13 @@ class AutoMoveSettingsWidget extends Adw.PreferencesGroup {
             (self, name, param) => self._rules.changeWorkspace(...param.deepUnpack()));
     }
 
-    constructor() {
+    constructor(settings) {
         super({
             title: _('Workspace Rules'),
         });
 
-        this._rules = new RulesList();
+        this._settings = settings;
+        this._rules = new RulesList(this._settings);
 
         const store = new Gio.ListStore({item_type: Gio.ListModel});
         const listModel = new Gtk.FlattenListModel({model: store});
@@ -173,7 +178,7 @@ class AutoMoveSettingsWidget extends Adw.PreferencesGroup {
     }
 
     _addNewRule() {
-        const dialog = new NewRuleDialog(this.get_root());
+        const dialog = new NewRuleDialog(this.get_root(), this._settings);
         dialog.connect('response', (dlg, id) => {
             const appInfo = id === Gtk.ResponseType.OK
                 ? dialog.get_widget().get_app_info() : null;
@@ -188,7 +193,7 @@ class AutoMoveSettingsWidget extends Adw.PreferencesGroup {
 class WorkspaceSelector extends Gtk.Widget {
     static [GObject.properties] = {
         'number': GObject.ParamSpec.uint(
-            'number', 'number', 'number',
+            'number', null, null,
             GObject.ParamFlags.READWRITE,
             1, WORKSPACE_MAX, 1),
     };
@@ -312,13 +317,13 @@ class NewRuleDialog extends Gtk.AppChooserDialog {
         GObject.registerClass(this);
     }
 
-    constructor(parent) {
+    constructor(parent, settings) {
         super({
             transient_for: parent,
             modal: true,
         });
 
-        this._settings = ExtensionUtils.getSettings();
+        this._settings = settings;
 
         this.get_widget().set({
             show_all: true,
@@ -338,14 +343,8 @@ class NewRuleDialog extends Gtk.AppChooserDialog {
     }
 }
 
-/** */
-function init() {
-    ExtensionUtils.initTranslations();
-}
-
-/**
- * @returns {Gtk.Widget} - the prefs widget
- */
-function buildPrefsWidget() {
-    return new AutoMoveSettingsWidget();
+export default class AutoMovePrefs extends ExtensionPreferences {
+    getPreferencesWidget() {
+        return new AutoMoveSettingsWidget(this.getSettings());
+    }
 }

@@ -1,7 +1,7 @@
 #!@GJS@ -m
 
-const Gtk = imports.gi.Gtk;
-const Gdk = imports.gi.Gdk;
+import Gtk from "gi://Gtk";
+import Gdk from "gi://Gdk";
 //const { Gtk, Gdk } = imports.gi;
 
 Gtk.init();

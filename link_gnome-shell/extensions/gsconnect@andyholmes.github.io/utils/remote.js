@@ -1,13 +1,14 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
 
 const SERVICE_NAME = 'org.gnome.Shell.Extensions.GSConnect';
 const SERVICE_PATH = '/org/gnome/Shell/Extensions/GSConnect';
 const DEVICE_NAME = 'org.gnome.Shell.Extensions.GSConnect.Device';
-const DEVICE_PATH = '/org/gnome/Shell/Extensions/GSConnect/Device';
 
 
 const _PROPERTIES = {
@@ -22,9 +23,11 @@ const _PROPERTIES = {
 
 
 /**
+ * Initialize a Gio.DBusProxy in an awaitable manner
  *
- * @param proxy
- * @param cancellable
+ * @param {Gio.DBusProxy} proxy - The proxy object to initialize
+ * @param {Gio.Cancellable} [cancellable] - An optional cancellable object
+ * @returns {Promise} An awaitable Promise
  */
 function _proxyInit(proxy, cancellable = null) {
     if (proxy.__initialized !== undefined)
@@ -52,7 +55,7 @@ function _proxyInit(proxy, cancellable = null) {
 /**
  * A simple proxy wrapper for devices exported over DBus.
  */
-var Device = GObject.registerClass({
+export const Device = GObject.registerClass({
     GTypeName: 'GSConnectRemoteDevice',
     Implements: [Gio.DBusInterface],
     Properties: {
@@ -131,7 +134,7 @@ var Device = GObject.registerClass({
     _get(name, fallback = null) {
         try {
             return this.get_cached_property(name).unpack();
-        } catch (e) {
+        } catch {
             return fallback;
         }
     }
@@ -223,7 +226,7 @@ var Device = GObject.registerClass({
 /**
  * A simple proxy wrapper for the GSConnect service.
  */
-var Service = GObject.registerClass({
+export const Service = GObject.registerClass({
     GTypeName: 'GSConnectRemoteService',
     Implements: [Gio.DBusInterface],
     Properties: {

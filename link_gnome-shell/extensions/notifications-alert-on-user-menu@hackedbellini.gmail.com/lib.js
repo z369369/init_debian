@@ -20,28 +20,10 @@
  *
  */
 
-const Gettext = imports.gettext;
-const Gdk = imports.gi.Gdk;
-const Gio = imports.gi.Gio;
+import Gio from 'gi://Gio';
 
-const Config = imports.misc.config;
 
-/*
-   Color utils
- */
-
-function getRGBAColor(rgba) {
-  let color = new Gdk.RGBA();
-
-  if (!color.parse(rgba)) {
-    // On any error, default to red
-    color = new Gdk.RGBA({red: 1.0, alpha: 1.0});
-  }
-
-  return color;
-}
-
-function getAppNamesFromAppInfos(list) {
+export function getAppNamesFromAppInfos(list) {
   let appNames = [ ];
   for (let i = 0; i < list.length; i++) {
     let id = list[i];

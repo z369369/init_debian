@@ -1,4 +1,5 @@
 adb		 #android adb
+apg		#password
 baobab #disk analyze
 bat #powerful cat
 build-essential #for debian essential 
@@ -9,6 +10,7 @@ curl #Used
 deborphan #Used
 dkms #for debian essential
 e2fsprogs #partition div tune2fs
+eza #alternaitve ls
 fastboot #android unlock
 fd-find # with fzf find
 fdupes #duplicate file remove
@@ -37,16 +39,15 @@ imwheel #Mouse wheel scroll
 incron #Filesystem crontab
 jq #json
 libavcodec-extra #for debian alternative restrict extra
-libfuse2 #for Use appimage
 libnotify-bin #debian gnome notify
 libopengl0 # run appimage
 libqt5svg5 #JPG to SVG
 libvirt-daemon-system #virt qemu
+libfuse2t64 #appimage excuter
 lpr #printer driver
 make #Build
 meld #Winmerge
 mpv #video player
-nautilus-admin
 nautilus-image-converter
 ncal #cli-calendar
 ncdu #du
@@ -58,7 +59,6 @@ openssh-server #ssh
 pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
-python3.11-venv #python3 virtual env
 qemu-system-x86 #virt qemu
 qemu-utils #virt qemu
 radeontop #radeon gpu top
@@ -66,6 +66,7 @@ rename # rename with perl
 ripgrep # with fzf find grep
 rsync #Used
 rsyslog #log
+socat #mpv ipc shell script
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
@@ -74,8 +75,6 @@ transmission #transmisson finish script
 transmission-cli #transmisson finish script
 transmission-gtk #transmisson finish script
 ufw #Firewall
-vim #vi
-virt-manager #virt qemu
 wget #Download
 wl-clipboard #xwayland clipboard copy paste
 wmctrl #move Workspace
@@ -94,13 +93,12 @@ com.boxy_svg.BoxySVG
 com.brave.Browser
 com.discordapp.Discord
 com.getpostman.Postman
-com.icons8.Lunacy
 com.github.jeromerobert.pdfarranger
-com.github.maoschanz.drawing
 com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
 com.google.AndroidStudio
 com.heroicgameslauncher.hgl
+com.icons8.Lunacy
 com.obsproject.Studio
 com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
@@ -112,6 +110,7 @@ fr.natron.Natron
 fr.romainvigier.MetadataCleaner
 io.dbeaver.DBeaverCommunity
 io.github.aandrew_me.ytdn
+io.github.fabrialberio.pinapp
 io.github.flattool.Ignition
 io.github.giantpinkrobots.flatsweep
 io.github.peazip.PeaZip
@@ -133,6 +132,7 @@ org.gnome.seahorse.Application
 org.inkscape.Inkscape
 org.kde.isoimagewriter
 org.kde.kdenlive
+org.kde.kolourpaint
 org.kde.krita
 org.kde.okular
 org.libreoffice.LibreOffice
@@ -142,6 +142,6 @@ org.pulseaudio.pavucontrol
 org.remmina.Remmina
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
-org.yuzu_emu.yuzu
 page.codeberg.Imaginer.Imaginer
 page.codeberg.libre_menu_editor.LibreMenuEditor
+page.codeberg.vendillah.GamepadMirror

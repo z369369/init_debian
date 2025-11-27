@@ -1,27 +1,34 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
 
-const Device = imports.service.device;
+import Device from './device.js';
+import plugins from './plugins/index.js';
+
 
 /**
  * Get the local device type.
  *
  * @returns {string} A device type string
  */
-function _getDeviceType() {
+export function _getDeviceType() {
     try {
         let type = GLib.file_get_contents('/sys/class/dmi/id/chassis_type')[1];
 
-        type = Number(imports.byteArray.toString(type));
+        type = Number(new TextDecoder().decode(type));
 
-        if ([8, 9, 10, 14].includes(type))
+        if ([30, 32].includes(type))
+            return 'tablet';
+
+        if ([8, 9, 10, 14, 31].includes(type))
             return 'laptop';
 
         return 'desktop';
-    } catch (e) {
+    } catch {
         return 'desktop';
     }
 }
@@ -31,7 +38,7 @@ function _getDeviceType() {
  * The packet class is a simple Object-derived class, offering some conveniences
  * for working with KDE Connect packets.
  */
-var Packet = class Packet {
+export class Packet {
 
     constructor(data = null) {
         this.id = 0;
@@ -63,8 +70,8 @@ var Packet = class Packet {
     /**
      * Deserialize and return a new Packet from an Object or string.
      *
-     * @param {object | string} data - A string or dictionary to deserialize
-     * @returns {Core.Packet} A new packet object
+     * @param {object|string} data - A string or dictionary to deserialize
+     * @returns {Packet} A new packet object
      */
     static deserialize(data) {
         return new Packet(data);
@@ -84,7 +91,7 @@ var Packet = class Packet {
     /**
      * Update the packet from a dictionary or string of JSON
      *
-     * @param {object | string} data - Source data
+     * @param {object|string} data - Source data
      */
     update(data) {
         try {
@@ -111,7 +118,7 @@ var Packet = class Packet {
 
         return (Object.keys(this.payloadTransferInfo).length > 0);
     }
-};
+}
 
 
 /**
@@ -119,7 +126,7 @@ var Packet = class Packet {
  * devices. The implementation is responsible for all negotiation of the
  * underlying protocol.
  */
-var Channel = GObject.registerClass({
+export const Channel = GObject.registerClass({
     GTypeName: 'GSConnectChannel',
     Properties: {
         'closed': GObject.ParamSpec.boolean(
@@ -213,9 +220,9 @@ var Channel = GObject.registerClass({
      * Read a packet.
      *
      * @param {Gio.Cancellable} [cancellable] - A cancellable
-     * @returns {Promise<Core.Packet>} The packet
+     * @returns {Promise<Packet>} The packet
      */
-    readPacket(cancellable = null) {
+    async readPacket(cancellable = null) {
         if (cancellable === null)
             cancellable = this.cancellable;
 
@@ -225,34 +232,23 @@ var Channel = GObject.registerClass({
             });
         }
 
-        return new Promise((resolve, reject) => {
-            this.input_stream.read_line_async(
-                GLib.PRIORITY_DEFAULT,
-                cancellable,
-                (stream, res) => {
-                    try {
-                        const data = stream.read_line_finish_utf8(res)[0];
+        const [data] = await this.input_stream.read_line_async(
+            GLib.PRIORITY_DEFAULT, cancellable);
 
-                        if (data === null) {
-                            throw new Gio.IOErrorEnum({
-                                message: 'End of stream',
-                                code: Gio.IOErrorEnum.CONNECTION_CLOSED,
-                            });
-                        }
+        if (data === null) {
+            throw new Gio.IOErrorEnum({
+                message: 'End of stream',
+                code: Gio.IOErrorEnum.CONNECTION_CLOSED,
+            });
+        }
 
-                        resolve(new Packet(data));
-                    } catch (e) {
-                        reject(e);
-                    }
-                }
-            );
-        });
+        return new Packet(data);
     }
 
     /**
      * Send a packet.
      *
-     * @param {Core.Packet} packet - The packet to send
+     * @param {Packet} packet - The packet to send
      * @param {Gio.Cancellable} [cancellable] - A cancellable
      * @returns {Promise<boolean>} %true if successful
      */
@@ -260,26 +256,14 @@ var Channel = GObject.registerClass({
         if (cancellable === null)
             cancellable = this.cancellable;
 
-        return new Promise((resolve, reject) => {
-            this.output_stream.write_all_async(
-                packet.serialize(),
-                GLib.PRIORITY_DEFAULT,
-                cancellable,
-                (stream, res) => {
-                    try {
-                        resolve(stream.write_all_finish(res));
-                    } catch (e) {
-                        reject(e);
-                    }
-                }
-            );
-        });
+        return this.output_stream.write_all_async(packet.serialize(),
+            GLib.PRIORITY_DEFAULT, cancellable);
     }
 
     /**
      * Reject a transfer.
      *
-     * @param {Core.Packet} packet - A packet with payload info
+     * @param {Packet} packet - A packet with payload info
      */
     rejectTransfer(packet) {
         throw new GObject.NotImplementedError();
@@ -289,7 +273,7 @@ var Channel = GObject.registerClass({
      * Download a payload from a device. Typically implementations will override
      * this with an async function.
      *
-     * @param {Core.Packet} packet - A packet
+     * @param {Packet} packet - A packet
      * @param {Gio.OutputStream} target - The target stream
      * @param {Gio.Cancellable} [cancellable] - A cancellable for the upload
      */
@@ -302,7 +286,7 @@ var Channel = GObject.registerClass({
      * Upload a payload to a device. Typically implementations will override
      * this with an async function.
      *
-     * @param {Core.Packet} packet - The packet describing the transfer
+     * @param {Packet} packet - The packet describing the transfer
      * @param {Gio.InputStream} source - The source stream
      * @param {number} size - The payload size
      * @param {Gio.Cancellable} [cancellable] - A cancellable for the upload
@@ -317,7 +301,7 @@ var Channel = GObject.registerClass({
  * ChannelService implementations provide Channel objects, emitting the
  * ChannelService::channel signal when a new connection has been accepted.
  */
-var ChannelService = GObject.registerClass({
+export const ChannelService = GObject.registerClass({
     GTypeName: 'GSConnectChannelService',
     Properties: {
         'active': GObject.ParamSpec.boolean(
@@ -358,6 +342,13 @@ var ChannelService = GObject.registerClass({
         return this._active;
     }
 
+    get cancellable() {
+        if (this._cancellable === undefined)
+            this._cancellable = new Gio.Cancellable();
+
+        return this._cancellable;
+    }
+
     get name() {
         if (this._name === undefined)
             this._name = GLib.get_host_name().slice(0, 32);
@@ -375,7 +366,7 @@ var ChannelService = GObject.registerClass({
 
     get id() {
         if (this._id === undefined)
-            this._id = Device.Device.generateId();
+            this._id = Device.generateId();
 
         return this._id;
     }
@@ -422,12 +413,8 @@ var ChannelService = GObject.registerClass({
             },
         });
 
-        for (const name in imports.service.plugins) {
-            // Exclude mousepad/presenter capability in unsupported sessions
-            if (!HAVE_REMOTEINPUT && ['mousepad', 'presenter'].includes(name))
-                continue;
-
-            const meta = imports.service.plugins[name].Metadata;
+        for (const name in plugins) {
+            const meta = plugins[name].Metadata;
 
             if (meta === undefined)
                 continue;
@@ -443,7 +430,7 @@ var ChannelService = GObject.registerClass({
     /**
      * Emit Core.ChannelService::channel
      *
-     * @param {Core.Channel} channel - The new channel
+     * @param {Channel} channel - The new channel
      */
     channel(channel) {
         if (!this.emit('channel', channel))
@@ -477,7 +464,7 @@ var ChannelService = GObject.registerClass({
 /**
  * A class representing a file transfer.
  */
-var Transfer = GObject.registerClass({
+export const Transfer = GObject.registerClass({
     GTypeName: 'GSConnectTransfer',
     Properties: {
         'channel': GObject.ParamSpec.object(
@@ -566,57 +553,26 @@ var Transfer = GObject.registerClass({
                 return;
 
             if (item.file instanceof Gio.File) {
-                item.target = await new Promise((resolve, reject) => {
-                    item.file.replace_async(
-                        null,
-                        false,
-                        Gio.FileCreateFlags.REPLACE_DESTINATION,
-                        GLib.PRIORITY_DEFAULT,
-                        this._cancellable,
-                        (file, res) => {
-                            try {
-                                resolve(file.replace_finish(res));
-                            } catch (e) {
-                                reject(e);
-                            }
-                        }
-                    );
-                });
+                item.target = await item.file.replace_async(
+                    null,
+                    false,
+                    Gio.FileCreateFlags.REPLACE_DESTINATION,
+                    GLib.PRIORITY_DEFAULT,
+                    this._cancellable);
             }
         } else {
             if (item.source instanceof Gio.InputStream)
                 return;
 
             if (item.file instanceof Gio.File) {
-                const read = new Promise((resolve, reject) => {
-                    item.file.read_async(
-                        GLib.PRIORITY_DEFAULT,
-                        cancellable,
-                        (file, res) => {
-                            try {
-                                resolve(file.read_finish(res));
-                            } catch (e) {
-                                reject(e);
-                            }
-                        }
-                    );
-                });
+                const read = item.file.read_async(GLib.PRIORITY_DEFAULT,
+                    cancellable);
 
-                const query = new Promise((resolve, reject) => {
-                    item.file.query_info_async(
-                        Gio.FILE_ATTRIBUTE_STANDARD_SIZE,
-                        Gio.FileQueryInfoFlags.NONE,
-                        GLib.PRIORITY_DEFAULT,
-                        cancellable,
-                        (file, res) => {
-                            try {
-                                resolve(file.query_info_finish(res));
-                            } catch (e) {
-                                reject(e);
-                            }
-                        }
-                    );
-                });
+                const query = item.file.query_info_async(
+                    Gio.FILE_ATTRIBUTE_STANDARD_SIZE,
+                    Gio.FileQueryInfoFlags.NONE,
+                    GLib.PRIORITY_DEFAULT,
+                    cancellable);
 
                 const [stream, info] = await Promise.all([read, query]);
                 item.source = stream;
@@ -628,7 +584,7 @@ var Transfer = GObject.registerClass({
     /**
      * Add a file to the transfer.
      *
-     * @param {Core.Packet} packet - A packet
+     * @param {Packet} packet - A packet
      * @param {Gio.File} file - A file to transfer
      */
     addFile(packet, file) {
@@ -645,7 +601,7 @@ var Transfer = GObject.registerClass({
     /**
      * Add a filepath to the transfer.
      *
-     * @param {Core.Packet} packet - A packet
+     * @param {Packet} packet - A packet
      * @param {string} path - A filepath to transfer
      */
     addPath(packet, path) {
@@ -662,7 +618,7 @@ var Transfer = GObject.registerClass({
     /**
      * Add a stream to the transfer.
      *
-     * @param {Core.Packet} packet - A packet
+     * @param {Packet} packet - A packet
      * @param {Gio.InputStream|Gio.OutputStream} stream - A stream to transfer
      * @param {number} [size] - Payload size
      */

@@ -1,24 +1,28 @@
-const St = imports.gi.St;
-const Main = imports.ui.main;
-const MainLoop = imports.mainloop;
-const GObject = imports.gi.GObject;
-const Gio = imports.gi.Gio;
-const Clutter = imports.gi.Clutter;
-const PanelMenu = imports.ui.panelMenu;
-const PopupMenu = imports.ui.popupMenu;
+import St from 'gi://St';
+import GLib from 'gi://GLib';
+import Gio from 'gi://Gio';
+import Clutter from 'gi://Clutter';
+import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js'; // https://gitlab.gnome.org/GNOME/gnome-shell/-/tree/main/js/ui
+import * as MessageTray from 'resource:///org/gnome/shell/ui/messageTray.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
-const Me = imports.misc.extensionUtils.getCurrentExtension();
-const Misc = Me.imports.misc;
-const Timer = Me.imports.timer;
+import * as Misc from './src/misc.js';
+import * as Timer from './src/Timer.js';
+import * as Settings from './src/Settings.js';
+import * as Hotkey from './src/Hotkey.js';
+import { AudioPlayer } from './src/AudioPlayer.js';
 
-
-class Extension {
-   constructor() {};
-   
+export default class TimerExtension extends Extension {
    enable() {
       this.timer = new Timer.Timer();
-
+      
+      this.settings = new Settings.Settings(this.getSettings());
+      this.audioPlayer = new AudioPlayer();
+            
       this.panelButton = new PanelMenu.Button(0, "MainButton", false);      
+      this.panelButton.add_style_class_name('simple-timer-panel-button');
       
       // MAIN PANEL
       this.icon = new St.Icon({ icon_name: 'alarm-symbolic', style_class: 'system-status-icon' });
@@ -26,8 +30,8 @@ class Extension {
       this.timerLabel.hide();      
       
       this.panelButtonLayout = new St.BoxLayout();
-      this.panelButtonLayout.add(this.icon);
-      this.panelButtonLayout.add(this.timerLabel);           
+      this.panelButtonLayout.add_child(this.icon);
+      this.panelButtonLayout.add_child(this.timerLabel);
             
       
       // Timer Input Field            
@@ -37,7 +41,19 @@ class Extension {
          can_focus : true,
          hint_text: _("Enter countdown time..."),
          x_expand : true,
-         y_expand : true
+         y_expand : true,
+         text: this.settings.getLastTimerInput(),
+      });
+
+      // Focus Input field when panel is opened
+      this.panelButton.menu.connect('open-state-changed', (menu, isOpen) => {
+         if (isOpen) {
+            this.menuOpeningDelayID = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, () => {
+               this.menuTimerInputEntry.grab_key_focus();
+               this.menuOpeningDelayID = null;
+               return GLib.SOURCE_REMOVE;
+            });
+         }
       });
 
       this.menuTimerInputEntry.set_input_purpose(Clutter.TIME);
@@ -56,7 +72,7 @@ class Extension {
          let text = this.menuTimerInputEntry.get_text();                  
          let newText = "";
 
-         // This code comment filters the time input based on its format, either as a colon-separated format like "3:00:00" or a letter format like "2h 47m 12s".
+         // This filters the time input based on its format, either as a colon-separated format like "3:00:00" or a letter format like "2h 47m 12s".
          if (Misc.getTimeInputFormat(text) === Misc.TimeInputFormat.LETTERS) {
             newText = Misc.timeInputLetterHandler(text);
          } else {
@@ -73,38 +89,16 @@ class Extension {
          reactive : false,
          can_focus : false
       });
-      this.itemInput.add(this.menuTimerInputEntry);
+      this.itemInput.add_child(this.menuTimerInputEntry);
       this.panelButton.menu.addMenuItem(this.itemInput);
             
-      // Seperator
-      this.panelButton.menu.addMenuItem( new PopupMenu.PopupSeparatorMenuItem() );      
-
       // PANEL-MENU
       let boxMenuItem = new PopupMenu.PopupBaseMenuItem({ reactive: false, can_focus: false });
-      let boxLayout = new St.BoxLayout({ x_align: St.Align.START, x_expand: true });
+      let boxLayout = new St.BoxLayout({ x_align: Clutter.ActorAlign.CENTER, x_expand: true });      
       boxMenuItem.add_child(boxLayout);
 
-      // STOP Button
-      this.menuButtonStop = new PopupMenu.PopupImageMenuItem("", "media-playback-stop-symbolic");      
-      this.menuButtonStop.connect('activate', () => {
-         this.timer.reset();
-         this.updateTimerLabelStyle();
-         this.updateTimerLabel();
-         this.timerLabel.hide();
-         this.updateMenuButtonVisibilty();
-      });
-      boxLayout.add_child(this.menuButtonStop);      
-
-      // Pause Button
-      this.menuButtonPause = new PopupMenu.PopupImageMenuItem("", "media-playback-pause-symbolic");      
-      this.menuButtonPause.connect('activate', () => {
-         this.timer.pause();
-         this.updateMenuButtonVisibilty();
-      });      
-      boxLayout.add_child(this.menuButtonPause);
-
       // Resume Button
-      this.menuButtonResume = new PopupMenu.PopupImageMenuItem("", "media-playback-start-symbolic");
+      this.menuButtonResume = new PopupMenu.PopupImageMenuItem("", "media-playback-start-symbolic", {style_class: 'control-button'});
       this.menuButtonResume.connect('activate', () => {
          if (this.timer.isFinished() || this.timer.isStopped()) {
             this.timerStart();
@@ -117,10 +111,42 @@ class Extension {
       boxLayout.add_child(this.menuButtonResume);
       this.panelButton.menu.addMenuItem(boxMenuItem);
 
+      // Pause Button
+      this.menuButtonPause = new PopupMenu.PopupImageMenuItem("", "media-playback-pause-symbolic", {style_class: 'control-button'});
+      this.menuButtonPause.connect('activate', () => {
+         this.timer.pause();
+         this.updateMenuButtonVisibilty();
+      });      
+      boxLayout.add_child(this.menuButtonPause);
+
+      // STOP Button
+      this.menuButtonStop = new PopupMenu.PopupImageMenuItem("", "media-playback-stop-symbolic", {style_class: 'control-button'});
+      this.menuButtonStop.connect('activate', () => {
+         this.audioPlayer.stop();
+         this.timer.reset();
+         this.updateTimerLabelStyle();
+         this.updateTimerLabel();
+         this.timerLabel.hide();
+         this.icon.show();
+         this.updateMenuButtonVisibilty();
+      });
+      boxLayout.add_child(this.menuButtonStop);      
       
       this.panelButton.add_child(this.panelButtonLayout);      
+      
+      // Create a separator
+      this.panelButton.menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
+      
+      // Settings entry
+      const settingsMenuItem = new PopupMenu.PopupImageMenuItem('', 'preferences-system-symbolic', {style_class: 'control-button'});
+      settingsMenuItem.x_align = Clutter.ActorAlign.CENTER;
+      settingsMenuItem.connect('activate', () => {
+         this.openPreferences();
+      });
+      this.panelButton.menu.addMenuItem(settingsMenuItem);
 
-      Main.panel.addToStatusArea("Simple-Timer", this.panelButton, 0, "right");
+      // Adds the panel button to the status area, positioned on the right side of the panel.
+      Main.panel.addToStatusArea(this.uuid, this.panelButton, 0, "right");
 
       // Start
       this.updateMenuButtonVisibilty();
@@ -130,28 +156,46 @@ class Extension {
       if (this.timer.isRunning()) {
          this.timer.update();
          this.timerShow();
-      }      
+      }
+
+      this.hotkey = new Hotkey.Hotkey(this.settings, this.settings.getAlertStartHotkeyID(), this.timerStart.bind(this));
    }
 
    disable() {
+      if (this.hotkey) {
+         this.hotkey.free();
+         this.hotkey = null;
+      }
+
+      if (this.audioPlayer) {
+         this.audioPlayer.stop();
+         this.audioPlayer = null;
+      }
+
+      if (this.menuOpeningDelayID) {
+         GLib.Source.remove(this.menuOpeningDelayID);
+         this.menuOpeningDelayID = null;
+      }
+      
       // The Session-Mode "unlock-dialog" is needed because the timer should also be working on the lock screen.
       this.freeMainLoop();
       this.panelButton.destroy();
       this.panelButton = null;
       this.timer = null;
+      this.settings = null;
    }
    
    // Shows Start/Input Timer or Stop Button in the Menu, depending on the current timer state [running/stopped].
    updateMenuButtonVisibilty() {      
       //showStartEntry ? this.menuTimerInputEntry.show() : this.menuTimerInputEntry.hide();
-      this.handleButtonStyle(this.menuButtonStop, this.timer.isStopped());
-      this.handleButtonStyle(this.menuButtonPause, this.timer.isPaused());
-      this.handleButtonStyle(this.menuButtonResume, this.timer.isRunning());
+      this.handleButtonStyle(this.menuButtonStop, !this.timer.isStopped());
+      this.handleButtonStyle(this.menuButtonPause, this.timer.isRunning());
+      this.handleButtonStyle(this.menuButtonResume, !this.timer.isRunning());
    }   
 
    initMainLoop() {
       // Update Timer
-      this.timeout = MainLoop.timeout_add(1000, () => {
+      this.timeout = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 1000, () => {
          this.timer.update();
          this.updateTimerLabel();
          
@@ -163,12 +207,12 @@ class Extension {
 
          this.updateTimerLabelStyle();
          
-         return true;
+         return GLib.SOURCE_CONTINUE;
       });
    }
 
    freeMainLoop() {
-      MainLoop.source_remove(this.timeout);
+      GLib.Source.remove(this.timeout);
       this.timeout = null;
    }
 
@@ -177,6 +221,7 @@ class Extension {
       let timeSeconds = Misc.parseTimeInput( this.menuTimerInputEntry.get_text() );
       
       if (timeSeconds > 0) {
+         this.settings.setLastTimerInput(this.menuTimerInputEntry.get_text());
          this.timer.start(timeSeconds);
          this.timerShow();
       }      
@@ -188,6 +233,7 @@ class Extension {
          this.updateTimerLabel();
          this.updateTimerLabelStyle(false);
          this.timerLabel.show();
+         this.icon.hide();
          this.menuButtonStop.show();
          this.updateMenuButtonVisibilty();
       }      
@@ -219,29 +265,33 @@ class Extension {
    
    // Swichtes style classes depending on button active status.
    handleButtonStyle(button, active) {
+      button.sensitive = active;
+
       if (active) {
          button.remove_style_class_name('img-button-inactive');
-         button.add_style_class_name('img-button-active');
       } else {
-         button.remove_style_class_name('img-button-active');
          button.add_style_class_name('img-button-inactive');
-      }      
+      }
    }
    
    // Alert by sending a notification and a sound effect.
    createTimerFinishedAlert() {
-      // Play Audio
-      let player = global.display.get_sound_player();
-      let soundFile = Gio.File.new_for_path(Me.dir.get_path() + "/sfx/Polite.wav");
-      player.play_from_file(soundFile, 'Alert', null);
+      const defaultAudioFile = GLib.build_filenamev([this.path, '/sfx/Polite.wav']);
+      const customAudioFile = this.settings.getCustomAlertSfxFile();
+      const audioFile = Misc.fileExists(customAudioFile) ? customAudioFile : defaultAudioFile;
+
+      this.audioPlayer.play(audioFile);
       
       // Send Notification
-      Main.notify('Timer finished!');
+      const systemSource = MessageTray.getSystemSource();
+      const notification = new MessageTray.Notification({
+         source: systemSource,
+         title: 'Timer',
+         body: 'The timer has finished!',
+         gicon: new Gio.ThemedIcon({name: 'alarm-symbolic'}),
+         // Same as `gicon`, but takes a themed icon name
+         iconName: 'alarm-symbolic'
+      });
+      systemSource.addNotification(notification);     
    }      
-}
-
-
-// Initializes the Extension
-function init() {
-   return new Extension();
 }

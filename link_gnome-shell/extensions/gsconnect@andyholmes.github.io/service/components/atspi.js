@@ -1,9 +1,9 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-imports.gi.versions.Atspi = '2.0';
-
-const Atspi = imports.gi.Atspi;
-const Gdk = imports.gi.Gdk;
+import Atspi from 'gi://Atspi?version=2.0';
+import Gdk from 'gi://Gdk';
 
 
 /**
@@ -26,7 +26,7 @@ const XKeycode = {
 /**
  * A thin wrapper around Atspi for X11 sessions without Pipewire support.
  */
-var Controller = class {
+export default class Controller {
     constructor() {
         // Atspi.init() return 2 on fail, but still marks itself as inited. We
         // uninit before throwing an error otherwise any future call to init()
@@ -62,7 +62,7 @@ var Controller = class {
 
             modifier = keymap.get_entries_for_keyval(Gdk.KEY_Super_L)[1][0];
             XKeycode.Super_L = modifier.keycode;
-        } catch (e) {
+        } catch {
             debug('using default modifier keycodes');
         }
     }
@@ -304,8 +304,8 @@ var Controller = class {
     destroy() {
         try {
             Atspi.exit();
-        } catch (e) {
+        } catch {
             // Silence errors
         }
     }
-};
+}

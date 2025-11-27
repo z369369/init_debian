@@ -4,13 +4,13 @@
   "name": "Panel Date Format",
   "settings-schema": "org.gnome.shell.extensions.panel-date-format",
   "shell-version": [
-    "40",
-    "41",
-    "42",
-    "43",
-    "44"
+    "45",
+    "46",
+    "47",
+    "48",
+    "49"
   ],
   "url": "https://github.com/KEIII/gnome-shell-panel-date-format",
   "uuid": "panel-date-format@keiii.github.com",
-  "version": 11
+  "version": 22
 }

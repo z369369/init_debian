@@ -1,15 +1,18 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const GdkPixbuf = imports.gi.GdkPixbuf;
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
+import GdkPixbuf from 'gi://GdkPixbuf';
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
 
-const Components = imports.service.components;
-const PluginBase = imports.service.plugin;
+import * as Components from '../components/index.js';
+import * as Core from '../core.js';
+import Plugin from '../plugin.js';
 
 
-var Metadata = {
+export const Metadata = {
     label: _('Telephony'),
     description: _('Be notified about calls and adjust system volume during ringing/ongoing calls'),
     id: 'org.gnome.Shell.Extensions.GSConnect.Plugin.Telephony',
@@ -39,9 +42,9 @@ var Metadata = {
  * https://github.com/KDE/kdeconnect-kde/tree/master/plugins/telephony
  * https://github.com/KDE/kdeconnect-android/tree/master/src/org/kde/kdeconnect/Plugins/TelephonyPlugin
  */
-var Plugin = GObject.registerClass({
+const TelephonyPlugin = GObject.registerClass({
     GTypeName: 'GSConnectTelephonyPlugin',
-}, class Plugin extends PluginBase.Plugin {
+}, class TelephonyPlugin extends Plugin {
 
     _init(device) {
         super._init(device, 'telephony');
@@ -112,7 +115,7 @@ var Plugin = GObject.registerClass({
      * Load a Gdk.Pixbuf from base64 encoded data
      *
      * @param {string} data - Base64 encoded JPEG data
-     * @returns {Gdk.Pixbuf|null} A contact photo
+     * @returns {GdkPixbuf.Pixbuf|null} A contact photo
      */
     _getThumbnailPixbuf(data) {
         const loader = new GdkPixbuf.PixbufLoader();
@@ -239,3 +242,5 @@ var Plugin = GObject.registerClass({
         super.destroy();
     }
 });
+
+export default TelephonyPlugin;

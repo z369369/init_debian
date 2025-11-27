@@ -1,16 +1,18 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const GdkPixbuf = imports.gi.GdkPixbuf;
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
-const Gtk = imports.gi.Gtk;
+import GdkPixbuf from 'gi://GdkPixbuf';
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+import Gtk from 'gi://Gtk';
 
-const PluginBase = imports.service.plugin;
-const URI = imports.service.utils.uri;
+import Plugin from '../plugin.js';
+import * as URI from '../utils/uri.js';
 
 
-var Metadata = {
+export const Metadata = {
     label: _('Share'),
     id: 'org.gnome.Shell.Extensions.GSConnect.Plugin.Share',
     description: _('Share files and URLs between devices'),
@@ -60,26 +62,44 @@ var Metadata = {
  * TODO: receiving 'text' TODO: Window with textview & 'Copy to Clipboard..
  *       https://github.com/KDE/kdeconnect-kde/commit/28f11bd5c9a717fb9fbb3f02ddd6cea62021d055
  */
-var Plugin = GObject.registerClass({
+const SharePlugin = GObject.registerClass({
     GTypeName: 'GSConnectSharePlugin',
-}, class Plugin extends PluginBase.Plugin {
+}, class SharePlugin extends Plugin {
 
     _init(device) {
         super._init(device, 'share');
     }
 
     handlePacket(packet) {
+        const {filename, text, url} = packet.body;
+
         // TODO: composite jobs (lastModified, numberOfFiles, totalPayloadSize)
-        if (packet.body.hasOwnProperty('filename')) {
+        if (filename !== undefined) {
+            debug(`Remote wants to share file "${filename}".`);
             if (this.settings.get_boolean('receive-files'))
                 this._handleFile(packet);
             else
                 this._refuseFile(packet);
-        } else if (packet.body.hasOwnProperty('text')) {
-            this._handleText(packet);
-        } else if (packet.body.hasOwnProperty('url')) {
-            this._handleUri(packet);
+            return;
         }
+        if (text === undefined && url === undefined)
+            throw new Error('Share request has invalid payload, ignoring.');
+
+        if (this.settings.get_boolean('launch-urls')) {
+            let shared_url = url;
+            if (url === undefined) {
+                const urls = URI.findUrls(text);
+                if (urls.length === 1)
+                    shared_url = urls[0].url;
+            }
+            if (shared_url !== undefined) {
+                debug(`Launching shared URL "${shared_url}".`);
+                return this._handleUri(shared_url);
+            }
+        }
+        const message = text || url;
+        debug('Displaying shared message.');
+        this._handleText(message);
     }
 
     _ensureReceiveDirectory() {
@@ -164,7 +184,7 @@ var Plugin = GObject.registerClass({
             });
 
             // We'll show a notification (success or failure)
-            let title, body, iconName;
+            let title, body, action, iconName;
             let buttons = [];
 
             try {
@@ -176,11 +196,15 @@ var Plugin = GObject.registerClass({
                     packet.body.filename,
                     this.device.name
                 );
+                action = {
+                    name: 'showPathInFolder',
+                    parameter: new GLib.Variant('s', file.get_uri()),
+                };
                 buttons = [
                     {
-                        label: _('Open Folder'),
-                        action: 'openPath',
-                        parameter: new GLib.Variant('s', file.get_parent().get_uri()),
+                        label: _('Show File Location'),
+                        action: 'showPathInFolder',
+                        parameter: new GLib.Variant('s', file.get_uri()),
                     },
                     {
                         label: _('Open File'),
@@ -189,6 +213,9 @@ var Plugin = GObject.registerClass({
                     },
                 ];
                 iconName = 'document-save-symbolic';
+
+                const gtk_recent_manager = Gtk.RecentManager.get_default();
+                gtk_recent_manager.add_item(file.get_uri());
 
                 if (packet.body.open) {
                     const uri = file.get_uri();
@@ -214,6 +241,7 @@ var Plugin = GObject.registerClass({
                 id: transfer.uuid,
                 title: title,
                 body: body,
+                action: action,
                 buttons: buttons,
                 icon: new Gio.ThemedIcon({name: iconName}),
             });
@@ -222,15 +250,14 @@ var Plugin = GObject.registerClass({
         }
     }
 
-    _handleUri(packet) {
-        const uri = packet.body.url;
+    _handleUri(uri) {
         Gio.AppInfo.launch_default_for_uri_async(uri, null, null, null);
     }
 
-    _handleText(packet) {
+    _handleText(message) {
         const dialog = new Gtk.MessageDialog({
             text: _('Text Shared By %s').format(this.device.name),
-            secondary_text: URI.linkify(packet.body.text),
+            secondary_text: URI.linkify(message),
             secondary_use_markup: true,
             buttons: Gtk.ButtonsType.CLOSE,
         });
@@ -360,7 +387,7 @@ var Plugin = GObject.registerClass({
 
 
 /** A simple FileChooserDialog for sharing files */
-var FileChooserDialog = GObject.registerClass({
+const FileChooserDialog = GObject.registerClass({
     GTypeName: 'GSConnectShareFileChooserDialog',
 }, class FileChooserDialog extends Gtk.FileChooserDialog {
 
@@ -433,7 +460,7 @@ var FileChooserDialog = GObject.registerClass({
             chooser.preview_widget.pixbuf = pixbuf;
             chooser.preview_widget.visible = true;
             chooser.preview_widget_active = true;
-        } catch (e) {
+        } catch {
             chooser.preview_widget.visible = false;
             chooser.preview_widget_active = false;
         }
@@ -442,10 +469,11 @@ var FileChooserDialog = GObject.registerClass({
     _onUriButtonToggled(button) {
         const header = this.get_header_bar();
 
-        // Show the URL entry
+        // Show and focus the URL entry
         if (button.active) {
             this.extra_widget.sensitive = false;
             header.set_custom_title(this._uriEntry);
+            this._uriEntry.grab_focus();
             this.set_response_sensitive(Gtk.ResponseType.OK, true);
 
         // Hide the URL entry
@@ -481,3 +509,5 @@ var FileChooserDialog = GObject.registerClass({
         this.destroy();
     }
 });
+
+export default SharePlugin;

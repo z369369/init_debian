@@ -1,16 +1,136 @@
 'use strict';
 
-const GObject = imports.gi.GObject;
-const Gtk = imports.gi.Gtk;
-const Gio = imports.gi.Gio;
-const Pango = imports.gi.Pango;
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = imports.misc.extensionUtils.getCurrentExtension();
-const Common = Me.imports.lib.common;
+import GObject from "gi://GObject";
+import Adw from "gi://Adw";
+import Gtk from "gi://Gtk";
+import Gio from "gi://Gio";
+import GLib from "gi://GLib";
+import Pango from "gi://Pango";
 
-var TemplatesBox = GObject.registerClass({
+import { ExtensionPreferences } from "resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js";
+import * as Common from "./lib/common.js";
+
+const ApplicationChooserDialog = GObject.registerClass({
+    GTypeName: 'ApplicationChooserDialog',
+    Signals: {
+        'response': {
+            param_types: [GObject.TYPE_STRING],
+        },
+    },
+}, class ApplicationChooserDialog extends Adw.Window {
+    _init(props) {
+        super._init({
+            modal: true,
+            title: 'Add Application Override',
+            width_request: 450,
+            height_request: 600,
+            destroy_with_parent: true,
+            ...props,
+        });
+
+        const box = new Gtk.Box({
+            orientation: Gtk.Orientation.VERTICAL,
+            spacing: 6,
+        });
+        this.set_content(box);
+
+        const headerBar = new Adw.HeaderBar({});
+        box.append(headerBar);
+
+        const searchEntry = new Gtk.SearchEntry({
+            placeholder_text: 'Search...',
+            hexpand: true,
+        });
+        headerBar.set_title_widget(searchEntry);
+
+        const scrolledWindow = new Gtk.ScrolledWindow({
+            hscrollbar_policy: Gtk.PolicyType.NEVER,
+            vscrollbar_policy: Gtk.PolicyType.AUTOMATIC,
+            hexpand: true,
+            vexpand: true,
+        });
+        box.append(scrolledWindow);
+
+        const listBox = new Gtk.ListBox({
+            selection_mode: Gtk.SelectionMode.SINGLE,
+        });
+        scrolledWindow.set_child(listBox);
+
+        const apps = Gio.AppInfo.get_all().sort((a, b) => {
+            const nameA = a.get_name()?.toLowerCase() || '';
+            const nameB = b.get_name()?.toLowerCase() || '';
+            if (nameA < nameB) return -1;
+            if (nameA > nameB) return 1;
+            return 0;
+        });
+
+        for (const app of apps) {
+            if (!app.get_name()) continue;
+
+            const row = new Adw.ActionRow({
+                title: GLib.markup_escape_text(app.get_name(), -1),
+                activatable: true,
+            });
+            row._appId = app.get_id();
+            row._searchableText = app.get_name().toLowerCase();
+
+            const icon = new Gtk.Image({
+                gicon: app.get_icon(),
+                pixel_size: 32,
+                margin_end: 12,
+            });
+            row.add_prefix(icon);
+
+            listBox.append(row);
+        }
+
+        const filterFunc = (row) => {
+            const filterText = searchEntry.get_text().toLowerCase();
+            if (!filterText) return true;
+            return row._searchableText.includes(filterText);
+        };
+
+        listBox.set_filter_func(filterFunc);
+        searchEntry.connect('search-changed', () => {
+            listBox.invalidate_filter();
+        });
+
+        const addButton = new Gtk.Button({
+            label: 'Add',
+            css_classes: ['suggested-action'],
+        });
+        addButton.set_sensitive(false);
+        headerBar.pack_end(addButton);
+
+        const cancelButton = new Gtk.Button({ label: 'Cancel' });
+        headerBar.pack_start(cancelButton);
+
+        listBox.connect('row-selected', () => {
+            addButton.set_sensitive(listBox.get_selected_row() !== null);
+        });
+
+        listBox.connect('row-activated', (_list, row) => {
+            if (row) {
+                this.emit('response', row._appId);
+                this.close();
+            }
+        });
+
+        addButton.connect('clicked', () => {
+            const selectedRow = listBox.get_selected_row();
+            if (selectedRow) {
+                this.emit('response', selectedRow._appId);
+            }
+            this.close();
+        });
+
+        cancelButton.connect('clicked', () => this.close());
+    }
+});
+
+const TemplatesBox = GObject.registerClass({
     GTypeName: 'templates',
-    Template: 'file://' + Me.path + '/ui/templates-gtk4.ui',
+    Template: GLib.path_get_dirname(import.meta.url) + '/ui/templates-gtk4.ui',
     InternalChildren: [
         'section-header-label',
         'override-template-listboxrow',
@@ -26,120 +146,109 @@ var TemplatesBox = GObject.registerClass({
     ],
 }, class TemplatesBox extends Gtk.Box { });
 
-let settings;
-
 let changedOverridesSignal;
 let changedSavedWindowsSignal;
 
-function init() { }
+export default class SAMPreferences extends ExtensionPreferences {
+    fillPreferencesWindow(window) {
+        let settings = this.getSettings();
 
-function buildPrefsWidget() {
-    settings = ExtensionUtils.getSettings(Common.SETTINGS_SCHEMA);
+        let builder = new Gtk.Builder();
 
-    let builder = new Gtk.Builder();
+        builder.add_from_file(this.uiFile);
 
-    builder.add_from_file(Me.path + '/ui/prefs-gtk4.ui');
+        window.add(builder.get_object('general-page'));
+        window.add(builder.get_object('saved-windows-page'));
+        window.add(builder.get_object('overrides-page'));
 
-    let root = builder.get_object('prefs-notebook');
+        /// GENERAL
 
-    /// GENERAL
+        Common.SETTINGS_CONFIG.forEach(c => {
+            if (!c.widgetId) return;
+            const widget = builder.get_object(c.widgetId);
+            settings.bind(
+                c.key,
+                widget,
+                c.property,
+                Gio.SettingsBindFlags.DEFAULT
+            );
+        });
 
-    let debug_logging_widget = builder.get_object('debug-logging-switch');
-    settings.bind(
-        Common.SETTINGS_KEY_DEBUG_LOGGING,
-        debug_logging_widget,
-        'active',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        /// SAVED WINDOWS
 
-    let sync_mode_widget = builder.get_object('sync-mode-combo');
-    settings.bind(
-        Common.SETTINGS_KEY_SYNC_MODE,
-        sync_mode_widget,
-        'active-id',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        let saved_windows_list_widget = builder.get_object('saved-windows-listbox');
+        let saved_windows_list_objects = [];
+        let saved_windows_cleanup_widget = builder.get_object('saved-windows-cleanup-button');
+        saved_windows_cleanup_widget.connect('clicked', () => {
+            //console.log('CLEANUP BUTTON CLICKED');
+            deleteNonOccupiedWindows(this);
+        });
 
-    let match_threshold_widget = builder.get_object('match-threshold-spin');
-    settings.bind(
-        Common.SETTINGS_KEY_MATCH_THRESHOLD,
-        match_threshold_widget,
-        'value',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        let saved_windows_filter_widget = builder.get_object('saved-windows-filter-entry');
+        const filter_func = (row) => {
+            const filter_text = saved_windows_filter_widget.get_text().toLowerCase();
+            if (!filter_text)
+                return true;
 
-    let sync_frequency_widget = builder.get_object('sync-frequency-spin');
-    settings.bind(
-        Common.SETTINGS_KEY_SYNC_FREQUENCY,
-        sync_frequency_widget,
-        'value',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+            // Saved window rows have this property.
+            if (row.searchable_text) {
+                return row.searchable_text.includes(filter_text);
+            }
+            
+            // Everything else (like the cleanup button row) is not filtered.
+            return true;
+        };
+        saved_windows_list_widget.set_filter_func(filter_func);
+        saved_windows_filter_widget.connect('search-changed', () => {
+            saved_windows_list_widget.invalidate_filter();
+        });
 
-    let save_frequency_widget = builder.get_object('save-frequency-spin');
-    settings.bind(
-        Common.SETTINGS_KEY_SAVE_FREQUENCY,
-        save_frequency_widget,
-        'value',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        loadSavedWindowsSetting(this, saved_windows_list_widget, saved_windows_list_objects);
+        changedSavedWindowsSignal = settings.connect('changed::' + Common.SETTINGS_KEY_SAVED_WINDOWS, () => {
+            loadSavedWindowsSetting(this, saved_windows_list_widget, saved_windows_list_objects);
+        });
 
-    let freeze_saves_widget = builder.get_object('freeze-saves-switch');
-    settings.bind(
-        Common.SETTINGS_KEY_FREEZE_SAVES,
-        freeze_saves_widget,
-        'active',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        /// OVERRIDES
 
-    let activate_workspace_widget = builder.get_object('activate-workspace-switch');
-    settings.bind(
-        Common.SETTINGS_KEY_ACTIVATE_WORKSPACE,
-        activate_workspace_widget,
-        'active',
-        Gio.SettingsBindFlags.DEFAULT
-    );
-    
-    let ignore_position_widget = builder.get_object('ignore-position-switch');
-    settings.bind(
-        Common.SETTINGS_KEY_IGNORE_POSITION,
-        ignore_position_widget,
-        'active',
-        Gio.SettingsBindFlags.DEFAULT
-    );
-    
-    let ignore_workspace_widget = builder.get_object('ignore-workspace-switch');
-    settings.bind(
-        Common.SETTINGS_KEY_IGNORE_WORKSPACE,
-        ignore_workspace_widget,
-        'active',
-        Gio.SettingsBindFlags.DEFAULT
-    );
+        let overrides_list_objects = [];
+        let overrides_list_widget = builder.get_object('overrides-listbox');
+        let overrides_add_application_widget = builder.get_object('overrides-add-application-button');
+        overrides_add_application_widget.connect('clicked', () => {
+            const dialog = new ApplicationChooserDialog({ transient_for: window.get_root() });
+            dialog.connect('response', (_source, appId) => {
+                if (appId) {
+                    if (appId.endsWith('.desktop')) {
+                        appId = appId.slice(0, -'.desktop'.length);
+                    }
+                    let overrides = JSON.parse(settings.get_string(Common.SETTINGS_KEY_OVERRIDES));
+                    if (!overrides.hasOwnProperty(appId)) {
+                        overrides[appId] = [];
+                    }
 
-    /// SAVED WINDOWS
+                    // Add a default "ignore any" override for this app
+                    let o = { action: Common.SYNC_MODE_IGNORE, threshold: settings.get_double(Common.SETTINGS_KEY_MATCH_THRESHOLD) };
+                    overrides[appId].push(o);
+                    settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                }
+            });
+            dialog.present();
+        });
+        loadOverridesSetting(this, overrides_list_widget, overrides_list_objects);
+        changedOverridesSignal = settings.connect('changed::' + Common.SETTINGS_KEY_OVERRIDES, () => {
+            loadOverridesSetting(this, overrides_list_widget, overrides_list_objects);
+        });
+    }
 
-    let saved_windows_list_widget = builder.get_object('saved-windows-listbox');
-    let saved_windows_list_objects = [];
-    loadSavedWindowsSetting(saved_windows_list_widget, saved_windows_list_objects);
-    changedSavedWindowsSignal = settings.connect('changed::' + Common.SETTINGS_KEY_SAVED_WINDOWS, function () { loadSavedWindowsSetting(saved_windows_list_widget, saved_windows_list_objects); });
+    get uiFile() {
+        return `${this.path}/ui/prefs-gtk4.ui`;
+    }
+  }
 
-    /// OVERRIDES
+function loadOverridesSetting(extension, list_widget, list_objects) {
+    let settings = extension.getSettings();
 
-    let overrides_list_objects = [];
-    let overrides_list_widget = builder.get_object('overrides-listbox');
-    let overrides_add_application_widget = builder.get_object('overrides-add-application-button');
-    overrides_add_application_widget.connect('clicked', function () {
-        // TODO
-    });
-    loadOverridesSetting(overrides_list_widget, overrides_list_objects);
-    changedOverridesSignal = settings.connect('changed::' + Common.SETTINGS_KEY_OVERRIDES, function () { loadOverridesSetting(overrides_list_widget, overrides_list_objects); });
-
-    return root;
-}
-
-function loadOverridesSetting(list_widget, list_objects) {
     let overrides = JSON.parse(settings.get_string(Common.SETTINGS_KEY_OVERRIDES));
-    
+
     // TODO: deduplicate this with similar logic in loadSavedWindowsSetting()
     let current_row = list_widget.get_first_child();
     current_row = current_row.get_next_sibling(); // skip the first row
@@ -186,9 +295,12 @@ function loadOverridesSetting(list_widget, list_objects) {
             let threshold_signal = threshold_widget.connect('value-changed', function (spin) {
                 let threshold = spin.get_value();
                 if (threshold <= 0.01) threshold = undefined;
-                //log('SPIN THRESHOLD CHANGED: ' + threshold);
+                //console.log('SPIN THRESHOLD CHANGED: ' + threshold);
                 wshos[oi].threshold = threshold;
-                settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
+                    settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                    return GLib.SOURCE_REMOVE;
+                });
             });
 
             let action_widget = row_templates._override_action_combo
@@ -197,17 +309,23 @@ function loadOverridesSetting(list_widget, list_objects) {
             let action_signal = action_widget.connect('changed', function (combo) {
                 let action = combo.get_active();
                 if (action === 2) action = undefined;
-                //log('COMBO CHANGED ACTIVE: ' + combo.get_active());
+                //console.log('COMBO CHANGED ACTIVE: ' + combo.get_active());
                 wshos[oi].action = action;
-                settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
+                    settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                    return GLib.SOURCE_REMOVE;
+                });
             });
 
             let delete_widget = row_templates._override_delete_button;
             let delete_signal = delete_widget.connect('clicked', function () {
-                //log('DELETE OVERRIDE: ' + JSON.stringify(o));
+                //console.log('DELETE OVERRIDE: ' + JSON.stringify(o));
                 wshos.splice(oi, 1);
                 if (wshos.length < 1) delete (overrides[wsh]);
-                settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
+                    settings.set_string(Common.SETTINGS_KEY_OVERRIDES, JSON.stringify(overrides));
+                    return GLib.SOURCE_REMOVE;
+                });
             });
 
             list_widget.append(row);
@@ -221,10 +339,31 @@ function loadOverridesSetting(list_widget, list_objects) {
     });
 }
 
-function loadSavedWindowsSetting(list_widget, list_objects) {
+function deleteNonOccupiedWindows(extension) {
+    let settings = extension.getSettings();
+
+    let saved_windows = JSON.parse(settings.get_string(Common.SETTINGS_KEY_SAVED_WINDOWS));
+
+    Object.keys(saved_windows).forEach(function (wsh) {
+            let sws = saved_windows[wsh];
+            sws.forEach(function (sw, swi) {
+                    if (!sw.occupied) {
+                            sws.splice(swi, 1);
+                            if (sws.length < 1) delete (saved_windows[wsh]);
+                    }
+            });
+    });
+
+    settings.set_string(Common.SETTINGS_KEY_SAVED_WINDOWS, JSON.stringify(saved_windows));
+}
+
+function loadSavedWindowsSetting(extension, list_widget, list_objects) {
+    let settings = extension.getSettings();
+
     let saved_windows = JSON.parse(settings.get_string(Common.SETTINGS_KEY_SAVED_WINDOWS));
 
     let current_row = list_widget.get_first_child();
+    current_row = current_row.get_next_sibling(); // skip the first row
     while (current_row !== null) {
         let prev_row = current_row;
         current_row = current_row.get_next_sibling();
@@ -248,14 +387,16 @@ function loadSavedWindowsSetting(list_widget, list_objects) {
             row.unparent();
 
             let label_widget = row_templates._saved_window_label;
-            label_widget.set_label(wsh + ' - ' + sw.title);
+            const label_text = wsh + ' - ' + sw.title;
+            label_widget.set_label(label_text);
+            row.searchable_text = label_text.toLowerCase();
             let label_attrs = Pango.AttrList.new();
             if (!sw.occupied) label_attrs.insert(Pango.attr_strikethrough_new(true));
             label_widget.set_attributes(label_attrs);
 
             let delete_widget = row_templates._saved_window_delete_button;
             let delete_signal = delete_widget.connect('clicked', function () {
-                //log('DELETE SAVED WINDOW: ' + JSON.stringify(sw));
+                //console.log('DELETE SAVED WINDOW: ' + JSON.stringify(sw));
                 sws.splice(swi, 1);
                 if (sws.length < 1) delete (saved_windows[wsh]);
                 settings.set_string(Common.SETTINGS_KEY_SAVED_WINDOWS, JSON.stringify(saved_windows));
@@ -264,7 +405,7 @@ function loadSavedWindowsSetting(list_widget, list_objects) {
             let ignore_widget = row_templates._saved_window_ignore_button;
             let ignore_signal = ignore_widget.connect('clicked', function () {
                 let o = { query: { title: sw.title }, action: 0 };
-                //log('ADD OVERRIDE: ' + wsh + ' ' + o);
+                //console.log('ADD OVERRIDE: ' + wsh + ' ' + o);
                 let overrides = JSON.parse(settings.get_string(Common.SETTINGS_KEY_OVERRIDES));
                 if (!overrides.hasOwnProperty(wsh))
                     overrides[wsh] = new Array();
@@ -275,7 +416,7 @@ function loadSavedWindowsSetting(list_widget, list_objects) {
             let ignore_any_widget = row_templates._saved_window_ignore_any_button;
             let ignore_any_signal = ignore_any_widget.connect('clicked', function () {
                 let o = { action: 0, threshold: settings.get_double(Common.SETTINGS_KEY_MATCH_THRESHOLD) };
-                //log('ADD OVERRIDE: ' + wsh + ' ' + o);
+                //console.log('ADD OVERRIDE: ' + wsh + ' ' + o);
                 let overrides = JSON.parse(settings.get_string(Common.SETTINGS_KEY_OVERRIDES));
                 if (!overrides.hasOwnProperty(wsh))
                     overrides[wsh] = new Array();

@@ -1,14 +1,21 @@
-/* exported init enable disable */
+// SPDX-FileCopyrightText: 2011 Giovanni Campagna <gcampagna@src.gnome.org>
+// SPDX-FileCopyrightText: 2018 Florian Müllner <fmuellner@gnome.org>
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+
 // Drive menu extension
-const {Clutter, Gio, GObject, Shell, St} = imports.gi;
+import Clutter from 'gi://Clutter';
+import Gio from 'gi://Gio';
+import GObject from 'gi://GObject';
+import Shell from 'gi://Shell';
+import St from 'gi://St';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Main = imports.ui.main;
-const PanelMenu = imports.ui.panelMenu;
-const PopupMenu = imports.ui.popupMenu;
-const ShellMountOperation = imports.ui.shellMountOperation;
+import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
-const _ = ExtensionUtils.gettext;
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+import * as ShellMountOperation from 'resource:///org/gnome/shell/ui/shellMountOperation.js';
 
 Gio._promisify(Gio.File.prototype, 'query_filesystem_info_async');
 
@@ -32,8 +39,6 @@ class MountMenuItem extends PopupMenu.PopupBaseMenuItem {
 
         this.mount = mount;
 
-        this.connect('destroy', this._onDestroy.bind(this));
-
         let ejectIcon = new St.Icon({
             icon_name: 'media-eject-symbolic',
             style_class: 'popup-menu-icon',
@@ -43,21 +48,13 @@ class MountMenuItem extends PopupMenu.PopupBaseMenuItem {
             style_class: 'button',
         });
         ejectButton.connect('clicked', this._eject.bind(this));
-        this.add(ejectButton);
+        this.add_child(ejectButton);
 
         this.hide();
 
-        this._changedId = mount.connect('changed', this._syncVisibility.bind(this));
+        mount.connectObject('changed',
+            () => this._syncVisibility(), this);
         this._syncVisibility();
-    }
-
-    _onDestroy() {
-        if (this._changedId) {
-            this.mount.disconnect(this._changedId);
-            this._changedId = 0;
-        }
-
-        super.destroy();
     }
 
     async _isInteresting() {
@@ -142,7 +139,7 @@ class DriveMenu extends PanelMenu.Button {
     }
 
     constructor() {
-        super(0.0, _('Removable devices'));
+        super(0.5, _('Removable devices'));
 
         let icon = new St.Icon({
             icon_name: 'media-eject-symbolic',
@@ -152,12 +149,12 @@ class DriveMenu extends PanelMenu.Button {
         this.add_child(icon);
 
         this._monitor = Gio.VolumeMonitor.get();
-        this._addedId = this._monitor.connect('mount-added',
-            (monitor, mount) => this._addMount(mount));
-        this._removedId = this._monitor.connect('mount-removed', (monitor, mount) => {
-            this._removeMount(mount);
-            this._updateMenuVisibility();
-        });
+        this._monitor.connectObject(
+            'mount-added', (monitor, mount) => this._addMount(mount),
+            'mount-removed', (monitor, mount) => {
+                this._removeMount(mount);
+                this._updateMenuVisibility();
+            }, this);
 
         this._mounts = [];
 
@@ -199,33 +196,16 @@ class DriveMenu extends PanelMenu.Button {
         }
         log('Removing a mount that was never added to the menu');
     }
+}
 
-    _onDestroy() {
-        if (this._addedId) {
-            this._monitor.disconnect(this._addedId);
-            this._monitor.disconnect(this._removedId);
-            this._addedId = 0;
-            this._removedId = 0;
-        }
-
-        super._onDestroy();
+export default class PlaceMenuExtension extends Extension {
+    enable() {
+        this._indicator = new DriveMenu();
+        Main.panel.addToStatusArea('drive-menu', this._indicator);
     }
-}
 
-/** */
-function init() {
-    ExtensionUtils.initTranslations();
-}
-
-let _indicator;
-
-/** */
-function enable() {
-    _indicator = new DriveMenu();
-    Main.panel.addToStatusArea('drive-menu', _indicator);
-}
-
-/** */
-function disable() {
-    _indicator.destroy();
+    disable() {
+        this._indicator.destroy();
+        delete this._indicator;
+    }
 }

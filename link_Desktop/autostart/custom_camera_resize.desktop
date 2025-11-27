@@ -1,7 +1,0 @@
-[Desktop Entry]
-Hidden=false
-Name=custom_camera_resize
-Comment=
-Terminal=false
-Exec=timeout 20 /home/lwh/Desktop/bin/img_resize_replace.sh /home/lwh/phone/DCIM/Camera/
-Type=Application

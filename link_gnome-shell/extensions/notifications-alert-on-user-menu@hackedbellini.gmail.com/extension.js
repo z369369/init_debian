@@ -22,15 +22,15 @@
  *
  */
 
-const { Clutter, St } = imports.gi;
-const Mainloop = imports.mainloop;
-const Main = imports.ui.main;
-const MessageTray = imports.ui.messageTray;
-const GnomeSession = imports.misc.gnomeSession;
+import Clutter from 'gi://Clutter';
+import GLib from 'gi://GLib';
+import Gio from 'gi://Gio';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as MessageTray from 'resource:///org/gnome/shell/ui/messageTray.js';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
-const Lib = Me.imports.lib;
+import * as Lib from './lib.js';
+
+import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 const SETTING_BLINK_RATE = 'blinkrate';
 const SETTING_USECOLOR = 'usecolor';
@@ -41,8 +41,9 @@ const SETTING_CHAT_ONLY = 'chatonly';
 const SETTING_FORCE = 'force';
 const SETTING_BLACKLIST = 'application-list';
 const SETTING_FILTER_TYPE = 'filter';
+const SETTING_GNOME_SHOW_BANNERS = 'show-banners';
 
-let settings, messageStyleHandler;
+let settings, gnomeSettings, messageStyleHandler;
 let originalCountUpdated, originalDestroy;
 
 function _MessageStyleHandler() {
@@ -53,36 +54,22 @@ function _MessageStyleHandler() {
 
   this.init = function() {
     this._signals = {};
-    this._statusChangedId = null;
     this._loopTimeoutId = null;
     this._oldStyle = null;
     this._hasStyleAdded = false;
-
-    this._presence = new GnomeSession.Presence(
-      (proxy, error) => {
-        if (error) {
-          logError(error, 'Error while reading gnome-session presence');
-          return;
-        }
-    });
   }
 
   this.enable = function() {
-    this._statusChangedId = this._presence.connectSignal(
-      'StatusChanged', (proxy, senderName, [status]) => {
-        this._presence.status = status;
-        this._onNotificationsSwitchToggled();
-    });
-
     // Connect settings change events, so we can update message style
     // as soon as the user makes the change
-    this._connectSetting(SETTING_USECOLOR);
-    this._connectSetting(SETTING_COLOR);
-    this._connectSetting(SETTING_BACKGROUNDCOLOR);
-    this._connectSetting(SETTING_USEBACKGROUNDCOLOR);
-    this._connectSetting(SETTING_CHAT_ONLY);
-    this._connectSetting(SETTING_FORCE);
-    this._connectSetting(SETTING_BLINK_RATE);
+    this._connectSetting(settings, SETTING_USECOLOR);
+    this._connectSetting(settings, SETTING_COLOR);
+    this._connectSetting(settings, SETTING_BACKGROUNDCOLOR);
+    this._connectSetting(settings, SETTING_USEBACKGROUNDCOLOR);
+    this._connectSetting(settings, SETTING_CHAT_ONLY);
+    this._connectSetting(settings, SETTING_FORCE);
+    this._connectSetting(settings, SETTING_BLINK_RATE);
+    this._connectSetting(gnomeSettings, SETTING_GNOME_SHOW_BANNERS);
 
     // Check for existing message counters when extension were
     // loaded on an already running shell.
@@ -90,7 +77,6 @@ function _MessageStyleHandler() {
   }
 
   this.disable = function() {
-    this._presence.disconnectSignal(this._statusChangedId);
     for (let key in this._signals) {
       settings.disconnect(this._signals[key]);
       delete this._signals[key];
@@ -100,8 +86,7 @@ function _MessageStyleHandler() {
   }
 
   this.updateMessageStyle = function() {
-    this.notificationStatus =
-      (this._presence.status != GnomeSession.PresenceStatus.BUSY);
+    this.notificationStatus = gnomeSettings.get_boolean(SETTING_GNOME_SHOW_BANNERS);
     let sources = Main.messageTray.getSources();
 
     if (settings.get_boolean(SETTING_FORCE) || this.notificationStatus) {
@@ -144,7 +129,7 @@ function _MessageStyleHandler() {
      Private
   */
 
-  this._connectSetting = function(setting) {
+  this._connectSetting = function(settings, setting) {
     this._signals[setting] = settings.connect(
       "changed::" + setting, this._onSettingsChanged.bind(this));
   }
@@ -199,8 +184,8 @@ function _MessageStyleHandler() {
     this._hasStyleAdded = true;
 
     if (loopDelay > 0) {
-      this._loopTimeoutId = Mainloop.timeout_add(
-          loopDelay, this._toggleStyle.bind(this))
+      this._loopTimeoutId = GLib.timeout_add(
+        GLib.PRIORITY_DEFAULT, loopDelay, this._toggleStyle.bind(this))
     } else {
       this._toggleStyle();
     }
@@ -209,7 +194,7 @@ function _MessageStyleHandler() {
   this._removeMessageStyle = function() {
     if (this._loopTimeoutId != null) {
       // Stop the looping
-      Mainloop.source_remove(this._loopTimeoutId);
+      GLib.source_remove(this._loopTimeoutId);
       this._loopTimeoutId = null;
     }
     
@@ -230,10 +215,6 @@ function _MessageStyleHandler() {
   */
 
   this._onSettingsChanged = function() {
-    this.updateMessageStyle();
-  }
-
-  this._onNotificationsSwitchToggled = function() {
     this.updateMessageStyle();
   }
 }
@@ -257,37 +238,37 @@ function _destroy() {
 /*
    Shell-extensions handlers
 */
+export default class NotificationsAlert extends Extension {
 
-function init() {
-  ExtensionUtils.initTranslations();
-}
+  enable() {
+    settings = this.getSettings();
+    gnomeSettings = new Gio.Settings({schema_id: 'org.gnome.desktop.notifications'});
 
-function enable() {
-  settings = ExtensionUtils.getSettings();
+    messageStyleHandler = new _MessageStyleHandler();
+    messageStyleHandler.init();
 
-  messageStyleHandler = new _MessageStyleHandler();
-  messageStyleHandler.init();
+    if (MessageTray.Source.prototype.countUpdated == _countUpdated) {
+      return;
+    }
+    originalCountUpdated = MessageTray.Source.prototype.countUpdated;
+    originalDestroy = MessageTray.Source.prototype.destroy;
 
-  if (MessageTray.Source.prototype.countUpdated == _countUpdated) {
-    return;
+    MessageTray.Source.prototype.countUpdated = _countUpdated;
+    MessageTray.Source.prototype.destroy = _destroy;
+
+    messageStyleHandler.enable();
   }
-  originalCountUpdated = MessageTray.Source.prototype.countUpdated;
-  originalDestroy = MessageTray.Source.prototype.destroy;
 
-  MessageTray.Source.prototype.countUpdated = _countUpdated;
-  MessageTray.Source.prototype.destroy = _destroy;
+  disable() {
+    MessageTray.Source.prototype.countUpdated = originalCountUpdated;
+    MessageTray.Source.prototype.destroy = originalDestroy;
 
-  messageStyleHandler.enable();
-}
+    messageStyleHandler.disable();
 
-function disable() {
-  MessageTray.Source.prototype.countUpdated = originalCountUpdated;
-  MessageTray.Source.prototype.destroy = originalDestroy;
-
-  messageStyleHandler.disable();
-
-  settings = null;
-  messageStyleHandler = null;
-  originalCountUpdated = null;
-  originalDestroy = null;
+    settings = null;
+    gnomeSettings = null;
+    messageStyleHandler = null;
+    originalCountUpdated = null;
+    originalDestroy = null;
+  }
 }

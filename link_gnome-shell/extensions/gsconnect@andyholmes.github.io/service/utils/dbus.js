@@ -1,17 +1,23 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gio = imports.gi.Gio;
-const GjsPrivate = imports.gi.GjsPrivate;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
+import Gio from 'gi://Gio';
+import GjsPrivate from 'gi://GjsPrivate';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
 
 
 /*
  * Some utility methods
  */
+
 /**
+ * Convert a label from kebab-case to CamelCase.
+ * Will also remove snake_case separators (without capitalizing)
  *
- * @param string
+ * @param {string} string - The label to reformat
+ * @returns {string} The CamelCased label
  */
 function toDBusCase(string) {
     return string.replace(/(?:^\w|[A-Z]|\b\w)/g, (ltr, offset) => {
@@ -20,18 +26,10 @@ function toDBusCase(string) {
 }
 
 /**
+ * Convert a label from CamelCase to snake_case.
  *
- * @param string
- */
-function toHyphenCase(string) {
-    return string.replace(/(?:[A-Z])/g, (ltr, offset) => {
-        return (offset > 0) ? `-${ltr.toLowerCase()}` : ltr.toLowerCase();
-    }).replace(/[\s_]+/g, '');
-}
-
-/**
- *
- * @param string
+ * @param {string} string - The label to reformat
+ * @returns {string} - The snake_cased label
  */
 function toUnderscoreCase(string) {
     return string.replace(/(?:^\w|[A-Z]|_|\b\w)/g, (ltr, offset) => {
@@ -47,7 +45,7 @@ function toUnderscoreCase(string) {
  * DBus.Interface represents a DBus interface bound to an object instance, meant
  * to be exported over DBus.
  */
-var Interface = GObject.registerClass({
+export const Interface = GObject.registerClass({
     GTypeName: 'GSConnectDBusInterface',
     Implements: [Gio.DBusInterface],
     Properties: {
@@ -111,7 +109,7 @@ var Interface = GObject.registerClass({
      * Invoke an instance's method for a DBus method call.
      *
      * @param {Gio.DBusInterfaceInfo} info - The DBus interface
-     * @param {DBus.Interface} iface - The DBus interface
+     * @param {Gio.DBusInterface} iface - The DBus interface
      * @param {string} name - The DBus method name
      * @param {GLib.Variant} parameters - The method parameters
      * @param {Gio.DBusMethodInvocation} invocation - The method invocation info
@@ -242,26 +240,6 @@ var Interface = GObject.registerClass({
     }
 });
 
-
-/**
- * Get the DBus connection on @busType
- *
- * @param {Gio.BusType} [busType] - a Gio.BusType constant
- * @param {Gio.Cancellable} [cancellable] - an optional Gio.Cancellable
- * @returns {Promise<Gio.DBusConnection>} A DBus connection
- */
-function getConnection(busType = Gio.BusType.SESSION, cancellable = null) {
-    return new Promise((resolve, reject) => {
-        Gio.bus_get(busType, cancellable, (connection, res) => {
-            try {
-                resolve(Gio.bus_get_finish(res));
-            } catch (e) {
-                reject(e);
-            }
-        });
-    });
-}
-
 /**
  * Get a new, dedicated DBus connection on @busType
  *
@@ -269,7 +247,7 @@ function getConnection(busType = Gio.BusType.SESSION, cancellable = null) {
  * @param {Gio.Cancellable} [cancellable] - an optional Gio.Cancellable
  * @returns {Promise<Gio.DBusConnection>} A new DBus connection
  */
-function newConnection(busType = Gio.BusType.SESSION, cancellable = null) {
+export function newConnection(busType = Gio.BusType.SESSION, cancellable = null) {
     return new Promise((resolve, reject) => {
         Gio.DBusConnection.new_for_address(
             Gio.dbus_address_get_for_bus_sync(busType, cancellable),
@@ -288,4 +266,3 @@ function newConnection(busType = Gio.BusType.SESSION, cancellable = null) {
 
     });
 }
-

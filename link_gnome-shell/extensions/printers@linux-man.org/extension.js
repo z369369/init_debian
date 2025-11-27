@@ -1,14 +1,12 @@
-const { Clutter, Gio, GLib, GObject, St } = imports.gi;
-
-const Main = imports.ui.main;
-const PanelMenu = imports.ui.panelMenu;
-const PopupMenu = imports.ui.popupMenu;
-
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
-
-const Gettext = imports.gettext.domain('printers');
-const _ = Gettext.gettext;
+import Clutter from 'gi://Clutter';
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+import St from 'gi://St';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
+import {Extension, gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 const printerIcon = 'printer-symbolic';
 const warningIcon = 'printer-warning-symbolic';
@@ -50,17 +48,13 @@ function exec_async(args) {
 }
 
 function PopupIconMenuItem(icon, label) {
-    let _item = new PopupMenu.PopupBaseMenuItem();
-    let _icon = new St.Icon({ icon_name: icon, style_class: 'popup-menu-icon' });
-    let _label = new St.Label({ text: label });
-    _item.add(_icon);
-    _item.add(_label);
+    let _item = new PopupMenu.PopupImageMenuItem(label, icon, {});
     return _item;
 }
 
 const PrintersManager = GObject.registerClass(class PrintersManager extends PanelMenu.Button {
 
-    _init() {
+    _init(settings) {
         super._init(null, 'PrintersManager')
         this.connect_to = 0;
         this.show_icon = 0;
@@ -69,6 +63,10 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
         this.job_number = true;
         this.send_to_front = true;
         this.printWarning = false;
+        this.updating = false;
+        this.menuIsOpen = false;
+        this._settings = settings;
+        this._settings.connect('changed', this.onCupsSignal.bind(this));
 
         let hbox = new St.BoxLayout({style_class: 'panel-status-menu-box' });
         this._icon = new St.Icon({icon_name: printerIcon, style_class: 'system-status-icon'});
@@ -78,8 +76,10 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
         hbox.add_child(this._jobs);
         this.add_child(hbox);
 
-        this._settings = ExtensionUtils.getSettings();
-        this._settings.connect('changed', this.onCupsSignal.bind(this));
+        this.menu.connect('open-state-changed', (self, open) => {
+            this.menuIsOpen = open;
+        });
+
         this._cupsSignal = Gio.DBus.system.signal_subscribe(null, 'org.cups.cupsd.Notifier', null, '/org/cups/cupsd/Notifier', null, Gio.DBusSignalFlags.NONE, this.onCupsSignal.bind(this));
 
         this.onCupsSignal();
@@ -107,6 +107,8 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
     }
 
     async refresh() {
+        if (this.menuIsOpen || this.updating) return;
+        this.updating = true;
         this.connect_to = this._settings.get_enum('connect-to');
         this.show_icon = this._settings.get_enum('show-icon');
         this.show_error = this._settings.get_boolean('show-error');
@@ -133,7 +135,7 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
                 this.printers.push(printer);
                 if(this.connect_to == 1) {
                     let printerItem = PopupIconMenuItem('emblem-documents-symbolic', printer);
-                    if(p_default.toString() == printer.toString()) printerItem.add(new St.Icon({ icon_name: 'emblem-default-symbolic', style_class: 'popup-menu-icon' }));
+                    if(p_default.toString() == printer.toString()) printerItem.setOrnament(PopupMenu.Ornament.CHECK);
                     printerItem.printer = printer;
                     printerItem.connect('activate', this.onShowJobsClicked.bind(this));
                     this.menu.addMenuItem(printerItem);
@@ -169,7 +171,7 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
             if(this.job_number) text += ' (' + job + ')';
             text += ' ' + _('at') + ' ' + printer;
             let jobItem = PopupIconMenuItem('edit-delete-symbolic', text);
-            if(p_jobs2[p_jobs2.indexOf(job) - 2] == 'active') jobItem.add(new St.Icon({ icon_name: 'emblem-default-symbolic', style_class: 'popup-menu-icon' }));
+            if(p_jobs2[p_jobs2.indexOf(job) - 2] == 'active') jobItem.setOrnament(PopupMenu.Ornament.CHECK);
             jobItem.job = job;
             jobItem.connect('activate', this.onCancelJobClicked.bind(jobItem));
             this.menu.addMenuItem(jobItem);
@@ -185,17 +187,20 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
             for(let n = 0; n < sendJobs.length; n++) subMenu.menu.addMenuItem(sendJobs[n]);
             this.menu.addMenuItem(subMenu);
         }
+        this.updating = false;
 //Update Icon
         if(this.jobsCount > 0 && this.show_jobs) this._jobs.text = this.jobsCount.toString();
         else this._jobs.text = '';
         this.show();
-        if(this.show_icon == 0 || (this.show_icon == 1 && this.printersCount > 0) || (this.show_icon == 2 && this.jobsCount > 0)) this.show();
+        if(this.show_icon == 0 || (this.show_icon == 1 && this.printersCount > 0) || (this.show_icon == 2 && this.jobsCount > 0)) {
+			this.show();
+			let p_error = await exec_async(['/usr/bin/lpstat', '-l']);
+			this.printError = p_error.indexOf('Unable') >= 0 || p_error.indexOf(' not ') >= 0 || p_error.indexOf(' failed') >= 0;
+			if(this.printWarning) this._icon.icon_name = warningIcon;
+			else if(this.show_error && this.printError) this._icon.icon_name = errorIcon;
+			else this._icon.icon_name = printerIcon;
+		}
         else this.hide();
-        let p_error = await exec_async(['/usr/bin/lpstat', '-l']);
-        this.printError = p_error.indexOf('Unable') >= 0 || p_error.indexOf(' not ') >= 0 || p_error.indexOf(' failed') >= 0;
-        if(this.printWarning) this._icon.icon_name = warningIcon;
-        else if(this.show_error && this.printError) this._icon.icon_name = errorIcon;
-        else this._icon.icon_name = printerIcon;
     }
 
     onCupsSignal() {
@@ -213,20 +218,20 @@ const PrintersManager = GObject.registerClass(class PrintersManager extends Pane
 
 let printersManager;
 
-function init() {
-    ExtensionUtils.initTranslations('printers');
-}
+export default class Printers extends Extension {
 
-function enable() {
-    printersManager = new PrintersManager();
-    Main.panel.addToStatusArea('printers', printersManager);
-}
-
-function disable() {
-    if(_timeout) {
-        GLib.Source.remove(_timeout);
-        _timeout = null;
+    enable() {
+        printersManager = new PrintersManager(this.getSettings());
+        Main.panel.addToStatusArea('printers', printersManager);
     }
-    printersManager.destroy();
-    printersManager = null;
+
+    disable() {
+        if(_timeout) {
+            GLib.Source.remove(_timeout);
+            _timeout = null;
+        }
+        printersManager.destroy();
+        printersManager = null;
+    }
+
 }

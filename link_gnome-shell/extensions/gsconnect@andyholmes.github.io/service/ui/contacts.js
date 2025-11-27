@@ -1,10 +1,14 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gdk = imports.gi.Gdk;
-const GdkPixbuf = imports.gi.GdkPixbuf;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
-const Gtk = imports.gi.Gtk;
+import Gdk from 'gi://Gdk';
+import GdkPixbuf from 'gi://GdkPixbuf';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+import Gtk from 'gi://Gtk';
+
+import system from 'system';
 
 
 /**
@@ -104,11 +108,13 @@ function getPixbufForPath(path, size, scale = 1.0) {
 }
 
 /**
+ * Retrieve the GdkPixbuf for a named icon
  *
- * @param name
- * @param size
- * @param scale
- * @param bgColor
+ * @param {string} name - The icon name to load
+ * @param {number} size - The pixel size requested
+ * @param {number} scale - The scale multiplier
+ * @param {string} bgColor - The background color the icon will be used against
+ * @returns {GdkPixbuf.pixbuf|null} The icon image
  */
 function getPixbufForIcon(name, size, scale, bgColor) {
     const color = getFgRGBA(bgColor);
@@ -159,7 +165,7 @@ function getNumberTypeLabel(type) {
  * @param {string} address - A phone number
  * @returns {string} A (possibly) better display number for the address
  */
-function getDisplayNumber(contact, address) {
+export function getDisplayNumber(contact, address) {
     const number = address.toPhoneNumber();
 
     for (const contactNumber of contact.numbers) {
@@ -178,7 +184,7 @@ function getDisplayNumber(contact, address) {
  */
 const AvatarCache = new WeakMap();
 
-var Avatar = GObject.registerClass({
+export const Avatar = GObject.registerClass({
     GTypeName: 'GSConnectContactAvatar',
 }, class ContactAvatar extends Gtk.DrawingArea {
 
@@ -366,7 +372,7 @@ const AddressRow = GObject.registerClass({
 /**
  * A widget for selecting contact addresses (usually phone numbers)
  */
-var ContactChooser = GObject.registerClass({
+export const ContactChooser = GObject.registerClass({
     GTypeName: 'GSConnectContactChooser',
     Properties: {
         'device': GObject.ParamSpec.object(
@@ -438,7 +444,7 @@ var ContactChooser = GObject.registerClass({
             for (let i = 0, len = rows.length; i < len; i++) {
                 rows[i].destroy();
                 // HACK: temporary mitigator for mysterious GtkListBox leak
-                imports.system.gc();
+                system.gc();
             }
         }
 
@@ -485,7 +491,7 @@ var ContactChooser = GObject.registerClass({
             if (row.contact.id === id) {
                 row.destroy();
                 // HACK: temporary mitigator for mysterious GtkListBox leak
-                imports.system.gc();
+                system.gc();
             }
         }
     }
@@ -642,4 +648,3 @@ var ContactChooser = GObject.registerClass({
         }
     }
 });
-

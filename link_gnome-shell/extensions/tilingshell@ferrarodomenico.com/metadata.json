@@ -9,12 +9,14 @@
   "name": "Tiling Shell",
   "settings-schema": "org.gnome.shell.extensions.tilingshell",
   "shell-version": [
-    "42",
-    "43",
-    "44"
+    "45",
+    "46",
+    "47",
+    "48",
+    "49"
   ],
   "url": "https://github.com/domferr/tilingshell",
   "uuid": "tilingshell@ferrarodomenico.com",
-  "version": 58,
-  "version-name": "17.0"
+  "version": 61,
+  "version-name": "17.1"
 }

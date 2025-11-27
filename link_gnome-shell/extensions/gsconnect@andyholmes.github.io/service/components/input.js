@@ -1,12 +1,16 @@
-'use strict';
+// SPDX-FileCopyrightText: GSConnect Developers https://github.com/GSConnect
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-const Gdk = imports.gi.Gdk;
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const GObject = imports.gi.GObject;
+import Gdk from 'gi://Gdk';
+import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
+import GObject from 'gi://GObject';
+
+import AtspiController from './atspi.js';
 
 
-const SESSION_TIMEOUT = 15;
+const SESSION_TIMEOUT = 300;
 
 
 const RemoteSession = GObject.registerClass({
@@ -40,13 +44,14 @@ const RemoteSession = GObject.registerClass({
         if (!this._started)
             return;
 
+        // Pass a null callback to allow this call to finish itself
         this.call(name, parameters, Gio.DBusCallFlags.NONE, -1, null, null);
     }
 
     get session_id() {
         try {
             return this.get_cached_property('SessionId').unpack();
-        } catch (e) {
+        } catch {
             return null;
         }
     }
@@ -56,39 +61,9 @@ const RemoteSession = GObject.registerClass({
             if (this._started)
                 return;
 
-            // Initialize the proxy
-            await new Promise((resolve, reject) => {
-                this.init_async(
-                    GLib.PRIORITY_DEFAULT,
-                    null,
-                    (proxy, res) => {
-                        try {
-                            proxy.init_finish(res);
-                            resolve();
-                        } catch (e) {
-                            reject(e);
-                        }
-                    }
-                );
-            });
-
-            // Start the session
-            await new Promise((resolve, reject) => {
-                this.call(
-                    'Start',
-                    null,
-                    Gio.DBusCallFlags.NONE,
-                    -1,
-                    null,
-                    (proxy, res) => {
-                        try {
-                            resolve(proxy.call_finish(res));
-                        } catch (e) {
-                            reject(e);
-                        }
-                    }
-                );
-            });
+            // Initialize the proxy, and start the session
+            await this.init_async(GLib.PRIORITY_DEFAULT, null);
+            await this.call('Start', null, Gio.DBusCallFlags.NONE, -1, null);
 
             this._started = true;
         } catch (e) {
@@ -102,6 +77,8 @@ const RemoteSession = GObject.registerClass({
     stop() {
         if (this._started) {
             this._started = false;
+
+            // Pass a null callback to allow this call to finish itself
             this.call('Stop', null, Gio.DBusCallFlags.NONE, -1, null, null);
         }
     }
@@ -170,18 +147,7 @@ const RemoteSession = GObject.registerClass({
     }
 
     scrollPointer(dx, dy) {
-        // NOTE: NotifyPointerAxis only seems to work on Wayland, but maybe
-        //       NotifyPointerAxisDiscrete is the better choice anyways
-        if (HAVE_WAYLAND) {
-            this._call(
-                'NotifyPointerAxis',
-                GLib.Variant.new('(ddu)', [dx, dy, 0])
-            );
-            this._call(
-                'NotifyPointerAxis',
-                GLib.Variant.new('(ddu)', [0, 0, 1])
-            );
-        } else if (dy > 0) {
+        if (dy > 0) {
             this._call(
                 'NotifyPointerAxisDiscrete',
                 GLib.Variant.new('(ui)', [Gdk.ScrollDirection.UP, 1])
@@ -263,7 +229,7 @@ const RemoteSession = GObject.registerClass({
 });
 
 
-class Controller {
+export default class Controller {
     constructor() {
         this._nameAppearedId = 0;
         this._session = null;
@@ -287,50 +253,6 @@ class Controller {
             this._connection = null;
 
         return this._connection;
-    }
-
-    /**
-     * Check if this is a Wayland session, specifically for distributions that
-     * don't ship pipewire support (eg. Debian/Ubuntu).
-     *
-     * FIXME: this is a super ugly hack that should go away
-     *
-     * @returns {boolean} %true if wayland is not supported
-     */
-    _checkWayland() {
-        if (HAVE_WAYLAND) {
-
-            HAVE_REMOTEINPUT = false;
-            const service = Gio.Application.get_default();
-
-            if (service === null)
-                return true;
-
-            // First we're going to disabled the affected plugins on all devices
-            for (const device of service.manager.devices.values()) {
-                const supported = device.settings.get_strv('supported-plugins');
-                let index;
-
-                if ((index = supported.indexOf('mousepad')) > -1)
-                    supported.splice(index, 1);
-
-                if ((index = supported.indexOf('presenter')) > -1)
-                    supported.splice(index, 1);
-
-                device.settings.set_strv('supported-plugins', supported);
-            }
-
-            // Second we need each backend to rebuild its identity packet and
-            // broadcast the amended capabilities to the network
-            for (const backend of service.manager.backends.values())
-                backend.buildIdentity();
-
-            service.manager.identify();
-
-            return true;
-        }
-
-        return false;
     }
 
     _onNameAppeared(connection, name, name_owner) {
@@ -386,87 +308,43 @@ class Controller {
         return GLib.SOURCE_REMOVE;
     }
 
-    _createRemoteDesktopSession() {
+    async _createRemoteDesktopSession() {
         if (this.connection === null)
             return Promise.reject(new Error('No DBus connection'));
 
-        return new Promise((resolve, reject) => {
-            this.connection.call(
-                'org.gnome.Mutter.RemoteDesktop',
-                '/org/gnome/Mutter/RemoteDesktop',
-                'org.gnome.Mutter.RemoteDesktop',
-                'CreateSession',
-                null,
-                null,
-                Gio.DBusCallFlags.NONE,
-                -1,
-                null,
-                (connection, res) => {
-                    try {
-                        res = connection.call_finish(res);
-                        resolve(res.deepUnpack()[0]);
-                    } catch (e) {
-                        reject(e);
-                    }
-                }
-            );
-        });
-    }
+        const reply = await this.connection.call(
+            'org.gnome.Mutter.RemoteDesktop',
+            '/org/gnome/Mutter/RemoteDesktop',
+            'org.gnome.Mutter.RemoteDesktop',
+            'CreateSession',
+            null,
+            null,
+            Gio.DBusCallFlags.NONE,
+            -1,
+            null);
 
-    _createScreenCastSession(sessionId) {
-        if (this.connection === null)
-            return Promise.reject(new Error('No DBus connection'));
-
-        return new Promise((resolve, reject) => {
-            const options = new GLib.Variant('(a{sv})', [{
-                'disable-animations': GLib.Variant.new_boolean(false),
-                'remote-desktop-session-id': GLib.Variant.new_string(sessionId),
-            }]);
-
-            this.connection.call(
-                'org.gnome.Mutter.ScreenCast',
-                '/org/gnome/Mutter/ScreenCast',
-                'org.gnome.Mutter.ScreenCast',
-                'CreateSession',
-                options,
-                null,
-                Gio.DBusCallFlags.NONE,
-                -1,
-                null,
-                (connection, res) => {
-                    try {
-                        res = connection.call_finish(res);
-                        resolve(res.deepUnpack()[0]);
-                    } catch (e) {
-                        reject(e);
-                    }
-                }
-            );
-        });
+        return reply.deepUnpack()[0];
     }
 
     async _ensureAdapter() {
+        // Update the timestamp of the last event
+        this._sessionExpiry = Math.floor((Date.now() / 1000) + SESSION_TIMEOUT);
+
+        // Session is active
+        if (this._session !== null)
+            return this._session;
+
+        // Mutter's RemoteDesktop is not available, fall back to Atspi
+        if (this.connection === null) {
+            debug('Falling back to Atspi');
+
+            this._session = new AtspiController();
+            return this._session;
+        }
+
         try {
-            // Update the timestamp of the last event
-            this._sessionExpiry = Math.floor((Date.now() / 1000) + SESSION_TIMEOUT);
-
-            // Session is active
-            if (this._session !== null)
-                return;
-
-            // Mutter's RemoteDesktop is not available, fall back to Atspi
-            if (this.connection === null) {
-                debug('Falling back to Atspi');
-
-                // If we got here in Wayland, we need to re-adjust and bail
-                if (this._checkWayland())
-                    return;
-
-                const fallback = imports.service.components.atspi;
-                this._session = new fallback.Controller();
-
             // Mutter is available and there isn't another session starting
-            } else if (this._sessionStarting === false) {
+            if (this._sessionStarting === false) {
                 this._sessionStarting = true;
 
                 debug('Creating Mutter RemoteDesktop session');
@@ -478,8 +356,6 @@ class Controller {
 
                 this._session = new RemoteSession(objectPath);
                 await this._session.start();
-
-                await this._createScreenCastSession(this._session.session_id);
 
                 // Watch for the session ending
                 this._sessionClosedId = this._session.connect(
@@ -494,18 +370,17 @@ class Controller {
                         this._onSessionExpired.bind(this)
                     );
                 }
-
                 this._sessionStarting = false;
             }
+            return this._session;
         } catch (e) {
             logError(e);
-
             if (this._session !== null) {
                 this._session.destroy();
                 this._session = null;
             }
-
             this._sessionStarting = false;
+            throw e;
         }
     }
 
@@ -513,111 +388,81 @@ class Controller {
      * Pointer Events
      */
     movePointer(dx, dy) {
-        try {
-            if (dx === 0 && dy === 0)
-                return;
+        if (dx === 0 && dy === 0)
+            return;
 
-            this._ensureAdapter();
-            this._session.movePointer(dx, dy);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.movePointer(dx, dy))
+        .catch(e => debug(e));
     }
 
     pressPointer(button) {
-        try {
-            this._ensureAdapter();
-            this._session.pressPointer(button);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.pressPointer(button))
+        .catch(e => debug(e));
     }
 
     releasePointer(button) {
-        try {
-            this._ensureAdapter();
-            this._session.releasePointer(button);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.releasePointer(button))
+        .catch(e => debug(e));
     }
 
     clickPointer(button) {
-        try {
-            this._ensureAdapter();
-            this._session.clickPointer(button);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.clickPointer(button))
+        .catch(e => debug(e));
     }
 
     doubleclickPointer(button) {
-        try {
-            this._ensureAdapter();
-            this._session.doubleclickPointer(button);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.doubleclickPointer(button))
+        .catch(e => debug(e));
     }
 
     scrollPointer(dx, dy) {
         if (dx === 0 && dy === 0)
             return;
 
-        try {
-            this._ensureAdapter();
-            this._session.scrollPointer(dx, dy);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.scrollPointer(dx, dy))
+        .catch(e => debug(e));
     }
 
     /*
      * Keyboard Events
      */
     pressKeysym(keysym) {
-        try {
-            this._ensureAdapter();
-            this._session.pressKeysym(keysym);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.pressKeysym(keysym))
+        .catch(e => debug(e));
     }
 
     releaseKeysym(keysym) {
-        try {
-            this._ensureAdapter();
-            this._session.releaseKeysym(keysym);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.releaseKeysym(keysym))
+        .catch(e => debug(e));
     }
 
     pressreleaseKeysym(keysym) {
-        try {
-            this._ensureAdapter();
-            this._session.pressreleaseKeysym(keysym);
-        } catch (e) {
-            debug(e);
-        }
+        this._ensureAdapter()
+        .then(session => session?.pressreleaseKeysym(keysym))
+        .catch(e => debug(e));
     }
 
     /*
      * High-level keyboard input
      */
     pressKeys(input, modifiers) {
-        try {
-            this._ensureAdapter();
-
+        this._ensureAdapter()
+        .then(session => {
             if (typeof input === 'string') {
                 for (let i = 0; i < input.length; i++)
-                    this._session.pressKey(input[i], modifiers);
+                    session?.pressKey(input[i], modifiers);
             } else {
-                this._session.pressKey(input, modifiers);
+                session?.pressKey(input, modifiers);
             }
-        } catch (e) {
-            debug(e);
-        }
+        }).catch(e => debug(e));
     }
 
     destroy() {
@@ -638,9 +483,3 @@ class Controller {
         }
     }
 }
-
-
-/**
- * The service class for this component
- */
-var Component = Controller;

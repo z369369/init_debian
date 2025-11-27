@@ -1,0 +1,7 @@
+[Desktop Entry]
+Hidden=false
+Name=bluetooth
+Comment=
+Terminal=false
+Exec=/usr/bin/bluetoothctl connect 74:45:CE:6A:C3:FF
+Type=Application

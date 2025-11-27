@@ -20,14 +20,16 @@
 
 'use strict';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
+import Gio from 'gi://Gio';
+import Shell from 'gi://Shell';
+import Meta from 'gi://Meta';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as KeyboardManager from 'resource:///org/gnome/shell/misc/keyboardManager.js';
+import { getInputSourceManager } from 'resource:///org/gnome/shell/ui/status/keyboard.js';
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js';
 
-const { Gio, Meta, Shell } = imports.gi
-const Main = imports.ui.main;
 const SWITCH_SHORTCUT_NAME = 'switch-input-source'
 const SWITCH_SHORTCUT_NAME_BACKWARD = 'switch-input-source-backward'
-const KeyboardManager = imports.misc.keyboardManager;
 
 /**
  * Code below written by adapting 
@@ -35,84 +37,98 @@ const KeyboardManager = imports.misc.keyboardManager;
  * and specifically the function `InputSourceManager._modifiersSwitcher()` 
  * which is hackishly called when screenshotting (ie. GrabHelper activated) .
  */
-class Extension {
-    constructor() {
-        _log(`INITIALIZING`);
-    }
-
+export default class QuickLangSwitchExtension extends Extension {
     enable() {
-        _log(`ENABLING, bypassing language switcher popup.`);
-        const sourceman = imports.ui.status.keyboard.getInputSourceManager();
+        this._info(`ENABLING, bypassing language switcher popup.`);
+        const sourceman = getInputSourceManager();
+
         Main.wm.removeKeybinding(SWITCH_SHORTCUT_NAME);
-        sourceman._keybindingAction = Main.wm.addKeybinding(SWITCH_SHORTCUT_NAME,
-                              new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
-                              Meta.KeyBindingFlags.NONE,
-                              Shell.ActionMode.ALL,
-                              this._quickSwitchLayouts.bind(sourceman));
+        sourceman._keybindingAction = Main.wm.addKeybinding(
+            SWITCH_SHORTCUT_NAME,
+            new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
+            Meta.KeyBindingFlags.NONE,
+            Shell.ActionMode.ALL,
+            this._quickSwitchLayouts.bind(sourceman));
+
         Main.wm.removeKeybinding(SWITCH_SHORTCUT_NAME_BACKWARD);
-        sourceman._keybindingActionBackward = Main.wm.addKeybinding(SWITCH_SHORTCUT_NAME_BACKWARD,
-                              new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
-                              Meta.KeyBindingFlags.IS_REVERSED,
-                              Shell.ActionMode.ALL,
-                              this._quickSwitchLayouts.bind(sourceman));
+        sourceman._keybindingActionBackward = Main.wm.addKeybinding(
+            SWITCH_SHORTCUT_NAME_BACKWARD,
+            new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
+            Meta.KeyBindingFlags.IS_REVERSED,
+            Shell.ActionMode.ALL,
+            this._quickSwitchLayouts.bind(sourceman));
     }
 
     disable() {
-        _log(`DISABLING, restoring language switcher popup.`);
-        const sourceman = imports.ui.status.keyboard.getInputSourceManager();
+        this._info(`DISABLING, restoring language switcher popup.`);
+        const sourceman = getInputSourceManager();
+
         Main.wm.removeKeybinding(SWITCH_SHORTCUT_NAME);
-        sourceman._keybindingAction = Main.wm.addKeybinding(SWITCH_SHORTCUT_NAME,
-                              new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
-                              Meta.KeyBindingFlags.NONE,
-                              Shell.ActionMode.ALL,
-                              sourceman._switchInputSource.bind(sourceman));
-        
+        sourceman._keybindingAction = Main.wm.addKeybinding(
+            SWITCH_SHORTCUT_NAME,
+            new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
+            Meta.KeyBindingFlags.NONE,
+            Shell.ActionMode.ALL,
+            sourceman._switchInputSource.bind(sourceman));
+
         Main.wm.removeKeybinding(SWITCH_SHORTCUT_NAME_BACKWARD);
-        sourceman._keybindingActionBackward = Main.wm.addKeybinding(SWITCH_SHORTCUT_NAME_BACKWARD,
-                              new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
-                              Meta.KeyBindingFlags.IS_REVERSED,
-                              Shell.ActionMode.ALL,
-                              sourceman._switchInputSource.bind(sourceman));
+        sourceman._keybindingActionBackward = Main.wm.addKeybinding(
+            SWITCH_SHORTCUT_NAME_BACKWARD,
+            new Gio.Settings({ schema_id: "org.gnome.desktop.wm.keybindings" }),
+            Meta.KeyBindingFlags.IS_REVERSED,
+            Shell.ActionMode.ALL,
+            sourceman._switchInputSource.bind(sourceman));
     }
 
     /**
-     * Simplified array indexing logic of `InputSourceManager._modifiersSwitcher()`
-     * by assuming `_inputSources` indexed with conjecutive integers 
-     * (actually it is a dictionary with conjecutive stringified-integers as keys),
-     * added reverse cycling, and 
-     * stop returning any bool (was always true).
+     * Adapted from `InputSourceManager._modifiersSwitcher():
+     * - simplified array indexing logic by assuming`_inputSources` always indexed
+     *   with conjecutive integers without null gaps
+     *   (actually keys are sorted stringified ints like `{"1": ,..., "2": ...}`),
+     * - added reverse cycling,
+     * - stop returning any bool (was always true), and 
+     * - added warn/error logs.
      */
-    _quickSwitchLayouts(display, window, binding) {
+    _quickSwitchLayouts(...args) {
+        /* shell-v48 added `event` argument. */
+        const binding = args[args.length-1];
         const sources = this._inputSources;
         const nsources = Object.keys(sources).length;
-        if (nsources <= 1) {
-            _log(`WARN: Empty or singular inputSources list(x${nsources}) - doing nothing.`);
+        if (nsources === 0) {
+            this._warn(`Empty inputSources - doing nothing.`);
             KeyboardManager.releaseKeyboard();
+            return;
         }
-        const cycleDirection = binding.is_reversed()? -1: 1;
+        const dir = binding.is_reversed() ? -1 : 1;
+        const ci = this._currentSource ? this._currentSource.index : 0;
+        // Always add modulo to avoid negatives, tip: ((-1 % 4) = -1) + 4 = 3
+        const ni = (ci + dir + nsources) % nsources;
+        const nextSource = sources[ni];
 
-        let si = this._currentSource? this._currentSource.index: 0;
-        let n = 0;  // Counter to avoid infinite loop if array populated with nulls.
-        do {
-            // Always add modulo to avoid negatives, tip: ((-1 % 4) = -1) + 4 = 3
-            si = (si + cycleDirection + nsources) % nsources;
-            n++;
-        } while (!(sources[si]) && n < nsources);
-
-        const nextSource = sources[si];
         if (!nextSource) {
-            _log(`ERROR: cycle(${cycleDirection}x${n}) in x${nsources} inputSources(${JSON.stringify(sources)}) brought nothing.`);
+            this._error(
+                `Cycling ${cycleDirection} in ${nsources} inputSources(${JSON.stringify(sources)})`,
+                ` from ${ci}-->${ni} brought nothing.`);
             KeyboardManager.releaseKeyboard();
+            return;
         }
-        
-        nextSource.activate(true);
+
+        sources[ni].activate(true);
     }
-}
 
-function init() {
-    return new Extension();
-}
+    _log(logfunc, ...args) {
+        logfunc(`${this.metadata.uuid}:`, ...args);
+    }
 
-function _log(...args) {
-    log(`extension '${Me.metadata.name}': ` + args.join("\n"));
+    _info(...args) {
+        this._log(console.log, ...args);
+    }
+
+    _warn(...args) {
+        this._log(console.warn, ...args);
+    }
+
+    _error(...args) {
+        this._log(console.error, ...args);
+    }
 }
