@@ -7,7 +7,6 @@ ca-certificates #certification
 ccze #color for log
 chrome-gnome-shell # gnome shell connector for firefox
 curl #Used
-deborphan #Used
 dkms #for debian essential
 e2fsprogs #partition div tune2fs
 eza #alternaitve ls
@@ -48,10 +47,8 @@ lpr #printer driver
 make #Build
 meld #Winmerge
 mpv #video player
-nautilus-image-converter
 ncal #cli-calendar
 ncdu #du
-neofetch #pfetch alternative
 net-tools #Used
 network-manager-openvpn-gnome #vpn for gnome
 nmap #my network search
@@ -60,6 +57,7 @@ pandoc #file converter
 printer-driver-all #for debian printer
 pydf #df
 qemu-system-x86 #virt qemu
+gir1.2-gnomedesktop-3.0 #necessary for gnome
 qemu-utils #virt qemu
 radeontop #radeon gpu top
 rename # rename with perl
@@ -70,7 +68,6 @@ socat #mpv ipc shell script
 synaptic #Package manager
 syncthing
 timeshift #Backup, Restore
-tldr
 transmission #transmisson finish script
 transmission-cli #transmisson finish script
 transmission-gtk #transmisson finish script
@@ -81,8 +78,6 @@ wmctrl #move Workspace
 xclip #select the wayland text
 xinput #device list
 yaru-theme-icon #theme for folder icon
-ydotool #shortcut key customize
-ydotoold #shortcut key customize
 zoxide # alternative cd 
 
 *
