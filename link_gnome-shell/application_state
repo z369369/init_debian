@@ -5,10 +5,10 @@
     <application id="md.obsidian.Obsidian.desktop" score="171.912109375" last-seen="1764120847"/>
     <application id="org.gnome.gThumb.desktop" score="11.5" last-seen="1764216298"/>
     <application id="org.gnome.SystemMonitor.desktop" score="17" last-seen="1764144371"/>
-    <application id="page.codeberg.vendillah.GamepadMirror.desktop" score="4.75" last-seen="1763882485"/>
-    <application id="com.github.tchx84.Flatseal.desktop" score="38.75" last-seen="1763901456"/>
-    <application id="org.darktable.Darktable.desktop" score="0" last-seen="1763742494"/>
     <application id="org.kde.isoimagewriter.desktop" score="37" last-seen="1764188682"/>
+    <application id="org.darktable.Darktable.desktop" score="0" last-seen="1763742494"/>
+    <application id="com.github.tchx84.Flatseal.desktop" score="38.75" last-seen="1763901456"/>
+    <application id="page.codeberg.vendillah.GamepadMirror.desktop" score="4.75" last-seen="1763882485"/>
     <application id="code.desktop" score="81.578125" last-seen="1764220298"/>
     <application id="de.haeckerfelix.Shortwave.desktop" score="0" last-seen="1763811786"/>
     <application id="com.brave.Browser.desktop" score="46.875" last-seen="1763726178"/>
@@ -16,19 +16,19 @@
     <application id="io.github.giantpinkrobots.flatsweep.desktop" score="1.5" last-seen="1763809676"/>
     <application id="io.github.fabrialberio.pinapp.desktop" score="13.5" last-seen="1764030963"/>
     <application id="org.gnome.Settings.desktop" score="76.51171875" last-seen="1764144073"/>
-    <application id="org.gnome.Terminal.desktop" score="1101.0523491787735" last-seen="1764220951"/>
+    <application id="org.gnome.Terminal.desktop" score="1119.0523491787735" last-seen="1764221974"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="8" last-seen="1764127287"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="10.5" last-seen="1764217844"/>
     <application id="io.github.ryubing.Ryujinx.desktop" score="5127" last-seen="1764043803"/>
     <application id="org.gnome.DiskUtility.desktop" score="12" last-seen="1764187344"/>
     <application id="timeshift-gtk.desktop" score="5" last-seen="1764194680"/>
-    <application id="org.gnome.Nautilus.desktop" score="418.80641180826115" last-seen="1764217402"/>
+    <application id="org.gnome.Nautilus.desktop" score="418.80641180826115" last-seen="1764221409"/>
     <application id="com.valvesoftware.Steam.desktop" score="4217.169921875" last-seen="1764194481"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1764217844"/>
     <application id="google-chrome.desktop" score="28.75" last-seen="1763882324"/>
     <application id="org.gnome.Chess.desktop" score="51" last-seen="1763727899"/>
     <application id="net.sapples.LiveCaptions.desktop" score="0" last-seen="1764033546"/>
-    <application id="org.gnome.gedit.desktop" score="442.12053045346329" last-seen="1764220934"/>
-    <application id="firefox-esr.desktop" score="14091.604987738156" last-seen="1764220954"/>
+    <application id="org.gnome.gedit.desktop" score="463.12053045346329" last-seen="1764222015"/>
+    <application id="firefox-esr.desktop" score="14117.604987738156" last-seen="1764222028"/>
   </context>
 </application-state>
