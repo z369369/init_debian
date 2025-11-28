@@ -9,6 +9,7 @@ curl #Used
 dkms #for debian essential
 e2fsprogs #partition div tune2fs
 eza #alternaitve ls
+fastfetch
 fastboot #android unlock
 fd-find # with fzf find
 fdupes #duplicate file remove
@@ -23,6 +24,7 @@ gedit #gedit
 git #Used
 gnome-shell-extension-prefs #Gnome Extension
 gnome-tweaks #Gnome Extension
+gnome-usage
 gstreamer1.0-alsa #for debian alternative restrict extra
 gstreamer1.0-libav #for debian alternative restrict extra
 gstreamer1.0-plugins-ugly #for debian alternative restrict extra
@@ -46,6 +48,7 @@ lpr #printer driver
 make #Build
 meld #Winmerge
 mpv #video player
+micro
 ncal #cli-calendar
 ncdu #du
 net-tools #Used

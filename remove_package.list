@@ -28,6 +28,7 @@ gnome-software
 gnome-software-common
 gnome-software-plugin-flatpak
 gnome-software-plugin-snap
+gnome-text-editor
 gnome-sudoku
 gnome-taquin
 gnome-tetravex
