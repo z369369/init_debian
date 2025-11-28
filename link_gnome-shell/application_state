@@ -2,29 +2,30 @@
 <application-state>
   <context id="">
     <application id="abricotine.desktop" score="0" last-seen="1764299123"/>
-    <application id="io.github.fabrialberio.pinapp.desktop" score="14" last-seen="1764302861"/>
+    <application id="io.github.fabrialberio.pinapp.desktop" score="25" last-seen="1764348962"/>
+    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="3" last-seen="1764302945"/>
     <application id="org.gnome.FileRoller.desktop" score="28" last-seen="1764257748"/>
     <application id="google-chrome.desktop" score="28.75" last-seen="1763882324"/>
     <application id="io.github.flattool.Ignition.desktop" score="0" last-seen="1764295525"/>
     <application id="org.gnome.Shell.Extensions.desktop" score="8" last-seen="1764127287"/>
-    <application id="org.gnome.SystemMonitor.desktop" score="18" last-seen="1764258965"/>
     <application id="com.github.tchx84.Flatseal.desktop" score="0" last-seen="1764259000"/>
-    <application id="org.gnome.gedit.desktop" score="32" last-seen="1764299186"/>
-    <application id="org.gnome.Nautilus.desktop" score="625.80641180826115" last-seen="1764302948"/>
+    <application id="org.gnome.SystemMonitor.desktop" score="18" last-seen="1764258965"/>
+    <application id="org.gnome.gThumb.desktop" score="19" last-seen="1764327463"/>
+    <application id="org.gnome.gedit.desktop" score="41" last-seen="1764349752"/>
+    <application id="org.gnome.Nautilus.desktop" score="643.80641180826115" last-seen="1764348877"/>
     <application id="xdg-desktop-portal-gnome.desktop" score="0" last-seen="1764295641"/>
     <application id="io.github.ryubing.Ryujinx.desktop" score="4" last-seen="1764263652"/>
-    <application id="com.obsproject.Studio.desktop" score="12" last-seen="1764295662"/>
-    <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="3" last-seen="1764302945"/>
-    <application id="org.gnome.Terminal.desktop" score="1835.0523491787735" last-seen="1764303080"/>
+    <application id="com.obsproject.Studio.desktop" score="12" last-seen="1764349930"/>
+    <application id="org.gnome.Terminal.desktop" score="2038.0523491787735" last-seen="1764350168"/>
     <application id="md.obsidian.Obsidian.desktop" score="0" last-seen="1764263142"/>
     <application id="org.gnome.baobab.desktop" score="6" last-seen="1764223371"/>
-    <application id="synaptic.desktop" score="63" last-seen="1764302962"/>
+    <application id="synaptic.desktop" score="136" last-seen="1764350165"/>
     <application id="org.gnome.DiskUtility.desktop" score="12" last-seen="1764187344"/>
     <application id="com.github.qarmin.czkawka.desktop" score="0" last-seen="1764295737"/>
-    <application id="code.desktop" score="57" last-seen="1764302805"/>
-    <application id="timeshift-gtk.desktop" score="38" last-seen="1764302969"/>
+    <application id="code.desktop" score="62" last-seen="1764350043"/>
+    <application id="timeshift-gtk.desktop" score="49" last-seen="1764326398"/>
     <application id="org.gnome.Extensions.desktop" score="0" last-seen="1764250543"/>
-    <application id="org.gnome.Settings.desktop" score="91.51171875" last-seen="1764300969"/>
-    <application id="firefox-esr.desktop" score="14569.604987738156" last-seen="1764302808"/>
+    <application id="org.gnome.Settings.desktop" score="103.51171875" last-seen="1764324371"/>
+    <application id="firefox-esr.desktop" score="14945.604987738156" last-seen="1764350171"/>
   </context>
 </application-state>
