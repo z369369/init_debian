@@ -5,5 +5,5 @@ echo "============== [S] [ 3 / 6 ] Install - flatpak =============="
 flatpak --system remote-delete flathub
 
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y --user flathub $(grep -vE "^\s*#" install_normal.list | sed -e 's/#.*//'  | tr "\n" " " | cut -d '*' -f 2)
+flatpak install -y --user flathub $(grep -vE "^\s*#" install_package.list | sed -e 's/#.*//'  | tr "\n" " " | cut -d '*' -f 2)
 echo "============== [E] [ 3 / 6 ] Install - flatpak =============="

@@ -7,12 +7,13 @@
     <application id="org.gnome.SystemMonitor.desktop" score="20" last-seen="1764570936"/>
     <application id="com.brave.Browser.desktop" score="0" last-seen="1764495659"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1764566160"/>
-    <application id="org.gnome.gedit.desktop" score="60" last-seen="1764982067"/>
-    <application id="org.gnome.Nautilus.desktop" score="676.80641180826115" last-seen="1764981725"/>
+    <application id="org.gnome.gedit.desktop" score="64" last-seen="1764983040"/>
+    <application id="org.gnome.Nautilus.desktop" score="676.80641180826115" last-seen="1764982472"/>
     <application id="md.obsidian.Obsidian.desktop" score="4" last-seen="1764566765"/>
-    <application id="org.gnome.Terminal.desktop" score="2111.0523491787735" last-seen="1764982108"/>
-    <application id="code.desktop" score="18" last-seen="1764982013"/>
+    <application id="org.gnome.Terminal.desktop" score="2139.0523491787735" last-seen="1764983041"/>
+    <application id="code.desktop" score="94" last-seen="1764983104"/>
     <application id="timeshift-gtk.desktop" score="54" last-seen="1764910354"/>
-    <application id="firefox-esr.desktop" score="15707.604987738156" last-seen="1764982095"/>
+    <application id="org.gnome.Settings.desktop" score="5" last-seen="1764983105"/>
+    <application id="firefox-esr.desktop" score="15724.604987738156" last-seen="1764983043"/>
   </context>
 </application-state>
