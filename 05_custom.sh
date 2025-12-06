@@ -7,8 +7,6 @@ sed -i '1s/^/screenshot-directory=~\/Pictures\/mpv\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/ontop=yes\n/' ~/.config/mpv/mpv.conf
 sed -i '1s/^/on-all-workspaces=yes\n/' ~/.config/mpv/mpv.conf
 
-git clone https://github.com/Elagoht/nemo-copy-path ~/.local/share/nemo/actions
-
 echo "============== [S] [5-2 / 6] Service =============="
 
 sudo systemctl enable syncthing@lwh.service
