@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
+    <application id="org.gnome.Extensions.desktop" score="0" last-seen="1767620038"/>
     <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1767431872"/>
     <application id="org.kde.kdenlive.desktop" score="0" last-seen="1767350561"/>
     <application id="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop" score="9" last-seen="1767432286"/>
     <application id="org.gnome.tweaks.desktop" score="0" last-seen="1767557280"/>
     <application id="google-chrome.desktop" score="18" last-seen="1767530513"/>
     <application id="io.github.flattool.Ignition.desktop" score="1" last-seen="1767605653"/>
-    <application id="org.gnome.Shell.Extensions.desktop" score="7" last-seen="1767605739"/>
+    <application id="org.gnome.Shell.Extensions.desktop" score="7" last-seen="1767619084"/>
     <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1767431866"/>
-    <application id="org.gnome.gedit.desktop" score="86" last-seen="1767608178"/>
-    <application id="org.gnome.Nautilus.desktop" score="981.80641180826115" last-seen="1767608145"/>
-    <application id="org.gnome.Terminal.desktop" score="2515.0523491787735" last-seen="1767608190"/>
+    <application id="org.gnome.gedit.desktop" score="307" last-seen="1767619993"/>
+    <application id="org.gnome.Nautilus.desktop" score="987.80641180826115" last-seen="1767618138"/>
+    <application id="org.gnome.Usage.desktop" score="0" last-seen="1767619080"/>
+    <application id="org.gnome.Terminal.desktop" score="2532.0523491787735" last-seen="1767620038"/>
     <application id="synaptic.desktop" score="2" last-seen="1767605781"/>
     <application id="io.github.flattool.Warehouse.desktop" score="5" last-seen="1767600092"/>
     <application id="code.desktop" score="37" last-seen="1767608330"/>
-    <application id="com.valvesoftware.Steam.desktop" score="2599" last-seen="1767530572"/>
-    <application id="firefox-esr.desktop" score="22841.604987738156" last-seen="1767608310"/>
+    <application id="com.valvesoftware.Steam.desktop" score="2939" last-seen="1767618128"/>
+    <application id="firefox-esr.desktop" score="22928.604987738156" last-seen="1767619773"/>
     <application id="org.gnome.Settings.desktop" score="144" last-seen="1767600178"/>
   </context>
 </application-state>
