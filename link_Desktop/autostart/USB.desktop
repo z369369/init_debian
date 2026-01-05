@@ -1,7 +1,0 @@
-[Desktop Entry]
-Hidden=false
-Name=USB
-Comment=
-Terminal=true
-Exec=/home/lwh/.config/autostart/USB.ignition_delay.sh
-Type=Application

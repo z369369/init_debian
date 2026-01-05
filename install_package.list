@@ -5,6 +5,7 @@ bat #powerful cat
 build-essential #for debian essential 
 ca-certificates #certification
 ccze #color for log
+conky-all
 curl #Used
 dkms #for debian essential
 e2fsprogs #partition div tune2fs
