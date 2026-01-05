@@ -4,6 +4,12 @@ echo "============== [S] [ 4 / 6 ] Firewall =============="
 sudo ufw default deny incoming
 sudo ufw default deny outgoing
 
+#sunshine
+sudo ufw allow 47000:49000/tcp
+sudo ufw allow out 47000:49000/tcp
+sudo ufw allow 47000:49000/udp
+sudo ufw allow out 47000:49000/udp
+
 #gsconnect
 sudo ufw allow 1714:1764/tcp
 sudo ufw allow out 1714:1764/tcp
