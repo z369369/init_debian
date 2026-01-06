@@ -4,7 +4,7 @@ baobab #disk analyze
 bat #powerful cat
 build-essential #for debian essential 
 ca-certificates #certification
-ccze #color for log
+ccze #color for lo
 conky-all
 curl #Used
 dkms #for debian essential
