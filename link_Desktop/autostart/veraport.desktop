@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/wizvera/veraport/veraport
+Hidden=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
+Name=veraport
+Comment=veraport handler

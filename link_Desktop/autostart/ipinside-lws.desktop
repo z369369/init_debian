@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=3.0.0.1
+Exec=/opt/interezen/ipinside/LWSManager
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=IPinside-LWS
+Name=IPinside-LWS
+Comment[en_US]=Interezen IPinside-lws
+Comment=Interezen IPinside-lws
+

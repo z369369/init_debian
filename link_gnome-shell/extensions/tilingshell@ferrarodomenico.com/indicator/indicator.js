@@ -138,6 +138,9 @@ const _Indicator = class _Indicator extends PanelMenu.Button {
         this._editorDialog?.destroy();
         this._editorDialog = null;
       },
+      onReorderLayout: (fromIndex, toIndex) => {
+        GlobalState.get().swapLayouts(fromIndex, toIndex);
+      },
       path: this._path,
       legend: showLegend
     });
