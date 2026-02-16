@@ -110,6 +110,8 @@ sudo ufw allow out 47984:48010/tcp
 sudo ufw allow 47984:48010/udp
 sudo ufw allow out 47984:48010/udp
 
+#avahi daemon
+sudo ufw allow 5353/udp
 
 sudo ufw allow out on virbr0
 

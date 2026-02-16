@@ -1,18 +1,9 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="com.discordapp.Discord.desktop" score="12.5" last-seen="1769813291"/>
-    <application id="org.gnome.Nautilus.desktop" score="17.5" last-seen="1769861440"/>
-    <application id="org.gnome.Extensions.desktop" score="0" last-seen="1769809200"/>
-    <application id="org.gnome.Settings.desktop" score="16" last-seen="1769819827"/>
-    <application id="google-chrome.desktop" score="0" last-seen="1769863886"/>
-    <application id="firefox-esr.desktop" score="13839.302493869078" last-seen="1769863900"/>
-    <application id="org.gnome.gedit.desktop" score="266" last-seen="1769863498"/>
-    <application id="org.telegram.desktop.desktop" score="470.5" last-seen="1769855394"/>
-    <application id="org.gnome.Terminal.desktop" score="409.5" last-seen="1769861442"/>
-    <application id="code.desktop" score="1661" last-seen="1769863882"/>
-    <application id="org.libreoffice.LibreOffice.calc.desktop" score="0" last-seen="1769854514"/>
-    <application id="abricotine.desktop" score="0" last-seen="1769819943"/>
-    <application id="org.libreoffice.LibreOffice.desktop" score="0" last-seen="1769848128"/>
+    <application id="org.gnome.Nautilus.desktop" score="27.5" last-seen="1771236427"/>
+    <application id="org.gnome.Terminal.desktop" score="559.5" last-seen="1771236729"/>
+    <application id="org.gnome.Settings.desktop" score="1" last-seen="1771236565"/>
+    <application id="firefox-esr.desktop" score="15653.302493869078" last-seen="1771236643"/>
   </context>
 </application-state>

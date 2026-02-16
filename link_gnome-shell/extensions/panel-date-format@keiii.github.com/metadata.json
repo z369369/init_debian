@@ -12,5 +12,6 @@
   ],
   "url": "https://github.com/KEIII/gnome-shell-panel-date-format",
   "uuid": "panel-date-format@keiii.github.com",
-  "version": 22
+  "version": 23,
+  "version-name": "23"
 }
