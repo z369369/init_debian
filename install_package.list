@@ -89,11 +89,9 @@ ca.desrt.dconf-editor
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.discordapp.Discord
-com.getpostman.Postman
 com.github.jeromerobert.pdfarranger
 com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
-com.google.AndroidStudio
 com.heroicgameslauncher.hgl
 com.icons8.Lunacy
 com.obsproject.Studio
@@ -135,7 +133,6 @@ org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.olivevideoeditor.Olive
 org.pulseaudio.pavucontrol
-org.remmina.Remmina
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 page.codeberg.Imaginer.Imaginer
