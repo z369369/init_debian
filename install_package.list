@@ -1,6 +1,4 @@
-adb		 #android adb
 apg		#password
-baobab #disk analyze
 bat #powerful cat
 build-essential #for debian essential 
 ca-certificates #certification
@@ -11,7 +9,6 @@ dkms #for debian essential
 e2fsprogs #partition div tune2fs
 eza #alternaitve ls
 fastfetch
-fastboot #android unlock
 fd-find # with fzf find
 fdupes #duplicate file remove
 firefox-esr #for debian
@@ -50,7 +47,6 @@ make #Build
 meld #Winmerge
 mpv #video player
 micro
-ncal #cli-calendar
 ncdu #du
 net-tools #Used
 network-manager-openvpn-gnome #vpn for gnome
@@ -62,7 +58,6 @@ pydf #df
 qemu-system-x86 #virt qemu
 gir1.2-gnomedesktop-3.0 #necessary for gnome
 qemu-utils #virt qemu
-radeontop #radeon gpu top
 rename # rename with perl
 ripgrep # with fzf find grep
 rsync #Used

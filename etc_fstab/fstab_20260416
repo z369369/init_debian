@@ -1,0 +1,18 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme1n1p2 during installation
+UUID=a52b4c5b-19b7-4f02-bec7-4478ebf26ded /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/nvme1n1p1 during installation
+UUID=AC93-46A0  /boot/efi       vfat    umask=0077      0       1
+# /home was on /dev/nvme1n1p3 during installation
+UUID=9b341026-a8c9-4d19-aa95-04aabba89212 /home           ext4    defaults        0       2
+# /media/lwh/lwh_backup was on /dev/nvme0n1p1 during installation
+UUID=a5ec5a70-2da9-4526-9707-3e241619daee /media/lwh/lwh_backup ext4 defaults 0 2

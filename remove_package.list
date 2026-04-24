@@ -18,6 +18,7 @@ gnome-games
 gnome-klotski
 gnome-logs
 gnome-mahjongg
+gnome-maps
 gnome-mines
 gnome-nibbles
 gnome-robots
@@ -50,3 +51,4 @@ tali
 tasksel
 tasksel-data
 thunderbird
+totem
