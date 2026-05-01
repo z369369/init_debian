@@ -17,6 +17,7 @@ tags: Linux
     - sudo 
     - git
         
+        
 ## Installation
 ```
 git clone https://github.com/z369369/init_debian.git ~/git/init_debian
