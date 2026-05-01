@@ -1,86 +1,7 @@
-apg		#password
-bat #powerful cat
-build-essential #for debian essential 
-ca-certificates #certification
-ccze #color for lo
-conky-all
-curl #Used
-dkms #for debian essential
-e2fsprogs #partition div tune2fs
-eza #alternaitve ls
-fastfetch
-fd-find # with fzf find
-fdupes #duplicate file remove
-firefox-esr #for debian
-firefox-esr-l10n-ko #for debian
-flameshot #ctrl capture
-fonts-crosextra-caladea #for debian extra ms font
-fonts-nanum #
-fonts-noto-cjk
-fzf #dependency ani-cli, dra-cla
-gedit #gedit
-git #Used
-gnome-shell-extension-prefs #Gnome Extension
-gnome-tweaks #Gnome Extension
-gnome-usage
-gstreamer1.0-alsa #for debian alternative restrict extra
-gstreamer1.0-libav #for debian alternative restrict extra
-gstreamer1.0-plugins-ugly #for debian alternative restrict extra
-gstreamer1.0-vaapi #for debian alternative restrict extra
-gthumb #Used
-gufw #Used Firewall GUI
-hardinfo #Used 
-htop #Used
-ibus-hangul #support ime hangul 
-imagemagick #Image converter
-imwheel #Mouse wheel scroll
-incron #Filesystem crontab
-jq #json
-libavcodec-extra #for debian alternative restrict extra
-libnotify-bin #debian gnome notify
-libopengl0 # run appimage
-libqt5svg5 #JPG to SVG
-libvirt-daemon-system #virt qemu
-libfuse2t64 #appimage excuter
-lpr #printer driver
-make #Build
-meld #Winmerge
-mpv #video player
-micro
-ncdu #du
-net-tools #Used
-network-manager-openvpn-gnome #vpn for gnome
-nmap #my network search
-openssh-server #ssh
-pandoc #file converter
-printer-driver-all #for debian printer
-pydf #df
-qemu-system-x86 #virt qemu
-gir1.2-gnomedesktop-3.0 #necessary for gnome
-qemu-utils #virt qemu
-rename # rename with perl
-ripgrep # with fzf find grep
-rsync #Used
-rsyslog #log
-socat #mpv ipc shell script
-synaptic #Package manager
-syncthing
-timeshift #Backup, Restore
-transmission #transmisson finish script
-transmission-cli #transmisson finish script
-transmission-gtk #transmisson finish script
-ufw #Firewall
-wget #Download
-wl-clipboard #xwayland clipboard copy paste
-wmctrl #move Workspace
-xclip #select the wayland text
-xinput #device list
-yaru-theme-icon #theme for folder icon
-zoxide # alternative cd 
+firefox-esr
 
 *
 
-ca.desrt.dconf-editor
 com.belmoussaoui.Decoder
 com.boxy_svg.BoxySVG
 com.discordapp.Discord
@@ -98,37 +19,40 @@ de.haeckerfelix.Shortwave
 fr.handbrake.ghb
 fr.natron.Natron
 io.dbeaver.DBeaverCommunity
-io.github.aandrew_me.ytdn
 io.github.fabrialberio.pinapp
 io.github.flattool.Ignition
+io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
-io.github.peazip.PeaZip
+io.github.ryubing.Ryujinx
+io.github.vikdevelop.SaveDesktop
+io.qt.QtCreator
 md.obsidian.Obsidian
 me.iepure.devtoolbox
 net.lutris.Lutris
 net.sapples.LiveCaptions
-net.sourceforge.mcomix
+net.zdechov.app.x2048
 nl.hjdskes.gcolor3
 org.atheme.audacious
 org.blender.Blender
 org.darktable.Darktable
-org.freecadweb.FreeCAD
+org.freecad.FreeCAD
 org.gimp.GIMP
+org.gnome.Chess
 org.gnome.Contacts
 org.gnome.design.Contrast
 org.gnome.design.IconLibrary
+org.gnome.meld
 org.gnome.seahorse.Application
 org.inkscape.Inkscape
 org.kde.isoimagewriter
 org.kde.kdenlive
 org.kde.kolourpaint
 org.kde.krita
-org.kde.okular
 org.libreoffice.LibreOffice
-org.nomacs.ImageLounge
+org.libretro.RetroArch
 org.olivevideoeditor.Olive
-org.pulseaudio.pavucontrol
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
+org.videolan.VLC
 page.codeberg.Imaginer.Imaginer
 page.codeberg.libre_menu_editor.LibreMenuEditor
