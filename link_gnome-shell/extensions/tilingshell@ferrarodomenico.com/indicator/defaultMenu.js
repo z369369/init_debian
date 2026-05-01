@@ -14,7 +14,6 @@ import LayoutButton from "./layoutButton.js";
 import { logger } from "../utils/logger.js";
 import { registerGObjectClass } from "../utils/gjs.js";
 import { _ } from "../translations.js";
-import { openPrefs } from "../polyfill.js";
 import { widgetOrientation } from "../utils/gnomesupport.js";
 import { createButton, createIconButton } from "./utils.js";
 const debug = logger("DefaultMenu");
@@ -122,9 +121,11 @@ class DefaultMenu {
   _container;
   _scalingFactor;
   _children;
-  constructor(indicator, enableScalingFactor) {
+  _openPrefsFn;
+  constructor(indicator, enableScalingFactor, openPrefsFn) {
     this._indicator = indicator;
     this._signals = new SignalHandling();
+    this._openPrefsFn = openPrefsFn;
     this._children = [];
     const layoutsPopupMenu = new PopupMenu.PopupBaseMenuItem({
       style_class: "indicator-menu-item"
@@ -317,7 +318,7 @@ class DefaultMenu {
       this._indicator.path
     );
     prefsBtn.connect("clicked", () => {
-      openPrefs();
+      this._openPrefsFn();
       this._indicator.menu.toggle();
     });
     buttonsBoxLayout.add_child(prefsBtn);

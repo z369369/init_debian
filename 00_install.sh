@@ -19,6 +19,6 @@ echo -e "  Start Install..."
 ./04_firewall.sh
 ./05_custom.sh $(whoami)
 ./06_custom_link.sh $(whoami)
-./07_remove_trash.sh
+
 
 echo "  All done!! Need to Reboot"

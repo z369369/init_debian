@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="org.gnome.Nautilus.desktop" score="135" last-seen="1777032423"/>
-    <application id="org.gnome.Settings.desktop" score="26" last-seen="1776746810"/>
+    <application id="org.gnome.Nautilus.desktop" score="156" last-seen="1777349831"/>
+    <application id="org.gnome.Meld.desktop" score="41" last-seen="1777121785"/>
+    <application id="org.gnome.Settings.desktop" score="30" last-seen="1777349607"/>
     <application id="google-chrome.desktop" score="59" last-seen="1776994893"/>
-    <application id="firefox-esr.desktop" score="20383.30249386908" last-seen="1777032326"/>
+    <application id="org.gnome.Terminal.desktop" score="412" last-seen="1777349811"/>
+    <application id="org.gnome.gedit.desktop" score="255" last-seen="1777121339"/>
     <application id="code.desktop" score="5" last-seen="1776799199"/>
-    <application id="org.gnome.gedit.desktop" score="255" last-seen="1777032426"/>
+    <application id="firefox-esr.desktop" score="20852.30249386908" last-seen="1777349679"/>
+    <application id="synaptic.desktop" score="153" last-seen="1777291062"/>
+    <application id="gnome-wifi-panel.desktop" score="0" last-seen="0"/>
     <application id="org.gnome.gThumb.desktop" score="2" last-seen="1777030832"/>
-    <application id="synaptic.desktop" score="138" last-seen="1777032422"/>
-    <application id="org.gnome.Terminal.desktop" score="361" last-seen="1777032616"/>
   </context>
 </application-state>
