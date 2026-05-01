@@ -9,7 +9,6 @@ sudo apt install --no-install-recommends
 
 sudo apt install --no-install-recommends xfce4-session xfce4-panel xfwm4 xfce4-settings xfce4-terminal xfce4-appfinder xfce4-screenshooter 
 
-
 sudo apt install --no-install-recommends 
     pipewire-audio 
     wireplumber 
