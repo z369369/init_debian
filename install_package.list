@@ -1,4 +1,25 @@
+conky-all
+curl
+curl
+devilspie2
+eza
+fcitx5
 firefox-esr
+flatpak
+fonts-nanum
+fonts-noto-cjk
+fzf
+git
+htop
+jq
+mpv
+ncdu
+openssh-server
+printer-driver-splix
+pydf
+syncthing
+xfce4-mount-plugin
+zoxide
 
 *
 
