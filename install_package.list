@@ -17,6 +17,9 @@ ncdu
 openssh-server
 printer-driver-splix
 pydf
+qemu-system-gui
+qemu-system-x86 
+qemu-utils
 syncthing
 xfce4-mount-plugin
 zoxide
