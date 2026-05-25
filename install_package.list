@@ -1,8 +1,6 @@
 conky-all
 curl
-curl
 devilspie2
-eza
 fcitx5
 firefox-esr
 flatpak
@@ -22,12 +20,10 @@ qemu-system-x86
 qemu-utils
 syncthing
 xfce4-mount-plugin
-zoxide
 
 *
 
 com.belmoussaoui.Decoder
-com.boxy_svg.BoxySVG
 com.discordapp.Discord
 com.github.jeromerobert.pdfarranger
 com.github.qarmin.czkawka
@@ -75,6 +71,7 @@ org.kde.krita
 org.libreoffice.LibreOffice
 org.libretro.RetroArch
 org.olivevideoeditor.Olive
+org.recoll.recoll
 org.sqlitebrowser.sqlitebrowser
 org.telegram.desktop
 org.videolan.VLC
