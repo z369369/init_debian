@@ -1,7 +1,0 @@
-[Desktop Entry]
-Hidden=false
-Name=conky
-Comment=
-Terminal=false
-Exec=conky --pause=10
-Type=Application
