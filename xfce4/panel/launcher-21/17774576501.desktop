@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=toggle_outgoing
+Comment=
+Exec=/home/lwh/Desktop/bin/toggle_outgoing.sh
+Icon=dialog-password
+Path=
+Terminal=false
+StartupNotify=false

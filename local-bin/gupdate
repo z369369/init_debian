@@ -1,0 +1,36 @@
+#!/bin/bash
+declare -a folders=()
+
+# Loop through the folders in the /home/lwh folder
+for dir in /home/lwh/git/*; do
+
+  # Check if the folder name contains "zzz_"
+  if [[ $dir =~ zzz_ ]]; then
+
+    # Add the folder name to the folders array
+    folders+=($dir)
+  fi
+done
+
+RED='\033[1;33m'
+GREEN='\033[1;32m'
+NC='\033[0m' # No Color
+
+# Loop through the folders
+for folder in "${folders[@]}"
+do
+	printf "${RED}GIT refresh${NC} : ${GREEN}$folder${NC}\n"
+	cd $folder
+	git reset --hard HEAD
+	git pull
+	echo ""
+done
+
+cp -f ~/git/zzz_ani-cli/ani-cli ~/.local/bin/ani-cli
+cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
+cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
+cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
+
+#sed -i 's/base_url="https:\/\/asianhdplay.*"/base_url="https:\/\/asianhdplay.org"/' ~/Desktop/bin/dra-cla
+
+#rsync -a ~/git/init_debian/copy/home/lwh/ ~/

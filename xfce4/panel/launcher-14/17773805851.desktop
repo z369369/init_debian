@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=toggle_blue
+Comment=
+Exec=/home/lwh/Desktop/bin/toggle_bluetooth.sh
+Icon=audio-x-generic
+Path=
+Terminal=true
+StartupNotify=false
