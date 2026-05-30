@@ -33,6 +33,9 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696112014171
+    "/home/lwh/Desktop/gemini_restore.sh":
+      row: 6
+      col: 0
     "/home/lwh/Desktop/desktop_flatpak":
       row: 3
       col: 0
@@ -67,6 +70,9 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
+    "/home/lwh/Desktop/gemini_backup.sh":
+      row: 0
+      col: 0
     "/home/lwh/Desktop/desktop_usr":
       row: 5
       col: 0
