@@ -5,7 +5,7 @@ alias:
 tags: Linux
 ---
 
-# Debian 12 Gnome 43 custom installation
+# Debian xfce custom installation
 
 1. Clean up Default unnecessary apps and services.
 2. Install Flatpak and APT packages for me.
