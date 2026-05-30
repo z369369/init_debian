@@ -17,7 +17,7 @@ echo "Check.. Sudo Key file Exist.."
 if [ -e ~/.key ]; then
   echo "File .key already exists!"
 else
-  echo "Enter the Sudo password: "	
+  echo "Enter the Sudo key: "	
   read v_pwd
   echo $v_pwd >> ~/.key
 fi
