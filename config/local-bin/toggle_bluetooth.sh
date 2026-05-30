@@ -5,13 +5,13 @@
 cat /home/lwh/.key | sudo -S bluetoothctl power off
 
 # Sleep for 10 seconds
-sleep 2
+sleep 1
 
 # Turn on Bluetooth
 cat /home/lwh/.key | sudo -S bluetoothctl power on
 
 bluetoothctl disconnect 74:45:CE:6A:C3:FF
-sleep 2
+sleep 1
 
 bluetoothctl trust 74:45:CE:6A:C3:FF
 bluetoothctl connect 74:45:CE:6A:C3:FF

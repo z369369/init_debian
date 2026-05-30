@@ -2,7 +2,7 @@
 
 set -e
 
-BACKUP_DIR="/home/lwh/git/init_debian"
+BACKUP_DIR="/home/lwh/git/init_debian/config"
 echo "=========================================="
 echo " 고도화된 시스템 구성 백업을 시작합니다."
 echo "=========================================="
@@ -66,6 +66,34 @@ fi
 if [ -d "$HOME/.config/xfce4" ]; then
     echo "[6/6] XFCE4 데스크톱 테마 및 패널 설정 백업 중..."
     rsync -av --delete "$HOME/.config/xfce4/" "$BACKUP_DIR/xfce4/"
+fi
+
+# 7. UFW 방화벽 설정 백업
+if [ -d "/etc/ufw" ]; then
+    echo "[7/8] UFW 방화벽 규칙 및 설정 백업 중..."
+    mkdir -p "$BACKUP_DIR/ufw"
+    # 사용자 정의 규칙 파일 및 기본 구성 파일 복사
+    sudo cp /etc/ufw/user.rules "$BACKUP_DIR/ufw/" 2>/dev/null || true
+    sudo cp /etc/ufw/user6.rules "$BACKUP_DIR/ufw/" 2>/dev/null || true
+    sudo cp /etc/ufw/ufw.conf "$BACKUP_DIR/ufw/" 2>/dev/null || true
+    
+    # Git 관리를 위해 백업된 파일의 소유권을 현재 사용자로 변경
+    sudo chown -R $(whoami):$(whoami) "$BACKUP_DIR/ufw"
+else
+    echo "[7/8] UFW가 설치되어 있지 않아 건너뜁니다."
+fi
+
+
+# 8. SSHD 서버 설정 백업
+if [ -f "/etc/ssh/sshd_config" ]; then
+    echo "[8/8] SSHD 서버 설정 파일 백업 중..."
+    mkdir -p "$BACKUP_DIR/sshd"
+    sudo cp /etc/ssh/sshd_config "$BACKUP_DIR/sshd/"
+    
+    # 소유권 변경
+    sudo chown -R $(whoami):$(whoami) "$BACKUP_DIR/sshd"
+else
+    echo "[8/8] SSHD 설정 파일을 찾을 수 없습니다."
 fi
 
 echo "=========================================="

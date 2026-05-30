@@ -23,26 +23,26 @@ mv *.pdf *.doc *.ppt *.xls *.xlsx ~/Documents 2> /dev/null
 mv *.iso ~/Downloads/iso 2> /dev/null
 
 
-rsync -a ~/.bash* /media/lwh/lwh_backup
-rsync -a ~/.conkyrc /media/lwh/lwh_backup
-rsync -a ~/.config /media/lwh/lwh_backup
-rsync -a ~/.key /media/lwh/lwh_backup
-rsync -a ~/.mozilla /media/lwh/lwh_backup
-rsync -a ~/.ssh /media/lwh/lwh_backup
-rsync -a ~/.xfce4 /media/lwh/lwh_backup
-rsync -a ~/.xprofile /media/lwh/lwh_backup
+rsync -a --delete ~/.bash* /media/lwh/lwh_backup
+rsync -a --delete ~/.conkyrc /media/lwh/lwh_backup
+rsync -a --delete ~/.config /media/lwh/lwh_backup
+rsync -a --delete ~/.key /media/lwh/lwh_backup
+rsync -a --delete ~/.mozilla /media/lwh/lwh_backup
+rsync -a --delete ~/.ssh /media/lwh/lwh_backup
+rsync -a --delete ~/.xfce4 /media/lwh/lwh_backup
+rsync -a --delete ~/.xprofile /media/lwh/lwh_backup
 
-rsync -a ~/.fonts /media/lwh/lwh_backup
-rsync -a ~/.icons /media/lwh/lwh_backup
-rsync -a ~/.themes /media/lwh/lwh_backup
+rsync -a --delete ~/.fonts /media/lwh/lwh_backup
+rsync -a --delete ~/.icons /media/lwh/lwh_backup
+rsync -a --delete ~/.themes /media/lwh/lwh_backup
 
-rsync -a ~/Desktop /media/lwh/lwh_backup
-rsync -a ~/git /media/lwh/lwh_backup
-rsync -a ~/phone /media/lwh/lwh_backup
-rsync -a ~/Downloads/program* /media/lwh/lwh_backup/Downloads
+rsync -a --delete ~/Desktop /media/lwh/lwh_backup
+rsync -a --delete ~/git /media/lwh/lwh_backup
+rsync -a --delete ~/phone /media/lwh/lwh_backup
+rsync -a --delete ~/Downloads/program* /media/lwh/lwh_backup/Downloads
 
 #rsync -av --progress --dry-run \
-rsync -a \
+rsync -a --delete \
 --exclude='share/Trash/' \
 --exclude='share/flatpak/' \
 ~/.local/ /media/lwh/lwh_backup/.local
