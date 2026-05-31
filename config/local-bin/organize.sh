@@ -8,7 +8,7 @@ cd ~/Downloads
 mv *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
 
 # Image Files
-mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "~/Pictures/Screenshots" 2> /dev/null
+mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
 
 # Audio Files 
 mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
