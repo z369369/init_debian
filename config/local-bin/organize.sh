@@ -47,17 +47,7 @@ rsync -a --delete \
 --exclude='share/flatpak/' \
 ~/.local/ /media/lwh/lwh_backup/.local
 
-
-#obs not work
-#https://unix.stackexchange.com/questions/552688/is-it-possible-to-roll-back-a-flatpak-update
-#flatpak remote-info --log flathub com.obsproject.Studio
-#cat ~/.key | sudo -S flatpak update -y --commit=694f40fda5aea03f5daf53db094cdcc5c29e62fa507d49d5bcfe399c55809ecd com.obsproject.Studio
-
-
 cat ~/.key | sudo -S rsync -a --delete /etc/ /media/lwh/lwh_backup/etc/
-
-#dconf dump / > ~/git/init_debian/gnome-shell/dconf_backup
-#dconf load / < ~/git/init_debian/gnome-shell/dconf_backup
 
 #python
 python3 ~/Desktop/bin/pyauto/dup_remove.py
