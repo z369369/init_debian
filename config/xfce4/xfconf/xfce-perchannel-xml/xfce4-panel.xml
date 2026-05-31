@@ -124,7 +124,7 @@
       </property>
       <property name="button-title" type="uint" value="2"/>
       <property name="appearance" type="uint" value="0"/>
-      <property name="ask-confirmation" type="bool" value="false"/>
+      <property name="ask-confirmation" type="bool" value="true"/>
     </property>
     <property name="plugin-10" type="string" value="launcher">
       <property name="items" type="array">
@@ -186,8 +186,8 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="xfce-keyboard-settings.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
@@ -204,6 +204,13 @@
         <value type="string" value="xfce-settings-manager.desktop"/>
       </property>
       <property name="favorites-in-recent" type="bool" value="true"/>
+      <property name="show-command-shutdown" type="bool" value="true"/>
+      <property name="show-command-restart" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
+      <property name="show-command-logout" type="bool" value="false"/>
+      <property name="show-command-lockscreen" type="bool" value="false"/>
+      <property name="command-restart" type="string" value="xfce4-session-logout --reboot --fast"/>
+      <property name="command-shutdown" type="string" value="xfce4-session-logout --halt --fast --no-save"/>
     </property>
     <property name="plugin-17" type="string" value="xfce4-mount-plugin"/>
     <property name="plugin-1" type="string" value="notification-plugin"/>
