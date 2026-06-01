@@ -22,5 +22,4 @@ tags: Linux
 ```
 git clone https://github.com/z369369/init_debian.git ~/git/init_debian
 cd ~/git/init_debian
-./00_install.sh
 ```
