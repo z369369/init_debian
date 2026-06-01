@@ -106,7 +106,7 @@ cd ..
 
 git add -A
 git commit -m "feat: 백업 데이터 업데이트"
-git push origin main
+git push -v origin main
 
 echo "=========================================="
 echo " git 반영 완료 "
