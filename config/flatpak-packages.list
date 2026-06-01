@@ -4,7 +4,6 @@ com.github.jeromerobert.pdfarranger
 com.github.qarmin.czkawka
 com.github.tchx84.Flatseal
 com.heroicgameslauncher.hgl
-com.icons8.Lunacy
 com.obsproject.Studio
 com.redis.RedisInsight
 com.sweethome3d.Sweethome3d
@@ -19,10 +18,8 @@ io.github.flattool.Ignition
 io.github.flattool.Warehouse
 io.github.giantpinkrobots.flatsweep
 io.github.ryubing.Ryujinx
-io.github.vikdevelop.SaveDesktop
 io.qt.QtCreator
 md.obsidian.Obsidian
-me.iepure.devtoolbox
 net.lutris.Lutris
 net.sapples.LiveCaptions
 net.zdechov.app.x2048
