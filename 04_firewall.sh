@@ -99,6 +99,7 @@ sudo ufw allow out to any port 33434:33524 proto udp
 # ssh
 sudo ufw allow 37622
 sudo ufw allow out 37622
+sudo ufw allow out 22
 
 #torrent port
 sudo ufw allow 51413
