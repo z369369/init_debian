@@ -186,8 +186,8 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="gufw.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="gufw.desktop"/>
         <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
         <value type="string" value="com.usebottles.bottles.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
