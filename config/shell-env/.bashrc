@@ -86,6 +86,33 @@ if ! shopt -oq posix; then
   fi
 fi
 
+btrfs-scrub() {
+    # 1. 루트 권한으로 스크럽 시작
+    echo " Btrfs 스크럽을 시작합니다..."
+    sudo btrfs scrub start / || return 1
+
+    sleep 2
+
+    # 2. 스크럽이 진행 중인 동안 루프 확인 (30초 간격)
+    echo " 스크럽 진행 중... 완료되면 알림을 보냅니다."
+    while sudo btrfs scrub status / | grep -q "status:[[:space:]]*running"; do
+        sleep 30
+    done
+
+    # 3. 최종 상태 가져오기
+    local result
+    result=$(sudo btrfs scrub status /)
+
+    # 4. 에러 여부 확인 및 알림 발송
+    if echo "$result" | grep -q "no errors found"; then
+        notify-send -u normal -i drive-harddisk "Btrfs 스크럽 완료" "모든 데이터가 안전합니다.\n에러가 발견되지 않았습니다."
+        echo " 스크럽 완료: 에러 없음."
+    else
+        notify-send -u critical -i dialog-error "Btrfs 스크럽 경고" "스크럽은 완료되었으나 에러가 발견되었습니다!\n'sudo btrfs scrub status /'를 확인하세요."
+        echo "⚠️ 스크럽 완료: 에러 발생! 상태를 확인하세요."
+    fi
+}
+
 ge() {
     # 입력된 경로가 절대 경로가 아니면 현재 디렉토리를 포함한 절대 경로로 변환
     local FILE_PATH
@@ -147,6 +174,7 @@ alias r="source ~/.bashrc"
 alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
+
 alias tcreate='cat ~/.key | sudo -S timeshift --create --comments'
 alias tlist='cat ~/.key | sudo -S timeshift --list'
 alias top='htop'
