@@ -186,16 +186,16 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="gufw.desktop"/>
         <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
         <value type="string" value="com.usebottles.bottles.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
         <value type="string" value="io.github.flattool.Warehouse.desktop"/>
-        <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
-        <value type="string" value="org.freecad.FreeCAD.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
