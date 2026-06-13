@@ -24,6 +24,7 @@
         <value type="int" value="22"/>
         <value type="int" value="2"/>
         <value type="int" value="12"/>
+        <value type="int" value="20"/>
         <value type="int" value="8"/>
         <value type="int" value="15"/>
         <value type="int" value="4"/>
@@ -31,7 +32,6 @@
         <value type="int" value="19"/>
         <value type="int" value="6"/>
         <value type="int" value="1"/>
-        <value type="int" value="20"/>
       </property>
       <property name="mode" type="uint" value="0"/>
       <property name="enable-struts" type="bool" value="true"/>
@@ -186,16 +186,16 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="org.xfce.mousepad-settings.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="com.vysp3r.ProtonPlus.desktop"/>
         <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="syncthing-start.desktop"/>
         <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
         <value type="string" value="org.gnome.meld.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
-        <value type="string" value="xfce-keyboard-settings.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="gufw.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
