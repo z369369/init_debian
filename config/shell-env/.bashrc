@@ -113,7 +113,7 @@ ripfzf() {
 }
 
 pw() {
-    apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*+,-./:;<=>?[\\]^_`{|}~'
+    apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*%&+,-./:;<=>?[\\]^`{|}~'
 }
 
 alias asearch='cat ~/.key | sudo -S apt list'
@@ -157,7 +157,8 @@ alias vout='deactivate'
 
 alias tui='openclaw tui'
 
-export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
+#export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
+export FZF_DEFAULT_COMMAND="fdfind -t f "
 export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}' 
 --preview-window right:60%
 --bind 'ctrl-/:toggle-preview'
