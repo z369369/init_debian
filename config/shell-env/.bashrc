@@ -116,7 +116,6 @@ pw() {
     apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*%&+,-./:;<=>?[\\]^`{|}~'
 }
 
-alias asearch='cat ~/.key | sudo -S apt list'
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
