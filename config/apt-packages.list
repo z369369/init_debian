@@ -49,6 +49,7 @@ engrampa
 fastfetch
 fcitx5
 fcitx5-hangul
+fd-find
 fdisk
 file
 findutils
@@ -223,6 +224,7 @@ qemu-utils
 quodlibet
 readline-common
 reportbug
+ripgrep
 seahorse
 sed
 sensible-utils

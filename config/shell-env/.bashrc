@@ -139,7 +139,6 @@ alias fupdate2='flatpak update --user --assumeyes && flatpak uninstall --unused 
 alias myip='curl ifconfig.me;echo ""'
 alias nano='micro'
 
-
 alias r="source ~/.bashrc"
 alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
@@ -158,18 +157,14 @@ alias vout='deactivate'
 
 alias tui='openclaw tui'
 
-
-#export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
-#export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}' 
-#--preview-window right:60%
-#--bind 'ctrl-/:toggle-preview'
-#--bind 'ctrl-e:execute(code {})'
-#--bind 'ctrl-g:execute(gedit {})'
-#--bind 'enter:become(micro {1} +{2})'
-#"
-export EDITOR='micro'
-export VISUAL='micro'
-
+export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
+export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}' 
+--preview-window right:60%
+--bind 'ctrl-/:toggle-preview'
+--bind 'ctrl-e:execute(code {})'
+--bind 'ctrl-g:execute(gedit {})'
+--bind 'enter:become(micro {1} +{2})'
+"
 
 bind -x '"\C-f": fzf --layout=reverse'
 bind -x '"\C-r": ripfzf " "'
@@ -177,6 +172,10 @@ bind -x '"\C-r": ripfzf " "'
 #/home/lwh/.local/bin/check_debian_eol_curl.sh
 
 export PATH="$HOME/opt/node/node-v24.13.0-linux-x64/bin:$HOME/.local/bin:$PATH"
+
+export MOZ_CRASHREPORTER_DISABLE=1
+export EDITOR='micro'
+export VISUAL='micro'
 
 #zoxide
 #eval "$(zoxide init bash)"
