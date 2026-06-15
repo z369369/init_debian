@@ -60,7 +60,7 @@
     <property name="snap_width" type="int" value="9"/>
     <property name="vblank_mode" type="string" value="auto"/>
     <property name="theme" type="string" value="Default"/>
-    <property name="tile_on_move" type="bool" value="true"/>
+    <property name="tile_on_move" type="bool" value="false"/>
     <property name="title_alignment" type="string" value="left"/>
     <property name="title_font" type="string" value="DejaVu Sans Mono Bold 10"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
@@ -78,7 +78,7 @@
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="8"/>
     <property name="wrap_windows" type="bool" value="false"/>
-    <property name="wrap_workspaces" type="bool" value="true"/>
+    <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="zoom_pointer" type="bool" value="true"/>
     <property name="workspace_names" type="array">

@@ -112,6 +112,10 @@ ripfzf() {
         --bind "enter:become(micro {1} +{2})"
 }
 
+pw() {
+    apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*+,-./:;<=>?[\\]^_`{|}~'
+}
+
 alias asearch='cat ~/.key | sudo -S apt list'
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
@@ -135,7 +139,7 @@ alias fupdate2='flatpak update --user --assumeyes && flatpak uninstall --unused 
 alias myip='curl ifconfig.me;echo ""'
 alias nano='micro'
 
-alias pw="apg -a 1 -m 16 -x 16 -n 10 -M NCLS"
+
 alias r="source ~/.bashrc"
 alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '

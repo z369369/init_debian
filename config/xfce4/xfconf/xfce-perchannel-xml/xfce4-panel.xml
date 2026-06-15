@@ -187,15 +187,15 @@
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
         <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
+        <value type="string" value="xfce-workspaces-settings.desktop"/>
+        <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
         <value type="string" value="org.xfce.mousepad-settings.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="com.vysp3r.ProtonPlus.desktop"/>
         <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="syncthing-start.desktop"/>
-        <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
-        <value type="string" value="org.gnome.meld.desktop"/>
-        <value type="string" value="xfce-wm-settings.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
