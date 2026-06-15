@@ -173,9 +173,5 @@ bind -x '"\C-r": ripfzf " "'
 
 export PATH="$HOME/opt/node/node-v24.13.0-linux-x64/bin:$HOME/.local/bin:$PATH"
 
-export MOZ_CRASHREPORTER_DISABLE=1
 export EDITOR='micro'
 export VISUAL='micro'
-
-#zoxide
-#eval "$(zoxide init bash)"
