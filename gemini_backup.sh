@@ -2,6 +2,10 @@
 
 set -e
 
+/home/lwh/Desktop/bin/document_backup.sh
+
+echo " "
+
 BACKUP_DIR="/home/lwh/git/init_debian/config"
 echo "=========================================="
 echo " 고도화된 시스템 구성 백업을 시작합니다."
@@ -129,9 +133,3 @@ git push -v origin main
 echo "=========================================="
 echo " git 반영 완료 "
 echo "=========================================="
-echo " "
-echo "=========================================="
-echo " Document 백업 "
-echo "=========================================="
-
-/home/lwh/Desktop/bin/document_backup.sh
