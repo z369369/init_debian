@@ -69,6 +69,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="Antigravity_status_icon_1"/>
         <value type="string" value="recoll"/>
         <value type="string" value="obs"/>
         <value type="string" value="caffeine-cup-empty"/>

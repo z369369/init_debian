@@ -2,8 +2,6 @@
 
 set -e
 
-/home/lwh/Desktop/bin/document_backup.sh
-
 echo " "
 
 BACKUP_DIR="/home/lwh/git/init_debian/config"
@@ -122,6 +120,14 @@ fi
 echo "=========================================="
 echo " 모든 핵심 요소 백업 완료! 'git push'를 통해 저장소에 반영하세요."
 echo "=========================================="
+
+echo ""
+
+echo "=========================================="
+echo " document_backup.sh - document git 백업 실행 "
+echo "=========================================="
+/home/lwh/Desktop/bin/document_backup.sh
+echo ""
 
 cd "$BACKUP_DIR"
 cd ..
