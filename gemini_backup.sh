@@ -96,6 +96,24 @@ else
     echo "[8/8] SSHD 설정 파일을 찾을 수 없습니다."
 fi
 
+# 9. GRUB 부트 설정 및 스크립트 백업 (추가된 항목)
+if [ -d "/etc/grub.d" ]; then
+    echo "[9/9] GRUB 부트 설정 디렉토리(/etc/grub.d) 백업 중..."
+    mkdir -p "$BACKUP_DIR/grub.d"
+    
+    # 커스텀 메뉴 및 순서 파일 안전하게 복사 (rsync 활용)
+    sudo rsync -av --delete /etc/grub.d/ "$BACKUP_DIR/grub.d/"
+    
+    # 메인 설정 파일인 /etc/default/grub이 존재하면 함께 백업하여 무결성 확보
+    if [ -f "/etc/default/grub" ]; then
+        sudo cp /etc/default/grub "$BACKUP_DIR/grub.d/default_grub"
+    fi
+    
+    # Git 관리를 위해 백업된 파일의 소유권을 현재 사용자로 변경
+    sudo chown -R $(whoami):$(whoami) "$BACKUP_DIR/grub.d"
+else
+    echo "[9/9] /etc/grub.d 디렉토리를 찾을 수 없습니다."
+fi
 
 echo "=========================================="
 echo " 모든 핵심 요소 백업 완료! 'git push'를 통해 저장소에 반영하세요."
