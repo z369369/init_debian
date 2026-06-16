@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Antigravity
+Comment=
+Exec=/home/lwh/Downloads/program_linux/Antigravity-x64/antigravity
+Icon=application-x-firmware
+Path=
+Terminal=false
+StartupNotify=false

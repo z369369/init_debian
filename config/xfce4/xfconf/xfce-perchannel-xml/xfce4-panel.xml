@@ -14,6 +14,7 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="16"/>
         <value type="int" value="7"/>
+        <value type="int" value="24"/>
         <value type="int" value="10"/>
         <value type="int" value="5"/>
         <value type="int" value="11"/>
@@ -237,6 +238,11 @@
     <property name="notes" type="empty">
       <property name="global" type="empty">
         <property name="version" type="string" value="1.11.1"/>
+      </property>
+    </property>
+    <property name="plugin-24" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17816207662.desktop"/>
       </property>
     </property>
   </property>
