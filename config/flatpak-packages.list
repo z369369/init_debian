@@ -30,6 +30,7 @@ org.blender.Blender
 org.darktable.Darktable
 org.freecad.FreeCAD
 org.gimp.GIMP
+org.gitfourchette.gitfourchette
 org.gnome.Chess
 org.gnome.Contacts
 org.gnome.Evince

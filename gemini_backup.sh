@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+/home/lwh/Desktop/bin/document_backup.sh
+
 set -e
 
 BACKUP_DIR="/home/lwh/git/init_debian/config"
