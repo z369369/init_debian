@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-/home/lwh/Desktop/bin/document_backup.sh
-
 set -e
 
 BACKUP_DIR="/home/lwh/git/init_debian/config"
@@ -131,3 +129,9 @@ git push -v origin main
 echo "=========================================="
 echo " git 반영 완료 "
 echo "=========================================="
+echo " "
+echo "=========================================="
+echo " Document 백업 "
+echo "=========================================="
+
+/home/lwh/Desktop/bin/document_backup.sh
