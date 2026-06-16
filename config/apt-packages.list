@@ -212,6 +212,7 @@ passwd
 pciutils
 perl
 perl-base
+pipewire-audio
 printer-driver-splix
 procps
 profile-sync-daemon
@@ -252,6 +253,7 @@ vim-tiny
 wamerican
 wget
 whiptail
+wireplumber
 wtmpdb
 xfce4
 xfce4-goodies
@@ -262,4 +264,5 @@ xfce4-terminal
 xsane
 xz-utils
 zlib1g
+zram-tools
 zstd

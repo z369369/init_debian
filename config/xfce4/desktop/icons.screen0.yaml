@@ -82,3 +82,6 @@ configs:
     "/home/lwh":
       row: 0
       col: 0
+    "/home/lwh/Desktop/prompt.txt":
+      row: 0
+      col: 1
