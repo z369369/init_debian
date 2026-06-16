@@ -1,13 +1,12 @@
 #!/bin/sh
 exec tail -n +3 $0
 
-menuentry "Timeshift Emergency Restore (2026-06-16)" --class debian --class gnu-linux --class gnu --class os {
+menuentry "Timeshift Boot Debian_13 2026-06-16" --class debian --class gnu-linux --class gnu --class os {
     insmod part_gpt
     insmod btrfs
     
     search --no-floppy --fs-uuid --set=root 5f9672d0-50f9-4632-a2a7-4f55436a6663
     
     linux /timeshift-btrfs/snapshots/2026-06-16_14-01-58/@/boot/vmlinuz-6.12.90+deb13.1-amd64 root=UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 ro rootflags=subvol=timeshift-btrfs/snapshots/2026-06-16_14-01-58/@
-    
     initrd /timeshift-btrfs/snapshots/2026-06-16_14-01-58/@/boot/initrd.img-6.12.90+deb13.1-amd64
 }

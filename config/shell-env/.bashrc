@@ -116,6 +116,13 @@ pw() {
     apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*%&+,-./:;<=>?[\\]^`{|}~'
 }
 
+blist() {
+	sudo timeshift --list 2> /dev/null | grep -A 20 "\--------"
+	sudo btrfs subvolume list /
+	echo ""
+	sudo blkid | grep btrfs
+}
+
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
