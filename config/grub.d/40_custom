@@ -7,6 +7,6 @@ menuentry "Timeshift Boot Debian_13" --class debian --class gnu-linux --class gn
     
     search --no-floppy --fs-uuid --set=root 5f9672d0-50f9-4632-a2a7-4f55436a6663
     
-    linux /timeshift-btrfs/snapshots/2026-06-17_10-10-10/@/boot/vmlinuz-6.12.90+deb13.1-amd64 root=UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 ro rootflags=subvol=timeshift-btrfs/snapshots/2026-06-17_10-10-10/@
-    initrd /timeshift-btrfs/snapshots/2026-06-17_10-10-10/@/boot/initrd.img-6.12.90+deb13.1-amd64
+    linux /timeshift-btrfs/snapshots/2026-06-17_10-25-53/@/boot/vmlinuz-6.12.90+deb13.1-amd64 root=UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 ro rootflags=subvol=timeshift-btrfs/snapshots/2026-06-17_10-25-53/@
+    initrd /timeshift-btrfs/snapshots/2026-06-17_10-25-53/@/boot/initrd.img-6.12.90+deb13.1-amd64
 }
