@@ -87,5 +87,9 @@
     <property name="style" type="int" value="2"/>
     <property name="icon-size" type="uint" value="42"/>
     <property name="use-custom-font-size" type="bool" value="false"/>
+    <property name="primary" type="bool" value="false"/>
+    <property name="single-click" type="bool" value="false"/>
+    <property name="show-hidden-files" type="bool" value="false"/>
+    <property name="show-thumbnails" type="bool" value="true"/>
   </property>
 </channel>

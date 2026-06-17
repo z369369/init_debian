@@ -57,10 +57,10 @@
     <property name="snap_resist" type="bool" value="false"/>
     <property name="snap_to_border" type="bool" value="false"/>
     <property name="snap_to_windows" type="bool" value="false"/>
-    <property name="snap_width" type="int" value="9"/>
+    <property name="snap_width" type="int" value="8"/>
     <property name="vblank_mode" type="string" value="auto"/>
     <property name="theme" type="string" value="Default"/>
-    <property name="tile_on_move" type="bool" value="false"/>
+    <property name="tile_on_move" type="bool" value="true"/>
     <property name="title_alignment" type="string" value="left"/>
     <property name="title_font" type="string" value="DejaVu Sans Mono Bold 10"/>
     <property name="title_horizontal_offset" type="int" value="0"/>

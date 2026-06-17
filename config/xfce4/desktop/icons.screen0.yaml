@@ -56,23 +56,26 @@ configs:
     "/":
       row: 1
       col: 0
-    "32FB-F73F":
-      row: 0
+    "/home/lwh/Desktop/desktop_local":
+      row: 4
       col: 0
-      last_seen: 1777697617457291
     "/home/lwh/Desktop/autostart":
       row: 1
       col: 0
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
       col: 0
-    "/home/lwh/Desktop/desktop_local":
-      row: 4
+    "32FB-F73F":
+      row: 0
       col: 0
+      last_seen: 1777697617457291
     "2025-09-06-12-06-13-00":
       row: 0
       col: 0
       last_seen: 1777695255362344
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
+      col: 0
     "/home/lwh/Desktop/antigravity":
       row: 0
       col: 0
