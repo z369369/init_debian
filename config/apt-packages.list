@@ -46,6 +46,7 @@ dosfstools
 dpkg
 e2fsprogs
 engrampa
+ethtool
 fastfetch
 fcitx5
 fcitx5-hangul
