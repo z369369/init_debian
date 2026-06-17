@@ -188,16 +188,16 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="xsane.desktop"/>
+        <value type="string" value="com.github.qarmin.czkawka.desktop"/>
+        <value type="string" value="thunar-bulk-rename.desktop"/>
+        <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
+        <value type="string" value="xfce4-notes.desktop"/>
+        <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="gufw.desktop"/>
         <value type="string" value="com.axosoft.GitKraken.desktop"/>
-        <value type="string" value="syncthing-ui.desktop"/>
-        <value type="string" value="timeshift-gtk.desktop"/>
-        <value type="string" value="org.gnome.meld.desktop"/>
-        <value type="string" value="xfce-ui-settings.desktop"/>
-        <value type="string" value="io.github.flattool.Warehouse.desktop"/>
-        <value type="string" value="google-chrome.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
