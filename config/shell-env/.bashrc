@@ -123,6 +123,25 @@ blist() {
 	sudo blkid | grep btrfs
 }
 
+tcreate() {
+    cat ~/.key | sudo -S timeshift --create --comments $1
+    
+    if [ $? -eq 0 ]; then
+        sudo update-grub
+	  echo -e "\e[32msudo update-grub executed.\e[0m"
+    fi
+}
+
+tremove() {
+    sudo timeshift --delete
+    
+    if [ $? -eq 0 ]; then
+        sudo update-grub
+	  echo -e "\e[32msudo update-grub executed.\e[0m"
+    fi
+}
+
+
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
@@ -150,10 +169,10 @@ alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
 
-alias tcreate='cat ~/.key | sudo -S timeshift --create --comments'
+
 alias tlist='cat ~/.key | sudo -S timeshift --list'
 alias top='htop'
-alias tremove='sudo timeshift --delete'
+
 alias trestore='sudo timeshift --restore'
 alias vi='micro'
 

@@ -188,6 +188,7 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="xsane.desktop"/>
         <value type="string" value="com.github.qarmin.czkawka.desktop"/>
         <value type="string" value="thunar-bulk-rename.desktop"/>
@@ -195,7 +196,6 @@
         <value type="string" value="xfce4-notes.desktop"/>
         <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="gufw.desktop"/>
         <value type="string" value="com.axosoft.GitKraken.desktop"/>
       </property>
