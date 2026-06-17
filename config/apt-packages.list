@@ -4,7 +4,6 @@ apg
 apt
 apt-listchanges
 apt-utils
-aptitude
 base-files
 base-passwd
 bash

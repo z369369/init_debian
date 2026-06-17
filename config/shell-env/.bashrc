@@ -169,12 +169,14 @@ alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
 
-
+alias slist='systemctl list-unit-files --state=enabled'
 alias tlist='cat ~/.key | sudo -S timeshift --list'
 alias top='htop'
 
 alias trestore='sudo timeshift --restore'
 alias vi='micro'
+
+
 
 alias venv='rm -rf .venv | python3 -m venv .venv'
 alias vin='source ./.venv/bin/activate'
