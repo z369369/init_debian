@@ -145,9 +145,7 @@ tremove() {
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
-alias boottime1='systemd-analyze blame'
-alias boottime2='systemd-analyze critical-chain'
-alias boottime='systemd-analyze'
+
 alias c='clear'
 alias cat='batcat --style=plain'
 alias clog='cat ~/.key | sudo -S tail -f /var/log/syslog | ccze -A'
@@ -179,8 +177,6 @@ alias vi='micro'
 alias venv='rm -rf .venv | python3 -m venv .venv'
 alias vin='source ./.venv/bin/activate'
 alias vout='deactivate'
-
-alias tui='openclaw tui'
 
 #export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
 export FZF_DEFAULT_COMMAND="fdfind -t f "
