@@ -188,16 +188,16 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="google-chrome.desktop"/>
+        <value type="string" value="io.github.flattool.Warehouse.desktop"/>
+        <value type="string" value="htop.desktop"/>
+        <value type="string" value="com.orcaslicer.OrcaSlicer.desktop"/>
+        <value type="string" value="org.libreoffice.LibreOffice.impress.desktop"/>
+        <value type="string" value="org.libreoffice.LibreOffice.calc.desktop"/>
+        <value type="string" value="org.libreoffice.LibreOffice.writer.desktop"/>
         <value type="string" value="timeshift-gtk.desktop"/>
         <value type="string" value="btrfs-assistant.desktop"/>
-        <value type="string" value="org.freecad.FreeCAD.desktop"/>
-        <value type="string" value="google-chrome.desktop"/>
-        <value type="string" value="com.orcaslicer.OrcaSlicer.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="xfce4-terminal-emulator.desktop"/>
-        <value type="string" value="xfce4-settings-editor.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
-        <value type="string" value="gufw.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
