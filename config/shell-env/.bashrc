@@ -141,7 +141,6 @@ tremove() {
     fi
 }
 
-
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
@@ -190,6 +189,7 @@ export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}'
 
 bind -x '"\C-f": fzf --layout=reverse'
 bind -x '"\C-r": ripfzf " "'
+bind -x '"\C-t": hermes chat'
 
 #/home/lwh/.local/bin/check_debian_eol_curl.sh
 
@@ -197,3 +197,8 @@ export PATH="$HOME/opt/node/node-v24.13.0-linux-x64/bin:$HOME/.local/bin:$PATH"
 
 export EDITOR='micro'
 export VISUAL='micro'
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/lwh/.lmstudio/bin"
+# End of LM Studio CLI section
+

@@ -89,6 +89,9 @@ configs:
     "/home/lwh":
       row: 0
       col: 0
+    "/home/lwh/Desktop/Qwen3.5-4B-Q4_K_M.gguf":
+      row: 6
+      col: 0
     "/home/lwh/Desktop/prompt.txt":
       row: 0
       col: 0
