@@ -173,9 +173,11 @@ alias top='htop'
 alias trestore='sudo timeshift --restore'
 alias vi='micro'
 
-alias venv='rm -rf .venv | python3 -m venv .venv'
+alias vinit='rm -rf .venv | python3 -m venv .venv'
 alias vin='source ./.venv/bin/activate'
 alias vout='deactivate'
+
+# -----------------------------------------------------
 
 #export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
 export FZF_DEFAULT_COMMAND="fdfind -t f "
