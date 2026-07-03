@@ -188,6 +188,7 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="gufw.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
@@ -197,7 +198,6 @@
         <value type="string" value="org.libreoffice.LibreOffice.writer.desktop"/>
         <value type="string" value="org.libreoffice.LibreOffice.impress.desktop"/>
         <value type="string" value="org.libreoffice.LibreOffice.calc.desktop"/>
-        <value type="string" value="com.valvesoftware.Steam.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
