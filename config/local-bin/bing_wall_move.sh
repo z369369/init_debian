@@ -5,7 +5,7 @@
 # ==============================================================================
 SOURCE_DIR="/media/lwh/lwh_backup/Wallpaper"
 TARGET_DIR="/media/lwh/lwh_backup/Wallpaper/backup"
-KEEP_COUNT=100
+KEEP_COUNT=20
 
 # ==============================================================================
 # 사전 검증 및 디렉터리 생성

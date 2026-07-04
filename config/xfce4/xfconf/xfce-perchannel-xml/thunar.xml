@@ -7,10 +7,10 @@
   <property name="last-window-height" type="int" value="894"/>
   <property name="last-window-maximized" type="bool" value="false"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,108,141,104,780,1289,50,112,446,72,50,82,134,541"/>
+  <property name="last-details-view-column-widths" type="string" value="50,108,141,141,780,1289,50,112,470,73,50,69,134,334"/>
   <property name="last-separator-position" type="int" value="170"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
-  <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
