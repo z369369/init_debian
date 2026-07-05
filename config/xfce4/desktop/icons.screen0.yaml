@@ -56,20 +56,20 @@ configs:
     "/":
       row: 1
       col: 0
-    "32FB-F73F":
-      row: 6
-      col: 0
-      last_seen: 1781735761090752
-    "/home/lwh/Desktop/autostart":
-      row: 1
-      col: 0
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
+      col: 0
+    "/home/lwh/Desktop/autostart":
+      row: 1
       col: 0
     "d85f6c16-179b-40fd-9ed5-c7fceb325aed":
       row: 6
       col: 0
       last_seen: 1781735798831862
+    "32FB-F73F":
+      row: 6
+      col: 0
+      last_seen: 1781735761090752
     "/home/lwh/Desktop/50_Clipping":
       row: 6
       col: 0
