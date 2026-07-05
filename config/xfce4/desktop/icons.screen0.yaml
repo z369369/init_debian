@@ -19,6 +19,9 @@ configs:
       width: 1920
       height: 1080
   icons:
+    "/home/lwh/Desktop/001_Brain_Notes":
+      row: 6
+      col: 0
     "trash:///":
       row: 2
       col: 0
