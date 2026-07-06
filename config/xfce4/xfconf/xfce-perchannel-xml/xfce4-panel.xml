@@ -189,8 +189,8 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="org.recoll.recoll.desktop"/>
         <value type="string" value="com.axosoft.GitKraken.desktop"/>
+        <value type="string" value="org.recoll.recoll.desktop"/>
         <value type="string" value="xfce4-web-browser.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
