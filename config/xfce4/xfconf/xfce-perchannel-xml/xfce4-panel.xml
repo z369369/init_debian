@@ -189,6 +189,7 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="com.axosoft.GitKraken.desktop"/>
         <value type="string" value="org.recoll.recoll.desktop"/>
         <value type="string" value="xfce4-web-browser.desktop"/>
@@ -197,7 +198,6 @@
         <value type="string" value="org.gnome.seahorse.Application.desktop"/>
         <value type="string" value="md.obsidian.Obsidian.desktop"/>
         <value type="string" value="com.protonvpn.www.desktop"/>
-        <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="gufw.desktop"/>
       </property>
       <property name="favorites" type="array">
