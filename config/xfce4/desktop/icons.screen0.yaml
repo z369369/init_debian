@@ -19,9 +19,6 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "/home/lwh/Desktop/001_Brain_Notes":
-      row: 6
-      col: 0
     "trash:///":
       row: 2
       col: 0
@@ -46,7 +43,7 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696009830381
-    "/home/lwh/Desktop/Screenshots":
+    "/home/lwh/Desktop/001_Brain_Notes":
       row: 6
       col: 0
     "a5ec5a70-2da9-4526-9707-3e241619daee":
@@ -66,26 +63,29 @@ configs:
     "/home/lwh/Desktop/autostart":
       row: 1
       col: 0
-    "/home/lwh/Desktop/gemini_backup.sh":
-      row: 0
-      col: 0
     "d85f6c16-179b-40fd-9ed5-c7fceb325aed":
       row: 6
       col: 0
       last_seen: 1781735798831862
+    "/home/lwh/Desktop/desktop_local":
+      row: 4
+      col: 0
     "/home/lwh/Desktop/50_Clipping":
+      row: 6
+      col: 0
+    "/home/lwh/Desktop/gemini_backup.sh":
+      row: 0
+      col: 0
+    "/home/lwh/Desktop/Screenshots":
+      row: 6
+      col: 0
+    "/home/lwh/Desktop/.desktopfolder":
       row: 6
       col: 0
     "2025-09-06-12-06-13-00":
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Desktop/desktop_local":
-      row: 4
-      col: 0
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
-      col: 0
     "/home/lwh/Desktop/antigravity":
       row: 0
       col: 0
