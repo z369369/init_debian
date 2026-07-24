@@ -176,8 +176,8 @@ alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
 
 # 2. List Snapshots (root & home)
-alias tlist='cat ~/.key | sudo -S snapper -c root list'
-alias tlist-home='cat ~/.key | sudo -S snapper -c home list'
+alias tlist='cat ~/.key | sudo -S snapper --iso -c root list'
+alias tlist-home='cat ~/.key | sudo -S snapper --iso -c home list'
 
 alias slist='systemctl list-unit-files --state=enabled'
 alias top='htop'
