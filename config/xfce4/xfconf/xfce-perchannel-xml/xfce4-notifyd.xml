@@ -6,6 +6,7 @@
       <value type="string" value="antigravity"/>
       <value type="string" value="blueman"/>
       <value type="string" value="Firefox"/>
+      <value type="string" value="Hermes"/>
       <value type="string" value="interpreter"/>
       <value type="string" value="notify-send"/>
       <value type="string" value="org.freedesktop.network-manager-applet"/>

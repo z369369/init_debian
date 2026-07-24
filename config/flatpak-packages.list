@@ -26,6 +26,7 @@ io.qt.QtCreator
 md.obsidian.Obsidian
 net.lutris.Lutris
 net.sapples.LiveCaptions
+net.werwolv.ImHex
 net.zdechov.app.x2048
 nl.hjdskes.gcolor3
 org.atheme.audacious
@@ -34,7 +35,6 @@ org.darktable.Darktable
 org.freecad.FreeCAD
 org.gimp.GIMP
 org.gnome.Chess
-org.gnome.Contacts
 org.gnome.Evince
 org.gnome.design.Contrast
 org.gnome.design.IconLibrary

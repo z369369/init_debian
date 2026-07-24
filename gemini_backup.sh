@@ -126,7 +126,7 @@ echo ""
 echo "=========================================="
 echo " document git 백업 실행 (document_backup.sh) "
 echo "=========================================="
-/home/lwh/Desktop/bin/document_backup.sh
+
 echo ""
 
 cd "$BACKUP_DIR"

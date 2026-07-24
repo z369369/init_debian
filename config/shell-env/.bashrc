@@ -116,29 +116,38 @@ pw() {
     apg -a 1 -m 16 -x 16 -n 10 -M NCLS -E '1ilI0oOQ8B!"'\''()*%&+,-./:;<=>?[\\]^`{|}~'
 }
 
-blist() {
-	sudo timeshift --list 2> /dev/null | grep -A 20 "\--------"
-	sudo btrfs subvolume list /
-	echo ""
-	sudo blkid | grep btrfs
-}
-
+# 1. Create Snapshot (Usage: screate "comments")
 tcreate() {
-    cat ~/.key | sudo -S timeshift --create --comments $1
-    
+    local comment="${1:-manual_snapshot}"
+    cat ~/.key | sudo -S snapper -c root create --description "$comment"
     if [ $? -eq 0 ]; then
         sudo update-grub
-	  echo -e "\e[32msudo update-grub executed.\e[0m"
+        echo -e "\e[32msnapper create & sudo update-grub executed.\e[0m"
     fi
 }
 
+
+# 3. Remove Snapshot (Usage: sremove <number>)
 tremove() {
-    sudo timeshift --delete
-    
+    if [ -z "$1" ]; then
+        echo -e "\e[31mError: Please specify snapshot number to delete. (e.g., sremove 12)\e[0m"
+        return 1
+    fi
+    cat ~/.key | sudo -S snapper -c root delete "$1"
     if [ $? -eq 0 ]; then
         sudo update-grub
-	  echo -e "\e[32msudo update-grub executed.\e[0m"
+        echo -e "\e[32msnapper delete #$1 & sudo update-grub executed.\e[0m"
     fi
+}
+
+# 4. Restore Snapshot (Usage: srestore <number>)
+trestore() {
+    if [ -z "$1" ]; then
+        echo -e "\e[31mError: Please specify snapshot number to restore. (e.g., srestore 12)\e[0m"
+        return 1
+    fi
+    echo -e "\e[33mRestoring system state to Snapshot #$1...\e[0m"
+    cat ~/.key | sudo -S snapper -c root undochange "$1"..0
 }
 
 alias aupdate='cat ~/.key | sudo -S apt update'
@@ -166,16 +175,20 @@ alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
 
-alias slist='systemctl list-unit-files --state=enabled'
-alias tlist='cat ~/.key | sudo -S timeshift --list'
-alias top='htop'
+# 2. List Snapshots (root & home)
+alias tlist='cat ~/.key | sudo -S snapper -c root list'
+alias tlist-home='cat ~/.key | sudo -S snapper -c home list'
 
-alias trestore='sudo timeshift --restore'
+alias slist='systemctl list-unit-files --state=enabled'
+alias top='htop'
 alias vi='micro'
 
 alias vinit='rm -rf .venv | python3 -m venv .venv'
 alias vin='source ./.venv/bin/activate'
 alias vout='deactivate'
+
+alias aion='ollama serve > /dev/null 2>&1 & sleep 2 && ollama run qwen3.5:4b-64k ""'
+alias aioff='pkill -f "ollama serve" || pkill -x "ollama"'
 
 # -----------------------------------------------------
 
