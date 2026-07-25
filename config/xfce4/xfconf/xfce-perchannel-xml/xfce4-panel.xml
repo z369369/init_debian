@@ -27,6 +27,7 @@
         <value type="int" value="20"/>
         <value type="int" value="8"/>
         <value type="int" value="15"/>
+        <value type="int" value="13"/>
         <value type="int" value="4"/>
         <value type="int" value="17"/>
         <value type="int" value="19"/>
@@ -190,11 +191,12 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="io.github.flattool.Warehouse.desktop"/>
+        <value type="string" value="com.usebottles.bottles.desktop"/>
+        <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
         <value type="string" value="net.werwolv.ImHex.desktop"/>
-        <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
         <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
@@ -245,5 +247,6 @@
         <property name="version" type="string" value="1.11.1"/>
       </property>
     </property>
+    <property name="plugin-13" type="string" value="genmon"/>
   </property>
 </channel>
