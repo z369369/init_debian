@@ -3,25 +3,20 @@
 #organize download folder
 #Image Files
 cd ~/Downloads
-
-# Image Files
 mv *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
-
-# Image Files
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
-
-# Audio Files 
 mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
-
-# Video Files 
-mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
-
-# PDFs 
+mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mp4 *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
 mv *.pdf *.doc *.ppt *.xls *.xlsx ~/Documents 2> /dev/null
-
-# Iso
 mv *.iso ~/Downloads/iso 2> /dev/null
 
+cd ~/Downloads/Download_phone
+mv *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
+mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
+mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
+mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mp4 *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
+mv *.pdf *.doc *.ppt *.xls *.xlsx ~/Documents 2> /dev/null
+mv *.iso ~/Downloads/iso 2> /dev/null
 
 rsync -a --delete ~/.bash* /media/lwh/lwh_backup
 rsync -a --delete ~/.conkyrc /media/lwh/lwh_backup
