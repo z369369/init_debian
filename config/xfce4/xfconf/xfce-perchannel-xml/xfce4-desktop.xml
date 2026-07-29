@@ -57,7 +57,7 @@
       </property>
       <property name="monitorHDMI-A-0" type="empty">
         <property name="workspace0" type="empty">
-          <property name="last-image" type="string" value="/media/lwh/lwh_backup/Wallpaper/OHR.MarieLake_EN-US0365186943_1920x1080.jpg"/>
+          <property name="last-image" type="string" value="/media/lwh/lwh_backup/Wallpaper/OHR.NavajoSandstone_EN-US9496264383_1920x1080.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
           <property name="color-style" type="int" value="3"/>
@@ -83,6 +83,9 @@
       <property name="show-home" type="bool" value="false"/>
       <property name="show-trash" type="bool" value="false"/>
       <property name="show-device-fixed" type="bool" value="false"/>
+      <property name="show-device-removable" type="bool" value="true"/>
+      <property name="show-unknown-removable" type="bool" value="true"/>
+      <property name="show-network-removable" type="bool" value="false"/>
     </property>
     <property name="style" type="int" value="2"/>
     <property name="icon-size" type="uint" value="42"/>

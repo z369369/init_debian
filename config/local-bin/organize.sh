@@ -3,7 +3,7 @@
 #organize download folder
 #Image Files
 cd ~/Downloads
-mv *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
+mv *.NSP *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
 mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
 mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mp4 *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
@@ -11,7 +11,7 @@ mv *.pdf *.doc *.ppt *.xls *.xlsx ~/Documents 2> /dev/null
 mv *.iso ~/Downloads/iso 2> /dev/null
 
 cd ~/Downloads/Download_phone
-mv *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
+mv *.NSP *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
 mv *.mp3 *.m4a *.flac *.aac *.ogg *.wav ~/Music 2> /dev/null
 mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mp4 *.mpv *.mp2 *.wmv ~/Videos 2> /dev/null
@@ -45,6 +45,6 @@ rsync -a --delete \
 cat ~/.key | sudo -S rsync -a --delete /etc/ /media/lwh/lwh_backup/etc/
 
 #python
-python3 ~/Desktop/bin/pyauto/dup_remove.py
+#python3 ~/Desktop/bin/pyauto/dup_remove.py
 
 notify-send '파일 정리' '파일 정리가 완료되었습니다!'
