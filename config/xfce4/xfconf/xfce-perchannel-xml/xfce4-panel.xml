@@ -192,10 +192,9 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="com.heroicgameslauncher.hgl.desktop"/>
+        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
         <value type="string" value="net.zdechov.app.x2048.desktop"/>
-        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
