@@ -52,9 +52,10 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
+    "/home/lwh/Pictures":
+      row: 2
       col: 0
+      last_seen: 1785054051241630
     "/home/lwh/Desktop/bin":
       row: 5
       col: 0
@@ -70,10 +71,9 @@ configs:
     "/home/lwh/Desktop/Recordings":
       row: 0
       col: 0
-    "/home/lwh/Pictures":
-      row: 2
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
       col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/OpenCamera":
       row: 7
       col: 0
