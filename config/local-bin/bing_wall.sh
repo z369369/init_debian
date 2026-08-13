@@ -92,4 +92,3 @@ else
     echo " - 저장된 이미지: $save_id"
 fi
 echo "=================================================="
-/home/lwh/Desktop/bin/bing_wall_move.sh
