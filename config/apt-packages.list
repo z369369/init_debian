@@ -73,6 +73,7 @@ fzf
 gcc-14-base
 gettext-base
 git
+gnome-disk-utility
 google-chrome-stable
 grep
 groff-base
@@ -85,6 +86,7 @@ htop
 hunspell-en-us
 hyphen-en-us
 ifupdown
+imagemagick
 inetutils-telnet
 init
 init-system-helpers
@@ -214,7 +216,6 @@ linux-sysctl-defaults
 locales
 login
 login.defs
-logrotate
 logsave
 lsof
 man-db
@@ -242,11 +243,13 @@ openssl-provider-legacy
 orca
 os-prober
 parole
+parted
 passwd
 pciutils
 perl
 perl-base
 pipewire-audio
+pngquant
 printer-driver-splix
 procps
 profile-sync-daemon
@@ -291,6 +294,8 @@ whiptail
 wireplumber
 wtmpdb
 xclip
+xdg-desktop-portal-gtk
+xdg-desktop-portal-xapp
 xfce4
 xfce4-genmon-plugin
 xfce4-goodies

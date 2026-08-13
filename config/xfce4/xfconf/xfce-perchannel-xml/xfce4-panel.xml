@@ -26,7 +26,6 @@
         <value type="int" value="12"/>
         <value type="int" value="20"/>
         <value type="int" value="8"/>
-        <value type="int" value="15"/>
         <value type="int" value="13"/>
         <value type="int" value="4"/>
         <value type="int" value="17"/>
@@ -46,6 +45,7 @@
       </property>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -68,8 +68,9 @@
       <property name="wrap-workspaces" type="bool" value="true"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
-      <property name="square-icons" type="bool" value="true"/>
+      <property name="square-icons" type="bool" value="false"/>
       <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
         <value type="string" value="heroic_status_icon_1"/>
         <value type="string" value="Electrum"/>
         <value type="string" value="proton.vpn.app.gtk"/>
@@ -100,18 +101,22 @@
         <value type="string" value="networkmanager applet"/>
       </property>
       <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="22"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
     </property>
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-time-font" type="string" value="Sans 10"/>
       <property name="digital-date-font" type="string" value="Sans 12"/>
       <property name="mode" type="uint" value="2"/>
-      <property name="show-week-numbers" type="bool" value="true"/>
+      <property name="show-week-numbers" type="bool" value="false"/>
       <property name="digital-layout" type="uint" value="2"/>
-      <property name="digital-date-format" type="string" value="%m.%d (%A)"/>
+      <property name="digital-date-format" type="string" value="%m.%d (%a) %H:%M"/>
+      <property name="tooltip-format" type="string" value="%m.%d (%a) %H:%M"/>
     </property>
     <property name="plugin-19" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="audacious;Chrome;firefox-esr;obsidian"/>
+      <property name="known-players" type="string" value="audacious;Chrome;firefox-esr;obsidian;vlc"/>
     </property>
     <property name="plugin-20" type="string" value="actions">
       <property name="items" type="array">
@@ -171,11 +176,6 @@
         <value type="string" value="17773805851.desktop"/>
       </property>
     </property>
-    <property name="plugin-15" type="string" value="clock">
-      <property name="digital-layout" type="uint" value="3"/>
-      <property name="digital-time-font" type="string" value="Sans Bold 12"/>
-      <property name="mode" type="uint" value="2"/>
-    </property>
     <property name="plugin-16" type="string" value="whiskermenu">
       <property name="view-mode" type="int" value="1"/>
       <property name="launcher-show-name" type="bool" value="true"/>
@@ -193,14 +193,15 @@
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
         <value type="string" value="btrfs-assistant.desktop"/>
-        <value type="string" value="com.valvesoftware.Steam.desktop"/>
-        <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
-        <value type="string" value="net.zdechov.app.x2048.desktop"/>
-        <value type="string" value="syncthing-ui.desktop"/>
-        <value type="string" value="google-chrome.desktop"/>
-        <value type="string" value="io.github.ryubing.Ryujinx.desktop"/>
-        <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
+        <value type="string" value="org.gnome.DiskUtility.desktop"/>
+        <value type="string" value="gufw.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
+        <value type="string" value="com.valvesoftware.Steam.desktop"/>
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
+        <value type="string" value="io.github.flattool.Ignition.desktop"/>
+        <value type="string" value="caffeine-indicator.desktop"/>
+        <value type="string" value="caffeine.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>

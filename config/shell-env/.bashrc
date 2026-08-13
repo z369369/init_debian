@@ -150,6 +150,19 @@ trestore() {
     cat ~/.key | sudo -S snapper -c root undochange "$1"..0
 }
 
+backup_etc() {
+    local target_dir="${1:-/media/lwh/lwh_backup}"
+    local today=$(date +%Y%m%d)
+    
+    if [ ! -d "$target_dir" ]; then
+        echo "경로가 존재하지 않아 디렉토리를 생성합니다: $target_dir"
+        sudo mkdir -p "$target_dir"
+    fi
+
+    echo "백업을 시작합니다: $target_dir/etc_$today.tar"
+    sudo tar -cvf "$target_dir/etc_$today.tar" /etc
+}
+
 alias aupdate='cat ~/.key | sudo -S apt update'
 alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
 alias bat='batcat --style=plain'
@@ -190,6 +203,7 @@ alias vout='deactivate'
 alias aion='ollama serve > /dev/null 2>&1 & sleep 2 && ollama run qwen3.5:4b-64k ""'
 alias aioff='pkill -f "ollama serve" || pkill -x "ollama"'
 
+alias fixhangul='export GTK_IM_MODULE=fcitx; export QT_IM_MODULE=fcitx; export XMODIFIERS=@im=fcitx; killall fcitx5 fcitx 2>/dev/null; fcitx5 -d -r > /dev/null 2>&1 & echo "한글 입력기(Fcitx5)를 재시작했습니다."' 
 # -----------------------------------------------------
 
 #export FZF_DEFAULT_COMMAND="fdfind -t f --hidden --follow --exclude '.git'"
@@ -216,4 +230,5 @@ export VISUAL='micro'
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/lwh/.lmstudio/bin"
 # End of LM Studio CLI section
+
 

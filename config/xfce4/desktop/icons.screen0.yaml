@@ -39,6 +39,10 @@ configs:
     "/home/lwh/Desktop/antigravity":
       row: 0
       col: 0
+    "053A-AC32":
+      row: 1
+      col: 0
+      last_seen: 1786523734922990
     "/home/lwh/Desktop/Music":
       row: 0
       col: 0
@@ -56,7 +60,7 @@ configs:
       row: 6
       col: 0
     "/home/lwh/Desktop/bin":
-      row: 5
+      row: 6
       col: 0
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
@@ -65,7 +69,7 @@ configs:
       row: 0
       col: 0
     "/home/lwh/Desktop/autostart":
-      row: 4
+      row: 5
       col: 0
     "/home/lwh/Desktop/Recordings":
       row: 0
@@ -90,15 +94,18 @@ configs:
     "/home/lwh/Desktop/Qwen3.5-4B-Q4_K_M.gguf":
       row: 6
       col: 0
-    "/home/lwh/Desktop/Screen recordings":
-      row: 8
+    "/home/lwh/Desktop/desktop_local":
+      row: 7
       col: 0
     "/home/lwh/Videos":
       row: 3
       col: 0
       last_seen: 1785054051242001
-    "/home/lwh/Desktop/desktop_local":
-      row: 7
+    "/home/lwh/Desktop/Screen recordings":
+      row: 8
+      col: 0
+    "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
+      row: 1
       col: 0
     "/home/lwh":
       row: 0
@@ -114,7 +121,7 @@ configs:
       row: 9
       col: 0
     "/home/lwh/Desktop/desktop_flatpak":
-      row: 6
+      row: 4
       col: 0
     "/home/lwh/Desktop/Videos":
       row: 6
@@ -126,9 +133,9 @@ configs:
       row: 6
       col: 0
     "32FB-F73F":
-      row: 6
+      row: 0
       col: 0
-      last_seen: 1781735761090752
+      last_seen: 1786001486252579
     "/home/lwh/Desktop/\uCDE8\uBBF8":
       row: 0
       col: 1
@@ -161,6 +168,10 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696655576554
+    "0492-3AF4":
+      row: 1
+      col: 0
+      last_seen: 1786523725772269
     "0186f1e5-4a1e-49a5-9c0f-a106a71664a8":
       row: 0
       col: 0

@@ -9,12 +9,16 @@
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 # / was on /dev/nvme1n1p2 during installation
-UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /          btrfs   noatime,compress=zstd,subvol=@ 0  0
-UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /home      btrfs   noatime,compress=zstd,subvol=@home 0  0
-UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /var/log   btrfs   noatime,compress=zstd,subvol=@var_log 0  0
-UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /var/cache btrfs   noatime,compress=zstd,subvol=@var_cache 0  0
+UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 / btrfs noatime,compress=zstd,subvol=@ 0 0
+UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /home btrfs noatime,compress=zstd,subvol=@home 0 0
+UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /var/log btrfs noatime,compress=zstd,subvol=@var_log 0 0
+UUID=5f9672d0-50f9-4632-a2a7-4f55436a6663 /var/cache btrfs noatime,compress=zstd,subvol=@var_cache 0 0
 
-
-UUID=F988-3E94  /boot/efi       vfat    umask=0077      0       1
+UUID=F988-3E94 /boot/efi vfat umask=0077 0 1
 
 UUID=a5ec5a70-2da9-4526-9707-3e241619daee /media/lwh/lwh_backup ext4 defaults 0 2
+
+/home/lwh/phone/Pictures /home/lwh/Pictures none bind 0 0
+/home/lwh/phone/Music /home/lwh/Music none bind 0 0
+/home/lwh/phone/Movies /home/lwh/Videos none bind 0 0
+/home/lwh/phone/Documents /home/lwh/Documents none bind 0 0
