@@ -283,6 +283,7 @@ tzdata
 ucf
 udev
 ufw
+unattended-upgrades
 usbutils
 util-linux
 util-linux-extra
