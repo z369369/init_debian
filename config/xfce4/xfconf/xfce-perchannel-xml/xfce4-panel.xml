@@ -107,7 +107,7 @@
     </property>
     <property name="plugin-8" type="string" value="clock">
       <property name="digital-time-font" type="string" value="Sans 10"/>
-      <property name="digital-date-font" type="string" value="Sans 12"/>
+      <property name="digital-date-font" type="string" value="Noto Sans CJK KR 12"/>
       <property name="mode" type="uint" value="2"/>
       <property name="show-week-numbers" type="bool" value="false"/>
       <property name="digital-layout" type="uint" value="2"/>
@@ -192,9 +192,9 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
-        <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="org.gnome.DiskUtility.desktop"/>
         <value type="string" value="gufw.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>

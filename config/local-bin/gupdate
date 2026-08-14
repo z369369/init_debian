@@ -31,6 +31,7 @@ cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
 cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
 cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
 
-#sed -i 's/base_url="https:\/\/asianhdplay.*"/base_url="https:\/\/asianhdplay.org"/' ~/Desktop/bin/dra-cla
 
-#rsync -a ~/git/init_debian/copy/home/lwh/ ~/
+
+
+/usr/bin/flatpak update -y
