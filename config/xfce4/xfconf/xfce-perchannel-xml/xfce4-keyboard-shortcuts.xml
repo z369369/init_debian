@@ -56,7 +56,7 @@
       <property name="&lt;Super&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;f" type="string" value="/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=recoll org.recoll.recoll"/>
       <property name="&lt;Super&gt;grave" type="string" value="mousepad /home/lwh/.bashrc"/>
-      <property name="Print" type="string" value="xfce4-screenshooter -r -s Pictures/Screenshot_$(date +%Y%m%d_%H%M%S)"/>
+      <property name="Print" type="string" value="xfce4-screenshooter -r"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

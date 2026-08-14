@@ -5,7 +5,16 @@
     <property name="navigationbar" type="empty">
       <property name="position" type="string" value="left"/>
     </property>
-    <property name="height" type="uint" value="696"/>
-    <property name="width" type="uint" value="665"/>
+    <property name="height" type="uint" value="688"/>
+    <property name="width" type="uint" value="1145"/>
+    <property name="toolbar" type="empty">
+      <property name="show" type="bool" value="false"/>
+    </property>
+    <property name="thumbnails" type="empty">
+      <property name="show" type="bool" value="true"/>
+    </property>
+  </property>
+  <property name="image" type="empty">
+    <property name="default-zoom" type="int" value="0"/>
   </property>
 </channel>

@@ -1,4 +1,14 @@
 #!/bin/bash
+echo ""
+echo "========================="
+echo "====  flatpak update ===="
+echo "========================="
+/usr/bin/flatpak update -y
+
+echo "========================="
+echo "======  gupdate   ======"
+echo "========================="
+
 declare -a folders=()
 
 # Loop through the folders in the /home/lwh folder
@@ -26,12 +36,8 @@ do
 	echo ""
 done
 
-cp -f ~/git/zzz_ani-cli/ani-cli ~/.local/bin/ani-cli
-cp -f ~/git/zzz_dra-cla/dra-cla ~/.local/bin/dra-cla
-cp -f ~/git/zzz_jerry/jerry.sh ~/.local/bin/jerry
-cp -f ~/git/zzz_lobster/lobster.sh ~/.local/bin/lobster
+cp -f /home/lwh/git/zzz_ani-cli/ani-cli /home/lwh/.local/bin/ani-cli
+cp -f /home/lwh/git/zzz_dra-cla/dra-cla /home/lwh/.local/bin/dra-cla
+cp -f /home/lwh/git/zzz_jerry/jerry.sh /home/lwh/.local/bin/jerry
+cp -f /home/lwh/git/zzz_lobster/lobster.sh /home/lwh/.local/bin/lobster
 
-
-
-
-/usr/bin/flatpak update -y
