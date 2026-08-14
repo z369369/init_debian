@@ -42,8 +42,6 @@ rsync -a --delete  \
 --exclude='share/flatpak/' \
 ~/.local/ /media/lwh/lwh_backup/.local
 
-cat ~/.key | sudo -S rsync -a /etc/ /media/lwh/lwh_backup/etc/
-
 #python
 #python3 ~/Desktop/bin/pyauto/dup_remove.py
 
