@@ -56,6 +56,9 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
+      col: 0
     "/home/lwh/Pictures":
       row: 2
       col: 0
@@ -63,14 +66,14 @@ configs:
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
-    "/home/lwh/Desktop/Recordings":
-      row: 0
-      col: 0
     "/home/lwh/Desktop/user.sav":
       row: 0
       col: 0
     "/home/lwh/Desktop/autostart":
       row: 5
+      col: 0
+    "/home/lwh/Desktop/Recordings":
+      row: 0
       col: 0
     "realme X50 5G":
       row: 0
@@ -81,9 +84,6 @@ configs:
       col: 0
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
-      col: 0
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
       col: 0
     "/home/lwh/Desktop/bin":
       row: 6
@@ -125,7 +125,7 @@ configs:
       row: 9
       col: 0
     "/home/lwh/Desktop/desktop_flatpak":
-      row: 4
+      row: 3
       col: 0
     "/home/lwh/Desktop/Videos":
       row: 6
