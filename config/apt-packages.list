@@ -1,3 +1,4 @@
+adb
 adduser
 amd64-microcode
 apg
@@ -48,6 +49,7 @@ dpkg
 e2fsprogs
 engrampa
 ethtool
+fastboot
 fastfetch
 fcitx5
 fcitx5-hangul
@@ -80,6 +82,8 @@ groff-base
 grub-common
 grub-efi-amd64
 gufw
+gvfs-backends
+gvfs-fuse
 gzip
 hostname
 htop
@@ -158,6 +162,7 @@ liblzma5
 libmd0
 libmnl0
 libmount1
+libmtp-runtime
 libncursesw6
 libnettle8t64
 libnewt0.52
@@ -242,6 +247,7 @@ openssh-server
 openssl-provider-legacy
 orca
 os-prober
+p7zip-full
 parole
 parted
 passwd
