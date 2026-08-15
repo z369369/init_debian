@@ -170,7 +170,7 @@
       <property name="launcher-show-description" type="bool" value="false"/>
       <property name="category-icon-size" type="int" value="0"/>
       <property name="launcher-icon-size" type="int" value="0"/>
-      <property name="menu-height" type="int" value="700"/>
+      <property name="menu-height" type="int" value="600"/>
       <property name="position-categories-horizontal" type="bool" value="false"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-profile-alternate" type="bool" value="false"/>
