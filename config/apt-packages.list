@@ -3,7 +3,6 @@ adduser
 amd64-microcode
 apg
 apt
-apt-config-auto-update
 apt-listchanges
 apt-utils
 base-files
