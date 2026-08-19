@@ -163,10 +163,10 @@ backup_etc() {
     sudo tar -cvf "$target_dir/etc_$today.tar" /etc
 }
 
-alias aupdate='cat ~/.key | sudo -S apt update'
-alias aupgrade='cat ~/.key | sudo -S apt upgrade -o Dpkg::Options::="--force-confold"'
-alias bat='batcat --style=plain'
+alias aupdate='/home/lwh/.local/bin/gupdate && flatpak update -y && cat ~/.key | sudo -S apt update && cat ~/.key | sudo -S apt upgrade'
+alias aclean='flatpak uninstall --unused -y && cat ~/.key | sudo -S apt autoremove --purge && sudo apt clean'
 
+alias bat='batcat --style=plain'
 alias c='clear'
 alias cat='batcat --style=plain'
 alias clog='cat ~/.key | sudo -S tail -f /var/log/syslog | ccze -A'
@@ -178,7 +178,6 @@ alias fe='fastfetch'
 alias free='free -m'
 alias frepair='flatpak repair --user'
 alias fupdate='flatpak update -y'
-alias fupdate2='flatpak update --user --assumeyes && flatpak uninstall --unused --user --assumeyes'
 #alias ls='eza'
 alias myip='curl ifconfig.me;echo ""'
 alias nano='micro'

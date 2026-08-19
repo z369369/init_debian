@@ -1,9 +1,4 @@
 #!/bin/bash
-echo ""
-echo "========================="
-echo "====  flatpak update ===="
-echo "========================="
-/usr/bin/flatpak update -y
 
 echo "========================="
 echo "======  gupdate   ======"
