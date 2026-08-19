@@ -169,7 +169,7 @@ alias aclean='flatpak uninstall --unused -y && cat ~/.key | sudo -S apt autoremo
 alias bat='batcat --style=plain'
 alias c='clear'
 alias cat='batcat --style=plain'
-alias clog='cat ~/.key | sudo -S tail -f /var/log/syslog | ccze -A'
+
 alias df='pydf'
 alias du='ncdu -x'
 alias ee='mousepad'
@@ -182,7 +182,7 @@ alias fupdate='flatpak update -y'
 alias myip='curl ifconfig.me;echo ""'
 alias nano='micro'
 
-alias r="source ~/.bashrc"
+alias r="source ~/.bashrc && echo 'bashrc reloaded..' "
 alias reboot='cat ~/.key | sudo -S reboot'
 alias shutdown='cat ~/.key | sudo -S systemctl poweroff -i '
 alias syslog='cat ~/.key | sudo -S batcat --style=plain /var/log/syslog'
@@ -196,12 +196,11 @@ alias top='htop'
 alias vi='micro'
 
 alias vinit='rm -rf .venv | python3 -m venv .venv'
+alias venv='rm -rf .venv | python3 -m venv .venv'
 alias vin='source ./.venv/bin/activate'
 alias vout='deactivate'
 
-alias aion='ollama serve > /dev/null 2>&1 & sleep 2 && ollama run qwen3.5:4b-64k ""'
-alias aioff='pkill -f "ollama serve" || pkill -x "ollama"'
-
+alias fixscreen='xfwm4 --replace &'
 alias fixhangul='export GTK_IM_MODULE=fcitx; export QT_IM_MODULE=fcitx; export XMODIFIERS=@im=fcitx; killall fcitx5 fcitx 2>/dev/null; fcitx5 -d -r > /dev/null 2>&1 & echo "한글 입력기(Fcitx5)를 재시작했습니다."' 
 # -----------------------------------------------------
 
