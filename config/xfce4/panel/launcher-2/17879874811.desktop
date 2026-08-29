@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Compositor
+Exec=/home/lwh/Desktop/bin/compositor.sh
+Terminal=false
+Icon=/home/lwh/.local/share/icons/candy-icons/apps/scalable/arduino-icon-small.svg
+Type=Application
+Categories=X-AppImages;
+StartupNotify=false
+Comment=
+Path=
+X-XFCE-Source=file:///home/lwh/.local/share/applications/compositor.desktop
