@@ -17,12 +17,12 @@
         <value type="int" value="10"/>
         <value type="int" value="5"/>
         <value type="int" value="11"/>
+        <value type="int" value="12"/>
         <value type="int" value="9"/>
         <value type="int" value="3"/>
         <value type="int" value="14"/>
         <value type="int" value="21"/>
         <value type="int" value="22"/>
-        <value type="int" value="12"/>
         <value type="int" value="2"/>
         <value type="int" value="27"/>
         <value type="int" value="15"/>
@@ -181,10 +181,10 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="btrfs-assistant.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="stacer.appimage_e99485e.desktop"/>
         <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
         <value type="string" value="it.mijorus.gearlever.desktop"/>
