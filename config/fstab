@@ -18,7 +18,3 @@ UUID=F988-3E94 /boot/efi vfat umask=0077 0 1
 
 UUID=a5ec5a70-2da9-4526-9707-3e241619daee /media/lwh/lwh_backup ext4 defaults 0 2
 
-/home/lwh/phone/Pictures /home/lwh/Pictures none bind 0 0
-/home/lwh/phone/Music /home/lwh/Music none bind 0 0
-/home/lwh/phone/Movies /home/lwh/Videos none bind 0 0
-/home/lwh/phone/Documents /home/lwh/Documents none bind 0 0

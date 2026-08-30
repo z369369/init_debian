@@ -6,7 +6,7 @@
 TARGET_DIRS=(
     "/home/lwh/phone/DCIM"
     "/home/lwh/phone/Pictures"
-    "/home/lwh/phone/Documents/001_Brain_Notes"
+    "/home/lwh/phone/Documents/901_Images"
 )
 
 # 기준 용량 (700KB = 716800 Bytes)
