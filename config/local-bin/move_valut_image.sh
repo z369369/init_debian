@@ -2,7 +2,7 @@
 
 # 1. 경로 설정
 SRC_DIR="/home/lwh/Documents/001_Brain_Notes/01_Common/Images"
-DEST_DIR="/home/lwh/Documents/901_Images"
+DEST_DIR="/home/lwh/Pictures/001_Brain_Notes_Images"
 NOTES_DIR="/home/lwh/Documents/001_Brain_Notes"
 
 # Target 디렉토리 생성
