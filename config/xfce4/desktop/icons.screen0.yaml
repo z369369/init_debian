@@ -19,6 +19,9 @@ configs:
       width: 1920
       height: 1080
   icons:
+    "/home/lwh/Desktop/IMG_20260219_131220.jpg":
+      row: 0
+      col: 0
     "d85f6c16-179b-40fd-9ed5-c7fceb325aed":
       row: 6
       col: 0
@@ -59,10 +62,9 @@ configs:
     "/home/lwh/Desktop/.desktopfolder":
       row: 6
       col: 0
-    "/home/lwh/Pictures":
-      row: 2
+    "/home/lwh/Desktop/bin":
+      row: 6
       col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
@@ -85,9 +87,10 @@ configs:
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
       col: 0
-    "/home/lwh/Desktop/bin":
-      row: 6
+    "/home/lwh/Pictures":
+      row: 2
       col: 0
+      last_seen: 1785054051241630
     "/home/lwh/Desktop/Download":
       row: 0
       col: 0
@@ -98,15 +101,15 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696112014171
-    "/home/lwh/Desktop/desktop_local":
-      row: 7
+    "/home/lwh/Desktop/Screen recordings":
+      row: 8
       col: 0
     "/home/lwh/Videos":
       row: 3
       col: 0
       last_seen: 1785054051242001
-    "/home/lwh/Desktop/Screen recordings":
-      row: 8
+    "/home/lwh/Desktop/desktop_local":
+      row: 7
       col: 0
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
