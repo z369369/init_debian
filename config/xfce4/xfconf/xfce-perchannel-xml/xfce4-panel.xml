@@ -182,6 +182,7 @@
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
         <value type="string" value="xfce-session-settings.desktop"/>
+        <value type="string" value="syncthing-ui.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="btrfs-assistant.desktop"/>
@@ -190,7 +191,6 @@
         <value type="string" value="it.mijorus.gearlever.desktop"/>
         <value type="string" value="org.kde.isoimagewriter.desktop"/>
         <value type="string" value="io.github.flattool.Warehouse.desktop"/>
-        <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
