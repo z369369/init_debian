@@ -1,4 +1,6 @@
 #!/bin/bash
+sleep 120
+/home/lwh/Desktop/bin/resize_image.sh
 sleep 5
 /home/lwh/Desktop/bin/vault_image.sh
 sleep 5

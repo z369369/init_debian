@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. 경로 설정
-SRC_DIR="/home/lwh/Documents/001_Brain_Notes/01_Common/Images"
+SRC_DIR="/home/lwh/Documents/001_Brain_Notes/zz_hub/attach"
 DEST_DIR="/home/lwh/Pictures/001_Brain_Notes_Images"
 NOTES_DIR="/home/lwh/Documents/001_Brain_Notes"
 
@@ -35,7 +35,7 @@ if [ -d "$SRC_DIR" ]; then
             BEGIN { $esc_orig = quotemeta($old_fname); }
             
             # 패턴 A: 절대경로 형태 매칭 및 치환
-            s|/home/lwh/Documents/001_Brain_Notes/01_Common/Images/$esc_orig(?![a-zA-Z0-9_\.])|group:img/$new_fname|g;
+            s|/home/lwh/Documents/001_Brain_Notes/zz_hub/attach/$esc_orig(?![a-zA-Z0-9_\.])|group:img/$new_fname|g;
             
             # 패턴 B: 단일 파일명 형태 완전 일치 매칭 (뒤에 글자/확장자가 이어지는 경우 제외)
             s|(?<!group:img/)(?<![a-zA-Z0-9_\./])$esc_orig(?![a-zA-Z0-9_\.])|group:img/$new_fname|g;
