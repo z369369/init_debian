@@ -304,6 +304,8 @@ wtmpdb
 xclip
 xdg-desktop-portal-gtk
 xdg-desktop-portal-xapp
+xdg-user-dirs
+xdg-user-dirs-gtk
 xfce4
 xfce4-docklike-plugin
 xfce4-genmon-plugin
