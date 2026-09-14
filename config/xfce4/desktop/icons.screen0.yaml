@@ -69,8 +69,8 @@ configs:
     "/home/lwh/Desktop/bin":
       row: 6
       col: 0
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
+    "/home/lwh/Desktop/user.sav":
+      row: 0
       col: 0
     "/home/lwh/Desktop/autostart":
       row: 5
@@ -88,8 +88,12 @@ configs:
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
       col: 0
-    "/home/lwh/Desktop/user.sav":
-      row: 0
+    "SAMSUNG Android":
+      row: 3
+      col: 0
+      last_seen: 1789038308475600
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
       col: 0
     "/home/lwh/Desktop/Download":
       row: 0
@@ -104,13 +108,13 @@ configs:
     "/home/lwh/Desktop/desktop_local":
       row: 7
       col: 0
+    "/home/lwh/Desktop/Screen recordings":
+      row: 8
+      col: 0
     "/home/lwh/Videos":
       row: 3
       col: 0
       last_seen: 1785054051242001
-    "/home/lwh/Desktop/Screen recordings":
-      row: 8
-      col: 0
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
       col: 0

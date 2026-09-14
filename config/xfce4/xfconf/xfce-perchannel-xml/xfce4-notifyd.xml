@@ -11,6 +11,7 @@
       <value type="string" value="notify-send"/>
       <value type="string" value="org.freedesktop.network-manager-applet"/>
       <value type="string" value="org.xfce.Thunar"/>
+      <value type="string" value="org.xfce.xfdesktop"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce4-notifyd settings"/>
