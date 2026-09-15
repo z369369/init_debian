@@ -10,7 +10,7 @@ TARGET_DIRS=(
 )
 
 # 백업 파일이 저장될 기본 최상위 경로
-BACKUP_BASE_DIR="/media/lwh/lwh_backup"
+BACKUP_BASE_DIR="/media/lwh/lwh_backup/Backup"
 
 # 오늘 날짜 (YYYY-MM-DD 형식)
 TODAY=$(date +%Y-%m-%d)

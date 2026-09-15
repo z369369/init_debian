@@ -151,7 +151,7 @@ trestore() {
 }
 
 backup_etc() {
-    local target_dir="${1:-/media/lwh/lwh_backup}"
+    local target_dir="${1:-/media/lwh/lwh_backup/Backup/etc}"
     local today=$(date +%Y%m%d)
     
     if [ ! -d "$target_dir" ]; then

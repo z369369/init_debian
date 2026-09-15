@@ -3,7 +3,7 @@
 # 5초 대기 (부팅 직후 실행 등 네트워크 안정화 목적)
 sleep 5
 
-TARGET_DIR="/media/lwh/lwh_backup/Wallpaper"
+TARGET_DIR="/media/lwh/lwh_backup/Backup/Wallpaper"
 
 # 디렉터리가 없으면 자동 생성
 if [ ! -d "$TARGET_DIR" ]; then

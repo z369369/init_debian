@@ -59,11 +59,10 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Pictures":
-      row: 2
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
       col: 0
-      last_seen: 1785054051241630
-    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
+    "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
       col: 0
     "/home/lwh/Desktop/bin":
@@ -85,15 +84,16 @@ configs:
     "/home/lwh/Desktop/OpenCamera":
       row: 7
       col: 0
-    "/home/lwh/Desktop/gemini_backup.sh":
-      row: 0
-      col: 0
     "SAMSUNG Android":
       row: 3
       col: 0
       last_seen: 1789038308475600
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
+    "/home/lwh/Pictures":
+      row: 2
+      col: 0
+      last_seen: 1785054051241630
+    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
+      row: 0
       col: 0
     "/home/lwh/Desktop/Download":
       row: 0
@@ -105,9 +105,6 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696112014171
-    "/home/lwh/Desktop/desktop_local":
-      row: 7
-      col: 0
     "/home/lwh/Desktop/Screen recordings":
       row: 8
       col: 0
@@ -115,6 +112,9 @@ configs:
       row: 3
       col: 0
       last_seen: 1785054051242001
+    "/home/lwh/Desktop/desktop_local":
+      row: 7
+      col: 0
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
       col: 0

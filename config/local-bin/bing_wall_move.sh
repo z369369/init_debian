@@ -3,8 +3,8 @@
 # ==============================================================================
 # 디렉터리 경로 설정
 # ==============================================================================
-SOURCE_DIR="/media/lwh/lwh_backup/Wallpaper"
-TARGET_DIR="/media/lwh/lwh_backup/Wallpaper/backup"
+SOURCE_DIR="/media/lwh/lwh_backup/Backup/Wallpaper"
+TARGET_DIR="/media/lwh/lwh_backup/Backup/Wallpaper/backup"
 KEEP_COUNT=20
 
 # ==============================================================================

@@ -2,7 +2,7 @@
 
 # 검색 대상 디렉터리 목록
 TARGET_DIRS=(
-    "/home/lwh/Pictures/001_Brain_Notes_Images"
+    "/home/lwh/Pictures/힣_Brain_Notes"
     "/home/lwh/Documents/001_Brain_Notes"
     "/home/lwh/Documents/101_Personal_Data"
 )

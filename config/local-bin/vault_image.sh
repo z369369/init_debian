@@ -2,7 +2,7 @@
 
 # 1. 경로 설정
 SRC_DIR="/home/lwh/Documents/001_Brain_Notes/zz_hub/attach"
-DEST_DIR="/home/lwh/Pictures/001_Brain_Notes_Images"
+DEST_DIR="/home/lwh/Pictures/힣_Brain_Notes"
 NOTES_DIR="/home/lwh/Documents/001_Brain_Notes"
 
 # Target 디렉토리 생성
