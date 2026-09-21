@@ -19,9 +19,10 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "/":
-      row: 1
+    "F5E1-6BEE":
+      row: 0
       col: 0
+      last_seen: 1777696655576554
     "/home/lwh/Desktop/IMG_20260219_131220.jpg":
       row: 0
       col: 0
@@ -65,11 +66,11 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
-      row: 0
-      col: 0
     "/home/lwh/Desktop/bin":
       row: 6
+      col: 0
+    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
+      row: 0
       col: 0
     "/home/lwh/Desktop/user.sav":
       row: 0
@@ -149,27 +150,27 @@ configs:
     "/home/lwh/Desktop/clipping":
       row: 0
       col: 0
+    "/":
+      row: 1
+      col: 0
     "/home/lwh/Desktop/001_Brain_Notes":
       row: 6
+      col: 0
+    "/home/lwh/Desktop/Pictures":
+      row: 7
       col: 0
     "32FB-F73F":
       row: 0
       col: 0
       last_seen: 1786001486252579
-    "/home/lwh/Desktop/Pictures":
-      row: 7
-      col: 0
     "/home/lwh/Desktop/hermes_prompt.txt":
       row: 7
-      col: 0
-    "trash:///":
-      row: 2
       col: 0
     "/home/lwh/Desktop/etc":
       row: 6
       col: 0
-    "/home/lwh/Desktop/gemini_restore.sh":
-      row: 6
+    "trash:///":
+      row: 2
       col: 0
     "/home/lwh/Desktop/\uCC9C\uC548_\uC5D0\uB374\uD558\uC6B0\uC2A4_\uC774\uC0AC_251219":
       row: 10
@@ -189,7 +190,6 @@ configs:
       row: 1
       col: 0
       last_seen: 1786523725772269
-    "F5E1-6BEE":
-      row: 0
+    "/home/lwh/Desktop/gemini_restore.sh":
+      row: 6
       col: 0
-      last_seen: 1777696655576554
