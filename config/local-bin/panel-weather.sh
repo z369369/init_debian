@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: xfce 패널 날짜 표시 - open-meteo
+# @TAGS: xfce, pannel, icon
+# @USAGE: panel-weather.sh
 
 # 필수 의존성 체크 (jq가 없을 경우 설치 필요: sudo apt install jq)
 if ! command -v jq &> /dev/null; then

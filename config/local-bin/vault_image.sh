@@ -1,4 +1,8 @@
 #!/bin/bash
+# @DESC: note dir 의 이미지를 dest dir 로 이동 시켜주고 노트 컨텐츠를 수정
+# @TAGS: note, image mover, content modifier
+# @USAGE: vault_image.sh
+# @STATUS: 사용중
 
 # 1. 경로 설정
 SRC_DIR="/home/lwh/Documents/001_Brain_Notes/zz_hub/attach"

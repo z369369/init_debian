@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: 데비안 설치된 버전의 End of Life 출력용
+# @TAGS: debian, EOL print
+# @USAGE: check_debian_eol.sh
 
 # ==============================================================================
 # Debian EOL Check Script (JSON 필드: extendedSupport 만 사용)

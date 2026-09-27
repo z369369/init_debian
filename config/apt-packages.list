@@ -100,6 +100,7 @@ inotify-tools
 installation-report
 iproute2
 iputils-ping
+jpegoptim
 jq
 keyboard-configuration
 kmod
@@ -246,6 +247,7 @@ nm-connection-editor
 openssh-client
 openssh-server
 openssl-provider-legacy
+optipng
 orca
 os-prober
 p7zip-full

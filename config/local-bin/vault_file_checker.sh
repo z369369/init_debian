@@ -1,5 +1,9 @@
 #!/bin/bash
-#
+# @DESC: 노트의 내용을 검사하여 빠진 이미지 파일을 target dir 로 이동
+# @TAGS: image file organizer
+# @USAGE: vault_file_checker.sh
+# @STATUS: 사용중
+
 # check_filenames.sh
 #
 # 목적:

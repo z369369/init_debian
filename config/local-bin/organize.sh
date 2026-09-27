@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: download 폴더 정리, rsync로 백업디스크로 복사
+# @TAGS: download, organizer, backup
+# @USAGE: organize.sh
 
 #organize download folder
 #Image Files

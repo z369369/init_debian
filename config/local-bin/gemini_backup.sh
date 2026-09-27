@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# @DESC: GIT repo에 백업
+# @TAGS: GIT, xfce, etc, config backup
+# @USAGE: gemini_backup.sh
 
 set -e
 

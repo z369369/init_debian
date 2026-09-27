@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# @DESC: xfce 컴포지터 활성 및 비활성화 토글 스위치
+# @TAGS: xfce compositor, toggle, game mode
+# @USAGE: compositor.sh
 
 # xfwm4 컴포지터 활성화 상태 체크
 CHANNEL="xfwm4"

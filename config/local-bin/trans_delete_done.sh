@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: 트랜스미션 완료된 목록 제거
+# @TAGS: transmission, torrent, remover
+# @USAGE: trans_delete_done.sh
 
 # Clears finished downloads from Transmission.
 # Version: 1.1

@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC:  bing 배경화면 다운로드 진행
+# @TAGS:  bing, wallpaper, downloader
+# @USAGE: bing_wall.sh
 
 # 5초 대기 (부팅 직후 실행 등 네트워크 안정화 목적)
 sleep 5

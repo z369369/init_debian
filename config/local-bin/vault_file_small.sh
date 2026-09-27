@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# @DESC: target dir의 이미지 파일명을 바꾸고 마크다운 노트에도 이미지 파일명을 수정
+# @TAGS: image renamer, note content modifer
+# @USAGE: vault_file_small.sh
+# @STATUS: 사용중
+
 # ==============================================================================
 # rename_images.sh
 # 이미지 파일명(14자→5자 역순)을 마크다운 노트에서 검색하여
@@ -108,7 +113,7 @@ mapfile -d '' ALL_IMAGE_FILES < <(
     find "$IMAGES_DIR" -maxdepth 1 -type f \
         \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \
            -o -iname "*.gif" -o -iname "*.webp" -o -iname "*.svg" \
-           -o -iname "*.bmp"  -o -iname "*.tiff" \) \
+           -o -iname "*.bmp"  -o -iname "*.tiff" -o -iname "*.avif" \) \
         -print0
 )
 

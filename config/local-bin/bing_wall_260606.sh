@@ -1,4 +1,8 @@
 #!/bin/bash
+# @DESC:  bing 배경화면 다운로드 진행, 오래된 버전
+# @TAGS:  bing, wallpaper, downloader
+# @USAGE: bing_wall.sh
+
 sleep 5
 
 # 1. 0~9 사이의 랜덤 숫자 생성
@@ -21,7 +25,7 @@ curl -s -o "$save_path" "$bing_url"
 
 
 #3. 중복제거
-TARGET_DIR="$HOME/Pictures/009_wallpaper"
+TARGET_DIR="/media/lwh/lwh_backup/Backup/Wallpaper"
 
 # 디렉터리 존재 여부 확인
 if [ ! -d "$TARGET_DIR" ]; then

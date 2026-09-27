@@ -1,0 +1,16 @@
+#!/bin/bash
+# @DESC: ~/.local/bin 스크립트 목록 및 설명 출력
+# @TAGS:  
+# @USAGE: 
+
+DIR="${HOME}/.local/bin"
+printf "%-30s %s\n" "SCRIPT" "DESCRIPTION"
+printf "%-30s %s\n" "------" "-----------"
+
+for f in "$DIR"/*; do
+    [[ -f "$f" && -x "$f" ]] || continue
+    name=$(basename "$f")
+    desc=$(grep -im1 '^# @DESC:' "$f" 2>/dev/null | sed 's/^# @DESC: *//')
+    [[ -z "$desc" ]] && desc="(설명 없음)"
+    printf "%-30s %s\n" "$name" "$desc"
+done

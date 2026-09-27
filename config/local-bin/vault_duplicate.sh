@@ -1,4 +1,8 @@
 #!/bin/bash
+# @DESC: 옵시디언 노트 중복 파일 검사, 중복 파일 출력
+# @TAGS: obsidian, duplicate, checker
+# @USAGE: vault_duplicate.sh
+# @STATUS: 사용중
 
 # 검색 대상 디렉터리 목록
 TARGET_DIRS=(

@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# @DESC: 사진 폴더들 이미지 사이즈, 용량 줄이기
+# @TAGS: image, resizer, optimizer
+# @USAGE: resize_image.sh
+# @STATUS: 사용중
 
 # ==========================================
 # 1. 설정 항목

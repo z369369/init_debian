@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: SRC DIR의 파일 갯수가 20개 넘으면 TARGET DIR로 파일을 이동
+# @TAGS: wallpaper, backkupd mover
+# @USAGE: bing_wall_move.sh
 
 # ==============================================================================
 # 디렉터리 경로 설정

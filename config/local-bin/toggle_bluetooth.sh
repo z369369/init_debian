@@ -1,4 +1,8 @@
 #!/bin/bash
+# @DESC: 블루투스 재시작, 블루투스 토글 스위치
+# @TAGS: 블루투스, toggler
+# @USAGE: toggle_bluetooth.sh
+
 #sudo modprobe -r btusb # 모듈 제거
 
 # Turn off Bluetooth

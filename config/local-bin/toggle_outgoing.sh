@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: 
+# @TAGS: 
+# @USAGE: 
 
 # Run the command and store the output in a variable
 output=$(cat ~/.key | sudo -S ufw status verbose | grep 'allow (outgoing)')

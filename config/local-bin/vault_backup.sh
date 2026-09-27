@@ -1,4 +1,8 @@
 #!/bin/bash
+# @DESC: backup dir에 src_dir의 파일을 압축하여 저장
+# @TAGS: obsidian, backup
+# @USAGE: vault_backup.sh
+# @STATUS: 사용중
 
 # ==========================================
 # 사용자 설정 영역

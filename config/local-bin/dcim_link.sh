@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# @DESC: SRC_DIR의 하위 폴더를 DST_DIR으로 심볼릭 링크 생성, 삭제 = Pictures
+# @TAGS: pictures, DCIM, 
+# @USAGE: dcim_link.sh
+# @PURPOSE: 안드로이드의 사진 폴더를 Linux Picures 폴더에 합치는 목적
 
 set -euo pipefail
 

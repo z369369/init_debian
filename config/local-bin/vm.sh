@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC:  iso, qcow2를 만들거나 실행하기 위한 스크립트 
+# @TAGS:  iso, qcow2, QEMU
+# @USAGE: vm.sh [파일명.iso] or [파일명.qcow2]
 
 # --- VM 설정 변수 ---
 

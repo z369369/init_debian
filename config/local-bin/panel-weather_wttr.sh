@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: xfce 패널 날짜 표시 - wttr 에서 데이터 받음
+# @TAGS: xfce, pannel, icon
+# @USAGE: panel-weather.sh
 
 # 설정: 도시명 및 캐시 파일 경로
 LOCATION="Cheonan"

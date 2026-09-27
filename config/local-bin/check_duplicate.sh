@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# @DESC: 현재 폴더(및 하위 폴더)의 SHA-256 해시를 비교하여 중복 파일 목록을 출력합니다.
+# @TAGS: file duplicate, checker
+# @USAGE: check_duplicate.sh
 
 # ==============================================================================
 # Debian 13 XFCE - Duplicate File Finder Script

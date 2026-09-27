@@ -1,4 +1,7 @@
 #!/bin/bash
+# @DESC: 스크린샷 파일명 일괄 변경 (스크린샷_ -> Screenshot_, '-' 제거)
+# @TAGS: screenshot, renamer
+# @USAGE: rename_screenshot.sh
 
 # ==============================================================================
 # Script Name : rename_screenshots.sh

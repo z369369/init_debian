@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-#
+# @DESC: downsub 스크립트의 파일 이름 불필요한 부분 정리하기
+# @TAGS: obsidian, youtube, script, file renamer
+# @USAGE: rename_downsub.sh
+# @STATUS: 사용중
+
 # rename_move_transcripts.sh
 #
 # 1) /home/lwh/Downloads/Download_phone/ 안의 .txt 파일들에서

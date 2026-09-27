@@ -167,6 +167,7 @@ alias aupdate='/home/lwh/.local/bin/gupdate && flatpak update -y && cat ~/.key |
 alias aclean='flatpak uninstall --unused -y && cat ~/.key | sudo -S apt autoremove --purge && sudo apt clean'
 
 alias bat='batcat --style=plain'
+alias bslist='find ~/.local/bin -maxdepth 1 -type f -executable | sort -r | fzf'
 alias c='clear'
 alias cat='batcat --style=plain'
 
@@ -215,7 +216,7 @@ export FZF_DEFAULT_OPTS="--preview 'batcat --style=plain --color=always {}'
 
 bind -x '"\C-f": fzf --layout=reverse'
 bind -x '"\C-r": ripfzf " "'
-bind -x '"\C-t": hermes chat'
+
 
 #/home/lwh/.local/bin/check_debian_eol_curl.sh
 
