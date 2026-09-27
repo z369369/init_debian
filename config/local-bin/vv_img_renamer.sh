@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # @DESC: target dir의 이미지 파일명을 바꾸고 마크다운 노트에도 이미지 파일명을 수정
 # @TAGS: image renamer, note content modifer
-# @USAGE: vault_file_small.sh
+# @USAGE: vv_img_renamer.sh
 # @STATUS: 사용중
 
 # ==============================================================================
