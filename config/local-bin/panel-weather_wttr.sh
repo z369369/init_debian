@@ -1,5 +1,5 @@
 #!/bin/bash
-# @DESC: xfce 패널 날짜 표시 - wttr 에서 데이터 받음
+# @DESC: xfce 패널 날짜 표시, wttr 에서 데이터 받음
 # @TAGS: xfce, pannel, icon
 # @USAGE: panel-weather.sh
 

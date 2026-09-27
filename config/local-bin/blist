@@ -1,16 +1,41 @@
 #!/bin/bash
 # @DESC: ~/.local/bin 스크립트 목록 및 설명 출력
-# @TAGS:  
-# @USAGE: 
 
 DIR="${HOME}/.local/bin"
-printf "%-30s %s\n" "SCRIPT" "DESCRIPTION"
-printf "%-30s %s\n" "------" "-----------"
 
+BOLD="\033[1m"
+BWHITE="\033[37m\033[36m"
+WHITE="\033[37m"
+RESET="\033[0m"
+
+
+
+printf "${BOLD}%-30s %s${RESET}\n" "SCRIPT" "DESCRIPTION"
+
+
+i=0
 for f in "$DIR"/*; do
     [[ -f "$f" && -x "$f" ]] || continue
     name=$(basename "$f")
-    desc=$(grep -im1 '^# @DESC:' "$f" 2>/dev/null | sed 's/^# @DESC: *//')
-    [[ -z "$desc" ]] && desc="(설명 없음)"
-    printf "%-30s %s\n" "$name" "$desc"
+    desc=$(grep -im1 '^# @desc:' "$f" 2>/dev/null | sed 's/^[^:]*: *//')
+    [[ -z "$desc" ]] && desc=""
+
+    ((i++))
+    if (( i % 2 == 0 )); then
+        COLOR="$BWHITE"
+    else
+        COLOR="$WHITE"
+    fi
+
+    printf "${COLOR}%-30s %s${RESET}\n" "$name" "$desc"
 done
+
+#COLOR="\033[37m\033[44m"   # 흰 글자 + 파랑 배경
+#\033[40m  # 검정
+#\033[41m  # 빨강
+#\033[42m  # 초록
+#\033[43m  # 노랑
+#\033[44m  # 파랑
+#\033[45m  # 마젠타
+#\033[46m  # 시안
+#\033[47m  # 흰색

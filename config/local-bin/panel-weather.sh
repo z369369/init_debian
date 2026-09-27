@@ -1,5 +1,5 @@
 #!/bin/bash
-# @DESC: xfce 패널 날짜 표시 - open-meteo
+# @DESC: xfce 패널 날짜 표시, open-meteo
 # @TAGS: xfce, pannel, icon
 # @USAGE: panel-weather.sh
 
