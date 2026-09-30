@@ -182,10 +182,7 @@ step_1() {
 step_2() {
     echo "[2] Restoring Flatpak applications"
 
-    sudo flatpak --system remote-delete flathub
-    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    sudo flatpak remote-delete --system flathub
-    sudo flatpak --system remote-delete flathub
+
 
     local list="$BACKUP_DIR/flatpak-packages.list"
     if ! is_file "$list"; then
@@ -196,6 +193,11 @@ step_2() {
     if ! command -v flatpak &>/dev/null; then
         sudo apt-get install -y flatpak || { warn "Failed to install flatpak"; return; }
     fi
+
+    sudo flatpak --system remote-delete flathub
+    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    sudo flatpak remote-delete --system flathub
+
 
     local app
     while IFS= read -r app; do
