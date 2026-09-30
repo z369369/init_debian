@@ -203,7 +203,7 @@ step_2() {
     while IFS= read -r app; do
         [ -z "$app" ] && continue
         # System-wide install via sudo, so it does not depend on the user's session
-        sudo flatpak install -y --noninteractive flathub "$app" || warn "Flatpak install failed: $app"
+        flatpak install -y --noninteractive flathub "$app" || warn "Flatpak install failed: $app"
     done < <(sudo cat "$list")
 }
 
