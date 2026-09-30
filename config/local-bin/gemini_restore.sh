@@ -122,6 +122,62 @@ echo " Backup source: $BACKUP_DIR"
 echo " Steps       : ${STEPS[*]}"
 echo "=========================================="
 
+# ---------- 1. APT ----------
+step_1() {
+    echo "[1] Restoring APT repositories/keyrings/packages"
+
+    # Restore keyrings first so that signed-by references in sources resolve
+    if is_dir "$BACKUP_DIR/keyrings"; then
+        sudo mkdir -p /etc/apt/keyrings
+        sudo rsync -av --chown=root:root "$BACKUP_DIR/keyrings/" /etc/apt/keyrings/
+        sudo chmod 755 /etc/apt/keyrings
+        sudo find /etc/apt/keyrings -type f -exec chmod 644 {} +
+    fi
+
+    if is_dir "$BACKUP_DIR/sources.list.d"; then
+        # No --delete here: do not remove repositories that exist on the current system
+        sudo rsync -av --chown=root:root "$BACKUP_DIR/sources.list.d/" /etc/apt/sources.list.d/
+        sudo find /etc/apt/sources.list.d -type f -exec chmod 644 {} +
+    fi
+
+    sudo apt-get update || warn "apt update reported errors (check repository settings)"
+
+    local list="$BACKUP_DIR/apt-packages.list"
+    if ! is_file "$list"; then
+        warn "apt-packages.list not found - skipping package installation"
+        return
+    fi
+
+    # Split the list into packages that exist in the current repos and those that do not
+    local avail=() missing=() pkg
+    while IFS= read -r pkg; do
+        [[ -z "$pkg" || "$pkg" =~ ^[[:space:]]*# ]] && continue
+        if apt-cache show "$pkg" &>/dev/null; then
+            avail+=("$pkg")
+        else
+            missing+=("$pkg")
+        fi
+    done < <(sudo cat "$list")
+
+    if [ ${#missing[@]} -gt 0 ]; then
+        warn "Skipping ${#missing[@]} packages not found in repositories: ${missing[*]}"
+        printf '%s\n' "${missing[@]}" | as_user tee "$TARGET_HOME/apt-restore-missing.$TS.txt" >/dev/null
+        info "Missing package list saved: $TARGET_HOME/apt-restore-missing.$TS.txt"
+    fi
+
+    if [ ${#avail[@]} -gt 0 ]; then
+        info "Installing ${#avail[@]} packages."
+        if ! sudo apt-get install -y "${avail[@]}"; then
+            warn "Bulk install failed - retrying one by one."
+            for pkg in "${avail[@]}"; do
+                sudo apt-get install -y "$pkg" || warn "Install failed: $pkg"
+            done
+        fi
+        # Re-mark as manually installed so autoremove does not drop them
+        sudo apt-mark manual "${avail[@]}" >/dev/null 2>&1 || true
+    fi
+}
+
 # ---------- 2. Flatpak ----------
 step_2() {
     echo "[2] Restoring Flatpak applications"
