@@ -314,56 +314,6 @@ step_8() {
     fi
 }
 
-# ---------- 9. GRUB ----------
-step_9() {
-    echo "[9] Restoring GRUB configuration"
-    local src="$BACKUP_DIR/grub.d"
-    if ! is_dir "$src"; then warn "grub.d backup not found - skipping"; return; fi
-
-    confirm "This overwrites /etc/grub.d and /etc/default/grub, then runs update-grub. Continue?" \
-        || { info "Skipping GRUB restore"; return; }
-
-    backup_existing "/etc/grub.d"
-    backup_existing "/etc/default/grub"
-
-    # default_grub belongs to /etc/default/grub, so do not copy it into /etc/grub.d
-    sudo rsync -av --exclude='default_grub' --chown=root:root "$src/" /etc/grub.d/
-
-    if is_file "$src/default_grub"; then
-        sudo install -o root -g root -m 644 "$src/default_grub" /etc/default/grub
-        info "Restored: /etc/default/grub"
-    fi
-
-    # Show permissions so you can confirm the scripts are still executable
-    sudo ls -l /etc/grub.d/
-    sudo update-grub || warn "update-grub failed"
-}
-
-# ---------- 10. fstab (opt-in) ----------
-step_10() {
-    echo "[10] Restoring /etc/fstab"
-    local src="$BACKUP_DIR/fstab"
-    if ! is_file "$src"; then warn "fstab backup not found - skipping"; return; fi
-
-    warn "Restoring fstab on a system with different disk UUIDs (new disk/reinstall) can break booting."
-    echo "---- Diff against the current fstab ----"
-    sudo diff -u /etc/fstab "$src" || true
-    echo "----------------------------------------"
-
-    confirm "Replace /etc/fstab with the backup shown above?" || { info "Skipping fstab restore"; return; }
-
-    backup_existing "/etc/fstab"
-    sudo install -o root -g root -m 644 "$src" /etc/fstab
-
-    # Revert automatically if the new fstab fails verification
-    if command -v findmnt &>/dev/null && ! sudo findmnt --verify; then
-        warn "fstab verification failed - reverting to the previous fstab."
-        sudo cp -a "/etc/fstab.bak.${TS}" /etc/fstab
-    else
-        sudo systemctl daemon-reload
-    fi
-}
-
 # ---------- Run ----------
 for s in "${STEPS[@]}"; do
     if declare -F "step_$s" >/dev/null; then
