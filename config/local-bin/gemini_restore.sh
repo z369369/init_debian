@@ -181,6 +181,10 @@ step_1() {
 # ---------- 2. Flatpak ----------
 step_2() {
     echo "[2] Restoring Flatpak applications"
+    sudo flatpak --system remote-delete flathub
+    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    sudo flatpak remote-delete --system flathub
+
     local list="$BACKUP_DIR/flatpak-packages.list"
     if ! is_file "$list"; then
         warn "flatpak-packages.list not found - skipping"
