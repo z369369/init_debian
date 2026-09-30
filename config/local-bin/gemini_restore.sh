@@ -16,7 +16,7 @@
 
 set -uo pipefail
 
-BACKUP_DIR="/home/lwh/git/init_debian/config"
+BACKUP_DIR="~/git/init_debian/config"
 ASSUME_YES=0
 WITH_FSTAB=0
 STEPS=()
