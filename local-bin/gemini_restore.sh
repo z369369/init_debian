@@ -97,7 +97,7 @@ TARGET_HOME="$(getent passwd "$TARGET_USER" | cut -d: -f6)"
 TARGET_UID="$(id -u "$TARGET_USER")"
 
 # Default backup location is derived from the chosen user's home
-[ -z "$BACKUP_DIR" ] && BACKUP_DIR="$TARGET_HOME/git/init_debian/config"
+[ -z "$BACKUP_DIR" ] && BACKUP_DIR="$TARGET_HOME/git/init_debian"
 
 # ---------- Pre-flight checks ----------
 if [ "$EUID" -eq 0 ]; then

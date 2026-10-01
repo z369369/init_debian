@@ -7,7 +7,7 @@ set -e
 
 echo " "
 
-BACKUP_DIR="/home/lwh/git/init_debian/config"
+BACKUP_DIR="/home/lwh/git/init_debian"
 echo "=========================================="
 echo " 고도화된 시스템 구성 백업을 시작합니다."
 echo "=========================================="
