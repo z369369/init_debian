@@ -4,7 +4,6 @@
 # @USAGE: organize.sh
 
 #organize download folder
-#Image Files
 cd ~/Downloads
 mv *.NSP *.nsp *.xci /media/lwh/lwh_backup/Games/nintendo_nsp 2> /dev/null
 mv *.png *.jpg *.jpeg *.tif *.tiff *.bpm *.gif *.eps *.raw "/home/lwh/phone/DCIM/Screenshots" 2> /dev/null
@@ -21,31 +20,35 @@ mv *.mp4 *.mov *.avi *.mpg *.mpeg *.webm *.mp4 *.mpv *.mp2 *.wmv ~/Videos 2> /de
 mv *.pdf *.doc *.ppt *.xls *.xlsx ~/Documents 2> /dev/null
 mv *.iso ~/Downloads/iso 2> /dev/null
 
-rsync -a --delete ~/.bash* /media/lwh/lwh_backup
-rsync -a --delete ~/.conkyrc /media/lwh/lwh_backup
-rsync -a --delete ~/.config /media/lwh/lwh_backup
-rsync -a --delete ~/.key /media/lwh/lwh_backup
-rsync -a --delete ~/.mozilla /media/lwh/lwh_backup
-rsync -a --delete ~/.ssh /media/lwh/lwh_backup
-rsync -a --delete ~/.xfce4 /media/lwh/lwh_backup
-rsync -a --delete ~/.xprofile /media/lwh/lwh_backup
+DEST=/media/lwh/lwh_backup
 
-rsync -a --delete ~/.fonts /media/lwh/lwh_backup
-rsync -a --delete ~/.icons /media/lwh/lwh_backup
-rsync -a --delete ~/.themes /media/lwh/lwh_backup
+# Verify that the target disk is mounted (to prevent `--delete` from operating on the wrong location if it is unmounted).
+mountpoint -q "$DEST" || { echo "백업 디스크가 마운트되지 않았습니다: $DEST" >&2; exit 1; }
 
-rsync -a --delete ~/Desktop /media/lwh/lwh_backup
-rsync -a --delete ~/git /media/lwh/lwh_backup
-rsync -a --delete ~/phone /media/lwh/lwh_backup
-rsync -a --delete ~/Downloads/program* /media/lwh/lwh_backup/Downloads
+cd ~
 
-#rsync -av --progress --dry-run \
-rsync -a --delete  \
---exclude='share/Trash/' \
---exclude='share/flatpak/' \
-~/.local/ /media/lwh/lwh_backup/.local
+# -R(--relative): "./" Process in a single call while preserving the relative path.
+# Since bash expands globs, non-existent entries are ignored as nullglobs.
+shopt -s nullglob
 
-#python
-#python3 ~/Desktop/bin/pyauto/dup_remove.py
+SRC=(
+  ./.bash*
+  ./.conkyrc ./.config ./.key ./.mozilla ./.ssh ./.xfce4 ./.xprofile
+  ./.fonts ./.icons ./.themes
+  ./Desktop ./git ./phone
+  ./Downloads/program*
+  ./.local
+)
+
+#nice -n 10 ionice -c3 rsync -aR --delete \
+nice -n 10 ionice -c3 rsync -aR \
+  --info=stats1,progress2 \
+  --exclude='/.local/share/Trash/' \
+  --exclude='/.local/share/flatpak/' \
+  --exclude='/.config/*/Cache/' \
+  --exclude='/.config/*/Code Cache/' \
+  --exclude='/.config/*/GPUCache/' \
+  --exclude='node_modules/' \
+  "${SRC[@]}" "$DEST/"
 
 notify-send '파일 정리' '파일 정리가 완료되었습니다!'
