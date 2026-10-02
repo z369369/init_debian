@@ -40,8 +40,8 @@ SRC=(
   ./.local
 )
 
-#nice -n 10 ionice -c3 rsync -aR --delete \
-nice -n 10 ionice -c3 rsync -aR \
+#nice -n 10 ionice -c3 rsync -aRh --delete \
+nice -n 10 ionice -c3 rsync -aRh \
   --info=stats1,progress2 \
   --exclude='/.local/share/Trash/' \
   --exclude='/.local/share/flatpak/' \

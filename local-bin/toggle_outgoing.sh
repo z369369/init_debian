@@ -1,7 +1,7 @@
 #!/bin/bash
-# @DESC: 
-# @TAGS: 
-# @USAGE: 
+# @DESC: ufw 토글 스위치
+# @TAGS: ufw, toggler
+# @USAGE: toggle_outgoing.sh
 
 # Run the command and store the output in a variable
 output=$(cat ~/.key | sudo -S ufw status verbose | grep 'allow (outgoing)')

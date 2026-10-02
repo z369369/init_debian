@@ -50,6 +50,7 @@ dpkg
 e2fsprogs
 engrampa
 ethtool
+evolution-data-server
 fastboot
 fastfetch
 fcitx5
@@ -279,6 +280,7 @@ sensible-utils
 shim-signed
 snapper
 sqv
+synaptic
 syncthing
 system-config-printer
 systemd

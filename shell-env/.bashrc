@@ -230,7 +230,10 @@ export PATH="$PATH:/home/lwh/.lmstudio/bin"
 # End of LM Studio CLI section
 
 rm -f ~/.bash_history-*.tmp
+rm -rf /home/lwh/.config/google-chrome-backup-crashrecovery-*
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+

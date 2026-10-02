@@ -4,9 +4,9 @@
 # @USAGE: vault_main.sh
 # @STATUS: 사용중
 
+sleep 240
+/home/lwh/.local/bin/resize_image.sh
 sleep 5
-/home/lwh/Desktop/bin/resize_image.sh
+/home/lwh/.local/bin/vault_image.sh
 sleep 5
-/home/lwh/Desktop/bin/vault_image.sh
-sleep 5
-/home/lwh/Desktop/bin/vault_backup.sh
+/home/lwh/.local/bin/vault_backup.sh
