@@ -7,6 +7,6 @@
 sleep 2
 /home/lwh/.local/bin/rename_screenshot.sh
 sleep 2
-/home/lwh/.local/bin/dcim_link.sh
+/home/lwh/.local/bin/link_dcim.sh
 sleep 2
 /home/lwh/.local/bin/move_gemini_img.sh
