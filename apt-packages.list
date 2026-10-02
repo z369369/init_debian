@@ -270,7 +270,6 @@ python3-venv
 qemu-system-gui
 qemu-system-x86
 qemu-utils
-quodlibet
 readline-common
 reportbug
 ripgrep
