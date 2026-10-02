@@ -8,49 +8,59 @@
 # Description : 스크린샷 파일명 일괄 변경 (스크린샷_ -> Screenshot_, '-' 제거)
 # ==============================================================================
 
-# 대상 디렉토리 설정
-TARGET_DIR="/home/lwh/phone/DCIM/Screenshots"
+# 대상 디렉토리 설정 (여러 개 지정 가능)
+TARGET_DIRS=(
+    "/home/lwh/phone/DCIM/Screenshots"
+    "/home/lwh/phone/Pictures/Screenshots"
+)
 
-# 1. 디렉토리 존재 여부 검증
-if [ ! -d "$TARGET_DIR" ]; then
-    echo "[ERROR] 지정한 디렉토리가 존재하지 않습니다: $TARGET_DIR" >&2
-    exit 1
-fi
+total_count=0
 
-# 2. 해당 디렉토리로 이동
-cd "$TARGET_DIR" || {
-    echo "[ERROR] 디렉토리 이동 실패: $TARGET_DIR" >&2
-    exit 1
-}
+for TARGET_DIR in "${TARGET_DIRS[@]}"; do
+    # 1. 디렉토리 존재 여부 검증 (없으면 경고 후 다음 디렉토리로)
+    if [ ! -d "$TARGET_DIR" ]; then
+        echo "[WARNING] 지정한 디렉토리가 존재하지 않아 건너뜁니다: $TARGET_DIR" >&2
+        continue
+    fi
 
-echo "=== 파일명 변경 작업 시작: $TARGET_DIR ==="
-count=0
+    # 2. 해당 디렉토리로 이동 (서브셸 없이 이동하므로 매번 절대경로 사용)
+    cd "$TARGET_DIR" || {
+        echo "[WARNING] 디렉토리 이동 실패, 건너뜁니다: $TARGET_DIR" >&2
+        continue
+    }
 
-# 3. 디렉토리 내부 파일 순회 (공백/특수문자 안전 처리)
-for file in *; do
-    # 파일이 존재하는지 및 일반 파일인지 검증 (빈 디렉토리 및 서브디렉토리 제외)
-    [ -f "$file" ] || continue
+    echo "=== 파일명 변경 작업 시작: $TARGET_DIR ==="
+    count=0
 
-    # "스크린샷_" 또는 "-" 문자가 포함된 경우에만 처리
-    if [[ "$file" == *"스크린샷_"* ]] || [[ "$file" == *"-"* ]]; then
-        # A. "스크린샷_" -> "Screenshot_" 문자열 치환
-        new_name="${file//스크린샷_/Screenshot_}"
-        
-        # B. "-" 문자를 완전히 제거
-        new_name="${new_name//-/}"
+    # 3. 디렉토리 내부 파일 순회 (공백/특수문자 안전 처리)
+    for file in *; do
+        # 파일이 존재하는지 및 일반 파일인지 검증 (빈 디렉토리 및 서브디렉토리 제외)
+        [ -f "$file" ] || continue
 
-        # 실제 변경사항이 존재하는 경우 실행
-        if [ "$file" != "$new_name" ]; then
-            # 변경 대상 동일 파일명이 존재하는 경우 덮어쓰기 방지 (-n)
-            if [ -e "$new_name" ]; then
-                echo "[WARNING] 동일한 파일명이 이미 존재하여 건너뜁니다: '$new_name'"
-            else
-                echo "[RENAME] '$file' -> '$new_name'"
-                mv -n -- "$file" "$new_name"
-                ((count++))
+        # "스크린샷_" 또는 "-" 문자가 포함된 경우에만 처리
+        if [[ "$file" == *"스크린샷_"* ]] || [[ "$file" == *"-"* ]]; then
+            # A. "스크린샷_" -> "Screenshot_" 문자열 치환
+            new_name="${file//스크린샷_/Screenshot_}"
+
+            # B. "-" 문자를 완전히 제거
+            new_name="${new_name//-/}"
+
+            # 실제 변경사항이 존재하는 경우 실행
+            if [ "$file" != "$new_name" ]; then
+                # 변경 대상 동일 파일명이 존재하는 경우 덮어쓰기 방지
+                if [ -e "$new_name" ]; then
+                    echo "[WARNING] 동일한 파일명이 이미 존재하여 건너뜁니다: '$new_name'"
+                else
+                    echo "[RENAME] '$file' -> '$new_name'"
+                    mv -n -- "$file" "$new_name"
+                    ((count++))
+                fi
             fi
         fi
-    fi
+    done
+
+    echo "--- $TARGET_DIR: $count개 파일 변경됨 ---"
+    ((total_count += count))
 done
 
-echo "=== 작업 완료 (총 $count개 파일 변경됨) ==="
+echo "=== 작업 완료 (총 $total_count개 파일 변경됨) ==="
