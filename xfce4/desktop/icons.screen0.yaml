@@ -19,9 +19,10 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "/":
-      row: 1
+    "F5E1-6BEE":
+      row: 0
       col: 0
+      last_seen: 1777696655576554
     "/home/lwh/Desktop/IMG_20260219_131220.jpg":
       row: 0
       col: 0
@@ -52,21 +53,20 @@ configs:
     "/home/lwh/Desktop/antigravity":
       row: 0
       col: 0
-    "/home/lwh/Desktop/gemini_backup.sh":
-      row: 0
+    "/home/lwh/Desktop/prompt.txt":
+      row: 8
       col: 0
     "2025-09-06-12-06-13-00":
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Pictures":
-      row: 2
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
+      row: 0
       col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
-    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
+    "/home/lwh/Desktop/Recordings":
       row: 0
       col: 0
     "/home/lwh/Desktop/user.sav":
@@ -75,25 +75,24 @@ configs:
     "/home/lwh/Desktop/autostart":
       row: 5
       col: 0
-    "/home/lwh/Desktop/Recordings":
-      row: 0
-      col: 0
     "realme X50 5G":
       row: 0
       col: 0
       last_seen: 1786744532851558
+    "SAMSUNG Android":
+      row: 3
+      col: 0
+      last_seen: 1789038308475600
     "/home/lwh/Desktop/OpenCamera":
       row: 7
-      col: 0
-    "/home/lwh/Desktop/prompt.txt":
-      row: 8
       col: 0
     "/home/lwh/Desktop/\uCC3D\uC6D0 \uAC00\uC815\uBC95\uC6D0.png":
       row: 0
       col: 0
-    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_14-46-58.png":
-      row: 0
+    "/home/lwh/Pictures":
+      row: 2
       col: 0
+      last_seen: 1785054051241630
     "/home/lwh/Desktop/bin":
       row: 6
       col: 0
@@ -110,15 +109,17 @@ configs:
     "/home/lwh/Desktop/.desktopfolder":
       row: 6
       col: 0
-    "SAMSUNG Android":
-      row: 3
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_14-46-58.png":
+      row: 0
       col: 0
-      last_seen: 1789038308475600
     "/home/lwh/Desktop/Screen recordings":
       row: 8
       col: 0
     "/home/lwh/Desktop/desktop_local":
       row: 7
+      col: 0
+    "/home/lwh/Desktop/gemini_backup.sh":
+      row: 0
       col: 0
     "/home/lwh/Videos":
       row: 3
@@ -154,29 +155,28 @@ configs:
     "/home/lwh/Desktop/clipping":
       row: 0
       col: 0
+    "/":
+      row: 1
+      col: 0
     "/home/lwh/Desktop/001_Brain_Notes":
       row: 6
+      col: 0
+    "/home/lwh/Desktop/\uCC9C\uC548_\uC5D0\uB374\uD558\uC6B0\uC2A4_\uC774\uC0AC_251219":
+      row: 10
       col: 0
     "32FB-F73F":
       row: 0
       col: 0
       last_seen: 1786001486252579
-    "/home/lwh/Desktop/\uCC9C\uC548_\uC5D0\uB374\uD558\uC6B0\uC2A4_\uC774\uC0AC_251219":
-      row: 10
-      col: 0
     "trash:///":
       row: 2
-      col: 0
-    "/home/lwh/Desktop/hermes_prompt.txt":
-      row: 7
       col: 0
     "/home/lwh/Desktop/etc":
       row: 6
       col: 0
-    "/home/lwh/Music":
-      row: 1
+    "/home/lwh/Desktop/hermes_prompt.txt":
+      row: 7
       col: 0
-      last_seen: 1785054051241246
     "0492-3AF4":
       row: 1
       col: 0
@@ -195,7 +195,7 @@ configs:
     "/home/lwh/Desktop/Pictures":
       row: 7
       col: 0
-    "F5E1-6BEE":
-      row: 0
+    "/home/lwh/Music":
+      row: 1
       col: 0
-      last_seen: 1777696655576554
+      last_seen: 1785054051241246

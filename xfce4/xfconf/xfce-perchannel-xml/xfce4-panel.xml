@@ -182,10 +182,10 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="stacer.desktop"/>
         <value type="string" value="it.mijorus.gearlever.desktop"/>
         <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="synaptic.desktop"/>
         <value type="string" value="org.libreoffice.LibreOffice.writer.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
