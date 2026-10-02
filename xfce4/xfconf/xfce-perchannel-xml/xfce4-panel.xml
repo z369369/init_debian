@@ -78,6 +78,7 @@
         <value type="string" value="Fcitx"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="네트워크 연결 없음"/>
         <value type="string" value="메모"/>
         <value type="string" value="requesting an ethernet network address for “wired connection 1”…"/>
         <value type="string" value="caffeine-indicator"/>
@@ -181,16 +182,15 @@
       <property name="profile-shape" type="int" value="2"/>
       <property name="button-single-row" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="page.codeberg.libre_menu_editor.LibreMenuEditor.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="synaptic.desktop"/>
         <value type="string" value="org.libreoffice.LibreOffice.writer.desktop"/>
-        <value type="string" value="stacer.appimage_e99485e.desktop"/>
         <value type="string" value="google-chrome.desktop"/>
         <value type="string" value="com.valvesoftware.Steam.desktop"/>
         <value type="string" value="io.github.giantpinkrobots.flatsweep.desktop"/>
         <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
         <value type="string" value="system-config-printer.desktop"/>
-        <value type="string" value="syncthing-ui.desktop"/>
       </property>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
