@@ -65,6 +65,57 @@ confirm() {
 
 warn() { echo "  ⚠ $*"; }
 
+# restore_system_path /etc/apt
+# Restores $BACKUP_DIR/etc/apt -> /etc/apt (existing files are saved to $SAFE_DIR first)
+restore_system_path() {
+    local src="$1"                       # e.g. /etc/apt
+    local backup_src="$BACKUP_DIR$src"   # e.g. $BACKUP_DIR/etc/apt
+    local default="y"
+
+    if [ ! -e "$backup_src" ]; then
+        echo "  - $src : not in backup, skipping."
+        return 0
+    fi
+
+    is_risky "$src" && default="n"
+
+    if ! confirm "Restore $src ?" "$default"; then
+        echo "  - $src : skipped."
+        return 0
+    fi
+
+    # Save the existing files first
+    if [ -e "$src" ]; then
+        sudo mkdir -p "$SAFE_DIR$(dirname "$src")"
+        if ! sudo cp -a "$src" "$SAFE_DIR$(dirname "$src")/"; then
+            warn "Failed to back up existing $src - skipping restore for safety."
+            FAILED+=("backup:$src")
+            return 1
+        fi
+    fi
+
+    # Directory or single file
+    if [ -d "$backup_src" ]; then
+        sudo mkdir -p "$src"
+        if sudo rsync -a --chown=root:root "$backup_src/" "$src/"; then
+            echo "  - $src : restored"
+        else
+            warn "Failed to restore $src"
+            FAILED+=("restore:$src")
+            return 1
+        fi
+    else
+        sudo mkdir -p "$(dirname "$src")"
+        if sudo rsync -a --chown=root:root "$backup_src" "$src"; then
+            echo "  - $src : restored"
+        else
+            warn "Failed to restore $src"
+            FAILED+=("restore:$src")
+            return 1
+        fi
+    fi
+}
+
 # ------------------------------------------------------------------
 # [2/8] Install APT packages
 # ------------------------------------------------------------------
@@ -268,5 +319,5 @@ echo " Previous /etc files saved at: $SAFE_DIR"
 echo " Some settings (XFCE, shell, services) take effect after re-login or reboot."
 echo "=========================================="
 
-sudo groupadd -r autologin
+getent group autologin >/dev/null || sudo groupadd -r autologin
 sudo usermod -aG autologin lwh
