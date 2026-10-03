@@ -19,9 +19,10 @@ configs:
       width: 1920
       height: 1080
   icons:
-    "/home/lwh/Desktop/hermes_prompt.txt":
-      row: 7
+    "32FB-F73F":
+      row: 0
       col: 0
+      last_seen: 1786001486252579
     "/home/lwh/Desktop/IMG_20260219_131220.jpg":
       row: 0
       col: 0
@@ -32,50 +33,43 @@ configs:
     "/home/lwh/Desktop/Camera":
       row: 0
       col: 0
+    "/home/lwh/Desktop/home":
+      row: 0
+      col: 0
+    "/home/lwh/Desktop/crontab":
+      row: 2
+      col: 0
+    "/home/lwh/Desktop/Music":
+      row: 0
+      col: 0
     "/home/lwh/Documents":
       row: 0
       col: 0
       last_seen: 1785054051240475
-    "/home/lwh/Desktop/crontab":
-      row: 2
-      col: 0
-    "/home/lwh/Desktop/home":
-      row: 0
-      col: 0
-    "/home/lwh/Desktop/antigravity":
-      row: 0
-      col: 0
     "053A-AC32":
       row: 1
       col: 0
       last_seen: 1786523734922990
-    "/home/lwh/Desktop/Music":
+    "/home/lwh/Desktop/antigravity":
       row: 0
-      col: 0
-    "/home/lwh/Desktop/setting_agent.txt":
-      row: 6
       col: 0
     "/home/lwh/Desktop/prompt.txt":
       row: 8
-      col: 0
-    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
-      row: 0
       col: 0
     "2025-09-06-12-06-13-00":
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Pictures":
-      row: 2
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
+      row: 0
       col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
-    "/home/lwh/Desktop/user.sav":
+    "/home/lwh/Desktop/Recordings":
       row: 0
       col: 0
-    "/home/lwh/Desktop/gemini_backup.sh":
+    "/home/lwh/Desktop/user.sav":
       row: 0
       col: 0
     "/home/lwh/Desktop/autostart":
@@ -85,18 +79,20 @@ configs:
       row: 0
       col: 0
       last_seen: 1786744532851558
+    "SAMSUNG Android":
+      row: 3
+      col: 0
+      last_seen: 1789038308475600
     "/home/lwh/Desktop/OpenCamera":
       row: 7
-      col: 0
-    "/home/lwh/Desktop/Recordings":
-      row: 0
       col: 0
     "/home/lwh/Desktop/\uCC3D\uC6D0 \uAC00\uC815\uBC95\uC6D0.png":
       row: 0
       col: 0
-    "/home/lwh/Desktop/.desktopfolder":
-      row: 6
+    "/home/lwh/Pictures":
+      row: 2
       col: 0
+      last_seen: 1785054051241630
     "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_14-46-58.png":
       row: 0
       col: 0
@@ -110,12 +106,20 @@ configs:
     "/home/lwh/Desktop/Qwen3.5-4B-Q4_K_M.gguf":
       row: 6
       col: 0
-    "SAMSUNG Android":
-      row: 3
+    "/home/lwh/Desktop/.desktopfolder":
+      row: 6
       col: 0
-      last_seen: 1789038308475600
+    "/home/lwh/Desktop/bin":
+      row: 6
+      col: 0
     "/home/lwh/Desktop/desktop_local":
       row: 7
+      col: 0
+    "/home/lwh/Desktop/setting_agent.txt":
+      row: 6
+      col: 0
+    "/home/lwh/Desktop/gemini_backup.sh":
+      row: 0
       col: 0
     "/home/lwh/Desktop/Screen recordings":
       row: 8
@@ -126,9 +130,6 @@ configs:
       last_seen: 1785054051242001
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
-      col: 0
-    "/home/lwh/Desktop/bin":
-      row: 6
       col: 0
     "/home/lwh":
       row: 0
@@ -168,8 +169,8 @@ configs:
       row: 1
       col: 0
       last_seen: 1786523725772269
-    "/":
-      row: 1
+    "/home/lwh/Desktop/hermes_prompt.txt":
+      row: 7
       col: 0
     "trash:///":
       row: 2
@@ -177,8 +178,8 @@ configs:
     "/home/lwh/Desktop/etc":
       row: 6
       col: 0
-    "/home/lwh/Desktop/001_Brain_Notes":
-      row: 6
+    "/":
+      row: 1
       col: 0
     "a5ec5a70-2da9-4526-9707-3e241619daee":
       row: 9
@@ -188,10 +189,9 @@ configs:
       row: 0
       col: 0
       last_seen: 1777696009830381
-    "32FB-F73F":
-      row: 0
+    "/home/lwh/Desktop/001_Brain_Notes":
+      row: 6
       col: 0
-      last_seen: 1786001486252579
     "/home/lwh/Desktop/Pictures":
       row: 7
       col: 0
