@@ -113,35 +113,6 @@ else
 fi
 
 # ------------------------------------------------------------------
-# [3/8] Flatpak 앱 설치
-# ------------------------------------------------------------------
-FLATPAK_LIST="$BACKUP_DIR/flatpak-packages.list"
-if [ -f "$FLATPAK_LIST" ]; then
-    echo "[3/8] Flatpak 애플리케이션 설치 중..."
-    if ! command -v flatpak &>/dev/null; then
-        echo "  - flatpak 이 설치되어 있지 않아 설치합니다."
-        sudo apt-get install -y flatpak
-    fi
-
-    sudo flatpak --system remote-delete flathub
-    flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    sudo flatpak remote-delete --system flathub
-
-    if command -v flatpak &>/dev/null; then
-        # flathub 저장소가 없으면 추가
-        flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo \
-            || warn "flathub 저장소 추가 실패"
-        while IFS= read -r app; do
-            [ -z "$app" ] && continue
-            echo "  - $app 설치 중..."
-            flatpak install -y --noninteractive flathub "$app" || FAILED+=("flatpak:$app")
-        done < "$FLATPAK_LIST"
-    fi
-else
-    echo "[3/8] Flatpak 리스트가 없어 건너뜁니다."
-fi
-
-# ------------------------------------------------------------------
 # [4/8] 쉘 환경 설정 복원
 # ------------------------------------------------------------------
 echo "[4/8] 터미널 및 쉘 환경 설정 복원 중..."
