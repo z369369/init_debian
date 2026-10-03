@@ -1,0 +1,10 @@
+[user]
+	email = 40662344+ppp821203@users.noreply.github.com
+	name = ppp821203
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[http]
+	postBuffer = 524288000

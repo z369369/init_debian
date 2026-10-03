@@ -17,9 +17,14 @@ SYSTEM_PATHS=(
 
 SHELL_PATHS=(
     ".bashrc"
-    ".bash_aliases"
-    ".profile"
     ".bash_logout"
+    ".bash_aliases"
+    ".conkyrc"
+    ".fdignore"
+    ".gitconfig"
+    ".profile"
+    ".rgignore"
+    ".xprofile"
 )
 
 BACKUP_DIR="/home/lwh/git/init_debian"
