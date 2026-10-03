@@ -135,16 +135,7 @@ fi
 # ------------------------------------------------------------------
 echo "[4/8] Restoring terminal and shell environment settings..."
 if [ -d "$BACKUP_DIR/shell-env" ]; then
-    for file in ".bashrc" ".bash_aliases" ".profile" ".bash_logout"; do
-        if [ -f "$BACKUP_DIR/shell-env/$file" ]; then
-            if [ -f "$HOME/$file" ] && ! cmp -s "$BACKUP_DIR/shell-env/$file" "$HOME/$file"; then
-                cp -a "$HOME/$file" "$HOME/$file.bak-$TS"
-                echo "  - Saved existing $file as $file.bak-$TS"
-            fi
-            cp -a "$BACKUP_DIR/shell-env/$file" "$HOME/$file"
-            echo "  - $file restored"
-        fi
-    done
+    rsync -av "$BACKUP_DIR/shell-env/" "$HOME/"
 else
     echo "  - No shell-env backup, skipping."
 fi
