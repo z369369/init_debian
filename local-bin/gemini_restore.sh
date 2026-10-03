@@ -264,47 +264,6 @@ for src in "${SYSTEM_PATHS[@]}"; do
     restore_system_path "$src"
 done
 
-# ---- Post-restore processing ----------------------------------------
-
-# SSH: fix private key permissions (git does not preserve file permissions) + syntax check
-if [ -d /etc/ssh ] && [ -d "$BACKUP_DIR/etc/ssh" ]; then
-    sudo find /etc/ssh -maxdepth 1 -type f -name 'ssh_host_*_key' -exec chmod 600 {} +
-    sudo find /etc/ssh -maxdepth 1 -type f -name 'ssh_host_*_key.pub' -exec chmod 644 {} +
-    if command -v sshd &>/dev/null || [ -x /usr/sbin/sshd ]; then
-        if sudo /usr/sbin/sshd -t 2>/dev/null; then
-            echo "  - sshd config check passed"
-            if confirm "Restart the ssh service?" "n"; then
-                sudo systemctl restart ssh 2>/dev/null || sudo systemctl restart sshd 2>/dev/null
-            fi
-        else
-            warn "sshd config check failed! Do not restart. (Previous config: $SAFE_DIR/etc/ssh)"
-        fi
-    fi
-fi
-
-# fstab: syntax verification (a different UUID on another system risks boot failure)
-if [ -f /etc/fstab ] && [ -f "$BACKUP_DIR/etc/fstab" ]; then
-    if command -v findmnt &>/dev/null; then
-        echo "  - fstab verification:"
-        sudo findmnt --verify 2>&1 | sed 's/^/      /'
-    fi
-    warn "Be sure to check with 'lsblk -f' that the UUIDs in fstab match the current disks."
-fi
-
-# GRUB: apply settings
-if [ -f "$BACKUP_DIR/etc/default/grub" ] || [ -d "$BACKUP_DIR/etc/grub.d" ]; then
-    if command -v update-grub &>/dev/null && confirm "Run update-grub?" "y"; then
-        sudo update-grub || FAILED+=("update-grub")
-    fi
-fi
-
-# UFW: reapply rules
-if [ -d /etc/ufw ] && [ -d "$BACKUP_DIR/etc/ufw" ] && command -v ufw &>/dev/null; then
-    if confirm "Reload ufw rules?" "y"; then
-        sudo ufw reload 2>/dev/null || warn "ufw reload failed (it may be inactive: 'sudo ufw enable')"
-    fi
-fi
-
 # ------------------------------------------------------------------
 # Summary
 # ------------------------------------------------------------------
