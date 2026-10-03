@@ -268,3 +268,6 @@ fi
 echo " Previous /etc files saved at: $SAFE_DIR"
 echo " Some settings (XFCE, shell, services) take effect after re-login or reboot."
 echo "=========================================="
+
+sudo groupadd -r autologin
+sudo usermod -aG autologin lwh
