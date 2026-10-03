@@ -208,7 +208,6 @@ echo "[8/8] Restoring system settings (/etc)..."
 echo "  (Existing files are saved to $SAFE_DIR before being overwritten)"
 
 for src in "${SYSTEM_PATHS[@]}"; do
-    [ "$src" = "/etc/apt" ] && continue   # Already handled in step 1
     restore_system_path "$src"
 done
 
