@@ -6,19 +6,21 @@ set -e
 
 SYSTEM_PATHS=(
     "/etc/apt"
+    "/etc/cups"
     "/etc/default/grub"
     "/etc/fstab"
     "/etc/grub.d"
     "/etc/lightdm"
     "/etc/pam.d"
+    "/etc/snapper"
     "/etc/ssh"
     "/etc/ufw"
 )
 
 SHELL_PATHS=(
-    ".bashrc"
-    ".bash_logout"
     ".bash_aliases"
+    ".bash_logout"
+    ".bashrc"
     ".conkyrc"
     ".fdignore"
     ".gitconfig"

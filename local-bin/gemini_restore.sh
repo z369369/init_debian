@@ -7,8 +7,10 @@ set -u
 
 SYSTEM_PATHS=(
     "/etc/apt"
+    "/etc/cups"
     "/etc/lightdm"
     "/etc/pam.d"
+    "/etc/snapper"
     "/etc/ssh"
     "/etc/ufw"
 )
