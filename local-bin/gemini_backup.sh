@@ -15,6 +15,13 @@ SYSTEM_PATHS=(
     "/etc/ufw"
 )
 
+SHELL_PATHS=(
+    ".bashrc"
+    ".bash_aliases"
+    ".profile"
+    ".bash_logout"
+)
+
 BACKUP_DIR="/home/lwh/git/init_debian"
 echo "=========================================="
 echo " 고도화된 시스템 구성 백업을 시작합니다."
@@ -37,7 +44,7 @@ fi
 # 3. 쉘 환경 설정 파일 백업 (.bashrc, .bash_aliases 등)
 echo "[3/7] 터미널 및 쉘 환경 설정 백업 중..."
 mkdir -p "$BACKUP_DIR/shell-env"
-for file in ".bashrc" ".bash_aliases" ".profile" ".bash_logout"; do
+for file in "${SHELL_PATHS[@]}"; do
     if [ -f "$HOME/$file" ]; then
         cp "$HOME/$file" "$BACKUP_DIR/shell-env/$file"
     fi
