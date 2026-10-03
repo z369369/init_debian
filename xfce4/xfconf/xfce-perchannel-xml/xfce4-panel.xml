@@ -78,6 +78,7 @@
         <value type="string" value="Fcitx"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="작업 관리자"/>
         <value type="string" value="네트워크 연결 없음"/>
         <value type="string" value="메모"/>
         <value type="string" value="requesting an ethernet network address for “wired connection 1”…"/>
