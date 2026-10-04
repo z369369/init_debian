@@ -73,7 +73,6 @@ for src in "${CONFIG_PATHS[@]}"; do
     dest="$BACKUP_DIR/$src"
 
     echo "  - /home/lwh/$src 백업 중..."
-    echo "$dest"
 
     if [ -d "$src" ]; then
         sudo mkdir -p "$dest"
