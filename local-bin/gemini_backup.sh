@@ -24,7 +24,6 @@ SYSTEM_PATHS=(
 CONFIG_PATHS=(
     ".config/systemd"
     ".config/xfce4"
-    ".bash_aliases"
     ".bash_logout"
     ".bashrc"
     ".conkyrc"
@@ -70,7 +69,7 @@ for src in "${CONFIG_PATHS[@]}"; do
         continue
     fi
 
-    dest="$BACKUP_DIR/$src"
+    dest="$BACKUP_DIR/user_root/$src"
 
     echo "  - /home/lwh/$src 백업 중..."
 
