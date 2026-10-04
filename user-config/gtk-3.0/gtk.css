@@ -1,0 +1,22 @@
+/* 워크스페이스 버튼 기본 스타일 */
+wnck-pager {
+    background-color: rgba(186, 204, 186, 0.3);
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+}
+
+/* 현재 선택된 워크스페이스 강조 */
+wnck-pager:selected {
+    background-color: #4A90E2; /* 눈에 띄는 파란색 */
+    border: 1px solid #ffffff;
+}
+
+/* 마우스를 올렸을 때 */
+wnck-pager:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.tasklist-button:checked {
+    background-image: none;
+    background-color: #3584e4;
+}
