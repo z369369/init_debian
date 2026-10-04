@@ -24,7 +24,6 @@ SYSTEM_PATHS=(
 CONFIG_PATHS=(
     "autostart"
     "catfish"
-    "mpv"
     "libreoffice"
     "syncthing"
     "systemd"
