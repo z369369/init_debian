@@ -87,7 +87,7 @@ for c_src in "${CONFIG_PATHS[@]}"; do
 done
 
 find "$HOME/.config" -maxdepth 1 -type f -exec cp {} "$BACKUP_DIR/user-config/" \;
-rm -rf "$BACKUP_DIR/user-config/syncthing/index-v0.14.0.db"
+sudo rm -rf "$BACKUP_DIR/user-config/syncthing/index-v0.14.0.db"
 echo "=========================================="
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
