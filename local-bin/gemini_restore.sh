@@ -211,51 +211,6 @@ else
     echo "[5/8] No local-bin backup, skipping."
 fi
 
-# ------------------------------------------------------------------
-# [6/8] Restore systemd user services and timers
-# ------------------------------------------------------------------
-if [ -d "$BACKUP_DIR/systemd-user" ]; then
-    echo "[6/8] Restoring systemd user services and timers..."
-    mkdir -p "$HOME/.config/systemd/user"
-    # rsync -a also restores symlinks (.wants/), so the enabled state is preserved
-    rsync -av "$BACKUP_DIR/systemd-user/" "$HOME/.config/systemd/user/"
-
-    if systemctl --user daemon-reload 2>/dev/null; then
-        echo "  - daemon-reload done"
-        # Try to start timers immediately
-        for t in "$HOME/.config/systemd/user/"*.timer; do
-            [ -e "$t" ] || continue
-            name="$(basename "$t")"
-            systemctl --user enable --now "$name" 2>/dev/null \
-                && echo "  - $name enabled" \
-                || warn "Failed to enable $name (you may need to run it manually from a login session)"
-        done
-    else
-        warn "Cannot connect to the systemd user session. After logging in to the desktop, run 'systemctl --user daemon-reload'."
-    fi
-else
-    echo "[6/8] No systemd-user backup, skipping."
-fi
-
-# ------------------------------------------------------------------
-# [7/8] Restore XFCE4 desktop settings
-# ------------------------------------------------------------------
-if [ -d "$BACKUP_DIR/xfce4" ]; then
-    echo "[7/8] Restoring XFCE4 desktop theme and panel settings..."
-    warn "If an XFCE session is running, the settings may be overwritten at logout."
-    warn "Safest approach: run this from a TTY (Ctrl+Alt+F3), then log in again."
-    if confirm "Restore XFCE4 settings?" "y"; then
-        if [ -d "$HOME/.config/xfce4" ]; then
-            cp -a "$HOME/.config/xfce4" "$HOME/.config/xfce4.bak-$TS"
-            echo "  - Saved existing settings as ~/.config/xfce4.bak-$TS"
-        fi
-        mkdir -p "$HOME/.config/xfce4"
-        rsync -av "$BACKUP_DIR/xfce4/" "$HOME/.config/xfce4/"
-        echo "  - Done (takes effect after re-login)"
-    fi
-else
-    echo "[7/8] No xfce4 backup, skipping."
-fi
 
 # ------------------------------------------------------------------
 # [8/8] Restore remaining system settings (/etc)
@@ -266,6 +221,11 @@ echo "  (Existing files are saved to $SAFE_DIR before being overwritten)"
 for src in "${SYSTEM_PATHS[@]}"; do
     restore_system_path "$src"
 done
+
+# ------------------------------------------------------------------
+# restore .config
+# ------------------------------------------------------------------
+rsync -av "$BACKUP_DIR/user-config/" "$HOME/.config" 
 
 # ------------------------------------------------------------------
 # Summary
