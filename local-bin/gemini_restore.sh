@@ -13,6 +13,9 @@ SYSTEM_PATHS=(
     "/etc/pam.d"
     "/etc/ssh/sshd_config"
     "/etc/ufw"
+    "/etc/hosts"
+    "/etc/network"
+    "/etc/xdg"
 )
 
 # Paths that can make boot/login impossible if restored incorrectly (prompt defaults to N)
