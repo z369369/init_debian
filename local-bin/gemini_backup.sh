@@ -81,14 +81,14 @@ else
     echo "[4/7] $HOME/.local/bin 디렉토리가 없어 건너뜁니다."
 fi
 
-echo "========== user config =============="
+echo "========== S - user config =============="
 for c_src in "${CONFIG_PATHS[@]}"; do
     rsync -a "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
 done
 
 find "$HOME/.config" -maxdepth 1 -type f -exec cp {} "$BACKUP_DIR/user-config/" \;
 sudo rm -rf "$BACKUP_DIR/user-config/syncthing/index-v0.14.0.db"
-echo "========== user config =============="
+echo "========== E - user config =============="
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
 for src in "${SYSTEM_PATHS[@]}"; do
