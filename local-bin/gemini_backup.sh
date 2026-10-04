@@ -16,7 +16,6 @@ SYSTEM_PATHS=(
     "/etc/pam.d"
     "/etc/ssh/sshd_config"
     "/etc/ufw"
-    "/etc/hosts"
     "/etc/network"
     "/etc/xdg"
 )
