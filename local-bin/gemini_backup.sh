@@ -83,8 +83,10 @@ fi
 # 6. XFCE4 데스크톱 환경 설정 백업
 if [ -d "$HOME/.config/xfce4" ]; then
     echo "[6/7] XFCE4 데스크톱 테마 및 패널 설정 백업 중..."
-    rsync -av --delete "$HOME/.config/xfce4/" "$BACKUP_DIR/user_root/"
+    rsync -av --delete "$HOME/.config/xfce4/" "$BACKUP_DIR/xfce4/"
 fi
+
+rsync -av --delete "$HOME/.config/systemd" "$BACKUP_DIR/user-root/"
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
 for src in "${SYSTEM_PATHS[@]}"; do
