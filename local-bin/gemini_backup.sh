@@ -72,7 +72,9 @@ for src in "${CONFIG_PATHS[@]}"; do
 
     dest="$BACKUP_DIR/$src"
 
-    echo "  - $src 백업 중..."
+    echo "  - ~/$src 백업 중..."
+    echo "$dest"
+    
     if [ -d "$src" ]; then
         sudo mkdir -p "$dest"
         sudo rsync -a --delete "~/$src/" "$dest/"
