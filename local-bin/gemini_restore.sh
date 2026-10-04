@@ -142,7 +142,7 @@ if [ -f "$APT_LIST" ]; then
     fi
 
     if [ "${#INSTALLABLE[@]}" -gt 0 ] && confirm "Install packages?" "y"; then
-        if ! sudo apt-get install -y "${INSTALLABLE[@]}"; then
+        if ! sudo apt install --no-install-recommends -y "${INSTALLABLE[@]}"; then
             warn "Bulk install failed - installing packages one by one."
             for pkg in "${INSTALLABLE[@]}"; do
                 sudo apt-get install -y "$pkg" || FAILED+=("apt:$pkg")
