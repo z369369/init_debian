@@ -86,6 +86,7 @@ for c_src in "${CONFIG_PATHS[@]}"; do
     rsync -av "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
 done
 
+find "$HOME/.config" -maxdepth 1 -type f -exec cp {} "$BACKUP_DIR/user-config/" \;
 rm -rf "$BACKUP_DIR/user-config/syncthing/index-v0.14.0.db"
 echo "=========================================="
 
