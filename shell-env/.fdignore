@@ -1,6 +1,0 @@
-.local/share/flatpak/
-Android/
-var/lib/flatpak/
-.var/
-.wine/
-.mozilla/
