@@ -65,19 +65,19 @@ fi
 
 
 for src in "${CONFIG_PATHS[@]}"; do
-    if [ ! -e "~/$src" ]; then
-        echo "  - ~/$src 없음, 건너뜁니다."
+    if [ ! -e "/home/lwh/$src" ]; then
+        echo "  - /home/lwh/$src 없음, 건너뜁니다."
         continue
     fi
 
     dest="$BACKUP_DIR/$src"
 
-    echo "  - ~/$src 백업 중..."
+    echo "  - /home/lwh/$src 백업 중..."
     echo "$dest"
-    
+
     if [ -d "$src" ]; then
         sudo mkdir -p "$dest"
-        sudo rsync -a --delete "~/$src/" "$dest/"
+        sudo rsync -a --delete "/home/lwh/$src/" "$dest/"
     else
         sudo mkdir -p "$(dirname "$dest")"
         sudo cp -a "$src" "$dest"

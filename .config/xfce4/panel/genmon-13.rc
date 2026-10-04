@@ -1,0 +1,6 @@
+Command=/home/lwh/.local/bin/panel-weather.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=1800000
+Font=DejaVu Sans 11
+
