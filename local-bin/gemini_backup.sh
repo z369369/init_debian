@@ -12,8 +12,7 @@ SYSTEM_PATHS=(
     "/etc/grub.d"
     "/etc/lightdm"
     "/etc/pam.d"
-    "/etc/snapper"
-    "/etc/ssh"
+    "/etc/ssh/sshd_config"
     "/etc/ufw"
 )
 
