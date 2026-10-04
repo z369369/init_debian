@@ -86,7 +86,7 @@ if [ -d "$HOME/.config/xfce4" ]; then
     rsync -av --delete "$HOME/.config/xfce4/" "$BACKUP_DIR/xfce4/"
 fi
 
-rsync -av --delete "$HOME/.config/systemd" "$BACKUP_DIR/user-root/"
+rsync -av "$HOME/.config/systemd" "$BACKUP_DIR/.config/"
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
 for src in "${SYSTEM_PATHS[@]}"; do
