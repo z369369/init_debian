@@ -2,11 +2,12 @@
 # @DESC: Restore Debian 13 configuration backed up by gemini_backup.sh
 # @TAGS: GIT, xfce, etc, config restore
 # @USAGE: gemini_restore.sh 
-
 set -u
 
 SYSTEM_PATHS=(
     "/etc/apt"
+    "/etc/bluetooth"
+    "/etc/conky"
     "/etc/cups"
     "/etc/lightdm"
     "/etc/pam.d"

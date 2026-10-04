@@ -6,6 +6,8 @@ set -e
 
 SYSTEM_PATHS=(
     "/etc/apt"
+    "/etc/bluetooth"
+    "/etc/conky"
     "/etc/cups"
     "/etc/default/grub"
     "/etc/fstab"
