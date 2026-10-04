@@ -83,7 +83,7 @@ fi
 
 echo "=========================================="
 for c_src in "${CONFIG_PATHS[@]}"; do
-    rsync -av "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
+    rsync -a "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
 done
 
 find "$HOME/.config" -maxdepth 1 -type f -exec cp {} "$BACKUP_DIR/user-config/" \;
