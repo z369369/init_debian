@@ -26,6 +26,7 @@ CONFIG_PATHS=(
     "catfish"
     "libreoffice"
     "systemd"
+    "syncthing"
     "Thunar"
     "xfce4"
 )
@@ -80,9 +81,13 @@ else
     echo "[4/7] $HOME/.local/bin 디렉토리가 없어 건너뜁니다."
 fi
 
+echo "=========================================="
 for c_src in "${CONFIG_PATHS[@]}"; do
     rsync -av "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
 done
+
+rm -rf "$BACKUP_DIR/user-config/syncthing/index-v0.14.0.db"
+echo "=========================================="
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
 for src in "${SYSTEM_PATHS[@]}"; do
