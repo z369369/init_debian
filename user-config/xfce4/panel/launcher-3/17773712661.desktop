@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Obsidian
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=obsidian.sh --file-forwarding md.obsidian.Obsidian @@u %U @@
+Terminal=false
+Type=Application
+Icon=md.obsidian.Obsidian
+StartupWMClass=obsidian
+Comment=Obsidian
+MimeType=x-scheme-handler/obsidian;
+Categories=Office;
+X-Flatpak-Tags=proprietary;
+X-Flatpak=md.obsidian.Obsidian
+X-XFCE-Source=file:///home/lwh/.local/share/flatpak/app/md.obsidian.Obsidian/x86_64/stable/888de8f4928c6e0ead8265c71b1defa7c29259090479922ee501de179c61ddc2/export/share/applications/md.obsidian.Obsidian.desktop

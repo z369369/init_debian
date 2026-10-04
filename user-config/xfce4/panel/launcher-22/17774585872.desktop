@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=organize
+Comment=
+Exec=/home/lwh/Desktop/bin/organize.sh
+Icon=media-floppy
+Path=
+Terminal=false
+StartupNotify=false

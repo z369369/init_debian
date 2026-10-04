@@ -21,6 +21,11 @@ SYSTEM_PATHS=(
     "/etc/xdg"
 )
 
+CONFIG_PATHS=(
+    "xfce4"
+    "systemd"
+)
+
 SHELL_PATHS=(
     ".bash_aliases"
     ".bash_logout"
@@ -71,22 +76,9 @@ else
     echo "[4/7] $HOME/.local/bin 디렉토리가 없어 건너뜁니다."
 fi
 
-
-# 5. Systemd User 서비스 및 타이머 백업
-if [ -d "$HOME/.config/systemd/user" ]; then
-    echo "[5/7] Systemd 사용자 서비스 및 타이머 설정 백업 중..."
-    mkdir -p "$BACKUP_DIR/systemd-user"
-    rsync -av --delete "$HOME/.config/systemd/user/" "$BACKUP_DIR/systemd-user/"
-fi
-
-
-# 6. XFCE4 데스크톱 환경 설정 백업
-if [ -d "$HOME/.config/xfce4" ]; then
-    echo "[6/7] XFCE4 데스크톱 테마 및 패널 설정 백업 중..."
-    rsync -av --delete "$HOME/.config/xfce4/" "$BACKUP_DIR/xfce4/"
-fi
-
-rsync -av "$HOME/.config/systemd" "$BACKUP_DIR/.config/"
+for c_src in "${CONFIG_PATHS[@]}"; do
+    rsync -av "$HOME/.config/$c_src" "$BACKUP_DIR/user-config/"
+done
 
 echo "[7/7] 시스템 설정(/etc) 백업 중..."
 for src in "${SYSTEM_PATHS[@]}"; do
