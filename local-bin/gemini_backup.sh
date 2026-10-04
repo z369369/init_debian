@@ -25,7 +25,6 @@ CONFIG_PATHS=(
     "autostart"
     "catfish"
     "libreoffice"
-    "syncthing"
     "systemd"
     "Thunar"
     "xfce4"

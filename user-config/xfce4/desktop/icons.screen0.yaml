@@ -29,26 +29,23 @@ configs:
     "/home/lwh/Desktop/Camera":
       row: 0
       col: 0
+    "/home/lwh/Desktop/home":
+      row: 0
+      col: 0
+    "/home/lwh/Desktop/crontab":
+      row: 2
+      col: 0
+    "/home/lwh/Desktop/Music":
+      row: 0
+      col: 0
     "/home/lwh/Documents":
       row: 0
       col: 0
       last_seen: 1785054051240475
-    "/home/lwh/Desktop/crontab":
-      row: 2
-      col: 0
-    "/home/lwh/Desktop/home":
-      row: 0
-      col: 0
-    "/home/lwh/Desktop/antigravity":
-      row: 0
-      col: 0
     "053A-AC32":
       row: 1
       col: 0
       last_seen: 1786523734922990
-    "/home/lwh/Desktop/Music":
-      row: 0
-      col: 0
     "/home/lwh/Desktop/setting_agent.txt":
       row: 6
       col: 0
@@ -59,13 +56,14 @@ configs:
       row: 0
       col: 0
       last_seen: 1777695255362344
-    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
+    "/home/lwh/Pictures":
+      row: 2
+      col: 0
+      last_seen: 1785054051241630
+    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
-    "/home/lwh/Desktop/bin":
-      row: 6
-      col: 0
-    "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
       row: 0
       col: 0
     "/home/lwh/Desktop/user.sav":
@@ -81,22 +79,20 @@ configs:
       row: 0
       col: 0
       last_seen: 1786744532851558
-    "SAMSUNG Android":
-      row: 3
-      col: 0
-      last_seen: 1789038308475600
     "/home/lwh/Desktop/OpenCamera":
       row: 7
+      col: 0
+    "/home/lwh/Desktop/gemini_backup.sh":
+      row: 0
       col: 0
     "/home/lwh/Desktop/\uCC3D\uC6D0 \uAC00\uC815\uBC95\uC6D0.png":
       row: 0
       col: 0
-    "/home/lwh/Pictures":
-      row: 2
-      col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_14-46-58.png":
       row: 0
+      col: 0
+    "/home/lwh/Desktop/bin":
+      row: 6
       col: 0
     "/home/lwh/Desktop/Download":
       row: 0
@@ -111,6 +107,10 @@ configs:
     "/home/lwh/Desktop/.desktopfolder":
       row: 6
       col: 0
+    "SAMSUNG Android":
+      row: 3
+      col: 0
+      last_seen: 1789038308475600
     "/home/lwh/Desktop/desktop_local":
       row: 7
       col: 0
@@ -118,14 +118,14 @@ configs:
       row: 3
       col: 0
       last_seen: 1785054051242001
-    "/home/lwh/Desktop/gemini_backup.sh":
-      row: 0
-      col: 0
     "/home/lwh/Desktop/Screen recordings":
       row: 8
       col: 0
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
+      col: 0
+    "/home/lwh/Desktop/antigravity":
+      row: 0
       col: 0
     "/home/lwh":
       row: 0
