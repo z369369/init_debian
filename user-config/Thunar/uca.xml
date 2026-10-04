@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>이 위치에서 터미널 열기</name>
+	<submenu></submenu>
+	<unique-id>1682734294856369-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>사용자 정의 동작 에제</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>xfce4-clipman-plugin</icon>
+	<name>경로 복사</name>
+	<submenu></submenu>
+	<unique-id>1784849145774729-1</unique-id>
+	<command>echo -n %f | xclip -selection clipboard</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

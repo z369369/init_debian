@@ -1,0 +1,174 @@
+[start] 2023/03/04 18:15:43 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 18:15:43 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 18:15:44 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 18:15:44 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 18:15:45 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 18:15:45 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 18:15:46 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 18:15:46 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 20:43:41 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 20:43:41 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 20:43:42 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 20:43:42 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 20:43:43 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 20:43:43 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 20:43:44 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 20:43:44 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 23:12:36 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 23:12:36 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 23:12:37 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 23:12:37 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 23:12:38 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 23:12:38 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2023/03/04 23:12:39 INFO: syncthing v1.23.1 "Fermium Flea" (go1.19.5 linux-amd64) deb@build.syncthing.net 2023-01-16 03:48:02 UTC [noupgrade]
+[start] 2023/03/04 23:12:39 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 10:51:27 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 10:51:27 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 10:51:28 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 10:51:28 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 10:51:29 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 10:51:29 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 10:51:30 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 10:51:30 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:17:48 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:17:48 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:17:49 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:17:49 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:17:50 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:17:50 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:17:51 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:17:51 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:19:54 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:19:54 INFO: Archiving a copy of old config file format at: /home/lwh/.config/syncthing/config.xml.v37
+[XRARL] 18:19:54 INFO: My ID: XRARL7M-MC3PZDX-K7BL57R-WUIBPH4-PPRCD6Y-XRGOCCG-ZW246NW-NANBUQL
+[XRARL] 18:19:55 INFO: Single thread SHA256 performance is 118 MB/s using minio/sha256-simd (101 MB/s using crypto/sha256).
+[XRARL] 18:19:55 INFO: Hashing performance is 88.36 MB/s
+[XRARL] 18:19:55 INFO: Starting deadlock detector with 20m0s timeout
+[XRARL] 18:19:55 INFO: Overall send rate is unlimited, receive rate is unlimited
+[XRARL] 18:19:55 INFO: Using discovery mechanism: IPv4 local broadcast discovery on port 21027
+[XRARL] 18:19:55 INFO: Using discovery mechanism: IPv6 local multicast discovery on address [ff12::8384]:21027
+[XRARL] 18:19:55 INFO: TCP listener ([::]:22000) starting
+[XRARL] 18:19:55 INFO: Ready to synchronize "Tachiyomi" (8m4vk-xgvt1) (sendreceive)
+[XRARL] 18:19:55 INFO: QUIC listener ([::]:22000) starting
+2023/06/18 18:19:55 connection doesn't allow setting of receive buffer size. Not a *net.UDPConn?. See https://github.com/lucas-clemente/quic-go/wiki/UDP-Receive-Buffer-Size for details.
+[XRARL] 18:19:55 INFO: Ready to synchronize "000_Personal" (ervhy-vycsq) (sendreceive)
+[XRARL] 18:19:55 INFO: GUI and API listening on 127.0.0.1:8384
+[XRARL] 18:19:55 INFO: Access the GUI via the following URL: http://127.0.0.1:8384/
+[XRARL] 18:19:55 INFO: Ready to synchronize "Recording" (eu3wh-ur3q3) (sendreceive)
+[XRARL] 18:19:55 INFO: My name is "lwh-laptop"
+[XRARL] 18:19:55 INFO: Device W44YHPM-VJ7ICNH-YJQTOJ5-IESQH7M-OK5MCLR-4OMASJT-CMLJREG-AKGKPQ4 is "lwh_a52s" at [dynamic]
+[XRARL] 18:19:55 INFO: Device 6FOGD45-LPSHJI2-4UHM2CS-IS6USOG-L5YKDEM-ELKSIU2-IWNUC44-XK7GDQK is "lwh_tablet" at [dynamic]
+[XRARL] 18:19:55 INFO: Ready to synchronize "005_Food" (haory-rwnlx) (sendreceive)
+[XRARL] 18:19:55 INFO: Ready to synchronize "DCIM" (hzigp-9mjhx) (sendreceive)
+[XRARL] 18:19:55 INFO: Ready to synchronize "Download_Home" (pmj5f-ncq2c) (sendreceive)
+[XRARL] 18:19:55 INFO: Ready to synchronize "Pictures" (qp8kx-ml8ai) (sendreceive)
+[XRARL] 18:19:55 INFO: Ready to synchronize "NPKI" (r8k8m-vxyta) (sendreceive)
+[XRARL] 18:19:55 INFO: Ready to synchronize "300_MyDocument" (tehpe-qwr2s) (sendreceive)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "Recording" (eu3wh-ur3q3)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "Pictures" (qp8kx-ml8ai)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "Download_Home" (pmj5f-ncq2c)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "300_MyDocument" (tehpe-qwr2s)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "DCIM" (hzigp-9mjhx)
+[XRARL] 18:19:56 INFO: Completed initial scan of sendreceive folder "NPKI" (r8k8m-vxyta)
+[XRARL] 18:19:57 INFO: Completed initial scan of sendreceive folder "Tachiyomi" (8m4vk-xgvt1)
+[XRARL] 18:19:57 INFO: Completed initial scan of sendreceive folder "000_Personal" (ervhy-vycsq)
+[XRARL] 18:20:02 INFO: Completed initial scan of sendreceive folder "005_Food" (haory-rwnlx)
+[XRARL] 18:20:08 INFO: QUIC listener ([::]:22000) shutting down
+[XRARL] 18:20:08 INFO: TCP listener ([::]:22000) shutting down
+[XRARL] 18:20:08 INFO: Exiting
+[start] 18:21:05 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:21:05 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:21:06 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:21:06 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:21:07 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:21:07 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 18:21:08 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 18:21:08 WARNING: Failed to initialize config: config file version (37) is newer than supported version (36). If this is expected, use --allow-newer-config to override.
+[start] 09:55:12 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:55:12 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:55:13 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:55:13 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:55:14 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:55:14 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:55:15 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:55:15 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 20:09:28 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 20:09:28 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 20:09:29 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 20:09:29 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 20:09:30 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 20:09:30 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 20:09:31 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 20:09:31 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:41:06 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:41:06 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:41:07 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:41:07 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:41:08 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:41:08 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 09:41:09 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 09:41:09 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 11:26:09 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 11:26:09 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 11:26:10 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 11:26:10 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 11:26:11 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 11:26:11 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 11:26:12 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 11:26:12 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 04:17:16 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 04:17:16 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 04:17:17 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 04:17:17 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 04:17:18 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 04:17:18 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 04:17:19 INFO: syncthing v1.19.2-ds1 "Fermium Flea" (go1.19.8 linux-amd64) debian@debian 2023-04-09 10:47:16 UTC
+[start] 04:17:19 WARNING: Error opening database: resource temporarily unavailable (is another instance of Syncthing running?)
+[start] 2025/11/20 11:05:49 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:05:49 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:05:50 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:05:50 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:05:51 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:05:51 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:05:52 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:05:52 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:18:38 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:18:38 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:18:39 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:18:39 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:18:40 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:18:40 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 11:18:41 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 11:18:41 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 22:55:17 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 22:55:17 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 22:55:18 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 22:55:18 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 22:55:19 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 22:55:19 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/20 22:55:20 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/20 22:55:20 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/28 21:56:07 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/28 21:56:07 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/28 21:56:08 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/28 21:56:08 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/28 21:56:09 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/28 21:56:09 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/11/28 21:56:10 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/11/28 21:56:10 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/12/25 23:34:12 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/12/25 23:34:12 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/12/25 23:34:13 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/12/25 23:34:13 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/12/25 23:34:14 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/12/25 23:34:14 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2025/12/25 23:34:15 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2025/12/25 23:34:15 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2026/06/10 11:37:56 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2026/06/10 11:37:56 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2026/06/10 11:37:57 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2026/06/10 11:37:57 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2026/06/10 11:37:58 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2026/06/10 11:37:58 WARNING: Failed to acquire lock: is another Syncthing instance already running?
+[start] 2026/06/10 11:37:59 INFO: syncthing v1.29.5 "Gold Grasshopper" (go1.24.2 linux-amd64) debian@debian 2025-04-20 21:21:27 UTC
+[start] 2026/06/10 11:37:59 WARNING: Failed to acquire lock: is another Syncthing instance already running?

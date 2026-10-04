@@ -22,8 +22,14 @@ SYSTEM_PATHS=(
 )
 
 CONFIG_PATHS=(
-    "xfce4"
+    "autostart"
+    "catfish"
+    "mpv"
+    "libreoffice"
+    "syncthing"
     "systemd"
+    "Thunar"
+    "xfce4"
 )
 
 SHELL_PATHS=(
