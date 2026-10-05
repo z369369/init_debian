@@ -65,17 +65,12 @@ restore_system_path() {
     local dst="$1"
     local src="$BACKUP_DIR$dst"
     local rsync_src="$src" rsync_dst="$dst"
- 
+
     if [ ! -e "$src" ]; then
         echo "  - $dst : not in backup, skipping."
         return 0
     fi
- 
-    if ! confirm "Restore $dst ?" "n"; then
-        echo "  - $dst : skipped."
-        return 0
-    fi
- 
+
     # Save the existing files first
     if [ -e "$dst" ]; then
         sudo mkdir -p "$SAFE_DIR$(dirname "$dst")"
@@ -85,7 +80,7 @@ restore_system_path() {
             return 1
         fi
     fi
- 
+
     # Directories are synced by contents, single files are copied as-is
     if [ -d "$src" ]; then
         rsync_src="$src/"
@@ -94,7 +89,7 @@ restore_system_path() {
     else
         sudo mkdir -p "$(dirname "$dst")"
     fi
- 
+
     if sudo rsync -a --chown=root:root "$rsync_src" "$rsync_dst"; then
         echo "  - $dst : restored"
     else
