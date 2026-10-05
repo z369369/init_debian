@@ -75,14 +75,14 @@ warn() { echo "  ⚠ $*"; }
 restore_system_path() {
     local src="$1"                       # e.g. /etc/apt
     local backup_src="$BACKUP_DIR$src"   # e.g. $BACKUP_DIR/etc/apt
-    local default="y"
+    local default="n"
 
     if [ ! -e "$backup_src" ]; then
         echo "  - $src : not in backup, skipping."
         return 0
     fi
 
-    is_risky "$src" && default="n"
+    #is_risky "$src" && default="n"
 
     if ! confirm "Restore $src ?" "$default"; then
         echo "  - $src : skipped."
