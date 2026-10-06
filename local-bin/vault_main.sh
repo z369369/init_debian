@@ -4,7 +4,12 @@
 # @USAGE: vault_main.sh
 # @STATUS: 사용중
 
-sleep 240
+#!/bin/bash
+
+if [ "$1" != "now" ]; then
+    sleep 240
+fi
+
 /home/lwh/.local/bin/opti_img.sh
 sleep 5
 /home/lwh/.local/bin/vault_image.sh
