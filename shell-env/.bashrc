@@ -161,6 +161,8 @@ backup_etc() {
 
     echo "백업을 시작합니다: $target_dir/etc_$today.tar"
     sudo tar -cvf "$target_dir/etc_$today.tar" /etc
+	
+    echo "created : $target_dir/etc_$today.tar"
 }
 
 alias rm='trash-put'
