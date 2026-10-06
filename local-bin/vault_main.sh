@@ -11,7 +11,7 @@ if [ "$1" != "now" ]; then
 fi
 
 /home/lwh/.local/bin/opti_img.sh
-sleep 5
+sleep 3
 /home/lwh/.local/bin/vault_image.sh
-sleep 5
+sleep 3
 /home/lwh/.local/bin/vault_backup.sh
