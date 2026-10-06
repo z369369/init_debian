@@ -10,6 +10,7 @@ base-passwd
 bash
 bash-completion
 bat
+bc
 bind9-dnsutils
 bind9-host
 blueman
@@ -74,6 +75,7 @@ fonts-tlwg-loma-otf
 fonts-unifont
 fonts-wqy-zenhei
 fzf
+gawk
 gcc-14-base
 gettext-base
 git
