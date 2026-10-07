@@ -1,0 +1,46 @@
+#!/bin/bash
+# @DESC: 디스크 검사 - 오류 디스크 출력
+# @TAGS: disk checker
+# @USAGE: cdisk
+
+G=$(printf '\033[1;32m')
+R=$(printf '\033[1;31m')
+Y=$(printf '\033[1;33m')
+C=$(printf '\033[1;36m')
+N=$(printf '\033[0m')
+
+# 터미널이 아닌 곳(파이프, 리다이렉트)으로 출력할 때는 색을 끕니다.
+if [[ ! -t 1 ]]; then
+    G='' R='' Y='' C='' N=''
+fi
+
+echo "${C}_________DISK 1 (1)_________${N}"
+# 에러 카운터가 전부 0이면 초록, 0이 아니면 빨강
+sudo btrfs device stats /dev/nvme1n1p2 | awk -v g="$G" -v r="$R" -v n="$N" '
+    { c = ($NF == 0) ? g : r; print c $0 n }'
+
+echo "${C}_________DISK 1 (2)_________${N}"
+sudo btrfs scrub status /dev/nvme1n1p2 | awk -v g="$G" -v r="$R" -v y="$Y" -v n="$N" '
+    /Error summary/ { c = ($0 ~ /no errors found/) ? g : r; print c $0 n; next }
+    /Status:/ {
+        if      ($0 ~ /finished/)            c = g
+        else if ($0 ~ /running/)             c = y
+        else if ($0 ~ /aborted|interrupted/) c = r
+        else                                 c = ""
+        print c $0 n; next
+    }
+    { print }'
+
+echo "${C}_________DISK 2 (1)_________${N}"
+sudo smartctl -H /dev/nvme0n1 | awk -v g="$G" -v r="$R" -v n="$N" '
+    /PASSED|: OK/ { print g $0 n; next }
+    /FAILED/      { print r $0 n; next }
+    { print }'
+
+echo "${C}_________ I/O LOG _________${N}"
+out=$(sudo dmesg | grep -iE 'i/o error|btrfs.*(error|warn)|nvme.*(error|timeout|reset)|ext4.*error')
+if [[ -z $out ]]; then
+    echo "${G}✔ 이상 없음${N}"
+else
+    echo "${R}${out}${N}"
+fi
