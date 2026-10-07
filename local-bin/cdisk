@@ -16,11 +16,11 @@ fi
 
 echo "${C}_________DISK 1 (1)_________${N}"
 # 에러 카운터가 전부 0이면 초록, 0이 아니면 빨강
-sudo btrfs device stats /dev/nvme1n1p2 | awk -v g="$G" -v r="$R" -v n="$N" '
+sudo btrfs device stats /dev/disk/by-uuid/5f9672d0-50f9-4632-a2a7-4f55436a6663 | awk -v g="$G" -v r="$R" -v n="$N" '
     { c = ($NF == 0) ? g : r; print c $0 n }'
 
 echo "${C}_________DISK 1 (2)_________${N}"
-sudo btrfs scrub status /dev/nvme1n1p2 | awk -v g="$G" -v r="$R" -v y="$Y" -v n="$N" '
+sudo btrfs scrub status /dev/disk/by-uuid/5f9672d0-50f9-4632-a2a7-4f55436a6663 | awk -v g="$G" -v r="$R" -v y="$Y" -v n="$N" '
     /Error summary/ { c = ($0 ~ /no errors found/) ? g : r; print c $0 n; next }
     /Status:/ {
         if      ($0 ~ /finished/)            c = g
@@ -32,7 +32,7 @@ sudo btrfs scrub status /dev/nvme1n1p2 | awk -v g="$G" -v r="$R" -v y="$Y" -v n=
     { print }'
 
 echo "${C}_________DISK 2 (1)_________${N}"
-sudo smartctl -H /dev/nvme0n1 | awk -v g="$G" -v r="$R" -v n="$N" '
+sudo smartctl -H /dev/disk/by-uuid/a5ec5a70-2da9-4526-9707-3e241619daee | awk -v g="$G" -v r="$R" -v n="$N" '
     /PASSED|: OK/ { print g $0 n; next }
     /FAILED/      { print r $0 n; next }
     { print }'
