@@ -169,7 +169,6 @@ alias rm='trash-put'
 alias tl='trash-list'
 alias trs='trash-restore'
 
-
 alias aupdate='/home/lwh/.local/bin/gupdate && flatpak update -y && cat ~/.key | sudo -S apt update && cat ~/.key | sudo -S apt upgrade'
 alias aclean='flatpak uninstall --unused -y && cat ~/.key | sudo -S apt autoremove --purge && sudo apt clean'
 
