@@ -165,6 +165,17 @@ backup_etc() {
     echo "created : $target_dir/etc_$today.tar"
 }
 
+cdisk(){
+echo "_________DISK 1 (1)_________";
+sudo btrfs device stats /dev/nvme1n1p2
+echo "_________DISK 1 (2)_________";
+sudo btrfs scrub status /dev/nvme1n1p2
+echo "_________DISK 2 (1)_________";
+sudo smartctl -H /dev/nvme0n1p1
+echo "_________ I/O LOG _________";
+sudo dmesg | grep -iE 'ext4|sdb|i/o error'
+}
+
 alias rm='trash-put'
 alias tl='trash-list'
 alias trs='trash-restore'

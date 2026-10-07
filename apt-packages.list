@@ -279,6 +279,7 @@ seahorse
 sed
 sensible-utils
 shim-signed
+smartmontools
 snapper
 sqv
 synaptic
