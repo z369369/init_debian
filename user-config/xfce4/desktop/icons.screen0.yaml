@@ -26,13 +26,15 @@ configs:
       row: 6
       col: 0
       last_seen: 1781735798831862
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-08_12-03-52.png":
+      row: 0
+      col: 0
     "/home/lwh/Desktop/Camera":
       row: 0
       col: 0
-    "/home/lwh/Documents":
-      row: 0
+    "/home/lwh/Desktop/1\uC2A4\uD06C\uB9B0\uC0F7_2026-10-08_12-20-54.png":
+      row: 1
       col: 0
-      last_seen: 1785054051240475
     "/home/lwh/Desktop/crontab":
       row: 2
       col: 0
@@ -55,13 +57,14 @@ configs:
     "/home/lwh/Desktop/prompt.txt":
       row: 8
       col: 0
-    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
-      row: 0
-      col: 0
     "2025-09-06-12-06-13-00":
       row: 0
       col: 0
       last_seen: 1777695255362344
+    "/home/lwh/Pictures":
+      row: 2
+      col: 0
+      last_seen: 1785054051241630
     "/home/lwh/Desktop/electrum-4.5.8-x86_64.AppImage":
       row: 0
       col: 0
@@ -74,12 +77,15 @@ configs:
     "/home/lwh/Desktop/autostart":
       row: 5
       col: 0
+    "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_15-16-52.png":
+      row: 0
+      col: 0
     "realme X50 5G":
       row: 0
       col: 0
       last_seen: 1786744532851558
-    "/home/lwh/Desktop/bin":
-      row: 6
+    "/home/lwh/Desktop/OpenCamera":
+      row: 7
       col: 0
     "/home/lwh/Desktop/gemini_backup.sh":
       row: 0
@@ -87,12 +93,11 @@ configs:
     "/home/lwh/Desktop/\uCC3D\uC6D0 \uAC00\uC815\uBC95\uC6D0.png":
       row: 0
       col: 0
-    "/home/lwh/Pictures":
-      row: 2
-      col: 0
-      last_seen: 1785054051241630
     "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-02_14-46-58.png":
       row: 0
+      col: 0
+    "/home/lwh/Desktop/bin":
+      row: 6
       col: 0
     "/home/lwh/Desktop/Download":
       row: 0
@@ -114,18 +119,19 @@ configs:
     "/home/lwh/Desktop/desktop_local":
       row: 7
       col: 0
+    "/home/lwh/Desktop/Screen recordings":
+      row: 8
+      col: 0
+    "/home/lwh/Documents":
+      row: 0
+      col: 0
+      last_seen: 1785054051240475
     "/home/lwh/Videos":
       row: 3
       col: 0
       last_seen: 1785054051242001
-    "/home/lwh/Desktop/Screen recordings":
-      row: 8
-      col: 0
     "/home/lwh/Desktop/Eden-Linux-v0.2.1-game_emulator.AppImage":
       row: 1
-      col: 0
-    "/home/lwh/Desktop/OpenCamera":
-      row: 7
       col: 0
     "/home/lwh":
       row: 0
@@ -140,45 +146,45 @@ configs:
     "/home/lwh/Desktop/Screenshots":
       row: 9
       col: 0
-    "/home/lwh/Desktop/gemini_restore.sh":
-      row: 6
-      col: 0
     "/home/lwh/Desktop/desktop_flatpak":
       row: 4
       col: 0
+    "/home/lwh/Desktop/Videos":
+      row: 6
+      col: 0
     "/home/lwh/Desktop/50_Clipping":
+      row: 6
+      col: 0
+    "/home/lwh/Desktop/gemini_restore.sh":
       row: 6
       col: 0
     "/home/lwh/Desktop/clipping":
       row: 0
       col: 0
-    "/home/lwh/Desktop/Videos":
-      row: 6
-      col: 0
     "/home/lwh/Desktop/\uC2A4\uD06C\uB9B0\uC0F7_2026-10-07_18-57-39.png":
       row: 0
+      col: 0
+    "/home/lwh/Desktop/001_Brain_Notes":
+      row: 6
       col: 0
     "32FB-F73F":
       row: 0
       col: 0
       last_seen: 1786001486252579
-    "/home/lwh/Desktop/\uCDE8\uBBF8":
-      row: 0
-      col: 1
     "/home/lwh/Desktop/\uCC9C\uC548_\uC5D0\uB374\uD558\uC6B0\uC2A4_\uC774\uC0AC_251219":
       row: 10
       col: 0
-    "/":
-      row: 1
-      col: 0
+    "/home/lwh/Desktop/\uCDE8\uBBF8":
+      row: 0
+      col: 1
     "trash:///":
       row: 2
       col: 0
     "/home/lwh/Desktop/etc":
       row: 6
       col: 0
-    "/home/lwh/Desktop/hermes_prompt.txt":
-      row: 7
+    "/":
+      row: 1
       col: 0
     "0492-3AF4":
       row: 1
@@ -188,13 +194,13 @@ configs:
       row: 9
       col: 0
       last_seen: 1785055289103995
+    "/home/lwh/Desktop/hermes_prompt.txt":
+      row: 7
+      col: 0
     "F5E1-6BEE":
       row: 0
       col: 0
       last_seen: 1777696655576554
-    "/home/lwh/Desktop/001_Brain_Notes":
-      row: 6
-      col: 0
     "/home/lwh/Desktop/Pictures":
       row: 7
       col: 0
